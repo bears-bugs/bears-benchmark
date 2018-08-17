@@ -27,7 +27,7 @@
 [INFO] --- buildnumber-maven-plugin:1.3:create (get-scm-revision) @ debezium-checkstyle ---
 [INFO] Executing: /bin/sh -c cd /root/workspace/debezium/debezium/324040188/support/checkstyle && git rev-parse --verify HEAD
 [INFO] Working directory: /root/workspace/debezium/debezium/324040188/support/checkstyle
-[INFO] Storing buildNumber: 536254a4e289e74498e38a57f04fea44a3f21b79 at timestamp: 1534531523496
+[INFO] Storing buildNumber: 42991d260f37a0e1cbffbbf2107945976803e4ed at timestamp: 1534531600765
 [WARNING] Cannot get the branch information from the git repository: 
 Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref
 
@@ -130,88 +130,82 @@ Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ debezium-core ---
 [INFO] Surefire report directory: /root/workspace/debezium/debezium/324040188/debezium-core/target/surefire-reports
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.18.1/surefire-junit4-2.18.1.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.18.1/surefire-junit4-2.18.1.pom (3 KB at 5.9 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.18.1/surefire-providers-2.18.1.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.18.1/surefire-providers-2.18.1.pom (3 KB at 65.4 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.18.1/surefire-junit4-2.18.1.jar
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.18.1/surefire-junit4-2.18.1.jar (67 KB at 1185.6 KB/sec)
 
 -------------------------------------------------------
  T E S T S
 -------------------------------------------------------
 Running io.debezium.time.ConversionsTest
-Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.168 sec - in io.debezium.time.ConversionsTest
+Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.169 sec - in io.debezium.time.ConversionsTest
 Running io.debezium.function.BufferedBlockingConsumerTest
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in io.debezium.function.BufferedBlockingConsumerTest
 Running io.debezium.function.PredicatesTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.075 sec - in io.debezium.function.PredicatesTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.09 sec - in io.debezium.function.PredicatesTest
 Running io.debezium.transforms.ByLogicalTableRouterTest
-2018-08-17 20:45:27,829 ERROR DBZ The 'topic.replacement' value '' is invalid: A value is required (io.debezium.transforms.ByLogicalTableRouter)
-2018-08-17 20:45:27,832 ERROR DBZ The 'topic.replacement' value is invalid: A value is required (io.debezium.transforms.ByLogicalTableRouter)
-2018-08-17 20:45:27,833 ERROR DBZ The 'key.field.replacement' value is invalid: key.field.replacement must be non-empty if key.field.regex is set. (io.debezium.transforms.ByLogicalTableRouter)
-2018-08-17 20:45:27,833 ERROR DBZ The 'key.field.replacement' value is invalid: key.field.replacement must be non-empty if key.field.regex is set. (io.debezium.transforms.ByLogicalTableRouter)
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.151 sec - in io.debezium.transforms.ByLogicalTableRouterTest
+2018-08-17 20:46:45,008 ERROR DBZ The 'topic.replacement' value '' is invalid: A value is required (io.debezium.transforms.ByLogicalTableRouter)
+2018-08-17 20:46:45,011 ERROR DBZ The 'topic.replacement' value is invalid: A value is required (io.debezium.transforms.ByLogicalTableRouter)
+2018-08-17 20:46:45,012 ERROR DBZ The 'key.field.replacement' value is invalid: key.field.replacement must be non-empty if key.field.regex is set. (io.debezium.transforms.ByLogicalTableRouter)
+2018-08-17 20:46:45,012 ERROR DBZ The 'key.field.replacement' value is invalid: key.field.replacement must be non-empty if key.field.regex is set. (io.debezium.transforms.ByLogicalTableRouter)
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.146 sec - in io.debezium.transforms.ByLogicalTableRouterTest
 Running io.debezium.transforms.UnwrapFromEnvelopeTest
-2018-08-17 20:45:27,865 WARN  DBZ Expected Envelope for transformation, passing it unchanged (io.debezium.transforms.UnwrapFromEnvelope)
-2018-08-17 20:45:27,865 WARN  DBZ Expected Envelope for transformation, passing it unchanged (io.debezium.transforms.UnwrapFromEnvelope)
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.031 sec - in io.debezium.transforms.UnwrapFromEnvelopeTest
+2018-08-17 20:46:45,056 WARN  DBZ Expected Envelope for transformation, passing it unchanged (io.debezium.transforms.UnwrapFromEnvelope)
+2018-08-17 20:46:45,057 WARN  DBZ Expected Envelope for transformation, passing it unchanged (io.debezium.transforms.UnwrapFromEnvelope)
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.044 sec - in io.debezium.transforms.UnwrapFromEnvelopeTest
 Running io.debezium.text.PositionTest
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in io.debezium.text.PositionTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in io.debezium.text.PositionTest
 Running io.debezium.text.TokenStreamTest
-Tests run: 46, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 sec - in io.debezium.text.TokenStreamTest
+Tests run: 46, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.041 sec - in io.debezium.text.TokenStreamTest
 Running io.debezium.text.XmlCharactersTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.058 sec - in io.debezium.text.XmlCharactersTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.098 sec - in io.debezium.text.XmlCharactersTest
 Running io.debezium.data.EnvelopeTest
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in io.debezium.data.EnvelopeTest
 Running io.debezium.kafka.KafkaClusterTest
 Skipped shouldStartClusterWithMultipleBrokerAndLeaveData(io.debezium.kafka.KafkaClusterTest) because: long-running
 Skipped shouldStartClusterAndAllowAsynchronousProductionAndAutomaticConsumersToUseIt(io.debezium.kafka.KafkaClusterTest) because: long-running
-2018-08-17 20:45:28,734 ERROR ZOO ZKShutdownHandler is not registered, so ZooKeeper server won't take any action on ERROR or SHUTDOWN server state changes
-2018-08-17 20:45:30,493 INFO  DBZ Started Kafka server 1 at localhost:35641 with storage in /root/workspace/debezium/debezium/324040188/debezium-core/target/data/cluster/kafka/broker1 (io.debezium.kafka.KafkaServer)
-The consumer completed normally in   0.88983s total;   1 samples;  0.88983s avg;  0.88983s min;  0.88983s max
-2018-08-17 20:45:33,312 INFO  DBZ Stopped Kafka server 1 at localhost:35641 (io.debezium.kafka.KafkaServer)
-2018-08-17 20:45:33,322 ERROR ZOO ZKShutdownHandler is not registered, so ZooKeeper server won't take any action on ERROR or SHUTDOWN server state changes
+2018-08-17 20:46:45,802 ERROR ZOO ZKShutdownHandler is not registered, so ZooKeeper server won't take any action on ERROR or SHUTDOWN server state changes
+2018-08-17 20:46:47,585 INFO  DBZ Started Kafka server 1 at localhost:37369 with storage in /root/workspace/debezium/debezium/324040188/debezium-core/target/data/cluster/kafka/broker1 (io.debezium.kafka.KafkaServer)
+The consumer completed normally in   0.69625s total;   1 samples;  0.69625s avg;  0.69625s min;  0.69625s max
+2018-08-17 20:46:50,394 INFO  DBZ Stopped Kafka server 1 at localhost:37369 (io.debezium.kafka.KafkaServer)
+2018-08-17 20:46:50,395 ERROR ZOO ZKShutdownHandler is not registered, so ZooKeeper server won't take any action on ERROR or SHUTDOWN server state changes
 Skipped shouldStartClusterWithMultipleBrokerAndRemoveData(io.debezium.kafka.KafkaClusterTest) because: long-running
 Skipped shouldStartClusterWithOneBrokerAndRemoveData(io.debezium.kafka.KafkaClusterTest) because: long-running
 Skipped shouldStartClusterWithOneBrokerAndLeaveData(io.debezium.kafka.KafkaClusterTest) because: long-running
 Skipped shouldStartClusterAndAllowProducersAndConsumersToUseIt(io.debezium.kafka.KafkaClusterTest) because: long-running
-Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.36 sec - in io.debezium.kafka.KafkaClusterTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.188 sec - in io.debezium.kafka.KafkaClusterTest
 Running io.debezium.kafka.ZookeeperServerTest
 Running 1
-2018-08-17 20:45:33,347 ERROR ZOO ZKShutdownHandler is not registered, so ZooKeeper server won't take any action on ERROR or SHUTDOWN server state changes
-2018-08-17 20:45:33,367 ERROR ZOO ZKShutdownHandler is not registered, so ZooKeeper server won't take any action on ERROR or SHUTDOWN server state changes
+2018-08-17 20:46:50,425 ERROR ZOO ZKShutdownHandler is not registered, so ZooKeeper server won't take any action on ERROR or SHUTDOWN server state changes
+2018-08-17 20:46:50,430 ERROR ZOO ZKShutdownHandler is not registered, so ZooKeeper server won't take any action on ERROR or SHUTDOWN server state changes
 Running 2
-2018-08-17 20:45:33,378 ERROR ZOO ZKShutdownHandler is not registered, so ZooKeeper server won't take any action on ERROR or SHUTDOWN server state changes
-2018-08-17 20:45:33,382 ERROR ZOO ZKShutdownHandler is not registered, so ZooKeeper server won't take any action on ERROR or SHUTDOWN server state changes
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.052 sec - in io.debezium.kafka.ZookeeperServerTest
+2018-08-17 20:46:50,449 ERROR ZOO ZKShutdownHandler is not registered, so ZooKeeper server won't take any action on ERROR or SHUTDOWN server state changes
+2018-08-17 20:46:50,465 ERROR ZOO ZKShutdownHandler is not registered, so ZooKeeper server won't take any action on ERROR or SHUTDOWN server state changes
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.068 sec - in io.debezium.kafka.ZookeeperServerTest
 Running io.debezium.config.ConfigurationTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.031 sec - in io.debezium.config.ConfigurationTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec - in io.debezium.config.ConfigurationTest
 Running io.debezium.relational.TableEditorTest
-Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.045 sec - in io.debezium.relational.TableEditorTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 sec - in io.debezium.relational.TableEditorTest
 Running io.debezium.relational.TableIdParserTest
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in io.debezium.relational.TableIdParserTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in io.debezium.relational.TableIdParserTest
 Running io.debezium.relational.ddl.DataTypeParserTest
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.054 sec - in io.debezium.relational.ddl.DataTypeParserTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.071 sec - in io.debezium.relational.ddl.DataTypeParserTest
 Running io.debezium.relational.ddl.DdlParserSql2003Test
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.037 sec - in io.debezium.relational.ddl.DdlParserSql2003Test
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.049 sec - in io.debezium.relational.ddl.DdlParserSql2003Test
 Running io.debezium.relational.ddl.DataTypeGrammarParserTest
-Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec - in io.debezium.relational.ddl.DataTypeGrammarParserTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in io.debezium.relational.ddl.DataTypeGrammarParserTest
 Running io.debezium.relational.ddl.DdlChangesTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec - in io.debezium.relational.ddl.DdlChangesTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec - in io.debezium.relational.ddl.DdlChangesTest
 Running io.debezium.relational.TableSchemaBuilderTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.052 sec - in io.debezium.relational.TableSchemaBuilderTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.073 sec - in io.debezium.relational.TableSchemaBuilderTest
 Running io.debezium.relational.SelectorsTest
-Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 sec - in io.debezium.relational.SelectorsTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec - in io.debezium.relational.SelectorsTest
 Running io.debezium.relational.history.KafkaDatabaseHistoryTest
-2018-08-17 20:45:33,685 ERROR ZOO ZKShutdownHandler is not registered, so ZooKeeper server won't take any action on ERROR or SHUTDOWN server state changes
-2018-08-17 20:45:34,355 INFO  DBZ Started Kafka server 1 at localhost:44605 with storage in /root/workspace/debezium/debezium/324040188/debezium-core/target/data/history_cluster/kafka/broker1 (io.debezium.kafka.KafkaServer)
-2018-08-17 20:45:34,655 INFO  DBZ KafkaDatabaseHistory Consumer config: {enable.auto.commit=false, value.deserializer=org.apache.kafka.common.serialization.StringDeserializer, group.id=my-db-history, auto.offset.reset=earliest, session.timeout.ms=50000, bootstrap.servers=localhost:44605, max.poll.interval.ms=100, client.id=my-db-history, key.deserializer=org.apache.kafka.common.serialization.StringDeserializer, fetch.min.bytes=1} (io.debezium.relational.history.KafkaDatabaseHistory)
-2018-08-17 20:45:34,655 INFO  DBZ KafkaDatabaseHistory Producer config: {bootstrap.servers=localhost:44605, value.serializer=org.apache.kafka.common.serialization.StringSerializer, buffer.memory=1048576, retries=1, key.serializer=org.apache.kafka.common.serialization.StringSerializer, client.id=my-db-history, linger.ms=0, batch.size=32768, acks=1} (io.debezium.relational.history.KafkaDatabaseHistory)
-2018-08-17 20:45:35,116 INFO  DBZ KafkaDatabaseHistory Consumer config: {enable.auto.commit=false, value.deserializer=org.apache.kafka.common.serialization.StringDeserializer, group.id=my-db-history, auto.offset.reset=earliest, session.timeout.ms=50000, bootstrap.servers=localhost:44605, max.poll.interval.ms=100, client.id=my-db-history, key.deserializer=org.apache.kafka.common.serialization.StringDeserializer, fetch.min.bytes=1} (io.debezium.relational.history.KafkaDatabaseHistory)
-2018-08-17 20:45:35,116 INFO  DBZ KafkaDatabaseHistory Producer config: {bootstrap.servers=localhost:44605, value.serializer=org.apache.kafka.common.serialization.StringSerializer, buffer.memory=1048576, retries=1, key.serializer=org.apache.kafka.common.serialization.StringSerializer, client.id=my-db-history, linger.ms=0, batch.size=32768, acks=1} (io.debezium.relational.history.KafkaDatabaseHistory)
-2018-08-17 20:45:35,295 ERROR DBZ Cannot parse DDL statements xxxDROP TABLE foo; stored in history, exiting (io.debezium.relational.history.KafkaDatabaseHistory)
-2018-08-17 20:45:35,296 ERROR DBZ Unexpected exception while processing record 'ConsumerRecord(topic = schema-changes-topic, partition = 0, offset = 0, CreateTime = 1534531534595, serialized key size = -1, serialized value size = 137, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = {"source":{"server":"my-server"},"position":{"filename":"my-txn-file.log","position":39},"databaseName":"db1","ddl":"xxxDROP TABLE foo;"})' (io.debezium.relational.history.KafkaDatabaseHistory)
+2018-08-17 20:46:50,770 ERROR ZOO ZKShutdownHandler is not registered, so ZooKeeper server won't take any action on ERROR or SHUTDOWN server state changes
+2018-08-17 20:46:51,567 INFO  DBZ Started Kafka server 1 at localhost:39777 with storage in /root/workspace/debezium/debezium/324040188/debezium-core/target/data/history_cluster/kafka/broker1 (io.debezium.kafka.KafkaServer)
+2018-08-17 20:46:51,881 INFO  DBZ KafkaDatabaseHistory Consumer config: {enable.auto.commit=false, value.deserializer=org.apache.kafka.common.serialization.StringDeserializer, group.id=my-db-history, auto.offset.reset=earliest, session.timeout.ms=50000, bootstrap.servers=localhost:39777, max.poll.interval.ms=100, client.id=my-db-history, key.deserializer=org.apache.kafka.common.serialization.StringDeserializer, fetch.min.bytes=1} (io.debezium.relational.history.KafkaDatabaseHistory)
+2018-08-17 20:46:51,882 INFO  DBZ KafkaDatabaseHistory Producer config: {bootstrap.servers=localhost:39777, value.serializer=org.apache.kafka.common.serialization.StringSerializer, buffer.memory=1048576, retries=1, key.serializer=org.apache.kafka.common.serialization.StringSerializer, client.id=my-db-history, linger.ms=0, batch.size=32768, acks=1} (io.debezium.relational.history.KafkaDatabaseHistory)
+2018-08-17 20:46:52,228 INFO  DBZ KafkaDatabaseHistory Consumer config: {enable.auto.commit=false, value.deserializer=org.apache.kafka.common.serialization.StringDeserializer, group.id=my-db-history, auto.offset.reset=earliest, session.timeout.ms=50000, bootstrap.servers=localhost:39777, max.poll.interval.ms=100, client.id=my-db-history, key.deserializer=org.apache.kafka.common.serialization.StringDeserializer, fetch.min.bytes=1} (io.debezium.relational.history.KafkaDatabaseHistory)
+2018-08-17 20:46:52,228 INFO  DBZ KafkaDatabaseHistory Producer config: {bootstrap.servers=localhost:39777, value.serializer=org.apache.kafka.common.serialization.StringSerializer, buffer.memory=1048576, retries=1, key.serializer=org.apache.kafka.common.serialization.StringSerializer, client.id=my-db-history, linger.ms=0, batch.size=32768, acks=1} (io.debezium.relational.history.KafkaDatabaseHistory)
+2018-08-17 20:46:52,396 ERROR DBZ Cannot parse DDL statements xxxDROP TABLE foo; stored in history, exiting (io.debezium.relational.history.KafkaDatabaseHistory)
+2018-08-17 20:46:52,397 ERROR DBZ Unexpected exception while processing record 'ConsumerRecord(topic = schema-changes-topic, partition = 0, offset = 0, CreateTime = 1534531611806, serialized key size = -1, serialized value size = 137, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = {"source":{"server":"my-server"},"position":{"filename":"my-txn-file.log","position":39},"databaseName":"db1","ddl":"xxxDROP TABLE foo;"})' (io.debezium.relational.history.KafkaDatabaseHistory)
 io.debezium.text.ParsingException: Expecting token type 128 at line 1, column 1 but found 'xxxDROP':  ===>> xxxDROP TABLE foo;
 	at io.debezium.text.TokenStream.consume(TokenStream.java:737)
 	at io.debezium.relational.ddl.DdlParser.consumeStatement(DdlParser.java:568)
@@ -251,22 +245,22 @@ io.debezium.text.ParsingException: Expecting token type 128 at line 1, column 1 
 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-2018-08-17 20:45:37,778 INFO  DBZ Stopped Kafka server 1 at localhost:44605 (io.debezium.kafka.KafkaServer)
-2018-08-17 20:45:37,779 ERROR ZOO ZKShutdownHandler is not registered, so ZooKeeper server won't take any action on ERROR or SHUTDOWN server state changes
-2018-08-17 20:45:37,785 ERROR ZOO ZKShutdownHandler is not registered, so ZooKeeper server won't take any action on ERROR or SHUTDOWN server state changes
-2018-08-17 20:45:38,494 INFO  DBZ Started Kafka server 1 at localhost:40925 with storage in /root/workspace/debezium/debezium/324040188/debezium-core/target/data/history_cluster/kafka/broker1 (io.debezium.kafka.KafkaServer)
-2018-08-17 20:45:38,526 INFO  DBZ KafkaDatabaseHistory Consumer config: {enable.auto.commit=false, value.deserializer=org.apache.kafka.common.serialization.StringDeserializer, group.id=my-db-history, auto.offset.reset=earliest, session.timeout.ms=50000, bootstrap.servers=localhost:40925, max.poll.interval.ms=100, client.id=my-db-history, key.deserializer=org.apache.kafka.common.serialization.StringDeserializer, fetch.min.bytes=1} (io.debezium.relational.history.KafkaDatabaseHistory)
-2018-08-17 20:45:38,526 INFO  DBZ KafkaDatabaseHistory Producer config: {bootstrap.servers=localhost:40925, value.serializer=org.apache.kafka.common.serialization.StringSerializer, buffer.memory=1048576, retries=1, key.serializer=org.apache.kafka.common.serialization.StringSerializer, client.id=my-db-history, linger.ms=0, batch.size=32768, acks=1} (io.debezium.relational.history.KafkaDatabaseHistory)
-2018-08-17 20:45:39,233 INFO  DBZ KafkaDatabaseHistory Consumer config: {enable.auto.commit=false, value.deserializer=org.apache.kafka.common.serialization.StringDeserializer, group.id=my-db-history, auto.offset.reset=earliest, session.timeout.ms=50000, bootstrap.servers=localhost:40925, max.poll.interval.ms=100, client.id=my-db-history, key.deserializer=org.apache.kafka.common.serialization.StringDeserializer, fetch.min.bytes=1} (io.debezium.relational.history.KafkaDatabaseHistory)
-2018-08-17 20:45:39,233 INFO  DBZ KafkaDatabaseHistory Producer config: {bootstrap.servers=localhost:40925, value.serializer=org.apache.kafka.common.serialization.StringSerializer, buffer.memory=1048576, retries=1, key.serializer=org.apache.kafka.common.serialization.StringSerializer, client.id=my-db-history, linger.ms=0, batch.size=32768, acks=1} (io.debezium.relational.history.KafkaDatabaseHistory)
-2018-08-17 20:45:42,119 INFO  DBZ Stopped Kafka server 1 at localhost:40925 (io.debezium.kafka.KafkaServer)
-2018-08-17 20:45:42,121 ERROR ZOO ZKShutdownHandler is not registered, so ZooKeeper server won't take any action on ERROR or SHUTDOWN server state changes
-2018-08-17 20:45:42,131 ERROR ZOO ZKShutdownHandler is not registered, so ZooKeeper server won't take any action on ERROR or SHUTDOWN server state changes
-2018-08-17 20:45:42,657 INFO  DBZ Started Kafka server 1 at localhost:41679 with storage in /root/workspace/debezium/debezium/324040188/debezium-core/target/data/history_cluster/kafka/broker1 (io.debezium.kafka.KafkaServer)
-2018-08-17 20:45:42,883 INFO  DBZ KafkaDatabaseHistory Consumer config: {enable.auto.commit=false, value.deserializer=org.apache.kafka.common.serialization.StringDeserializer, group.id=my-db-history, auto.offset.reset=earliest, session.timeout.ms=50000, bootstrap.servers=localhost:41679, max.poll.interval.ms=100, client.id=my-db-history, key.deserializer=org.apache.kafka.common.serialization.StringDeserializer, fetch.min.bytes=1} (io.debezium.relational.history.KafkaDatabaseHistory)
-2018-08-17 20:45:42,883 INFO  DBZ KafkaDatabaseHistory Producer config: {bootstrap.servers=localhost:41679, value.serializer=org.apache.kafka.common.serialization.StringSerializer, buffer.memory=1048576, retries=1, key.serializer=org.apache.kafka.common.serialization.StringSerializer, client.id=my-db-history, linger.ms=0, batch.size=32768, acks=1} (io.debezium.relational.history.KafkaDatabaseHistory)
-2018-08-17 20:45:43,177 WARN  DBZ Skipping null database history record. This is often not an issue, but if it happens repeatedly please check the 'schema-changes-topic' topic. (io.debezium.relational.history.KafkaDatabaseHistory)
-2018-08-17 20:45:43,178 ERROR DBZ Error while deserializing history record 'ConsumerRecord(topic = schema-changes-topic, partition = 0, offset = 1, CreateTime = 1534531542841, serialized key size = -1, serialized value size = 0, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = )' (io.debezium.relational.history.KafkaDatabaseHistory)
+2018-08-17 20:46:54,145 INFO  DBZ Stopped Kafka server 1 at localhost:39777 (io.debezium.kafka.KafkaServer)
+2018-08-17 20:46:54,147 ERROR ZOO ZKShutdownHandler is not registered, so ZooKeeper server won't take any action on ERROR or SHUTDOWN server state changes
+2018-08-17 20:46:54,157 ERROR ZOO ZKShutdownHandler is not registered, so ZooKeeper server won't take any action on ERROR or SHUTDOWN server state changes
+2018-08-17 20:46:54,682 INFO  DBZ Started Kafka server 1 at localhost:43651 with storage in /root/workspace/debezium/debezium/324040188/debezium-core/target/data/history_cluster/kafka/broker1 (io.debezium.kafka.KafkaServer)
+2018-08-17 20:46:54,708 INFO  DBZ KafkaDatabaseHistory Consumer config: {enable.auto.commit=false, value.deserializer=org.apache.kafka.common.serialization.StringDeserializer, group.id=my-db-history, auto.offset.reset=earliest, session.timeout.ms=50000, bootstrap.servers=localhost:43651, max.poll.interval.ms=100, client.id=my-db-history, key.deserializer=org.apache.kafka.common.serialization.StringDeserializer, fetch.min.bytes=1} (io.debezium.relational.history.KafkaDatabaseHistory)
+2018-08-17 20:46:54,708 INFO  DBZ KafkaDatabaseHistory Producer config: {bootstrap.servers=localhost:43651, value.serializer=org.apache.kafka.common.serialization.StringSerializer, buffer.memory=1048576, retries=1, key.serializer=org.apache.kafka.common.serialization.StringSerializer, client.id=my-db-history, linger.ms=0, batch.size=32768, acks=1} (io.debezium.relational.history.KafkaDatabaseHistory)
+2018-08-17 20:46:55,566 INFO  DBZ KafkaDatabaseHistory Consumer config: {enable.auto.commit=false, value.deserializer=org.apache.kafka.common.serialization.StringDeserializer, group.id=my-db-history, auto.offset.reset=earliest, session.timeout.ms=50000, bootstrap.servers=localhost:43651, max.poll.interval.ms=100, client.id=my-db-history, key.deserializer=org.apache.kafka.common.serialization.StringDeserializer, fetch.min.bytes=1} (io.debezium.relational.history.KafkaDatabaseHistory)
+2018-08-17 20:46:55,566 INFO  DBZ KafkaDatabaseHistory Producer config: {bootstrap.servers=localhost:43651, value.serializer=org.apache.kafka.common.serialization.StringSerializer, buffer.memory=1048576, retries=1, key.serializer=org.apache.kafka.common.serialization.StringSerializer, client.id=my-db-history, linger.ms=0, batch.size=32768, acks=1} (io.debezium.relational.history.KafkaDatabaseHistory)
+2018-08-17 20:46:58,014 INFO  DBZ Stopped Kafka server 1 at localhost:43651 (io.debezium.kafka.KafkaServer)
+2018-08-17 20:46:58,018 ERROR ZOO ZKShutdownHandler is not registered, so ZooKeeper server won't take any action on ERROR or SHUTDOWN server state changes
+2018-08-17 20:46:58,030 ERROR ZOO ZKShutdownHandler is not registered, so ZooKeeper server won't take any action on ERROR or SHUTDOWN server state changes
+2018-08-17 20:46:58,309 INFO  DBZ Started Kafka server 1 at localhost:46167 with storage in /root/workspace/debezium/debezium/324040188/debezium-core/target/data/history_cluster/kafka/broker1 (io.debezium.kafka.KafkaServer)
+2018-08-17 20:46:58,508 INFO  DBZ KafkaDatabaseHistory Consumer config: {enable.auto.commit=false, value.deserializer=org.apache.kafka.common.serialization.StringDeserializer, group.id=my-db-history, auto.offset.reset=earliest, session.timeout.ms=50000, bootstrap.servers=localhost:46167, max.poll.interval.ms=100, client.id=my-db-history, key.deserializer=org.apache.kafka.common.serialization.StringDeserializer, fetch.min.bytes=1} (io.debezium.relational.history.KafkaDatabaseHistory)
+2018-08-17 20:46:58,508 INFO  DBZ KafkaDatabaseHistory Producer config: {bootstrap.servers=localhost:46167, value.serializer=org.apache.kafka.common.serialization.StringSerializer, buffer.memory=1048576, retries=1, key.serializer=org.apache.kafka.common.serialization.StringSerializer, client.id=my-db-history, linger.ms=0, batch.size=32768, acks=1} (io.debezium.relational.history.KafkaDatabaseHistory)
+2018-08-17 20:46:58,676 WARN  DBZ Skipping null database history record. This is often not an issue, but if it happens repeatedly please check the 'schema-changes-topic' topic. (io.debezium.relational.history.KafkaDatabaseHistory)
+2018-08-17 20:46:58,677 ERROR DBZ Error while deserializing history record 'ConsumerRecord(topic = schema-changes-topic, partition = 0, offset = 1, CreateTime = 1534531618490, serialized key size = -1, serialized value size = 0, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = )' (io.debezium.relational.history.KafkaDatabaseHistory)
 java.io.IOException: Expected data to start with an Object, but was null
 	at io.debezium.document.JacksonReader.parseDocument(JacksonReader.java:112)
 	at io.debezium.document.JacksonReader.parse(JacksonReader.java:98)
@@ -301,7 +295,7 @@ java.io.IOException: Expected data to start with an Object, but was null
 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-2018-08-17 20:45:43,183 WARN  DBZ Skipping invalid database history record '{
+2018-08-17 20:46:58,680 WARN  DBZ Skipping invalid database history record '{
   "position" : {
     "filename" : "my-txn-file.log",
     "position" : 39
@@ -309,14 +303,14 @@ java.io.IOException: Expected data to start with an Object, but was null
   "databaseName" : "db1",
   "ddl" : "DROP TABLE foo;"
 }'. This is often not an issue, but if it happens repeatedly please check the 'schema-changes-topic' topic. (io.debezium.relational.history.KafkaDatabaseHistory)
-2018-08-17 20:45:43,183 WARN  DBZ Skipping invalid database history record '{
+2018-08-17 20:46:58,680 WARN  DBZ Skipping invalid database history record '{
   "source" : {
     "server" : "my-server"
   },
   "databaseName" : "db1",
   "ddl" : "DROP TABLE foo;"
 }'. This is often not an issue, but if it happens repeatedly please check the 'schema-changes-topic' topic. (io.debezium.relational.history.KafkaDatabaseHistory)
-2018-08-17 20:45:43,185 ERROR DBZ Error while deserializing history record 'ConsumerRecord(topic = schema-changes-topic, partition = 0, offset = 4, CreateTime = 1534531542858, serialized key size = -1, serialized value size = 133, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = {"source":{"server":"my-server"},"position":{"filename":"my-txn-file.log","position":39},"databaseName":"db1","ddl":"DROP TABLE foo;")' (io.debezium.relational.history.KafkaDatabaseHistory)
+2018-08-17 20:46:58,683 ERROR DBZ Error while deserializing history record 'ConsumerRecord(topic = schema-changes-topic, partition = 0, offset = 4, CreateTime = 1534531618496, serialized key size = -1, serialized value size = 133, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = {"source":{"server":"my-server"},"position":{"filename":"my-txn-file.log","position":39},"databaseName":"db1","ddl":"DROP TABLE foo;")' (io.debezium.relational.history.KafkaDatabaseHistory)
 com.fasterxml.jackson.core.io.JsonEOFException: Unexpected end-of-input: expected close marker for Object (start marker at [Source: (String)"{"source":{"server":"my-server"},"position":{"filename":"my-txn-file.log","position":39},"databaseName":"db1","ddl":"DROP TABLE foo;""; line: 1, column: 1])
  at [Source: (String)"{"source":{"server":"my-server"},"position":{"filename":"my-txn-file.log","position":39},"databaseName":"db1","ddl":"DROP TABLE foo;""; line: 1, column: 267]
 	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportInvalidEOF(ParserMinimalBase.java:588)
@@ -357,7 +351,7 @@ com.fasterxml.jackson.core.io.JsonEOFException: Unexpected end-of-input: expecte
 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-2018-08-17 20:45:43,188 ERROR DBZ Error while deserializing history record 'ConsumerRecord(topic = schema-changes-topic, partition = 0, offset = 5, CreateTime = 1534531542868, serialized key size = -1, serialized value size = 133, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = "source":{"server":"my-server"},"position":{"filename":"my-txn-file.log","position":39},"databaseName":"db1","ddl":"DROP TABLE foo;"})' (io.debezium.relational.history.KafkaDatabaseHistory)
+2018-08-17 20:46:58,685 ERROR DBZ Error while deserializing history record 'ConsumerRecord(topic = schema-changes-topic, partition = 0, offset = 5, CreateTime = 1534531618497, serialized key size = -1, serialized value size = 133, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = "source":{"server":"my-server"},"position":{"filename":"my-txn-file.log","position":39},"databaseName":"db1","ddl":"DROP TABLE foo;"})' (io.debezium.relational.history.KafkaDatabaseHistory)
 java.io.IOException: Expected data to start with an Object, but was VALUE_STRING
 	at io.debezium.document.JacksonReader.parseDocument(JacksonReader.java:112)
 	at io.debezium.document.JacksonReader.parse(JacksonReader.java:98)
@@ -392,10 +386,10 @@ java.io.IOException: Expected data to start with an Object, but was VALUE_STRING
 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-2018-08-17 20:45:43,267 INFO  DBZ KafkaDatabaseHistory Consumer config: {enable.auto.commit=false, value.deserializer=org.apache.kafka.common.serialization.StringDeserializer, group.id=my-db-history, auto.offset.reset=earliest, session.timeout.ms=50000, bootstrap.servers=localhost:41679, max.poll.interval.ms=100, client.id=my-db-history, key.deserializer=org.apache.kafka.common.serialization.StringDeserializer, fetch.min.bytes=1} (io.debezium.relational.history.KafkaDatabaseHistory)
-2018-08-17 20:45:43,267 INFO  DBZ KafkaDatabaseHistory Producer config: {bootstrap.servers=localhost:41679, value.serializer=org.apache.kafka.common.serialization.StringSerializer, buffer.memory=1048576, retries=1, key.serializer=org.apache.kafka.common.serialization.StringSerializer, client.id=my-db-history, linger.ms=0, batch.size=32768, acks=1} (io.debezium.relational.history.KafkaDatabaseHistory)
-2018-08-17 20:45:43,338 WARN  DBZ Skipping null database history record. This is often not an issue, but if it happens repeatedly please check the 'schema-changes-topic' topic. (io.debezium.relational.history.KafkaDatabaseHistory)
-2018-08-17 20:45:43,339 ERROR DBZ Error while deserializing history record 'ConsumerRecord(topic = schema-changes-topic, partition = 0, offset = 1, CreateTime = 1534531542841, serialized key size = -1, serialized value size = 0, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = )' (io.debezium.relational.history.KafkaDatabaseHistory)
+2018-08-17 20:46:58,779 INFO  DBZ KafkaDatabaseHistory Consumer config: {enable.auto.commit=false, value.deserializer=org.apache.kafka.common.serialization.StringDeserializer, group.id=my-db-history, auto.offset.reset=earliest, session.timeout.ms=50000, bootstrap.servers=localhost:46167, max.poll.interval.ms=100, client.id=my-db-history, key.deserializer=org.apache.kafka.common.serialization.StringDeserializer, fetch.min.bytes=1} (io.debezium.relational.history.KafkaDatabaseHistory)
+2018-08-17 20:46:58,780 INFO  DBZ KafkaDatabaseHistory Producer config: {bootstrap.servers=localhost:46167, value.serializer=org.apache.kafka.common.serialization.StringSerializer, buffer.memory=1048576, retries=1, key.serializer=org.apache.kafka.common.serialization.StringSerializer, client.id=my-db-history, linger.ms=0, batch.size=32768, acks=1} (io.debezium.relational.history.KafkaDatabaseHistory)
+2018-08-17 20:46:58,897 WARN  DBZ Skipping null database history record. This is often not an issue, but if it happens repeatedly please check the 'schema-changes-topic' topic. (io.debezium.relational.history.KafkaDatabaseHistory)
+2018-08-17 20:46:58,897 ERROR DBZ Error while deserializing history record 'ConsumerRecord(topic = schema-changes-topic, partition = 0, offset = 1, CreateTime = 1534531618490, serialized key size = -1, serialized value size = 0, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = )' (io.debezium.relational.history.KafkaDatabaseHistory)
 java.io.IOException: Expected data to start with an Object, but was null
 	at io.debezium.document.JacksonReader.parseDocument(JacksonReader.java:112)
 	at io.debezium.document.JacksonReader.parse(JacksonReader.java:98)
@@ -430,7 +424,7 @@ java.io.IOException: Expected data to start with an Object, but was null
 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-2018-08-17 20:45:43,341 WARN  DBZ Skipping invalid database history record '{
+2018-08-17 20:46:58,899 WARN  DBZ Skipping invalid database history record '{
   "position" : {
     "filename" : "my-txn-file.log",
     "position" : 39
@@ -438,14 +432,14 @@ java.io.IOException: Expected data to start with an Object, but was null
   "databaseName" : "db1",
   "ddl" : "DROP TABLE foo;"
 }'. This is often not an issue, but if it happens repeatedly please check the 'schema-changes-topic' topic. (io.debezium.relational.history.KafkaDatabaseHistory)
-2018-08-17 20:45:43,342 WARN  DBZ Skipping invalid database history record '{
+2018-08-17 20:46:58,900 WARN  DBZ Skipping invalid database history record '{
   "source" : {
     "server" : "my-server"
   },
   "databaseName" : "db1",
   "ddl" : "DROP TABLE foo;"
 }'. This is often not an issue, but if it happens repeatedly please check the 'schema-changes-topic' topic. (io.debezium.relational.history.KafkaDatabaseHistory)
-2018-08-17 20:45:43,344 ERROR DBZ Error while deserializing history record 'ConsumerRecord(topic = schema-changes-topic, partition = 0, offset = 4, CreateTime = 1534531542858, serialized key size = -1, serialized value size = 133, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = {"source":{"server":"my-server"},"position":{"filename":"my-txn-file.log","position":39},"databaseName":"db1","ddl":"DROP TABLE foo;")' (io.debezium.relational.history.KafkaDatabaseHistory)
+2018-08-17 20:46:58,900 ERROR DBZ Error while deserializing history record 'ConsumerRecord(topic = schema-changes-topic, partition = 0, offset = 4, CreateTime = 1534531618496, serialized key size = -1, serialized value size = 133, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = {"source":{"server":"my-server"},"position":{"filename":"my-txn-file.log","position":39},"databaseName":"db1","ddl":"DROP TABLE foo;")' (io.debezium.relational.history.KafkaDatabaseHistory)
 com.fasterxml.jackson.core.io.JsonEOFException: Unexpected end-of-input: expected close marker for Object (start marker at [Source: (String)"{"source":{"server":"my-server"},"position":{"filename":"my-txn-file.log","position":39},"databaseName":"db1","ddl":"DROP TABLE foo;""; line: 1, column: 1])
  at [Source: (String)"{"source":{"server":"my-server"},"position":{"filename":"my-txn-file.log","position":39},"databaseName":"db1","ddl":"DROP TABLE foo;""; line: 1, column: 267]
 	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportInvalidEOF(ParserMinimalBase.java:588)
@@ -486,7 +480,7 @@ com.fasterxml.jackson.core.io.JsonEOFException: Unexpected end-of-input: expecte
 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-2018-08-17 20:45:43,346 ERROR DBZ Error while deserializing history record 'ConsumerRecord(topic = schema-changes-topic, partition = 0, offset = 5, CreateTime = 1534531542868, serialized key size = -1, serialized value size = 133, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = "source":{"server":"my-server"},"position":{"filename":"my-txn-file.log","position":39},"databaseName":"db1","ddl":"DROP TABLE foo;"})' (io.debezium.relational.history.KafkaDatabaseHistory)
+2018-08-17 20:46:58,904 ERROR DBZ Error while deserializing history record 'ConsumerRecord(topic = schema-changes-topic, partition = 0, offset = 5, CreateTime = 1534531618497, serialized key size = -1, serialized value size = 133, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = "source":{"server":"my-server"},"position":{"filename":"my-txn-file.log","position":39},"databaseName":"db1","ddl":"DROP TABLE foo;"})' (io.debezium.relational.history.KafkaDatabaseHistory)
 java.io.IOException: Expected data to start with an Object, but was VALUE_STRING
 	at io.debezium.document.JacksonReader.parseDocument(JacksonReader.java:112)
 	at io.debezium.document.JacksonReader.parse(JacksonReader.java:98)
@@ -521,8 +515,8 @@ java.io.IOException: Expected data to start with an Object, but was VALUE_STRING
 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-2018-08-17 20:45:43,482 WARN  DBZ Skipping null database history record. This is often not an issue, but if it happens repeatedly please check the 'schema-changes-topic' topic. (io.debezium.relational.history.KafkaDatabaseHistory)
-2018-08-17 20:45:43,485 ERROR DBZ Error while deserializing history record 'ConsumerRecord(topic = schema-changes-topic, partition = 0, offset = 1, CreateTime = 1534531542841, serialized key size = -1, serialized value size = 0, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = )' (io.debezium.relational.history.KafkaDatabaseHistory)
+2018-08-17 20:46:59,017 WARN  DBZ Skipping null database history record. This is often not an issue, but if it happens repeatedly please check the 'schema-changes-topic' topic. (io.debezium.relational.history.KafkaDatabaseHistory)
+2018-08-17 20:46:59,017 ERROR DBZ Error while deserializing history record 'ConsumerRecord(topic = schema-changes-topic, partition = 0, offset = 1, CreateTime = 1534531618490, serialized key size = -1, serialized value size = 0, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = )' (io.debezium.relational.history.KafkaDatabaseHistory)
 java.io.IOException: Expected data to start with an Object, but was null
 	at io.debezium.document.JacksonReader.parseDocument(JacksonReader.java:112)
 	at io.debezium.document.JacksonReader.parse(JacksonReader.java:98)
@@ -557,7 +551,7 @@ java.io.IOException: Expected data to start with an Object, but was null
 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-2018-08-17 20:45:43,487 WARN  DBZ Skipping invalid database history record '{
+2018-08-17 20:46:59,020 WARN  DBZ Skipping invalid database history record '{
   "position" : {
     "filename" : "my-txn-file.log",
     "position" : 39
@@ -565,14 +559,14 @@ java.io.IOException: Expected data to start with an Object, but was null
   "databaseName" : "db1",
   "ddl" : "DROP TABLE foo;"
 }'. This is often not an issue, but if it happens repeatedly please check the 'schema-changes-topic' topic. (io.debezium.relational.history.KafkaDatabaseHistory)
-2018-08-17 20:45:43,487 WARN  DBZ Skipping invalid database history record '{
+2018-08-17 20:46:59,020 WARN  DBZ Skipping invalid database history record '{
   "source" : {
     "server" : "my-server"
   },
   "databaseName" : "db1",
   "ddl" : "DROP TABLE foo;"
 }'. This is often not an issue, but if it happens repeatedly please check the 'schema-changes-topic' topic. (io.debezium.relational.history.KafkaDatabaseHistory)
-2018-08-17 20:45:43,488 ERROR DBZ Error while deserializing history record 'ConsumerRecord(topic = schema-changes-topic, partition = 0, offset = 4, CreateTime = 1534531542858, serialized key size = -1, serialized value size = 133, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = {"source":{"server":"my-server"},"position":{"filename":"my-txn-file.log","position":39},"databaseName":"db1","ddl":"DROP TABLE foo;")' (io.debezium.relational.history.KafkaDatabaseHistory)
+2018-08-17 20:46:59,021 ERROR DBZ Error while deserializing history record 'ConsumerRecord(topic = schema-changes-topic, partition = 0, offset = 4, CreateTime = 1534531618496, serialized key size = -1, serialized value size = 133, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = {"source":{"server":"my-server"},"position":{"filename":"my-txn-file.log","position":39},"databaseName":"db1","ddl":"DROP TABLE foo;")' (io.debezium.relational.history.KafkaDatabaseHistory)
 com.fasterxml.jackson.core.io.JsonEOFException: Unexpected end-of-input: expected close marker for Object (start marker at [Source: (String)"{"source":{"server":"my-server"},"position":{"filename":"my-txn-file.log","position":39},"databaseName":"db1","ddl":"DROP TABLE foo;""; line: 1, column: 1])
  at [Source: (String)"{"source":{"server":"my-server"},"position":{"filename":"my-txn-file.log","position":39},"databaseName":"db1","ddl":"DROP TABLE foo;""; line: 1, column: 267]
 	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportInvalidEOF(ParserMinimalBase.java:588)
@@ -613,7 +607,7 @@ com.fasterxml.jackson.core.io.JsonEOFException: Unexpected end-of-input: expecte
 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-2018-08-17 20:45:43,489 ERROR DBZ Error while deserializing history record 'ConsumerRecord(topic = schema-changes-topic, partition = 0, offset = 5, CreateTime = 1534531542868, serialized key size = -1, serialized value size = 133, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = "source":{"server":"my-server"},"position":{"filename":"my-txn-file.log","position":39},"databaseName":"db1","ddl":"DROP TABLE foo;"})' (io.debezium.relational.history.KafkaDatabaseHistory)
+2018-08-17 20:46:59,022 ERROR DBZ Error while deserializing history record 'ConsumerRecord(topic = schema-changes-topic, partition = 0, offset = 5, CreateTime = 1534531618497, serialized key size = -1, serialized value size = 133, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = "source":{"server":"my-server"},"position":{"filename":"my-txn-file.log","position":39},"databaseName":"db1","ddl":"DROP TABLE foo;"})' (io.debezium.relational.history.KafkaDatabaseHistory)
 java.io.IOException: Expected data to start with an Object, but was VALUE_STRING
 	at io.debezium.document.JacksonReader.parseDocument(JacksonReader.java:112)
 	at io.debezium.document.JacksonReader.parse(JacksonReader.java:98)
@@ -648,7 +642,7 @@ java.io.IOException: Expected data to start with an Object, but was VALUE_STRING
 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-2018-08-17 20:45:43,505 WARN  DBZ Ignoring unparseable statements 'xxxDROP TABLE foo;' stored in database history: {} (io.debezium.relational.history.KafkaDatabaseHistory)
+2018-08-17 20:46:59,023 WARN  DBZ Ignoring unparseable statements 'xxxDROP TABLE foo;' stored in database history: {} (io.debezium.relational.history.KafkaDatabaseHistory)
 io.debezium.text.ParsingException: Expecting token type 128 at line 1, column 1 but found 'xxxDROP':  ===>> xxxDROP TABLE foo;
 	at io.debezium.text.TokenStream.consume(TokenStream.java:737)
 	at io.debezium.relational.ddl.DdlParser.consumeStatement(DdlParser.java:568)
@@ -687,8 +681,8 @@ io.debezium.text.ParsingException: Expecting token type 128 at line 1, column 1 
 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-2018-08-17 20:45:43,589 WARN  DBZ Skipping null database history record. This is often not an issue, but if it happens repeatedly please check the 'schema-changes-topic' topic. (io.debezium.relational.history.KafkaDatabaseHistory)
-2018-08-17 20:45:43,591 ERROR DBZ Error while deserializing history record 'ConsumerRecord(topic = schema-changes-topic, partition = 0, offset = 1, CreateTime = 1534531542841, serialized key size = -1, serialized value size = 0, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = )' (io.debezium.relational.history.KafkaDatabaseHistory)
+2018-08-17 20:46:59,150 WARN  DBZ Skipping null database history record. This is often not an issue, but if it happens repeatedly please check the 'schema-changes-topic' topic. (io.debezium.relational.history.KafkaDatabaseHistory)
+2018-08-17 20:46:59,151 ERROR DBZ Error while deserializing history record 'ConsumerRecord(topic = schema-changes-topic, partition = 0, offset = 1, CreateTime = 1534531618490, serialized key size = -1, serialized value size = 0, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = )' (io.debezium.relational.history.KafkaDatabaseHistory)
 java.io.IOException: Expected data to start with an Object, but was null
 	at io.debezium.document.JacksonReader.parseDocument(JacksonReader.java:112)
 	at io.debezium.document.JacksonReader.parse(JacksonReader.java:98)
@@ -723,7 +717,7 @@ java.io.IOException: Expected data to start with an Object, but was null
 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-2018-08-17 20:45:43,600 WARN  DBZ Skipping invalid database history record '{
+2018-08-17 20:46:59,152 WARN  DBZ Skipping invalid database history record '{
   "position" : {
     "filename" : "my-txn-file.log",
     "position" : 39
@@ -731,14 +725,14 @@ java.io.IOException: Expected data to start with an Object, but was null
   "databaseName" : "db1",
   "ddl" : "DROP TABLE foo;"
 }'. This is often not an issue, but if it happens repeatedly please check the 'schema-changes-topic' topic. (io.debezium.relational.history.KafkaDatabaseHistory)
-2018-08-17 20:45:43,601 WARN  DBZ Skipping invalid database history record '{
+2018-08-17 20:46:59,152 WARN  DBZ Skipping invalid database history record '{
   "source" : {
     "server" : "my-server"
   },
   "databaseName" : "db1",
   "ddl" : "DROP TABLE foo;"
 }'. This is often not an issue, but if it happens repeatedly please check the 'schema-changes-topic' topic. (io.debezium.relational.history.KafkaDatabaseHistory)
-2018-08-17 20:45:43,601 ERROR DBZ Error while deserializing history record 'ConsumerRecord(topic = schema-changes-topic, partition = 0, offset = 4, CreateTime = 1534531542858, serialized key size = -1, serialized value size = 133, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = {"source":{"server":"my-server"},"position":{"filename":"my-txn-file.log","position":39},"databaseName":"db1","ddl":"DROP TABLE foo;")' (io.debezium.relational.history.KafkaDatabaseHistory)
+2018-08-17 20:46:59,153 ERROR DBZ Error while deserializing history record 'ConsumerRecord(topic = schema-changes-topic, partition = 0, offset = 4, CreateTime = 1534531618496, serialized key size = -1, serialized value size = 133, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = {"source":{"server":"my-server"},"position":{"filename":"my-txn-file.log","position":39},"databaseName":"db1","ddl":"DROP TABLE foo;")' (io.debezium.relational.history.KafkaDatabaseHistory)
 com.fasterxml.jackson.core.io.JsonEOFException: Unexpected end-of-input: expected close marker for Object (start marker at [Source: (String)"{"source":{"server":"my-server"},"position":{"filename":"my-txn-file.log","position":39},"databaseName":"db1","ddl":"DROP TABLE foo;""; line: 1, column: 1])
  at [Source: (String)"{"source":{"server":"my-server"},"position":{"filename":"my-txn-file.log","position":39},"databaseName":"db1","ddl":"DROP TABLE foo;""; line: 1, column: 267]
 	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportInvalidEOF(ParserMinimalBase.java:588)
@@ -779,7 +773,7 @@ com.fasterxml.jackson.core.io.JsonEOFException: Unexpected end-of-input: expecte
 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-2018-08-17 20:45:43,603 ERROR DBZ Error while deserializing history record 'ConsumerRecord(topic = schema-changes-topic, partition = 0, offset = 5, CreateTime = 1534531542868, serialized key size = -1, serialized value size = 133, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = "source":{"server":"my-server"},"position":{"filename":"my-txn-file.log","position":39},"databaseName":"db1","ddl":"DROP TABLE foo;"})' (io.debezium.relational.history.KafkaDatabaseHistory)
+2018-08-17 20:46:59,154 ERROR DBZ Error while deserializing history record 'ConsumerRecord(topic = schema-changes-topic, partition = 0, offset = 5, CreateTime = 1534531618497, serialized key size = -1, serialized value size = 133, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = "source":{"server":"my-server"},"position":{"filename":"my-txn-file.log","position":39},"databaseName":"db1","ddl":"DROP TABLE foo;"})' (io.debezium.relational.history.KafkaDatabaseHistory)
 java.io.IOException: Expected data to start with an Object, but was VALUE_STRING
 	at io.debezium.document.JacksonReader.parseDocument(JacksonReader.java:112)
 	at io.debezium.document.JacksonReader.parse(JacksonReader.java:98)
@@ -814,7 +808,7 @@ java.io.IOException: Expected data to start with an Object, but was VALUE_STRING
 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-2018-08-17 20:45:43,605 WARN  DBZ Ignoring unparseable statements 'xxxDROP TABLE foo;' stored in database history: {} (io.debezium.relational.history.KafkaDatabaseHistory)
+2018-08-17 20:46:59,155 WARN  DBZ Ignoring unparseable statements 'xxxDROP TABLE foo;' stored in database history: {} (io.debezium.relational.history.KafkaDatabaseHistory)
 io.debezium.text.ParsingException: Expecting token type 128 at line 1, column 1 but found 'xxxDROP':  ===>> xxxDROP TABLE foo;
 	at io.debezium.text.TokenStream.consume(TokenStream.java:737)
 	at io.debezium.relational.ddl.DdlParser.consumeStatement(DdlParser.java:568)
@@ -853,8 +847,8 @@ io.debezium.text.ParsingException: Expecting token type 128 at line 1, column 1 
 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-2018-08-17 20:45:43,735 WARN  DBZ Skipping null database history record. This is often not an issue, but if it happens repeatedly please check the 'schema-changes-topic' topic. (io.debezium.relational.history.KafkaDatabaseHistory)
-2018-08-17 20:45:43,735 ERROR DBZ Error while deserializing history record 'ConsumerRecord(topic = schema-changes-topic, partition = 0, offset = 1, CreateTime = 1534531542841, serialized key size = -1, serialized value size = 0, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = )' (io.debezium.relational.history.KafkaDatabaseHistory)
+2018-08-17 20:46:59,256 WARN  DBZ Skipping null database history record. This is often not an issue, but if it happens repeatedly please check the 'schema-changes-topic' topic. (io.debezium.relational.history.KafkaDatabaseHistory)
+2018-08-17 20:46:59,257 ERROR DBZ Error while deserializing history record 'ConsumerRecord(topic = schema-changes-topic, partition = 0, offset = 1, CreateTime = 1534531618490, serialized key size = -1, serialized value size = 0, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = )' (io.debezium.relational.history.KafkaDatabaseHistory)
 java.io.IOException: Expected data to start with an Object, but was null
 	at io.debezium.document.JacksonReader.parseDocument(JacksonReader.java:112)
 	at io.debezium.document.JacksonReader.parse(JacksonReader.java:98)
@@ -889,7 +883,7 @@ java.io.IOException: Expected data to start with an Object, but was null
 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-2018-08-17 20:45:43,736 WARN  DBZ Skipping invalid database history record '{
+2018-08-17 20:46:59,258 WARN  DBZ Skipping invalid database history record '{
   "position" : {
     "filename" : "my-txn-file.log",
     "position" : 39
@@ -897,14 +891,14 @@ java.io.IOException: Expected data to start with an Object, but was null
   "databaseName" : "db1",
   "ddl" : "DROP TABLE foo;"
 }'. This is often not an issue, but if it happens repeatedly please check the 'schema-changes-topic' topic. (io.debezium.relational.history.KafkaDatabaseHistory)
-2018-08-17 20:45:43,737 WARN  DBZ Skipping invalid database history record '{
+2018-08-17 20:46:59,258 WARN  DBZ Skipping invalid database history record '{
   "source" : {
     "server" : "my-server"
   },
   "databaseName" : "db1",
   "ddl" : "DROP TABLE foo;"
 }'. This is often not an issue, but if it happens repeatedly please check the 'schema-changes-topic' topic. (io.debezium.relational.history.KafkaDatabaseHistory)
-2018-08-17 20:45:43,737 ERROR DBZ Error while deserializing history record 'ConsumerRecord(topic = schema-changes-topic, partition = 0, offset = 4, CreateTime = 1534531542858, serialized key size = -1, serialized value size = 133, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = {"source":{"server":"my-server"},"position":{"filename":"my-txn-file.log","position":39},"databaseName":"db1","ddl":"DROP TABLE foo;")' (io.debezium.relational.history.KafkaDatabaseHistory)
+2018-08-17 20:46:59,259 ERROR DBZ Error while deserializing history record 'ConsumerRecord(topic = schema-changes-topic, partition = 0, offset = 4, CreateTime = 1534531618496, serialized key size = -1, serialized value size = 133, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = {"source":{"server":"my-server"},"position":{"filename":"my-txn-file.log","position":39},"databaseName":"db1","ddl":"DROP TABLE foo;")' (io.debezium.relational.history.KafkaDatabaseHistory)
 com.fasterxml.jackson.core.io.JsonEOFException: Unexpected end-of-input: expected close marker for Object (start marker at [Source: (String)"{"source":{"server":"my-server"},"position":{"filename":"my-txn-file.log","position":39},"databaseName":"db1","ddl":"DROP TABLE foo;""; line: 1, column: 1])
  at [Source: (String)"{"source":{"server":"my-server"},"position":{"filename":"my-txn-file.log","position":39},"databaseName":"db1","ddl":"DROP TABLE foo;""; line: 1, column: 267]
 	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportInvalidEOF(ParserMinimalBase.java:588)
@@ -945,7 +939,7 @@ com.fasterxml.jackson.core.io.JsonEOFException: Unexpected end-of-input: expecte
 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-2018-08-17 20:45:43,739 ERROR DBZ Error while deserializing history record 'ConsumerRecord(topic = schema-changes-topic, partition = 0, offset = 5, CreateTime = 1534531542868, serialized key size = -1, serialized value size = 133, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = "source":{"server":"my-server"},"position":{"filename":"my-txn-file.log","position":39},"databaseName":"db1","ddl":"DROP TABLE foo;"})' (io.debezium.relational.history.KafkaDatabaseHistory)
+2018-08-17 20:46:59,260 ERROR DBZ Error while deserializing history record 'ConsumerRecord(topic = schema-changes-topic, partition = 0, offset = 5, CreateTime = 1534531618497, serialized key size = -1, serialized value size = 133, headers = RecordHeaders(headers = [], isReadOnly = false), key = null, value = "source":{"server":"my-server"},"position":{"filename":"my-txn-file.log","position":39},"databaseName":"db1","ddl":"DROP TABLE foo;"})' (io.debezium.relational.history.KafkaDatabaseHistory)
 java.io.IOException: Expected data to start with an Object, but was VALUE_STRING
 	at io.debezium.document.JacksonReader.parseDocument(JacksonReader.java:112)
 	at io.debezium.document.JacksonReader.parse(JacksonReader.java:98)
@@ -980,7 +974,7 @@ java.io.IOException: Expected data to start with an Object, but was VALUE_STRING
 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-2018-08-17 20:45:43,740 WARN  DBZ Ignoring unparseable statements 'xxxDROP TABLE foo;' stored in database history: {} (io.debezium.relational.history.KafkaDatabaseHistory)
+2018-08-17 20:46:59,261 WARN  DBZ Ignoring unparseable statements 'xxxDROP TABLE foo;' stored in database history: {} (io.debezium.relational.history.KafkaDatabaseHistory)
 io.debezium.text.ParsingException: Expecting token type 128 at line 1, column 1 but found 'xxxDROP':  ===>> xxxDROP TABLE foo;
 	at io.debezium.text.TokenStream.consume(TokenStream.java:737)
 	at io.debezium.relational.ddl.DdlParser.consumeStatement(DdlParser.java:568)
@@ -1019,45 +1013,45 @@ io.debezium.text.ParsingException: Expecting token type 128 at line 1, column 1 
 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-2018-08-17 20:45:45,190 INFO  DBZ Stopped Kafka server 1 at localhost:41679 (io.debezium.kafka.KafkaServer)
-2018-08-17 20:45:45,198 ERROR ZOO ZKShutdownHandler is not registered, so ZooKeeper server won't take any action on ERROR or SHUTDOWN server state changes
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.523 sec - in io.debezium.relational.history.KafkaDatabaseHistoryTest
+2018-08-17 20:47:01,981 INFO  DBZ Stopped Kafka server 1 at localhost:46167 (io.debezium.kafka.KafkaServer)
+2018-08-17 20:47:01,982 ERROR ZOO ZKShutdownHandler is not registered, so ZooKeeper server won't take any action on ERROR or SHUTDOWN server state changes
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.223 sec - in io.debezium.relational.history.KafkaDatabaseHistoryTest
 Running io.debezium.relational.history.FileDatabaseHistoryTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.064 sec - in io.debezium.relational.history.FileDatabaseHistoryTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.058 sec - in io.debezium.relational.history.FileDatabaseHistoryTest
 Running io.debezium.relational.history.MemoryDatabaseHistoryTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec - in io.debezium.relational.history.MemoryDatabaseHistoryTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 sec - in io.debezium.relational.history.MemoryDatabaseHistoryTest
 Running io.debezium.relational.history.HistoryRecordTest
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in io.debezium.relational.history.HistoryRecordTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec - in io.debezium.relational.history.HistoryRecordTest
 Running io.debezium.relational.ColumnEditorTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in io.debezium.relational.ColumnEditorTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in io.debezium.relational.ColumnEditorTest
 Running io.debezium.relational.mapping.TruncateStringsTest
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in io.debezium.relational.mapping.TruncateStringsTest
 Running io.debezium.relational.mapping.ColumnMappersTest
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in io.debezium.relational.mapping.ColumnMappersTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in io.debezium.relational.mapping.ColumnMappersTest
 Running io.debezium.relational.mapping.MaskStringsTest
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in io.debezium.relational.mapping.MaskStringsTest
 Running io.debezium.relational.TableTest
-Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in io.debezium.relational.TableTest
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec - in io.debezium.relational.TableTest
 Running io.debezium.document.DocumentTest
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in io.debezium.document.DocumentTest
 Running io.debezium.document.DocumentSerdesTest
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec - in io.debezium.document.DocumentSerdesTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.042 sec - in io.debezium.document.DocumentSerdesTest
 Running io.debezium.document.JacksonArrayReadingAndWritingTest
 Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in io.debezium.document.JacksonArrayReadingAndWritingTest
 Running io.debezium.document.PathsTest
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in io.debezium.document.PathsTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in io.debezium.document.PathsTest
 Running io.debezium.document.ArraySerdesTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in io.debezium.document.ArraySerdesTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in io.debezium.document.ArraySerdesTest
 Running io.debezium.document.JacksonWriterTest
 Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in io.debezium.document.JacksonWriterTest
 Running io.debezium.util.StringsTest
-Tests run: 42, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in io.debezium.util.StringsTest
+Tests run: 42, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec - in io.debezium.util.StringsTest
 Running io.debezium.util.HashCodeTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in io.debezium.util.HashCodeTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in io.debezium.util.HashCodeTest
 Running io.debezium.util.ElapsedTimeStrategyTest
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec - in io.debezium.util.ElapsedTimeStrategyTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in io.debezium.util.ElapsedTimeStrategyTest
 Running io.debezium.util.AvroValidatorTest
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in io.debezium.util.AvroValidatorTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in io.debezium.util.AvroValidatorTest
 Running io.debezium.util.TestingTest
 Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in io.debezium.util.TestingTest
 
@@ -1103,16 +1097,16 @@ Tests run: 291, Failures: 0, Errors: 0, Skipped: 0
  T E S T S
 -------------------------------------------------------
 Running io.debezium.embedded.EmbeddedEngineTest
-2018-08-17 20:45:48,728 INFO   EmbeddedEngineTest||test  Stopping the connector   [io.debezium.embedded.EmbeddedEngineTest]
-2018-08-17 20:45:48,731 INFO   EmbeddedEngineTest||engine  Connector 'org.apache.kafka.connect.file.FileStreamSourceConnector' completed normally.   [io.debezium.embedded.EmbeddedEngineTest]
-2018-08-17 20:45:48,764 INFO   EmbeddedEngineTest||test  Stopping the connector   [io.debezium.embedded.EmbeddedEngineTest]
-2018-08-17 20:45:48,767 WARN   EmbeddedEngineTest||engine  Flush of EmbeddedConnector{id=testing-connector} offsets interrupted, cancelling   [io.debezium.embedded.EmbeddedEngine]
-2018-08-17 20:45:48,767 INFO   EmbeddedEngineTest||engine  Connector 'org.apache.kafka.connect.file.FileStreamSourceConnector' completed normally.   [io.debezium.embedded.EmbeddedEngineTest]
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.765 sec - in io.debezium.embedded.EmbeddedEngineTest
+2018-08-17 20:47:05,471 INFO   EmbeddedEngineTest||test  Stopping the connector   [io.debezium.embedded.EmbeddedEngineTest]
+2018-08-17 20:47:05,474 INFO   EmbeddedEngineTest||engine  Connector 'org.apache.kafka.connect.file.FileStreamSourceConnector' completed normally.   [io.debezium.embedded.EmbeddedEngineTest]
+2018-08-17 20:47:05,507 INFO   EmbeddedEngineTest||test  Stopping the connector   [io.debezium.embedded.EmbeddedEngineTest]
+2018-08-17 20:47:05,509 WARN   EmbeddedEngineTest||engine  Flush of EmbeddedConnector{id=testing-connector} offsets interrupted, cancelling   [io.debezium.embedded.EmbeddedEngine]
+2018-08-17 20:47:05,509 INFO   EmbeddedEngineTest||engine  Connector 'org.apache.kafka.connect.file.FileStreamSourceConnector' completed normally.   [io.debezium.embedded.EmbeddedEngineTest]
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.718 sec - in io.debezium.embedded.EmbeddedEngineTest
 Running io.debezium.embedded.OffsetCommitPolicyTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec - in io.debezium.embedded.OffsetCommitPolicyTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in io.debezium.embedded.OffsetCommitPolicyTest
 Running io.debezium.connector.simple.SimpleSourceConnectorOutputTest
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.183 sec - in io.debezium.connector.simple.SimpleSourceConnectorOutputTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.371 sec - in io.debezium.connector.simple.SimpleSourceConnectorOutputTest
 
 Results :
 
@@ -1155,17 +1149,17 @@ Tests run: 10, Failures: 0, Errors: 0, Skipped: 0
  T E S T S
 -------------------------------------------------------
 Running io.debezium.connector.mysql.GtidSetTest
-Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.171 sec - in io.debezium.connector.mysql.GtidSetTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.163 sec - in io.debezium.connector.mysql.GtidSetTest
 Running io.debezium.connector.mysql.MySqlConnectorTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.224 sec - in io.debezium.connector.mysql.MySqlConnectorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.175 sec - in io.debezium.connector.mysql.MySqlConnectorTest
 Running io.debezium.connector.mysql.FiltersTest
-Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.135 sec - in io.debezium.connector.mysql.FiltersTest
+Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.132 sec - in io.debezium.connector.mysql.FiltersTest
 Running io.debezium.connector.mysql.SourceInfoTest
-Tests run: 34, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.619 sec - in io.debezium.connector.mysql.SourceInfoTest
+Tests run: 34, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.442 sec - in io.debezium.connector.mysql.SourceInfoTest
 Running io.debezium.connector.mysql.MySqlValueConvertersTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec - in io.debezium.connector.mysql.MySqlValueConvertersTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec - in io.debezium.connector.mysql.MySqlValueConvertersTest
 Running io.debezium.connector.mysql.MySqlSchemaTest
-2018-08-17 20:45:53,515 ERROR  ||  Error parsing DDL statement and updating tables: xxxCREATE TABLE mytable
+2018-08-17 20:47:10,075 ERROR  ||  Error parsing DDL statement and updating tables: xxxCREATE TABLE mytable
 # Create the database that we'll use to populate data and watch the effect in the binlog
 CREATE DATABASE connector_test;
 
@@ -1203,7 +1197,7 @@ CREATE TABLE connector_test.orders (
   FOREIGN KEY order_customer (purchaser) REFERENCES customers(id),
   FOREIGN KEY ordered_product (product_id) REFERENCES products(id)
 ) AUTO_INCREMENT = 10001;   [io.debezium.connector.mysql.MySqlSchema]
-2018-08-17 20:45:53,530 WARN   ||  Ignoring unparseable DDL statement 'xxxCREATE TABLE mytable
+2018-08-17 20:47:10,087 WARN   ||  Ignoring unparseable DDL statement 'xxxCREATE TABLE mytable
 # Create the database that we'll use to populate data and watch the effect in the binlog
 CREATE DATABASE connector_test;
 
@@ -1241,7 +1235,7 @@ CREATE TABLE connector_test.orders (
   FOREIGN KEY order_customer (purchaser) REFERENCES customers(id),
   FOREIGN KEY ordered_product (product_id) REFERENCES products(id)
 ) AUTO_INCREMENT = 10001;': {}   [io.debezium.connector.mysql.MySqlSchema]
-2018-08-17 20:45:53,545 WARN   ||  Ignoring unparseable statements 'xxxCREATE TABLE mytable
+2018-08-17 20:47:10,101 WARN   ||  Ignoring unparseable statements 'xxxCREATE TABLE mytable
 # Create the database that we'll use to populate data and watch the effect in the binlog
 CREATE DATABASE connector_test;
 
@@ -1320,65 +1314,156 @@ io.debezium.text.ParsingException: Expecting token type 128 at line 1, column 1 
 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.303 sec - in io.debezium.connector.mysql.MySqlSchemaTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.646 sec - in io.debezium.connector.mysql.MySqlSchemaTest
 Running io.debezium.connector.mysql.MySqlGeometryTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.123 sec - in io.debezium.connector.mysql.MySqlGeometryTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 sec - in io.debezium.connector.mysql.MySqlGeometryTest
 Running io.debezium.connector.mysql.MySqlUnsignedIntegerConverterTest
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in io.debezium.connector.mysql.MySqlUnsignedIntegerConverterTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in io.debezium.connector.mysql.MySqlUnsignedIntegerConverterTest
 Running io.debezium.connector.mysql.MySqlDdlParserTest
-Tests run: 82, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.836 sec <<< FAILURE! - in io.debezium.connector.mysql.MySqlDdlParserTest
-shouldParseAlterTableStatementWithColumnNamedColumnWithColumnWord(io.debezium.connector.mysql.MySqlDdlParserTest)  Time elapsed: 0.24 sec  <<< ERROR!
-io.debezium.text.ParsingException: Expecting token type 128 at line 1, column 80 but found 'RESTRICT': i`, DROP COLUMN jkl  ===>> RESTRICT
-	at io.debezium.text.TokenStream.consume(TokenStream.java:737)
-	at io.debezium.relational.ddl.DdlParser.consumeStatement(DdlParser.java:568)
-	at io.debezium.relational.ddl.DdlParser.parseUnknownStatement(DdlParser.java:376)
-	at io.debezium.connector.mysql.MySqlDdlParser.parseNextStatement(MySqlDdlParser.java:169)
-	at io.debezium.relational.ddl.DdlParser.parse(DdlParser.java:286)
-	at io.debezium.relational.ddl.DdlParser.parse(DdlParser.java:267)
-	at io.debezium.connector.mysql.MySqlDdlParserTest.shouldParseAlterTableStatementWithColumnNamedColumnWithColumnWord(MySqlDdlParserTest.java:1334)
-
+Tests run: 82, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.363 sec - in io.debezium.connector.mysql.MySqlDdlParserTest
 Running io.debezium.connector.mysql.MySqlTaskContextTest
-Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.102 sec - in io.debezium.connector.mysql.MySqlTaskContextTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.06 sec - in io.debezium.connector.mysql.MySqlTaskContextTest
 Running io.debezium.connector.mysql.TableConvertersTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.007 sec - in io.debezium.connector.mysql.TableConvertersTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.002 sec - in io.debezium.connector.mysql.TableConvertersTest
 Running io.debezium.connector.mysql.ChainedReaderTest
 Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in io.debezium.connector.mysql.ChainedReaderTest
 
 Results :
 
-Tests in error: 
-  MySqlDdlParserTest.shouldParseAlterTableStatementWithColumnNamedColumnWithColumnWord:1334 » Parsing
+Tests run: 178, Failures: 0, Errors: 0, Skipped: 1
 
-Tests run: 178, Failures: 0, Errors: 1, Skipped: 1
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Debezium Connector for PostgreSQL 0.7.2-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-java-version) @ debezium-connector-postgres ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven-version) @ debezium-connector-postgres ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven) @ debezium-connector-postgres ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.3:create (get-scm-revision) @ debezium-connector-postgres ---
+[INFO] 
+[INFO] --- protoc-jar-maven-plugin:3.0.0.1:run (default) @ debezium-connector-postgres ---
+[INFO] Protoc version: 2.6.1
+protoc-jar: protoc version: 261, detected platform: linux/amd64
+[INFO] Protoc command: /tmp/protocjar8102603274316645779/bin/protoc.exe
+[INFO] Input directories:
+[INFO]     /root/workspace/debezium/debezium/324040188/debezium-connector-postgres/src/main/proto
+[INFO] Output targets:
+[INFO]     java: /root/workspace/debezium/debezium/324040188/debezium-connector-postgres/generated-sources (add: main, clean: false, plugin: null, outputOptions: null)
+[INFO]     Processing (java): pg_logicaldec.proto
+protoc-jar: executing: [/tmp/protocjar8102603274316645779/bin/protoc.exe, -I/root/workspace/debezium/debezium/324040188/debezium-connector-postgres/src/main/proto, --java_out=/root/workspace/debezium/debezium/324040188/debezium-connector-postgres/generated-sources, /root/workspace/debezium/debezium/324040188/debezium-connector-postgres/src/main/proto/pg_logicaldec.proto]
+[INFO] Adding generated classes to classpath
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ debezium-connector-postgres ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ debezium-connector-postgres ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 28 source files to /root/workspace/debezium/debezium/324040188/debezium-connector-postgres/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ debezium-connector-postgres ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ debezium-connector-postgres ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ debezium-connector-postgres ---
+[INFO] Surefire report directory: /root/workspace/debezium/debezium/324040188/debezium-connector-postgres/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running io.debezium.connector.postgresql.connection.wal2json.ISODateTimeFormatTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.286 sec - in io.debezium.connector.postgresql.connection.wal2json.ISODateTimeFormatTest
+Running io.debezium.connector.postgresql.CustomTypeEncodingTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in io.debezium.connector.postgresql.CustomTypeEncodingTest
+
+Results :
+
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Debezium Connector for MongoDB 0.7.2-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-java-version) @ debezium-connector-mongodb ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven-version) @ debezium-connector-mongodb ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven) @ debezium-connector-mongodb ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.3:create (get-scm-revision) @ debezium-connector-mongodb ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ debezium-connector-mongodb ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ debezium-connector-mongodb ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ debezium-connector-mongodb ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 6 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ debezium-connector-mongodb ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ debezium-connector-mongodb ---
+[INFO] Surefire report directory: /root/workspace/debezium/debezium/324040188/debezium-connector-mongodb/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running io.debezium.connector.mongodb.CollectionIdTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec - in io.debezium.connector.mongodb.CollectionIdTest
+Running io.debezium.connector.mongodb.FiltersTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.192 sec - in io.debezium.connector.mongodb.FiltersTest
+Running io.debezium.connector.mongodb.SourceInfoTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.173 sec - in io.debezium.connector.mongodb.SourceInfoTest
+Running io.debezium.connector.mongodb.TopicSelectorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in io.debezium.connector.mongodb.TopicSelectorTest
+Running io.debezium.connector.mongodb.ReplicaSetsTest
+Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 sec - in io.debezium.connector.mongodb.ReplicaSetsTest
+Running io.debezium.connector.mongodb.ModuleTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.303 sec - in io.debezium.connector.mongodb.ModuleTest
+Running io.debezium.connector.mongodb.RecordMakersTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.298 sec - in io.debezium.connector.mongodb.RecordMakersTest
+Running io.debezium.connector.mongodb.MongoUtilTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec - in io.debezium.connector.mongodb.MongoUtilTest
+Running io.debezium.connector.mongodb.MongoDbConnectorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec - in io.debezium.connector.mongodb.MongoDbConnectorTest
+
+Results :
+
+Tests run: 71, Failures: 0, Errors: 0, Skipped: 0
 
 [INFO] ------------------------------------------------------------------------
 [INFO] Reactor Summary:
 [INFO] 
-[INFO] Debezium Checkstyle Rules .......................... SUCCESS [  2.232 s]
-[INFO] Debezium Parent POM ................................ SUCCESS [  0.279 s]
-[INFO] Debezium Assembly Descriptors ...................... SUCCESS [  0.525 s]
-[INFO] Debezium Core ...................................... SUCCESS [ 20.099 s]
-[INFO] Debezium Embedded .................................. SUCCESS [  5.555 s]
-[INFO] Debezium Connector for MySQL ....................... FAILURE [  6.635 s]
-[INFO] Debezium Connector for PostgreSQL .................. SKIPPED
-[INFO] Debezium Connector for MongoDB ..................... SKIPPED
+[INFO] Debezium Checkstyle Rules .......................... SUCCESS [  2.347 s]
+[INFO] Debezium Parent POM ................................ SUCCESS [  0.243 s]
+[INFO] Debezium Assembly Descriptors ...................... SUCCESS [  0.553 s]
+[INFO] Debezium Core ...................................... SUCCESS [ 19.345 s]
+[INFO] Debezium Embedded .................................. SUCCESS [  5.655 s]
+[INFO] Debezium Connector for MySQL ....................... SUCCESS [  4.100 s]
+[INFO] Debezium Connector for PostgreSQL .................. SUCCESS [  3.046 s]
+[INFO] Debezium Connector for MongoDB ..................... SUCCESS [  1.914 s]
 [INFO] ------------------------------------------------------------------------
-[INFO] BUILD FAILURE
+[INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 37.023 s
-[INFO] Finished at: 2018-08-17T20:45:57+02:00
-[INFO] Final Memory: 34M/580M
+[INFO] Total time: 38.641 s
+[INFO] Finished at: 2018-08-17T20:47:17+02:00
+[INFO] Final Memory: 33M/582M
 [INFO] ------------------------------------------------------------------------
-[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.18.1:test (default-test) on project debezium-connector-mysql: There are test failures.
-[ERROR] 
-[ERROR] Please refer to /root/workspace/debezium/debezium/324040188/debezium-connector-mysql/target/surefire-reports for the individual test results.
-[ERROR] -> [Help 1]
-[ERROR] 
-[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
-[ERROR] Re-run Maven using the -X switch to enable full debug logging.
-[ERROR] 
-[ERROR] For more information about the errors and possible solutions, please read the following articles:
-[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
-[ERROR] 
-[ERROR] After correcting the problems, you can resume the build with the command
-[ERROR]   mvn <goals> -rf :debezium-connector-mysql
