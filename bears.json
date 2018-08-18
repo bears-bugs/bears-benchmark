@@ -1,0 +1,149 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 410, 
+      "numberRunning": 411, 
+      "numberFailing": 1, 
+      "numberErroring": 0, 
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError", 
+          "isError": false, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 19
+    }, 
+    "failingModule": "/root/workspace/languagetool-org/languagetool/328059601/languagetool-language-modules/de", 
+    "failureDetails": [
+      {
+        "failureName": "java.lang.AssertionError", 
+        "detail": "Did not find one match in sentence 'Ich wei\u00df nicht mehr, was unser langweiligen Thema war.' expected:<1> but was:<0>", 
+        "isError": false, 
+        "testClass": "org.languagetool.rules.de.AgreementRuleTest", 
+        "testMethod": "testDetNounRule"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 4, 
+        "numberRunning": 5, 
+        "testClass": "org.languagetool.rules.de.AgreementRuleTest", 
+        "numberFailing": 1, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/languagetool-org/languagetool/builds/328126913", 
+      "date": "Jan 12, 2018 3:16:14 PM", 
+      "id": 328126913
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/languagetool-org/languagetool/builds/328059601", 
+      "date": "Jan 12, 2018 11:44:57 AM", 
+      "id": 328059601
+    }
+  }, 
+  "repository": {
+    "name": "languagetool-org/languagetool", 
+    "url": "https://github.com/languagetool-org/languagetool", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 11981144
+  }, 
+  "projectMetrics": {
+    "numberSourceFiles": 744, 
+    "numberLibrariesFailingModule": 29, 
+    "numberTestFiles": 482, 
+    "numberModules": 46
+  }, 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 1, 
+      "numberDeleted": 0
+    }
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/languagetool-org/languagetool/commit/40175e0db86714070a4849a5ff9a96cb416a2840", 
+      "sha": "40175e0db86714070a4849a5ff9a96cb416a2840", 
+      "branchName": "master", 
+      "date": "Jan 12, 2018 3:00:55 PM", 
+      "repoName": "languagetool-org/languagetool"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/languagetool-org/languagetool/commit/566004f778ffcb3544f6670dd19bd300f6ca708e", 
+      "sha": "566004f778ffcb3544f6670dd19bd300f6ca708e", 
+      "branchName": "master", 
+      "date": "Jan 12, 2018 11:32:42 AM", 
+      "repoName": "languagetool-org/languagetool"
+    }
+  }, 
+  "type": "passing_passing", 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 154824056, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 892862464, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Aug 18, 2018 8:46:56 PM", 
+    "projectRootPomPath": "./workspace/languagetool-org/languagetool/328059601/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          1, 
+          0, 
+          0, 
+          1, 
+          106
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 108
+      }, 
+      "testing": {
+        "stepDurations": [
+          188
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 188
+      }, 
+      "cloning": {
+        "stepDurations": [
+          281
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 281
+      }
+    }, 
+    "reproductionDateBeginning": "Aug 18, 2018 8:20:50 PM", 
+    "totalDuration": 1555
+  }
+}
