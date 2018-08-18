@@ -1,0 +1,149 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 432, 
+      "numberRunning": 433, 
+      "numberFailing": 0, 
+      "numberErroring": 1, 
+      "failures": [
+        {
+          "failureName": "java.lang.IllegalArgumentException", 
+          "isError": true, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 2
+    }, 
+    "failingModule": "/root/workspace/aicis/fresco/326352434/demos/common", 
+    "failureDetails": [
+      {
+        "failureName": "java.lang.IllegalArgumentException", 
+        "detail": "Error while parsing arguments: IOException accessing store name: src/test/resources/spdz/SPDZ_1_1_0_SSK", 
+        "isError": true, 
+        "testClass": "dk.alexandra.fresco.demo.TestCmdLineUtil", 
+        "testMethod": "testSpdzAritmeticStaticFromCmdLine"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 21, 
+        "numberRunning": 22, 
+        "testClass": "dk.alexandra.fresco.demo.TestCmdLineUtil", 
+        "numberFailing": 0, 
+        "numberErroring": 1, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/aicis/fresco/builds/326420099", 
+      "date": "Jan 8, 2018 4:58:26 PM", 
+      "id": 326420099
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/aicis/fresco/builds/326352434", 
+      "date": "Jan 8, 2018 2:20:20 PM", 
+      "id": 326352434
+    }
+  }, 
+  "repository": {
+    "name": "aicis/fresco", 
+    "url": "https://github.com/aicis/fresco", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 46789213
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/aicis/fresco/commit/2303015379b6694bfa3237548bd8a8f7cd3ca15c", 
+      "sha": "2303015379b6694bfa3237548bd8a8f7cd3ca15c", 
+      "branchName": "demos-test-coverage", 
+      "date": "Jan 8, 2018 4:43:27 PM", 
+      "repoName": "aicis/fresco"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/aicis/fresco/commit/1a046a89f079cecc610434780bb8956ba0b09552", 
+      "sha": "1a046a89f079cecc610434780bb8956ba0b09552", 
+      "branchName": "demos-test-coverage", 
+      "date": "Jan 8, 2018 2:03:53 PM", 
+      "repoName": "aicis/fresco"
+    }
+  }, 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 12, 
+      "numberDeleted": 3
+    }
+  }, 
+  "type": "passing_passing", 
+  "projectMetrics": {
+    "numberSourceFiles": 311, 
+    "numberLibrariesFailingModule": 20, 
+    "numberTestFiles": 137, 
+    "numberModules": 12
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 338517720, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 420478976, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Aug 19, 2018 2:25:00 AM", 
+    "projectRootPomPath": "./workspace/aicis/fresco/326352434/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          0, 
+          0, 
+          0, 
+          0, 
+          84
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 84
+      }, 
+      "testing": {
+        "stepDurations": [
+          945
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 945
+      }, 
+      "cloning": {
+        "stepDurations": [
+          9
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 9
+      }
+    }, 
+    "reproductionDateBeginning": "Aug 19, 2018 1:47:52 AM", 
+    "totalDuration": 2221
+  }
+}
