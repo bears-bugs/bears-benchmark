@@ -1,0 +1,173 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 631, 
+      "numberRunning": 635, 
+      "numberFailing": 0, 
+      "numberErroring": 4, 
+      "failures": [
+        {
+          "failureName": "java.lang.IllegalArgumentException", 
+          "isError": true, 
+          "occurrences": 4
+        }
+      ], 
+      "numberSkipping": 0
+    }, 
+    "failingModule": "/root/workspace/apache/incubator-servicecomb-java-chassis/330826674/service-registry", 
+    "failureDetails": [
+      {
+        "failureName": "java.lang.IllegalArgumentException", 
+        "detail": "No compatible method found: setDescription(org.apache.commons.configuration.Configuration$$EnhancerByMockitoWithCGLIB$$b8e33db, org.apache.servicecomb.serviceregistry.api.registry.Microservice)", 
+        "isError": true, 
+        "testMethod": "testSetDescription", 
+        "testClass": "org.apache.servicecomb.serviceregistry.api.registry.TestMicroserviceFactory"
+      }, 
+      {
+        "failureName": "java.lang.IllegalArgumentException", 
+        "detail": "No compatible method found: setDescription(org.apache.commons.configuration.Configuration$$EnhancerByMockitoWithCGLIB$$b8e33db, org.apache.servicecomb.serviceregistry.api.registry.Microservice)", 
+        "isError": true, 
+        "testMethod": "testSetDescriptionOnEmptyDescription", 
+        "testClass": "org.apache.servicecomb.serviceregistry.api.registry.TestMicroserviceFactory"
+      }, 
+      {
+        "failureName": "java.lang.IllegalArgumentException", 
+        "detail": "No compatible method found: setDescription(org.apache.commons.configuration.Configuration$$EnhancerByMockitoWithCGLIB$$b8e33db, org.apache.servicecomb.serviceregistry.api.registry.Microservice)", 
+        "isError": true, 
+        "testMethod": "testSetDescriptionOnBlankDescription", 
+        "testClass": "org.apache.servicecomb.serviceregistry.api.registry.TestMicroserviceFactory"
+      }, 
+      {
+        "failureName": "java.lang.IllegalArgumentException", 
+        "detail": "No compatible method found: setDescription(org.apache.commons.configuration.Configuration$$EnhancerByMockitoWithCGLIB$$b8e33db, org.apache.servicecomb.serviceregistry.api.registry.Microservice)", 
+        "isError": true, 
+        "testMethod": "testSetDescriptionOnNullDescription", 
+        "testClass": "org.apache.servicecomb.serviceregistry.api.registry.TestMicroserviceFactory"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 2, 
+        "numberRunning": 6, 
+        "testClass": "org.apache.servicecomb.serviceregistry.api.registry.TestMicroserviceFactory", 
+        "numberFailing": 0, 
+        "numberErroring": 4, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/apache/incubator-servicecomb-java-chassis/builds/331080091", 
+      "date": "Jan 20, 2018 6:41:22 AM", 
+      "id": 331080091
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/apache/incubator-servicecomb-java-chassis/builds/330826674", 
+      "date": "Jan 20, 2018 12:54:12 AM", 
+      "id": 330826674
+    }
+  }, 
+  "repository": {
+    "name": "apache/incubator-servicecomb-java-chassis", 
+    "url": "https://github.com/apache/incubator-servicecomb-java-chassis", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 91674936
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/apache/incubator-servicecomb-java-chassis/commit/cf527379812576622834d1651423b8ec1beec6a7", 
+      "sha": "cf527379812576622834d1651423b8ec1beec6a7", 
+      "branchName": "master", 
+      "date": "Jan 20, 2018 3:32:02 AM", 
+      "repoName": "apache/incubator-servicecomb-java-chassis"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/apache/incubator-servicecomb-java-chassis/commit/462f2790bd24ce6cfd84e0c8862caff5db0a784a", 
+      "sha": "462f2790bd24ce6cfd84e0c8862caff5db0a784a", 
+      "branchName": "master", 
+      "date": "Jan 19, 2018 3:10:54 PM", 
+      "repoName": "apache/incubator-servicecomb-java-chassis"
+    }
+  }, 
+  "bugName": "apache-incubator-servicecomb-java-chassis-330826674-331080091", 
+  "version": "latest", 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 1, 
+      "numberDeleted": 19
+    }
+  }, 
+  "type": "passing_passing", 
+  "bugId": "Bears-153", 
+  "projectMetrics": {
+    "numberSourceFiles": 870, 
+    "numberLibrariesFailingModule": 73, 
+    "numberTestFiles": 510, 
+    "numberModules": 64
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 630563936, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 813170688, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Aug 19, 2018 5:57:44 PM", 
+    "projectRootPomPath": "./workspace/apache/incubator-servicecomb-java-chassis/330826674/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          1, 
+          5, 
+          1, 
+          0, 
+          126
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 133
+      }, 
+      "testing": {
+        "stepDurations": [
+          59
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 59
+      }, 
+      "cloning": {
+        "stepDurations": [
+          9
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 9
+      }
+    }, 
+    "reproductionDateBeginning": "Aug 19, 2018 5:47:39 PM", 
+    "totalDuration": 596
+  }
+}
