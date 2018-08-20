@@ -1,0 +1,151 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 36, 
+      "numberRunning": 37, 
+      "numberFailing": 0, 
+      "numberErroring": 1, 
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException", 
+          "isError": true, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 0
+    }, 
+    "failingModule": "/root/workspace/spring-cloud/spring-cloud-gcp/330973656/spring-cloud-gcp-storage", 
+    "failureDetails": [
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "org.springframework.cloud.gcp.storage.GoogleStorageTests", 
+        "testMethod": "testValidObjectWithUnderscore", 
+        "isError": true
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 21, 
+        "numberRunning": 22, 
+        "testClass": "org.springframework.cloud.gcp.storage.GoogleStorageTests", 
+        "numberFailing": 0, 
+        "numberErroring": 1, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/spring-cloud/spring-cloud-gcp/builds/330980388", 
+      "date": "Jan 19, 2018 9:42:27 PM", 
+      "id": 330980388
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/spring-cloud/spring-cloud-gcp/builds/330973656", 
+      "date": "Jan 19, 2018 9:22:50 PM", 
+      "id": 330973656
+    }
+  }, 
+  "repository": {
+    "name": "spring-cloud/spring-cloud-gcp", 
+    "url": "https://github.com/spring-cloud/spring-cloud-gcp", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 86105877
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/spring-cloud/spring-cloud-gcp/commit/6c5a5cede49cfa8c546dcdbeef4b34c0e4e33f95", 
+      "sha": "6c5a5cede49cfa8c546dcdbeef4b34c0e4e33f95", 
+      "branchName": "master", 
+      "date": "Jan 19, 2018 9:37:02 PM", 
+      "repoName": "spring-cloud/spring-cloud-gcp"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/spring-cloud/spring-cloud-gcp/commit/a3a51c0a9c3ec700ac2f3de60c25073fbdbdd41a", 
+      "sha": "a3a51c0a9c3ec700ac2f3de60c25073fbdbdd41a", 
+      "branchName": "master", 
+      "date": "Jan 19, 2018 9:18:46 PM", 
+      "repoName": "spring-cloud/spring-cloud-gcp"
+    }
+  }, 
+  "bugName": "spring-cloud-spring-cloud-gcp-330973656-330980388", 
+  "version": "latest", 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 1, 
+      "numberDeleted": 1
+    }
+  }, 
+  "type": "passing_passing", 
+  "bugId": "Bears-180", 
+  "projectMetrics": {
+    "numberSourceFiles": 95, 
+    "numberLibrariesFailingModule": 68, 
+    "numberTestFiles": 26, 
+    "numberModules": 33
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 326736600, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 457179136, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Aug 20, 2018 4:54:54 AM", 
+    "projectRootPomPath": "./workspace/spring-cloud/spring-cloud-gcp/330973656/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          0, 
+          8, 
+          4, 
+          0, 
+          400
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 412
+      }, 
+      "testing": {
+        "stepDurations": [
+          21
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 21
+      }, 
+      "cloning": {
+        "stepDurations": [
+          4
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 4
+      }
+    }, 
+    "reproductionDateBeginning": "Aug 20, 2018 4:44:37 AM", 
+    "totalDuration": 610
+  }
+}
