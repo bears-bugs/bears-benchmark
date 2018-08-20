@@ -1,0 +1,89 @@
+= Spring Framework on Google Cloud Platform
+
+This project makes it easy for Spring users to run their applications on Google Cloud Platform.
+You can check our project website http://cloud.spring.io/spring-cloud-gcp[here].
+
+For a deep dive into the project, refer to the
+https://docs.spring.io/spring-cloud-gcp/docs/1.0.0.M1/reference/htmlsingle/[Spring
+Cloud GCP Reference Document].
+
+Currently, this repository provides support for:
+
+* link:spring-cloud-gcp-pubsub[Spring Cloud GCP Pub/Sub]
+* link:spring-cloud-gcp-storage[Spring Resource Abstraction for Google Cloud Storage]
+* link:spring-cloud-gcp-integration[Spring Integration Channel Adapters for Google Cloud Pub/Sub]
+* Spring Boot starters
+** link:spring-cloud-gcp-starters/spring-cloud-gcp-starter-core[Core]
+** link:spring-cloud-gcp-starters/spring-cloud-gcp-starter-config[Google Cloud Config]
+** link:spring-cloud-gcp-starters/spring-cloud-gcp-starter-pubsub[Google Cloud Pub/Sub]
+** link:spring-cloud-gcp-starters/spring-cloud-gcp-starter-sql[Google Cloud SQL]
+** link:spring-cloud-gcp-starters/spring-cloud-gcp-starter-storage[Google Cloud Storage]
+** link:spring-cloud-gcp-starters/spring-cloud-gcp-starter-trace[Stackdriver Trace with Spring Cloud Sleuth]
+
+If you have any other ideas, suggestions or bug reports, please use our
+https://github.com/spring-cloud/spring-cloud-gcp/issues[GitHub issue tracker] and let us know!
+We would love to hear from you.
+
+If you want to collaborate in the project, we would also love to get your Pull Requests. Before you
+start working on one, please take a look at our link:CONTRIBUTING.adoc[collaboration manual].
+
+== Spring Milestones Maven Repository
+
+Currently, the Maven artifacts for the project are only available in the Spring Milestones repository.
+You will want to make sure that the repository is added to your `pom.xml` file or globally in your https://maven.apache.org/settings.html[`settings.xml`] file.
+
+[source,xml]
+----
+<repositories>
+    <repository>
+        <id>spring-milestones</id>
+        <name>Spring Milestones</name>
+        <url>https://repo.spring.io/milestone</url>
+    </repository>
+</repositories>
+----
+
+== Spring Cloud GCP Bill of Materials (BOM)
+
+If you're a Maven user, it's probably a good idea to add our BOM to your maven.xml
+`<dependencyManagement>` section. This will allow you to not specify versions for any of the Maven
+dependencies and instead delegate versioning to the BOM.
+
+[source,xml]
+----
+<dependencyManagement>
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-gcp-dependencies</artifactId>
+            <version>1.0.0.M1</version>
+            <type>pom</type>
+            <scope>import</scope>
+        </dependency>
+    </dependencies>
+</dependencyManagement>
+----
+
+== Spring Boot Starters
+
+Spring Boot greatly simplifies the Spring Cloud GCP experience. Our starters handle the object
+instantiation and configuration logic so you don't have to.
+
+Every starter depends on the core starter to provide critical bits of configuration, like the
+GCP project ID or OAuth2 credentials location. You can configure these as properties in, for
+example, a properties file:
+
+[source, yaml]
+----
+spring.cloud.gcp.project-id=[YOUR_GCP_PROJECT_ID]
+spring.cloud.gcp.credentials.location=file:[LOCAL_PRIVATE_KEY_FILE]
+spring.cloud.gcp.credentials.scopes=[SCOPE_1],[SCOPE_2],[SCOPE_3]
+----
+
+These properties are optional and, if not specified, Spring Boot will attempt to automatically find
+them for you. For details on how Spring Boot finds these properties, refer to the desired starter
+README.
+
+NOTE: If your app is running on Google App Engine or Google Compute Engine, in most cases, you should omit
+the `spring.cloud.gcp.credentials.location` property and, instead, let the Spring Cloud GCP Core
+Starter find the correct credentials for those environments.
