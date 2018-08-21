@@ -1,0 +1,151 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 429, 
+      "numberRunning": 430, 
+      "numberFailing": 0, 
+      "numberErroring": 1, 
+      "failures": [
+        {
+          "failureName": "java.lang.UnsupportedOperationException", 
+          "isError": true, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 0
+    }, 
+    "failingModule": "/root/workspace/cpesch/RouteConverter/331125693/navigation-formats", 
+    "failureDetails": [
+      {
+        "failureName": "java.lang.UnsupportedOperationException", 
+        "testClass": "slash.navigation.csv.ExcelFormatTest", 
+        "testMethod": "testSetAndGetTime", 
+        "isError": true
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 0, 
+        "numberRunning": 1, 
+        "testClass": "slash.navigation.csv.ExcelFormatTest", 
+        "numberFailing": 0, 
+        "numberErroring": 1, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/cpesch/RouteConverter/builds/331749933", 
+      "date": "Jan 22, 2018 11:53:38 AM", 
+      "id": 331749933
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/cpesch/RouteConverter/builds/331125693", 
+      "date": "Jan 20, 2018 8:53:18 AM", 
+      "id": 331125693
+    }
+  }, 
+  "repository": {
+    "name": "cpesch/RouteConverter", 
+    "url": "https://github.com/cpesch/RouteConverter", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 1271699
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/cpesch/RouteConverter/commit/81710d9c624fb24dfa08e5bbfe853972b00ba71b", 
+      "sha": "81710d9c624fb24dfa08e5bbfe853972b00ba71b", 
+      "branchName": "master", 
+      "date": "Jan 22, 2018 11:47:15 AM", 
+      "repoName": "cpesch/RouteConverter"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/cpesch/RouteConverter/commit/6776ddcd18f883f1f37810b50e824fcc70e534e6", 
+      "sha": "6776ddcd18f883f1f37810b50e824fcc70e534e6", 
+      "branchName": "master", 
+      "date": "Jan 20, 2018 8:26:26 AM", 
+      "repoName": "cpesch/RouteConverter"
+    }
+  }, 
+  "bugName": "cpesch-RouteConverter-331125693-331749933", 
+  "version": "latest", 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 10, 
+      "numberDeleted": 3
+    }
+  }, 
+  "type": "passing_passing", 
+  "bugId": "Bears-158", 
+  "projectMetrics": {
+    "numberSourceFiles": 1411, 
+    "numberLibrariesFailingModule": 43, 
+    "numberTestFiles": 165, 
+    "numberModules": 46
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 294795312, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 548405248, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Aug 21, 2018 11:23:27 PM", 
+    "projectRootPomPath": "./workspace/cpesch/RouteConverter/331125693/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          1, 
+          0, 
+          0, 
+          0, 
+          158
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 159
+      }, 
+      "testing": {
+        "stepDurations": [
+          34
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 34
+      }, 
+      "cloning": {
+        "stepDurations": [
+          19
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 19
+      }
+    }, 
+    "reproductionDateBeginning": "Aug 21, 2018 11:17:00 PM", 
+    "totalDuration": 380
+  }
+}
