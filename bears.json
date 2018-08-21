@@ -1,0 +1,149 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 410, 
+      "numberRunning": 411, 
+      "numberFailing": 1, 
+      "numberErroring": 0, 
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError", 
+          "isError": false, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 19
+    }, 
+    "failingModule": "/root/workspace/languagetool-org/languagetool/334315742/languagetool-language-modules/de", 
+    "failureDetails": [
+      {
+        "failureName": "java.lang.AssertionError", 
+        "detail": "Found unexpected match in sentence 'Das erlaubt Forschern, neue Versuche durchzuf\u00fchren.': [DE_AGREEMENT:0-21:M\u00f6glicherweise fehlende grammatische \u00dcbereinstimmung zwischen Artikel, Adjektiv und Nomen bez\u00fcglich Kasus, Numerus oder Genus. Beispiel: 'mein kleiner Haus' statt 'mein kleines Haus'] expected:<0> but was:<1>", 
+        "isError": false, 
+        "testClass": "org.languagetool.rules.de.AgreementRuleTest", 
+        "testMethod": "testDetNounRule"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 4, 
+        "numberRunning": 5, 
+        "testClass": "org.languagetool.rules.de.AgreementRuleTest", 
+        "numberFailing": 1, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/languagetool-org/languagetool/builds/334319882", 
+      "date": "Jan 28, 2018 11:16:03 AM", 
+      "id": 334319882
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/languagetool-org/languagetool/builds/334315742", 
+      "date": "Jan 28, 2018 10:53:01 AM", 
+      "id": 334315742
+    }
+  }, 
+  "repository": {
+    "name": "languagetool-org/languagetool", 
+    "url": "https://github.com/languagetool-org/languagetool", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 11981144
+  }, 
+  "projectMetrics": {
+    "numberSourceFiles": 744, 
+    "numberLibrariesFailingModule": 29, 
+    "numberTestFiles": 482, 
+    "numberModules": 46
+  }, 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 0, 
+      "numberDeleted": 5
+    }
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/languagetool-org/languagetool/commit/0a6fab10d6559038b3b5a56b8180fbf7523b7d93", 
+      "sha": "0a6fab10d6559038b3b5a56b8180fbf7523b7d93", 
+      "branchName": "master", 
+      "date": "Jan 28, 2018 11:03:32 AM", 
+      "repoName": "languagetool-org/languagetool"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/languagetool-org/languagetool/commit/452babc2259606eb6a26cbb940b26d4ac6665d83", 
+      "sha": "452babc2259606eb6a26cbb940b26d4ac6665d83", 
+      "branchName": "master", 
+      "date": "Jan 28, 2018 10:40:32 AM", 
+      "repoName": "languagetool-org/languagetool"
+    }
+  }, 
+  "type": "passing_passing", 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 809553496, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 1341128704, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Aug 21, 2018 1:02:31 PM", 
+    "projectRootPomPath": "./workspace/languagetool-org/languagetool/334315742/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          1, 
+          0, 
+          0, 
+          2, 
+          131
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 134
+      }, 
+      "testing": {
+        "stepDurations": [
+          194
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 194
+      }, 
+      "cloning": {
+        "stepDurations": [
+          270
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 270
+      }
+    }, 
+    "reproductionDateBeginning": "Aug 21, 2018 12:36:00 PM", 
+    "totalDuration": 1581
+  }
+}
