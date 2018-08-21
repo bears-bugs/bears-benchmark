@@ -1,0 +1,102 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] swagger-codegen-project
+[INFO] swagger-codegen (core library)
+[INFO] swagger-codegen (executable)
+[INFO] swagger-codegen (maven-plugin)
+[INFO] swagger-generator
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building swagger-codegen-project 2.4.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven) @ swagger-codegen-project ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-versions) @ swagger-codegen-project ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (test-testng) @ swagger-codegen-project ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building swagger-codegen (core library) 2.4.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven) @ swagger-codegen ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-versions) @ swagger-codegen ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ swagger-codegen ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1775 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ swagger-codegen ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ swagger-codegen ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 127 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ swagger-codegen ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ swagger-codegen ---
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.pom (4 KB at 5.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom (3 KB at 119.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar (74 KB at 1207.4 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running io.swagger.codegen.languages.JavaJAXRSSpecServerCodegenTest
+Tests run: 8, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.123 sec <<< FAILURE! - in io.swagger.codegen.languages.JavaJAXRSSpecServerCodegenTest
+verify_that_interfaceOnly_is_removed_from_additional_properties_if_false(io.swagger.codegen.languages.JavaJAXRSSpecServerCodegenTest)  Time elapsed: 0.01 sec  <<< FAILURE!
+java.lang.AssertionError: expected [false] but found [true]
+	at io.swagger.codegen.languages.JavaJAXRSSpecServerCodegenTest.verify_that_interfaceOnly_is_removed_from_additional_properties_if_false(JavaJAXRSSpecServerCodegenTest.java:82)
+
+Running io.swagger.codegen.akkascala.AkkaScalaClientCodegenTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in io.swagger.codegen.akkascala.AkkaScalaClientCodegenTest
+
+Results :
+
+Failed tests: 
+  JavaJAXRSSpecServerCodegenTest.verify_that_interfaceOnly_is_removed_from_additional_properties_if_false:82 expected [false] but found [true]
+
+Tests run: 9, Failures: 1, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] swagger-codegen-project ............................ SUCCESS [  0.977 s]
+[INFO] swagger-codegen (core library) ..................... FAILURE [  4.506 s]
+[INFO] swagger-codegen (executable) ....................... SKIPPED
+[INFO] swagger-codegen (maven-plugin) ..................... SKIPPED
+[INFO] swagger-generator .................................. SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 6.677 s
+[INFO] Finished at: 2018-08-21T22:23:14+02:00
+[INFO] Final Memory: 22M/439M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-test) on project swagger-codegen: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/swagger-api/swagger-codegen/331677749/modules/swagger-codegen/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :swagger-codegen
