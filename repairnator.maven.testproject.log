@@ -46,57 +46,1415 @@
 [INFO] Nothing to compile - all classes are up to date
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ swagger-codegen ---
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.pom (4 KB at 5.0 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom (3 KB at 119.2 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar (74 KB at 1207.4 KB/sec)
 
 -------------------------------------------------------
  T E S T S
 -------------------------------------------------------
 Running io.swagger.codegen.languages.JavaJAXRSSpecServerCodegenTest
-Tests run: 8, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.123 sec <<< FAILURE! - in io.swagger.codegen.languages.JavaJAXRSSpecServerCodegenTest
-verify_that_interfaceOnly_is_removed_from_additional_properties_if_false(io.swagger.codegen.languages.JavaJAXRSSpecServerCodegenTest)  Time elapsed: 0.01 sec  <<< FAILURE!
-java.lang.AssertionError: expected [false] but found [true]
-	at io.swagger.codegen.languages.JavaJAXRSSpecServerCodegenTest.verify_that_interfaceOnly_is_removed_from_additional_properties_if_false(JavaJAXRSSpecServerCodegenTest.java:82)
-
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.094 sec - in io.swagger.codegen.languages.JavaJAXRSSpecServerCodegenTest
 Running io.swagger.codegen.akkascala.AkkaScalaClientCodegenTest
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in io.swagger.codegen.akkascala.AkkaScalaClientCodegenTest
 
 Results :
 
-Failed tests: 
-  JavaJAXRSSpecServerCodegenTest.verify_that_interfaceOnly_is_removed_from_additional_properties_if_false:82 expected [false] but found [true]
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0
 
-Tests run: 9, Failures: 1, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (test-testng) @ swagger-codegen ---
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng/2.19.1/surefire-testng-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng/2.19.1/surefire-testng-2.19.1.pom (3 KB at 6.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.19.1/common-java5-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.19.1/common-java5-2.19.1.pom (3 KB at 118.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng-utils/2.19.1/surefire-testng-utils-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng-utils/2.19.1/surefire-testng-utils-2.19.1.pom (3 KB at 93.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.19.1/surefire-grouper-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.19.1/surefire-grouper-2.19.1.pom (3 KB at 111.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.19.1/common-java5-2.19.1.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng/2.19.1/surefire-testng-2.19.1.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.19.1/surefire-grouper-2.19.1.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng-utils/2.19.1/surefire-testng-utils-2.19.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.19.1/common-java5-2.19.1.jar (44 KB at 378.0 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng-utils/2.19.1/surefire-testng-utils-2.19.1.jar (27 KB at 222.9 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng/2.19.1/surefire-testng-2.19.1.jar (42 KB at 298.3 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.19.1/surefire-grouper-2.19.1.jar (38 KB at 265.7 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+{
+  "name" : "sample",
+  "classname" : "Sample",
+  "description" : "a sample model",
+  "classVarName" : "sample",
+  "modelJson" : "{\n  \"required\" : [ \"id\" ],\n  \"properties\" : {\n    \"id\" : {\n      \"type\" : \"integer\",\n      \"format\" : \"int64\"\n    },\n    \"theDate\" : {\n      \"type\" : \"string\",\n      \"format\" : \"date\"\n    },\n    \"createdAt\" : {\n      \"type\" : \"string\",\n      \"format\" : \"date-time\"\n    }\n  },\n  \"description\" : \"a sample model\"\n}",
+  "classFilename" : "Sample",
+  "unescapedDescription" : "a sample model",
+  "isAlias" : false,
+  "vars" : [ {
+    "baseName" : "id",
+    "getter" : "getId",
+    "setter" : "setId",
+    "datatype" : "Long",
+    "datatypeWithEnum" : "Long",
+    "dataFormat" : "int64",
+    "name" : "id",
+    "defaultValue" : "null",
+    "defaultValueWithParam" : " = data.id;",
+    "baseType" : "Long",
+    "jsonSchema" : "{\n  \"type\" : \"integer\",\n  \"format\" : \"int64\"\n}",
+    "exclusiveMinimum" : false,
+    "exclusiveMaximum" : false,
+    "hasMore" : true,
+    "required" : true,
+    "secondaryParam" : false,
+    "hasMoreNonReadOnly" : true,
+    "isPrimitiveType" : true,
+    "isContainer" : false,
+    "isNotContainer" : true,
+    "isString" : false,
+    "isNumeric" : true,
+    "isInteger" : false,
+    "isLong" : true,
+    "isNumber" : false,
+    "isFloat" : false,
+    "isDouble" : false,
+    "isByteArray" : false,
+    "isBinary" : false,
+    "isFile" : false,
+    "isBoolean" : false,
+    "isDate" : false,
+    "isDateTime" : false,
+    "isUuid" : false,
+    "isListContainer" : false,
+    "isMapContainer" : false,
+    "isEnum" : false,
+    "isReadOnly" : false,
+    "vendorExtensions" : { },
+    "hasValidation" : false,
+    "isInherited" : false,
+    "nameInCamelCase" : "Id",
+    "isXmlAttribute" : false,
+    "isXmlWrapped" : false
+  }, {
+    "baseName" : "theDate",
+    "complexType" : "LocalDate",
+    "getter" : "getTheDate",
+    "setter" : "setTheDate",
+    "datatype" : "LocalDate",
+    "datatypeWithEnum" : "LocalDate",
+    "dataFormat" : "date",
+    "name" : "theDate",
+    "defaultValue" : "null",
+    "defaultValueWithParam" : " = data.theDate;",
+    "baseType" : "LocalDate",
+    "jsonSchema" : "{\n  \"type\" : \"string\",\n  \"format\" : \"date\"\n}",
+    "exclusiveMinimum" : false,
+    "exclusiveMaximum" : false,
+    "hasMore" : true,
+    "required" : false,
+    "secondaryParam" : false,
+    "hasMoreNonReadOnly" : true,
+    "isPrimitiveType" : false,
+    "isContainer" : false,
+    "isNotContainer" : true,
+    "isString" : false,
+    "isNumeric" : false,
+    "isInteger" : false,
+    "isLong" : false,
+    "isNumber" : false,
+    "isFloat" : false,
+    "isDouble" : false,
+    "isByteArray" : false,
+    "isBinary" : false,
+    "isFile" : false,
+    "isBoolean" : false,
+    "isDate" : true,
+    "isDateTime" : false,
+    "isUuid" : false,
+    "isListContainer" : false,
+    "isMapContainer" : false,
+    "isEnum" : false,
+    "isReadOnly" : false,
+    "vendorExtensions" : { },
+    "hasValidation" : false,
+    "isInherited" : false,
+    "nameInCamelCase" : "TheDate",
+    "isXmlAttribute" : false,
+    "isXmlWrapped" : false
+  }, {
+    "baseName" : "createdAt",
+    "complexType" : "DateTime",
+    "getter" : "getCreatedAt",
+    "setter" : "setCreatedAt",
+    "datatype" : "DateTime",
+    "datatypeWithEnum" : "DateTime",
+    "dataFormat" : "date-time",
+    "name" : "createdAt",
+    "defaultValue" : "null",
+    "defaultValueWithParam" : " = data.createdAt;",
+    "baseType" : "DateTime",
+    "jsonSchema" : "{\n  \"type\" : \"string\",\n  \"format\" : \"date-time\"\n}",
+    "exclusiveMinimum" : false,
+    "exclusiveMaximum" : false,
+    "hasMore" : false,
+    "required" : false,
+    "secondaryParam" : false,
+    "hasMoreNonReadOnly" : false,
+    "isPrimitiveType" : false,
+    "isContainer" : false,
+    "isNotContainer" : true,
+    "isString" : false,
+    "isNumeric" : false,
+    "isInteger" : false,
+    "isLong" : false,
+    "isNumber" : false,
+    "isFloat" : false,
+    "isDouble" : false,
+    "isByteArray" : false,
+    "isBinary" : false,
+    "isFile" : false,
+    "isBoolean" : false,
+    "isDate" : false,
+    "isDateTime" : true,
+    "isUuid" : false,
+    "isListContainer" : false,
+    "isMapContainer" : false,
+    "isEnum" : false,
+    "isReadOnly" : false,
+    "vendorExtensions" : { },
+    "hasValidation" : false,
+    "isInherited" : false,
+    "nameInCamelCase" : "CreatedAt",
+    "isXmlAttribute" : false,
+    "isXmlWrapped" : false
+  } ],
+  "requiredVars" : [ {
+    "baseName" : "id",
+    "getter" : "getId",
+    "setter" : "setId",
+    "datatype" : "Long",
+    "datatypeWithEnum" : "Long",
+    "dataFormat" : "int64",
+    "name" : "id",
+    "defaultValue" : "null",
+    "defaultValueWithParam" : " = data.id;",
+    "baseType" : "Long",
+    "jsonSchema" : "{\n  \"type\" : \"integer\",\n  \"format\" : \"int64\"\n}",
+    "exclusiveMinimum" : false,
+    "exclusiveMaximum" : false,
+    "hasMore" : true,
+    "required" : true,
+    "secondaryParam" : false,
+    "hasMoreNonReadOnly" : true,
+    "isPrimitiveType" : true,
+    "isContainer" : false,
+    "isNotContainer" : true,
+    "isString" : false,
+    "isNumeric" : true,
+    "isInteger" : false,
+    "isLong" : true,
+    "isNumber" : false,
+    "isFloat" : false,
+    "isDouble" : false,
+    "isByteArray" : false,
+    "isBinary" : false,
+    "isFile" : false,
+    "isBoolean" : false,
+    "isDate" : false,
+    "isDateTime" : false,
+    "isUuid" : false,
+    "isListContainer" : false,
+    "isMapContainer" : false,
+    "isEnum" : false,
+    "isReadOnly" : false,
+    "vendorExtensions" : { },
+    "hasValidation" : false,
+    "isInherited" : false,
+    "nameInCamelCase" : "Id",
+    "isXmlAttribute" : false,
+    "isXmlWrapped" : false
+  } ],
+  "optionalVars" : [ {
+    "baseName" : "theDate",
+    "complexType" : "LocalDate",
+    "getter" : "getTheDate",
+    "setter" : "setTheDate",
+    "datatype" : "LocalDate",
+    "datatypeWithEnum" : "LocalDate",
+    "dataFormat" : "date",
+    "name" : "theDate",
+    "defaultValue" : "null",
+    "defaultValueWithParam" : " = data.theDate;",
+    "baseType" : "LocalDate",
+    "jsonSchema" : "{\n  \"type\" : \"string\",\n  \"format\" : \"date\"\n}",
+    "exclusiveMinimum" : false,
+    "exclusiveMaximum" : false,
+    "hasMore" : true,
+    "required" : false,
+    "secondaryParam" : false,
+    "hasMoreNonReadOnly" : true,
+    "isPrimitiveType" : false,
+    "isContainer" : false,
+    "isNotContainer" : true,
+    "isString" : false,
+    "isNumeric" : false,
+    "isInteger" : false,
+    "isLong" : false,
+    "isNumber" : false,
+    "isFloat" : false,
+    "isDouble" : false,
+    "isByteArray" : false,
+    "isBinary" : false,
+    "isFile" : false,
+    "isBoolean" : false,
+    "isDate" : true,
+    "isDateTime" : false,
+    "isUuid" : false,
+    "isListContainer" : false,
+    "isMapContainer" : false,
+    "isEnum" : false,
+    "isReadOnly" : false,
+    "vendorExtensions" : { },
+    "hasValidation" : false,
+    "isInherited" : false,
+    "nameInCamelCase" : "TheDate",
+    "isXmlAttribute" : false,
+    "isXmlWrapped" : false
+  }, {
+    "baseName" : "createdAt",
+    "complexType" : "DateTime",
+    "getter" : "getCreatedAt",
+    "setter" : "setCreatedAt",
+    "datatype" : "DateTime",
+    "datatypeWithEnum" : "DateTime",
+    "dataFormat" : "date-time",
+    "name" : "createdAt",
+    "defaultValue" : "null",
+    "defaultValueWithParam" : " = data.createdAt;",
+    "baseType" : "DateTime",
+    "jsonSchema" : "{\n  \"type\" : \"string\",\n  \"format\" : \"date-time\"\n}",
+    "exclusiveMinimum" : false,
+    "exclusiveMaximum" : false,
+    "hasMore" : false,
+    "required" : false,
+    "secondaryParam" : false,
+    "hasMoreNonReadOnly" : false,
+    "isPrimitiveType" : false,
+    "isContainer" : false,
+    "isNotContainer" : true,
+    "isString" : false,
+    "isNumeric" : false,
+    "isInteger" : false,
+    "isLong" : false,
+    "isNumber" : false,
+    "isFloat" : false,
+    "isDouble" : false,
+    "isByteArray" : false,
+    "isBinary" : false,
+    "isFile" : false,
+    "isBoolean" : false,
+    "isDate" : false,
+    "isDateTime" : true,
+    "isUuid" : false,
+    "isListContainer" : false,
+    "isMapContainer" : false,
+    "isEnum" : false,
+    "isReadOnly" : false,
+    "vendorExtensions" : { },
+    "hasValidation" : false,
+    "isInherited" : false,
+    "nameInCamelCase" : "CreatedAt",
+    "isXmlAttribute" : false,
+    "isXmlWrapped" : false
+  } ],
+  "readOnlyVars" : [ ],
+  "readWriteVars" : [ {
+    "baseName" : "id",
+    "getter" : "getId",
+    "setter" : "setId",
+    "datatype" : "Long",
+    "datatypeWithEnum" : "Long",
+    "dataFormat" : "int64",
+    "name" : "id",
+    "defaultValue" : "null",
+    "defaultValueWithParam" : " = data.id;",
+    "baseType" : "Long",
+    "jsonSchema" : "{\n  \"type\" : \"integer\",\n  \"format\" : \"int64\"\n}",
+    "exclusiveMinimum" : false,
+    "exclusiveMaximum" : false,
+    "hasMore" : true,
+    "required" : true,
+    "secondaryParam" : false,
+    "hasMoreNonReadOnly" : true,
+    "isPrimitiveType" : true,
+    "isContainer" : false,
+    "isNotContainer" : true,
+    "isString" : false,
+    "isNumeric" : true,
+    "isInteger" : false,
+    "isLong" : true,
+    "isNumber" : false,
+    "isFloat" : false,
+    "isDouble" : false,
+    "isByteArray" : false,
+    "isBinary" : false,
+    "isFile" : false,
+    "isBoolean" : false,
+    "isDate" : false,
+    "isDateTime" : false,
+    "isUuid" : false,
+    "isListContainer" : false,
+    "isMapContainer" : false,
+    "isEnum" : false,
+    "isReadOnly" : false,
+    "vendorExtensions" : { },
+    "hasValidation" : false,
+    "isInherited" : false,
+    "nameInCamelCase" : "Id",
+    "isXmlAttribute" : false,
+    "isXmlWrapped" : false
+  }, {
+    "baseName" : "theDate",
+    "complexType" : "LocalDate",
+    "getter" : "getTheDate",
+    "setter" : "setTheDate",
+    "datatype" : "LocalDate",
+    "datatypeWithEnum" : "LocalDate",
+    "dataFormat" : "date",
+    "name" : "theDate",
+    "defaultValue" : "null",
+    "defaultValueWithParam" : " = data.theDate;",
+    "baseType" : "LocalDate",
+    "jsonSchema" : "{\n  \"type\" : \"string\",\n  \"format\" : \"date\"\n}",
+    "exclusiveMinimum" : false,
+    "exclusiveMaximum" : false,
+    "hasMore" : true,
+    "required" : false,
+    "secondaryParam" : false,
+    "hasMoreNonReadOnly" : true,
+    "isPrimitiveType" : false,
+    "isContainer" : false,
+    "isNotContainer" : true,
+    "isString" : false,
+    "isNumeric" : false,
+    "isInteger" : false,
+    "isLong" : false,
+    "isNumber" : false,
+    "isFloat" : false,
+    "isDouble" : false,
+    "isByteArray" : false,
+    "isBinary" : false,
+    "isFile" : false,
+    "isBoolean" : false,
+    "isDate" : true,
+    "isDateTime" : false,
+    "isUuid" : false,
+    "isListContainer" : false,
+    "isMapContainer" : false,
+    "isEnum" : false,
+    "isReadOnly" : false,
+    "vendorExtensions" : { },
+    "hasValidation" : false,
+    "isInherited" : false,
+    "nameInCamelCase" : "TheDate",
+    "isXmlAttribute" : false,
+    "isXmlWrapped" : false
+  }, {
+    "baseName" : "createdAt",
+    "complexType" : "DateTime",
+    "getter" : "getCreatedAt",
+    "setter" : "setCreatedAt",
+    "datatype" : "DateTime",
+    "datatypeWithEnum" : "DateTime",
+    "dataFormat" : "date-time",
+    "name" : "createdAt",
+    "defaultValue" : "null",
+    "defaultValueWithParam" : " = data.createdAt;",
+    "baseType" : "DateTime",
+    "jsonSchema" : "{\n  \"type\" : \"string\",\n  \"format\" : \"date-time\"\n}",
+    "exclusiveMinimum" : false,
+    "exclusiveMaximum" : false,
+    "hasMore" : false,
+    "required" : false,
+    "secondaryParam" : false,
+    "hasMoreNonReadOnly" : false,
+    "isPrimitiveType" : false,
+    "isContainer" : false,
+    "isNotContainer" : true,
+    "isString" : false,
+    "isNumeric" : false,
+    "isInteger" : false,
+    "isLong" : false,
+    "isNumber" : false,
+    "isFloat" : false,
+    "isDouble" : false,
+    "isByteArray" : false,
+    "isBinary" : false,
+    "isFile" : false,
+    "isBoolean" : false,
+    "isDate" : false,
+    "isDateTime" : true,
+    "isUuid" : false,
+    "isListContainer" : false,
+    "isMapContainer" : false,
+    "isEnum" : false,
+    "isReadOnly" : false,
+    "vendorExtensions" : { },
+    "hasValidation" : false,
+    "isInherited" : false,
+    "nameInCamelCase" : "CreatedAt",
+    "isXmlAttribute" : false,
+    "isXmlWrapped" : false
+  } ],
+  "allVars" : [ {
+    "baseName" : "id",
+    "getter" : "getId",
+    "setter" : "setId",
+    "datatype" : "Long",
+    "datatypeWithEnum" : "Long",
+    "dataFormat" : "int64",
+    "name" : "id",
+    "defaultValue" : "null",
+    "defaultValueWithParam" : " = data.id;",
+    "baseType" : "Long",
+    "jsonSchema" : "{\n  \"type\" : \"integer\",\n  \"format\" : \"int64\"\n}",
+    "exclusiveMinimum" : false,
+    "exclusiveMaximum" : false,
+    "hasMore" : true,
+    "required" : true,
+    "secondaryParam" : false,
+    "hasMoreNonReadOnly" : true,
+    "isPrimitiveType" : true,
+    "isContainer" : false,
+    "isNotContainer" : true,
+    "isString" : false,
+    "isNumeric" : true,
+    "isInteger" : false,
+    "isLong" : true,
+    "isNumber" : false,
+    "isFloat" : false,
+    "isDouble" : false,
+    "isByteArray" : false,
+    "isBinary" : false,
+    "isFile" : false,
+    "isBoolean" : false,
+    "isDate" : false,
+    "isDateTime" : false,
+    "isUuid" : false,
+    "isListContainer" : false,
+    "isMapContainer" : false,
+    "isEnum" : false,
+    "isReadOnly" : false,
+    "vendorExtensions" : { },
+    "hasValidation" : false,
+    "isInherited" : false,
+    "nameInCamelCase" : "Id",
+    "isXmlAttribute" : false,
+    "isXmlWrapped" : false
+  }, {
+    "baseName" : "theDate",
+    "complexType" : "LocalDate",
+    "getter" : "getTheDate",
+    "setter" : "setTheDate",
+    "datatype" : "LocalDate",
+    "datatypeWithEnum" : "LocalDate",
+    "dataFormat" : "date",
+    "name" : "theDate",
+    "defaultValue" : "null",
+    "defaultValueWithParam" : " = data.theDate;",
+    "baseType" : "LocalDate",
+    "jsonSchema" : "{\n  \"type\" : \"string\",\n  \"format\" : \"date\"\n}",
+    "exclusiveMinimum" : false,
+    "exclusiveMaximum" : false,
+    "hasMore" : true,
+    "required" : false,
+    "secondaryParam" : false,
+    "hasMoreNonReadOnly" : true,
+    "isPrimitiveType" : false,
+    "isContainer" : false,
+    "isNotContainer" : true,
+    "isString" : false,
+    "isNumeric" : false,
+    "isInteger" : false,
+    "isLong" : false,
+    "isNumber" : false,
+    "isFloat" : false,
+    "isDouble" : false,
+    "isByteArray" : false,
+    "isBinary" : false,
+    "isFile" : false,
+    "isBoolean" : false,
+    "isDate" : true,
+    "isDateTime" : false,
+    "isUuid" : false,
+    "isListContainer" : false,
+    "isMapContainer" : false,
+    "isEnum" : false,
+    "isReadOnly" : false,
+    "vendorExtensions" : { },
+    "hasValidation" : false,
+    "isInherited" : false,
+    "nameInCamelCase" : "TheDate",
+    "isXmlAttribute" : false,
+    "isXmlWrapped" : false
+  }, {
+    "baseName" : "createdAt",
+    "complexType" : "DateTime",
+    "getter" : "getCreatedAt",
+    "setter" : "setCreatedAt",
+    "datatype" : "DateTime",
+    "datatypeWithEnum" : "DateTime",
+    "dataFormat" : "date-time",
+    "name" : "createdAt",
+    "defaultValue" : "null",
+    "defaultValueWithParam" : " = data.createdAt;",
+    "baseType" : "DateTime",
+    "jsonSchema" : "{\n  \"type\" : \"string\",\n  \"format\" : \"date-time\"\n}",
+    "exclusiveMinimum" : false,
+    "exclusiveMaximum" : false,
+    "hasMore" : false,
+    "required" : false,
+    "secondaryParam" : false,
+    "hasMoreNonReadOnly" : false,
+    "isPrimitiveType" : false,
+    "isContainer" : false,
+    "isNotContainer" : true,
+    "isString" : false,
+    "isNumeric" : false,
+    "isInteger" : false,
+    "isLong" : false,
+    "isNumber" : false,
+    "isFloat" : false,
+    "isDouble" : false,
+    "isByteArray" : false,
+    "isBinary" : false,
+    "isFile" : false,
+    "isBoolean" : false,
+    "isDate" : false,
+    "isDateTime" : true,
+    "isUuid" : false,
+    "isListContainer" : false,
+    "isMapContainer" : false,
+    "isEnum" : false,
+    "isReadOnly" : false,
+    "vendorExtensions" : { },
+    "hasValidation" : false,
+    "isInherited" : false,
+    "nameInCamelCase" : "CreatedAt",
+    "isXmlAttribute" : false,
+    "isXmlWrapped" : false
+  } ],
+  "parentVars" : [ ],
+  "mandatory" : [ "id" ],
+  "allMandatory" : [ "id" ],
+  "imports" : [ "ApiModel", "ApiModelProperty", "DateTime", "JsonProperty", "LocalDate" ],
+  "hasVars" : true,
+  "emptyVars" : false,
+  "hasMoreModels" : false,
+  "hasEnums" : false,
+  "isEnum" : false,
+  "hasRequired" : true,
+  "hasOptional" : true,
+  "isArrayModel" : false,
+  "hasChildren" : false,
+  "hasOnlyReadOnly" : false,
+  "vendorExtensions" : { }
+}
+{
+  "name" : "sample",
+  "classname" : "Sample",
+  "description" : "a sample model",
+  "classVarName" : "sample",
+  "modelJson" : "{\n  \"required\" : [ \"id\" ],\n  \"properties\" : {\n    \"id\" : {\n      \"type\" : \"integer\",\n      \"format\" : \"int64\"\n    },\n    \"theDate\" : {\n      \"type\" : \"string\",\n      \"format\" : \"date\"\n    },\n    \"createdAt\" : {\n      \"type\" : \"string\",\n      \"format\" : \"date-time\"\n    }\n  },\n  \"description\" : \"a sample model\"\n}",
+  "classFilename" : "Sample",
+  "unescapedDescription" : "a sample model",
+  "isAlias" : false,
+  "vars" : [ {
+    "baseName" : "id",
+    "getter" : "getId",
+    "setter" : "setId",
+    "datatype" : "Long",
+    "datatypeWithEnum" : "Long",
+    "dataFormat" : "int64",
+    "name" : "id",
+    "defaultValue" : "null",
+    "defaultValueWithParam" : " = data.id;",
+    "baseType" : "Long",
+    "jsonSchema" : "{\n  \"type\" : \"integer\",\n  \"format\" : \"int64\"\n}",
+    "exclusiveMinimum" : false,
+    "exclusiveMaximum" : false,
+    "hasMore" : true,
+    "required" : true,
+    "secondaryParam" : false,
+    "hasMoreNonReadOnly" : true,
+    "isPrimitiveType" : true,
+    "isContainer" : false,
+    "isNotContainer" : true,
+    "isString" : false,
+    "isNumeric" : true,
+    "isInteger" : false,
+    "isLong" : true,
+    "isNumber" : false,
+    "isFloat" : false,
+    "isDouble" : false,
+    "isByteArray" : false,
+    "isBinary" : false,
+    "isFile" : false,
+    "isBoolean" : false,
+    "isDate" : false,
+    "isDateTime" : false,
+    "isUuid" : false,
+    "isListContainer" : false,
+    "isMapContainer" : false,
+    "isEnum" : false,
+    "isReadOnly" : false,
+    "vendorExtensions" : { },
+    "hasValidation" : false,
+    "isInherited" : false,
+    "nameInCamelCase" : "Id",
+    "isXmlAttribute" : false,
+    "isXmlWrapped" : false
+  }, {
+    "baseName" : "theDate",
+    "complexType" : "LocalDate",
+    "getter" : "getTheDate",
+    "setter" : "setTheDate",
+    "datatype" : "LocalDate",
+    "datatypeWithEnum" : "LocalDate",
+    "dataFormat" : "date",
+    "name" : "theDate",
+    "defaultValue" : "null",
+    "defaultValueWithParam" : " = data.theDate;",
+    "baseType" : "LocalDate",
+    "jsonSchema" : "{\n  \"type\" : \"string\",\n  \"format\" : \"date\"\n}",
+    "exclusiveMinimum" : false,
+    "exclusiveMaximum" : false,
+    "hasMore" : true,
+    "required" : false,
+    "secondaryParam" : false,
+    "hasMoreNonReadOnly" : true,
+    "isPrimitiveType" : false,
+    "isContainer" : false,
+    "isNotContainer" : true,
+    "isString" : false,
+    "isNumeric" : false,
+    "isInteger" : false,
+    "isLong" : false,
+    "isNumber" : false,
+    "isFloat" : false,
+    "isDouble" : false,
+    "isByteArray" : false,
+    "isBinary" : false,
+    "isFile" : false,
+    "isBoolean" : false,
+    "isDate" : true,
+    "isDateTime" : false,
+    "isUuid" : false,
+    "isListContainer" : false,
+    "isMapContainer" : false,
+    "isEnum" : false,
+    "isReadOnly" : false,
+    "vendorExtensions" : { },
+    "hasValidation" : false,
+    "isInherited" : false,
+    "nameInCamelCase" : "TheDate",
+    "isXmlAttribute" : false,
+    "isXmlWrapped" : false
+  }, {
+    "baseName" : "createdAt",
+    "complexType" : "OffsetDateTime",
+    "getter" : "getCreatedAt",
+    "setter" : "setCreatedAt",
+    "datatype" : "OffsetDateTime",
+    "datatypeWithEnum" : "OffsetDateTime",
+    "dataFormat" : "date-time",
+    "name" : "createdAt",
+    "defaultValue" : "null",
+    "defaultValueWithParam" : " = data.createdAt;",
+    "baseType" : "OffsetDateTime",
+    "jsonSchema" : "{\n  \"type\" : \"string\",\n  \"format\" : \"date-time\"\n}",
+    "exclusiveMinimum" : false,
+    "exclusiveMaximum" : false,
+    "hasMore" : false,
+    "required" : false,
+    "secondaryParam" : false,
+    "hasMoreNonReadOnly" : false,
+    "isPrimitiveType" : false,
+    "isContainer" : false,
+    "isNotContainer" : true,
+    "isString" : false,
+    "isNumeric" : false,
+    "isInteger" : false,
+    "isLong" : false,
+    "isNumber" : false,
+    "isFloat" : false,
+    "isDouble" : false,
+    "isByteArray" : false,
+    "isBinary" : false,
+    "isFile" : false,
+    "isBoolean" : false,
+    "isDate" : false,
+    "isDateTime" : true,
+    "isUuid" : false,
+    "isListContainer" : false,
+    "isMapContainer" : false,
+    "isEnum" : false,
+    "isReadOnly" : false,
+    "vendorExtensions" : { },
+    "hasValidation" : false,
+    "isInherited" : false,
+    "nameInCamelCase" : "CreatedAt",
+    "isXmlAttribute" : false,
+    "isXmlWrapped" : false
+  } ],
+  "requiredVars" : [ {
+    "baseName" : "id",
+    "getter" : "getId",
+    "setter" : "setId",
+    "datatype" : "Long",
+    "datatypeWithEnum" : "Long",
+    "dataFormat" : "int64",
+    "name" : "id",
+    "defaultValue" : "null",
+    "defaultValueWithParam" : " = data.id;",
+    "baseType" : "Long",
+    "jsonSchema" : "{\n  \"type\" : \"integer\",\n  \"format\" : \"int64\"\n}",
+    "exclusiveMinimum" : false,
+    "exclusiveMaximum" : false,
+    "hasMore" : true,
+    "required" : true,
+    "secondaryParam" : false,
+    "hasMoreNonReadOnly" : true,
+    "isPrimitiveType" : true,
+    "isContainer" : false,
+    "isNotContainer" : true,
+    "isString" : false,
+    "isNumeric" : true,
+    "isInteger" : false,
+    "isLong" : true,
+    "isNumber" : false,
+    "isFloat" : false,
+    "isDouble" : false,
+    "isByteArray" : false,
+    "isBinary" : false,
+    "isFile" : false,
+    "isBoolean" : false,
+    "isDate" : false,
+    "isDateTime" : false,
+    "isUuid" : false,
+    "isListContainer" : false,
+    "isMapContainer" : false,
+    "isEnum" : false,
+    "isReadOnly" : false,
+    "vendorExtensions" : { },
+    "hasValidation" : false,
+    "isInherited" : false,
+    "nameInCamelCase" : "Id",
+    "isXmlAttribute" : false,
+    "isXmlWrapped" : false
+  } ],
+  "optionalVars" : [ {
+    "baseName" : "theDate",
+    "complexType" : "LocalDate",
+    "getter" : "getTheDate",
+    "setter" : "setTheDate",
+    "datatype" : "LocalDate",
+    "datatypeWithEnum" : "LocalDate",
+    "dataFormat" : "date",
+    "name" : "theDate",
+    "defaultValue" : "null",
+    "defaultValueWithParam" : " = data.theDate;",
+    "baseType" : "LocalDate",
+    "jsonSchema" : "{\n  \"type\" : \"string\",\n  \"format\" : \"date\"\n}",
+    "exclusiveMinimum" : false,
+    "exclusiveMaximum" : false,
+    "hasMore" : true,
+    "required" : false,
+    "secondaryParam" : false,
+    "hasMoreNonReadOnly" : true,
+    "isPrimitiveType" : false,
+    "isContainer" : false,
+    "isNotContainer" : true,
+    "isString" : false,
+    "isNumeric" : false,
+    "isInteger" : false,
+    "isLong" : false,
+    "isNumber" : false,
+    "isFloat" : false,
+    "isDouble" : false,
+    "isByteArray" : false,
+    "isBinary" : false,
+    "isFile" : false,
+    "isBoolean" : false,
+    "isDate" : true,
+    "isDateTime" : false,
+    "isUuid" : false,
+    "isListContainer" : false,
+    "isMapContainer" : false,
+    "isEnum" : false,
+    "isReadOnly" : false,
+    "vendorExtensions" : { },
+    "hasValidation" : false,
+    "isInherited" : false,
+    "nameInCamelCase" : "TheDate",
+    "isXmlAttribute" : false,
+    "isXmlWrapped" : false
+  }, {
+    "baseName" : "createdAt",
+    "complexType" : "OffsetDateTime",
+    "getter" : "getCreatedAt",
+    "setter" : "setCreatedAt",
+    "datatype" : "OffsetDateTime",
+    "datatypeWithEnum" : "OffsetDateTime",
+    "dataFormat" : "date-time",
+    "name" : "createdAt",
+    "defaultValue" : "null",
+    "defaultValueWithParam" : " = data.createdAt;",
+    "baseType" : "OffsetDateTime",
+    "jsonSchema" : "{\n  \"type\" : \"string\",\n  \"format\" : \"date-time\"\n}",
+    "exclusiveMinimum" : false,
+    "exclusiveMaximum" : false,
+    "hasMore" : false,
+    "required" : false,
+    "secondaryParam" : false,
+    "hasMoreNonReadOnly" : false,
+    "isPrimitiveType" : false,
+    "isContainer" : false,
+    "isNotContainer" : true,
+    "isString" : false,
+    "isNumeric" : false,
+    "isInteger" : false,
+    "isLong" : false,
+    "isNumber" : false,
+    "isFloat" : false,
+    "isDouble" : false,
+    "isByteArray" : false,
+    "isBinary" : false,
+    "isFile" : false,
+    "isBoolean" : false,
+    "isDate" : false,
+    "isDateTime" : true,
+    "isUuid" : false,
+    "isListContainer" : false,
+    "isMapContainer" : false,
+    "isEnum" : false,
+    "isReadOnly" : false,
+    "vendorExtensions" : { },
+    "hasValidation" : false,
+    "isInherited" : false,
+    "nameInCamelCase" : "CreatedAt",
+    "isXmlAttribute" : false,
+    "isXmlWrapped" : false
+  } ],
+  "readOnlyVars" : [ ],
+  "readWriteVars" : [ {
+    "baseName" : "id",
+    "getter" : "getId",
+    "setter" : "setId",
+    "datatype" : "Long",
+    "datatypeWithEnum" : "Long",
+    "dataFormat" : "int64",
+    "name" : "id",
+    "defaultValue" : "null",
+    "defaultValueWithParam" : " = data.id;",
+    "baseType" : "Long",
+    "jsonSchema" : "{\n  \"type\" : \"integer\",\n  \"format\" : \"int64\"\n}",
+    "exclusiveMinimum" : false,
+    "exclusiveMaximum" : false,
+    "hasMore" : true,
+    "required" : true,
+    "secondaryParam" : false,
+    "hasMoreNonReadOnly" : true,
+    "isPrimitiveType" : true,
+    "isContainer" : false,
+    "isNotContainer" : true,
+    "isString" : false,
+    "isNumeric" : true,
+    "isInteger" : false,
+    "isLong" : true,
+    "isNumber" : false,
+    "isFloat" : false,
+    "isDouble" : false,
+    "isByteArray" : false,
+    "isBinary" : false,
+    "isFile" : false,
+    "isBoolean" : false,
+    "isDate" : false,
+    "isDateTime" : false,
+    "isUuid" : false,
+    "isListContainer" : false,
+    "isMapContainer" : false,
+    "isEnum" : false,
+    "isReadOnly" : false,
+    "vendorExtensions" : { },
+    "hasValidation" : false,
+    "isInherited" : false,
+    "nameInCamelCase" : "Id",
+    "isXmlAttribute" : false,
+    "isXmlWrapped" : false
+  }, {
+    "baseName" : "theDate",
+    "complexType" : "LocalDate",
+    "getter" : "getTheDate",
+    "setter" : "setTheDate",
+    "datatype" : "LocalDate",
+    "datatypeWithEnum" : "LocalDate",
+    "dataFormat" : "date",
+    "name" : "theDate",
+    "defaultValue" : "null",
+    "defaultValueWithParam" : " = data.theDate;",
+    "baseType" : "LocalDate",
+    "jsonSchema" : "{\n  \"type\" : \"string\",\n  \"format\" : \"date\"\n}",
+    "exclusiveMinimum" : false,
+    "exclusiveMaximum" : false,
+    "hasMore" : true,
+    "required" : false,
+    "secondaryParam" : false,
+    "hasMoreNonReadOnly" : true,
+    "isPrimitiveType" : false,
+    "isContainer" : false,
+    "isNotContainer" : true,
+    "isString" : false,
+    "isNumeric" : false,
+    "isInteger" : false,
+    "isLong" : false,
+    "isNumber" : false,
+    "isFloat" : false,
+    "isDouble" : false,
+    "isByteArray" : false,
+    "isBinary" : false,
+    "isFile" : false,
+    "isBoolean" : false,
+    "isDate" : true,
+    "isDateTime" : false,
+    "isUuid" : false,
+    "isListContainer" : false,
+    "isMapContainer" : false,
+    "isEnum" : false,
+    "isReadOnly" : false,
+    "vendorExtensions" : { },
+    "hasValidation" : false,
+    "isInherited" : false,
+    "nameInCamelCase" : "TheDate",
+    "isXmlAttribute" : false,
+    "isXmlWrapped" : false
+  }, {
+    "baseName" : "createdAt",
+    "complexType" : "OffsetDateTime",
+    "getter" : "getCreatedAt",
+    "setter" : "setCreatedAt",
+    "datatype" : "OffsetDateTime",
+    "datatypeWithEnum" : "OffsetDateTime",
+    "dataFormat" : "date-time",
+    "name" : "createdAt",
+    "defaultValue" : "null",
+    "defaultValueWithParam" : " = data.createdAt;",
+    "baseType" : "OffsetDateTime",
+    "jsonSchema" : "{\n  \"type\" : \"string\",\n  \"format\" : \"date-time\"\n}",
+    "exclusiveMinimum" : false,
+    "exclusiveMaximum" : false,
+    "hasMore" : false,
+    "required" : false,
+    "secondaryParam" : false,
+    "hasMoreNonReadOnly" : false,
+    "isPrimitiveType" : false,
+    "isContainer" : false,
+    "isNotContainer" : true,
+    "isString" : false,
+    "isNumeric" : false,
+    "isInteger" : false,
+    "isLong" : false,
+    "isNumber" : false,
+    "isFloat" : false,
+    "isDouble" : false,
+    "isByteArray" : false,
+    "isBinary" : false,
+    "isFile" : false,
+    "isBoolean" : false,
+    "isDate" : false,
+    "isDateTime" : true,
+    "isUuid" : false,
+    "isListContainer" : false,
+    "isMapContainer" : false,
+    "isEnum" : false,
+    "isReadOnly" : false,
+    "vendorExtensions" : { },
+    "hasValidation" : false,
+    "isInherited" : false,
+    "nameInCamelCase" : "CreatedAt",
+    "isXmlAttribute" : false,
+    "isXmlWrapped" : false
+  } ],
+  "allVars" : [ {
+    "baseName" : "id",
+    "getter" : "getId",
+    "setter" : "setId",
+    "datatype" : "Long",
+    "datatypeWithEnum" : "Long",
+    "dataFormat" : "int64",
+    "name" : "id",
+    "defaultValue" : "null",
+    "defaultValueWithParam" : " = data.id;",
+    "baseType" : "Long",
+    "jsonSchema" : "{\n  \"type\" : \"integer\",\n  \"format\" : \"int64\"\n}",
+    "exclusiveMinimum" : false,
+    "exclusiveMaximum" : false,
+    "hasMore" : true,
+    "required" : true,
+    "secondaryParam" : false,
+    "hasMoreNonReadOnly" : true,
+    "isPrimitiveType" : true,
+    "isContainer" : false,
+    "isNotContainer" : true,
+    "isString" : false,
+    "isNumeric" : true,
+    "isInteger" : false,
+    "isLong" : true,
+    "isNumber" : false,
+    "isFloat" : false,
+    "isDouble" : false,
+    "isByteArray" : false,
+    "isBinary" : false,
+    "isFile" : false,
+    "isBoolean" : false,
+    "isDate" : false,
+    "isDateTime" : false,
+    "isUuid" : false,
+    "isListContainer" : false,
+    "isMapContainer" : false,
+    "isEnum" : false,
+    "isReadOnly" : false,
+    "vendorExtensions" : { },
+    "hasValidation" : false,
+    "isInherited" : false,
+    "nameInCamelCase" : "Id",
+    "isXmlAttribute" : false,
+    "isXmlWrapped" : false
+  }, {
+    "baseName" : "theDate",
+    "complexType" : "LocalDate",
+    "getter" : "getTheDate",
+    "setter" : "setTheDate",
+    "datatype" : "LocalDate",
+    "datatypeWithEnum" : "LocalDate",
+    "dataFormat" : "date",
+    "name" : "theDate",
+    "defaultValue" : "null",
+    "defaultValueWithParam" : " = data.theDate;",
+    "baseType" : "LocalDate",
+    "jsonSchema" : "{\n  \"type\" : \"string\",\n  \"format\" : \"date\"\n}",
+    "exclusiveMinimum" : false,
+    "exclusiveMaximum" : false,
+    "hasMore" : true,
+    "required" : false,
+    "secondaryParam" : false,
+    "hasMoreNonReadOnly" : true,
+    "isPrimitiveType" : false,
+    "isContainer" : false,
+    "isNotContainer" : true,
+    "isString" : false,
+    "isNumeric" : false,
+    "isInteger" : false,
+    "isLong" : false,
+    "isNumber" : false,
+    "isFloat" : false,
+    "isDouble" : false,
+    "isByteArray" : false,
+    "isBinary" : false,
+    "isFile" : false,
+    "isBoolean" : false,
+    "isDate" : true,
+    "isDateTime" : false,
+    "isUuid" : false,
+    "isListContainer" : false,
+    "isMapContainer" : false,
+    "isEnum" : false,
+    "isReadOnly" : false,
+    "vendorExtensions" : { },
+    "hasValidation" : false,
+    "isInherited" : false,
+    "nameInCamelCase" : "TheDate",
+    "isXmlAttribute" : false,
+    "isXmlWrapped" : false
+  }, {
+    "baseName" : "createdAt",
+    "complexType" : "OffsetDateTime",
+    "getter" : "getCreatedAt",
+    "setter" : "setCreatedAt",
+    "datatype" : "OffsetDateTime",
+    "datatypeWithEnum" : "OffsetDateTime",
+    "dataFormat" : "date-time",
+    "name" : "createdAt",
+    "defaultValue" : "null",
+    "defaultValueWithParam" : " = data.createdAt;",
+    "baseType" : "OffsetDateTime",
+    "jsonSchema" : "{\n  \"type\" : \"string\",\n  \"format\" : \"date-time\"\n}",
+    "exclusiveMinimum" : false,
+    "exclusiveMaximum" : false,
+    "hasMore" : false,
+    "required" : false,
+    "secondaryParam" : false,
+    "hasMoreNonReadOnly" : false,
+    "isPrimitiveType" : false,
+    "isContainer" : false,
+    "isNotContainer" : true,
+    "isString" : false,
+    "isNumeric" : false,
+    "isInteger" : false,
+    "isLong" : false,
+    "isNumber" : false,
+    "isFloat" : false,
+    "isDouble" : false,
+    "isByteArray" : false,
+    "isBinary" : false,
+    "isFile" : false,
+    "isBoolean" : false,
+    "isDate" : false,
+    "isDateTime" : true,
+    "isUuid" : false,
+    "isListContainer" : false,
+    "isMapContainer" : false,
+    "isEnum" : false,
+    "isReadOnly" : false,
+    "vendorExtensions" : { },
+    "hasValidation" : false,
+    "isInherited" : false,
+    "nameInCamelCase" : "CreatedAt",
+    "isXmlAttribute" : false,
+    "isXmlWrapped" : false
+  } ],
+  "parentVars" : [ ],
+  "mandatory" : [ "id" ],
+  "allMandatory" : [ "id" ],
+  "imports" : [ "ApiModel", "ApiModelProperty", "JsonProperty", "LocalDate", "OffsetDateTime" ],
+  "hasVars" : true,
+  "emptyVars" : false,
+  "hasMoreModels" : false,
+  "hasEnums" : false,
+  "isEnum" : false,
+  "hasRequired" : true,
+  "hasOptional" : true,
+  "isArrayModel" : false,
+  "hasChildren" : false,
+  "hasOnlyReadOnly" : false,
+  "vendorExtensions" : { }
+}
+{
+  "swagger" : "2.0",
+  "paths" : {
+    "/foo/baz" : {
+      "post" : {
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "myBody",
+          "required" : false,
+          "schema" : {
+            "$ref" : "#/definitions/User"
+          }
+        } ]
+      }
+    }
+  },
+  "definitions" : {
+    "User" : {
+      "properties" : {
+        "name" : {
+          "type" : "string"
+        }
+      }
+    }
+  }
+}
+{
+  "swagger" : "2.0",
+  "paths" : {
+    "/foo/baz" : {
+      "get" : {
+        "parameters" : [ ],
+        "responses" : {
+          "200" : {
+            "description" : "it works!",
+            "schema" : {
+              "type" : "object",
+              "additionalProperties" : {
+                "type" : "string"
+              },
+              "x-ext" : "ext-prop"
+            },
+            "x-foo" : "bar"
+          }
+        }
+      }
+    }
+  },
+  "definitions" : { }
+}
+[{hasMore=true, mediaType=application/vnd.company.v1+json}, {hasMore=true, mediaType=application/json}, {hasMore=true, mediaType=application/xml}, {hasMore=null, mediaType=text/plain}]
+Tests run: 548, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 29.73 sec - in TestSuite
+
+Results :
+
+Tests run: 548, Failures: 0, Errors: 0, Skipped: 3
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building swagger-codegen (executable) 2.4.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven) @ swagger-codegen-cli ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-versions) @ swagger-codegen-cli ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ swagger-codegen-cli ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ swagger-codegen-cli ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ swagger-codegen-cli ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/swagger-api/swagger-codegen/331677749/modules/swagger-codegen-cli/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ swagger-codegen-cli ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ swagger-codegen-cli ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (test-testng) @ swagger-codegen-cli ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.028 sec - in TestSuite
+
+Results :
+
+Tests run: 22, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building swagger-codegen (maven-plugin) 2.4.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven) @ swagger-codegen-maven-plugin ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-versions) @ swagger-codegen-maven-plugin ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-plugin-plugin:3.4:helpmojo (help-goal) @ swagger-codegen-maven-plugin ---
+[INFO] Using 'UTF-8' encoding to read mojo metadata.
+[INFO] Mojo extractor with id: java-javadoc found 0 mojo descriptors.
+[INFO] Mojo extractor with id: java-annotations found 2 mojo descriptors.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ swagger-codegen-maven-plugin ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/swagger-api/swagger-codegen/331677749/modules/swagger-codegen-maven-plugin/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ swagger-codegen-maven-plugin ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to /root/workspace/swagger-api/swagger-codegen/331677749/modules/swagger-codegen-maven-plugin/target/classes
+[INFO] 
+[INFO] --- maven-plugin-plugin:3.4:descriptor (default-descriptor) @ swagger-codegen-maven-plugin ---
+[INFO] Using 'UTF-8' encoding to read mojo metadata.
+[INFO] Mojo extractor with id: java-javadoc found 0 mojo descriptors.
+[INFO] Mojo extractor with id: java-annotations found 2 mojo descriptors.
+[INFO] 
+[INFO] --- maven-plugin-plugin:3.4:descriptor (mojo-descriptor) @ swagger-codegen-maven-plugin ---
+[INFO] Using 'UTF-8' encoding to read mojo metadata.
+[INFO] Mojo extractor with id: java-javadoc found 0 mojo descriptors.
+[INFO] Mojo extractor with id: java-annotations found 2 mojo descriptors.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ swagger-codegen-maven-plugin ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/swagger-api/swagger-codegen/331677749/modules/swagger-codegen-maven-plugin/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ swagger-codegen-maven-plugin ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ swagger-codegen-maven-plugin ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (test-testng) @ swagger-codegen-maven-plugin ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building swagger-generator 2.4.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven) @ swagger-generator ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-versions) @ swagger-generator ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ swagger-generator ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- download-maven-plugin:1.2.1:wget (swagger-ui) @ swagger-generator ---
+[INFO] Got from cache: /root/./workspace/swagger-api/swagger-codegen/331677749/.m2/.cache/maven-download-plugin/master.tar.gz
+[INFO] Expanding: /root/workspace/swagger-api/swagger-codegen/331677749/modules/swagger-generator/target/master.tar.gz into /root/workspace/swagger-api/swagger-codegen/331677749/modules/swagger-generator/target
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ swagger-generator ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ swagger-generator ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ swagger-generator ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ swagger-generator ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (test-testng) @ swagger-generator ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.722 sec - in TestSuite
+
+Results :
+
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 2
 
 [INFO] ------------------------------------------------------------------------
 [INFO] Reactor Summary:
 [INFO] 
-[INFO] swagger-codegen-project ............................ SUCCESS [  0.977 s]
-[INFO] swagger-codegen (core library) ..................... FAILURE [  4.506 s]
-[INFO] swagger-codegen (executable) ....................... SKIPPED
-[INFO] swagger-codegen (maven-plugin) ..................... SKIPPED
-[INFO] swagger-generator .................................. SKIPPED
+[INFO] swagger-codegen-project ............................ SUCCESS [  1.164 s]
+[INFO] swagger-codegen (core library) ..................... SUCCESS [ 36.656 s]
+[INFO] swagger-codegen (executable) ....................... SUCCESS [  4.391 s]
+[INFO] swagger-codegen (maven-plugin) ..................... SUCCESS [  6.016 s]
+[INFO] swagger-generator .................................. SUCCESS [  3.774 s]
 [INFO] ------------------------------------------------------------------------
-[INFO] BUILD FAILURE
+[INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 6.677 s
-[INFO] Finished at: 2018-08-21T22:23:14+02:00
-[INFO] Final Memory: 22M/439M
+[INFO] Total time: 52.956 s
+[INFO] Finished at: 2018-08-21T22:26:10+02:00
+[INFO] Final Memory: 49M/1029M
 [INFO] ------------------------------------------------------------------------
-[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-test) on project swagger-codegen: There are test failures.
-[ERROR] 
-[ERROR] Please refer to /root/workspace/swagger-api/swagger-codegen/331677749/modules/swagger-codegen/target/surefire-reports for the individual test results.
-[ERROR] -> [Help 1]
-[ERROR] 
-[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
-[ERROR] Re-run Maven using the -X switch to enable full debug logging.
-[ERROR] 
-[ERROR] For more information about the errors and possible solutions, please read the following articles:
-[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
-[ERROR] 
-[ERROR] After correcting the problems, you can resume the build with the command
-[ERROR]   mvn <goals> -rf :swagger-codegen
