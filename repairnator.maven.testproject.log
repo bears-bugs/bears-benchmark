@@ -1,0 +1,647 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] RouteConverter
+[INFO] Code shared by all modules
+[INFO] Code shared by all Navigation modules
+[INFO] Simple REST webservices client
+[INFO] Manage reliable Downloads
+[INFO] Support for the DataSources format
+[INFO] Interface for routing services
+[INFO] BRouter offline routing
+[INFO] Code shared by all UI modules
+[INFO] Interface for elevation services
+[INFO] Interface for geocoding services
+[INFO] Access the Google Maps API services
+[INFO] Support for the GPX formats
+[INFO] Support for the Google Earth KML formats
+[INFO] Read and write all supported navigation formats
+[INFO] Code shared by all MapView modules
+[INFO] Code shared by all browser based MapViews
+[INFO] Access the Feedback service
+[INFO] Access the geonames.org service
+[INFO] GraphHopper offline routing
+[INFO] Read elevation data from HGT files
+[INFO] MapView based on the JavaFX WebView for Java 7
+[INFO] MapView based on the JavaFX WebView for Java 8
+[INFO] Read mapsforge maps and themes
+[INFO] MapView based on mapsforge
+[INFO] Access the OSM Nominatim service
+[INFO] Access the OSM Photon service
+[INFO] ProfileView based on the JFreeChart library
+[INFO] Access the RouteCatalog service
+[INFO] The build license module
+[INFO] The build parent module
+[INFO] Platform-independent command line tool
+[INFO] The RouteConverter command line tool
+[INFO] Platform-independent Online Edition
+[INFO] The RouteConverter UI tool for Linux
+[INFO] The RouteConverter UI tool for Mac OS X
+[INFO] The RouteConverter UI tool for Windows
+[INFO] Platform-independent Offline Edition
+[INFO] The RouteConverter UI tool for Linux (Offline)
+[INFO] The RouteConverter UI tool for Mac OS X (Offline)
+[INFO] The RouteConverter UI tool for Windows (Offline)
+[INFO] Platform-independent TimeAlbum Pro
+[INFO] The TimeAlbum Pro tool for Linux
+[INFO] The TimeAlbum Pro tool for Mac OS X
+[INFO] The TimeAlbum Pro tool for Windows
+[INFO] Tools to generate DataSources for Downloads
+[INFO] Tools to filter resource bundles
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building RouteConverter 2.23-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Code shared by all modules 2.23-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ common ---
+[INFO] Using 'ISO-8859-15' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ common ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 29 source files to /root/workspace/cpesch/RouteConverter/331125693/common/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ common ---
+[INFO] Using 'ISO-8859-15' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/cpesch/RouteConverter/331125693/common/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ common ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ common ---
+[INFO] Downloading: http://subversion.routeconverter.com/public/RouteThirdParty/org/apache/maven/surefire/surefire-junit4/2.20.1/surefire-junit4-2.20.1.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.20.1/surefire-junit4-2.20.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.20.1/surefire-junit4-2.20.1.pom (4 KB at 8.8 KB/sec)
+[INFO] Downloading: http://subversion.routeconverter.com/public/RouteThirdParty/org/apache/maven/surefire/surefire-providers/2.20.1/surefire-providers-2.20.1.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.20.1/surefire-providers-2.20.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.20.1/surefire-providers-2.20.1.pom (3 KB at 99.4 KB/sec)
+[INFO] Downloading: http://subversion.routeconverter.com/public/RouteThirdParty/org/apache/maven/surefire/surefire-junit4/2.20.1/surefire-junit4-2.20.1.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.20.1/surefire-junit4-2.20.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.20.1/surefire-junit4-2.20.1.jar (81 KB at 787.7 KB/sec)
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running slash.common.system.PlatformTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.064 s - in slash.common.system.PlatformTest
+[INFO] Running slash.common.system.VersionTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.123 s - in slash.common.system.VersionTest
+[INFO] Running slash.common.type.CompactCalendarTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in slash.common.type.CompactCalendarTest
+[INFO] Running slash.common.type.HexadecimalNumberTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 s - in slash.common.type.HexadecimalNumberTest
+[INFO] Running slash.common.type.ISO8601Test
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.059 s - in slash.common.type.ISO8601Test
+[INFO] Running slash.common.io.FilesTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 s - in slash.common.io.FilesTest
+[INFO] Running slash.common.io.TransferTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 s - in slash.common.io.TransferTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 42, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Code shared by all Navigation modules 2.23-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ common-navigation ---
+[INFO] Using 'ISO-8859-15' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/cpesch/RouteConverter/331125693/common-navigation/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ common-navigation ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 19 source files to /root/workspace/cpesch/RouteConverter/331125693/common-navigation/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ common-navigation ---
+[INFO] Using 'ISO-8859-15' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/cpesch/RouteConverter/331125693/common-navigation/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ common-navigation ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ common-navigation ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running slash.navigation.common.UnitConversionTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.165 s - in slash.navigation.common.UnitConversionTest
+[INFO] Running slash.navigation.common.PositionParserTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in slash.navigation.common.PositionParserTest
+[INFO] Running slash.navigation.common.UnitSystemTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in slash.navigation.common.UnitSystemTest
+[INFO] Running slash.navigation.common.NavigationConversionTest
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 s - in slash.navigation.common.NavigationConversionTest
+[INFO] Running slash.navigation.common.DegreeFormatTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 s - in slash.navigation.common.DegreeFormatTest
+[INFO] Running slash.navigation.common.BearingTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in slash.navigation.common.BearingTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 44, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Simple REST webservices client 2.23-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ rest ---
+[INFO] Using 'ISO-8859-15' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ rest ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ rest ---
+[INFO] Using 'ISO-8859-15' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/cpesch/RouteConverter/331125693/rest/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ rest ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ rest ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running slash.navigation.rest.RFC2616Test
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.182 s - in slash.navigation.rest.RFC2616Test
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Manage reliable Downloads 2.23-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ download ---
+[INFO] Using 'ISO-8859-15' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/cpesch/RouteConverter/331125693/download/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ download ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ download ---
+[INFO] Using 'ISO-8859-15' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/cpesch/RouteConverter/331125693/download/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ download ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ download ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Support for the DataSources format 2.23-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ datasource ---
+[INFO] Using 'ISO-8859-15' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/cpesch/RouteConverter/331125693/datasource/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ datasource ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ datasource ---
+[INFO] Using 'ISO-8859-15' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ datasource ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ datasource ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running slash.navigation.datasources.DataSourceServiceTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.983 s - in slash.navigation.datasources.DataSourceServiceTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Interface for routing services 2.23-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ routing-service ---
+[INFO] Using 'ISO-8859-15' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/cpesch/RouteConverter/331125693/routing-service/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ routing-service ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ routing-service ---
+[INFO] Using 'ISO-8859-15' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/cpesch/RouteConverter/331125693/routing-service/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ routing-service ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ routing-service ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building BRouter offline routing 2.23-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ brouter ---
+[INFO] Using 'ISO-8859-15' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/cpesch/RouteConverter/331125693/brouter/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ brouter ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ brouter ---
+[INFO] Using 'ISO-8859-15' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ brouter ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ brouter ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running slash.navigation.brouter.BRouterTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.176 s - in slash.navigation.brouter.BRouterTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Code shared by all UI modules 2.23-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ common-gui ---
+[INFO] Using 'ISO-8859-15' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/cpesch/RouteConverter/331125693/common-gui/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ common-gui ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ common-gui ---
+[INFO] Using 'ISO-8859-15' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/cpesch/RouteConverter/331125693/common-gui/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ common-gui ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ common-gui ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running slash.navigation.gui.events.RangeTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.205 s - in slash.navigation.gui.events.RangeTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Interface for elevation services 2.23-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ elevation-service ---
+[INFO] Using 'ISO-8859-15' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/cpesch/RouteConverter/331125693/elevation-service/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ elevation-service ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ elevation-service ---
+[INFO] Using 'ISO-8859-15' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/cpesch/RouteConverter/331125693/elevation-service/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ elevation-service ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ elevation-service ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Interface for geocoding services 2.23-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ geocoding-service ---
+[INFO] Using 'ISO-8859-15' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/cpesch/RouteConverter/331125693/geocoding-service/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ geocoding-service ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ geocoding-service ---
+[INFO] Using 'ISO-8859-15' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/cpesch/RouteConverter/331125693/geocoding-service/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ geocoding-service ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ geocoding-service ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Access the Google Maps API services 2.23-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ googlemaps ---
+[INFO] Using 'ISO-8859-15' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/cpesch/RouteConverter/331125693/googlemaps/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ googlemaps ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ googlemaps ---
+[INFO] Using 'ISO-8859-15' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/cpesch/RouteConverter/331125693/googlemaps/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ googlemaps ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ googlemaps ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Support for the GPX formats 2.23-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ gpx ---
+[INFO] Using 'ISO-8859-15' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/cpesch/RouteConverter/331125693/gpx/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ gpx ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ gpx ---
+[INFO] Using 'ISO-8859-15' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/cpesch/RouteConverter/331125693/gpx/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ gpx ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ gpx ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Support for the Google Earth KML formats 2.23-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ kml ---
+[INFO] Using 'ISO-8859-15' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/cpesch/RouteConverter/331125693/kml/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ kml ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ kml ---
+[INFO] Using 'ISO-8859-15' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/cpesch/RouteConverter/331125693/kml/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ kml ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ kml ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Read and write all supported navigation formats 2.23-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ navigation-formats ---
+[INFO] Using 'ISO-8859-15' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ navigation-formats ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 388 source files to /root/workspace/cpesch/RouteConverter/331125693/navigation-formats/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ navigation-formats ---
+[INFO] Using 'ISO-8859-15' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/cpesch/RouteConverter/331125693/navigation-formats/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ navigation-formats ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ navigation-formats ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running slash.navigation.url.MotoPlanerUrlFormatTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.184 s - in slash.navigation.url.MotoPlanerUrlFormatTest
+[INFO] Running slash.navigation.url.UrlFormatTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 s - in slash.navigation.url.UrlFormatTest
+[INFO] Running slash.navigation.url.GoogleMapsUrlFormatTest
+[INFO] Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.031 s - in slash.navigation.url.GoogleMapsUrlFormatTest
+[INFO] Running slash.navigation.columbus.ColumbusGpsType2FormatTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 s - in slash.navigation.columbus.ColumbusGpsType2FormatTest
+[INFO] Running slash.navigation.columbus.ColumbusNavigationFormatRegistryTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.123 s - in slash.navigation.columbus.ColumbusNavigationFormatRegistryTest
+[INFO] Running slash.navigation.columbus.ColumbusGpsType1FormatTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 s - in slash.navigation.columbus.ColumbusGpsType1FormatTest
+[INFO] Running slash.navigation.columbus.ColumbusGpsBinaryFormatTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in slash.navigation.columbus.ColumbusGpsBinaryFormatTest
+[INFO] Running slash.navigation.copilot.CoPilotFormatTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in slash.navigation.copilot.CoPilotFormatTest
+[INFO] Running slash.navigation.nmn.Nmn4FormatTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in slash.navigation.nmn.Nmn4FormatTest
+[INFO] Running slash.navigation.nmn.Nmn6FormatTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in slash.navigation.nmn.Nmn6FormatTest
+[INFO] Running slash.navigation.nmn.Nmn5FormatTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in slash.navigation.nmn.Nmn5FormatTest
+[INFO] Running slash.navigation.nmn.Nmn6FavoritesFormatTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in slash.navigation.nmn.Nmn6FavoritesFormatTest
+[INFO] Running slash.navigation.nmn.NavigatingPoiWarnerFormatTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in slash.navigation.nmn.NavigatingPoiWarnerFormatTest
+[INFO] Running slash.navigation.nmn.NmnUrlFormatTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 s - in slash.navigation.nmn.NmnUrlFormatTest
+[INFO] Running slash.navigation.gpx.Gpx11ExtensionsTest
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.39 s - in slash.navigation.gpx.Gpx11ExtensionsTest
+[INFO] Running slash.navigation.gpx.GpxFormatTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in slash.navigation.gpx.GpxFormatTest
+[INFO] Running slash.navigation.tour.TourFormatTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in slash.navigation.tour.TourFormatTest
+[INFO] Running slash.navigation.itn.TTTracklogTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 s - in slash.navigation.itn.TTTracklogTest
+[INFO] Running slash.navigation.itn.TomTomRouteFormatTest
+[INFO] Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in slash.navigation.itn.TomTomRouteFormatTest
+[INFO] Running slash.navigation.itn.TripmasterTest
+[INFO] Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.046 s - in slash.navigation.itn.TripmasterTest
+[INFO] Running slash.navigation.itn.LogposTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in slash.navigation.itn.LogposTest
+[INFO] Running slash.navigation.mm.MagicMaps2GoFormatTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in slash.navigation.mm.MagicMaps2GoFormatTest
+[INFO] Running slash.navigation.mm.MagicMapsPthFormatTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in slash.navigation.mm.MagicMapsPthFormatTest
+[INFO] Running slash.navigation.gopal.GoPalTrackFormatTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in slash.navigation.gopal.GoPalTrackFormatTest
+[INFO] Running slash.navigation.tcx.TcxFormatTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in slash.navigation.tcx.TcxFormatTest
+[INFO] Running slash.navigation.ovl.OvlFormatTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in slash.navigation.ovl.OvlFormatTest
+[INFO] Running slash.navigation.simple.QstarzQ1000FormatTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in slash.navigation.simple.QstarzQ1000FormatTest
+[INFO] Running slash.navigation.simple.SygicFormatTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in slash.navigation.simple.SygicFormatTest
+[INFO] Running slash.navigation.simple.ApeMapFormatTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in slash.navigation.simple.ApeMapFormatTest
+[INFO] Running slash.navigation.simple.Route66FormatTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in slash.navigation.simple.Route66FormatTest
+[INFO] Running slash.navigation.simple.KompassFormatTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in slash.navigation.simple.KompassFormatTest
+[INFO] Running slash.navigation.simple.GoRiderGpsFormatTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in slash.navigation.simple.GoRiderGpsFormatTest
+[INFO] Running slash.navigation.simple.Iblue747FormatTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in slash.navigation.simple.Iblue747FormatTest
+[INFO] Running slash.navigation.simple.HaicomLoggerFormatTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in slash.navigation.simple.HaicomLoggerFormatTest
+[INFO] Running slash.navigation.simple.OpelNaviFormatTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in slash.navigation.simple.OpelNaviFormatTest
+[INFO] Running slash.navigation.simple.GpsTunerFormatTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in slash.navigation.simple.GpsTunerFormatTest
+[INFO] Running slash.navigation.simple.GlopusFormatTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in slash.navigation.simple.GlopusFormatTest
+[INFO] Running slash.navigation.simple.GroundTrackFormatTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in slash.navigation.simple.GroundTrackFormatTest
+[INFO] Running slash.navigation.simple.KienzleGpsFormatTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 s - in slash.navigation.simple.KienzleGpsFormatTest
+[INFO] Running slash.navigation.base.BaseNavigationFormatTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in slash.navigation.base.BaseNavigationFormatTest
+[INFO] Running slash.navigation.base.BaseUrlParsingFormatTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in slash.navigation.base.BaseUrlParsingFormatTest
+[INFO] Running slash.navigation.base.TextNavigationFormatTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.801 s - in slash.navigation.base.TextNavigationFormatTest
+[INFO] Running slash.navigation.base.TimeZoneTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 s - in slash.navigation.base.TimeZoneTest
+[INFO] Running slash.navigation.base.NavigationFormatRegistryTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.179 s - in slash.navigation.base.NavigationFormatRegistryTest
+[INFO] Running slash.navigation.base.BoundingBoxTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in slash.navigation.base.BoundingBoxTest
+[INFO] Running slash.navigation.nmea.NmeaFormatTest
+[INFO] Tests run: 27, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.05 s - in slash.navigation.nmea.NmeaFormatTest
+[INFO] Running slash.navigation.nmea.MagellanRouteFormatTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in slash.navigation.nmea.MagellanRouteFormatTest
+[INFO] Running slash.navigation.nmea.MagellanExploristFormatTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in slash.navigation.nmea.MagellanExploristFormatTest
+[INFO] Running slash.navigation.kml.Wbt201LogTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in slash.navigation.kml.Wbt201LogTest
+[INFO] Running slash.navigation.kml.Bt747Test
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in slash.navigation.kml.Bt747Test
+[INFO] Running slash.navigation.kml.TavellogTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in slash.navigation.kml.TavellogTest
+[INFO] Running slash.navigation.kml.Kml22FormatTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.018 s - in slash.navigation.kml.Kml22FormatTest
+[INFO] Running slash.navigation.kml.Kml21FormatTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.162 s - in slash.navigation.kml.Kml21FormatTest
+[INFO] Running slash.navigation.kml.Navigon6310Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in slash.navigation.kml.Navigon6310Test
+[INFO] Running slash.navigation.kml.QstarzTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in slash.navigation.kml.QstarzTest
+[INFO] Running slash.navigation.bcr.BcrRouteTest
+[INFO] Tests run: 32, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.039 s - in slash.navigation.bcr.BcrRouteTest
+[INFO] Running slash.navigation.bcr.MG2009IntranetTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in slash.navigation.bcr.MG2009IntranetTest
+[INFO] Running slash.navigation.bcr.MTP0607FormatTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in slash.navigation.bcr.MTP0607FormatTest
+[INFO] Running slash.navigation.bcr.MTP0809FormatTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in slash.navigation.bcr.MTP0809FormatTest
+[INFO] Running slash.navigation.csv.ExcelFormatTest
+[ERROR] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.006 s <<< FAILURE! - in slash.navigation.csv.ExcelFormatTest
+[ERROR] testSetAndGetTime(slash.navigation.csv.ExcelFormatTest)  Time elapsed: 0.006 s  <<< ERROR!
+java.lang.UnsupportedOperationException
+	at slash.navigation.csv.ExcelFormatTest.testSetAndGetTime(ExcelFormatTest.java:32)
+
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Errors: 
+[ERROR]   ExcelFormatTest.testSetAndGetTime:32 » UnsupportedOperation
+[INFO] 
+[ERROR] Tests run: 333, Failures: 0, Errors: 1, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] RouteConverter ..................................... SUCCESS [  0.003 s]
+[INFO] Code shared by all modules ......................... SUCCESS [  6.486 s]
+[INFO] Code shared by all Navigation modules .............. SUCCESS [  1.924 s]
+[INFO] Simple REST webservices client ..................... SUCCESS [  1.147 s]
+[INFO] Manage reliable Downloads .......................... SUCCESS [  0.101 s]
+[INFO] Support for the DataSources format ................. SUCCESS [  2.120 s]
+[INFO] Interface for routing services ..................... SUCCESS [  0.038 s]
+[INFO] BRouter offline routing ............................ SUCCESS [  1.305 s]
+[INFO] Code shared by all UI modules ...................... SUCCESS [  1.190 s]
+[INFO] Interface for elevation services ................... SUCCESS [  0.044 s]
+[INFO] Interface for geocoding services ................... SUCCESS [  0.029 s]
+[INFO] Access the Google Maps API services ................ SUCCESS [  0.043 s]
+[INFO] Support for the GPX formats ........................ SUCCESS [  0.039 s]
+[INFO] Support for the Google Earth KML formats ........... SUCCESS [  0.190 s]
+[INFO] Read and write all supported navigation formats .... FAILURE [ 14.312 s]
+[INFO] Code shared by all MapView modules ................. SKIPPED
+[INFO] Code shared by all browser based MapViews .......... SKIPPED
+[INFO] Access the Feedback service ........................ SKIPPED
+[INFO] Access the geonames.org service .................... SKIPPED
+[INFO] GraphHopper offline routing ........................ SKIPPED
+[INFO] Read elevation data from HGT files ................. SKIPPED
+[INFO] MapView based on the JavaFX WebView for Java 7 ..... SKIPPED
+[INFO] MapView based on the JavaFX WebView for Java 8 ..... SKIPPED
+[INFO] Read mapsforge maps and themes ..................... SKIPPED
+[INFO] MapView based on mapsforge ......................... SKIPPED
+[INFO] Access the OSM Nominatim service ................... SKIPPED
+[INFO] Access the OSM Photon service ...................... SKIPPED
+[INFO] ProfileView based on the JFreeChart library ........ SKIPPED
+[INFO] Access the RouteCatalog service .................... SKIPPED
+[INFO] The build license module ........................... SKIPPED
+[INFO] The build parent module ............................ SKIPPED
+[INFO] Platform-independent command line tool ............. SKIPPED
+[INFO] The RouteConverter command line tool ............... SKIPPED
+[INFO] Platform-independent Online Edition ................ SKIPPED
+[INFO] The RouteConverter UI tool for Linux ............... SKIPPED
+[INFO] The RouteConverter UI tool for Mac OS X ............ SKIPPED
+[INFO] The RouteConverter UI tool for Windows ............. SKIPPED
+[INFO] Platform-independent Offline Edition ............... SKIPPED
+[INFO] The RouteConverter UI tool for Linux (Offline) ..... SKIPPED
+[INFO] The RouteConverter UI tool for Mac OS X (Offline) .. SKIPPED
+[INFO] The RouteConverter UI tool for Windows (Offline) ... SKIPPED
+[INFO] Platform-independent TimeAlbum Pro ................. SKIPPED
+[INFO] The TimeAlbum Pro tool for Linux ................... SKIPPED
+[INFO] The TimeAlbum Pro tool for Mac OS X ................ SKIPPED
+[INFO] The TimeAlbum Pro tool for Windows ................. SKIPPED
+[INFO] Tools to generate DataSources for Downloads ........ SKIPPED
+[INFO] Tools to filter resource bundles ................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 30.633 s
+[INFO] Finished at: 2018-08-21T23:20:34+02:00
+[INFO] Final Memory: 33M/495M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.20.1:test (default-test) on project navigation-formats: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/cpesch/RouteConverter/331125693/navigation-formats/target/surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :navigation-formats
