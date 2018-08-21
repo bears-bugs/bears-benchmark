@@ -1,0 +1,152 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 645, 
+      "numberRunning": 646, 
+      "numberFailing": 1, 
+      "numberErroring": 0, 
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError", 
+          "isError": false, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 2
+    }, 
+    "failingModule": "/root/workspace/aicis/fresco/335666803/suite/spdz", 
+    "failureDetails": [
+      {
+        "failureName": "java.lang.AssertionError", 
+        "detail": "expected:<247> but was:<48>", 
+        "isError": false, 
+        "testMethod": "testGetNextTriple", 
+        "testClass": "dk.alexandra.fresco.suite.spdz.storage.TestSpdzConfigurableDataSupplier"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 0, 
+        "numberRunning": 1, 
+        "testClass": "dk.alexandra.fresco.suite.spdz.storage.TestSpdzConfigurableDataSupplier", 
+        "numberFailing": 1, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/aicis/fresco/builds/335692003", 
+      "date": "Jan 31, 2018 5:22:45 PM", 
+      "id": 335692003
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/aicis/fresco/builds/335666803", 
+      "date": "Jan 31, 2018 4:33:31 PM", 
+      "id": 335666803
+    }
+  }, 
+  "repository": {
+    "name": "aicis/fresco", 
+    "url": "https://github.com/aicis/fresco", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 46789213
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/aicis/fresco/commit/84f3c14ca7daf9105c4ca89c90a2ebb276b0be40", 
+      "sha": "84f3c14ca7daf9105c4ca89c90a2ebb276b0be40", 
+      "branchName": "226-dummy-supplier", 
+      "date": "Jan 31, 2018 5:04:21 PM", 
+      "repoName": "aicis/fresco"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/aicis/fresco/commit/b523ab08e6af2e7423111f61e2cb938b0cc64cdd", 
+      "sha": "b523ab08e6af2e7423111f61e2cb938b0cc64cdd", 
+      "branchName": "226-dummy-supplier", 
+      "date": "Jan 31, 2018 4:14:00 PM", 
+      "repoName": "aicis/fresco"
+    }
+  }, 
+  "bugName": "aicis-fresco-335666803-335692003", 
+  "version": "latest", 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 2, 
+      "numberDeleted": 2
+    }
+  }, 
+  "type": "passing_passing", 
+  "bugId": "Bears-145", 
+  "projectMetrics": {
+    "numberSourceFiles": 380, 
+    "numberLibrariesFailingModule": 18, 
+    "numberTestFiles": 209, 
+    "numberModules": 15
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 432103040, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 495452160, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Aug 21, 2018 8:28:22 PM", 
+    "projectRootPomPath": "./workspace/aicis/fresco/335666803/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          0, 
+          0, 
+          0, 
+          0, 
+          87
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 87
+      }, 
+      "testing": {
+        "stepDurations": [
+          1252
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 1252
+      }, 
+      "cloning": {
+        "stepDurations": [
+          9
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 9
+      }
+    }, 
+    "reproductionDateBeginning": "Aug 21, 2018 7:42:49 PM", 
+    "totalDuration": 2726
+  }
+}
