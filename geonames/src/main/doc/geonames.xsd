@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="geonames">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" name="code">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="postalcode" type="xs:string" />
+              <xs:element name="name" type="xs:string" />
+              <xs:element name="countryCode" type="xs:string" />
+              <xs:element name="lat" type="xs:decimal" />
+              <xs:element name="lng" type="xs:decimal" />
+              <xs:element name="adminCode1" type="xs:string" />
+              <xs:element name="adminName1" type="xs:string" />
+              <xs:element name="adminCode2" type="xs:string" />
+              <xs:element name="adminName2" type="xs:string" />
+              <xs:element name="adminCode3" type="xs:string" />
+              <xs:element name="adminName3" type="xs:string" />
+              <xs:element name="distance" type="xs:decimal" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="unbounded" name="geoname">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="name" type="xs:string" />
+              <xs:element name="lat" type="xs:decimal" />
+              <xs:element name="lng" type="xs:decimal" />
+              <xs:element name="geonameId" type="xs:unsignedInt" />
+              <xs:element name="countryCode" type="xs:string" />
+              <xs:element name="countryName" type="xs:string" />
+              <xs:element name="fcl" type="xs:string" />
+              <xs:element name="fcode" type="xs:string" />
+              <xs:element name="distance" type="xs:decimal" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" name="status">
+          <xs:complexType>
+            <xs:attribute name="message" type="xs:string" use="required" />
+            <xs:attribute name="value" type="xs:unsignedByte" use="required" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
