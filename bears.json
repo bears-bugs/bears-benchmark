@@ -1,0 +1,151 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 212, 
+      "numberRunning": 213, 
+      "numberFailing": 0, 
+      "numberErroring": 1, 
+      "failures": [
+        {
+          "failureName": "java.lang.StackOverflowError", 
+          "isError": true, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 4
+    }, 
+    "failingModule": "/root/workspace/openzipkin/zipkin/332209085/zipkin2", 
+    "failureDetails": [
+      {
+        "failureName": "java.lang.StackOverflowError", 
+        "testClass": "zipkin2.SpanTest", 
+        "testMethod": "canUsePrimitiveOverloads", 
+        "isError": true
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 10, 
+        "numberRunning": 11, 
+        "testClass": "zipkin2.SpanTest", 
+        "numberFailing": 0, 
+        "numberErroring": 1, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/openzipkin/zipkin/builds/332270677", 
+      "date": "Jan 23, 2018 1:50:34 PM", 
+      "id": 332270677
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/openzipkin/zipkin/builds/332209085", 
+      "date": "Jan 23, 2018 11:05:25 AM", 
+      "id": 332209085
+    }
+  }, 
+  "repository": {
+    "name": "openzipkin/zipkin", 
+    "url": "https://github.com/openzipkin/zipkin", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 4576305
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/openzipkin/zipkin/commit/a5fafd189f532e9322d83b6634d2b13ed82f782a", 
+      "sha": "a5fafd189f532e9322d83b6634d2b13ed82f782a", 
+      "branchName": "master", 
+      "date": "Jan 23, 2018 1:19:12 PM", 
+      "repoName": "openzipkin/zipkin"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/openzipkin/zipkin/commit/4875a0578fb3a131cc24c2457b51753ee189f7ab", 
+      "sha": "4875a0578fb3a131cc24c2457b51753ee189f7ab", 
+      "branchName": "master", 
+      "date": "Jan 23, 2018 10:24:40 AM", 
+      "repoName": "openzipkin/zipkin"
+    }
+  }, 
+  "bugName": "openzipkin-zipkin-332209085-332270677", 
+  "version": "latest", 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 2, 
+      "numberDeleted": 2
+    }
+  }, 
+  "type": "passing_passing", 
+  "bugId": "Bears-176", 
+  "projectMetrics": {
+    "numberSourceFiles": 251, 
+    "numberLibrariesFailingModule": 21, 
+    "numberTestFiles": 170, 
+    "numberModules": 31
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 252704560, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 551550976, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Aug 21, 2018 6:09:36 PM", 
+    "projectRootPomPath": "./workspace/openzipkin/zipkin/332209085/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          0, 
+          1, 
+          0, 
+          0, 
+          284
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 285
+      }, 
+      "testing": {
+        "stepDurations": [
+          19
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 19
+      }, 
+      "cloning": {
+        "stepDurations": [
+          23
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 23
+      }
+    }, 
+    "reproductionDateBeginning": "Aug 21, 2018 5:56:32 PM", 
+    "totalDuration": 775
+  }
+}
