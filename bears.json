@@ -1,0 +1,164 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 3435, 
+      "numberRunning": 3437, 
+      "numberFailing": 2, 
+      "numberErroring": 0, 
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError", 
+          "isError": false, 
+          "occurrences": 1
+        }, 
+        {
+          "failureName": "org.testng.TestException", 
+          "isError": false, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 0
+    }, 
+    "failingModule": "/root/workspace/molgenis/molgenis/336061452/molgenis-semantic-mapper", 
+    "failureDetails": [
+      {
+        "failureName": "org.testng.TestException", 
+        "detail": "\nExpected exception org.molgenis.script.core.ScriptException but got java.lang.NullPointerException", 
+        "isError": false, 
+        "testMethod": "testApplyWithInvalidScript", 
+        "testClass": "org.molgenis.semanticmapper.service.impl.AlgorithmServiceImplTest"
+      }, 
+      {
+        "failureName": "java.lang.AssertionError", 
+        "detail": "expected [algorithm is not defined] but found [Applying an algorithm on a null source value caused an exception. Is the target attribute required?]", 
+        "isError": false, 
+        "testMethod": "testApplyAlgorithmWitInvalidScript", 
+        "testClass": "org.molgenis.semanticmapper.service.impl.AlgorithmServiceImplTest"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 8, 
+        "numberRunning": 10, 
+        "testClass": "org.molgenis.semanticmapper.service.impl.AlgorithmServiceImplTest", 
+        "numberFailing": 2, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/molgenis/molgenis/builds/336065127", 
+      "date": "Feb 1, 2018 1:44:00 PM", 
+      "id": 336065127
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/molgenis/molgenis/builds/336061452", 
+      "date": "Feb 1, 2018 1:19:09 PM", 
+      "id": 336061452
+    }
+  }, 
+  "repository": {
+    "name": "molgenis/molgenis", 
+    "url": "https://github.com/molgenis/molgenis", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 8010626
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/molgenis/molgenis/commit/ad7d5e36da0a5e88be6acaf281c2f74e6f50d796", 
+      "sha": "ad7d5e36da0a5e88be6acaf281c2f74e6f50d796", 
+      "branchName": "6.0", 
+      "date": "Feb 1, 2018 12:55:08 PM", 
+      "repoName": "molgenis/molgenis"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/molgenis/molgenis/commit/bcdf56e5d7f1f49fad793871dbd0cb6ac1f3ad1b", 
+      "sha": "bcdf56e5d7f1f49fad793871dbd0cb6ac1f3ad1b", 
+      "branchName": "6.0", 
+      "date": "Feb 1, 2018 12:45:11 PM", 
+      "repoName": "molgenis/molgenis"
+    }
+  }, 
+  "bugName": "molgenis-molgenis-336061452-336065127", 
+  "version": "latest", 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 12, 
+      "numberDeleted": 12
+    }
+  }, 
+  "type": "passing_passing", 
+  "bugId": "Bears-170", 
+  "projectMetrics": {
+    "numberSourceFiles": 1205, 
+    "numberLibrariesFailingModule": 203, 
+    "numberTestFiles": 515, 
+    "numberModules": 56
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 756121952, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 1293942784, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Aug 22, 2018 11:26:33 PM", 
+    "projectRootPomPath": "./workspace/molgenis/molgenis/336061452/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          1, 
+          1, 
+          0, 
+          0, 
+          497
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 499
+      }, 
+      "testing": {
+        "stepDurations": [
+          541
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 541
+      }, 
+      "cloning": {
+        "stepDurations": [
+          48
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 48
+      }
+    }, 
+    "reproductionDateBeginning": "Aug 22, 2018 10:46:36 PM", 
+    "totalDuration": 2388
+  }
+}
