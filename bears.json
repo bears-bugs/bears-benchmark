@@ -1,0 +1,150 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 872, 
+      "numberRunning": 874, 
+      "numberFailing": 0, 
+      "numberErroring": 2, 
+      "failures": [
+        {
+          "failureName": "java.lang.RuntimeException", 
+          "isError": true, 
+          "occurrences": 2
+        }
+      ], 
+      "numberSkipping": 26
+    }, 
+    "failingModule": "/root/workspace/languagetool-org/languagetool/343169341/languagetool-office-extension", 
+    "failureDetails": [
+      {
+        "failureName": "java.lang.RuntimeException", 
+        "detail": "java.lang.RuntimeException: java.lang.RuntimeException: java.lang.RuntimeException: java.lang.NullPointerException", 
+        "isError": true, 
+        "testClass": "org.languagetool.openoffice.MainTest", 
+        "testMethod": "testDoProofreading"
+      }, 
+      {
+        "failureName": "java.lang.RuntimeException", 
+        "detail": "java.lang.RuntimeException: java.lang.RuntimeException: java.lang.RuntimeException: java.lang.NullPointerException", 
+        "isError": true, 
+        "testClass": "org.languagetool.openoffice.MainTest", 
+        "testMethod": "testVariants"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 1, 
+        "numberRunning": 3, 
+        "testClass": "org.languagetool.openoffice.MainTest", 
+        "numberFailing": 0, 
+        "numberErroring": 2, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/languagetool-org/languagetool/builds/343262003", 
+      "date": "Feb 19, 2018 9:40:35 AM", 
+      "id": 343262003
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/languagetool-org/languagetool/builds/343169341", 
+      "date": "Feb 19, 2018 1:40:31 AM", 
+      "id": 343169341
+    }
+  }, 
+  "repository": {
+    "name": "languagetool-org/languagetool", 
+    "url": "https://github.com/languagetool-org/languagetool", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 11981144
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/languagetool-org/languagetool/commit/428ce2e94bc13ad0487a6ce220fc9c8384277fa6", 
+      "sha": "428ce2e94bc13ad0487a6ce220fc9c8384277fa6", 
+      "branchName": "master", 
+      "date": "Feb 19, 2018 9:22:00 AM", 
+      "repoName": "languagetool-org/languagetool"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/languagetool-org/languagetool/commit/66c9ee9d41f0ad54b93cd3b7cfbc11aba8a6b174", 
+      "sha": "66c9ee9d41f0ad54b93cd3b7cfbc11aba8a6b174", 
+      "branchName": "master", 
+      "date": "Feb 19, 2018 1:23:56 AM", 
+      "repoName": "languagetool-org/languagetool"
+    }
+  }, 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 7, 
+      "numberDeleted": 3
+    }
+  }, 
+  "type": "failing_passing", 
+  "projectMetrics": {
+    "numberSourceFiles": 750, 
+    "numberLibrariesFailingModule": 76, 
+    "numberTestFiles": 488, 
+    "numberModules": 46
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 246783640, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 1385693184, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Aug 24, 2018 9:50:59 PM", 
+    "projectRootPomPath": "./workspace/languagetool-org/languagetool/343169341/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          3, 
+          118
+        ], 
+        "stepNames": [
+          "CheckoutBuggyBuildCandidate", 
+          "BuildProjectBuggyBuildCandidate"
+        ], 
+        "nbSteps": 2, 
+        "totalDuration": 121
+      }, 
+      "testing": {
+        "stepDurations": [
+          761
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidate"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 761
+      }, 
+      "cloning": {
+        "stepDurations": [
+          272
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 272
+      }
+    }, 
+    "reproductionDateBeginning": "Aug 24, 2018 9:15:55 PM", 
+    "totalDuration": 2098
+  }
+}
