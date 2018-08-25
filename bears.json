@@ -1,0 +1,151 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 620, 
+      "numberRunning": 621, 
+      "numberFailing": 1, 
+      "numberErroring": 0, 
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException", 
+          "isError": false, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 0
+    }, 
+    "failingModule": "/root/workspace/linkedin/pinot/342188288/pinot-core", 
+    "failureDetails": [
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "com.linkedin.pinot.core.data.manager.realtime.LLRealtimeSegmentDataManagerTest", 
+        "testMethod": "testSegmentBuildException", 
+        "isError": false
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 12, 
+        "numberRunning": 13, 
+        "testClass": "com.linkedin.pinot.core.data.manager.realtime.LLRealtimeSegmentDataManagerTest", 
+        "numberFailing": 1, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/linkedin/pinot/builds/342446553", 
+      "date": "Feb 16, 2018 6:54:39 PM", 
+      "id": 342446553
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/linkedin/pinot/builds/342188288", 
+      "date": "Feb 16, 2018 5:09:49 AM", 
+      "id": 342188288
+    }
+  }, 
+  "repository": {
+    "name": "linkedin/pinot", 
+    "url": "https://github.com/linkedin/pinot", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 19961085
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/linkedin/pinot/commit/5cb7839f5f8978eaae2a9c31aba72234bad6660e", 
+      "sha": "5cb7839f5f8978eaae2a9c31aba72234bad6660e", 
+      "branchName": "master", 
+      "date": "Feb 16, 2018 6:30:08 PM", 
+      "repoName": "linkedin/pinot"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/linkedin/pinot/commit/ccaa9f5ed02bcd26af78ffc1d4c1126b180566ad", 
+      "sha": "ccaa9f5ed02bcd26af78ffc1d4c1126b180566ad", 
+      "branchName": "master", 
+      "date": "Feb 16, 2018 4:53:41 AM", 
+      "repoName": "linkedin/pinot"
+    }
+  }, 
+  "bugName": "linkedin-pinot-342188288-342446553", 
+  "version": "latest", 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 5, 
+      "numberDeleted": 1
+    }
+  }, 
+  "type": "passing_passing", 
+  "bugId": "Bears-169", 
+  "projectMetrics": {
+    "numberSourceFiles": 1112, 
+    "numberLibrariesFailingModule": 69, 
+    "numberTestFiles": 274, 
+    "numberModules": 13
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 176378872, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 580386816, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Aug 25, 2018 7:43:03 AM", 
+    "projectRootPomPath": "./workspace/linkedin/pinot/342188288/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          2, 
+          0, 
+          0, 
+          1, 
+          422
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 425
+      }, 
+      "testing": {
+        "stepDurations": [
+          845
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 845
+      }, 
+      "cloning": {
+        "stepDurations": [
+          57
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 57
+      }
+    }, 
+    "reproductionDateBeginning": "Aug 25, 2018 6:19:24 AM", 
+    "totalDuration": 5011
+  }
+}
