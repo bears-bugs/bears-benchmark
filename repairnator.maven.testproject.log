@@ -1,0 +1,281 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Spring Data JPA 2.0.4.BUILD-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.0:prepare-agent (jacoco-initialize) @ spring-data-jpa ---
+[INFO] argLine set to -javaagent:/root/./workspace/spring-projects/spring-data-jpa/341944401/.m2/org/jacoco/org.jacoco.agent/0.8.0/org.jacoco.agent-0.8.0-runtime.jar=destfile=/root/workspace/spring-projects/spring-data-jpa/341944401/target/jacoco.exec
+[INFO] 
+[INFO] --- apt-maven-plugin:1.1.3:process (sources) @ spring-data-jpa ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ spring-data-jpa ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 14 resources
+[INFO] 
+[INFO] --- kotlin-maven-plugin:1.1.61:compile (compile) @ spring-data-jpa ---
+[WARNING] No sources found skipping Kotlin compile
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (java-compile) @ spring-data-jpa ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 110 source files to /root/workspace/spring-projects/spring-data-jpa/341944401/target/classes
+[INFO] /root/workspace/spring-projects/spring-data-jpa/341944401/src/main/java/org/springframework/data/jpa/provider/HibernateUtils.java: Some input files use or override a deprecated API.
+[INFO] /root/workspace/spring-projects/spring-data-jpa/341944401/src/main/java/org/springframework/data/jpa/provider/HibernateUtils.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- aspectj-maven-plugin:1.8:compile (default) @ spring-data-jpa ---
+[INFO] Showing AJC message detail for messages of types: [error, warning, fail]
+[WARNING] You aren't using a compiler supported by lombok, so lombok will not work and has been disabled.
+Your processor is: org.aspectj.org.eclipse.jdt.internal.compiler.apt.dispatch.BatchProcessingEnvImpl
+Lombok supports: sun/apple javac 1.6, ECJ
+	<unknown source file>:<no line information>
+
+[INFO] 
+[INFO] --- apt-maven-plugin:1.1.3:test-process (test-sources) @ spring-data-jpa ---
+[ERROR] /root/workspace/spring-projects/spring-data-jpa/341944401/target/generated-test-sources/test-annotations/org/springframework/data/jpa/domain/sample/QAuditableUser.java:25: error: cannot find symbol
+    public final org.springframework.data.jpa.domain.QAbstractAuditable _super = new org.springframework.data.jpa.domain.QAbstractAuditable(this);
+                                                    ^
+  symbol:   class QAbstractAuditable
+  location: package org.springframework.data.jpa.domain
+/root/workspace/spring-projects/spring-data-jpa/341944401/target/generated-test-sources/test-annotations/org/springframework/data/jpa/domain/sample/QAuditableRole.java:25: error: cannot find symbol
+    public final org.springframework.data.jpa.domain.QAbstractAuditable _super = new org.springframework.data.jpa.domain.QAbstractAuditable(this);
+                                                    ^
+  symbol:   class QAbstractAuditable
+  location: package org.springframework.data.jpa.domain
+/root/workspace/spring-projects/spring-data-jpa/341944401/target/generated-test-sources/test-annotations/org/springframework/data/jpa/domain/sample/QCustomAbstractPersistable.java:22: error: cannot find symbol
+    public final org.springframework.data.jpa.domain.QAbstractPersistable _super = new org.springframework.data.jpa.domain.QAbstractPersistable(this);
+                                                    ^
+  symbol:   class QAbstractPersistable
+  location: package org.springframework.data.jpa.domain
+/root/workspace/spring-projects/spring-data-jpa/341944401/target/generated-test-sources/test-annotations/org/springframework/data/jpa/domain/sample/QAccount.java:22: error: cannot find symbol
+    public final org.springframework.data.jpa.domain.QAbstractPersistable _super = new org.springframework.data.jpa.domain.QAbstractPersistable(this);
+                                                    ^
+  symbol:   class QAbstractPersistable
+  location: package org.springframework.data.jpa.domain
+/root/workspace/spring-projects/spring-data-jpa/341944401/target/generated-test-sources/test-annotations/org/springframework/data/jpa/domain/sample/CustomAbstractPersistable_.java:8: error: cannot find symbol
+public abstract class CustomAbstractPersistable_ extends org.springframework.data.jpa.domain.AbstractPersistable_ {
+                                                                                            ^
+  symbol:   class AbstractPersistable_
+  location: package org.springframework.data.jpa.domain
+/root/workspace/spring-projects/spring-data-jpa/341944401/target/generated-test-sources/test-annotations/org/springframework/data/jpa/domain/sample/Account_.java:8: error: cannot find symbol
+public abstract class Account_ extends org.springframework.data.jpa.domain.AbstractPersistable_ {
+                                                                          ^
+  symbol:   class AbstractPersistable_
+  location: package org.springframework.data.jpa.domain
+/root/workspace/spring-projects/spring-data-jpa/341944401/target/generated-test-sources/test-annotations/org/springframework/data/jpa/domain/sample/AuditableUser_.java:10: error: cannot find symbol
+public abstract class AuditableUser_ extends org.springframework.data.jpa.domain.AbstractAuditable_ {
+                                                                                ^
+  symbol:   class AbstractAuditable_
+  location: package org.springframework.data.jpa.domain
+/root/workspace/spring-projects/spring-data-jpa/341944401/target/generated-test-sources/test-annotations/org/springframework/data/jpa/domain/sample/AuditableRole_.java:9: error: cannot find symbol
+public abstract class AuditableRole_ extends org.springframework.data.jpa.domain.AbstractAuditable_ {
+                                                                                ^
+  symbol:   class AbstractAuditable_
+  location: package org.springframework.data.jpa.domain
+8 errors
+
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ spring-data-jpa ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 34 resources
+[INFO] 
+[INFO] --- kotlin-maven-plugin:1.1.61:test-compile (test-compile) @ spring-data-jpa ---
+[WARNING] No sources found skipping Kotlin compile
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (java-test-compile) @ spring-data-jpa ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 246 source files to /root/workspace/spring-projects/spring-data-jpa/341944401/target/test-classes
+[INFO] /root/workspace/spring-projects/spring-data-jpa/341944401/src/test/java/org/springframework/data/jpa/domain/SpecificationsUnitTests.java: Some input files use or override a deprecated API.
+[INFO] /root/workspace/spring-projects/spring-data-jpa/341944401/src/test/java/org/springframework/data/jpa/domain/SpecificationsUnitTests.java: Recompile with -Xlint:deprecation for details.
+[INFO] /root/workspace/spring-projects/spring-data-jpa/341944401/src/test/java/org/springframework/data/jpa/repository/config/AbstractAuditingViaJavaConfigRepositoriesTests.java: /root/workspace/spring-projects/spring-data-jpa/341944401/src/test/java/org/springframework/data/jpa/repository/config/AbstractAuditingViaJavaConfigRepositoriesTests.java uses unchecked or unsafe operations.
+[INFO] /root/workspace/spring-projects/spring-data-jpa/341944401/src/test/java/org/springframework/data/jpa/repository/config/AbstractAuditingViaJavaConfigRepositoriesTests.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12:test (default-test) @ spring-data-jpa ---
+[INFO] Surefire report directory: /root/workspace/spring-projects/spring-data-jpa/341944401/target/surefire-reports
+[INFO] Downloading: https://repo.spring.io/plugins-release/org/apache/maven/surefire/surefire-junit4/2.12/surefire-junit4-2.12.pom
+[INFO] Downloaded: https://repo.spring.io/plugins-release/org/apache/maven/surefire/surefire-junit4/2.12/surefire-junit4-2.12.pom (3 KB at 3.4 KB/sec)
+[INFO] Downloading: https://repo.spring.io/plugins-release/org/apache/maven/surefire/surefire-providers/2.12/surefire-providers-2.12.pom
+[INFO] Downloaded: https://repo.spring.io/plugins-release/org/apache/maven/surefire/surefire-providers/2.12/surefire-providers-2.12.pom (3 KB at 10.0 KB/sec)
+[INFO] Downloading: https://repo.spring.io/plugins-release/org/apache/maven/surefire/surefire-junit4/2.12/surefire-junit4-2.12.jar
+[INFO] Downloaded: https://repo.spring.io/plugins-release/org/apache/maven/surefire/surefire-junit4/2.12/surefire-junit4-2.12.jar (34 KB at 87.3 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12:test (unit-tests) @ spring-data-jpa ---
+[INFO] Surefire report directory: /root/workspace/spring-projects/spring-data-jpa/341944401/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.springframework.data.jpa.domain.SpecificationUnitTests
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.736 sec
+Running org.springframework.data.jpa.domain.SpecificationsUnitTests
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.129 sec
+Running org.springframework.data.jpa.domain.support.AuditingBeanFactoryPostProcessorUnitTests
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.468 sec
+Running org.springframework.data.jpa.domain.support.AuditingNamespaceUnitTests
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.558 sec
+Running org.springframework.data.jpa.domain.support.AnnotationAuditingBeanFactoryPostProcessorUnitTests
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.317 sec
+Running org.springframework.data.jpa.convert.QueryByExamplePredicateBuilderUnitTests
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.906 sec
+Running org.springframework.data.jpa.convert.threeten.Jsr310JpaConvertersUnitTests
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.266 sec
+Running org.springframework.data.jpa.provider.PersistenceProviderUnitTests
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.616 sec
+Running org.springframework.data.jpa.util.JpaMetamodelUnitTests
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.059 sec <<< FAILURE!
+skipsEntityTypesWithoutJavaTypeForIdentifierLookup(org.springframework.data.jpa.util.JpaMetamodelUnitTests)  Time elapsed: 0.019 sec  <<< ERROR!
+java.lang.NullPointerException
+	at org.springframework.data.jpa.util.JpaMetamodel.lambda$isSingleIdAttribute$0(JpaMetamodel.java:79)
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:174)
+	at java.util.Collections$2.tryAdvance(Collections.java:4717)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+	at org.springframework.data.jpa.util.JpaMetamodel.isSingleIdAttribute(JpaMetamodel.java:80)
+	at org.springframework.data.jpa.util.JpaMetamodelUnitTests.skipsEntityTypesWithoutJavaTypeForIdentifierLookup(JpaMetamodelUnitTests.java:48)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.mockito.internal.runners.DefaultInternalRunner$1.run(DefaultInternalRunner.java:78)
+	at org.mockito.internal.runners.DefaultInternalRunner.run(DefaultInternalRunner.java:84)
+	at org.mockito.internal.runners.StrictRunner.run(StrictRunner.java:39)
+	at org.mockito.junit.MockitoJUnitRunner.run(MockitoJUnitRunner.java:161)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:236)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:134)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:113)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:103)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:74)
+Running org.springframework.data.jpa.repository.CrudMethodMetadataUnitTests
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.313 sec
+Running org.springframework.data.jpa.repository.query.StoredProcedureAttributesUnitTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running org.springframework.data.jpa.repository.query.SimpleJpaQueryUnitTests
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.604 sec
+Running org.springframework.data.jpa.repository.query.JpaQueryExecutionUnitTests
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.247 sec
+Running org.springframework.data.jpa.repository.query.ParameterMetadataProviderUnitTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.293 sec
+Running org.springframework.data.jpa.repository.query.Jpa21UtilsUnitTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.073 sec
+Running org.springframework.data.jpa.repository.query.StoredProcedureAttributeSourceUnitTests
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.08 sec
+Running org.springframework.data.jpa.repository.query.QueryParameterSetterFactoryUnitTests
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.276 sec
+Running org.springframework.data.jpa.repository.query.ParameterBinderUnitTests
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.121 sec
+Running org.springframework.data.jpa.repository.query.QueryUtilsUnitTests
+Tests run: 44, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.092 sec
+Running org.springframework.data.jpa.repository.query.ParameterBindingParserUnitTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.74 sec
+Running org.springframework.data.jpa.repository.query.QuotationMapUnitTests
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec
+Running org.springframework.data.jpa.repository.query.JpaQueryLookupStrategyUnitTests
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.068 sec
+Running org.springframework.data.jpa.repository.query.LikeBindingUnitTests
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running org.springframework.data.jpa.repository.query.JpaQueryMethodUnitTests
+Tests run: 39, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.165 sec
+Running org.springframework.data.jpa.repository.query.StringQueryUnitTests
+Tests run: 26, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.477 sec
+Running org.springframework.data.jpa.repository.query.ExpressionBasedStringQueryUnitTests
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
+Running org.springframework.data.jpa.repository.query.NamedQueryUnitTests
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec
+Running org.springframework.data.jpa.repository.query.TupleConverterUnitTests
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.093 sec
+Running org.springframework.data.jpa.repository.query.JpaParametersUnitTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.springframework.data.jpa.repository.config.JpaRepositoryConfigExtensionUnitTests
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.162 sec
+Running org.springframework.data.jpa.repository.config.JpaRepositoriesRegistrarUnitTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.424 sec
+Running org.springframework.data.jpa.repository.config.JpaAuditingRegistrarUnitTests
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.06 sec
+Running org.springframework.data.jpa.repository.cdi.JpaRepositoryExtensionUnitTests
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.064 sec
+Running org.springframework.data.jpa.repository.support.JpaPersistableEntityInformationUnitTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec
+Running org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBeanUnitTests
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.213 sec
+Running org.springframework.data.jpa.repository.support.CrudMethodMetadataPopulatingMethodInterceptorUnitTests
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 sec
+Running org.springframework.data.jpa.repository.support.DefaultJpaContextUnitTests
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.springframework.data.jpa.repository.support.JpaEntityInformationSupportUnitTests
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
+Running org.springframework.data.jpa.repository.support.EntityManagerBeanDefinitionRegistratPostProcessorUnitTests
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 sec
+Running org.springframework.data.jpa.repository.support.JpaRepositoryFactoryUnitTests
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.178 sec
+Running org.springframework.data.jpa.repository.support.EntityManagerFactoryRefUnitTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.162 sec
+Running org.springframework.data.jpa.repository.support.JpaMetamodelEntityInformationUnitTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.1 sec
+Running org.springframework.data.jpa.repository.support.SimpleJpaRepositoryUnitTests
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.069 sec
+Running org.springframework.data.jpa.support.MergingPersistenceUnitManagerUnitTests
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.173 sec
+Running org.springframework.data.jpa.support.ClasspathScanningPersistenceUnitPostProcessorUnitTests
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.063 sec
+Running org.springframework.data.jpa.mapping.JpaMetamodelMappingContextUnitTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.081 sec
+Running org.springframework.data.jpa.mapping.JpaPersistentPropertyImplUnitTests
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.138 sec
+
+Results :
+
+Tests in error: 
+  skipsEntityTypesWithoutJavaTypeForIdentifierLookup(org.springframework.data.jpa.util.JpaMetamodelUnitTests)
+
+Tests run: 305, Failures: 0, Errors: 1, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 42.228 s
+[INFO] Finished at: 2018-08-25T05:08:26+02:00
+[INFO] Final Memory: 61M/1764M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12:test (unit-tests) on project spring-data-jpa: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/spring-projects/spring-data-jpa/341944401/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
