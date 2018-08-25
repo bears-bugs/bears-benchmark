@@ -1,0 +1,148 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 1947, 
+      "numberRunning": 1948, 
+      "numberFailing": 1, 
+      "numberErroring": 0, 
+      "failures": [
+        {
+          "failureName": "junit.framework.ComparisonFailure", 
+          "isError": false, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 0
+    }, 
+    "failingModule": "/root/workspace/Activiti/Activiti/344129788/modules/activiti-engine", 
+    "failureDetails": [
+      {
+        "failureName": "junit.framework.ComparisonFailure", 
+        "detail": "expected:<123> but was:<null>", 
+        "isError": false, 
+        "testClass": "org.activiti.engine.test.bpmn.subprocess.CallActivityTest", 
+        "testMethod": "testCallActivityWithBusinessKey"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 7, 
+        "numberRunning": 8, 
+        "testClass": "org.activiti.engine.test.bpmn.subprocess.CallActivityTest", 
+        "numberFailing": 1, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/Activiti/Activiti/builds/344135577", 
+      "date": "Feb 21, 2018 3:41:09 AM", 
+      "id": 344135577
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/Activiti/Activiti/builds/344129788", 
+      "date": "Feb 21, 2018 3:14:03 AM", 
+      "id": 344129788
+    }
+  }, 
+  "repository": {
+    "name": "Activiti/Activiti", 
+    "url": "https://github.com/Activiti/Activiti", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 5793738
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/Activiti/Activiti/commit/13ae26eae2656bcbe13a5a2f98f71d9a28898e24", 
+      "sha": "13ae26eae2656bcbe13a5a2f98f71d9a28898e24", 
+      "branchName": "daisuke-update-history-inheritBusinessKey-5.x", 
+      "date": "Feb 21, 2018 3:17:53 AM", 
+      "repoName": "Activiti/Activiti"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/Activiti/Activiti/commit/478b89adf3587c3508eae6c30d8a4fe97e1e1a51", 
+      "sha": "478b89adf3587c3508eae6c30d8a4fe97e1e1a51", 
+      "branchName": "daisuke-update-history-inheritBusinessKey-5.x", 
+      "repoName": "Activiti/Activiti"
+    }
+  }, 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 0, 
+      "numberDeleted": 2
+    }
+  }, 
+  "type": "passing_passing", 
+  "projectMetrics": {
+    "numberSourceFiles": 1286, 
+    "numberLibrariesFailingModule": 61, 
+    "numberTestFiles": 482, 
+    "numberModules": 6
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 269978136, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 640155648, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Aug 25, 2018 1:46:49 PM", 
+    "projectRootPomPath": "./workspace/Activiti/Activiti/344129788/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          4, 
+          3, 
+          0, 
+          1, 
+          57
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 65
+      }, 
+      "testing": {
+        "stepDurations": [
+          350
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 350
+      }, 
+      "cloning": {
+        "stepDurations": [
+          35
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 35
+      }
+    }, 
+    "reproductionDateBeginning": "Aug 25, 2018 1:32:30 PM", 
+    "totalDuration": 850
+  }
+}
