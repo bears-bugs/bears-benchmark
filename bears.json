@@ -1,0 +1,152 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 307, 
+      "numberRunning": 308, 
+      "numberFailing": 1, 
+      "numberErroring": 0, 
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError", 
+          "isError": false, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 0
+    }, 
+    "failingModule": "/root/workspace/spring-projects/spring-data-jpa/343344047", 
+    "failureDetails": [
+      {
+        "failureName": "java.lang.AssertionError", 
+        "detail": " Expecting:  <\"Cannot use native queries with dynamic sorting and/or pagination in method public abstract java.util.List org.springframework.data.jpa.repository.query.JpaQueryLookupStrategyUnitTests$UserRepository.findByInvalidNativeQuery(java.lang.String,org.springframework.data.domain.Sort)\"> to contain:  <\"Cannot use native queries with dynamic sorting in method\"> ", 
+        "isError": false, 
+        "testMethod": "sholdThrowMorePreciseExceptionIfTryingToUsePaginationInNativeQueries", 
+        "testClass": "org.springframework.data.jpa.repository.query.JpaQueryLookupStrategyUnitTests"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 1, 
+        "numberRunning": 2, 
+        "testClass": "org.springframework.data.jpa.repository.query.JpaQueryLookupStrategyUnitTests", 
+        "numberFailing": 1, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/spring-projects/spring-data-jpa/builds/343370260", 
+      "date": "Feb 19, 2018 3:35:08 PM", 
+      "id": 343370260
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/spring-projects/spring-data-jpa/builds/343344047", 
+      "date": "Feb 19, 2018 2:27:10 PM", 
+      "id": 343344047
+    }
+  }, 
+  "repository": {
+    "name": "spring-projects/spring-data-jpa", 
+    "url": "https://github.com/spring-projects/spring-data-jpa", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 1072845
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/spring-projects/spring-data-jpa/commit/68efc510dfcd1c5a7df76b7c8bac4a7198471158", 
+      "sha": "68efc510dfcd1c5a7df76b7c8bac4a7198471158", 
+      "branchName": "2.0.x", 
+      "date": "Feb 19, 2018 1:44:05 PM", 
+      "repoName": "spring-projects/spring-data-jpa"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/spring-projects/spring-data-jpa/commit/02bb54eeb915d3b5cca6c1bd19582e3ce3ab1663", 
+      "sha": "02bb54eeb915d3b5cca6c1bd19582e3ce3ab1663", 
+      "branchName": "2.0.x", 
+      "date": "Feb 19, 2018 1:35:42 PM", 
+      "repoName": "spring-projects/spring-data-jpa"
+    }
+  }, 
+  "bugName": "spring-projects-spring-data-jpa-343344047-343370260", 
+  "version": "latest", 
+  "projectMetrics": {
+    "numberSourceFiles": 110, 
+    "numberLibrariesFailingModule": 73, 
+    "numberTestFiles": 247, 
+    "numberModules": 1
+  }, 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 5, 
+      "numberDeleted": 3
+    }
+  }, 
+  "bugId": "Bears-185", 
+  "type": "passing_passing", 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 259824712, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 378535936, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Aug 25, 2018 5:08:59 AM", 
+    "projectRootPomPath": "./workspace/spring-projects/spring-data-jpa/343344047/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          0, 
+          4, 
+          0, 
+          0, 
+          195
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 199
+      }, 
+      "testing": {
+        "stepDurations": [
+          45
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 45
+      }, 
+      "cloning": {
+        "stepDurations": [
+          7
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 7
+      }
+    }, 
+    "reproductionDateBeginning": "Aug 25, 2018 5:00:34 AM", 
+    "totalDuration": 498
+  }
+}
