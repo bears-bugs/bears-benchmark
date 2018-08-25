@@ -1,0 +1,151 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 304, 
+      "numberRunning": 305, 
+      "numberFailing": 0, 
+      "numberErroring": 1, 
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException", 
+          "isError": true, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 0
+    }, 
+    "failingModule": "/root/workspace/spring-projects/spring-data-jpa/341944401", 
+    "failureDetails": [
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "org.springframework.data.jpa.util.JpaMetamodelUnitTests", 
+        "testMethod": "skipsEntityTypesWithoutJavaTypeForIdentifierLookup", 
+        "isError": true
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 0, 
+        "numberRunning": 1, 
+        "testClass": "org.springframework.data.jpa.util.JpaMetamodelUnitTests", 
+        "numberFailing": 0, 
+        "numberErroring": 1, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/spring-projects/spring-data-jpa/builds/342236799", 
+      "date": "Feb 16, 2018 10:02:54 AM", 
+      "id": 342236799
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/spring-projects/spring-data-jpa/builds/341944401", 
+      "date": "Feb 15, 2018 7:39:36 PM", 
+      "id": 341944401
+    }
+  }, 
+  "repository": {
+    "name": "spring-projects/spring-data-jpa", 
+    "url": "https://github.com/spring-projects/spring-data-jpa", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 1072845
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/spring-projects/spring-data-jpa/commit/e35a0987992cc23ba06c6ddc15ae8a01d023bc84", 
+      "sha": "e35a0987992cc23ba06c6ddc15ae8a01d023bc84", 
+      "branchName": "2.0.x", 
+      "date": "Feb 16, 2018 9:19:37 AM", 
+      "repoName": "spring-projects/spring-data-jpa"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/spring-projects/spring-data-jpa/commit/1f5e757448be44559770c8b7c6709da559e0d528", 
+      "sha": "1f5e757448be44559770c8b7c6709da559e0d528", 
+      "branchName": "2.0.x", 
+      "date": "Feb 15, 2018 4:12:15 PM", 
+      "repoName": "spring-projects/spring-data-jpa"
+    }
+  }, 
+  "bugName": "spring-projects-spring-data-jpa-341944401-342236799", 
+  "version": "latest", 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 1, 
+      "numberDeleted": 1
+    }
+  }, 
+  "type": "passing_passing", 
+  "bugId": "Bears-184", 
+  "projectMetrics": {
+    "numberSourceFiles": 110, 
+    "numberLibrariesFailingModule": 73, 
+    "numberTestFiles": 246, 
+    "numberModules": 1
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 262591144, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 381681664, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Aug 25, 2018 5:12:41 AM", 
+    "projectRootPomPath": "./workspace/spring-projects/spring-data-jpa/341944401/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          0, 
+          2, 
+          0, 
+          0, 
+          182
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 184
+      }, 
+      "testing": {
+        "stepDurations": [
+          46
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 46
+      }, 
+      "cloning": {
+        "stepDurations": [
+          6
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 6
+      }
+    }, 
+    "reproductionDateBeginning": "Aug 25, 2018 5:04:30 AM", 
+    "totalDuration": 486
+  }
+}
