@@ -1,0 +1,2 @@
+- name: Create the none authentication service
+  shell: oc process -f {{ playbook_dir }}/templates/addons/none-authservice.yaml | oc apply -n {{ namespace }} -f -
