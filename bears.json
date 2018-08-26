@@ -1,0 +1,159 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 124, 
+      "numberRunning": 126, 
+      "numberFailing": 2, 
+      "numberErroring": 0, 
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError", 
+          "isError": false, 
+          "occurrences": 2
+        }
+      ], 
+      "numberSkipping": 4
+    }, 
+    "failingModule": "/root/workspace/EnMasseProject/enmasse/344945686/address-controller", 
+    "failureDetails": [
+      {
+        "failureName": "java.lang.AssertionError", 
+        "detail": "Expected exception for duplicate address", 
+        "isError": false, 
+        "testMethod": "testDuplicateAddresses", 
+        "testClass": "io.enmasse.controller.api.v1.AddressApiHelperTest"
+      }, 
+      {
+        "failureName": "java.lang.AssertionError", 
+        "detail": "Expected exception for duplicate address", 
+        "isError": false, 
+        "testMethod": "testDuplicateAddressesInRequest", 
+        "testClass": "io.enmasse.controller.api.v1.AddressApiHelperTest"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 1, 
+        "numberRunning": 3, 
+        "testClass": "io.enmasse.controller.api.v1.AddressApiHelperTest", 
+        "numberFailing": 2, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/EnMasseProject/enmasse/builds/344976598", 
+      "date": "Feb 22, 2018 10:26:37 PM", 
+      "id": 344976598
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/EnMasseProject/enmasse/builds/344945686", 
+      "date": "Feb 22, 2018 9:15:58 PM", 
+      "id": 344945686
+    }
+  }, 
+  "repository": {
+    "name": "EnMasseProject/enmasse", 
+    "url": "https://github.com/EnMasseProject/enmasse", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 62793144
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/EnMasseProject/enmasse/commit/d4e7465f33c9335d7e6d26c15972e6c8912cfad7", 
+      "sha": "d4e7465f33c9335d7e6d26c15972e6c8912cfad7", 
+      "branchName": "master", 
+      "date": "Feb 22, 2018 9:47:10 PM", 
+      "repoName": "EnMasseProject/enmasse"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/EnMasseProject/enmasse/commit/4c2be71c8acee0dc24f6c1ab91fb9215d843ec15", 
+      "sha": "4c2be71c8acee0dc24f6c1ab91fb9215d843ec15", 
+      "branchName": "master", 
+      "date": "Feb 22, 2018 8:33:37 PM", 
+      "repoName": "EnMasseProject/enmasse"
+    }
+  }, 
+  "bugName": "EnMasseProject-enmasse-344945686-344976598", 
+  "version": "latest", 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 0, 
+      "numberDeleted": 14
+    }
+  }, 
+  "type": "passing_passing", 
+  "bugId": "Bears-167", 
+  "projectMetrics": {
+    "numberSourceFiles": 307, 
+    "numberLibrariesFailingModule": 65, 
+    "numberTestFiles": 123, 
+    "numberModules": 19
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 392729544, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 505937920, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Aug 26, 2018 4:14:57 AM", 
+    "projectRootPomPath": "./workspace/EnMasseProject/enmasse/344945686/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          1, 
+          2, 
+          0, 
+          2, 
+          85
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 90
+      }, 
+      "testing": {
+        "stepDurations": [
+          82
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 82
+      }, 
+      "cloning": {
+        "stepDurations": [
+          30
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 30
+      }
+    }, 
+    "reproductionDateBeginning": "Aug 26, 2018 4:08:34 AM", 
+    "totalDuration": 379
+  }
+}
