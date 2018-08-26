@@ -1,0 +1,152 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 2398, 
+      "numberRunning": 2399, 
+      "numberFailing": 1, 
+      "numberErroring": 0, 
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError", 
+          "isError": false, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 126
+    }, 
+    "failingModule": "/root/workspace/apache/jackrabbit-oak/344414751/oak-core", 
+    "failureDetails": [
+      {
+        "failureName": "java.lang.AssertionError", 
+        "detail": " Expected: every item is is <301>      but: an item was <94>", 
+        "isError": false, 
+        "testMethod": "backgroundWrite", 
+        "testClass": "org.apache.jackrabbit.oak.plugins.document.DisableBranchesTest"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 0, 
+        "numberRunning": 1, 
+        "testClass": "org.apache.jackrabbit.oak.plugins.document.DisableBranchesTest", 
+        "numberFailing": 1, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/apache/jackrabbit-oak/builds/344705279", 
+      "date": "Feb 22, 2018 10:58:07 AM", 
+      "id": 344705279
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/apache/jackrabbit-oak/builds/344414751", 
+      "date": "Feb 21, 2018 6:39:41 PM", 
+      "id": 344414751
+    }
+  }, 
+  "repository": {
+    "name": "apache/jackrabbit-oak", 
+    "url": "https://github.com/apache/jackrabbit-oak", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 3657930
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/apache/jackrabbit-oak/commit/17ca8c41ad6873f51f34db9a4cd2e9299dbd4b94", 
+      "sha": "17ca8c41ad6873f51f34db9a4cd2e9299dbd4b94", 
+      "branchName": "1.0", 
+      "date": "Feb 22, 2018 10:02:21 AM", 
+      "repoName": "apache/jackrabbit-oak"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/apache/jackrabbit-oak/commit/22c2719798a3b0c2cc47161c2f1f105829477fe0", 
+      "sha": "22c2719798a3b0c2cc47161c2f1f105829477fe0", 
+      "branchName": "1.0", 
+      "date": "Feb 21, 2018 5:56:02 PM", 
+      "repoName": "apache/jackrabbit-oak"
+    }
+  }, 
+  "bugName": "apache-jackrabbit-oak-344414751-344705279", 
+  "version": "latest", 
+  "projectMetrics": {
+    "numberSourceFiles": 1396, 
+    "numberLibrariesFailingModule": 67, 
+    "numberTestFiles": 723, 
+    "numberModules": 21
+  }, 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 17, 
+      "numberDeleted": 13
+    }
+  }, 
+  "bugId": "Bears-155", 
+  "type": "passing_passing", 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 439960960, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 824180736, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Aug 26, 2018 11:04:50 AM", 
+    "projectRootPomPath": "./workspace/apache/jackrabbit-oak/344414751/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          2, 
+          1, 
+          0, 
+          0, 
+          163
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 166
+      }, 
+      "testing": {
+        "stepDurations": [
+          636
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 636
+      }, 
+      "cloning": {
+        "stepDurations": [
+          36
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 36
+      }
+    }, 
+    "reproductionDateBeginning": "Aug 26, 2018 10:16:03 AM", 
+    "totalDuration": 2919
+  }
+}
