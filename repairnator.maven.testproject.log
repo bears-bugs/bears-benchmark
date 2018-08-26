@@ -1,0 +1,144 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for io.enmasse:amqp-utils:jar:0.17-SNAPSHOT
+[WARNING] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: org.apache.activemq:artemis-amqp-protocol:jar -> duplicate declaration of version ${artemis.version} @ io.enmasse:amqp-utils:[unknown-version], /root/workspace/EnMasseProject/enmasse/344863667/amqp-utils/pom.xml, line 66, column 17
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] enmasse
+[INFO] address-model-lib
+[INFO] k8s-api
+[INFO] k8s-api-testutil
+[INFO] amqp-utils
+[INFO] discovery-lib
+[INFO] topic-forwarder
+[INFO] mqtt-gateway
+[INFO] mqtt-lwt
+[INFO] standard-controller
+[INFO] address-controller
+[INFO] keycloak
+[INFO] sasl-plugin
+[INFO] keycloak-controller
+[INFO] systemtests
+[INFO] artemis
+[INFO] amqp-connector
+[INFO] sasl-delegation
+[INFO] shutdown-hook
+[INFO] jmx_exporter
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building enmasse 0.17-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:3.0.0:check (validate) @ enmasse ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (default) @ enmasse ---
+[INFO] surefireArgLine set to -javaagent:/root/./workspace/EnMasseProject/enmasse/344863667/.m2/org/jacoco/org.jacoco.agent/0.7.9/org.jacoco.agent-0.7.9-runtime.jar=destfile=/root/workspace/EnMasseProject/enmasse/344863667/target/jacoco.exec
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building address-model-lib 0.17-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:3.0.0:check (validate) @ address-model-lib ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (default) @ address-model-lib ---
+[INFO] surefireArgLine set to -javaagent:/root/./workspace/EnMasseProject/enmasse/344863667/.m2/org/jacoco/org.jacoco.agent/0.7.9/org.jacoco.agent-0.7.9-runtime.jar=destfile=/root/workspace/EnMasseProject/enmasse/344863667/address-model-lib/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ address-model-lib ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /root/workspace/EnMasseProject/enmasse/344863667/address-model-lib/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ address-model-lib ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ address-model-lib ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /root/workspace/EnMasseProject/enmasse/344863667/address-model-lib/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ address-model-lib ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ address-model-lib ---
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.20.1/surefire-junit4-2.20.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.20.1/surefire-junit4-2.20.1.pom (4 KB at 8.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.20.1/surefire-providers-2.20.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.20.1/surefire-providers-2.20.1.pom (3 KB at 136.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.20.1/surefire-junit4-2.20.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.20.1/surefire-junit4-2.20.1.jar (81 KB at 1339.1 KB/sec)
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running io.enmasse.address.model.v1.address.KubeUtilTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.174 s - in io.enmasse.address.model.v1.address.KubeUtilTest
+[INFO] Running io.enmasse.address.model.v1.address.AddressTest
+myaddr1-73cb6b25-0792-30dc-bb27-331e9d91d247
+[ERROR] Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.021 s <<< FAILURE! - in io.enmasse.address.model.v1.address.AddressTest
+[ERROR] testCopy(io.enmasse.address.model.v1.address.AddressTest)  Time elapsed: 0.02 s  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expected: is <Active>
+     but: was <Pending>
+	at io.enmasse.address.model.v1.address.AddressTest.testCopy(AddressTest.java:77)
+
+[INFO] Running io.enmasse.address.model.v1.address.SerializationTest
+[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.417 s - in io.enmasse.address.model.v1.address.SerializationTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   AddressTest.testCopy:77 
+Expected: is <Active>
+     but: was <Pending>
+[INFO] 
+[ERROR] Tests run: 18, Failures: 1, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] enmasse ............................................ SUCCESS [  1.680 s]
+[INFO] address-model-lib .................................. FAILURE [  3.937 s]
+[INFO] k8s-api ............................................ SKIPPED
+[INFO] k8s-api-testutil ................................... SKIPPED
+[INFO] amqp-utils ......................................... SKIPPED
+[INFO] discovery-lib ...................................... SKIPPED
+[INFO] topic-forwarder .................................... SKIPPED
+[INFO] mqtt-gateway ....................................... SKIPPED
+[INFO] mqtt-lwt ........................................... SKIPPED
+[INFO] standard-controller ................................ SKIPPED
+[INFO] address-controller ................................. SKIPPED
+[INFO] keycloak ........................................... SKIPPED
+[INFO] sasl-plugin ........................................ SKIPPED
+[INFO] keycloak-controller ................................ SKIPPED
+[INFO] systemtests ........................................ SKIPPED
+[INFO] artemis ............................................ SKIPPED
+[INFO] amqp-connector ..................................... SKIPPED
+[INFO] sasl-delegation .................................... SKIPPED
+[INFO] shutdown-hook ...................................... SKIPPED
+[INFO] jmx_exporter ....................................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 6.530 s
+[INFO] Finished at: 2018-08-26T04:11:06+02:00
+[INFO] Final Memory: 27M/602M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.20.1:test (default-test) on project address-model-lib: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/EnMasseProject/enmasse/344863667/address-model-lib/target/surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :address-model-lib
