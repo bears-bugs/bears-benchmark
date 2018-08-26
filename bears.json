@@ -1,0 +1,152 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 17, 
+      "numberRunning": 18, 
+      "numberFailing": 1, 
+      "numberErroring": 0, 
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError", 
+          "isError": false, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 0
+    }, 
+    "failingModule": "/root/workspace/EnMasseProject/enmasse/344863667/address-model-lib", 
+    "failureDetails": [
+      {
+        "failureName": "java.lang.AssertionError", 
+        "detail": "\nExpected: is <Active>\n     but: was <Pending>", 
+        "isError": false, 
+        "testMethod": "testCopy", 
+        "testClass": "io.enmasse.address.model.v1.address.AddressTest"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 2, 
+        "numberRunning": 3, 
+        "testClass": "io.enmasse.address.model.v1.address.AddressTest", 
+        "numberFailing": 1, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/EnMasseProject/enmasse/builds/344945686", 
+      "date": "Feb 22, 2018 9:15:58 PM", 
+      "id": 344945686
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/EnMasseProject/enmasse/builds/344863667", 
+      "date": "Feb 22, 2018 6:02:11 PM", 
+      "id": 344863667
+    }
+  }, 
+  "repository": {
+    "name": "EnMasseProject/enmasse", 
+    "url": "https://github.com/EnMasseProject/enmasse", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 62793144
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/EnMasseProject/enmasse/commit/4c2be71c8acee0dc24f6c1ab91fb9215d843ec15", 
+      "sha": "4c2be71c8acee0dc24f6c1ab91fb9215d843ec15", 
+      "branchName": "master", 
+      "date": "Feb 22, 2018 8:33:37 PM", 
+      "repoName": "EnMasseProject/enmasse"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/EnMasseProject/enmasse/commit/054f3e1a2fab574bc70ccee8e7e67cfe21658c5f", 
+      "sha": "054f3e1a2fab574bc70ccee8e7e67cfe21658c5f", 
+      "branchName": "master", 
+      "date": "Feb 22, 2018 5:19:09 PM", 
+      "repoName": "EnMasseProject/enmasse"
+    }
+  }, 
+  "bugName": "EnMasseProject-enmasse-344863667-344945686", 
+  "version": "latest", 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 0, 
+      "numberDeleted": 1
+    }
+  }, 
+  "type": "passing_passing", 
+  "bugId": "Bears-166", 
+  "projectMetrics": {
+    "numberSourceFiles": 307, 
+    "numberLibrariesFailingModule": 9, 
+    "numberTestFiles": 123, 
+    "numberModules": 19
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 540545608, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 619184128, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Aug 26, 2018 4:14:11 AM", 
+    "projectRootPomPath": "./workspace/EnMasseProject/enmasse/344863667/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          0, 
+          2, 
+          0, 
+          1, 
+          87
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 90
+      }, 
+      "testing": {
+        "stepDurations": [
+          10
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 10
+      }, 
+      "cloning": {
+        "stepDurations": [
+          31
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 31
+      }
+    }, 
+    "reproductionDateBeginning": "Aug 26, 2018 4:08:53 AM", 
+    "totalDuration": 311
+  }
+}
