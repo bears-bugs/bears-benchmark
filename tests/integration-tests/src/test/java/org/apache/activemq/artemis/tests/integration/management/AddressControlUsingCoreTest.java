@@ -1,0 +1,129 @@
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one or more
+ * contributor license agreements. See the NOTICE file distributed with
+ * this work for additional information regarding copyright ownership.
+ * The ASF licenses this file to You under the Apache License, Version 2.0
+ * (the "License"); you may not use this file except in compliance with
+ * the License. You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+package org.apache.activemq.artemis.tests.integration.management;
+
+import java.util.Map;
+
+import org.apache.activemq.artemis.api.core.SimpleString;
+import org.apache.activemq.artemis.api.core.management.AddressControl;
+import org.apache.activemq.artemis.api.core.management.ResourceNames;
+
+public class AddressControlUsingCoreTest extends AddressControlTest {
+
+   // Constants -----------------------------------------------------
+
+   // Attributes ----------------------------------------------------
+
+   // Static --------------------------------------------------------
+
+   // Constructors --------------------------------------------------
+
+
+   @Override
+   protected AddressControl createManagementControl(final SimpleString name) throws Exception {
+      return new AddressControl() {
+         private final CoreMessagingProxy proxy = new CoreMessagingProxy(addServerLocator(createInVMNonHALocator()), ResourceNames.ADDRESS + name);
+
+         @Override
+         public String getAddress() {
+            return (String) proxy.retrieveAttributeValue("address");
+         }
+
+         @Override
+         public String[] getRoutingTypes() {
+            return (String[]) proxy.retrieveAttributeValue("routingTypes", String.class);
+         }
+
+         @Override
+         public String getRoutingTypesAsJSON() throws Exception {
+            return (String) proxy.retrieveAttributeValue("routingTypesAsJSON");
+         }
+
+         @Override
+         public Object[] getRoles() throws Exception {
+            return (Object[]) proxy.retrieveAttributeValue("roles");
+         }
+
+         @Override
+         public String getRolesAsJSON() throws Exception {
+            return (String) proxy.retrieveAttributeValue("rolesAsJSON");
+         }
+
+         @Override
+         public long getAddressSize() throws Exception {
+            return (long) proxy.retrieveAttributeValue("addressSize");
+         }
+
+         @Override
+         public long getNumberOfMessages() throws Exception {
+            return (long) proxy.retrieveAttributeValue("numberOfMessages");
+         }
+
+         @Override
+         public String[] getQueueNames() throws Exception {
+            return (String[]) proxy.retrieveAttributeValue("queueNames", String.class);
+         }
+
+         @Override
+         public int getNumberOfPages() throws Exception {
+            return (int) proxy.retrieveAttributeValue("numberOfPages", Integer.class);
+         }
+
+         @Override
+         public boolean isPaging() throws Exception {
+            return (boolean) proxy.retrieveAttributeValue("paging");
+         }
+
+         @Override
+         public long getNumberOfBytesPerPage() throws Exception {
+            return (long) proxy.retrieveAttributeValue("numberOfBytesPerPage");
+         }
+
+         @Override
+         public String[] getBindingNames() throws Exception {
+            return (String[]) proxy.retrieveAttributeValue("bindingNames", String.class);
+         }
+
+         @Override
+         public long getMessageCount() {
+            return (long) proxy.retrieveAttributeValue("messageCount");
+         }
+
+         @Override
+         public String sendMessage(Map<String, String> headers,
+                                   int type,
+                                   String body,
+                                   boolean durable,
+                                   String user,
+                                   String password) throws Exception {
+            return (String) proxy.invokeOperation("sendMessage", headers, type, body, durable, user, password);
+         }
+      };
+   }
+
+   // Public --------------------------------------------------------
+
+   @Override
+   public boolean usingCore() {
+      return true;
+   }
+
+   // Private -------------------------------------------------------
+
+   // Inner classes -------------------------------------------------
+
+}
