@@ -1,0 +1,156 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 782, 
+      "numberRunning": 784, 
+      "numberFailing": 0, 
+      "numberErroring": 2, 
+      "failures": [
+        {
+          "failureName": "java.lang.IllegalArgumentException", 
+          "isError": true, 
+          "occurrences": 2
+        }
+      ], 
+      "numberSkipping": 14
+    }, 
+    "failingModule": "/root/workspace/apache/activemq-artemis/347800148/artemis-core-client", 
+    "failureDetails": [
+      {
+        "failureName": "java.lang.IllegalArgumentException", 
+        "detail": "AMQ119034: Params for management operations must be of the following type: int long double String boolean Map or array thereof but found [B", 
+        "isError": true, 
+        "testClass": "org.apache.activemq.artemis.api.core.JsonUtilTest", 
+        "testMethod": "testAddByteArrayToJsonArray"
+      }, 
+      {
+        "failureName": "java.lang.IllegalArgumentException", 
+        "detail": "AMQ119034: Params for management operations must be of the following type: int long double String boolean Map or array thereof but found [B", 
+        "isError": true, 
+        "testClass": "org.apache.activemq.artemis.api.core.JsonUtilTest", 
+        "testMethod": "testAddByteArrayToJsonObject"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 2, 
+        "numberRunning": 4, 
+        "testClass": "org.apache.activemq.artemis.api.core.JsonUtilTest", 
+        "numberFailing": 0, 
+        "numberErroring": 2, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/apache/activemq-artemis/builds/347925737", 
+      "date": "Mar 1, 2018 8:54:11 PM", 
+      "id": 347925737
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/apache/activemq-artemis/builds/347800148", 
+      "date": "Mar 1, 2018 4:20:56 PM", 
+      "id": 347800148
+    }
+  }, 
+  "repository": {
+    "name": "apache/activemq-artemis", 
+    "url": "https://github.com/apache/activemq-artemis", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 36057260
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/apache/activemq-artemis/commit/bdd2c09c5848b0a22992c7f7fa99758ca4989555", 
+      "sha": "bdd2c09c5848b0a22992c7f7fa99758ca4989555", 
+      "branchName": "master", 
+      "date": "Mar 1, 2018 8:26:20 PM", 
+      "repoName": "apache/activemq-artemis"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/apache/activemq-artemis/commit/838859f59a27f7e8503510fe0547485c216fa5e4", 
+      "sha": "838859f59a27f7e8503510fe0547485c216fa5e4", 
+      "branchName": "master", 
+      "date": "Mar 1, 2018 3:53:59 PM", 
+      "repoName": "apache/activemq-artemis"
+    }
+  }, 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 0, 
+      "numberDeleted": 16
+    }
+  }, 
+  "type": "passing_passing", 
+  "projectMetrics": {
+    "numberSourceFiles": 1486, 
+    "numberLibrariesFailingModule": 25, 
+    "numberTestFiles": 1152, 
+    "numberModules": 53
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 147866512, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 548405248, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Aug 28, 2018 1:03:50 AM", 
+    "projectRootPomPath": "./workspace/apache/activemq-artemis/347800148/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          1, 
+          1, 
+          0, 
+          1, 
+          514
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 517
+      }, 
+      "testing": {
+        "stepDurations": [
+          323
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 323
+      }, 
+      "cloning": {
+        "stepDurations": [
+          28
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 28
+      }
+    }, 
+    "reproductionDateBeginning": "Aug 28, 2018 12:34:04 AM", 
+    "totalDuration": 1778
+  }
+}
