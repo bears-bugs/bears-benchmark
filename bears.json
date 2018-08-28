@@ -1,0 +1,159 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 31, 
+      "numberRunning": 33, 
+      "numberFailing": 2, 
+      "numberErroring": 0, 
+      "failures": [
+        {
+          "failureName": "junit.framework.AssertionFailedError", 
+          "isError": false, 
+          "occurrences": 2
+        }
+      ], 
+      "numberSkipping": 0
+    }, 
+    "failingModule": "/root/workspace/apache/incubator-dubbo/347256120/hessian-lite", 
+    "failureDetails": [
+      {
+        "failureName": "junit.framework.AssertionFailedError", 
+        "detail": "expected:<zh-hant_CN> but was:<zh_HANT_CN>", 
+        "isError": false, 
+        "testMethod": "hessian2", 
+        "testClass": "com.alibaba.com.caucho.hessian.io.LocaleSerializerTest"
+      }, 
+      {
+        "failureName": "junit.framework.AssertionFailedError", 
+        "detail": "expected:<zh-hant_CN> but was:<zh_HANT_CN>", 
+        "isError": false, 
+        "testMethod": "hessian1", 
+        "testClass": "com.alibaba.com.caucho.hessian.io.LocaleSerializerTest"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 0, 
+        "numberRunning": 2, 
+        "testClass": "com.alibaba.com.caucho.hessian.io.LocaleSerializerTest", 
+        "numberFailing": 2, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/apache/incubator-dubbo/builds/347634018", 
+      "date": "Mar 1, 2018 8:20:29 AM", 
+      "id": 347634018
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/apache/incubator-dubbo/builds/347256120", 
+      "date": "Feb 28, 2018 2:09:27 PM", 
+      "id": 347256120
+    }
+  }, 
+  "repository": {
+    "name": "apache/incubator-dubbo", 
+    "url": "https://github.com/apache/incubator-dubbo", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 4710920
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/apache/incubator-dubbo/commit/0423219d839404186b8a5ec7dec37f6addeb58d9", 
+      "sha": "0423219d839404186b8a5ec7dec37f6addeb58d9", 
+      "branchName": "master", 
+      "date": "Mar 1, 2018 7:58:01 AM", 
+      "repoName": "apache/incubator-dubbo"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/apache/incubator-dubbo/commit/3be23d9ac55407e2e2bda49570f7f76943a3b382", 
+      "sha": "3be23d9ac55407e2e2bda49570f7f76943a3b382", 
+      "branchName": "master", 
+      "date": "Feb 27, 2018 1:22:47 PM", 
+      "repoName": "apache/incubator-dubbo"
+    }
+  }, 
+  "bugName": "apache-incubator-dubbo-347256120-347634018", 
+  "version": "latest", 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 2, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 60, 
+      "numberDeleted": 5
+    }
+  }, 
+  "type": "passing_passing", 
+  "bugId": "Bears-150", 
+  "projectMetrics": {
+    "numberSourceFiles": 733, 
+    "numberLibrariesFailingModule": 6, 
+    "numberTestFiles": 404, 
+    "numberModules": 53
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 272759880, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 498597888, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Aug 28, 2018 3:55:04 AM", 
+    "projectRootPomPath": "./workspace/apache/incubator-dubbo/347256120/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          1, 
+          2, 
+          0, 
+          0, 
+          338
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 341
+      }, 
+      "testing": {
+        "stepDurations": [
+          8
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 8
+      }, 
+      "cloning": {
+        "stepDurations": [
+          9
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 9
+      }
+    }, 
+    "reproductionDateBeginning": "Aug 28, 2018 3:43:06 AM", 
+    "totalDuration": 710
+  }
+}
