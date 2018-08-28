@@ -1,0 +1,149 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 416, 
+      "numberRunning": 417, 
+      "numberFailing": 1, 
+      "numberErroring": 0, 
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError", 
+          "isError": false, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 19
+    }, 
+    "failingModule": "/root/workspace/languagetool-org/languagetool/349407853/languagetool-language-modules/de", 
+    "failureDetails": [
+      {
+        "failureName": "java.lang.AssertionError", 
+        "detail": "Got > 0 matches for '\u201eWerde ich tun!\u201c': [DE_VERBAGREEMENT:7-14:M\u00f6glicherweise fehlende grammatische \u00dcbereinstimmung zwischen Subjekt (ich) und Pr\u00e4dikat (tun) bez\u00fcglich Person oder Numerus (Einzahl, Mehrzahl - Beispiel: 'ich sind' statt 'ich bin').]", 
+        "isError": false, 
+        "testClass": "org.languagetool.rules.de.VerbAgreementRuleTest", 
+        "testMethod": "testWrongVerb"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 2, 
+        "numberRunning": 3, 
+        "testClass": "org.languagetool.rules.de.VerbAgreementRuleTest", 
+        "numberFailing": 1, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/languagetool-org/languagetool/builds/349461167", 
+      "date": "Mar 5, 2018 8:38:18 PM", 
+      "id": 349461167
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/languagetool-org/languagetool/builds/349407853", 
+      "date": "Mar 5, 2018 6:50:53 PM", 
+      "id": 349407853
+    }
+  }, 
+  "repository": {
+    "name": "languagetool-org/languagetool", 
+    "url": "https://github.com/languagetool-org/languagetool", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 11981144
+  }, 
+  "projectMetrics": {
+    "numberSourceFiles": 756, 
+    "numberLibrariesFailingModule": 31, 
+    "numberTestFiles": 489, 
+    "numberModules": 46
+  }, 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 1, 
+      "numberDeleted": 1
+    }
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/languagetool-org/languagetool/commit/d4733d34c40386e94a38169be67044718c3250f1", 
+      "sha": "d4733d34c40386e94a38169be67044718c3250f1", 
+      "branchName": "master", 
+      "date": "Mar 5, 2018 8:25:04 PM", 
+      "repoName": "languagetool-org/languagetool"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/languagetool-org/languagetool/commit/f45a75ca38b73fb090b50450433fc0b7270c3fe7", 
+      "sha": "f45a75ca38b73fb090b50450433fc0b7270c3fe7", 
+      "branchName": "master", 
+      "date": "Mar 5, 2018 6:37:18 PM", 
+      "repoName": "languagetool-org/languagetool"
+    }
+  }, 
+  "type": "passing_passing", 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 322006336, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 1055916032, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Aug 28, 2018 3:41:17 AM", 
+    "projectRootPomPath": "./workspace/languagetool-org/languagetool/349407853/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          3, 
+          0, 
+          0, 
+          1, 
+          128
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 132
+      }, 
+      "testing": {
+        "stepDurations": [
+          205
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 205
+      }, 
+      "cloning": {
+        "stepDurations": [
+          280
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 280
+      }
+    }, 
+    "reproductionDateBeginning": "Aug 28, 2018 3:11:39 AM", 
+    "totalDuration": 1769
+  }
+}
