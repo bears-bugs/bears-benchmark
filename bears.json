@@ -1,0 +1,149 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 416, 
+      "numberRunning": 417, 
+      "numberFailing": 1, 
+      "numberErroring": 0, 
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError", 
+          "isError": false, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 19
+    }, 
+    "failingModule": "/root/workspace/languagetool-org/languagetool/350438116/languagetool-language-modules/de", 
+    "failureDetails": [
+      {
+        "failureName": "java.lang.AssertionError", 
+        "detail": "expected:<1> but was:<0>", 
+        "isError": false, 
+        "testClass": "org.languagetool.rules.de.VerbAgreementRuleTest", 
+        "testMethod": "testWrongVerb"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 2, 
+        "numberRunning": 3, 
+        "testClass": "org.languagetool.rules.de.VerbAgreementRuleTest", 
+        "numberFailing": 1, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/languagetool-org/languagetool/builds/350446305", 
+      "date": "Mar 7, 2018 7:14:00 PM", 
+      "id": 350446305
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/languagetool-org/languagetool/builds/350438116", 
+      "date": "Mar 7, 2018 6:57:53 PM", 
+      "id": 350438116
+    }
+  }, 
+  "repository": {
+    "name": "languagetool-org/languagetool", 
+    "url": "https://github.com/languagetool-org/languagetool", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 11981144
+  }, 
+  "projectMetrics": {
+    "numberSourceFiles": 756, 
+    "numberLibrariesFailingModule": 31, 
+    "numberTestFiles": 489, 
+    "numberModules": 46
+  }, 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 2, 
+      "numberDeleted": 2
+    }
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/languagetool-org/languagetool/commit/c93cf60668c6f03c80e3ab508ff122f98ca3a5de", 
+      "sha": "c93cf60668c6f03c80e3ab508ff122f98ca3a5de", 
+      "branchName": "master", 
+      "date": "Mar 7, 2018 7:00:32 PM", 
+      "repoName": "languagetool-org/languagetool"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/languagetool-org/languagetool/commit/fef3a5f5bb2294154adbfa090147efaea154dd24", 
+      "sha": "fef3a5f5bb2294154adbfa090147efaea154dd24", 
+      "branchName": "master", 
+      "date": "Mar 7, 2018 6:43:12 PM", 
+      "repoName": "languagetool-org/languagetool"
+    }
+  }, 
+  "type": "passing_passing", 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 838372168, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 1258815488, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Aug 28, 2018 3:39:48 AM", 
+    "projectRootPomPath": "./workspace/languagetool-org/languagetool/350438116/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          4, 
+          0, 
+          0, 
+          1, 
+          118
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 123
+      }, 
+      "testing": {
+        "stepDurations": [
+          206
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 206
+      }, 
+      "cloning": {
+        "stepDurations": [
+          291
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 291
+      }
+    }, 
+    "reproductionDateBeginning": "Aug 28, 2018 3:11:11 AM", 
+    "totalDuration": 1708
+  }
+}
