@@ -56,7 +56,7 @@ public class Dashboard extends JPanel {
         breakProgressBar.setValue(inputPacket.getBreakPedalPosition());
         speedAngle = calculateSpeedometer(0);
         rpmAngle = calculateTachometer(0);
-        paintComponent(getGraphics());
+        repaint();
     }
 
     /**
