@@ -1,0 +1,145 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 6, 
+      "numberRunning": 7, 
+      "numberFailing": 0, 
+      "numberErroring": 1, 
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException", 
+          "isError": true, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 0
+    }, 
+    "failingModule": "/root/workspace/SzFMV2018-Tavasz/AutomatedCar/351742666", 
+    "failureDetails": [
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "hu.oe.nik.szfmv.visualization.DashboardTest", 
+        "testMethod": "allRequiredValuesReceivedOnUpdate", 
+        "isError": true
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 0, 
+        "numberRunning": 1, 
+        "testClass": "hu.oe.nik.szfmv.visualization.DashboardTest", 
+        "numberFailing": 0, 
+        "numberErroring": 1, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/SzFMV2018-Tavasz/AutomatedCar/builds/351759763", 
+      "date": "Mar 10, 2018 7:17:00 PM", 
+      "id": 351759763
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/SzFMV2018-Tavasz/AutomatedCar/builds/351742666", 
+      "date": "Mar 10, 2018 6:05:33 PM", 
+      "id": 351742666
+    }
+  }, 
+  "repository": {
+    "name": "SzFMV2018-Tavasz/AutomatedCar", 
+    "url": "https://github.com/SzFMV2018-Tavasz/AutomatedCar", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 117655293
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/SzFMV2018-Tavasz/AutomatedCar/commit/6a656ea5686fa563e85754282f059264f3664471", 
+      "sha": "6a656ea5686fa563e85754282f059264f3664471", 
+      "branchName": "sprint1/team4/dashboard_AnalogSpeedoTacho", 
+      "date": "Mar 10, 2018 7:13:13 PM", 
+      "repoName": "SzFMV2018-Tavasz/AutomatedCar"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/SzFMV2018-Tavasz/AutomatedCar/commit/4efc1e696af816519a2d0d5d52b7deb11240dcc2", 
+      "sha": "4efc1e696af816519a2d0d5d52b7deb11240dcc2", 
+      "branchName": "sprint1/team4/dashboard_AnalogSpeedoTacho", 
+      "date": "Mar 10, 2018 6:03:12 PM", 
+      "repoName": "SzFMV2018-Tavasz/AutomatedCar"
+    }
+  }, 
+  "bugName": "SzFMV2018-Tavasz-AutomatedCar-351742666-351759763", 
+  "version": "latest", 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 1, 
+      "numberDeleted": 1
+    }
+  }, 
+  "type": "failing_passing", 
+  "bugId": "Bears-188", 
+  "projectMetrics": {
+    "numberSourceFiles": 19, 
+    "numberLibrariesFailingModule": 7, 
+    "numberTestFiles": 4, 
+    "numberModules": 1
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 397908648, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 437256192, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Aug 28, 2018 10:07:41 PM", 
+    "projectRootPomPath": "./workspace/SzFMV2018-Tavasz/AutomatedCar/351742666/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          0, 
+          19
+        ], 
+        "stepNames": [
+          "CheckoutBuggyBuildCandidate", 
+          "BuildProjectBuggyBuildCandidate"
+        ], 
+        "nbSteps": 2, 
+        "totalDuration": 19
+      }, 
+      "testing": {
+        "stepDurations": [
+          9
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidate"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 9
+      }, 
+      "cloning": {
+        "stepDurations": [
+          9
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 9
+      }
+    }, 
+    "reproductionDateBeginning": "Aug 28, 2018 10:06:36 PM", 
+    "totalDuration": 62
+  }
+}
