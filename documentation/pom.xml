@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Copyright 2014 - 2018 Blazebit.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  -->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.blazebit</groupId>
+        <artifactId>blaze-persistence-parent</artifactId>
+        <version>1.2.0-SNAPSHOT</version>
+        <relativePath>../parent/pom.xml</relativePath>
+    </parent>
+
+    <artifactId>blaze-persistence-documentation</artifactId>
+    
+    <name>Blazebit Persistence Documentation</name>
+    
+    <properties>
+        <version.asciidoctor>1.5.6</version.asciidoctor>
+        <stable.version>1.2.0-Alpha4</stable.version>
+    </properties>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>copy-asciidoc-resources-core-manual-en_US</id>
+                        <phase>process-resources</phase>
+                        <goals>
+                            <goal>copy-resources</goal>
+                        </goals>
+                        <configuration>
+                            <resources>
+                                <resource>
+                                    <directory>src/main/style</directory>
+                                    <includes>
+                                        <include>**/*</include>
+                                    </includes>
+                                </resource>
+                            </resources>
+                            <outputDirectory>${project.build.directory}/generated-docs/core/manual/en_US</outputDirectory>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>copy-asciidoc-resources-entity-view-manual-en_US</id>
+                        <phase>process-resources</phase>
+                        <goals>
+                            <goal>copy-resources</goal>
+                        </goals>
+                        <configuration>
+                            <resources>
+                                <resource>
+                                    <directory>src/main/style</directory>
+                                    <includes>
+                                        <include>**/*</include>
+                                    </includes>
+                                </resource>
+                            </resources>
+                            <outputDirectory>${project.build.directory}/generated-docs/entity-view/manual/en_US</outputDirectory>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.asciidoctor</groupId>
+                <artifactId>asciidoctor-maven-plugin</artifactId>
+                <version>${version.asciidoctor}</version>
+                <configuration>
+                    <attributes>
+                        <endpoint-url>http://blazebit.github.io/blaze-persistence</endpoint-url>
+                        <preserveDirectories>true</preserveDirectories>
+                        <plantumlconfig>${basedir}/src/main/asciidoc/plantuml.config</plantumlconfig>
+                    </attributes>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>core-manual-en_US-html</id>
+                        <phase>generate-resources</phase>
+                        <goals>
+                            <goal>process-asciidoc</goal>
+                        </goals>
+                        <configuration>
+                            <sourceDirectory>${basedir}/src/main/asciidoc/core/manual/en_US</sourceDirectory>
+                            <outputDirectory>${project.build.directory}/generated-docs/core/manual/en_US</outputDirectory>
+                            <!-- see https://github.com/asciidoctor/asciidoctor-backends/tree/master/erb/html5 -->
+                            <templateDir>${basedir}/src/main/template</templateDir>
+                            <imagesDir>${basedir}/src/main/asciidoc/core/manual/images</imagesDir>
+                            <doctype>book</doctype>
+                            <gemPath>${project.build.directory}/gems-provided</gemPath>
+                            <eruby>erb</eruby>
+                            <backend>html5</backend>
+                            <sourceHighlighter>prettify</sourceHighlighter>
+                            <requires>
+                                <require>asciidoctor-diagram</require>
+                            </requires>
+                            <attributes>
+                                <linkcss>true</linkcss>
+                                <stylesheet>blazebit.css</stylesheet>
+                                <imagesdir>images</imagesdir>
+                                <prettifydir>prettify</prettifydir>
+                                <iconsdir>images/icons</iconsdir>
+                                <stylesdir>css</stylesdir>
+                                <scriptsdir>js</scriptsdir>
+                                
+                                <toc>left</toc>
+                                <icons>font</icons>
+                                <sectanchors>true</sectanchors>
+                                <idprefix />
+                                <idseparator>-</idseparator>
+                                <docinfo1>true</docinfo1>
+                                <version>${project.version}</version>
+                                <stable_version>${stable.version}</stable_version>
+                            </attributes>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>entity-manual-en_US-html</id>
+                        <phase>generate-resources</phase>
+                        <goals>
+                            <goal>process-asciidoc</goal>
+                        </goals>
+                        <configuration>
+                            <sourceDirectory>${basedir}/src/main/asciidoc/entity-view/manual/en_US</sourceDirectory>
+                            <outputDirectory>${project.build.directory}/generated-docs/entity-view/manual/en_US</outputDirectory>
+                             <!-- see https://github.com/asciidoctor/asciidoctor-backends/tree/master/erb/html5 -->
+                            <templateDir>${basedir}/src/main/template</templateDir>
+                            <imagesDir>${basedir}/src/main/asciidoc/entity-view/manual/images</imagesDir>
+                            <doctype>book</doctype>
+                            <gemPath>${project.build.directory}/gems-provided</gemPath>
+                            <eruby>erb</eruby>
+                            <backend>html5</backend>
+                            <sourceHighlighter>prettify</sourceHighlighter>
+                            <requires>
+                                <require>asciidoctor-diagram</require>
+                            </requires>
+                            <attributes>
+                                <linkcss>true</linkcss>
+                                <stylesheet>blazebit.css</stylesheet>
+                                <imagesdir>images</imagesdir>
+                                <prettifydir>prettify</prettifydir>
+                                <iconsdir>images/icons</iconsdir>
+                                <stylesdir>css</stylesdir>
+                                <scriptsdir>js</scriptsdir>
+                                
+                                <toc>left</toc>
+                                <icons>font</icons>
+                                <sectanchors>true</sectanchors>
+                                <idprefix />
+                                <idseparator>-</idseparator>
+                                <docinfo1>true</docinfo1>
+                                <version>${project.version}</version>
+                                <stable_version>${stable.version}</stable_version>
+                            </attributes>
+                        </configuration>
+                    </execution>
+                </executions>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.jruby</groupId>
+                        <artifactId>jruby-complete</artifactId>
+                        <version>9.1.15.0</version>
+                    </dependency>
+                    <!-- Workaround for https://github.com/asciidoctor/asciidoctor/issues/1582 -->
+                    <dependency>
+                        <groupId>org.asciidoctor</groupId>
+                        <artifactId>asciidoctorj</artifactId>
+                        <version>${version.asciidoctor}</version>
+                    </dependency>
+                    <dependency>
+                        <groupId>org.asciidoctor</groupId>
+                        <artifactId>asciidoctorj-diagram</artifactId>
+                        <version>1.5.0</version>
+                    </dependency>
+                </dependencies>
+            </plugin>
+        </plugins>
+    </build>
+</project>

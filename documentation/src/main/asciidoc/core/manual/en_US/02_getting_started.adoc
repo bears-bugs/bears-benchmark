@@ -1,0 +1,471 @@
+== Getting started
+
+This is a step-by-step introduction about how to get started with the core module of {projectname}.
+
+[[getting-started-setup]]
+=== Setup
+
+Every https://github.com/Blazebit/blaze-persistence/releases[release] comes with a distribution bundle named like _blaze-persistence-dist-VERSION_.
+This distribution contains the _required_ artifacts for the {projectname} core module as well as artifacts for integrations and other modules.
+
+* required - The core module artifacts and dependencies
+* entity-view - The entity view module artifacts and dependencies
+* jpa-criteria - The jpa-criteria module artifacts and dependencies
+* integration/hibernate - The integrations for various Hibernate versions
+* integration/datanucleus - The integration for DataNucleus
+* integration/eclipselink - The integration for EclipseLink
+* integration/openjpa - The integration for OpenJPA
+* integration/entity-view - Integrations for the entity view module
+
+The _required_ artifacts are always necessary. Every other module builds up on that. Based on the JPA provider that is used, one of the integrations should be used.
+Other modules are optional and normally don't have dependencies on each other.
+
+==== Maven setup
+
+We recommend you introduce a version property for {projectname} which can be used for all artifacts.
+
+//TODO: How about making a "tab" where one can switch the dependency management type
+
+[source,xml]
+----
+<properties>
+    <blaze-persistence.version>{version}</blaze-persistence.version>
+</properties>
+----
+
+The required dependencies for the core module are
+
+[source,xml]
+----
+<dependency>
+    <groupId>com.blazebit</groupId>
+    <artifactId>blaze-persistence-core-api</artifactId>
+    <version>${blaze-persistence.version}</version>
+    <scope>compile</scope>
+</dependency>
+<dependency>
+    <groupId>com.blazebit</groupId>
+    <artifactId>blaze-persistence-core-impl</artifactId>
+    <version>${blaze-persistence.version}</version>
+    <scope>runtime</scope>
+</dependency>
+----
+
+Depending on the JPA provider that should be used, one of the following integrations is required
+
+[[maven-setup-hibernate53]]
+===== Hibernate 5.3
+
+[source,xml]
+----
+<dependency>
+    <groupId>com.blazebit</groupId>
+    <artifactId>blaze-persistence-integration-hibernate-5.3</artifactId>
+    <version>${blaze-persistence.version}</version>
+    <scope>runtime</scope>
+</dependency>
+----
+
+[[maven-setup-hibernate52]]
+===== Hibernate 5.2
+
+[source,xml]
+----
+<dependency>
+    <groupId>com.blazebit</groupId>
+    <artifactId>blaze-persistence-integration-hibernate-5.2</artifactId>
+    <version>${blaze-persistence.version}</version>
+    <scope>runtime</scope>
+</dependency>
+----
+
+[[maven-setup-hibernate5]]
+===== Hibernate 5+
+
+[source,xml]
+----
+<dependency>
+    <groupId>com.blazebit</groupId>
+    <artifactId>blaze-persistence-integration-hibernate-5</artifactId>
+    <version>${blaze-persistence.version}</version>
+    <scope>runtime</scope>
+</dependency>
+----
+
+[[maven-setup-hibernate43]]
+===== Hibernate 4.3
+
+[source,xml]
+----
+<dependency>
+    <groupId>com.blazebit</groupId>
+    <artifactId>blaze-persistence-integration-hibernate-4.3</artifactId>
+    <version>${blaze-persistence.version}</version>
+    <scope>runtime</scope>
+</dependency>
+----
+
+[[maven-setup-hibernate42]]
+===== Hibernate 4.2
+
+[source,xml]
+----
+<dependency>
+    <groupId>com.blazebit</groupId>
+    <artifactId>blaze-persistence-integration-hibernate-4.2</artifactId>
+    <version>${blaze-persistence.version}</version>
+    <scope>runtime</scope>
+</dependency>
+----
+
+[[maven-setup-datanucleus51]]
+===== Datanucleus 5.1
+
+[source,xml]
+----
+<dependency>
+    <groupId>com.blazebit</groupId>
+    <artifactId>blaze-persistence-integration-datanucleus-5.1</artifactId>
+    <version>${blaze-persistence.version}</version>
+    <scope>runtime</scope>
+</dependency>
+----
+
+[[maven-setup-datanucleus]]
+===== Datanucleus 4 and 5
+
+[source,xml]
+----
+<dependency>
+    <groupId>com.blazebit</groupId>
+    <artifactId>blaze-persistence-integration-datanucleus</artifactId>
+    <version>${blaze-persistence.version}</version>
+    <scope>runtime</scope>
+</dependency>
+----
+
+[[maven-setup-eclipselink]]
+===== EclipseLink
+
+[source,xml]
+----
+<dependency>
+    <groupId>com.blazebit</groupId>
+    <artifactId>blaze-persistence-integration-eclipselink</artifactId>
+    <version>${blaze-persistence.version}</version>
+    <scope>runtime</scope>
+</dependency>
+----
+
+[[maven-setup-openjpa]]
+===== OpenJPA
+
+[source,xml]
+----
+<dependency>
+    <groupId>com.blazebit</groupId>
+    <artifactId>blaze-persistence-integration-openjpa</artifactId>
+    <version>${blaze-persistence.version}</version>
+    <scope>runtime</scope>
+</dependency>
+----
+
+[[anchor-environment]]
+=== Environments
+
+{projectname} is usable in Java EE, Spring as well as in Java SE environments.
+
+[[environments-java-se]]
+==== Java SE
+
+An instance of link:{core_jdoc}/persistence/CriteriaBuilderFactory.html[`CriteriaBuilderFactory`] can be obtained as follows:
+
+[source,java]
+----
+CriteriaBuilderConfiguration config = Criteria.getDefault();
+// optionally, perform dynamic configuration
+CriteriaBuilderFactory cbf = config.createCriteriaBuilderFactory(entityManagerFactory);
+----
+
+The link:{core_jdoc}/persistence/Criteria.html#getDefault()[`Criteria.getDefault()`] method uses the `java.util.ServiceLoader` to locate
+the first implementation of link:{core_jdoc}/persistence/spi/CriteriaBuilderConfigurationProvider.html[`CriteriaBuilderConfigurationProvider`] on the classpath
+which it uses to obtain an instance of link:{core_jdoc}/persistence/spi/CriteriaBuilderConfiguration.html[`CriteriaBuilderConfiguration`].
+The link:{core_jdoc}/persistence/spi/CriteriaBuilderConfiguration.html[`CriteriaBuilderConfiguration`] instance also allows dynamic configuration of the
+factory.
+
+NOTE: The link:{core_jdoc}/persistence/CriteriaBuilderFactory.html[`CriteriaBuilderFactory`] should only be built once.
+
+IMPORTANT: Creating the criteria builder factory eagerly at startup is required so that the integration can work properly.
+Initializing it differently might result in data races because at creation time e.g. custom functions are registered.
+
+[[environments-java-ee]]
+==== Java EE
+
+The most convenient way to use {projectname} within a Java EE environment is by using a startup EJB and a CDI producer.
+
+[source,java]
+----
+@Singleton // From javax.ejb
+@Startup   // From javax.ejb
+public class CriteriaBuilderFactoryProducer {
+
+    // inject your entity manager factory
+    @PersistenceUnit
+    private EntityManagerFactory entityManagerFactory;
+    
+    private CriteriaBuilderFactory criteriaBuilderFactory;
+    
+    @PostConstruct
+    public void init() {
+        CriteriaBuilderConfiguration config = Criteria.getDefault();
+        // do some configuration
+        this.criteriaBuilderFactory = config.createCriteriaBuilderFactory(entityManagerFactory);
+    }
+    
+    @Produces
+    @ApplicationScoped
+    public CriteriaBuilderFactory createCriteriaBuilderFactory() {
+        return criteriaBuilderFactory;
+    }
+}
+----
+
+[[environments-cdi]]
+==== CDI
+
+If EJBs aren't available, the `CriteriaBuilderFactory` can also be configured in a CDI 1.1 specific way by creating a simple producer method like the following example shows.
+
+[source,java]
+----
+@ApplicationScoped
+public class CriteriaBuilderFactoryProducer {
+
+    // inject your entity manager factory
+    @PersistenceUnit
+    private EntityManagerFactory entityManagerFactory;
+
+    private volatile CriteriaBuilderFactory criteriaBuilderFactory;
+
+    public void init(@Observes @Initialized(ApplicationScoped.class) Object init) {
+        CriteriaBuilderConfiguration config = Criteria.getDefault();
+        // do some configuration
+        this.criteriaBuilderFactory = config.createCriteriaBuilderFactory(entityManagerFactory);
+    }
+
+    @Produces
+    @ApplicationScoped
+    public CriteriaBuilderFactory createCriteriaBuilderFactory() {
+        return criteriaBuilderFactory;
+    }
+}
+----
+
+[[environments-spring]]
+==== Spring
+
+Within a Spring application the `CriteriaBuilderFactory` can be provided for injection like this.
+
+[source,java]
+----
+@Configuration
+public class BlazePersistenceConfiguration {
+
+    @PersistenceUnit
+    private EntityManagerFactory entityManagerFactory;
+
+    @Bean
+    @Scope(ConfigurableBeanFactory.SCOPE_SINGLETON)
+    @Lazy(false)
+    public CriteriaBuilderFactory createCriteriaBuilderFactory() {
+        CriteriaBuilderConfiguration config = Criteria.getDefault();
+        // do some configuration
+        return config.createCriteriaBuilderFactory(entityManagerFactory);
+    }
+}
+----
+
+[[supported-java-runtimes]]
+=== Supported Java runtimes
+
+All projects are built for Java 7 except for the ones where dependencies already use Java 8 like e.g. Hibernate 5.2, Spring Data 2.0 etc.
+So you are going to need at least JDK 8 for building the project.
+
+We also support building the project with JDK 9 and try to keep up with newer versions.
+If you want to run your application on a Java 9 JVM you need to handle the fact that JDK 9+ doesn't export some APIs like the JAXB, JAF, javax.annotations and JTA anymore.
+In fact, JDK 11 will even remove the modules so the command line flags to add modules to the classpath won't work.
+
+Since libraries like Hibernate and others require these APIs you need to make them available. The easiest way to get these APIs back on the classpath is to package them along with your application.
+This will also work when running on Java 8. We suggest you add the following dependencies.
+
+[source,xml]
+----
+<dependency>
+    <groupId>javax.xml.bind</groupId>
+    <artifactId>jaxb-api</artifactId>
+    <version>2.2.11</version>
+</dependency>
+<dependency>
+    <groupId>com.sun.xml.bind</groupId>
+    <artifactId>jaxb-core</artifactId>
+    <version>2.2.11</version>
+</dependency>
+<dependency>
+    <groupId>com.sun.xml.bind</groupId>
+    <artifactId>jaxb-impl</artifactId>
+    <version>2.2.11</version>
+</dependency>
+<dependency>
+    <groupId>javax.transaction</groupId>
+    <artifactId>javax.transaction-api</artifactId>
+    <version>1.2</version>
+    <!-- In a managed environment like Java EE, use 'provided'. Otherwise use 'compile' -->
+    <scope>provided</scope>
+</dependency>
+<dependency>
+    <groupId>javax.activation</groupId>
+    <artifactId>activation</artifactId>
+    <version>1.1.1</version>
+    <!-- In a managed environment like Java EE, use 'provided'. Otherwise use 'compile' -->
+    <scope>provided</scope>
+</dependency>
+<dependency>
+    <groupId>javax.annotation</groupId>
+    <artifactId>javax.annotation-api</artifactId>
+    <version>1.3.2</version>
+    <!-- In a managed environment like Java EE, use 'provided'. Otherwise use 'compile' -->
+    <scope>provided</scope>
+</dependency>
+----
+
+Automatic module names for modules.
+
+|===
+|Module |Automatic module name
+
+|Core API
+|com.blazebit.persistence.core
+
+|Core Impl
+|com.blazebit.persistence.core.impl
+
+|Core Parser
+|com.blazebit.persistence.core.parser
+
+|JPA Criteria API
+|com.blazebit.persistence.criteria
+
+|Core Impl
+|com.blazebit.persistence.criteria.impl
+
+|JPA Criteria JPA2 Compatibility
+|com.blazebit.persistence.criteria.jpa2compatibility
+
+|===
+
+=== Supported environments/libraries
+
+The bare minimum is JPA 2.0. If you want to use the JPA Criteria API module, you will also have to add the JPA 2 compatibility module.
+Generally, we support the usage in Java EE 6+ or Spring 4+ applications.
+
+The following table outlines the supported library versions for the integrations.
+
+|===
+|Module |Automatic module name |Minimum version |Supported versions
+
+|Hibernate integration
+|com.blazebit.persistence.integration.hibernate
+|Hibernate 4.2
+|4.2, 4.3, 5.0, 5.1, 5.2, 5.3 (not all features are available in older versions)
+
+|EclipseLink integration
+|com.blazebit.persistence.integration.eclipselink
+|EclipseLink 2.6
+|2.6 (Probably 2.4 and 2.5 work as well, but only tested against 2.6)
+
+|DataNucleus integration
+|com.blazebit.persistence.integration.datanucleus
+|DataNucleus 4.1
+|4.1, 5.0
+
+|OpenJPA integration
+|com.blazebit.persistence.integration.openjpa
+|N/A
+|(Currently not usable. OpenJPA doesn't seem to be actively developed anymore and no users asked for support yet)
+|===
+
+=== First criteria query
+
+This section is supposed to give you a first feeling of how to use the criteria
+builder. For more detailed information, please see the subsequent chapters.
+
+NOTE: In the following we suppose `cbf` and `em` to refer to an instance of link:{core_jdoc}/persistence/CriteriaBuilderFactory.html[`CriteriaBuilderFactory`]
+and JPA's `EntityManager`, respectively.
+Take a look at the <<anchor-environment,environments>> chapter for how to obtain a link:{core_jdoc}/persistence/CriteriaBuilderFactory.html[`CriteriaBuilderFactory`].
+
+Let's start with the simplest query possible:
+
+[source,java]
+----
+CriteriaBuilder<Cat> cb = cbf.create(em, Cat.class);
+----
+
+This query simply selects all Cat objects and is equivalent to following JPQL query:
+
+[source,sql]
+----
+SELECT c FROM Cat c
+----
+
+Once the link:{core_jdoc}/persistence/CriteriaBuilderFactory.html#create(javax.persistence.EntityManager,%20java.lang.Class)[`create()`] method is called the expression
+returns a link:{core_jdoc}/persistence/CriteriaBuilder.html[`CriteriaBuilder<T>`] where `T` is specified via the second parameter of the
+link:{core_jdoc}/persistence/CriteriaBuilderFactory.html#create(javax.persistence.EntityManager,%20java.lang.Class)[`create()`] method and denotes the result type of the query.
+The default behavior of link:{core_jdoc}/persistence/CriteriaBuilderFactory.html#create(javax.persistence.EntityManager,%20java.lang.Class)[`create()`] is that the result type
+is assumed to be the entity class from which to select. So if we would like to only select the cats' age we would have to write:
+
+[source,java]
+----
+CriteriaBuilder<Integer> cb = cbf.create(em, Integer.class)
+    .from(Cat.class)
+    .select("cat.age");
+----
+
+Here we can see that the criteria builder assigns a default alias (the simple lower-case name of the entity class)
+to the entity class from which we select (root entity) if we do not specify one. If we want to save some
+writing, both the link:{core_jdoc}/persistence/CriteriaBuilderFactory.html#create(javax.persistence.EntityManager,%20java.lang.Class)[`create()`] and
+the link:{core_jdoc}/persistence/FromBuilder.html#from(java.lang.Class,%20java.lang.String)[`from()`] method allow the specification of a custom alias for the root entity:
+
+[source,java]
+----
+CriteriaBuilder<Integer> cb = cbf.create(em, Integer.class)
+    .from(Cat.class, "c")
+    .select("c.age");
+----
+
+Next we want to build a more complicated query. Let's select all cats with an
+age between 5 and 10 years and with at least two kittens. Additionally, we would
+like to order the results by name ascending and by id in case of equal names.
+
+[source,java]
+----
+CriteriaBuilder<Cat> cb = cbf.create(em, Cat.class, "c")
+    .where("c.age").betweenExpression("5").andExpression("10")
+    .where("SIZE(c.kittens)").geExpression("2")
+    .orderByAsc("c.name")
+    .orderByAsc("c.id");
+----
+
+We have built a couple of queries so far but how can we retrieve the results?
+There are two possible ways:
+
+* `List<Cat> cats = cb.getResultList();` to retrieve all results
+* `PagedList<Cat> cats = cb.page(0, 10).getResultList();` to retrieve 10 results starting from the first result
+(you must specify at least one unique column to determine the order of results)
++
+The `PagedList<Cat>` features the link:{core_jdoc}/persistence/PagedList.html#getTotalSize()[`getTotalSize()`] method which is perfectly suited for displaying the results in a
+paginated table. Moreover the link:{core_jdoc}/persistence/PagedList.html#getKeysetPage()[`getKeysetPage()`] method can be used to switch to keyset pagination for further paging.
+
+[[getting-started-summary]]
+=== Summary
+
+If you want to go into more detail, you are now ready to discover the other chapters of the documentation or
+the API yourself.

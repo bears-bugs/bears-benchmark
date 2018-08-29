@@ -1,0 +1,23 @@
+<%#encoding:UTF-8%><div<%= @id && %( id="#{@id}") %> class="<%= ['imageblock',@style,role].compact * ' ' %>"<%
+  if (attr? :align) || (attr? :float)
+%> style="<%= [("text-align: #{attr :align};" if attr? :align),("float: #{attr :float};" if attr? :float)].compact * ' ' %>"<%
+  end %>>
+  <div class="content"><%
+    if attr? :link %>
+        <a class="image" href="<%= attr :link %>"><img src="<%= image_uri(attr :target) %>" alt="<%= attr :alt %>"<%= (attr? :width) ? %( width="#{attr :width}") : nil %><%= (attr? :height) ? %( height="#{attr :height}") : nil %>></a><%
+    elsif attr? :nolightbox %>
+        <img src="<%= image_uri(attr :target) %>" alt="<%= attr :alt %>"<%= (attr? :width) ? %( width="#{attr :width}") : nil %><%= (attr? :height) ? %( height="#{attr :height}") : nil %>><%
+    else %>
+        <a href="javascript:;" onclick="document.location.hash='<%= image_uri(attr :target) %>';">
+          <img src="<%= image_uri(attr :target) %>" alt="<%= attr :alt %>"<%= (attr? :width) ? %( width="#{attr :width}") : nil %><%= (attr? :height) ? %( height="#{attr :height}") : nil %>>
+        </a>
+        <div class="lightbox" id="<%= image_uri(attr :target) %>">
+          <a href="javascript:;" onclick="document.location.hash='_';" class="btn-close">X</a>
+          <img src="<%= image_uri(attr :target) %>" alt="<%= attr :alt %>"<%= (attr? :width) ? %( width="#{attr :width}") : nil %><%= (attr? :height) ? %( height="#{attr :height}") : nil %>>
+        </div><%
+    end %>
+  </div><%
+  if title? %>
+      <div class="title"><%= captioned_title %></div><%
+  end %>
+</div>

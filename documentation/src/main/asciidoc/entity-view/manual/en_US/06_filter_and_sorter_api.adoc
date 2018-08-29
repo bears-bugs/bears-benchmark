@@ -1,0 +1,268 @@
+[[filter-and-sorter-api]]
+== Filter and Sorter API
+
+Apart from mapping projections, {projectname} entity views also provides support for filtering and sorting on attribute-level.
+Implementing the filtering and sorting based on attributes allows to completely encapsulate the entity model behind an entity view.
+The structure of an entity view is driven by the consumer and basing the filtering and sorting aspects on that very same structure is only natural for a consumer.
+
+The filter and sorter API is provided via `com.blazebit.persistence.view.EntityViewSetting` and allows filtering and sorting to be applied to entity views dynamically.
+_Dynamic_ in this context means that the filters and sorters can be added/enabled without the need to explicitly modify the entity view type itself
+or the criteria builder which the entity view is based on.
+
+[[filter-sorter-introductory-example]]
+Let's consider the following data access method for an example
+
+[source,java]
+----
+<V, C extends CriteriaBuilder<V>> getHungryCats(EntityViewSetting<V, C> settings) { ... }
+----
+
+It implements the basic business logic of how to obtain all hungry cats via a `CriteriaBuilder` from the database. The method supports
+entity views to allow fetching only the fields which are needed for a concrete use cases. For example when displaying the
+cats in a dropdown, their names might be sufficient but when displaying them in a table it might be desirable to include more details.
+
+Likewise, one might want to retrieve the cats sorted by name or by age depending on the use case. Having to
+introduce 2 new methods for this purpose would be painful:
+
+[source,java]
+----
+<V, C extends CriteriaBuilder<V>> getHungryCatsSortedByName(EntityViewSetting<V, C> settings);
+
+<V, C extends CriteriaBuilder<V>> getHungryCatsSortedByAge(EntityViewSetting<V, C> settings);
+----
+
+The above approach does not even account for different sort orders so in reality we might rather go for
+parameterizing the original method which is painful nevertheless:
+
+[source,java]
+----
+<V, C extends CriteriaBuilder<V>> getHungryCats(EntityViewSetting<V, C> settings, String sortField, String sortOrder);
+----
+
+Instead it is possible to apply the sorting to the `EntityViewSetting` instance that is passed to
+your data access layer:
+
+[source,java]
+----
+settings.addAttributeSorter("name", com.blazebit.persistence.view.Sorters.ascending());
+dataAccess.getHungryCats(settings);
+----
+
+NOTE: All attribute names specified using the filter or sorter API refer to the entity view attribute names rather than entity attribute names.
+
+=== Filter API
+
+The filter API allows to enable and parameterize a filter for entity view attributes.
+
+Entity view filters are defined by annotating respective entity view attributes with link:{entity_view_jdoc}/persistence/view/AttributeFilter.html[`@AttributeFilter`]
+or link:{entity_view_jdoc}/persistence/view/AttributeFilters.html[`@AttributeFilters`] for multiple named filters.
+
+In the annotation you can supply an optional filter name and a filter provider class which needs to extend
+link:{entity_view_jdoc}/persistence/view/AttributeFilterProvider.html[`AttributeFilterProvider`]. An attribute filter's name must be unique for the
+attribute it is annotated on. The attribute filter without a filter name is the _default filter_. Only a single default attribute filter per attribute is allowed.
+
+Example:
+
+[source,java]
+----
+@EntityView(Cat.class)
+public interface CatView {
+    @IdMapping
+    Integer getId();
+
+    @AttributeFilters({
+        AttributeFilter(ContainsIgnoreCaseFilter.class),
+        AttributeFilter(name = "containsCaseSensitive", value = ContainsFilter.class)
+    })
+    String getName();
+}
+----
+
+Default attribute filters are enabled by calling link:{entity_view_jdoc}/persistence/view/EntityViewSetting.html#addAttributeFilter(java.lang.String,%20java.lang.Object)[`addAttributeFilter(String attributeName, Object filterValue)`]
+whereas named filters require calling link:{entity_view_jdoc}/persistence/view/EntityViewSetting.html#addAttributeFilter(java.lang.String,%20java.lang.String,%20java.lang.Object)[`addAttributeFilter(String attributeName, String filterName, Object filterValue)`].
+
+The supplied object values are used by the filter provider to append the appropriate restrictions to the query builder.
+
+[source,java]
+----
+EntityViewSetting<CatView, CriteriaBuilder<CatView>> setting = EntityViewSetting.create(CatView.class);
+setting.addAttributeFilter("name", "kitty"); # <1>
+setting.addAttributeFilter("name", "containsCaseSensitive", "kitty"); # <2>
+----
+<1> Enables the default filter `ContainsIgnoreCaseFilter`, so e.g. 'KITTY' matches
+<2> Enables the named filter `ContainsFilter`, so e.g. 'KITTY' doesn't match
+
+NOTE: At most one attribute filter can be enabled per attribute.
+
+{projectname} provides a number of built-in filter providers in the `com.blazebit.persistence.view.filter` package:
+
+|===
+|Built-in filters           | Supported filter value types
+
+|GreaterOrEqualFilter       | Number, Date
+|LessOrEqualFilter          | Number, Date
+|GreaterThanFilter          | Number, Date
+|LessThanFilter             | Number, Date
+|EqualFilter                | Any
+|StartsWithFilter           | String
+|EndsWithFilter             | String
+|ContainsFilter             | String
+|StartsWithIgnoreCaseFilter | String
+|EndsWithIgnoreCaseFilter   | String
+|ContainsIgnoreCaseFilter   | String
+|NullFilter                 | Boolean - `true` includes NULLs, `false` excludes NULLs
+|===
+
+It is also possible to filter by subview attributes. The following example illustrates this:
+
+[source,java]
+----
+@EntityView(Cat.class)
+public interface CatView {
+    @IdMapping
+    Integer getId();
+
+    ChildCatView getChild();
+}
+
+@EntityView(Cat.class)
+public interface ChildCatView {
+    @IdMapping
+    Integer getId();
+
+    @AttributeFilter(LessOrEqualFilter.class)
+    Integer getAge();
+}
+
+CriteriaBuilderFactory cbf = ...;
+EntityViewManager evm = ...;
+EntityViewSetting<CatView, CriteriaBuilder<CatView>> setting = EntityViewSetting.create(CatView.class);
+// by adding this filter, only cats with a child of age <= 10 will be selected
+setting.addAttributeFilter("child.age", "10");
+----
+
+NOTE: Currently there is no support for collection filters like "has at least one" semantics. This is
+https://github.com/Blazebit/blaze-persistence/issues/109[planned] for a future version. When applying an attribute filter
+on a collection attribute or a subview attribute contained in a collection, the collection's elements will currently be filtered.
+In the meantime, collection filters can be implemented by creating a custom attribute filter, applying restrictions directly on the entity view's base query or by using a view filter.
+
+==== View filters
+
+View filters allow filtering based on attributes of the view-backing entity as opposed to attribute filters which
+relate to entity view attributes.
+
+For example, the following entity view uses a view filter to filter by the `age` entity attribute of the
+`Cat` entity without this attribute being mapped in the entity view.
+
+[source,java]
+----
+@EntityView(Cat.class)
+@ViewFilter(name = "ageFilter", value = AgeFilterProvider.class)
+public interface CatView {
+    @IdMapping
+    Integer getId();
+
+    String getName();
+
+    class AgeFilterProvider implements ViewFilterProvider {
+        @Override
+        public <T extends WhereBuilder<T>> T apply(T whereBuilder) {
+            return whereBuilder.where("age").gt(2L);
+        }
+    }
+}
+----
+
+View filters need to be activated via the `EntityViewSetting`:
+
+[source,java]
+----
+setting.addViewFilter("ageFilter");
+----
+
+==== Custom filters
+
+If the built-in filters do not satisfy your requirements you are free to implement custom attribute filters by
+extending link:{entity_view_jdoc}/persistence/view/AttributeFilterProvider.html[`AttributeFilterProvider`] with either one constructor accepting
+
+* `Class<?>` - The attribute type
+* `Object` - The filter value
+* `Class<?>` and `Object` - The attribute type and the filter value
+
+Have a look at how a range filter could be implemented:
+
+[source,java]
+----
+public class MyCustomFilter extends com.blazebit.persistence.view.AttributeFilterProvider {
+
+    private final Range range;
+
+    public EndsWithFilterImpl(Object value) {
+        this.value = (Range) value;
+    }
+
+    protected <T> T apply(RestrictionBuilder<T> restrictionBuilder) {
+        return restrictionBuilder.between(range.lower).and(range.upper);
+    }
+
+    public static class Range {
+        private final Number lower;
+        private final Number upper;
+
+        public Range(Number lower, Number upper) {
+            this.lower = lower;
+            this.upper = upper;
+        }
+    }
+}
+----
+
+The filter implementation only uses the filter value in the constructor and assumes it to be of the `Range` type.
+By accepting the attribute type, a string to object conversion for the filter value can be implemented.
+
+=== Sorter API
+
+The sorter API allows to sort entity views by their attributes.
+A sorter can be applied for an attribute by invoking link:{entity_view_jdoc}/persistence/view/EntityViewSetting.html#addAttributeSorter(java.lang.String,%20com.blazebit.persistence.view.Sorter)[`addAttributeSorter(String attributeName, Sorter sorter)`]
+
+For an example of how to use the sorter API refer to the <<filter-sorter-introductory-example, introductory example>>.
+
+{projectname} provides default sorters via the static methods in the link:{entity_view_jdoc}/persistence/view/Sorters.html[`Sorters`] class.
+These methods allow to easily create any combination of ascending/descending and nulls-first/nulls-last sorter.
+
+NOTE: At most one attribute sorter can be enabled per attribute.
+
+CAUTION: Sorting by subquery attributes (see ??) is problematic for some DBs.
+
+CAUTION: Currently, sorting by correlated attribute mappings (see ??) is also not fully supported.
+
+==== Custom sorter
+
+If the built-in sorters do not satisfy your requirements you are free to create a custom sorter by
+implementing the link:{entity_view_jdoc}/persistence/view/Sorter.html[`Sorter`] interface.
+
+An example for a custom sorter might be a case insensitive sorter
+
+[source,java]
+----
+public class MySorter implements com.blazebit.persistence.view.Sorter {
+
+    private final Sorter sorter;
+
+    private MySorter(Sorter sorter) {
+        this.sorter = sorter;
+    }
+
+    public static Sorter asc() {
+        return new MySorter(Sorters.ascending());
+    }
+
+    public static Sorter desc() {
+        return new MySorter(Sorters.descending());
+    }
+
+    public <T extends OrderByBuilder<T>> T apply(T sortable, String expression) {
+        return sorter.apply(sortable, "UPPER(" + expression + ")");
+    }
+}
+----
