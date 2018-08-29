@@ -1,0 +1,341 @@
+== Pagination
+
+Pagination is often used to make large data sets consumable. It requires an ordered set of elements/rows to be able to deterministically split the data into pages.
+Imagine the following ordered data set
+
+[ditaa, nolightbox="true"]
+....
++---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+| a | b | c | d | e | f | g | h | i | j | k | l | m | n | o | p | q | r | s | t | u | v | w | x | y | z |
++---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+....
+
+If we split it up into pages of the size of 5 elements we get 6 pages and the last one only containing 1 element
+
+[ditaa, nolightbox="true"]
+....
+        +---+ +---+ +---+ +---+ +---+ +---+
+        | a | | f | | k | | p | | u | | z |
+        +---+ +---+ +---+ +---+ +---+ +---+
+        | b | | g | | l | | q | | v |
+        +---+ +---+ +---+ +---+ +---+
+        | c | | h | | m | | r | | w |
+        +---+ +---+ +---+ +---+ +---+
+        | d | | i | | n | | s | | x |
+        +---+ +---+ +---+ +---+ +---+
+        | e | | j | | o | | t | | y |
+        +---+ +---+ +---+ +---+ +---+
+
+Page      1     2     3     4     5     6
+....
+
+{projectname} provides two ways to do pagination.
+
+* Conventional pagination via link:{core_jdoc}/persistence/LimitBuilder.html#setFirstResult(int)[`setFirstResult()`] and link:{core_jdoc}/persistence/LimitBuilder.html#setMaxResults(int)[`setMaxResults()`]
+* Extended pagination support via the link:{core_jdoc}/persistence/PaginatedCriteriaBuilder.html[`PaginatedCriteriaBuilder`] API
+
+Conventional pagination in JPA only works on the main query which is also possible with {projectname}.
+
+[source, java]
+----
+List<Cat> secondCat = cbf.create(em, Cat.class)
+    .orderByAsc("id")
+    .setFirstResult(1)
+    .setMaxResults(1)
+    .getResultList();
+----
+
+[source,sql]
+----
+SELECT cat
+FROM Cat cat
+ORDER BY cat.id ASC NULLS LAST
+--LIMIT 1 OFFSET 1
+----
+
+In addition to that, offset pagination for subqueries is also possible.
+
+[source, java]
+----
+List<Cat> secondCat = cbf.create(em, Cat.class)
+    .fetch("kittens")
+    .where("id").in()
+        .from(Cat.class, "subCat")
+        .select("subCat.id")
+        .orderByAsc("id")
+        .setFirstResult(1)
+        .setMaxResults(1)
+    .end()
+    .getResultList();
+----
+
+[source,sql]
+----
+SELECT cat
+FROM Cat cat
+LEFT JOIN FETCH cat.kittens kittens_1
+WHERE cat.id IN LIMIT((                 # <1>
+    SELECT subCat.id
+    FROM Cat cat
+    ORDER BY cat.id ASC NULLS LAST
+),1 ,1) --LIMIT 1 OFFSET 1
+----
+<1> Uses the <<limit-function,`LIMIT` function>> to apply a `LIMIT`/`OFFSET` clause on the subquery
+
+The extended pagination support comes via the criteria builder's link:{core_jdoc}/persistence/FullQueryBuilder.html#page(int,%20int)[`page()`] methods which come in three flavours:
+
+link:{core_jdoc}/persistence/FullQueryBuilder.html#page(int,%20int)[`page(int firstResult, int maxResults)`]::
+
+ Performs <<anchor-offset-pagination,offset pagination>> by skipping `firstResult` elements and from there on, show `maxResults` elements.
+
+link:{core_jdoc}/persistence/FullQueryBuilder.html#page(com.blazebit.persistence.KeysetPage,%20int,%20int)[`page(KeysetPage keysetPage, int firstResult, int maxResults)`]::
+
+ Performs <<anchor-keyset-pagination,keyset pagination>> if possible and falls back to offset pagination otherwise.
+
+link:{core_jdoc}/persistence/FullQueryBuilder.html#page(java.lang.Object,%20int)[`page(Object entityId, int maxResults)`]::
+
+ Navigates to the <<anchor-navigate-entity-page,page containing the entity>> with the given `entityId`. Falls back to the first page if no entity for the id exists.
+
+[[pagination-under-the-hood]]
+=== Under the hood
+
+In {projectname} we have followed a more involved approach for implementing pagination than plainly using JPA standard
+methods like `javax.persistence.Query.setMaxResults()` or `javax.persistence.Query.setFirstResult()` to steer the result set
+dimensions. This is due to deficiencies in some JPA providers when it comes to handling paginated queries containing
+join fetches for collections.
+
+NOTE: By default, when using fetch joins for collections with Hibernate, all results are fetched instead of only the selected page.
+
+The approach used in {projectname} consists of up to three queries executed consecutively:
+
+. The *count query* is used to fetch the total element count which is needed to populate `com.blazebit.persistence.PagedList.getTotalSize()` and
+`com.blazebit.persistence.PagedList.getTotalPages()`. If this query returns 0, no further queries are executed.
+
+. The *ID query* is used to fetch the entity ids that are contained in the target page. In this step, the previously
+ mentioned `javax.persistence.Query.setMaxResults()` and `javax.persistence.Query.setFirstResult()` are used to select the
+ target ID set. Only selecting the IDs allows to omit all fetch joins, especially collection joins that might trigger inefficient jpa provider
+ strategies. The *ID query* is omitted if no collection fetch joins are done, because in that case JPA providers tend to do the right thing when paginating directly.
+
+. Finally, the *object query* is used to fetch the entities as described by the original query specified by the user.
+This query uses an `IN` predicate for the ID set retrieved in the previous step to restrict the fetched entities to the target
+page.
+
+NOTE: In a future version it might be possible to combine queries or disable the count query. For more information on that see https://github.com/Blazebit/blaze-persistence/issues/248[#248],
+https://github.com/Blazebit/blaze-persistence/issues/249[#249] and https://github.com/Blazebit/blaze-persistence/issues/255[#255]
+
+TIP: You can inspect the query strings by using link:{core_jdoc}/persistence/PaginatedCriteriaBuilder.html#getPageCountQueryString()[`getPageCountQueryString()`],
+link:{core_jdoc}/persistence/PaginatedCriteriaBuilder.html#getPageIdQueryString()[`getPageIdQueryString()`] and link:{core_jdoc}/persistence/Queryable.html#getQueryString()[`getQueryString()`]
+
+[[anchor-offset-pagination]]
+=== Offset pagination
+
+As already laid out in the <<pagination,introduction>>, pagination works on an ordered set of elements/rows.
+Offset pagination basically looks at the ordered set from left to right and counts elements until the count reaches `firstResult`.
+From that point on elements are collected until `maxResults` of elements have been collected or no more elements are available.
+
+This basically means that the `OFFSET` i.e. `firstResult` part forces a DBMS to actually determine an element/row is visible for a transaction and then _ignore_/_skip_ it.
+The bigger the `firstResult` value, the more resources the DBMS has to waste for _skipping_ elements/rows.
+This essentially means that when employing offset pagination, accessing the latter pages will become more and more expensive.
+In order for this approach to be actually usable with larger data sets, a DBMS index that can be used for the ordering is required to avoid constantly loading and sorting data.
+In addition to that, the DBMS should have enough RAM to keep the index fully in-memory to avoid costly disk fetches.
+
+Although offset pagination works in every case, it should be avoided if possible because of the performance implications.
+As you will see in the <<anchor-keyset-pagination,keyset pagination part>> there is a more efficient approach to pagination that almost uses the same API.
+
+The following example illustrates the usage and what happens behind the scenes
+
+[source, java]
+----
+PagedList<Cat> page2 = cbf.create(em, Cat.class)
+    .fetch("kittens")
+    .orderByAsc("id") // unique ordering is required for pagination
+    .page(5, 5)
+    .getResultList();
+----
+
+Executes the following queries
+
+[.Count query]
+[source,sql]
+----
+SELECT COUNT(*)
+FROM Cat cat
+----
+
+Note that the *ID query* is necessary because of the join fetched collection `kittens`
+
+[.ID query]
+[source,sql]
+----
+SELECT cat.id
+FROM Cat cat
+ORDER BY cat.id ASC NULLS LAST
+--LIMIT 1 OFFSET 1
+----
+
+[.Object query]
+[source,sql]
+----
+SELECT cat
+FROM Cat cat
+LEFT JOIN FETCH cat.kittens kittens_1
+WHERE cat.id IN :idParams
+ORDER BY cat.id ASC NULLS LAST
+----
+
+[[anchor-keyset-pagination]]
+=== Keyset pagination
+
+Keyset pagination is a way to efficiently paginate or scroll through a large data set by querying for elements that come before or after a reference point.
+The idea of a keyset is, that every tuple can be uniquely identified by that keyset. So a keyset essentially is a reference point of a tuple in a data set ordered by keysets.
+Keyset pagination in contrast to offset pagination makes efficient use of the ordering property of the data set.
+By remembering the highest and lowest keysets of a page, it is possible to query the previous and next pages efficiently.
+
+A keyset in terms of query results consists of the values of the `ORDER BY` expressions of a tuple.
+In order to satisfy the uniqueness constraint, it is generally a good idea to use an entity's id as last expression in the `ORDER BY` clause.
+
+NOTE: Currently the entity id is the *only* possible expression that satisfies the uniqueness constraint.
+
+Keyset pagination just like offset pagination requires index support on the DBMS side to work efficiently. A range-scan enabled index like provided by a b-tree index is required for keyset pagination to work best.
+In contrast to offset pagination, an index does not have to be traversed like a list in order to _ignore_/_skip_ a certain amount of elements/rows. Instead, a DBMS can make use of the structure of the index
+and traverse it in `O(log N)` as compared to `O(N)` to get to the `firstResult`. This characteristic makes keyset pagination especially useful for accessing latter pages.
+
+TIP: Don't allow too many different sort combinations as every combination requires a custom index to work efficiently.
+
+One of the obvious requirements for keyset pagination to work, is the need for a reference point i.e. a keyset from which point on the next or previous elements should be queried.
+
+The API in {projectname} tries to allow making use of keyset pagination in a transparent and easy manner without compromises.
+
+[source, java]
+----
+// In the beginning we don't have a keyset page
+KeysetPage oldPage = null;
+PagedList<Cat> page2 = cbf.create(em, Cat.class)
+    .orderByAsc("birthday")
+    .orderByAsc("id") // unique ordering is required for pagination
+    .page(oldPage, 5, 5) #<1>
+    .getResultList();
+
+// Query the next page with the keyset page of page2
+PagedList<Cat> page3 = cbf.create(em, Cat.class)
+    .orderByAsc("birthday")
+    .orderByAsc("id") // unique ordering is required for pagination
+    .page(page2.getKeysetPage(), 10, 5) #<2>
+    .getResultList();
+
+// Query the previous page with the keyset page of page2
+PagedList<Cat> page1 = cbf.create(em, Cat.class)
+    .orderByAsc("birthday")
+    .orderByAsc("id") // unique ordering is required for pagination
+    .page(page2.getKeysetPage(), 0, 5) #<3>
+    .getResultList();
+----
+<1> The oldPage in this case is `null`, so internally it falls back to offset pagination
+<2> When querying the _next_ page of `page2`, it can use the link:{core_jdoc}/persistence/KeysetPage.html#getHighest()[upper bound] of the link:{core_jdoc}/persistence/PagedList.html#getKeysetPage()[keyset page]
+<3> When querying the _previous_ page of `page2`, it can use the link:{core_jdoc}/persistence/KeysetPage.html#getLowest()[lower bound] of the link:{core_jdoc}/persistence/PagedList.html#getKeysetPage()[keyset page]
+
+Since we are not fetching any collections, the ID query is avoided. For brevity, we skip the count query.
+So let's look at the object queries generated
+
+[.Object query 1]
+[source,sql]
+----
+SELECT cat, cat.id #<1>
+FROM Cat cat
+ORDER BY cat.birthday ASC NULLS LAST, cat.id ASC NULLS LAST
+--LIMIT 5 OFFSET 5
+----
+<1> The expression `cat.id` is for constructing the keyset and contains all expressions of the `ORDER BY` clause
+
+As you can see, nothing fancy, except for the additional select that is used for extracting the keyset.
+
+[.Object query 2]
+[source,sql]
+----
+SELECT cat, cat.id
+FROM Cat cat
+WHERE cat.birthday > :_keysetParameter_0 OR (
+    cat.birthday = :_keysetParameter_0 AND
+    cat.id > :_keysetParameter_1
+)
+ORDER BY cat.birthday ASC NULLS LAST, cat.id ASC NULLS LAST
+--LIMIT 5
+----
+
+This time the query made efficient use of the keyset by filtering out elements/rows that come before the reference point
+
+[.Object query 3]
+[source,sql]
+----
+SELECT cat, cat.id
+FROM Cat cat
+WHERE cat.birthday < :_keysetParameter_0 OR (
+    cat.birthday = :_keysetParameter_0 AND
+    cat.id < :_keysetParameter_1
+)
+ORDER BY cat.birthday DESC NULLS FIRST, cat.id DESC NULLS FIRST
+--LIMIT 5
+----
+
+Before the query filtered out elements/rows that came *before* the reference point, this time it does the opposite. It filters out elements/rows coming *after* the reference point.
+Another interesting thing to notice, the ordering was reversed too. This has the effect that the DBMS can traverse the index backwards and essentially is how keyset pagination works.
+The ordering is reversed again in-memory, so you don't notice anything of these details.
+
+Note that in the following situations, the implementation automatically falls back to offset pagination
+
+* The keyset is invalid i.e. it is `null`
+* The ordering of the query changed
+* The page to navigate to is arbitrary i.e. not the next or previous page of a `keysetPage`
+
+To be able to make use of keyset pagination either via the link:{core_jdoc}/persistence/PaginatedCriteriaBuilder.html[`PaginatedCriteriaBuilder`] API or the <<keyset-pagination-support,manual keyset filter API>>,
+the link:{core_jdoc}/persistence/KeysetPage.html[`KeysetPage`] or the respective link:{core_jdoc}/persistence/Keyset.html[`Keyset`] elements have to be preserved across page requests.
+Applications that can retain state between requests(i.e. via a session) can just preserve the `KeysetPage` object itself. Applications that try to avoid server side state have to serialize and deserialize the state somehow.
+
+Since the keyset state is available through link:{core_jdoc}/persistence/Keyset.html#getTuple()[getter methods], it shouldn't be too hard to do the serialization and deserialization.
+When implementing a custom `Keyset`, the `equals()` and `hashCode()` contracts have to make use of just the tuple. A custom `KeysetPage` implementation has to provide access to the lowest and highest  keysets,
+as well as the `firstResult` and `maxResults` values used for querying that page.
+
+Beware that keyset pagination isn't perfect. If entries can be _prepended_ relative to the current keyset/reference point,
+it might happen that the page number calculation becomes wrong over time. Most of the time this is negligible as it kind of gives the illusion that the user works on a snapshot of the data.
+
+[[anchor-navigate-entity-page]]
+=== Navigate to entity page
+
+The navigation to the page on which an entity with a specific id is involves finding out the position of the entity.
+{projectname} offers a custom function named <<page-position,`PAGE_POSITION`>> which determines the absolute position of an entity in an ordered set.
+
+[source, java]
+----
+Cat knownCat = //...
+PagedList<Cat> page3 = cbf.create(em, Cat.class)
+    .orderByAsc("birthday")
+    .orderByAsc("id") // unique ordering is required for pagination
+    .page((Object) knownCat.getId(), 3) #<1>
+    .getResultList();
+----
+<1> If your id type is a primitive `int`, you must cast to `Object` or `Integer` to use the right method
+
+[.Count query]
+[source,sql]
+----
+SELECT COUNT(*), FUNCTION('PAGE_POSITION',(
+    SELECT _page_position_cat.id
+    FROM Cat _page_position_cat
+    GROUP BY _page_position_cat.id, _page_position_cat.birthday
+    ORDER BY _page_position_cat.birthday DESC NULLS FIRST, _page_position_cat.id DESC NULLS FIRST
+), :_entityPagePositionParameter)
+FROM Cat cat
+----
+
+The count query contains the page position determination logic. It essentially passes an ID query as subquery to the `PAGE_POSITION` function.
+The concrete SQL implementation of that function depends on the DBMS, but they all follow the same main idea.
+Wrap the ID query and count the row numbers. In another wrapper around that, filter for the row with the matching id and return the row number as position.
+The element/row number of the first element on that page is calculated and used as `firstResult`. Apart from this speciality, the rest of the query is just like a normal offset pagination query.
+
+[[pagination-limitations]]
+=== Limitations
+
+Since the `PaginatedCriteriaBuilder` API can only paginate on entity level, the results are implicitly grouped by id and therefore distinct.
+Because of that, the usage of `distinct()` or `groupBy()` on a `PaginatedCriteriaBuilder` is disallowed and will result in an exception.
+
+If these limitations are not ok for your use case, you will have to implement a custom pagination strategy via `setFirstResult()` and `setMaxResults()`.

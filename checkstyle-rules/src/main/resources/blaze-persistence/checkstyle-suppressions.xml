@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<!--
+  Copyright 2014 - 2018 Blazebit.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  -->
+<!DOCTYPE suppressions PUBLIC
+        "-//Puppy Crawl//DTD Suppressions 1.1//EN"
+        "http://www.puppycrawl.com/dtds/suppressions_1_1.dtd">
+<suppressions>
+    <!-- Generated files don't have to fit our checkstyle requirements -->
+    <suppress checks="." files="[\\/]target[\\/].*\.java$"/>
+    <!-- The compatibility stuff for the JPA criteria API does not have to comply either -->
+    <suppress checks="." files="[\\/]javax[\\/]persistence[\\/]criteria[\\/].*\.java$"/>
+    <!-- The copied Spring Data classes don't have to comply either -->
+    <suppress checks="." files="[\\/]com[\\/]blazebit[\\/]persistence[\\/]spring[\\/]data[\\/]base[\\/]query[\\/]ParameterBinder\.java$"/>
+    <suppress checks="." files="[\\/]com[\\/]blazebit[\\/]persistence[\\/]spring[\\/]data[\\/]base[\\/]query[\\/]JpaParameters\.java$"/>
+    <suppress checks="." files="[\\/]com[\\/]blazebit[\\/]persistence[\\/]spring[\\/]data[\\/]base[\\/]query[\\/]ParameterMetadataProvider\.java$"/>
+    <suppress checks="." files="[\\/]com[\\/]blazebit[\\/]persistence[\\/]spring[\\/]data[\\/]base[\\/]query[\\/]CriteriaQueryParameterBinder\.java$"/>
+    <suppress checks="." files="[\\/]com[\\/]blazebit[\\/]persistence[\\/]spring[\\/]data[\\/]base[\\/]query[\\/]AbstractPartTreeBlazePersistenceQuery\.java$"/>
+    <suppress checks="." files="[\\/]com[\\/]blazebit[\\/]persistence[\\/]spring[\\/]data[\\/]base[\\/]repository[\\/]EntityViewAwareCrudMethodMetadataPostProcessor\.java$"/>
+    <suppress checks="." files="[\\/]com[\\/]blazebit[\\/]persistence[\\/]spring[\\/]data[\\/]impl[\\/]repository[\\/]BlazePersistenceRepositoryFactory\.java$"/>
+    <suppress checks="." files="[\\/]com[\\/]blazebit[\\/]persistence[\\/]spring[\\/]data[\\/]impl[\\/]repository[\\/]DefaultRepositoryInformation\.java$"/>
+    <suppress checks="." files="[\\/]com[\\/]blazebit[\\/]persistence[\\/]spring[\\/]data[\\/]impl[\\/]repository[\\/]MethodLookups\.java$"/>
+
+    <!-- The implementation, testsuite and examples don't have to fit our Javadoc requirements -->
+    <suppress checks="JavadocPackage" files="[\\/](parser|impl|integration|testsuite|examples|org.springframework)[\\/].*\.java$"/>
+    <suppress checks="JavadocMethod" files="[\\/](parser|impl|integration|testsuite|examples|org.springframework)[\\/].*\.java$"/>
+    <suppress checks="JavadocStyle" files="[\\/](parser|impl|integration|testsuite|examples|org.springframework)[\\/].*\.java$"/>
+    <suppress checks="JavadocType" files="[\\/](parser|impl|integration|testsuite|examples|org.springframework)[\\/].*\.java$"/>
+    <suppress checks="NonEmptyAtclauseDescription" files="[\\/](parser|impl|testsuite|examples|org.springframework)[\\/].*\.java$"/>
+    <suppress checks="com.blazebit.persistence.checkstyle.JavadocSinceCheck" files="[\\/](testsuite|examples)[\\/].*\.java$"/>
+
+    <!-- Testdata generators may violate that pattern since names need underlines -->
+    <suppress checks="LocalVariableName" files="[\\/](examples)[\\/].*\.java$"/>
+</suppressions>

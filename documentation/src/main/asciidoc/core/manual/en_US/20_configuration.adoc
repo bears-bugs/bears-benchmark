@@ -1,0 +1,182 @@
+== Configuration
+
+{projectname} can be configured by setting properties on a link:{core_jdoc}/persistence/spi/CriteriaBuilderConfiguration.html#setProperty(java.lang.String,%20java.lang.String)[`CriteriaBuilderConfiguration`]
+object and creating a link:{core_jdoc}/persistence/spi/CriteriaBuilderConfiguration.html#createCriteriaBuilderFactory(javax.persistence.EntityManagerFactory)[`CriteriaBuilderFactory`] from it.
+
+You can also set configuration properties on a per builder basis via the link:{core_jdoc}/persistence/CommonQueryBuilder.html#setProperty(java.lang.String,%20java.lang.String)[`setProperty(String, String)`] method.
+
+=== Configuration properties
+
+==== COMPATIBLE_MODE
+
+Enables JPA compatibility mode to disallow the usage of vendor specific extensions. This will result in higher portability.
+
+[width="100%",cols="2,10",options="header,footer"]
+|====================
+| Key | com.blazebit.persistence.compatible_mode 
+| Type | boolean 
+| Default | false
+| Applicable | Configuration only
+|====================
+
+==== RETURNING_CLAUSE_CASE_SENSITIVE
+
+Defines whether column names should be used with the case in which they are given or as lower case when returning column values from a DML query.
+This is mostly relevant for PostgreSQL which requires `false` to work properly.
+
+[width="100%",cols="2,10",options="header,footer"]
+|====================
+| Key | com.blazebit.persistence.returning_clause_case_sensitive
+| Type | boolean 
+| Default | true
+| Applicable | Always
+|====================
+
+==== SIZE_TO_COUNT_TRANSFORMATION
+
+Defines whether the SIZE to COUNT tranformation should be applied to queries or not.
+The transformation can be very beneficial especially for databases that can't optimize subqueries properly within the context of a parent query.
+This property exists just so you can turn the transformation off if you encounter problems.
+
+[width="100%",cols="2,10",options="header,footer"]
+|====================
+| Key | com.blazebit.persistence.size_to_count_transformation
+| Type | boolean 
+| Default | true
+| Applicable | Always
+|====================
+
+==== IMPLICIT_GROUP_BY_FROM_SELECT
+
+Defines whether non-aggregate expressions from the SELECT clause should be automatically added to the GROUP BY.
+Some databases require that all non-aggregate expressions must be included in the GROUP BY clause which is pretty annoying.
+This feature can make writing queries a lot easier since it will implicitly copy expressions over to the GROUP BY clause.
+
+[width="100%",cols="2,10",options="header,footer"]
+|====================
+| Key | com.blazebit.persistence.implicit_group_by_from_select
+| Type | boolean 
+| Default | true
+| Applicable | Always
+|====================
+
+==== IMPLICIT_GROUP_BY_FROM_HAVING
+
+Defines whether non-aggregate expressions from the HAVING clause should be automatically added to the GROUP BY.
+Some databases require that all non-aggregate expressions must be included in the GROUP BY clause which is pretty annoying.
+This feature can make writing queries a lot easier since it will implicitly copy expressions over to the GROUP BY clause.
+
+[width="100%",cols="2,10",options="header,footer"]
+|====================
+| Key | com.blazebit.persistence.implicit_group_by_from_having
+| Type | boolean 
+| Default | true
+| Applicable | Always
+|====================
+
+==== IMPLICIT_GROUP_BY_FROM_ORDER_BY
+
+Defines whether non-aggregate expressions from the ORDER BY clause should be automatically added to the GROUP BY.
+Some databases require that all non-aggregate expressions must be included in the GROUP BY clause which is pretty annoying.
+This feature can make writing queries a lot easier since it will implicitly copy expressions over to the GROUP BY clause.
+
+[width="100%",cols="2,10",options="header,footer"]
+|====================
+| Key | com.blazebit.persistence.implicit_group_by_from_order_by
+| Type | boolean 
+| Default | true
+| Applicable | Always
+|====================
+
+==== EXPRESSION_OPTIMIZATION
+
+Defines whether expressions should be optimized.
+
+[width="100%",cols="2,10",options="header,footer"]
+|====================
+| Key | com.blazebit.persistence.expression_optimization
+| Type | boolean 
+| Default | true
+| Applicable | Configuration only
+|====================
+
+==== EXPRESSION_CACHE_CLASS
+
+The full qualified expression cache implementation class name.
+
+[width="100%",cols="2,10",options="header,footer"]
+|====================
+| Key | com.blazebit.persistence.expression.cache_class
+| Type | String 
+| Default | com.blazebit.persistence.parser.expression.ConcurrentHashMapExpressionCache
+| Applicable | Configuration only
+|====================
+
+==== VALUES_CLAUSE_FILTER_NULLS
+
+Defines whether tuples of a VALUES clause with all NULL values should be filtered out.
+The property can be changed for a criteria builder before using the VALUES clause.
+
+[width="100%",cols="2,10",options="header,footer"]
+|====================
+| Key | com.blazebit.persistence.values.filter_nulls
+| Type | boolean
+| Default | true
+| Applicable | Always
+|====================
+
+==== PARAMETER_AS_LITERAL_RENDERING
+
+Defines whether parameters should be rendered as literals when the type can not be inferred, or always as parameter.
+The property can be changed for a criteria builder before constructing a query.
+
+[width="100%",cols="2,10",options="header,footer"]
+|====================
+| Key | com.blazebit.persistence.parameter_literal_rendering
+| Type | boolean
+| Default | true
+| Applicable | Always
+|====================
+
+==== OPTIMIZED_KEYSET_PREDICATE_RENDERING
+
+Defines whether the keyset predicate should be rendered in an optimized form so that database optimizers are more likely
+to use indices.
+The property can be changed for a criteria builder before constructing a query.
+
+[width="100%",cols="2,10",options="header,footer"]
+|====================
+| Key | com.blazebit.persistence.optimized_keyset_predicate_rendering
+| Type | boolean
+| Default | true
+| Applicable | Always
+|====================
+
+[[configuration-jpql-functions]]
+=== Jpql functions
+
+Custom functions that can be invoked via the JPA 2.1 function syntax `FUNCTION('function_name', args...)` can be registered with `registerFunction(JpqlFunctionGroup)`.
+A `JpqlFunctionGroup` represents a logical function that can contain multiple implementations for various dbms and can be defined as being an aggregate function.
+
+These functions are registered as native persistence provider functions and can therefore also be used with plain JPA APIs or the native persistence provider APIs.
+For more information refer to the <<JPQL functions>> section.
+
+[[configuration-dbms-dialects]]
+=== Dbms dialects
+
+Dbms dialect implementations provide SQL-level abstractions for a specific dbms. {projectname} comes with support for the following dbms:
+
+* h2
+* mysql
+* postgresql
+* db2
+* oracle
+* microsoft
+
+By registering a custom implementation for a specific dbms via `registerDialect(String, DbmsDialect)` the default implementation will be overridden.
+For more information refer to the <<Customize DBMS dialect>> section.
+
+[[configuration-entity-manager-factory-integrators]]
+=== Entity manager factory integrators
+
+A little integration layer to extract the dbms of an entity manager and register `JpqlFunctionGroup` instances with the entity manager. This is normally provided by an integration module for persistence providers.

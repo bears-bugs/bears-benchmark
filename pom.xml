@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Copyright 2014 - 2018 Blazebit.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  -->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.blazebit</groupId>
+        <artifactId>blazebit-parent</artifactId>
+        <version>11</version>
+    </parent>
+
+    <artifactId>blaze-persistence</artifactId>
+    <version>1.2.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <name>Blazebit Blaze-Persistence</name>
+    <url>https://persistence.blazebit.com</url>
+    <description>Blazebit Blaze-Persistence</description>
+
+    <properties>
+        <version.checkstyle>8.7</version.checkstyle>
+        <maven.build.timestamp.format>yyyy</maven.build.timestamp.format>
+        <currentYearDynamic>${maven.build.timestamp}</currentYearDynamic>
+    </properties>
+
+    <inceptionYear>2014</inceptionYear>
+
+    <modules>
+        <module>parent</module>
+        <module>core</module>
+        <module>entity-view</module>
+        <module>jpa-criteria</module>
+        <module>integration</module>
+        <module>testsuite-base</module>
+        <module>documentation</module>
+        <module>website</module>
+        <module>examples</module>
+        <module>checkstyle-rules</module>
+        <module>archetype</module>
+    </modules>
+
+    <issueManagement>
+        <system>github</system>
+        <url>https://github.com/Blazebit/blaze-persistence/issues</url>
+    </issueManagement>
+
+    <ciManagement>
+        <system>travisci</system>
+        <url>https://travis-ci.org/Blazebit/blaze-persistence</url>
+    </ciManagement>
+
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
+
+    <organization>
+        <name>Blazebit</name>
+        <url>http://www.blazebit.com</url>
+    </organization>
+
+    <scm>
+        <connection>scm:git:git@github.com:Blazebit/blaze-persistence.git</connection>
+        <developerConnection>scm:git:git@github.com:Blazebit/blaze-persistence.git</developerConnection>
+        <url>git@github.com:Blazebit/blaze-persistence.git</url>
+        <tag>HEAD</tag>
+    </scm>
+
+    <developers>
+        <developer>
+            <id>christian</id>
+            <name>Christian Beikov</name>
+            <email>christian@blazebit.com</email>
+            <organization>Blazebit</organization>
+            <organizationUrl>http://www.blazebit.com</organizationUrl>
+            <timezone>UTC+1</timezone>
+            <roles>
+                <role>Project Owner</role>
+                <role>Committer</role>
+            </roles>
+        </developer>
+        <developer>
+            <id>cchet</id>
+            <name>Thomas Herzog</name>
+            <email>t.herzog@curecomp.com</email>
+            <organization>Curecomp</organization>
+            <organizationUrl>http://www.curecomp.com</organizationUrl>
+            <timezone>UTC+1</timezone>
+            <roles>
+                <role>Committer</role>
+            </roles>
+        </developer>
+        <developer>
+            <id>Mobe91</id>
+            <name>Moritz Becker</name>
+            <email>m.becker@curecomp.com</email>
+            <organization>Curecomp</organization>
+            <organizationUrl>http://www.curecomp.com</organizationUrl>
+            <timezone>UTC+1</timezone>
+            <roles>
+                <role>Committer</role>
+            </roles>
+        </developer>
+    </developers>
+    <profiles>
+        <profile>
+            <!-- It disables javadoc doclint for JDK > 8 -->
+            <id>javadoc-xdoclint-disable-jdk8+</id>
+            <activation>
+                <jdk>[1.8,)</jdk>
+            </activation>
+            <build>
+                <pluginManagement>
+                    <plugins>
+                        <plugin>
+                            <groupId>org.apache.maven.plugins</groupId>
+                            <artifactId>maven-javadoc-plugin</artifactId>
+                            <configuration>
+                                <additionalJOption>-Xdoclint:none</additionalJOption>
+                            </configuration>
+                        </plugin>
+                    </plugins>
+                </pluginManagement>
+            </build>
+        </profile>
+        <profile>
+            <id>jdk9+</id>
+            <activation>
+                <jdk>[1.9,)</jdk>
+            </activation>
+            <properties>
+                <version.enforcer.plugin>3.0.0-M1</version.enforcer.plugin>
+                <maven.processor.source>1.9</maven.processor.source>
+                <maven.processor.target>1.9</maven.processor.target>
+            </properties>
+            <repositories>
+                <repository>
+                    <id>JBoss Snapshots</id>
+                    <name>JBoss Snapshots</name>
+                    <url>http://repository.jboss.org/nexus/content/groups/public/</url>
+                </repository>
+            </repositories>
+        </profile>
+        <profile>
+            <id>blazebit-release</id>
+            <modules>
+                <module>parent</module>
+                <module>core</module>
+                <module>entity-view</module>
+                <module>jpa-criteria</module>
+                <module>integration</module>
+                <module>testsuite-base</module>
+                <module>documentation</module>
+                <module>website</module>
+                <module>checkstyle-rules</module>
+                <module>archetype</module>
+                <module>dist</module>
+            </modules>
+        </profile>
+        <profile>
+            <id>dist</id>
+            <modules>
+                <module>dist</module>
+            </modules>
+        </profile>
+    </profiles>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <artifactId>maven-source-plugin</artifactId>
+                    <executions>
+                        <!-- here we override the super-pom attach-sources executionid which
+                        calls sources:jar goal. That goals forks the lifecycle, causing
+                        the generate-sources phase to be called twice for the install goal.
+                        This causes any other plugin bound to the generate-sources phase to
+                        be called twice which usually has nasty side effects, let alone
+                        creating duplicate processing and longer build times. -->
+                        <execution>
+                            <id>attach-sources</id>
+                            <phase>DISABLE_FORKED_LIFECYCLE_MSOURCES-13</phase>
+                        </execution>
+                        <execution>
+                            <id>attach-sources-no-fork</id>
+                            <inherited>true</inherited>
+                            <goals>
+                                <goal>jar-no-fork</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+        <plugins>
+            <plugin>
+                <groupId>com.mycila</groupId>
+                <artifactId>license-maven-plugin</artifactId>
+                <version>3.0</version>
+                <configuration>
+                    <header>license-header.txt</header>
+                    <headerDefinitions>
+                        <headerDefinition>license-header-definition.xml</headerDefinition>
+                    </headerDefinitions>
+                    <mapping>
+                        <java>JAVADOC_STYLE</java>
+                        <xml>XML_STYLE</xml>
+                    </mapping>
+                    <aggregate>true</aggregate>
+                    <includes>
+                        <include>**/src/**/*.java</include>
+                        <include>**/src/**/*.xml</include>
+                    </includes>
+                    <excludes>
+                        <exclude>**/target/**</exclude>
+                        <!-- The following files contain modified headers due to copied code and need to be excluded from the check -->
+                        <exclude>**/src/main/java/com/blazebit/persistence/integration/view/spring/impl/TypeFilterParser.java</exclude>
+                        <exclude>**/src/main/java/com/blazebit/persistence/spring/data/base/query/CriteriaQueryParameterBinder.java</exclude>
+                        <exclude>**/src/main/java/com/blazebit/persistence/spring/data/base/query/ParameterMetadataProvider.java</exclude>
+                        <exclude>**/src/main/java/com/blazebit/persistence/spring/data/base/query/ParameterBinder.java</exclude>
+                        <exclude>**/src/main/java/com/blazebit/persistence/spring/data/base/query/JpaParameters.java</exclude>
+                        <exclude>**/src/main/java/com/blazebit/persistence/spring/data/base/query/AbstractPartTreeBlazePersistenceQuery.java</exclude>
+                        <exclude>**/src/main/java/com/blazebit/persistence/spring/data/base/repository/EntityViewAwareCrudMethodMetadataPostProcessor.java</exclude>
+                        <exclude>**/src/main/java/com/blazebit/persistence/spring/data/impl/repository/DefaultRepositoryInformation.java</exclude>
+                        <exclude>**/src/main/java/com/blazebit/persistence/spring/data/impl/repository/MethodLookups.java</exclude>
+                        <exclude>**/src/main/java/org/springframework/data/jpa/repository/query/FixedJpaQueryCreator.java</exclude>
+
+                        <exclude>**/src/main/java/com/blazebit/persistence/deltaspike/data/impl/meta/RepositoryDefinitionException.java</exclude>
+                        <exclude>**/src/main/java/com/blazebit/persistence/deltaspike/data/impl/meta/RepositoryComponents.java</exclude>
+                        <exclude>**/src/main/java/com/blazebit/persistence/deltaspike/data/impl/meta/RepositoryComponentsFactory.java</exclude>
+                    </excludes>
+                    <properties>
+                        <inceptionYear>${project.inceptionYear}</inceptionYear>
+                        <latestYearOfContribution>${currentYearDynamic}</latestYearOfContribution>
+                    </properties>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>check-license</id>
+                        <phase>initialize</phase>
+                        <goals>
+                            <goal>check</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>generate-license</id>
+                        <phase />
+                        <goals>
+                            <goal>format</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <configuration>
+                    <pushChanges>false</pushChanges>
+                    <localCheckout>true</localCheckout>
+                    <autoVersionSubmodules>true</autoVersionSubmodules>
+
+                    <preparationGoals>clean install</preparationGoals>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
