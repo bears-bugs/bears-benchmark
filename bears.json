@@ -1,0 +1,151 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 1787, 
+      "numberRunning": 1788, 
+      "numberFailing": 0, 
+      "numberErroring": 1, 
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException", 
+          "isError": true, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 171
+    }, 
+    "failingModule": "/root/workspace/Blazebit/blaze-persistence/351937208/core/testsuite", 
+    "failureDetails": [
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "com.blazebit.persistence.testsuite.Issue519Test", 
+        "testMethod": "subselectEntityTest", 
+        "isError": true
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 0, 
+        "numberRunning": 1, 
+        "testClass": "com.blazebit.persistence.testsuite.Issue519Test", 
+        "numberFailing": 0, 
+        "numberErroring": 1, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/Blazebit/blaze-persistence/builds/352045689", 
+      "date": "Mar 11, 2018 11:10:08 PM", 
+      "id": 352045689
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/Blazebit/blaze-persistence/builds/351937208", 
+      "date": "Mar 11, 2018 2:09:41 PM", 
+      "id": 351937208
+    }
+  }, 
+  "repository": {
+    "name": "Blazebit/blaze-persistence", 
+    "url": "https://github.com/Blazebit/blaze-persistence", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 21765334
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/Blazebit/blaze-persistence/commit/48d2963a45ed8210b651008a0c5c1ba98e375ba5", 
+      "sha": "48d2963a45ed8210b651008a0c5c1ba98e375ba5", 
+      "branchName": "master", 
+      "date": "Mar 11, 2018 7:40:24 PM", 
+      "repoName": "Blazebit/blaze-persistence"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/Blazebit/blaze-persistence/commit/70a7a962e7e2f90137f1ae2432aa8b2846de383a", 
+      "sha": "70a7a962e7e2f90137f1ae2432aa8b2846de383a", 
+      "branchName": "master", 
+      "date": "Mar 11, 2018 11:45:06 AM", 
+      "repoName": "Blazebit/blaze-persistence"
+    }
+  }, 
+  "bugName": "Blazebit-blaze-persistence-351937208-352045689", 
+  "version": "latest", 
+  "projectMetrics": {
+    "numberSourceFiles": 1760, 
+    "numberLibrariesFailingModule": 48, 
+    "numberTestFiles": 755, 
+    "numberModules": 67
+  }, 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 4, 
+      "numberDeleted": 5
+    }
+  }, 
+  "bugId": "Bears-156", 
+  "type": "passing_passing", 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 262728712, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 521142272, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Aug 29, 2018 2:55:32 PM", 
+    "projectRootPomPath": "./workspace/Blazebit/blaze-persistence/351937208/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          1, 
+          3, 
+          0, 
+          1, 
+          167
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 172
+      }, 
+      "testing": {
+        "stepDurations": [
+          322
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 322
+      }, 
+      "cloning": {
+        "stepDurations": [
+          11
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 11
+      }
+    }, 
+    "reproductionDateBeginning": "Aug 29, 2018 2:28:48 PM", 
+    "totalDuration": 1596
+  }
+}
