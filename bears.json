@@ -1,0 +1,152 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 158, 
+      "numberRunning": 159, 
+      "numberFailing": 1, 
+      "numberErroring": 0, 
+      "failures": [
+        {
+          "failureName": "Wanted but not invoked", 
+          "isError": false, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 0
+    }, 
+    "failingModule": "/root/workspace/spring-cloud/spring-cloud-gcp/353059531/spring-cloud-gcp-data-spanner", 
+    "failureDetails": [
+      {
+        "failureName": "Wanted but not invoked", 
+        "detail": " Wanted but not invoked: resultSet.close(); -> at org.springframework.cloud.gcp.data.spanner.core.SpannerTemplateTests.countTest(SpannerTemplateTests.java:259)  However, there were exactly 2 interactions with this mock: resultSet.next(); -> at org.springframework.cloud.gcp.data.spanner.core.SpannerTemplate.count(SpannerTemplate.java:204)  resultSet.getLong(0); -> at org.springframework.cloud.gcp.data.spanner.core.SpannerTemplate.count(SpannerTemplate.java:205)  ", 
+        "isError": false, 
+        "testMethod": "countTest", 
+        "testClass": "org.springframework.cloud.gcp.data.spanner.core.SpannerTemplateTests"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 21, 
+        "numberRunning": 22, 
+        "testClass": "org.springframework.cloud.gcp.data.spanner.core.SpannerTemplateTests", 
+        "numberFailing": 1, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/spring-cloud/spring-cloud-gcp/builds/353471273", 
+      "date": "Mar 14, 2018 7:21:49 PM", 
+      "id": 353471273
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/spring-cloud/spring-cloud-gcp/builds/353059531", 
+      "date": "Mar 13, 2018 10:25:32 PM", 
+      "id": 353059531
+    }
+  }, 
+  "repository": {
+    "name": "spring-cloud/spring-cloud-gcp", 
+    "url": "https://github.com/spring-cloud/spring-cloud-gcp", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 86105877
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/spring-cloud/spring-cloud-gcp/commit/eb5af6c7b2aca11a41adb6b1c481127c461aeb9e", 
+      "sha": "eb5af6c7b2aca11a41adb6b1c481127c461aeb9e", 
+      "branchName": "master", 
+      "date": "Mar 14, 2018 7:16:18 PM", 
+      "repoName": "spring-cloud/spring-cloud-gcp"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/spring-cloud/spring-cloud-gcp/commit/eda9b5608332afc63bcc131f4d36e70bf4de79c0", 
+      "sha": "eda9b5608332afc63bcc131f4d36e70bf4de79c0", 
+      "branchName": "master", 
+      "date": "Mar 13, 2018 10:20:15 PM", 
+      "repoName": "spring-cloud/spring-cloud-gcp"
+    }
+  }, 
+  "bugName": "spring-cloud-spring-cloud-gcp-353059531-353471273", 
+  "version": "latest", 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 6, 
+      "numberDeleted": 4
+    }
+  }, 
+  "type": "passing_passing", 
+  "bugId": "Bears-181", 
+  "projectMetrics": {
+    "numberSourceFiles": 133, 
+    "numberLibrariesFailingModule": 92, 
+    "numberTestFiles": 46, 
+    "numberModules": 33
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 284921840, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 1001914368, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Aug 29, 2018 3:06:31 PM", 
+    "projectRootPomPath": "./workspace/spring-cloud/spring-cloud-gcp/353059531/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          0, 
+          102, 
+          101, 
+          0, 
+          424
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 627
+      }, 
+      "testing": {
+        "stepDurations": [
+          41
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 41
+      }, 
+      "cloning": {
+        "stepDurations": [
+          4
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 4
+      }
+    }, 
+    "reproductionDateBeginning": "Aug 29, 2018 2:52:03 PM", 
+    "totalDuration": 860
+  }
+}
