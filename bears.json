@@ -1,0 +1,152 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 1265, 
+      "numberRunning": 1266, 
+      "numberFailing": 1, 
+      "numberErroring": 0, 
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError", 
+          "isError": false, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 105
+    }, 
+    "failingModule": "/root/workspace/apache/incubator-dubbo/352635276/dubbo-config/dubbo-config-spring", 
+    "failureDetails": [
+      {
+        "failureName": "java.lang.AssertionError", 
+        "detail": "expected:<{name=Mercy, age=31}> but was:<{name=Mercy}>", 
+        "isError": false, 
+        "testMethod": "testGetSubProperties", 
+        "testClass": "com.alibaba.dubbo.config.spring.util.PropertySourcesUtilsTest"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 0, 
+        "numberRunning": 1, 
+        "testClass": "com.alibaba.dubbo.config.spring.util.PropertySourcesUtilsTest", 
+        "numberFailing": 1, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/apache/incubator-dubbo/builds/352657297", 
+      "date": "Mar 13, 2018 4:54:34 AM", 
+      "id": 352657297
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/apache/incubator-dubbo/builds/352635276", 
+      "date": "Mar 13, 2018 2:59:15 AM", 
+      "id": 352635276
+    }
+  }, 
+  "repository": {
+    "name": "apache/incubator-dubbo", 
+    "url": "https://github.com/apache/incubator-dubbo", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 4710920
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/apache/incubator-dubbo/commit/109d064d14260d9b71be1f1fbd3a385053d5fffb", 
+      "sha": "109d064d14260d9b71be1f1fbd3a385053d5fffb", 
+      "branchName": "2.5.x", 
+      "date": "Mar 13, 2018 4:30:22 AM", 
+      "repoName": "apache/incubator-dubbo"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/apache/incubator-dubbo/commit/04576ff4ffdd5872e738b4e10e3905fe513109d2", 
+      "sha": "04576ff4ffdd5872e738b4e10e3905fe513109d2", 
+      "branchName": "2.5.x", 
+      "date": "Mar 13, 2018 2:42:10 AM", 
+      "repoName": "apache/incubator-dubbo"
+    }
+  }, 
+  "bugName": "apache-incubator-dubbo-352635276-352657297", 
+  "version": "latest", 
+  "projectMetrics": {
+    "numberSourceFiles": 929, 
+    "numberLibrariesFailingModule": 39, 
+    "numberTestFiles": 410, 
+    "numberModules": 61
+  }, 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 3, 
+      "numberDeleted": 1
+    }
+  }, 
+  "bugId": "Bears-151", 
+  "type": "passing_passing", 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 255741432, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 496500736, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Aug 29, 2018 10:20:25 AM", 
+    "projectRootPomPath": "./workspace/apache/incubator-dubbo/352635276/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          1, 
+          1, 
+          0, 
+          0, 
+          244
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 246
+      }, 
+      "testing": {
+        "stepDurations": [
+          169
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 169
+      }, 
+      "cloning": {
+        "stepDurations": [
+          9
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 9
+      }
+    }, 
+    "reproductionDateBeginning": "Aug 29, 2018 10:09:20 AM", 
+    "totalDuration": 658
+  }
+}
