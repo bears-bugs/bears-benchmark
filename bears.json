@@ -1,0 +1,152 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 486, 
+      "numberRunning": 487, 
+      "numberFailing": 0, 
+      "numberErroring": 1, 
+      "failures": [
+        {
+          "failureName": "io.debezium.text.ParsingException", 
+          "isError": true, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 1
+    }, 
+    "failingModule": "/root/workspace/debezium/debezium/351465554/debezium-connector-mysql", 
+    "failureDetails": [
+      {
+        "failureName": "io.debezium.text.ParsingException", 
+        "detail": "Failed to parse statement 'ALTER TABLE t ADD CONSTRAINT UNIQUE KEY col_key ('col1');'", 
+        "isError": true, 
+        "testMethod": "shouldParseAlterTableStatementAddConstraintUniqueKey", 
+        "testClass": "io.debezium.connector.mysql.MySqlDdlParserTest"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 85, 
+        "numberRunning": 86, 
+        "testClass": "io.debezium.connector.mysql.MySqlDdlParserTest", 
+        "numberFailing": 0, 
+        "numberErroring": 1, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/debezium/debezium/builds/354212780", 
+      "date": "Mar 16, 2018 9:57:38 AM", 
+      "id": 354212780
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/debezium/debezium/builds/351465554", 
+      "date": "Mar 9, 2018 8:56:23 PM", 
+      "id": 351465554
+    }
+  }, 
+  "repository": {
+    "name": "debezium/debezium", 
+    "url": "https://github.com/debezium/debezium", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 50205233
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/debezium/debezium/commit/469199350f4efac568ab0b384ad31b5bb24f4b19", 
+      "sha": "469199350f4efac568ab0b384ad31b5bb24f4b19", 
+      "branchName": "master", 
+      "date": "Mar 16, 2018 9:44:47 AM", 
+      "repoName": "debezium/debezium"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/debezium/debezium/commit/2a35eae1789ccbcfa58ba97843974e8003f6513d", 
+      "sha": "2a35eae1789ccbcfa58ba97843974e8003f6513d", 
+      "branchName": "master", 
+      "date": "Mar 9, 2018 8:43:57 PM", 
+      "repoName": "debezium/debezium"
+    }
+  }, 
+  "bugName": "debezium-debezium-351465554-354212780", 
+  "version": "latest", 
+  "projectMetrics": {
+    "numberSourceFiles": 244, 
+    "numberLibrariesFailingModule": 77, 
+    "numberTestFiles": 128, 
+    "numberModules": 7
+  }, 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 3, 
+      "numberDeleted": 1
+    }
+  }, 
+  "bugId": "Bears-163", 
+  "type": "passing_passing", 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 276331152, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 495452160, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Aug 30, 2018 5:09:03 PM", 
+    "projectRootPomPath": "./workspace/debezium/debezium/351465554/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          0, 
+          0, 
+          0, 
+          0, 
+          120
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 120
+      }, 
+      "testing": {
+        "stepDurations": [
+          45
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 45
+      }, 
+      "cloning": {
+        "stepDurations": [
+          6
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 6
+      }
+    }, 
+    "reproductionDateBeginning": "Aug 30, 2018 5:04:45 PM", 
+    "totalDuration": 251
+  }
+}
