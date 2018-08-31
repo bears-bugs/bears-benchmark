@@ -1,0 +1,79 @@
+[[enmasse-on-kubernetes]]
+== {ProductName} on Kubernetes
+
+:OcGetRoute: kubectl get ingress -o jsonpath='{.spec.host}'
+:OcRoutePort: 443
+:ClusterManager: kubernetes
+:occli: kubectl
+:DeployHost: localhost
+:DeployOptions: 
+
+This guide will walk through the process of setting up {ProductName} on a
+Kubernetes cluster together with clients for sending and receiving
+messages. The guide will deploy EnMasse in a single tenant mode and with the `none` authentication
+service.
+
+include::common/prerequisites-kubernetes.adoc[leveloffset=+1]
+
+[[installing-kubernetes]]
+=== Installing
+
+include::common/install-procedure.adoc[leveloffset+=1] 
+
+This guide uses a shell script for deploying {ProductName}. Windows users are adviced to look at
+<<installing-kubernetes>>.
+
+include::deploy-procedure.adoc[leveloffset+=1] 
+
+[[role-based-access-control]]
+==== Role Based Access Control (RBAC)
+
+The Kubernetes deployment script and YAML files currently do not support Role
+Based Access Control (RBAC). In Kubernetes clusters which have RBAC enabled, it is
+required to additionally create a role binding for the `default` service account
+to the `view` role and for the `enmasse-service-account` to the `cluster-admin` role:
+
+[options="nowrap"]
+....
+kubectl create clusterrolebinding enmasse-service-account-binding --clusterrole=cluster-admin --serviceaccount=enmasse:enmasse-service-account
+kubectl create rolebinding default-view-binding --clusterrole=view --serviceaccount=enmasse:default -n enmasse
+....
+
+_Note: The `cluster-admin` role gives the `enmasse-service-account` service account unlimited access to the Kubernetes cluster._
+
+[[deploying-external-load-balancers]]
+=== Deploying external load balancers
+
+If you're running {ProductName} in your own Kubernetes instance on any of the
+cloud providers, you can deploy the external load balancer services
+to expose {ProductName} ports:
+
+[options="nowrap"]
+....
+kubectl apply -f kubernetes/addons/external-lb.yaml -n enmasse
+....
+
+If you are running in multitenant mode, exposing the restapi is sufficient:
+
+[options="nowrap"]
+....
+kubectl apply -f kubernetes/addons/external-lb-restapi.yaml -n enmasse
+....
+
+[[configuring-addresses-kubernetes]]
+=== Configuring addresses
+
+include::configuring-addresses.adoc[leveloffset=+1]
+
+[[sending-and-receiving-messages-kubernetes]]
+=== Sending and receiving messages
+
+include::amqp-client-openshift.adoc[leveloffset=+1]
+
+include::mqtt-client-openshift.adoc[leveloffset=+1]
+
+[[conclusion-kubernetes]]
+=== Conclusion
+
+We have seen how to setup a messaging service in Kubernetes, and how to
+communicate with it using python example AMQP clients.
