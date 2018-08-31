@@ -1,0 +1,152 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 7963, 
+      "numberRunning": 7964, 
+      "numberFailing": 1, 
+      "numberErroring": 0, 
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError", 
+          "isError": false, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 31
+    }, 
+    "failingModule": "/root/workspace/raphw/byte-buddy/357569370/byte-buddy-dep", 
+    "failureDetails": [
+      {
+        "failureName": "java.lang.AssertionError", 
+        "detail": "Expected exception: java.lang.IllegalStateException", 
+        "isError": false, 
+        "testMethod": "testInstanceCallFromStaticMethod", 
+        "testClass": "net.bytebuddy.implementation.MethodCallTest"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 70, 
+        "numberRunning": 71, 
+        "testClass": "net.bytebuddy.implementation.MethodCallTest", 
+        "numberFailing": 1, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/raphw/byte-buddy/builds/357575635", 
+      "date": "Mar 23, 2018 9:32:47 PM", 
+      "id": 357575635
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/raphw/byte-buddy/builds/357569370", 
+      "date": "Mar 23, 2018 9:19:33 PM", 
+      "id": 357569370
+    }
+  }, 
+  "repository": {
+    "name": "raphw/byte-buddy", 
+    "url": "https://github.com/raphw/byte-buddy", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 14696091
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/raphw/byte-buddy/commit/f41aa877f065fbc73259c66a91163b7e6e1dd73e", 
+      "sha": "f41aa877f065fbc73259c66a91163b7e6e1dd73e", 
+      "branchName": "master", 
+      "date": "Mar 23, 2018 9:27:04 PM", 
+      "repoName": "raphw/byte-buddy"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/raphw/byte-buddy/commit/2277181f100e0d2e4fa0526a30caf850982f5384", 
+      "sha": "2277181f100e0d2e4fa0526a30caf850982f5384", 
+      "branchName": "master", 
+      "date": "Mar 23, 2018 9:12:28 PM", 
+      "repoName": "raphw/byte-buddy"
+    }
+  }, 
+  "bugName": "raphw-byte-buddy-357569370-357575635", 
+  "version": "latest", 
+  "projectMetrics": {
+    "numberSourceFiles": 300, 
+    "numberLibrariesFailingModule": 12, 
+    "numberTestFiles": 705, 
+    "numberModules": 7
+  }, 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 1, 
+      "numberDeleted": 4
+    }
+  }, 
+  "bugId": "Bears-178", 
+  "type": "passing_passing", 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 987219032, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 1775763456, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Aug 31, 2018 10:36:37 PM", 
+    "projectRootPomPath": "./workspace/raphw/byte-buddy/357569370/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          1, 
+          0, 
+          0, 
+          1, 
+          122
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 124
+      }, 
+      "testing": {
+        "stepDurations": [
+          61
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 61
+      }, 
+      "cloning": {
+        "stepDurations": [
+          241
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 241
+      }
+    }, 
+    "reproductionDateBeginning": "Aug 31, 2018 10:26:11 PM", 
+    "totalDuration": 619
+  }
+}
