@@ -1,0 +1,159 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 18, 
+      "numberRunning": 20, 
+      "numberFailing": 0, 
+      "numberErroring": 2, 
+      "failures": [
+        {
+          "failureName": "java.lang.Exception", 
+          "isError": true, 
+          "occurrences": 2
+        }
+      ], 
+      "numberSkipping": 0
+    }, 
+    "failingModule": "/root/workspace/EnMasseProject/enmasse/357424637/address-model-lib", 
+    "failureDetails": [
+      {
+        "failureName": "java.lang.Exception", 
+        "detail": "Unexpected exception, expected<io.enmasse.address.model.v1.DeserializeException> but was<java.lang.NullPointerException>", 
+        "isError": true, 
+        "testMethod": "testDeserializeAddressSpaceMissingDefaults", 
+        "testClass": "io.enmasse.address.model.v1.address.SerializationTest"
+      }, 
+      {
+        "failureName": "java.lang.Exception", 
+        "detail": "Unexpected exception, expected<io.enmasse.address.model.v1.DeserializeException> but was<java.lang.NullPointerException>", 
+        "isError": true, 
+        "testMethod": "testDeserializeAddressMissingDefaults", 
+        "testClass": "io.enmasse.address.model.v1.address.SerializationTest"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 14, 
+        "numberRunning": 16, 
+        "testClass": "io.enmasse.address.model.v1.address.SerializationTest", 
+        "numberFailing": 0, 
+        "numberErroring": 2, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/EnMasseProject/enmasse/builds/357457887", 
+      "date": "Mar 23, 2018 5:27:59 PM", 
+      "id": 357457887
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/EnMasseProject/enmasse/builds/357424637", 
+      "date": "Mar 23, 2018 4:19:02 PM", 
+      "id": 357424637
+    }
+  }, 
+  "repository": {
+    "name": "EnMasseProject/enmasse", 
+    "url": "https://github.com/EnMasseProject/enmasse", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 62793144
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/EnMasseProject/enmasse/commit/161942d39310aa78cc89350d5155a7a41fc341af", 
+      "sha": "161942d39310aa78cc89350d5155a7a41fc341af", 
+      "branchName": "master", 
+      "date": "Mar 23, 2018 4:49:59 PM", 
+      "repoName": "EnMasseProject/enmasse"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/EnMasseProject/enmasse/commit/3f99a77cf84ce80b55fe67c3461e0ccf1f198aab", 
+      "sha": "3f99a77cf84ce80b55fe67c3461e0ccf1f198aab", 
+      "branchName": "master", 
+      "date": "Mar 23, 2018 3:42:39 PM", 
+      "repoName": "EnMasseProject/enmasse"
+    }
+  }, 
+  "bugName": "EnMasseProject-enmasse-357424637-357457887", 
+  "version": "latest", 
+  "projectMetrics": {
+    "numberSourceFiles": 339, 
+    "numberLibrariesFailingModule": 9, 
+    "numberTestFiles": 132, 
+    "numberModules": 19
+  }, 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 3, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 1, 
+      "numberDeleted": 64
+    }
+  }, 
+  "bugId": "Bears-168", 
+  "type": "passing_passing", 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 356415400, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 517472256, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Aug 31, 2018 5:46:54 PM", 
+    "projectRootPomPath": "./workspace/EnMasseProject/enmasse/357424637/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          0, 
+          2, 
+          0, 
+          1, 
+          94
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 97
+      }, 
+      "testing": {
+        "stepDurations": [
+          10
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 10
+      }, 
+      "cloning": {
+        "stepDurations": [
+          28
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 28
+      }
+    }, 
+    "reproductionDateBeginning": "Aug 31, 2018 5:41:18 PM", 
+    "totalDuration": 329
+  }
+}
