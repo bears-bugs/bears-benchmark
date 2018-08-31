@@ -1,0 +1,15 @@
+{
+  "apiVersion": "enmasse.io/v1",
+  "kind": "AddressSpace",
+  "metadata": {
+    "name": "tck-brokered",
+    "namespace": "tck-brokered"
+  },
+  "spec": {
+    "type": "brokered",
+    "plan": "unlimited-brokered",
+    "authenticationService": {
+      "type": "standard"
+    }
+  }
+}
