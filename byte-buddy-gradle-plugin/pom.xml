@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>byte-buddy-parent</artifactId>
+        <groupId>net.bytebuddy</groupId>
+        <version>1.8.1-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>byte-buddy-gradle-plugin</artifactId>
+
+    <name>Byte Buddy (Gradle plugin)</name>
+    <description>A plugin for post-processing class files via Byte Buddy in a Gradle build.</description>
+
+    <!--
+        This sub project is built by Gradle as the Gradle plugin API requires a Gradle build. This POM
+        triggers the Gradle build via a Gradle execution plugin in order to keep the build seamless. The
+        built artifacts are then attached to this Maven project once the build completed successfully.
+
+        IDEs are typically confused by this setup and this sub project should be directly imported as
+        a Gradle project to avoid errors. Alternatively, this project should be ignored.
+    -->
+
+    <properties>
+        <version.plugin.antrun>1.8</version.plugin.antrun>
+        <version.plugin.buildhelp>1.12</version.plugin.buildhelp>
+        <version.plugin.gradlerun>1.0.10</version.plugin.gradlerun>
+        <version.plugin.directory>0.2</version.plugin.directory>
+        <version.gradle>4.5</version.gradle>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>net.bytebuddy</groupId>
+            <artifactId>byte-buddy</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <!-- The Gradle plugin must be built by Gradle; therefore the compilation is skipped. -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <skipMain>true</skipMain>
+                    <skip>true</skip>
+                </configuration>
+            </plugin>
+            <!-- Gradle is also responsible for creating javadoc such that this task is skipped here. -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>${version.plugin.javadoc}</version>
+                <configuration>
+                    <skip>true</skip>
+                </configuration>
+            </plugin>
+
+            <!-- Tie Maven executions into the Gradle life-cycle. -->
+            <plugin>
+                <groupId>codes.rafael.gradlemavenplugin</groupId>
+                <artifactId>gradle-maven-plugin</artifactId>
+                <version>${version.plugin.gradlerun}</version>
+                <executions>
+                    <execution>
+                        <id>gradle-clean</id>
+                        <phase>clean</phase>
+                        <goals>
+                            <goal>invoke</goal>
+                        </goals>
+                        <configuration>
+                            <tasks>
+                                <task>clean</task>
+                            </tasks>
+                            <args>
+                                <arg>--info</arg>
+                            </args>
+                            <gradleDistributionFile>${project.basedir}/gradle/${version.gradle}/gradle-${version.gradle}-bin.zip</gradleDistributionFile>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>gradle-build</id>
+                        <phase>compile</phase>
+                        <goals>
+                            <goal>invoke</goal>
+                        </goals>
+                        <configuration>
+                            <tasks>
+                                <task>build</task>
+                                <task>javadocJar</task>
+                            </tasks>
+                            <args>
+                                <arg>--info</arg>
+                            </args>
+                            <jvmArgs>
+                                <jvmArg>-Dnet.bytebuddy.test.integration=${bytebuddy.integration}</jvmArg>
+                                <jvmArg>-Dnet.bytebuddy.misc.extras=${bytebuddy.extras}</jvmArg>
+                            </jvmArgs>
+                            <gradleDistributionFile>${project.basedir}/gradle/${version.gradle}/gradle-${version.gradle}-bin.zip</gradleDistributionFile>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <!-- Copies the artifact created by Gradle back to the Maven target folder. -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-antrun-plugin</artifactId>
+                <version>${version.plugin.antrun}</version>
+                <executions>
+                    <execution>
+                        <id>copy-jar</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                        <configuration>
+                            <target>
+                                <copy file="${project.basedir}/build/libs/${project.artifactId}-${project.version}.jar" todir="${project.build.directory}" overwrite="true" />
+                            </target>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+    <profiles>
+        <profile>
+            <id>gradle-legacy</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+                <jdk>1.6</jdk>
+            </activation>
+            <properties>
+                <version.plugin.gradlerun>1.0.9</version.plugin.gradlerun>
+                <version.gradle>2.14.1</version.gradle>
+            </properties>
+        </profile>
+
+        <profile>
+            <id>extras</id>
+            <build>
+                <plugins>
+                    <!-- If the javadoc artifact is built by Gradle, we copy it back to the Maven target. -->
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-antrun-plugin</artifactId>
+                        <version>${version.plugin.antrun}</version>
+                        <executions>
+                            <execution>
+                                <id>copy-javadoc</id>
+                                <phase>package</phase>
+                                <goals>
+                                    <goal>run</goal>
+                                </goals>
+                                <configuration>
+                                    <target>
+                                        <copy file="${project.basedir}/build/libs/${project.artifactId}-${project.version}-javadoc.jar" todir="${project.build.directory}" overwrite="true" />
+                                    </target>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                    <!-- As the javadoc artifact is built by Gradle, it needs to be attached to Maven manually. -->
+                    <plugin>
+                        <groupId>org.codehaus.mojo</groupId>
+                        <artifactId>build-helper-maven-plugin</artifactId>
+                        <version>${version.plugin.buildhelp}</version>
+                        <executions>
+                            <execution>
+                                <phase>package</phase>
+                                <goals>
+                                    <goal>attach-artifact</goal>
+                                </goals>
+                                <configuration>
+                                    <artifacts>
+                                        <artifact>
+                                            <file>build/libs/${project.artifactId}-${project.version}-javadoc.jar</file>
+                                            <type>jar</type>
+                                            <classifier>javadoc</classifier>
+                                        </artifact>
+                                    </artifacts>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+
+</project>
