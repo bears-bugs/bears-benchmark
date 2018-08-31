@@ -1,0 +1,148 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 1378, 
+      "numberRunning": 1379, 
+      "numberFailing": 1, 
+      "numberErroring": 0, 
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError", 
+          "isError": false, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 0
+    }, 
+    "failingModule": "/root/workspace/graphhopper/graphhopper/357649020/core", 
+    "failureDetails": [
+      {
+        "failureName": "java.lang.AssertionError", 
+        "isError": false, 
+        "testClass": "com.graphhopper.routing.subnetwork.PrepareRoutingSubnetworksTest", 
+        "testMethod": "testAddEdgesAfterwards"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 9, 
+        "numberRunning": 10, 
+        "testClass": "com.graphhopper.routing.subnetwork.PrepareRoutingSubnetworksTest", 
+        "numberFailing": 1, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/graphhopper/graphhopper/builds/357650131", 
+      "date": "Mar 24, 2018 1:39:41 AM", 
+      "id": 357650131
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/graphhopper/graphhopper/builds/357649020", 
+      "date": "Mar 24, 2018 1:34:03 AM", 
+      "id": 357649020
+    }
+  }, 
+  "repository": {
+    "name": "graphhopper/graphhopper", 
+    "url": "https://github.com/graphhopper/graphhopper", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 3480666
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/graphhopper/graphhopper/commit/39a9e328272cd074e9808d1adfdfe245912bc05f", 
+      "sha": "39a9e328272cd074e9808d1adfdfe245912bc05f", 
+      "branchName": "master", 
+      "date": "Mar 24, 2018 1:30:13 AM", 
+      "repoName": "graphhopper/graphhopper"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/graphhopper/graphhopper/commit/e66a4ed1c85d1d827cda23ff01ca039354dc3547", 
+      "sha": "e66a4ed1c85d1d827cda23ff01ca039354dc3547", 
+      "branchName": "master", 
+      "date": "Mar 24, 2018 1:25:46 AM", 
+      "repoName": "graphhopper/graphhopper"
+    }
+  }, 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 0, 
+      "numberDeleted": 3
+    }
+  }, 
+  "type": "passing_passing", 
+  "projectMetrics": {
+    "numberSourceFiles": 388, 
+    "numberLibrariesFailingModule": 13, 
+    "numberTestFiles": 172, 
+    "numberModules": 7
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 342353304, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 535822336, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Aug 31, 2018 10:45:52 PM", 
+    "projectRootPomPath": "./workspace/graphhopper/graphhopper/357649020/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          1, 
+          0, 
+          0, 
+          0, 
+          114
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 115
+      }, 
+      "testing": {
+        "stepDurations": [
+          49
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 49
+      }, 
+      "cloning": {
+        "stepDurations": [
+          24
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 24
+      }
+    }, 
+    "reproductionDateBeginning": "Aug 31, 2018 10:40:17 PM", 
+    "totalDuration": 329
+  }
+}
