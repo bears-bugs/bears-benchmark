@@ -1,0 +1,163 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 80, 
+      "numberRunning": 83, 
+      "numberFailing": 0, 
+      "numberErroring": 3, 
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException", 
+          "isError": true, 
+          "occurrences": 3
+        }
+      ], 
+      "numberSkipping": 0
+    }, 
+    "failingModule": "/root/workspace/2018swecapstone/h2ms/356638992", 
+    "failureDetails": [
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "edu.harvard.h2ms.web.init.H2msRestUtilsTest", 
+        "testMethod": "test_format_quarter_invalid_values_result_in_nulls", 
+        "isError": true
+      }, 
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "edu.harvard.h2ms.web.init.H2msRestUtilsTest", 
+        "testMethod": "test_format_month_invalid_values_result_in_null", 
+        "isError": true
+      }, 
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "edu.harvard.h2ms.web.init.H2msRestUtilsTest", 
+        "testMethod": "test_format_week_invalid_values_result_in_null", 
+        "isError": true
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 79, 
+        "numberRunning": 82, 
+        "testClass": "edu.harvard.h2ms.web.init.H2msRestUtilsTest", 
+        "numberFailing": 0, 
+        "numberErroring": 3, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/2018swecapstone/h2ms/builds/356666847", 
+      "date": "Mar 22, 2018 2:42:47 AM", 
+      "id": 356666847
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/2018swecapstone/h2ms/builds/356638992", 
+      "date": "Mar 22, 2018 1:07:15 AM", 
+      "id": 356638992
+    }
+  }, 
+  "repository": {
+    "name": "2018swecapstone/h2ms", 
+    "url": "https://github.com/2018swecapstone/h2ms", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 121564633
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/2018swecapstone/h2ms/commit/05577a3f1105af6c6ed55d1e05258de01a3d7d7b", 
+      "sha": "05577a3f1105af6c6ed55d1e05258de01a3d7d7b", 
+      "branchName": "backend", 
+      "date": "Mar 22, 2018 2:39:46 AM", 
+      "repoName": "2018swecapstone/h2ms"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/2018swecapstone/h2ms/commit/fb8ebc2c2ecc8aba60da852a48e076ff1312c9eb", 
+      "sha": "fb8ebc2c2ecc8aba60da852a48e076ff1312c9eb", 
+      "branchName": "backend", 
+      "date": "Mar 22, 2018 1:04:15 AM", 
+      "repoName": "2018swecapstone/h2ms"
+    }
+  }, 
+  "bugName": "2018swecapstone-h2ms-356638992-356666847", 
+  "version": "latest", 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 13, 
+      "numberDeleted": 24
+    }
+  }, 
+  "type": "passing_passing", 
+  "bugId": "Bears-140", 
+  "projectMetrics": {
+    "numberSourceFiles": 100, 
+    "numberLibrariesFailingModule": 123, 
+    "numberTestFiles": 4, 
+    "numberModules": 1
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 239707528, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 392691712, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Sep 1, 2018 7:33:47 AM", 
+    "projectRootPomPath": "./workspace/2018swecapstone/h2ms/356638992/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          0, 
+          2, 
+          0, 
+          0, 
+          62
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 64
+      }, 
+      "testing": {
+        "stepDurations": [
+          30
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 30
+      }, 
+      "cloning": {
+        "stepDurations": [
+          3
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 3
+      }
+    }, 
+    "reproductionDateBeginning": "Sep 1, 2018 7:31:16 AM", 
+    "totalDuration": 145
+  }
+}
