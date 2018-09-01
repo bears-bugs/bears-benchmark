@@ -1,0 +1,24 @@
+language: java
+sudo: false
+os: linux
+dist: trusty
+
+jdk:
+  - oraclejdk8
+  - openjdk8
+
+notifications:
+  email: false
+
+branches:
+  only:
+    - master
+    - 2.0
+
+script:
+  - mvn test -Droot.logging.level=INFO
+
+after_success:
+  - mvn clean test jacoco:report coveralls:report -Droot.logging.level=INFO
+  - bin/ci-push-javadoc.sh
+  - bin/ci-deploy-snapshot.sh
