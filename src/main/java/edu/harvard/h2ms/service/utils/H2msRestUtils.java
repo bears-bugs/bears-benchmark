@@ -19,7 +19,8 @@ public class H2msRestUtils {
      *      "2018-03-21T17:58:05.742+0000"  --> "March (2018)"
      * @param events
      * @param timeframe
-     * @return
+     * @return - when events are emptys a null string list is returned
+     *         - when timeframe is not a valid value a null string list is returned
      */
     public static List<String> extractParsedTimestamps(List<Event> events, String timeframe){
         if(events.isEmpty()) {
@@ -49,6 +50,15 @@ public class H2msRestUtils {
     }
 
     public static String formatMonth(Integer month, Integer year){
+        // Null cases
+        if (month == null || year == null)
+            return null;
+
+        // Invalid value cases
+        if(month < 0 || month > 11 || year < 1)
+            return null;
+
+        // Format Month
         if(month.equals(0)){
             return "January " + "(" + year + ")";
         } else if(month.equals(1)){
@@ -71,20 +81,29 @@ public class H2msRestUtils {
             return "October " + "(" + year + ")";
         } else if(month.equals(10)){
             return "November " + "(" + year + ")";
-        } else if(month.equals(11)){
+        } else if (month.equals(11)){
             return "December " + "(" + year + ")";
         } else {
-            return "";
+            return null;
         }
 
     }
 
     public static String formatWeek(Integer week, Integer year){
 
-        // Special cases (ie. 11, 12, 13 are postfixed with 'th')
+        // Null cases
+        if(week == null || year == null)
+                return null;
+
+        // Invalid value cases
+        if(week < 1 || week > 52 || year < 1)
+            return null;
+
+        // Format Week for special cases (ie. 11, 12, 13 are postfixed with 'th')
         if(week == 11 || week == 12 || week == 13)
             return String.valueOf(week) + "th (" + year + ")";
 
+        // Format Week
         char digit;
         if(week.toString().length() == 2){
             digit = week.toString().charAt(1);
@@ -103,6 +122,16 @@ public class H2msRestUtils {
     }
 
     public static String formatQuarter(Integer month, Integer year){
+
+        // Null cases
+        if(month == null || year == null)
+             return null;
+
+        // Invalid value cases
+        if(month < 0 || month > 11 || year < 1)
+            return null;
+
+        // Format month
         if (month == 0 || month == 1 || month == 2 ) {
             return "Q1 (" + year + ")";
         } else if (month == 3 || month == 4 || month == 5 ) {
