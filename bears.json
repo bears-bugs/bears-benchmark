@@ -1,0 +1,182 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 1949, 
+      "numberRunning": 1952, 
+      "numberFailing": 3, 
+      "numberErroring": 0, 
+      "failures": [
+        {
+          "failureName": "junit.framework.AssertionFailedError", 
+          "isError": false, 
+          "occurrences": 3
+        }
+      ], 
+      "numberSkipping": 0
+    }, 
+    "failingModule": "/root/workspace/Activiti/Activiti/357660134/modules/activiti-engine", 
+    "failureDetails": [
+      {
+        "failureName": "junit.framework.AssertionFailedError", 
+        "detail": "Activity should have not ended yet", 
+        "isError": false, 
+        "testMethod": "testTimerOnUserTask", 
+        "testClass": "org.activiti.engine.test.bpmn.event.timer.BoundaryTimerNonInterruptingEventTest"
+      }, 
+      {
+        "failureName": "junit.framework.AssertionFailedError", 
+        "detail": "Activity should have not ended yet", 
+        "isError": false, 
+        "testMethod": "testSignalOnUserTask", 
+        "testClass": "org.activiti.engine.test.bpmn.event.signal.SignalEventTest"
+      }, 
+      {
+        "failureName": "junit.framework.AssertionFailedError", 
+        "detail": "Activity should have not ended yet", 
+        "isError": false, 
+        "testMethod": "testMessageOnUserTask", 
+        "testClass": "org.activiti.engine.test.bpmn.event.message.MessageBoundaryEventTest"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 34, 
+        "numberRunning": 35, 
+        "testClass": "org.activiti.engine.test.bpmn.event.signal.SignalEventTest", 
+        "numberFailing": 1, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }, 
+      {
+        "numberPassing": 9, 
+        "numberRunning": 10, 
+        "testClass": "org.activiti.engine.test.bpmn.event.timer.BoundaryTimerNonInterruptingEventTest", 
+        "numberFailing": 1, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }, 
+      {
+        "numberPassing": 9, 
+        "numberRunning": 10, 
+        "testClass": "org.activiti.engine.test.bpmn.event.message.MessageBoundaryEventTest", 
+        "numberFailing": 1, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/Activiti/Activiti/builds/359342518", 
+      "date": "Mar 28, 2018 2:35:48 PM", 
+      "id": 359342518
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/Activiti/Activiti/builds/357660134", 
+      "date": "Mar 24, 2018 2:24:22 AM", 
+      "id": 357660134
+    }
+  }, 
+  "repository": {
+    "name": "Activiti/Activiti", 
+    "url": "https://github.com/Activiti/Activiti", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 5793738
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/Activiti/Activiti/commit/78b6b5f380d0bee2864b71cb5d2b65ec6536943a", 
+      "sha": "78b6b5f380d0bee2864b71cb5d2b65ec6536943a", 
+      "branchName": "5.x", 
+      "date": "Mar 28, 2018 2:33:35 PM", 
+      "repoName": "Activiti/Activiti"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/Activiti/Activiti/commit/8ddd177b8f70f6e25af810096aa43aaf87d28af2", 
+      "sha": "8ddd177b8f70f6e25af810096aa43aaf87d28af2", 
+      "branchName": "5.x", 
+      "date": "Mar 24, 2018 2:22:12 AM", 
+      "repoName": "Activiti/Activiti"
+    }
+  }, 
+  "bugName": "Activiti-Activiti-357660134-359342518", 
+  "version": "latest", 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 5, 
+      "numberDeleted": 24
+    }
+  }, 
+  "type": "passing_passing", 
+  "bugId": "Bears-142", 
+  "projectMetrics": {
+    "numberSourceFiles": 1286, 
+    "numberLibrariesFailingModule": 61, 
+    "numberTestFiles": 482, 
+    "numberModules": 8
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 150557096, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 588775424, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Sep 1, 2018 8:02:39 AM", 
+    "projectRootPomPath": "./workspace/Activiti/Activiti/357660134/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          4, 
+          3, 
+          0, 
+          1, 
+          59
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 67
+      }, 
+      "testing": {
+        "stepDurations": [
+          345
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 345
+      }, 
+      "cloning": {
+        "stepDurations": [
+          31
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 31
+      }
+    }, 
+    "reproductionDateBeginning": "Sep 1, 2018 7:48:25 AM", 
+    "totalDuration": 847
+  }
+}
