@@ -1,0 +1,40 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <name>Activiti - Simple Workflow Alfresco Conversion</name>
+  <artifactId>activiti-simple-workflow-alfresco</artifactId>
+
+  <parent>
+    <groupId>org.activiti</groupId>
+    <artifactId>activiti-parent</artifactId>
+    <version>5.23.0-SNAPSHOT</version>
+    <relativePath>../activiti-parent</relativePath>
+  </parent>
+
+  <dependencies>
+    <!-- BPMN model conversion -->
+    <dependency>
+      <groupId>org.activiti</groupId>
+      <artifactId>activiti-simple-workflow</artifactId>
+    </dependency>
+    <!-- Testing -->
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.activiti</groupId>
+      <artifactId>activiti-engine</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.h2database</groupId>
+      <artifactId>h2</artifactId>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
+</project>
