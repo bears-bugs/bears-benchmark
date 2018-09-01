@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>spa!</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+  crossorigin="anonymous"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div id="app">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-3" v-for="doctor in doctors">
+          <div class="card">
+            <div class="card-block">
+              <h4 class="card-title"> Doctor </h4>
+              <div >
+                <p class="card-text">
+                  {{doctor.firstName}}
+                </p>
+                <p class="card-text">
+                  {{doctor.lastName}}
+                </p>
+              </div>
+            </div> <!-- card-block -->
+          </div> <!-- card -->
+        </div> <!-- col -->
+      </div> <!-- row -->
+
+
+      <div class="row">
+        <div class="col-3">
+          <button type="button" class="btn btn-primary" v-on:click="postDoctor">
+            postDoctor
+          </button>
+        </div> <!-- col -->
+        <div class="col-3">
+          <button type="button" class="btn btn-primary" v-on:click="getDoctors">
+            getDoctors
+          </button>
+        </div> <!-- col -->
+      </div> <!-- row -->
+    </div> <!-- container -->
+  
+  </div>
+  
+  <!-- this has to be after the vue element -->
+  <script type="text/javascript" src="spa.js"></script>
+</body>
+</html>

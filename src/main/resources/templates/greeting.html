@@ -1,0 +1,11 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Pall Mall!</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<div sec:authorize="isAuthenticated()"></div>
+    <p th:text="'Hello, ' + ${name} + '!'" />
+</body>
+</html>

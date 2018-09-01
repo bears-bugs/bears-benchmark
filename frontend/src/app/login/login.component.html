@@ -1,0 +1,31 @@
+<div class="login row">
+    <div class="col-md-3"></div>
+    <mat-card class="card col-md-6">
+        <img mat-card-image src="assets/images/h2ms-logo-cropped.png">
+        <mat-divider></mat-divider>
+        <mat-card-title>Welcome to H2MS!</mat-card-title>
+        <mat-card-content class="text-center">
+            <mat-form-field class="col">
+                <input matInput #email placeholder="email">
+            </mat-form-field>
+            <mat-form-field class="col">
+                <input matInput placeholder="password" #password [type]="hide ? 'password' : 'text'">
+                <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility' : 'visibility_off'}}</mat-icon>
+            </mat-form-field>
+            <mat-checkbox>Remember me</mat-checkbox>
+            <mat-card-actions>
+                <button (click)="submit(email.value, password.value)" mat-raised-button color="primary">
+                    Submit
+                </button>
+            </mat-card-actions>
+            <mat-card-actions>
+                <a mat-button routerLink=".">Forgot password</a>
+            </mat-card-actions>
+            <mat-card-actions>
+                <a mat-button routerLink=".">Help</a>
+                <a mat-button routerLink=".">About</a>
+            </mat-card-actions>
+        </mat-card-content>
+    </mat-card>
+    <div class="col-md-3"></div>
+</div>
