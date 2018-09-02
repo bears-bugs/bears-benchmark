@@ -1,0 +1,161 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 753, 
+      "numberRunning": 755, 
+      "numberFailing": 0, 
+      "numberErroring": 2, 
+      "failures": [
+        {
+          "failureName": "dk.alexandra.fresco.framework.TestFrameworkException", 
+          "isError": true, 
+          "occurrences": 2
+        }
+      ], 
+      "numberSkipping": 2
+    }, 
+    "failingModule": "/root/workspace/aicis/fresco/363993941/suite/spdz", 
+    "failureDetails": [
+      {
+        "failureName": "dk.alexandra.fresco.framework.TestFrameworkException", 
+        "detail": "TestThread(dk.alexandra.fresco.suite.spdz.SpdzResourcePoolImpl@34fb81bf) threw exception in test (see stderr)", 
+        "isError": true, 
+        "testMethod": "testInputFromAllMascot", 
+        "testClass": "dk.alexandra.fresco.suite.spdz.TestSpdzBasicArithmetic3Parties"
+      }, 
+      {
+        "failureName": "dk.alexandra.fresco.framework.TestFrameworkException", 
+        "detail": "TestThread(dk.alexandra.fresco.suite.spdz.SpdzResourcePoolImpl@4430ab63) threw exception in test (see stderr)", 
+        "isError": true, 
+        "testMethod": "testInputFromAllMascot", 
+        "testClass": "dk.alexandra.fresco.suite.spdz.TestSpdzBasicArithmetic2Parties"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 8, 
+        "numberRunning": 9, 
+        "testClass": "dk.alexandra.fresco.suite.spdz.TestSpdzBasicArithmetic3Parties", 
+        "numberFailing": 0, 
+        "numberErroring": 1, 
+        "numberSkipping": 0
+      }, 
+      {
+        "numberPassing": 14, 
+        "numberRunning": 15, 
+        "testClass": "dk.alexandra.fresco.suite.spdz.TestSpdzBasicArithmetic2Parties", 
+        "numberFailing": 0, 
+        "numberErroring": 1, 
+        "numberSkipping": 1
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/aicis/fresco/builds/363994940", 
+      "date": "Apr 9, 2018 9:54:40 AM", 
+      "id": 363994940
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/aicis/fresco/builds/363993941", 
+      "date": "Apr 9, 2018 9:48:28 AM", 
+      "id": 363993941
+    }
+  }, 
+  "repository": {
+    "name": "aicis/fresco", 
+    "url": "https://github.com/aicis/fresco", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 46789213
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/aicis/fresco/commit/fbce6a5211e49ee99af4da440bcf79653eba8f29", 
+      "sha": "fbce6a5211e49ee99af4da440bcf79653eba8f29", 
+      "branchName": "266-mascot-input-mask-fix", 
+      "date": "Apr 9, 2018 9:37:34 AM", 
+      "repoName": "aicis/fresco"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/aicis/fresco/commit/88b105ae0b512a28c957b5478b57021efaa6f4d0", 
+      "sha": "88b105ae0b512a28c957b5478b57021efaa6f4d0", 
+      "branchName": "266-mascot-input-mask-fix", 
+      "date": "Apr 9, 2018 9:32:55 AM", 
+      "repoName": "aicis/fresco"
+    }
+  }, 
+  "bugName": "aicis-fresco-363993941-363994940", 
+  "version": "latest", 
+  "projectMetrics": {
+    "numberSourceFiles": 439, 
+    "numberLibrariesFailingModule": 16, 
+    "numberTestFiles": 240, 
+    "numberModules": 15
+  }, 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 10, 
+      "numberDeleted": 7
+    }
+  }, 
+  "bugId": "Bears-146", 
+  "type": "failing_passing", 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 307066856, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 432013312, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Sep 2, 2018 10:42:30 PM", 
+    "projectRootPomPath": "./workspace/aicis/fresco/363993941/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          0, 
+          113
+        ], 
+        "stepNames": [
+          "CheckoutBuggyBuildCandidate", 
+          "BuildProjectBuggyBuildCandidate"
+        ], 
+        "nbSteps": 2, 
+        "totalDuration": 113
+      }, 
+      "testing": {
+        "stepDurations": [
+          1085
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidate"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 1085
+      }, 
+      "cloning": {
+        "stepDurations": [
+          9
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 9
+      }
+    }, 
+    "reproductionDateBeginning": "Sep 2, 2018 10:00:11 PM", 
+    "totalDuration": 2533
+  }
+}
