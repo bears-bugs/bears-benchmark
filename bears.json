@@ -1,0 +1,152 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 1672, 
+      "numberRunning": 1673, 
+      "numberFailing": 1, 
+      "numberErroring": 0, 
+      "failures": [
+        {
+          "failureName": "org.testng.TestException", 
+          "isError": false, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 0
+    }, 
+    "failingModule": "/root/workspace/molgenis/molgenis/362517584/molgenis-data-excel", 
+    "failureDetails": [
+      {
+        "failureName": "org.testng.TestException", 
+        "detail": "\nMethod ExcelRepositoryTest.iteratorDuplicateSheetHeader()[pri:0, instance:org.molgenis.data.excel.ExcelRepositoryTest@18ffca6c] should have thrown an exception of class org.molgenis.data.MolgenisDataException", 
+        "isError": false, 
+        "testMethod": "iteratorDuplicateSheetHeader", 
+        "testClass": "org.molgenis.data.excel.ExcelRepositoryTest"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 14, 
+        "numberRunning": 15, 
+        "testClass": "org.molgenis.data.excel.ExcelRepositoryTest", 
+        "numberFailing": 1, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/molgenis/molgenis/builds/362989296", 
+      "date": "Apr 6, 2018 10:01:24 AM", 
+      "id": 362989296
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/molgenis/molgenis/builds/362517584", 
+      "date": "Apr 5, 2018 11:04:25 AM", 
+      "id": 362517584
+    }
+  }, 
+  "repository": {
+    "name": "molgenis/molgenis", 
+    "url": "https://github.com/molgenis/molgenis", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 8010626
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/molgenis/molgenis/commit/ece41bf216542f8af898b2e52eebcff601a709dd", 
+      "sha": "ece41bf216542f8af898b2e52eebcff601a709dd", 
+      "branchName": "master", 
+      "date": "Apr 6, 2018 9:40:30 AM", 
+      "repoName": "molgenis/molgenis"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/molgenis/molgenis/commit/b08235d75bc9c5177451e423d23136ac9a216e5c", 
+      "sha": "b08235d75bc9c5177451e423d23136ac9a216e5c", 
+      "branchName": "master", 
+      "date": "Apr 5, 2018 10:41:10 AM", 
+      "repoName": "molgenis/molgenis"
+    }
+  }, 
+  "bugName": "molgenis-molgenis-362517584-362989296", 
+  "version": "latest", 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 2, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 10, 
+      "numberDeleted": 5
+    }
+  }, 
+  "type": "passing_passing", 
+  "bugId": "Bears-173", 
+  "projectMetrics": {
+    "numberSourceFiles": 1243, 
+    "numberLibrariesFailingModule": 61, 
+    "numberTestFiles": 518, 
+    "numberModules": 57
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 127006680, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 556793856, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Sep 2, 2018 6:56:42 AM", 
+    "projectRootPomPath": "./workspace/molgenis/molgenis/362517584/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          1, 
+          1, 
+          0, 
+          0, 
+          772
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 774
+      }, 
+      "testing": {
+        "stepDurations": [
+          160
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 160
+      }, 
+      "cloning": {
+        "stepDurations": [
+          39
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 39
+      }
+    }, 
+    "reproductionDateBeginning": "Sep 2, 2018 6:07:53 AM", 
+    "totalDuration": 2919
+  }
+}
