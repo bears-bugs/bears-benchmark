@@ -1,0 +1,164 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 953, 
+      "numberRunning": 955, 
+      "numberFailing": 2, 
+      "numberErroring": 0, 
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError", 
+          "isError": false, 
+          "occurrences": 1
+        }, 
+        {
+          "failureName": "org.mockito.exceptions.misusing.UnnecessaryStubbingException", 
+          "isError": false, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 454
+    }, 
+    "failingModule": "/root/workspace/molgenis/molgenis/361993202/molgenis-data-security", 
+    "failureDetails": [
+      {
+        "failureName": "org.mockito.exceptions.misusing.UnnecessaryStubbingException", 
+        "detail": "\nUnnecessary stubbings detected.\nClean & maintainable test code requires zero unnecessary code.\nFollowing stubbings are unnecessary (click to navigate to relevant line of code):\n  1. -> at org.molgenis.data.security.owned.RowLevelSecurityRepositoryDecoratorTest.testFindOne(RowLevelSecurityRepositoryDecoratorTest.java:334)\n  2. -> at org.molgenis.data.security.owned.RowLevelSecurityRepositoryDecoratorTest.testFindOne(RowLevelSecurityRepositoryDecoratorTest.java:336)\nPlease remove unnecessary stubbings or use 'silent' option. More info: javadoc for UnnecessaryStubbingException class.", 
+        "isError": false, 
+        "testMethod": "tearDownAfterMethod", 
+        "testClass": "org.molgenis.data.security.owned.RowLevelSecurityRepositoryDecoratorTest"
+      }, 
+      {
+        "failureName": "java.lang.AssertionError", 
+        "detail": "expected [null] but found [Mock for Entity, hashCode: 1448517199]", 
+        "isError": false, 
+        "testMethod": "testFindOne", 
+        "testClass": "org.molgenis.data.security.owned.RowLevelSecurityRepositoryDecoratorTest"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 24, 
+        "numberRunning": 26, 
+        "testClass": "org.molgenis.data.security.owned.RowLevelSecurityRepositoryDecoratorTest", 
+        "numberFailing": 2, 
+        "numberErroring": 0, 
+        "numberSkipping": 70
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/molgenis/molgenis/builds/362486982", 
+      "date": "Apr 5, 2018 9:30:49 AM", 
+      "id": 362486982
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/molgenis/molgenis/builds/361993202", 
+      "date": "Apr 4, 2018 9:17:34 AM", 
+      "id": 361993202
+    }
+  }, 
+  "repository": {
+    "name": "molgenis/molgenis", 
+    "url": "https://github.com/molgenis/molgenis", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 8010626
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/molgenis/molgenis/commit/9553cdd759451ff1977d50a9384efd41ff941146", 
+      "sha": "9553cdd759451ff1977d50a9384efd41ff941146", 
+      "branchName": "master", 
+      "date": "Apr 5, 2018 9:07:25 AM", 
+      "repoName": "molgenis/molgenis"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/molgenis/molgenis/commit/9d8d11a5aaa94a08d07ea865d4566d3f7e2b816f", 
+      "sha": "9d8d11a5aaa94a08d07ea865d4566d3f7e2b816f", 
+      "branchName": "master", 
+      "date": "Apr 4, 2018 8:55:06 AM", 
+      "repoName": "molgenis/molgenis"
+    }
+  }, 
+  "bugName": "molgenis-molgenis-361993202-362486982", 
+  "version": "latest", 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 8, 
+      "numberDeleted": 1
+    }
+  }, 
+  "type": "passing_passing", 
+  "bugId": "Bears-172", 
+  "projectMetrics": {
+    "numberSourceFiles": 1243, 
+    "numberLibrariesFailingModule": 52, 
+    "numberTestFiles": 518, 
+    "numberModules": 57
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 616997576, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 862978048, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Sep 2, 2018 7:41:27 AM", 
+    "projectRootPomPath": "./workspace/molgenis/molgenis/361993202/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          1, 
+          1, 
+          0, 
+          1, 
+          801
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 804
+      }, 
+      "testing": {
+        "stepDurations": [
+          75
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 75
+      }, 
+      "cloning": {
+        "stepDurations": [
+          38
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 38
+      }
+    }, 
+    "reproductionDateBeginning": "Sep 2, 2018 6:49:50 AM", 
+    "totalDuration": 3089
+  }
+}
