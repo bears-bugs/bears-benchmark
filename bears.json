@@ -1,0 +1,159 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 1697, 
+      "numberRunning": 1699, 
+      "numberFailing": 2, 
+      "numberErroring": 0, 
+      "failures": [
+        {
+          "failureName": "org.testng.TestException", 
+          "isError": false, 
+          "occurrences": 2
+        }
+      ], 
+      "numberSkipping": 0
+    }, 
+    "failingModule": "/root/workspace/molgenis/molgenis/361210220/molgenis-data-csv", 
+    "failureDetails": [
+      {
+        "failureName": "org.testng.TestException", 
+        "detail": "\nMethod CsvIteratorTest.testIteratorValueHeaderMismatchOneNonEmptyValue()[pri:0, instance:org.molgenis.data.csv.CsvIteratorTest@6c4ce583] should have thrown an exception of class org.molgenis.data.MolgenisDataException", 
+        "isError": false, 
+        "testMethod": "testIteratorValueHeaderMismatchOneNonEmptyValue", 
+        "testClass": "org.molgenis.data.csv.CsvIteratorTest"
+      }, 
+      {
+        "failureName": "org.testng.TestException", 
+        "detail": "\nMethod CsvIteratorTest.testIteratorValueHeaderMismatch()[pri:0, instance:org.molgenis.data.csv.CsvIteratorTest@6c4ce583] should have thrown an exception of class org.molgenis.data.MolgenisDataException", 
+        "isError": false, 
+        "testMethod": "testIteratorValueHeaderMismatch", 
+        "testClass": "org.molgenis.data.csv.CsvIteratorTest"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 6, 
+        "numberRunning": 8, 
+        "testClass": "org.molgenis.data.csv.CsvIteratorTest", 
+        "numberFailing": 2, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/molgenis/molgenis/builds/361993202", 
+      "date": "Apr 4, 2018 9:17:34 AM", 
+      "id": 361993202
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/molgenis/molgenis/builds/361210220", 
+      "date": "Apr 2, 2018 5:20:08 PM", 
+      "id": 361210220
+    }
+  }, 
+  "repository": {
+    "name": "molgenis/molgenis", 
+    "url": "https://github.com/molgenis/molgenis", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 8010626
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/molgenis/molgenis/commit/9d8d11a5aaa94a08d07ea865d4566d3f7e2b816f", 
+      "sha": "9d8d11a5aaa94a08d07ea865d4566d3f7e2b816f", 
+      "branchName": "master", 
+      "date": "Apr 4, 2018 8:55:06 AM", 
+      "repoName": "molgenis/molgenis"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/molgenis/molgenis/commit/1e3ddabf51bfa351fda75ec10f06ffda85c0e1f9", 
+      "sha": "1e3ddabf51bfa351fda75ec10f06ffda85c0e1f9", 
+      "branchName": "master", 
+      "date": "Mar 30, 2018 2:10:11 PM", 
+      "repoName": "molgenis/molgenis"
+    }
+  }, 
+  "bugName": "molgenis-molgenis-361210220-361993202", 
+  "version": "latest", 
+  "projectMetrics": {
+    "numberSourceFiles": 1243, 
+    "numberLibrariesFailingModule": 56, 
+    "numberTestFiles": 518, 
+    "numberModules": 57
+  }, 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 1, 
+      "numberDeleted": 10
+    }
+  }, 
+  "bugId": "Bears-171", 
+  "type": "passing_passing", 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 138580368, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 722993152, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Sep 2, 2018 7:53:09 AM", 
+    "projectRootPomPath": "./workspace/molgenis/molgenis/361210220/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          1, 
+          2, 
+          0, 
+          1, 
+          735
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 739
+      }, 
+      "testing": {
+        "stepDurations": [
+          210
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 210
+      }, 
+      "cloning": {
+        "stepDurations": [
+          45
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 45
+      }
+    }, 
+    "reproductionDateBeginning": "Sep 2, 2018 6:59:37 AM", 
+    "totalDuration": 3204
+  }
+}
