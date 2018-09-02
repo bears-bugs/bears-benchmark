@@ -1,0 +1,827 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] MOLGENIS
+[INFO] test
+[INFO] util
+[INFO] i18n
+[INFO] data
+[INFO] security-core
+[INFO] settings
+[INFO] data-security
+[INFO] data-file
+[INFO] data-i18n
+[INFO] scripts-core
+[INFO] js
+[INFO] data-validation
+[INFO] data-import
+[INFO] jobs
+[INFO] data-excel
+[INFO] data-csv
+[INFO] amazon-bucket
+[INFO] core
+[INFO] data-cache
+[INFO] data-index
+[INFO] data-platform
+[INFO] data-plugin
+[INFO] web
+[INFO] security
+[INFO] core-ui
+[INFO] apps
+[INFO] data-vcf
+[INFO] data-rest
+[INFO] genomebrowser
+[INFO] beacon
+[INFO] data-migrate
+[INFO] data-annotators
+[INFO] data-postgresql
+[INFO] bootstrap
+[INFO] dataexplorer
+[INFO] python
+[INFO] r
+[INFO] searchall
+[INFO] data-elasticsearch
+[INFO] ontology-core
+[INFO] semantic-search
+[INFO] semantic-mapper
+[INFO] ontology
+[INFO] questionnaires
+[INFO] scripts
+[INFO] file-ingester
+[INFO] gavin
+[INFO] fair
+[INFO] settings-ui
+[INFO] swagger
+[INFO] navigator
+[INFO] metadata-manager
+[INFO] one-click-importer
+[INFO] app
+[INFO] api-tests
+[INFO] data-rest-client
+[INFO] platform-integration-tests
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building MOLGENIS 7.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-banned-dependencies) @ molgenis ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:prepare-agent (pre-unit-test) @ molgenis ---
+[INFO] argLine set to -javaagent:/root/./workspace/molgenis/molgenis/361993202/.m2/org/jacoco/org.jacoco.agent/0.8.1/org.jacoco.agent-0.8.1-runtime.jar=destfile=/root/workspace/molgenis/molgenis/361993202/target/jacoco.exec
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-source (execution-annotations) @ molgenis ---
+[INFO] Source directory: /root/workspace/molgenis/molgenis/361993202/target/generated-sources/annotations added.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-resource (minify-build-helper) @ molgenis ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:copy-resources (copy-generated-resources) @ molgenis ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/molgenis/molgenis/361993202/target/generated-resources
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:report (post-unit-test) @ molgenis ---
+[INFO] Skipping JaCoCo execution due to missing execution data file.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building test 7.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-banned-dependencies) @ molgenis-test ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:prepare-agent (pre-unit-test) @ molgenis-test ---
+[INFO] argLine set to -javaagent:/root/./workspace/molgenis/molgenis/361993202/.m2/org/jacoco/org.jacoco.agent/0.8.1/org.jacoco.agent-0.8.1-runtime.jar=destfile=/root/workspace/molgenis/molgenis/361993202/molgenis-test/target/jacoco.exec
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-source (execution-annotations) @ molgenis-test ---
+[INFO] Source directory: /root/workspace/molgenis/molgenis/361993202/molgenis-test/target/generated-sources/annotations added.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-resource (minify-build-helper) @ molgenis-test ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ molgenis-test ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] skip non existing resourceDirectory /root/workspace/molgenis/molgenis/361993202/molgenis-test/src/main/resources
+[INFO] skip non existing resourceDirectory /root/workspace/molgenis/molgenis/361993202/molgenis-test/target/generated-resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ molgenis-test ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:copy-resources (copy-generated-resources) @ molgenis-test ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/molgenis/molgenis/361993202/molgenis-test/target/generated-resources
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ molgenis-test ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/molgenis/molgenis/361993202/molgenis-test/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ molgenis-test ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ molgenis-test ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:report (post-unit-test) @ molgenis-test ---
+[INFO] Skipping JaCoCo execution due to missing execution data file.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building util 7.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-banned-dependencies) @ molgenis-util ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:prepare-agent (pre-unit-test) @ molgenis-util ---
+[INFO] argLine set to -javaagent:/root/./workspace/molgenis/molgenis/361993202/.m2/org/jacoco/org.jacoco.agent/0.8.1/org.jacoco.agent-0.8.1-runtime.jar=destfile=/root/workspace/molgenis/molgenis/361993202/molgenis-util/target/jacoco.exec
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-source (execution-annotations) @ molgenis-util ---
+[INFO] Source directory: /root/workspace/molgenis/molgenis/361993202/molgenis-util/target/generated-sources/annotations added.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-resource (minify-build-helper) @ molgenis-util ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ molgenis-util ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] Copying 1 resource
+[INFO] skip non existing resourceDirectory /root/workspace/molgenis/molgenis/361993202/molgenis-util/target/generated-resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ molgenis-util ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:copy-resources (copy-generated-resources) @ molgenis-util ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/molgenis/molgenis/361993202/molgenis-util/target/generated-resources
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ molgenis-util ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ molgenis-util ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ molgenis-util ---
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng/2.19.1/surefire-testng-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng/2.19.1/surefire-testng-2.19.1.pom (3 KB at 3.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom (3 KB at 96.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.19.1/common-java5-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.19.1/common-java5-2.19.1.pom (3 KB at 84.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng-utils/2.19.1/surefire-testng-utils-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng-utils/2.19.1/surefire-testng-utils-2.19.1.pom (3 KB at 67.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.19.1/surefire-grouper-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.19.1/surefire-grouper-2.19.1.pom (3 KB at 85.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.19.1/surefire-grouper-2.19.1.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng/2.19.1/surefire-testng-2.19.1.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng-utils/2.19.1/surefire-testng-utils-2.19.1.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.19.1/common-java5-2.19.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.19.1/common-java5-2.19.1.jar (44 KB at 484.2 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.19.1/surefire-grouper-2.19.1.jar (38 KB at 347.0 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng-utils/2.19.1/surefire-testng-utils-2.19.1.jar (27 KB at 248.2 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng/2.19.1/surefire-testng-2.19.1.jar (42 KB at 296.1 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+07:04:13.532 [main] DEBUG org.molgenis.util.mail.MailSenderImpl - Sent message.
+07:04:13.559 [main] DEBUG org.molgenis.util.mail.MailSenderImpl - Sent messages.
+07:04:13.701 [main] DEBUG org.molgenis.util.mail.JavaMailSenderFactory - Mail properties: {}; defaults: {mail.smtp.starttls.enable=true, mail.smtp.quitwait=false, mail.smtp.auth=true}
+07:04:13.784 [main] DEBUG org.molgenis.util.mail.JavaMailSenderFactory - Mail properties: {mail.smtp.starttls.enable=false, mail.debug=true}; defaults: {mail.smtp.starttls.enable=true, mail.smtp.quitwait=false, mail.smtp.auth=true}
+07:04:13.795 [main] INFO org.molgenis.util.mail.JavaMailSenderFactory - Validating mail settings...
+07:04:13.808 [main] DEBUG org.molgenis.util.mail.JavaMailSenderFactory - Mail properties: {}; defaults: {mail.smtp.starttls.enable=true, mail.smtp.quitwait=false, mail.smtp.auth=true}
+07:04:14.059 [main] INFO org.molgenis.util.mail.JavaMailSenderFactory - Unable to ping to host
+com.sun.mail.util.MailConnectException: Couldn't connect to host, port: host, 1234; timeout -1
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:1961)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:654)
+	at javax.mail.Service.connect(Service.java:345)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.connectTransport(JavaMailSenderImpl.java:515)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.testConnection(JavaMailSenderImpl.java:396)
+	at org.molgenis.util.mail.JavaMailSenderFactory.validateConnection(JavaMailSenderFactory.java:63)
+	at org.molgenis.util.mail.JavaMailSenderFactoryTest.testValidateConnectionInvalidConnection(JavaMailSenderFactoryTest.java:74)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:132)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:147)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+Caused by: java.net.UnknownHostException: host
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:184)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at java.net.Socket.connect(Socket.java:538)
+	at com.sun.mail.util.SocketFetcher.createSocket(SocketFetcher.java:297)
+	at com.sun.mail.util.SocketFetcher.getSocket(SocketFetcher.java:229)
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:1927)
+	... 34 common frames omitted
+Tests run: 58, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.482 sec - in TestSuite
+
+Results :
+
+Tests run: 58, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:report (post-unit-test) @ molgenis-util ---
+[INFO] Loading execution data file /root/workspace/molgenis/molgenis/361993202/molgenis-util/target/jacoco.exec
+[INFO] Analyzed bundle 'util' with 15 classes
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building i18n 7.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-banned-dependencies) @ molgenis-i18n ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:prepare-agent (pre-unit-test) @ molgenis-i18n ---
+[INFO] argLine set to -javaagent:/root/./workspace/molgenis/molgenis/361993202/.m2/org/jacoco/org.jacoco.agent/0.8.1/org.jacoco.agent-0.8.1-runtime.jar=destfile=/root/workspace/molgenis/molgenis/361993202/molgenis-i18n/target/jacoco.exec
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-source (execution-annotations) @ molgenis-i18n ---
+[INFO] Source directory: /root/workspace/molgenis/molgenis/361993202/molgenis-i18n/target/generated-sources/annotations added.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-resource (minify-build-helper) @ molgenis-i18n ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ molgenis-i18n ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] skip non existing resourceDirectory /root/workspace/molgenis/molgenis/361993202/molgenis-i18n/src/main/resources
+[INFO] skip non existing resourceDirectory /root/workspace/molgenis/molgenis/361993202/molgenis-i18n/target/generated-resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ molgenis-i18n ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:copy-resources (copy-generated-resources) @ molgenis-i18n ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/molgenis/molgenis/361993202/molgenis-i18n/target/generated-resources
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ molgenis-i18n ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ molgenis-i18n ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ molgenis-i18n ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+07:04:18.697 [main] WARN  o.m.i.p.AllPropertiesMessageSource - ResourceBundle [l10n.test] not found for MessageSource: Can't find bundle for base name l10n.test, locale de
+07:04:18.706 [main] WARN  o.m.i.p.AllPropertiesMessageSource - ResourceBundle [l10n.test] not found for MessageSource: Can't find bundle for base name l10n.test, locale es
+07:04:18.707 [main] WARN  o.m.i.p.AllPropertiesMessageSource - ResourceBundle [l10n.test] not found for MessageSource: Can't find bundle for base name l10n.test, locale it
+07:04:18.708 [main] WARN  o.m.i.p.AllPropertiesMessageSource - ResourceBundle [l10n.test] not found for MessageSource: Can't find bundle for base name l10n.test, locale pt
+07:04:18.709 [main] WARN  o.m.i.p.AllPropertiesMessageSource - ResourceBundle [l10n.test] not found for MessageSource: Can't find bundle for base name l10n.test, locale fr
+07:04:18.710 [main] WARN  o.m.i.p.AllPropertiesMessageSource - ResourceBundle [l10n.test] not found for MessageSource: Can't find bundle for base name l10n.test, locale xx
+Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.415 sec - in TestSuite
+
+Results :
+
+Tests run: 23, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:report (post-unit-test) @ molgenis-i18n ---
+[INFO] Loading execution data file /root/workspace/molgenis/molgenis/361993202/molgenis-i18n/target/jacoco.exec
+[INFO] Analyzed bundle 'i18n' with 13 classes
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building data 7.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-banned-dependencies) @ molgenis-data ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:prepare-agent (pre-unit-test) @ molgenis-data ---
+[INFO] argLine set to -javaagent:/root/./workspace/molgenis/molgenis/361993202/.m2/org/jacoco/org.jacoco.agent/0.8.1/org.jacoco.agent-0.8.1-runtime.jar=destfile=/root/workspace/molgenis/molgenis/361993202/molgenis-data/target/jacoco.exec
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-source (execution-annotations) @ molgenis-data ---
+[INFO] Source directory: /root/workspace/molgenis/molgenis/361993202/molgenis-data/target/generated-sources/annotations added.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-resource (minify-build-helper) @ molgenis-data ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ molgenis-data ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] Copying 2 resources
+[INFO] skip non existing resourceDirectory /root/workspace/molgenis/molgenis/361993202/molgenis-data/target/generated-resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ molgenis-data ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 162 source files to /root/workspace/molgenis/molgenis/361993202/molgenis-data/target/classes
+[WARNING] /root/workspace/molgenis/molgenis/361993202/molgenis-data/src/main/java/org/molgenis/data/meta/model/EntityType.java:[5,25] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /root/workspace/molgenis/molgenis/361993202/molgenis-data/src/main/java/org/molgenis/data/util/EntityUtils.java:[7,25] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /root/workspace/molgenis/molgenis/361993202/molgenis-data/src/main/java/org/molgenis/data/transaction/TransactionExceptionTranslator.java:[3,25] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /root/workspace/molgenis/molgenis/361993202/molgenis-data/src/main/java/org/molgenis/data/support/EntityWithComputedAttributes.java:[4,25] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /root/workspace/molgenis/molgenis/361993202/molgenis-data/src/main/java/org/molgenis/data/support/EntityReference.java:[4,25] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /root/workspace/molgenis/molgenis/361993202/molgenis-data/src/main/java/org/molgenis/data/support/LazyEntity.java:[5,25] org.molgenis.data.UnknownEntityException in org.molgenis.data has been deprecated
+[WARNING] /root/workspace/molgenis/molgenis/361993202/molgenis-data/src/main/java/org/molgenis/data/util/GenericDependencyResolver.java:[3,25] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /root/workspace/molgenis/molgenis/361993202/molgenis-data/src/main/java/org/molgenis/data/support/DynamicEntity.java:[4,25] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /root/workspace/molgenis/molgenis/361993202/molgenis-data/src/main/java/org/molgenis/data/listeners/EntityListenersService.java:[6,25] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /root/workspace/molgenis/molgenis/361993202/molgenis-data/src/main/java/org/molgenis/data/meta/model/EntityType.java:[5,25] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /root/workspace/molgenis/molgenis/361993202/molgenis-data/src/main/java/org/molgenis/data/util/EntityUtils.java:[7,25] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /root/workspace/molgenis/molgenis/361993202/molgenis-data/src/main/java/org/molgenis/data/transaction/TransactionExceptionTranslator.java:[3,25] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /root/workspace/molgenis/molgenis/361993202/molgenis-data/src/main/java/org/molgenis/data/support/EntityWithComputedAttributes.java:[4,25] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /root/workspace/molgenis/molgenis/361993202/molgenis-data/src/main/java/org/molgenis/data/support/EntityReference.java:[4,25] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /root/workspace/molgenis/molgenis/361993202/molgenis-data/src/main/java/org/molgenis/data/support/LazyEntity.java:[5,25] org.molgenis.data.UnknownEntityException in org.molgenis.data has been deprecated
+[WARNING] /root/workspace/molgenis/molgenis/361993202/molgenis-data/src/main/java/org/molgenis/data/util/GenericDependencyResolver.java:[3,25] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /root/workspace/molgenis/molgenis/361993202/molgenis-data/src/main/java/org/molgenis/data/support/DynamicEntity.java:[4,25] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /root/workspace/molgenis/molgenis/361993202/molgenis-data/src/main/java/org/molgenis/data/listeners/EntityListenersService.java:[6,25] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /root/workspace/molgenis/molgenis/361993202/molgenis-data/src/main/java/org/molgenis/data/meta/model/EntityType.java:[5,25] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /root/workspace/molgenis/molgenis/361993202/molgenis-data/src/main/java/org/molgenis/data/util/EntityUtils.java:[7,25] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /root/workspace/molgenis/molgenis/361993202/molgenis-data/src/main/java/org/molgenis/data/transaction/TransactionExceptionTranslator.java:[3,25] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /root/workspace/molgenis/molgenis/361993202/molgenis-data/src/main/java/org/molgenis/data/support/EntityWithComputedAttributes.java:[4,25] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /root/workspace/molgenis/molgenis/361993202/molgenis-data/src/main/java/org/molgenis/data/support/EntityReference.java:[4,25] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /root/workspace/molgenis/molgenis/361993202/molgenis-data/src/main/java/org/molgenis/data/support/LazyEntity.java:[5,25] org.molgenis.data.UnknownEntityException in org.molgenis.data has been deprecated
+[WARNING] /root/workspace/molgenis/molgenis/361993202/molgenis-data/src/main/java/org/molgenis/data/util/GenericDependencyResolver.java:[3,25] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /root/workspace/molgenis/molgenis/361993202/molgenis-data/src/main/java/org/molgenis/data/support/DynamicEntity.java:[4,25] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /root/workspace/molgenis/molgenis/361993202/molgenis-data/src/main/java/org/molgenis/data/listeners/EntityListenersService.java:[6,25] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /root/workspace/molgenis/molgenis/361993202/molgenis-data/src/main/java/org/molgenis/data/meta/model/EntityType.java:[5,25] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /root/workspace/molgenis/molgenis/361993202/molgenis-data/src/main/java/org/molgenis/data/util/EntityUtils.java:[7,25] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /root/workspace/molgenis/molgenis/361993202/molgenis-data/src/main/java/org/molgenis/data/transaction/TransactionExceptionTranslator.java:[3,25] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /root/workspace/molgenis/molgenis/361993202/molgenis-data/src/main/java/org/molgenis/data/support/EntityWithComputedAttributes.java:[4,25] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /root/workspace/molgenis/molgenis/361993202/molgenis-data/src/main/java/org/molgenis/data/support/EntityReference.java:[4,25] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /root/workspace/molgenis/molgenis/361993202/molgenis-data/src/main/java/org/molgenis/data/support/LazyEntity.java:[5,25] org.molgenis.data.UnknownEntityException in org.molgenis.data has been deprecated
+[WARNING] /root/workspace/molgenis/molgenis/361993202/molgenis-data/src/main/java/org/molgenis/data/util/GenericDependencyResolver.java:[3,25] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /root/workspace/molgenis/molgenis/361993202/molgenis-data/src/main/java/org/molgenis/data/support/DynamicEntity.java:[4,25] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /root/workspace/molgenis/molgenis/361993202/molgenis-data/src/main/java/org/molgenis/data/listeners/EntityListenersService.java:[6,25] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /root/workspace/molgenis/molgenis/361993202/molgenis-data/src/main/java/org/molgenis/data/meta/model/EntityType.java:[554,43] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /root/workspace/molgenis/molgenis/361993202/molgenis-data/src/main/java/org/molgenis/data/util/EntityUtils.java:[52,35] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /root/workspace/molgenis/molgenis/361993202/molgenis-data/src/main/java/org/molgenis/data/util/EntityUtils.java:[98,51] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /root/workspace/molgenis/molgenis/361993202/molgenis-data/src/main/java/org/molgenis/data/util/EntityUtils.java:[108,51] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /root/workspace/molgenis/molgenis/361993202/molgenis-data/src/main/java/org/molgenis/data/transaction/TransactionExceptionTranslator.java:[17,9] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /root/workspace/molgenis/molgenis/361993202/molgenis-data/src/main/java/org/molgenis/data/support/EntityWithComputedAttributes.java:[200,35] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /root/workspace/molgenis/molgenis/361993202/molgenis-data/src/main/java/org/molgenis/data/decorator/DynamicRepositoryDecoratorRegistryImpl.java:[68,83] unchecked method invocation: method findOne in interface org.molgenis.data.DataService is applied to given types
+  required: java.lang.String,org.molgenis.data.Query<E>,java.lang.Class<E>
+  found: java.lang.String,org.molgenis.data.Query,java.lang.Class<org.molgenis.data.decorator.meta.DecoratorConfiguration>
+[WARNING] /root/workspace/molgenis/molgenis/361993202/molgenis-data/src/main/java/org/molgenis/data/decorator/DynamicRepositoryDecoratorRegistryImpl.java:[68,109] unchecked conversion
+  required: org.molgenis.data.Query<E>
+  found:    org.molgenis.data.Query
+[WARNING] /root/workspace/molgenis/molgenis/361993202/molgenis-data/src/main/java/org/molgenis/data/support/EntityReference.java:[188,51] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /root/workspace/molgenis/molgenis/361993202/molgenis-data/src/main/java/org/molgenis/data/support/EntityReference.java:[196,51] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /root/workspace/molgenis/molgenis/361993202/molgenis-data/src/main/java/org/molgenis/data/support/EntityReference.java:[204,51] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /root/workspace/molgenis/molgenis/361993202/molgenis-data/src/main/java/org/molgenis/data/support/EntityReference.java:[224,43] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /root/workspace/molgenis/molgenis/361993202/molgenis-data/src/main/java/org/molgenis/data/support/LazyEntity.java:[173,43] org.molgenis.data.UnknownEntityException in org.molgenis.data has been deprecated
+[WARNING] /root/workspace/molgenis/molgenis/361993202/molgenis-data/src/main/java/org/molgenis/data/meta/MetaDataServiceImpl.java:[124,35] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /root/workspace/molgenis/molgenis/361993202/molgenis-data/src/main/java/org/molgenis/data/meta/MetaDataServiceImpl.java:[136,35] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /root/workspace/molgenis/molgenis/361993202/molgenis-data/src/main/java/org/molgenis/data/util/GenericDependencyResolver.java:[37,43] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /root/workspace/molgenis/molgenis/361993202/molgenis-data/src/main/java/org/molgenis/data/decorator/meta/DynamicDecoratorPopulator.java:[52,75] unchecked cast
+  required: java.util.stream.Stream<java.lang.Object>
+  found:    java.util.stream.Stream<capture#1 of ?>
+[WARNING] /root/workspace/molgenis/molgenis/361993202/molgenis-data/src/main/java/org/molgenis/data/DataConverter.java:[99,35] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /root/workspace/molgenis/molgenis/361993202/molgenis-data/src/main/java/org/molgenis/data/support/DynamicEntity.java:[216,51] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /root/workspace/molgenis/molgenis/361993202/molgenis-data/src/main/java/org/molgenis/data/support/DynamicEntity.java:[227,51] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /root/workspace/molgenis/molgenis/361993202/molgenis-data/src/main/java/org/molgenis/data/support/DynamicEntity.java:[237,51] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /root/workspace/molgenis/molgenis/361993202/molgenis-data/src/main/java/org/molgenis/data/support/DynamicEntity.java:[248,51] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /root/workspace/molgenis/molgenis/361993202/molgenis-data/src/main/java/org/molgenis/data/support/DynamicEntity.java:[256,51] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /root/workspace/molgenis/molgenis/361993202/molgenis-data/src/main/java/org/molgenis/data/support/DynamicEntity.java:[264,51] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /root/workspace/molgenis/molgenis/361993202/molgenis-data/src/main/java/org/molgenis/data/support/DynamicEntity.java:[270,51] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /root/workspace/molgenis/molgenis/361993202/molgenis-data/src/main/java/org/molgenis/data/support/DynamicEntity.java:[284,51] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /root/workspace/molgenis/molgenis/361993202/molgenis-data/src/main/java/org/molgenis/data/support/DynamicEntity.java:[292,51] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /root/workspace/molgenis/molgenis/361993202/molgenis-data/src/main/java/org/molgenis/data/support/DynamicEntity.java:[300,51] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /root/workspace/molgenis/molgenis/361993202/molgenis-data/src/main/java/org/molgenis/data/listeners/EntityListenersService.java:[167,43] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /root/workspace/molgenis/molgenis/361993202/molgenis-data/src/main/java/org/molgenis/data/support/QueryImpl.java:[115,35] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /root/workspace/molgenis/molgenis/361993202/molgenis-data/src/main/java/org/molgenis/data/support/QueryImpl.java:[256,55] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[WARNING] /root/workspace/molgenis/molgenis/361993202/molgenis-data/src/main/java/org/molgenis/data/meta/EntityTypeRepositoryDecorator.java:[124,43] org.molgenis.data.MolgenisDataException in org.molgenis.data has been deprecated
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:copy-resources (copy-generated-resources) @ molgenis-data ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/molgenis/molgenis/361993202/molgenis-data/target/generated-resources
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ molgenis-data ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ molgenis-data ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ molgenis-data ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+07:04:31,758 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback-test.xml] at [file:/root/workspace/molgenis/molgenis/361993202/molgenis-data/target/test-classes/logback-test.xml]
+07:04:31,759 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback-test.xml] occurs multiple times on the classpath.
+07:04:31,759 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback-test.xml] occurs at [file:/root/workspace/molgenis/molgenis/361993202/molgenis-data/target/test-classes/logback-test.xml]
+07:04:31,759 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback-test.xml] occurs at [file:/root/workspace/molgenis/molgenis/361993202/molgenis-i18n/target/test-classes/logback-test.xml]
+07:04:31,986 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+07:04:31,988 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+07:04:32,015 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [STDOUT]
+07:04:32,032 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+07:04:32,175 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.molgenis] to INFO
+07:04:32,175 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to WARN
+07:04:32,176 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[ROOT]
+07:04:32,177 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+07:04:32,210 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@5b29ab61 - Registering current configuration as safe fallback point
+
+07:04:38.216 [main] INFO  o.m.d.populate.IdGeneratorImplTest - Generated 1000000 identifiers using strategy SEQUENTIAL_UUID in 1.095 s
+07:04:38.288 [main] INFO  o.m.d.populate.IdGeneratorImplTest - Generated 1000 identifiers using strategy SHORT_RANDOM in 4.236 ms
+07:04:38.301 [main] INFO  o.m.d.populate.IdGeneratorImplTest - Generated 1000 identifiers using strategy SECURE_RANDOM in 11.34 ms
+07:04:38.308 [main] INFO  o.m.d.populate.IdGeneratorImplTest - Generated 1000 identifiers using strategy LONG_SECURE_RANDOM in 5.964 ms
+07:04:38.310 [main] INFO  o.m.d.populate.IdGeneratorImplTest - Generated 1000 identifiers using strategy SHORT_SECURE_RANDOM in 1.483 ms
+[MockitoHint] AttributeRepositoryDecoratorTest.null (see javadoc for MockitoHint):
+[MockitoHint] 1. Unused -> at org.molgenis.data.meta.AttributeRepositoryDecoratorTest.setUpBeforeMethod(AttributeRepositoryDecoratorTest.java:59)
+[MockitoHint] 2. Unused -> at org.molgenis.data.meta.AttributeRepositoryDecoratorTest.setUpBeforeMethod(AttributeRepositoryDecoratorTest.java:60)
+[MockitoHint] 3. Unused -> at org.molgenis.data.meta.AttributeRepositoryDecoratorTest.setUpBeforeMethod(AttributeRepositoryDecoratorTest.java:61)
+[MockitoHint] 4. Unused -> at org.molgenis.data.meta.AttributeRepositoryDecoratorTest.setUpBeforeMethod(AttributeRepositoryDecoratorTest.java:62)
+[MockitoHint] 5. Unused -> at org.molgenis.data.meta.AttributeRepositoryDecoratorTest.setUpBeforeMethod(AttributeRepositoryDecoratorTest.java:64)
+[MockitoHint] 6. Unused -> at org.molgenis.data.meta.AttributeRepositoryDecoratorTest.setUpBeforeMethod(AttributeRepositoryDecoratorTest.java:65)
+[MockitoHint] 7. Unused -> at org.molgenis.data.meta.AttributeRepositoryDecoratorTest.setUpBeforeMethod(AttributeRepositoryDecoratorTest.java:66)
+[MockitoHint] 8. Unused -> at org.molgenis.data.meta.AttributeRepositoryDecoratorTest.delete(AttributeRepositoryDecoratorTest.java:74)
+[MockitoHint] 9. Unused -> at org.molgenis.data.meta.AttributeRepositoryDecoratorTest.delete(AttributeRepositoryDecoratorTest.java:76)
+[MockitoHint] 10. Unused -> at org.molgenis.data.meta.AttributeRepositoryDecoratorTest.delete(AttributeRepositoryDecoratorTest.java:77)
+[MockitoHint] 11. Unused -> at org.molgenis.data.meta.AttributeRepositoryDecoratorTest.delete(AttributeRepositoryDecoratorTest.java:81)
+[MockitoHint] 12. Unused -> at org.molgenis.data.meta.AttributeRepositoryDecoratorTest.delete(AttributeRepositoryDecoratorTest.java:82)
+[MockitoHint] 13. Unused -> at org.molgenis.data.meta.AttributeRepositoryDecoratorTest.delete(AttributeRepositoryDecoratorTest.java:83)
+[MockitoHint] 14. Unused -> at org.molgenis.data.meta.AttributeRepositoryDecoratorTest.delete(AttributeRepositoryDecoratorTest.java:87)
+[MockitoHint] 15. Unused -> at org.molgenis.data.meta.AttributeRepositoryDecoratorTest.delete(AttributeRepositoryDecoratorTest.java:88)
+[MockitoHint] 16. Unused -> at org.molgenis.data.meta.AttributeRepositoryDecoratorTest.delete(AttributeRepositoryDecoratorTest.java:89)
+
+[MockitoHint] AttributeRepositoryDecoratorTest.null (see javadoc for MockitoHint):
+[MockitoHint] 1. Unused -> at org.molgenis.data.meta.AttributeRepositoryDecoratorTest.setUpBeforeMethod(AttributeRepositoryDecoratorTest.java:59)
+[MockitoHint] 2. Unused -> at org.molgenis.data.meta.AttributeRepositoryDecoratorTest.setUpBeforeMethod(AttributeRepositoryDecoratorTest.java:60)
+[MockitoHint] 3. Unused -> at org.molgenis.data.meta.AttributeRepositoryDecoratorTest.setUpBeforeMethod(AttributeRepositoryDecoratorTest.java:62)
+[MockitoHint] 4. Unused -> at org.molgenis.data.meta.AttributeRepositoryDecoratorTest.setUpBeforeMethod(AttributeRepositoryDecoratorTest.java:64)
+[MockitoHint] 5. Unused -> at org.molgenis.data.meta.AttributeRepositoryDecoratorTest.setUpBeforeMethod(AttributeRepositoryDecoratorTest.java:65)
+[MockitoHint] 6. Unused -> at org.molgenis.data.meta.AttributeRepositoryDecoratorTest.setUpBeforeMethod(AttributeRepositoryDecoratorTest.java:66)
+[MockitoHint] 7. Unused -> at org.molgenis.data.meta.AttributeRepositoryDecoratorTest.deleteCompoundAttribute(AttributeRepositoryDecoratorTest.java:101)
+[MockitoHint] 8. Unused -> at org.molgenis.data.meta.AttributeRepositoryDecoratorTest.deleteCompoundAttribute(AttributeRepositoryDecoratorTest.java:102)
+[MockitoHint] 9. Unused -> at org.molgenis.data.meta.AttributeRepositoryDecoratorTest.deleteCompoundAttribute(AttributeRepositoryDecoratorTest.java:105)
+[MockitoHint] 10. Unused -> at org.molgenis.data.meta.AttributeRepositoryDecoratorTest.deleteCompoundAttribute(AttributeRepositoryDecoratorTest.java:106)
+[MockitoHint] 11. Unused -> at org.molgenis.data.meta.AttributeRepositoryDecoratorTest.deleteCompoundAttribute(AttributeRepositoryDecoratorTest.java:107)
+[MockitoHint] 12. Unused -> at org.molgenis.data.meta.AttributeRepositoryDecoratorTest.deleteCompoundAttribute(AttributeRepositoryDecoratorTest.java:109)
+[MockitoHint] 13. Unused -> at org.molgenis.data.meta.AttributeRepositoryDecoratorTest.deleteCompoundAttribute(AttributeRepositoryDecoratorTest.java:110)
+
+[MockitoHint] AttributeRepositoryDecoratorTest.null (see javadoc for MockitoHint):
+[MockitoHint] 1. Unused -> at org.molgenis.data.meta.AttributeRepositoryDecoratorTest.setUpBeforeMethod(AttributeRepositoryDecoratorTest.java:59)
+[MockitoHint] 2. Unused -> at org.molgenis.data.meta.AttributeRepositoryDecoratorTest.setUpBeforeMethod(AttributeRepositoryDecoratorTest.java:60)
+[MockitoHint] 3. Unused -> at org.molgenis.data.meta.AttributeRepositoryDecoratorTest.updateNonSystemAbstractEntity(AttributeRepositoryDecoratorTest.java:122)
+
+0
+07:04:42.167 [main] INFO  o.m.data.meta.MetaDataServiceImpl - Removed entity [entity]
+07:04:42.170 [main] INFO  o.m.data.meta.MetaDataServiceImpl - Removed entities [entity0,entity1]
+07:04:42.994 [main] ERROR o.m.d.l.EntityListenersService - Repository [EntityRepo] is not registered in the entity listeners service
+07:04:44.056 [main] INFO  o.m.data.support.RepositoryCopier - Creating a copy of Repository repository, with id: copiedEntityTypeId, package: Package and label: copiedEntityTypeLabel
+[MockitoHint] RepositoryCopierTest.null (see javadoc for MockitoHint):
+[MockitoHint] 1. Unused -> at org.molgenis.data.support.RepositoryCopierTest.createEntityTypeMeta(RepositoryCopierTest.java:107)
+[MockitoHint] 2. Unused -> at org.molgenis.data.support.RepositoryCopierTest.createEntityTypeMeta(RepositoryCopierTest.java:110)
+[MockitoHint] 3. Unused -> at org.molgenis.data.support.RepositoryCopierTest.createEntityTypeMeta(RepositoryCopierTest.java:112)
+
+[MockitoHint] MapOfStringsExpressionEvaluatorTest.null (see javadoc for MockitoHint):
+[MockitoHint] 1. Unused -> at org.molgenis.data.support.MapOfStringsExpressionEvaluatorTest.testEvaluate(MapOfStringsExpressionEvaluatorTest.java:183)
+[MockitoHint] 2. Unused -> at org.molgenis.data.support.MapOfStringsExpressionEvaluatorTest.testEvaluate(MapOfStringsExpressionEvaluatorTest.java:187)
+[MockitoHint] 3. Unused -> at org.molgenis.data.support.MapOfStringsExpressionEvaluatorTest.testEvaluate(MapOfStringsExpressionEvaluatorTest.java:188)
+
+[MockitoHint] MapOfStringsExpressionEvaluatorTest.null (see javadoc for MockitoHint):
+[MockitoHint] 1. Unused -> at org.molgenis.data.support.MapOfStringsExpressionEvaluatorTest.testMapOfStringsEvaluatorConstructorChecksIfAttributeHasExpression(MapOfStringsExpressionEvaluatorTest.java:76)
+[MockitoHint] 2. Unused -> at org.molgenis.data.support.MapOfStringsExpressionEvaluatorTest.testMapOfStringsEvaluatorConstructorChecksIfAttributeHasExpression(MapOfStringsExpressionEvaluatorTest.java:77)
+
+[MockitoHint] MapOfStringsExpressionEvaluatorTest.null (see javadoc for MockitoHint):
+[MockitoHint] 1. Unused -> at org.molgenis.data.support.MapOfStringsExpressionEvaluatorTest.testMapOfStringsEvaluatorConstructorChecksIfAttributeHasRefEntity(MapOfStringsExpressionEvaluatorTest.java:92)
+[MockitoHint] 2. Unused -> at org.molgenis.data.support.MapOfStringsExpressionEvaluatorTest.testMapOfStringsEvaluatorConstructorChecksIfAttributeHasRefEntity(MapOfStringsExpressionEvaluatorTest.java:93)
+
+[MockitoHint] MapOfStringsExpressionEvaluatorTest.null (see javadoc for MockitoHint):
+[MockitoHint] 1. Unused -> at org.molgenis.data.support.MapOfStringsExpressionEvaluatorTest.testMapOfStringsEvaluatorConstructorChecksIfCalculatedAttributesAllExist(MapOfStringsExpressionEvaluatorTest.java:146)
+[MockitoHint] 2. Unused -> at org.molgenis.data.support.MapOfStringsExpressionEvaluatorTest.testMapOfStringsEvaluatorConstructorChecksIfCalculatedAttributesAllExist(MapOfStringsExpressionEvaluatorTest.java:147)
+
+[MockitoHint] MapOfStringsExpressionEvaluatorTest.null (see javadoc for MockitoHint):
+[MockitoHint] 1. Unused -> at org.molgenis.data.support.MapOfStringsExpressionEvaluatorTest.testMapOfStringsEvaluatorConstructorChecksIfExpressionIsMap(MapOfStringsExpressionEvaluatorTest.java:109)
+[MockitoHint] 2. Unused -> at org.molgenis.data.support.MapOfStringsExpressionEvaluatorTest.testMapOfStringsEvaluatorConstructorChecksIfExpressionIsMap(MapOfStringsExpressionEvaluatorTest.java:110)
+
+[MockitoHint] MapOfStringsExpressionEvaluatorTest.null (see javadoc for MockitoHint):
+[MockitoHint] 1. Unused -> at org.molgenis.data.support.MapOfStringsExpressionEvaluatorTest.testMapOfStringsEvaluatorConstructorChecksIfMentionedAttributesAllExist(MapOfStringsExpressionEvaluatorTest.java:164)
+[MockitoHint] 2. Unused -> at org.molgenis.data.support.MapOfStringsExpressionEvaluatorTest.testMapOfStringsEvaluatorConstructorChecksIfMentionedAttributesAllExist(MapOfStringsExpressionEvaluatorTest.java:165)
+
+[MockitoHint] MapOfStringsExpressionEvaluatorTest.null (see javadoc for MockitoHint):
+[MockitoHint] 1. Unused -> at org.molgenis.data.support.MapOfStringsExpressionEvaluatorTest.testMapOfStringsEvaluatorConstructorChecksThatExpressionIsMapOfStrings(MapOfStringsExpressionEvaluatorTest.java:127)
+[MockitoHint] 2. Unused -> at org.molgenis.data.support.MapOfStringsExpressionEvaluatorTest.testMapOfStringsEvaluatorConstructorChecksThatExpressionIsMapOfStrings(MapOfStringsExpressionEvaluatorTest.java:128)
+
+Tests run: 729, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.597 sec - in TestSuite
+
+Results :
+
+Tests run: 729, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:report (post-unit-test) @ molgenis-data ---
+[INFO] Loading execution data file /root/workspace/molgenis/molgenis/361993202/molgenis-data/target/jacoco.exec
+[INFO] Analyzed bundle 'data' with 165 classes
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building security-core 7.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-banned-dependencies) @ molgenis-security-core ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:prepare-agent (pre-unit-test) @ molgenis-security-core ---
+[INFO] argLine set to -javaagent:/root/./workspace/molgenis/molgenis/361993202/.m2/org/jacoco/org.jacoco.agent/0.8.1/org.jacoco.agent-0.8.1-runtime.jar=destfile=/root/workspace/molgenis/molgenis/361993202/molgenis-security-core/target/jacoco.exec
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-source (execution-annotations) @ molgenis-security-core ---
+[INFO] Source directory: /root/workspace/molgenis/molgenis/361993202/molgenis-security-core/target/generated-sources/annotations added.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-resource (minify-build-helper) @ molgenis-security-core ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ molgenis-security-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] skip non existing resourceDirectory /root/workspace/molgenis/molgenis/361993202/molgenis-security-core/src/main/resources
+[INFO] skip non existing resourceDirectory /root/workspace/molgenis/molgenis/361993202/molgenis-security-core/target/generated-resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ molgenis-security-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:copy-resources (copy-generated-resources) @ molgenis-security-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/molgenis/molgenis/361993202/molgenis-security-core/target/generated-resources
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ molgenis-security-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ molgenis-security-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ molgenis-security-core ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.014 sec - in TestSuite
+
+Results :
+
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:report (post-unit-test) @ molgenis-security-core ---
+[INFO] Loading execution data file /root/workspace/molgenis/molgenis/361993202/molgenis-security-core/target/jacoco.exec
+[INFO] Analyzed bundle 'security-core' with 6 classes
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building settings 7.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-banned-dependencies) @ molgenis-settings ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:prepare-agent (pre-unit-test) @ molgenis-settings ---
+[INFO] argLine set to -javaagent:/root/./workspace/molgenis/molgenis/361993202/.m2/org/jacoco/org.jacoco.agent/0.8.1/org.jacoco.agent-0.8.1-runtime.jar=destfile=/root/workspace/molgenis/molgenis/361993202/molgenis-settings/target/jacoco.exec
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-source (execution-annotations) @ molgenis-settings ---
+[INFO] Source directory: /root/workspace/molgenis/molgenis/361993202/molgenis-settings/target/generated-sources/annotations added.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-resource (minify-build-helper) @ molgenis-settings ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ molgenis-settings ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] skip non existing resourceDirectory /root/workspace/molgenis/molgenis/361993202/molgenis-settings/src/main/resources
+[INFO] skip non existing resourceDirectory /root/workspace/molgenis/molgenis/361993202/molgenis-settings/target/generated-resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ molgenis-settings ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:copy-resources (copy-generated-resources) @ molgenis-settings ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/molgenis/molgenis/361993202/molgenis-settings/target/generated-resources
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ molgenis-settings ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/molgenis/molgenis/361993202/molgenis-settings/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ molgenis-settings ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ molgenis-settings ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.molgenis.settings.mail.MailSettingsRepositoryDecoratorTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.595 sec - in org.molgenis.settings.mail.MailSettingsRepositoryDecoratorTest
+
+Results :
+
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:report (post-unit-test) @ molgenis-settings ---
+[INFO] Loading execution data file /root/workspace/molgenis/molgenis/361993202/molgenis-settings/target/jacoco.exec
+[INFO] Analyzed bundle 'settings' with 17 classes
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building data-security 7.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-banned-dependencies) @ molgenis-data-security ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:prepare-agent (pre-unit-test) @ molgenis-data-security ---
+[INFO] argLine set to -javaagent:/root/./workspace/molgenis/molgenis/361993202/.m2/org/jacoco/org.jacoco.agent/0.8.1/org.jacoco.agent-0.8.1-runtime.jar=destfile=/root/workspace/molgenis/molgenis/361993202/molgenis-data-security/target/jacoco.exec
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-source (execution-annotations) @ molgenis-data-security ---
+[INFO] Source directory: /root/workspace/molgenis/molgenis/361993202/molgenis-data-security/target/generated-sources/annotations added.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-resource (minify-build-helper) @ molgenis-data-security ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ molgenis-data-security ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] skip non existing resourceDirectory /root/workspace/molgenis/molgenis/361993202/molgenis-data-security/src/main/resources
+[INFO] skip non existing resourceDirectory /root/workspace/molgenis/molgenis/361993202/molgenis-data-security/target/generated-resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ molgenis-data-security ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:copy-resources (copy-generated-resources) @ molgenis-data-security ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/molgenis/molgenis/361993202/molgenis-data-security/target/generated-resources
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ molgenis-data-security ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ molgenis-data-security ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ molgenis-data-security ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+07:05:00,022 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback-test.xml] at [file:/root/workspace/molgenis/molgenis/361993202/molgenis-data-security/target/test-classes/logback-test.xml]
+07:05:00,024 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback-test.xml] occurs multiple times on the classpath.
+07:05:00,024 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback-test.xml] occurs at [file:/root/workspace/molgenis/molgenis/361993202/molgenis-data/target/test-classes/logback-test.xml]
+07:05:00,024 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback-test.xml] occurs at [file:/root/workspace/molgenis/molgenis/361993202/molgenis-data-security/target/test-classes/logback-test.xml]
+07:05:00,203 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+07:05:00,204 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+07:05:00,227 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [STDOUT]
+07:05:00,242 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+07:05:00,410 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.molgenis] to INFO
+07:05:00,410 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to WARN
+07:05:00,411 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[ROOT]
+07:05:00,412 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+07:05:00,415 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@2c9a6717 - Registering current configuration as safe fallback point
+
+[MockitoHint] SystemEntityTypeRegistryImplTest.null (see javadoc for MockitoHint):
+[MockitoHint] 1. Unused -> at org.molgenis.data.security.SystemEntityTypeRegistryImplTest.testGetSystemAttributeCompound(SystemEntityTypeRegistryImplTest.java:176)
+
+[MockitoHint] SystemEntityTypeRegistryImplTest.null (see javadoc for MockitoHint):
+[MockitoHint] 1. Unused -> at org.molgenis.data.security.SystemEntityTypeRegistryImplTest.testGetSystemAttributeCompoundNotExists(SystemEntityTypeRegistryImplTest.java:200)
+
+[MockitoHint] SystemEntityTypeRegistryImplTest.null (see javadoc for MockitoHint):
+[MockitoHint] 1. Unused -> at org.molgenis.data.security.SystemEntityTypeRegistryImplTest.testGetSystemAttributePermittedNotExists(SystemEntityTypeRegistryImplTest.java:147)
+
+[MockitoHint] SystemEntityTypeRegistryImplTest.null (see javadoc for MockitoHint):
+[MockitoHint] 1. Unused -> at org.molgenis.data.security.SystemEntityTypeRegistryImplTest.testHasSystemAttributeNotPermitted(SystemEntityTypeRegistryImplTest.java:244)
+
+[MockitoHint] SystemEntityTypeRegistryImplTest.null (see javadoc for MockitoHint):
+[MockitoHint] 1. Unused -> at org.molgenis.data.security.SystemEntityTypeRegistryImplTest.testHasSystemAttributePermittedExists(SystemEntityTypeRegistryImplTest.java:215)
+
+[MockitoHint] SystemEntityTypeRegistryImplTest.null (see javadoc for MockitoHint):
+[MockitoHint] 1. Unused -> at org.molgenis.data.security.SystemEntityTypeRegistryImplTest.testHasSystemAttributePermittedNotExists(SystemEntityTypeRegistryImplTest.java:229)
+
+Tests run: 572, Failures: 2, Errors: 0, Skipped: 454, Time elapsed: 10.156 sec <<< FAILURE! - in TestSuite
+testFindOne(org.molgenis.data.security.owned.RowLevelSecurityRepositoryDecoratorTest)  Time elapsed: 0.028 sec  <<< FAILURE!
+java.lang.AssertionError: expected [null] but found [Mock for Entity, hashCode: 1448517199]
+	at org.molgenis.data.security.owned.RowLevelSecurityRepositoryDecoratorTest.testFindOne(RowLevelSecurityRepositoryDecoratorTest.java:337)
+
+tearDownAfterMethod(org.molgenis.data.security.owned.RowLevelSecurityRepositoryDecoratorTest)  Time elapsed: 0.048 sec  <<< FAILURE!
+org.mockito.exceptions.misusing.UnnecessaryStubbingException: 
+
+Unnecessary stubbings detected.
+Clean & maintainable test code requires zero unnecessary code.
+Following stubbings are unnecessary (click to navigate to relevant line of code):
+  1. -> at org.molgenis.data.security.owned.RowLevelSecurityRepositoryDecoratorTest.testFindOne(RowLevelSecurityRepositoryDecoratorTest.java:334)
+  2. -> at org.molgenis.data.security.owned.RowLevelSecurityRepositoryDecoratorTest.testFindOne(RowLevelSecurityRepositoryDecoratorTest.java:336)
+Please remove unnecessary stubbings or use 'silent' option. More info: javadoc for UnnecessaryStubbingException class.
+
+
+Results :
+
+Failed tests: 
+org.molgenis.data.security.owned.RowLevelSecurityRepositoryDecoratorTest.tearDownAfterMethod(org.molgenis.data.security.owned.RowLevelSecurityRepositoryDecoratorTest)
+  Run 1: RowLevelSecurityRepositoryDecoratorTest>AbstractMockitoTestNGSpringContextTests.tearDownAfterMethod:37 » UnnecessaryStubbing
+  Run 2: PASS
+  Run 3: PASS
+  Run 4: PASS
+  Run 5: PASS
+  Run 6: PASS
+  Run 7: PASS
+  Run 8: PASS
+  Run 9: PASS
+  Run 10: PASS
+  Run 11: PASS
+  Run 12: PASS
+  Run 13: PASS
+  Run 14: PASS
+  Run 15: PASS
+
+  RowLevelSecurityRepositoryDecoratorTest>AbstractTestNGSpringContextTests.run:180->testFindOne:337 expected [null] but found [Mock for Entity, hashCode: 1448517199]
+
+Tests run: 234, Failures: 2, Errors: 0, Skipped: 116
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] MOLGENIS ........................................... SUCCESS [  1.904 s]
+[INFO] test ............................................... SUCCESS [  0.665 s]
+[INFO] util ............................................... SUCCESS [  8.986 s]
+[INFO] i18n ............................................... SUCCESS [  5.191 s]
+[INFO] data ............................................... SUCCESS [ 26.647 s]
+[INFO] security-core ...................................... SUCCESS [  6.619 s]
+[INFO] settings ........................................... SUCCESS [  3.879 s]
+[INFO] data-security ...................................... FAILURE [ 12.152 s]
+[INFO] data-file .......................................... SKIPPED
+[INFO] data-i18n .......................................... SKIPPED
+[INFO] scripts-core ....................................... SKIPPED
+[INFO] js ................................................. SKIPPED
+[INFO] data-validation .................................... SKIPPED
+[INFO] data-import ........................................ SKIPPED
+[INFO] jobs ............................................... SKIPPED
+[INFO] data-excel ......................................... SKIPPED
+[INFO] data-csv ........................................... SKIPPED
+[INFO] amazon-bucket ...................................... SKIPPED
+[INFO] core ............................................... SKIPPED
+[INFO] data-cache ......................................... SKIPPED
+[INFO] data-index ......................................... SKIPPED
+[INFO] data-platform ...................................... SKIPPED
+[INFO] data-plugin ........................................ SKIPPED
+[INFO] web ................................................ SKIPPED
+[INFO] security ........................................... SKIPPED
+[INFO] core-ui ............................................ SKIPPED
+[INFO] apps ............................................... SKIPPED
+[INFO] data-vcf ........................................... SKIPPED
+[INFO] data-rest .......................................... SKIPPED
+[INFO] genomebrowser ...................................... SKIPPED
+[INFO] beacon ............................................. SKIPPED
+[INFO] data-migrate ....................................... SKIPPED
+[INFO] data-annotators .................................... SKIPPED
+[INFO] data-postgresql .................................... SKIPPED
+[INFO] bootstrap .......................................... SKIPPED
+[INFO] dataexplorer ....................................... SKIPPED
+[INFO] python ............................................. SKIPPED
+[INFO] r .................................................. SKIPPED
+[INFO] searchall .......................................... SKIPPED
+[INFO] data-elasticsearch ................................. SKIPPED
+[INFO] ontology-core ...................................... SKIPPED
+[INFO] semantic-search .................................... SKIPPED
+[INFO] semantic-mapper .................................... SKIPPED
+[INFO] ontology ........................................... SKIPPED
+[INFO] questionnaires ..................................... SKIPPED
+[INFO] scripts ............................................ SKIPPED
+[INFO] file-ingester ...................................... SKIPPED
+[INFO] gavin .............................................. SKIPPED
+[INFO] fair ............................................... SKIPPED
+[INFO] settings-ui ........................................ SKIPPED
+[INFO] swagger ............................................ SKIPPED
+[INFO] navigator .......................................... SKIPPED
+[INFO] metadata-manager ................................... SKIPPED
+[INFO] one-click-importer ................................. SKIPPED
+[INFO] app ................................................ SKIPPED
+[INFO] api-tests .......................................... SKIPPED
+[INFO] data-rest-client ................................... SKIPPED
+[INFO] platform-integration-tests ......................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 01:09 min
+[INFO] Finished at: 2018-09-02T07:05:10+02:00
+[INFO] Final Memory: 54M/1037M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-test) on project molgenis-data-security: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/molgenis/molgenis/361993202/molgenis-data-security/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :molgenis-data-security
