@@ -1,0 +1,48 @@
+<div class="row">
+    <mat-card class="card">
+        <div id="chart">
+            <img class="placeholder-img" mat-card-image src="assets/images/chart-placeholder.png">
+        </div>
+        <mat-card-content class="text-center">
+            <mat-progress-bar mode="indeterminate" hidden="progressBarIsHidden"></mat-progress-bar>
+            <mat-error *ngIf="emptyJSONReturned">There is no data for the selected plot!</mat-error>
+            <mat-tab-group>
+                <!--tab group used to support Narrow Results tab later-->
+                <mat-tab label="Select Plot">
+                    <section class="plotSelectionSection">
+                        <mat-form-field>
+                            <mat-select placeholder="plot" #selectedPlot
+                                        [formControl]="plotFormControl" required>
+                                <mat-option *ngFor="let plot of plots" [value]="plot.value">
+                                    {{ plot.viewValue }}
+                                </mat-option>
+                            </mat-select>
+                            <mat-error *ngIf="plotFormControl.hasError('required')">
+                                plot is <strong>required</strong>
+                            </mat-error>
+                        </mat-form-field>
+                        <mat-form-field>
+                            <mat-select placeholder="grouped by" #selectedGrouping
+                                        [formControl]="groupingFormControl" required>
+                                <mat-option *ngFor="let grouping of timeGroupings"
+                                            [value]="grouping.value">
+                                    {{ grouping.viewValue }}
+                                </mat-option>
+                            </mat-select>
+                            <mat-error *ngIf="groupingFormControl.hasError('required')">
+                                grouped by is <strong>required</strong>
+                            </mat-error>
+                        </mat-form-field>
+                    </section>
+                </mat-tab>
+            </mat-tab-group>
+            <mat-card-actions>
+                <button (click)="submit(selectedPlot.value, selectedGrouping.value)"
+                        mat-raised-button color="primary">
+                    Submit
+                </button>
+            </mat-card-actions>
+        </mat-card-content>
+    </mat-card>
+</div>
+
