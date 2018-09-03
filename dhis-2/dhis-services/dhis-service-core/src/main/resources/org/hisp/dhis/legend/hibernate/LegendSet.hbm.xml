@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+  "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+  "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"
+  [<!ENTITY identifiableProperties SYSTEM "classpath://org/hisp/dhis/common/identifiableProperties.hbm">]
+  >
+
+<hibernate-mapping>
+  <class name="org.hisp.dhis.legend.LegendSet" table="maplegendset">
+
+    <cache usage="read-write" />
+
+    <id name="id" column="maplegendsetid">
+      <generator class="native" />
+    </id>
+    &identifiableProperties;
+
+    <property name="name" column="name" not-null="true" unique="true" length="230" />
+
+    <property name="symbolizer" column="symbolizer" />
+
+    <set name="legends" cascade="all-delete-orphan">
+      <cache usage="read-write" />
+      <key column="maplegendsetid" />
+      <one-to-many class="org.hisp.dhis.legend.Legend" />
+    </set>
+
+    <!-- Dynamic attribute values -->
+    <set name="attributeValues" table="legendsetattributevalues" cascade="all-delete-orphan">
+      <cache usage="read-write" />
+      <key column="legendsetid" />
+      <many-to-many class="org.hisp.dhis.attribute.AttributeValue" column="attributevalueid" unique="true" />
+    </set>
+
+    <!-- Object Translation -->
+    <set name="translations" table="maplegendsettranslations" cascade="all-delete-orphan">
+      <cache usage="read-write" />
+      <key column="maplegendsetid" foreign-key="fk_objecttranslation_maplegendsetid" />
+      <many-to-many class="org.hisp.dhis.translation.ObjectTranslation" column="objecttranslationid" unique="true" />
+    </set>
+
+    <!-- Access properties -->
+    <many-to-one name="user" class="org.hisp.dhis.user.User" column="userid" foreign-key="fk_legendset_userid" />
+
+    <property name="publicAccess" length="8" />
+
+    <set name="userGroupAccesses" table="legendsetusergroupaccesses" cascade="all-delete-orphan">
+      <cache usage="read-write" />
+      <key column="maplegendsetid" />
+      <many-to-many class="org.hisp.dhis.user.UserGroupAccess" column="usergroupaccessid" unique="true" />
+    </set>
+
+    <set name="userAccesses" table="legendsetuseraccesses" cascade="all-delete-orphan">
+      <cache usage="read-write" />
+      <key column="maplegendsetid" />
+      <many-to-many class="org.hisp.dhis.user.UserAccess" column="useraccessid" unique="true" />
+    </set>
+
+  </class>
+
+</hibernate-mapping>

@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+  "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+  "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"
+  [<!ENTITY identifiableProperties SYSTEM "classpath://org/hisp/dhis/common/identifiableProperties.hbm">]
+  >
+
+<hibernate-mapping>
+  <class name="org.hisp.dhis.validation.ValidationRule" table="validationrule">
+
+    <cache usage="read-write" />
+
+    <id name="id" column="validationruleid">
+      <generator class="native" />
+    </id>
+    &identifiableProperties;
+
+    <property name="name" column="name" not-null="true" unique="true" length="230" />
+
+    <property name="description" type="text" />
+
+    <property name="instruction" type="text" />
+
+    <property name="importance" length="50">
+      <type name="org.hibernate.type.EnumType">
+        <param name="enumClass">org.hisp.dhis.validation.Importance</param>
+        <param name="useNamed">true</param>
+        <param name="type">12</param>
+      </type>
+    </property>
+
+    <property name="operator" column="operator" type="org.hisp.dhis.expression.OperatorUserType" not-null="true" />
+
+    <many-to-one name="leftSide" column="leftexpressionid" class="org.hisp.dhis.expression.Expression"
+      cascade="all" foreign-key="fk_validationrule_leftexpressionid" not-null="true" />
+
+    <many-to-one name="rightSide" column="rightexpressionid" class="org.hisp.dhis.expression.Expression"
+      cascade="all" foreign-key="fk_validationrule_rightexpressionid" not-null="true" />
+
+    <property name="skipFormValidation" />
+
+    <set name="groups" table="validationrulegroupmembers" inverse="true">
+      <key column="validationruleid" />
+      <many-to-many class="org.hisp.dhis.validation.ValidationRuleGroup" column="validationgroupid" />
+    </set>
+
+    <set name="notificationTemplates" table="validationnotificationtemplatevalidationrules" inverse="true">
+      <cache usage="read-write" />
+      <key column="validationruleid" foreign-key="fk_validationrule_validationnotificationtemplateid" />
+      <many-to-many class="org.hisp.dhis.validation.notification.ValidationNotificationTemplate"
+        column="validationnotificationtemplateid" />
+    </set>
+
+    <many-to-one name="periodType" class="org.hisp.dhis.period.PeriodType" column="periodtypeid"
+      foreign-key="fk_validationrule_periodtypeid" not-null="true" />
+
+    <set name="organisationUnitLevels" table="validationruleorganisationunitlevels">
+      <cache usage="read-write" />
+      <key column="validationruleid" foreign-key="fk_organisationunitlevel_validationtuleid" />
+      <element column="organisationunitlevel" type="int" />
+    </set>
+
+    <!-- Object Translation -->
+    <set name="translations" table="validationruletranslations" cascade="all-delete-orphan">
+      <cache usage="read-write" />
+      <key column="validationruleid" foreign-key="fk_objecttranslation_validationruleid" />
+      <many-to-many class="org.hisp.dhis.translation.ObjectTranslation" column="objecttranslationid" unique="true" />
+    </set>
+
+    <!-- Access properties -->
+    <many-to-one name="user" class="org.hisp.dhis.user.User" column="userid" foreign-key="fk_validationrule_userid" />
+
+    <property name="publicAccess" length="8" />
+
+    <set name="userGroupAccesses" table="validationruleusergroupaccesses" cascade="all-delete-orphan">
+      <cache usage="read-write" />
+      <key column="validationruleid" />
+      <many-to-many class="org.hisp.dhis.user.UserGroupAccess" column="usergroupaccessid" unique="true" />
+    </set>
+
+    <set name="userAccesses" table="validationruleuseraccesses" cascade="all-delete-orphan">
+      <cache usage="read-write" />
+      <key column="validationruleid" />
+      <many-to-many class="org.hisp.dhis.user.UserAccess" column="useraccessid" unique="true" />
+    </set>
+
+  </class>
+
+</hibernate-mapping>
