@@ -1,0 +1,156 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 324, 
+      "numberRunning": 326, 
+      "numberFailing": 2, 
+      "numberErroring": 0, 
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError", 
+          "isError": false, 
+          "occurrences": 2
+        }
+      ], 
+      "numberSkipping": 0
+    }, 
+    "failingModule": "/root/workspace/dhis2/dhis2-core/365246679/dhis-2/dhis-api", 
+    "failureDetails": [
+      {
+        "failureName": "java.lang.AssertionError", 
+        "detail": "expected:<10> but was:<5>", 
+        "isError": false, 
+        "testClass": "org.hisp.dhis.dataelement.OperandTest", 
+        "testMethod": "testHashCode"
+      }, 
+      {
+        "failureName": "java.lang.AssertionError", 
+        "detail": "Values should be different. Actual: {\"class\":\"class org.hisp.dhis.dataelement.DataElementOperand\", \"id\":\"0\", \"uid\":\"null\", \"dataElement\":{\"class\":\"class org.hisp.dhis.dataelement.DataElement\", \"hashCode\":\"-58940749\", \"id\":\"0\", \"uid\":\"null\", \"code\":\"null\", \"name\":\"DataElement A\", \"shortName\":\"null\", \"description\":\"null\", \"created\":\"null\", \"lastUpdated\":\"null\" }, \"categoryOptionCombo\":{\"class\":\"class org.hisp.dhis.dataelement.DataElementCategoryOptionCombo\", \"id\":\"0\", \"uid\":\"null\", \"code\":\"null\", \"categoryCombo\":{\"class\":\"class org.hisp.dhis.dataelement.DataElementCategoryCombo\", \"id\":\"0\", \"uid\":\"null\", \"code\":\"null\", \"name\":\"CategoryCombo B\", \"created\":\"null\", \"lastUpdated\":\"null\" }, \"categoryOptions\":[]}\"attributeOptionCombo\":{\"class\":\"class org.hisp.dhis.dataelement.DataElementCategoryOptionCombo\", \"id\":\"0\", \"uid\":\"null\", \"code\":\"null\", \"categoryCombo\":{\"class\":\"class org.hisp.dhis.dataelement.DataElementCategoryCombo\", \"id\":\"0\", \"uid\":\"null\", \"code\":\"null\", \"name\":\"CategoryCombo B\", \"created\":\"null\", \"lastUpdated\":\"null\" }, \"categoryOptions\":[]}}", 
+        "isError": false, 
+        "testClass": "org.hisp.dhis.dataelement.OperandTest", 
+        "testMethod": "testEquals"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 0, 
+        "numberRunning": 2, 
+        "testClass": "org.hisp.dhis.dataelement.OperandTest", 
+        "numberFailing": 2, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/dhis2/dhis2-core/builds/365386294", 
+      "date": "Apr 12, 2018 2:35:25 AM", 
+      "id": 365386294
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/dhis2/dhis2-core/builds/365246679", 
+      "date": "Apr 11, 2018 8:19:44 PM", 
+      "id": 365246679
+    }
+  }, 
+  "repository": {
+    "name": "dhis2/dhis2-core", 
+    "url": "https://github.com/dhis2/dhis2-core", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 66940520
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/dhis2/dhis2-core/commit/24b5733682bc55f7f0d8fdd5678da07c40c90650", 
+      "sha": "24b5733682bc55f7f0d8fdd5678da07c40c90650", 
+      "branchName": "2.29", 
+      "date": "Apr 11, 2018 11:17:18 PM", 
+      "repoName": "dhis2/dhis2-core"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/dhis2/dhis2-core/commit/7b28e043518901956c411e69565d1ca4662d4858", 
+      "sha": "7b28e043518901956c411e69565d1ca4662d4858", 
+      "branchName": "2.29", 
+      "date": "Apr 11, 2018 8:05:26 PM", 
+      "repoName": "dhis2/dhis2-core"
+    }
+  }, 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 1, 
+      "numberDeleted": 62
+    }
+  }, 
+  "type": "passing_passing", 
+  "projectMetrics": {
+    "numberSourceFiles": 1986, 
+    "numberLibrariesFailingModule": 72, 
+    "numberTestFiles": 318, 
+    "numberModules": 15
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 324154968, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 709885952, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Sep 3, 2018 1:26:33 PM", 
+    "projectRootPomPath": "./workspace/dhis2/dhis2-core/365246679/dhis-2/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          1, 
+          0, 
+          0, 
+          1, 
+          180
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 182
+      }, 
+      "testing": {
+        "stepDurations": [
+          15
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 15
+      }, 
+      "cloning": {
+        "stepDurations": [
+          22
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 22
+      }
+    }, 
+    "reproductionDateBeginning": "Sep 3, 2018 1:15:30 PM", 
+    "totalDuration": 654
+  }
+}
