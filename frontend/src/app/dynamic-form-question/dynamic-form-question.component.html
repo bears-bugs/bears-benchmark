@@ -1,0 +1,30 @@
+<div [formGroup]="form">
+
+    <div [ngSwitch]="question.answerType">
+
+        <input matInput *ngSwitchCase="'textbox'" [formControlName]="question.id"
+               [id]="question.id" [type]="question.answerType" [required]="isRequired()">
+
+        <mat-form-field *ngSwitchCase="'dropdown'">
+            <mat-select [id]="question.id" [formControlName]="question.id"
+                        [required]="isRequired()">
+                <mat-option *ngFor="let opt of question.options" [value]="opt">{{opt}}</mat-option>
+            </mat-select>
+            <mat-placeholder>{{question.question}}</mat-placeholder>
+        </mat-form-field>
+
+        <mat-form-field *ngSwitchCase="'user_dropdown'">
+            <mat-select [id]="question.id" [formControlName]="question.id"
+                        [required]="isRequired()">
+                <mat-option *ngFor="let opt of question.options" [value]="opt.value">{{opt.name}}</mat-option>
+            </mat-select>
+            <mat-placeholder>{{question.question}}</mat-placeholder>
+        </mat-form-field>
+
+        <mat-checkbox *ngSwitchCase="'checkbox'" [formControlName]="question.id"
+                      [id]="question.id" [(ngModel)]="checked" color="primary">{{question.question}}
+        </mat-checkbox>
+    </div>
+
+    <!--<div class="errorMessage" *ngIf="isRequired()">{{question.question}} is required</div>-->
+</div>

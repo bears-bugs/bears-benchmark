@@ -1,0 +1,49 @@
+---
+version: '3.1'
+services:
+  db:
+    image: postgres
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=root
+      - POSTGRES_DB=H2MSDatabase
+    ports:
+      # external:internal
+      - "5432:5432"
+
+  # Waits for database to start before starting Spring
+  wait-for-db:
+    image: dadarek/wait-for-dependencies
+    depends_on:
+      - db
+    command: db:5432
+
+  h2ms:
+    image: cscie599/h2ms
+    ports:
+      # external:internal
+      - "8080:8080"
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker,production
+    depends_on:
+      - wait-for-db
+
+  adminer:
+    # to access, point to
+    # Database type: PostgreSQL
+    # Database URL: db
+    # User: postgres
+    # Pass: root
+    image: adminer
+    ports:
+      # external:internal
+      - "8081:8080"
+    depends_on:
+      - wait-for-db
+
+  frontend:
+    image: cscie599/frontend
+    ports:
+      - "8082:80"
+    depends_on:
+      - h2ms
