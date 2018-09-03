@@ -32,10 +32,6 @@ public class Main {
 
         // create the world
         World w = new World(worldWidth, worldHeight);
-        //create detector
-        Detector d = Detector.getDetector();
-        //set detector's list
-        d.setWorldObjects(w.getWorldObjects());
         // create an automated car
         AutomatedCar car = new AutomatedCar(carX, carY, "car_2_white.png");
         // add car to the world
