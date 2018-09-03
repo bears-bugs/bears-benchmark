@@ -1,0 +1,13 @@
+<div>
+    <form [formGroup]="form">
+        <div *ngFor="let question of questions" class="form-row">
+            <app-question [question]="question" [form]="form"></app-question>
+        </div>
+
+        <div class="form-row">
+            <button mat-raised-button (click)="onSubmit()" [disabled]="!form.valid" color="primary">
+                Save
+            </button>
+        </div>
+    </form>
+</div>

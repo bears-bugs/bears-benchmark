@@ -1,0 +1,29 @@
+sudo: required
+matrix:
+  include:
+    - language: java
+      env:
+        - NAME="Testing Backend"
+        - SPRING_ACTIVE_PROFILES=postgresql
+      services:
+        - postgresql
+      addons:
+        postgresql: "9.4"
+      before_script:
+        - createdb H2MSDatabase
+
+    - language: node_js
+      env:
+      - NAME="Testing Frontend"
+      addons:
+        chrome: stable
+      node_js:
+      - "node"
+      before_script:
+        - cd frontend
+        - npm install
+      script:
+        - ng build --prod --aot
+        - ng test
+notifications:
+    slack: 2018swecapstone:IPDjX0h4Za0ztVoCHZXAoq0q
