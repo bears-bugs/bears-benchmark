@@ -47,7 +47,13 @@ public class UserTest {
         User user = new User("John", "Quincy", null, null, "password", "Other");
         entityManager.persist(user);
     }
-
+    
+    @Test
+    public void testEmailIsLowerCase() {
+        User user = new User("John", "Quincy", null, "JqAdAmS@h2Ms.OrG", "password", "Other");
+        assertThat(user.getEmail(), is("jqadams@h2ms.org"));
+    }
+    
     @Test(expected = ConstraintViolationException.class)
     public void testPasswordRequired() {
         User user = new User("John", "Quincy", "Adams", "jqadams@h2ms.org", null, "Other");
