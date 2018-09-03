@@ -1,0 +1,34 @@
+<div class="row">
+    <mat-card class="card">
+        <img mat-card-image src="{{config.bannerURL}}">
+        <mat-divider></mat-divider>
+        <mat-card-title>Welcome to {{ config.appName }}!</mat-card-title>
+        <mat-card-content class="text-center">
+            <mat-form-field class="col">
+                <input matInput #email placeholder="Email" required>
+            </mat-form-field>
+            <mat-form-field class="col">
+                <input matInput placeholder="Password" #password
+                       [type]="hide ? 'password' : 'text'" required>
+                <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility' :
+                    'visibility_off'}}
+                </mat-icon>
+            </mat-form-field>
+            <mat-checkbox color="primary">Remember me</mat-checkbox>
+            <mat-card-actions>
+                <button (click)="submit(email.value, password.value)" mat-raised-button
+                        color="primary">
+                    Submit
+                </button>
+            </mat-card-actions>
+            <mat-card-actions>
+                <a mat-button routerLink=".">Forgot password</a>
+            </mat-card-actions>
+            <mat-card-actions>
+                <a mat-button routerLink=".">Help</a>
+                <a mat-button routerLink="/privacy">Privacy</a>
+                <a mat-button routerLink="/about">About</a>
+            </mat-card-actions>
+        </mat-card-content>
+    </mat-card>
+</div>

@@ -1,0 +1,35 @@
+<!--todo: pull in about information from the config for title and text body-->
+<div class="row">
+    <mat-card class="card">
+        <mat-card-header>
+            <img mat-card-avatar src="{{config.logoURL}}">
+            <mat-card-title>
+                About
+            </mat-card-title>
+            <mat-card-subtitle>
+                Hand Hygiene Monitoring System ({{config.appName}})
+            </mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content class="text-center">
+            <p align="left">
+                H2MS is an application for keeping track of compliance activities
+                in clinical environments, initially aimed at providing a low-cost
+                solution to improve hand-hygiene compliance auditing in clinical
+                settings, and ultimately to significantly reduce the prevalence
+                of infections spread by hand-contacts. Hand hygiene monitoring
+                can be performed through a human observer using web-form on mobile
+                device, as well as automated recording through inexpensive microcontroller
+                devices using RFID or Bluetooth tags on hospital personnel.
+                In addition, the web-form can be easily modified by the administrator
+                of the H2MS to adapt to other monitoring tasks, such as glove and
+                mask compliance. Clinical staff can obtain feedback on their compliance
+                rating for individual improvement, and compliance officers use the collected
+                information to devise organizational improvement strategies. The system
+                is open-source, and can be modified to individual organization’s unique needs.
+            </p>
+            <mat-card-subtitle>
+                h2ms.org
+            </mat-card-subtitle>
+        </mat-card-content>
+    </mat-card>
+</div>
