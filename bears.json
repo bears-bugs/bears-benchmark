@@ -1,0 +1,177 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 85, 
+      "numberRunning": 90, 
+      "numberFailing": 0, 
+      "numberErroring": 5, 
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException", 
+          "isError": true, 
+          "occurrences": 5
+        }
+      ], 
+      "numberSkipping": 0
+    }, 
+    "failingModule": "/root/workspace/SzFMV2018-Tavasz/AutomatedCar/367688128", 
+    "failureDetails": [
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "hu.oe.nik.szfmv.automatedcar.sensors.UltrasonicSensorTest", 
+        "testMethod": "testNearestObject", 
+        "isError": true
+      }, 
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "hu.oe.nik.szfmv.automatedcar.sensors.UltrasonicSensorTest", 
+        "testMethod": "testNearestObjectDimensions", 
+        "isError": true
+      }, 
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "hu.oe.nik.szfmv.detector.DetectorTest", 
+        "testMethod": "onlyCollidableObjects", 
+        "isError": true
+      }, 
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "hu.oe.nik.szfmv.detector.DetectorTest", 
+        "testMethod": "itHasAllWorldObjects", 
+        "isError": true
+      }, 
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "hu.oe.nik.szfmv.automatedcar.sensors.UltrasonicSensorTest", 
+        "testMethod": "testNearestObjectDistance", 
+        "isError": true
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 1, 
+        "numberRunning": 4, 
+        "testClass": "hu.oe.nik.szfmv.automatedcar.sensors.UltrasonicSensorTest", 
+        "numberFailing": 0, 
+        "numberErroring": 3, 
+        "numberSkipping": 0
+      }, 
+      {
+        "numberPassing": 0, 
+        "numberRunning": 2, 
+        "testClass": "hu.oe.nik.szfmv.detector.DetectorTest", 
+        "numberFailing": 0, 
+        "numberErroring": 2, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/SzFMV2018-Tavasz/AutomatedCar/builds/367699437", 
+      "date": "Apr 17, 2018 5:10:31 PM", 
+      "id": 367699437
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/SzFMV2018-Tavasz/AutomatedCar/builds/367688128", 
+      "date": "Apr 17, 2018 4:45:57 PM", 
+      "id": 367688128
+    }
+  }, 
+  "repository": {
+    "name": "SzFMV2018-Tavasz/AutomatedCar", 
+    "url": "https://github.com/SzFMV2018-Tavasz/AutomatedCar", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 117655293
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/SzFMV2018-Tavasz/AutomatedCar/commit/6ffd1edf63c63dc77bc5ce924fce78399524bcb5", 
+      "sha": "6ffd1edf63c63dc77bc5ce924fce78399524bcb5", 
+      "branchName": "sprint3/team4/detectorchange", 
+      "date": "Apr 17, 2018 5:07:17 PM", 
+      "repoName": "SzFMV2018-Tavasz/AutomatedCar"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/SzFMV2018-Tavasz/AutomatedCar/commit/cfb2118729b90c03d884f2902956ae000f06d926", 
+      "sha": "cfb2118729b90c03d884f2902956ae000f06d926", 
+      "branchName": "sprint3/team4/detectorchange", 
+      "date": "Apr 17, 2018 4:44:23 PM", 
+      "repoName": "SzFMV2018-Tavasz/AutomatedCar"
+    }
+  }, 
+  "bugName": "SzFMV2018-Tavasz-AutomatedCar-367688128-367699437", 
+  "version": "latest", 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 3, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 5, 
+      "numberDeleted": 6
+    }
+  }, 
+  "type": "failing_passing", 
+  "bugId": "Bears-189", 
+  "projectMetrics": {
+    "numberSourceFiles": 57, 
+    "numberLibrariesFailingModule": 7, 
+    "numberTestFiles": 20, 
+    "numberModules": 1
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 355291392, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 415760384, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Sep 3, 2018 9:45:30 PM", 
+    "projectRootPomPath": "./workspace/SzFMV2018-Tavasz/AutomatedCar/367688128/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          0, 
+          20
+        ], 
+        "stepNames": [
+          "CheckoutBuggyBuildCandidate", 
+          "BuildProjectBuggyBuildCandidate"
+        ], 
+        "nbSteps": 2, 
+        "totalDuration": 20
+      }, 
+      "testing": {
+        "stepDurations": [
+          14
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidate"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 14
+      }, 
+      "cloning": {
+        "stepDurations": [
+          10
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 10
+      }
+    }, 
+    "reproductionDateBeginning": "Sep 3, 2018 9:44:13 PM", 
+    "totalDuration": 74
+  }
+}
