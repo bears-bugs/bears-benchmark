@@ -1,0 +1,172 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 102, 
+      "numberRunning": 104, 
+      "numberFailing": 1, 
+      "numberErroring": 1, 
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError", 
+          "isError": false, 
+          "occurrences": 1
+        }, 
+        {
+          "failureName": "org.springframework.security.core.userdetails.UsernameNotFoundException", 
+          "isError": true, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 0
+    }, 
+    "failingModule": "/root/workspace/2018swecapstone/h2ms/363210218", 
+    "failureDetails": [
+      {
+        "failureName": "java.lang.AssertionError", 
+        "detail": "\nExpected: is \"jqadams@h2ms.org\"\n     but: was \"JqAdAmS@h2Ms.OrG\"", 
+        "isError": false, 
+        "testMethod": "testEmailIsLowerCase", 
+        "testClass": "edu.harvard.h2ms.domain.core.UserTest"
+      }, 
+      {
+        "failureName": "org.springframework.security.core.userdetails.UsernameNotFoundException", 
+        "detail": "Unknown user: JqAdAmS@h2Ms.oRg", 
+        "isError": true, 
+        "testMethod": "testLoadUserByUsernameIsCaseInsensitive", 
+        "testClass": "edu.harvard.h2ms.service.UserDetailsServiceTest"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 2, 
+        "numberRunning": 3, 
+        "testClass": "edu.harvard.h2ms.service.UserDetailsServiceTest", 
+        "numberFailing": 0, 
+        "numberErroring": 1, 
+        "numberSkipping": 0
+      }, 
+      {
+        "numberPassing": 5, 
+        "numberRunning": 6, 
+        "testClass": "edu.harvard.h2ms.domain.core.UserTest", 
+        "numberFailing": 1, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/2018swecapstone/h2ms/builds/363627522", 
+      "date": "Apr 8, 2018 1:46:48 AM", 
+      "id": 363627522
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/2018swecapstone/h2ms/builds/363210218", 
+      "date": "Apr 6, 2018 7:14:25 PM", 
+      "id": 363210218
+    }
+  }, 
+  "repository": {
+    "name": "2018swecapstone/h2ms", 
+    "url": "https://github.com/2018swecapstone/h2ms", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 121564633
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/2018swecapstone/h2ms/commit/ef42b1078bd7f6699a5c47d01627360e03fc1705", 
+      "sha": "ef42b1078bd7f6699a5c47d01627360e03fc1705", 
+      "branchName": "master", 
+      "date": "Apr 8, 2018 1:43:06 AM", 
+      "repoName": "2018swecapstone/h2ms"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/2018swecapstone/h2ms/commit/f5e7c88086227b56f4eee5c7e456fd1acc1a4f95", 
+      "sha": "f5e7c88086227b56f4eee5c7e456fd1acc1a4f95", 
+      "branchName": "master", 
+      "date": "Apr 6, 2018 7:10:41 PM", 
+      "repoName": "2018swecapstone/h2ms"
+    }
+  }, 
+  "bugName": "2018swecapstone-h2ms-363210218-363627522", 
+  "version": "latest", 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 2, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 4, 
+      "numberDeleted": 3
+    }
+  }, 
+  "type": "passing_passing", 
+  "bugId": "Bears-141", 
+  "projectMetrics": {
+    "numberSourceFiles": 100, 
+    "numberLibrariesFailingModule": 131, 
+    "numberTestFiles": 20, 
+    "numberModules": 1
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 326080760, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 408944640, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Sep 3, 2018 1:52:24 PM", 
+    "projectRootPomPath": "./workspace/2018swecapstone/h2ms/363210218/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          0, 
+          1, 
+          0, 
+          0, 
+          64
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 65
+      }, 
+      "testing": {
+        "stepDurations": [
+          73
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 73
+      }, 
+      "cloning": {
+        "stepDurations": [
+          5
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 5
+      }
+    }, 
+    "reproductionDateBeginning": "Sep 3, 2018 1:48:17 PM", 
+    "totalDuration": 242
+  }
+}
