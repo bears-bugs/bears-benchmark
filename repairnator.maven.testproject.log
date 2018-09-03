@@ -17,7 +17,7 @@
 [INFO] ShortRevision tag detected. The value is '7'.
 [INFO] Executing: /bin/sh -c cd '/root/workspace/thelastpickle/cassandra-reaper/364710673/src/server' && 'git' 'rev-parse' '--verify' '--short=7' 'HEAD'
 [INFO] Working directory: /root/workspace/thelastpickle/cassandra-reaper/364710673/src/server
-[INFO] Storing buildNumber: 3ac9a04 at timestamp: 1535936982441
+[INFO] Storing buildNumber: 6a59fed at timestamp: 1535937105097
 [WARNING] Cannot get the branch information from the git repository: 
 Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref
 
@@ -46,123 +46,66 @@ Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref
 [INFO] Nothing to compile - all classes are up to date
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.19:test (default-test) @ cassandra-reaper ---
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19/surefire-junit4-2.19.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19/surefire-junit4-2.19.pom (4 KB at 10.0 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19/surefire-providers-2.19.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19/surefire-providers-2.19.pom (3 KB at 125.0 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19/surefire-junit4-2.19.jar
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19/surefire-junit4-2.19.jar (75 KB at 1510.4 KB/sec)
 
 -------------------------------------------------------
  T E S T S
 -------------------------------------------------------
 Running io.cassandrareaper.resources.ClusterResourceTest
-Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.95 sec - in io.cassandrareaper.resources.ClusterResourceTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.601 sec - in io.cassandrareaper.resources.ClusterResourceTest
 Running io.cassandrareaper.resources.view.RepairRunStatusTest
 Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in io.cassandrareaper.resources.view.RepairRunStatusTest
 Running io.cassandrareaper.resources.view.NodesStatusTest
-Tests run: 12, Failures: 6, Errors: 0, Skipped: 0, Time elapsed: 0.043 sec <<< FAILURE! - in io.cassandrareaper.resources.view.NodesStatusTest
-testParseIPv6Endpoint22WithHostnameStatusString(io.cassandrareaper.resources.view.NodesStatusTest)  Time elapsed: 0.031 sec  <<< FAILURE!
-org.junit.ComparisonFailure: expected:<NORMAL - [D]OWN> but was:<NORMAL - [UNKN]OWN>
-	at io.cassandrareaper.resources.view.NodesStatusTest.testParseEndpoint22StatusString(NodesStatusTest.java:202)
-	at io.cassandrareaper.resources.view.NodesStatusTest.testParseIPv6Endpoint22WithHostnameStatusString(NodesStatusTest.java:61)
-
-testParseIPv6Endpoint22StatusString(io.cassandrareaper.resources.view.NodesStatusTest)  Time elapsed: 0 sec  <<< FAILURE!
-org.junit.ComparisonFailure: expected:<NORMAL - [D]OWN> but was:<NORMAL - [UNKN]OWN>
-	at io.cassandrareaper.resources.view.NodesStatusTest.testParseEndpoint22StatusString(NodesStatusTest.java:202)
-	at io.cassandrareaper.resources.view.NodesStatusTest.testParseIPv6Endpoint22StatusString(NodesStatusTest.java:52)
-
-testParseIPv6Endpoint21StatusString(io.cassandrareaper.resources.view.NodesStatusTest)  Time elapsed: 0 sec  <<< FAILURE!
-org.junit.ComparisonFailure: expected:<NORMAL - [D]OWN> but was:<NORMAL - [UNKN]OWN>
-	at io.cassandrareaper.resources.view.NodesStatusTest.testParseEndpoint21StatusString(NodesStatusTest.java:283)
-	at io.cassandrareaper.resources.view.NodesStatusTest.testParseIPv6Endpoint21StatusString(NodesStatusTest.java:88)
-
-testParseIPv6Endpoint21WithHostnameStatusString(io.cassandrareaper.resources.view.NodesStatusTest)  Time elapsed: 0.01 sec  <<< FAILURE!
-org.junit.ComparisonFailure: expected:<NORMAL - [D]OWN> but was:<NORMAL - [UNKN]OWN>
-	at io.cassandrareaper.resources.view.NodesStatusTest.testParseEndpoint21StatusString(NodesStatusTest.java:283)
-	at io.cassandrareaper.resources.view.NodesStatusTest.testParseIPv6Endpoint21WithHostnameStatusString(NodesStatusTest.java:97)
-
-testParseIPv6EndpointCassandraWithHostnameStatusString(io.cassandrareaper.resources.view.NodesStatusTest)  Time elapsed: 0 sec  <<< FAILURE!
-org.junit.ComparisonFailure: expected:<NORMAL - [D]OWN> but was:<NORMAL - [UNKN]OWN>
-	at io.cassandrareaper.resources.view.NodesStatusTest.testParseEndpointCassandraStatusString(NodesStatusTest.java:371)
-	at io.cassandrareaper.resources.view.NodesStatusTest.testParseIPv6EndpointCassandraWithHostnameStatusString(NodesStatusTest.java:133)
-
-testParseIPv6EndpointCassandraStatusString(io.cassandrareaper.resources.view.NodesStatusTest)  Time elapsed: 0 sec  <<< FAILURE!
-org.junit.ComparisonFailure: expected:<NORMAL - [D]OWN> but was:<NORMAL - [UNKN]OWN>
-	at io.cassandrareaper.resources.view.NodesStatusTest.testParseEndpointCassandraStatusString(NodesStatusTest.java:371)
-	at io.cassandrareaper.resources.view.NodesStatusTest.testParseIPv6EndpointCassandraStatusString(NodesStatusTest.java:124)
-
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 sec - in io.cassandrareaper.resources.view.NodesStatusTest
 Running io.cassandrareaper.resources.view.RepairScheduleStatusTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.474 sec - in io.cassandrareaper.resources.view.RepairScheduleStatusTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.326 sec - in io.cassandrareaper.resources.view.RepairScheduleStatusTest
 Running io.cassandrareaper.resources.RepairRunResourceTest
-Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.981 sec - in io.cassandrareaper.resources.RepairRunResourceTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.777 sec - in io.cassandrareaper.resources.RepairRunResourceTest
 Running io.cassandrareaper.jmx.JmxProxyTest
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in io.cassandrareaper.jmx.JmxProxyTest
 Running io.cassandrareaper.jmx.JmxAddressesTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in io.cassandrareaper.jmx.JmxAddressesTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in io.cassandrareaper.jmx.JmxAddressesTest
 Running io.cassandrareaper.jmx.JmxConnectionsInitializerTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.428 sec - in io.cassandrareaper.jmx.JmxConnectionsInitializerTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.618 sec - in io.cassandrareaper.jmx.JmxConnectionsInitializerTest
 Running io.cassandrareaper.core.ClusterTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in io.cassandrareaper.core.ClusterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in io.cassandrareaper.core.ClusterTest
 Running io.cassandrareaper.service.RepairRunnerTest
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.111 sec - in io.cassandrareaper.service.RepairRunnerTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.207 sec - in io.cassandrareaper.service.RepairRunnerTest
 Running io.cassandrareaper.service.RepairManagerTest
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.365 sec - in io.cassandrareaper.service.RepairManagerTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.341 sec - in io.cassandrareaper.service.RepairManagerTest
 Running io.cassandrareaper.service.HeartTest
-Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.63 sec - in io.cassandrareaper.service.HeartTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.639 sec - in io.cassandrareaper.service.HeartTest
 Running io.cassandrareaper.service.SnapshotManagerTest
 Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.09 sec - in io.cassandrareaper.service.SnapshotManagerTest
 Running io.cassandrareaper.service.RepairRunServiceTest
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.134 sec - in io.cassandrareaper.service.RepairRunServiceTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.149 sec - in io.cassandrareaper.service.RepairRunServiceTest
 Running io.cassandrareaper.service.RingRangeTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in io.cassandrareaper.service.RingRangeTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in io.cassandrareaper.service.RingRangeTest
 Running io.cassandrareaper.service.ClusterRepairSchedulerTest
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.058 sec - in io.cassandrareaper.service.ClusterRepairSchedulerTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.064 sec - in io.cassandrareaper.service.ClusterRepairSchedulerTest
 Running io.cassandrareaper.service.SegmentGeneratorTest
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 sec - in io.cassandrareaper.service.SegmentGeneratorTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.049 sec - in io.cassandrareaper.service.SegmentGeneratorTest
 Running io.cassandrareaper.service.AutoSchedulingManagerTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.087 sec - in io.cassandrareaper.service.AutoSchedulingManagerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.075 sec - in io.cassandrareaper.service.AutoSchedulingManagerTest
 Running io.cassandrareaper.service.SegmentRunnerTest
-Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.167 sec - in io.cassandrareaper.service.SegmentRunnerTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.194 sec - in io.cassandrareaper.service.SegmentRunnerTest
 Running io.cassandrareaper.ReaperApplicationConfigurationTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.871 sec - in io.cassandrareaper.ReaperApplicationConfigurationTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.832 sec - in io.cassandrareaper.ReaperApplicationConfigurationTest
 Running io.cassandrareaper.AssertionTest
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in io.cassandrareaper.AssertionTest
 
 Results :
 
-Failed tests: 
-  NodesStatusTest.testParseIPv6Endpoint21StatusString:88->testParseEndpoint21StatusString:283 expected:<NORMAL - [D]OWN> but was:<NORMAL - [UNKN]OWN>
-  NodesStatusTest.testParseIPv6Endpoint21WithHostnameStatusString:97->testParseEndpoint21StatusString:283 expected:<NORMAL - [D]OWN> but was:<NORMAL - [UNKN]OWN>
-  NodesStatusTest.testParseIPv6Endpoint22StatusString:52->testParseEndpoint22StatusString:202 expected:<NORMAL - [D]OWN> but was:<NORMAL - [UNKN]OWN>
-  NodesStatusTest.testParseIPv6Endpoint22WithHostnameStatusString:61->testParseEndpoint22StatusString:202 expected:<NORMAL - [D]OWN> but was:<NORMAL - [UNKN]OWN>
-  NodesStatusTest.testParseIPv6EndpointCassandraStatusString:124->testParseEndpointCassandraStatusString:371 expected:<NORMAL - [D]OWN> but was:<NORMAL - [UNKN]OWN>
-  NodesStatusTest.testParseIPv6EndpointCassandraWithHostnameStatusString:133->testParseEndpointCassandraStatusString:371 expected:<NORMAL - [D]OWN> but was:<NORMAL - [UNKN]OWN>
-
-Tests run: 110, Failures: 6, Errors: 0, Skipped: 0
+Tests run: 110, Failures: 0, Errors: 0, Skipped: 0
 
 [INFO] ------------------------------------------------------------------------
 [INFO] Reactor Summary:
 [INFO] 
-[INFO] Cassandra Reaper project ........................... SUCCESS [  0.005 s]
-[INFO] Cassandra Reaper server ............................ FAILURE [ 40.924 s]
+[INFO] Cassandra Reaper project ........................... SUCCESS [  0.003 s]
+[INFO] Cassandra Reaper server ............................ SUCCESS [ 55.657 s]
 [INFO] ------------------------------------------------------------------------
-[INFO] BUILD FAILURE
+[INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 41.187 s
-[INFO] Finished at: 2018-09-03T03:10:21+02:00
-[INFO] Final Memory: 44M/1252M
+[INFO] Total time: 55.836 s
+[INFO] Finished at: 2018-09-03T03:12:38+02:00
+[INFO] Final Memory: 41M/1252M
 [INFO] ------------------------------------------------------------------------
-[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19:test (default-test) on project cassandra-reaper: There are test failures.
-[ERROR] 
-[ERROR] Please refer to /root/workspace/thelastpickle/cassandra-reaper/364710673/src/server/target/surefire-reports for the individual test results.
-[ERROR] -> [Help 1]
-[ERROR] 
-[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
-[ERROR] Re-run Maven using the -X switch to enable full debug logging.
-[ERROR] 
-[ERROR] For more information about the errors and possible solutions, please read the following articles:
-[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
-[ERROR] 
-[ERROR] After correcting the problems, you can resume the build with the command
-[ERROR]   mvn <goals> -rf :cassandra-reaper
