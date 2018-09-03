@@ -1,0 +1,166 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 7686, 
+      "numberRunning": 7689, 
+      "numberFailing": 3, 
+      "numberErroring": 0, 
+      "failures": [
+        {
+          "failureName": "org.mockito.exceptions.verification.junit.ArgumentsAreDifferent", 
+          "isError": false, 
+          "occurrences": 3
+        }
+      ], 
+      "numberSkipping": 31
+    }, 
+    "failingModule": "/root/workspace/raphw/byte-buddy/363589915/byte-buddy-dep", 
+    "failureDetails": [
+      {
+        "failureName": "org.mockito.exceptions.verification.junit.ArgumentsAreDifferent", 
+        "detail": "\nArgument(s) are different! Wanted:\nmethodVisitor.visitMethodInsn(\n    182,\n    \"foo\",\n    \"bar\",\n    \"qux\",\n    false\n);\n-> at net.bytebuddy.implementation.bytecode.member.MethodInvocationTest.assertInvocation(MethodInvocationTest.java:218)\nActual invocation has different arguments:\nmethodVisitor.visitMethodInsn(\n    185,\n    \"baz\",\n    \"bar\",\n    \"qux\",\n    true\n);\n-> at net.bytebuddy.implementation.bytecode.member.MethodInvocation$Invocation.apply(MethodInvocation.java:307)\n", 
+        "isError": false, 
+        "testMethod": "testExplicitlyVirtualMethodInvocationOfInterfaceOfObjectMethod[1]", 
+        "testClass": "net.bytebuddy.implementation.bytecode.member.MethodInvocationTest"
+      }, 
+      {
+        "failureName": "org.mockito.exceptions.verification.junit.ArgumentsAreDifferent", 
+        "detail": "\nArgument(s) are different! Wanted:\nmethodVisitor.visitMethodInsn(\n    182,\n    \"foo\",\n    \"bar\",\n    \"qux\",\n    false\n);\n-> at net.bytebuddy.implementation.bytecode.member.MethodInvocationTest.assertInvocation(MethodInvocationTest.java:218)\nActual invocation has different arguments:\nmethodVisitor.visitMethodInsn(\n    185,\n    \"baz\",\n    \"bar\",\n    \"qux\",\n    true\n);\n-> at net.bytebuddy.implementation.bytecode.member.MethodInvocation$Invocation.apply(MethodInvocation.java:307)\n", 
+        "isError": false, 
+        "testMethod": "testExplicitlyVirtualMethodInvocationOfInterfaceOfObjectMethod[2]", 
+        "testClass": "net.bytebuddy.implementation.bytecode.member.MethodInvocationTest"
+      }, 
+      {
+        "failureName": "org.mockito.exceptions.verification.junit.ArgumentsAreDifferent", 
+        "detail": "\nArgument(s) are different! Wanted:\nmethodVisitor.visitMethodInsn(\n    182,\n    \"foo\",\n    \"bar\",\n    \"qux\",\n    false\n);\n-> at net.bytebuddy.implementation.bytecode.member.MethodInvocationTest.assertInvocation(MethodInvocationTest.java:218)\nActual invocation has different arguments:\nmethodVisitor.visitMethodInsn(\n    185,\n    \"baz\",\n    \"bar\",\n    \"qux\",\n    true\n);\n-> at net.bytebuddy.implementation.bytecode.member.MethodInvocation$Invocation.apply(MethodInvocation.java:307)\n", 
+        "isError": false, 
+        "testMethod": "testExplicitlyVirtualMethodInvocationOfInterfaceOfObjectMethod[0]", 
+        "testClass": "net.bytebuddy.implementation.bytecode.member.MethodInvocationTest"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 54, 
+        "numberRunning": 57, 
+        "testClass": "net.bytebuddy.implementation.bytecode.member.MethodInvocationTest", 
+        "numberFailing": 3, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/raphw/byte-buddy/builds/364299280", 
+      "date": "Apr 9, 2018 10:28:52 PM", 
+      "id": 364299280
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/raphw/byte-buddy/builds/363589915", 
+      "date": "Apr 7, 2018 10:40:43 PM", 
+      "id": 363589915
+    }
+  }, 
+  "repository": {
+    "name": "raphw/byte-buddy", 
+    "url": "https://github.com/raphw/byte-buddy", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 14696091
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/raphw/byte-buddy/commit/538627753daf5ab1227d5157e6f682711d2fb1ae", 
+      "sha": "538627753daf5ab1227d5157e6f682711d2fb1ae", 
+      "branchName": "master", 
+      "date": "Apr 9, 2018 10:23:38 PM", 
+      "repoName": "raphw/byte-buddy"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/raphw/byte-buddy/commit/7b3d0e22c09f7387ecfa82e0e16a8f281ba60d55", 
+      "sha": "7b3d0e22c09f7387ecfa82e0e16a8f281ba60d55", 
+      "branchName": "master", 
+      "date": "Apr 7, 2018 10:36:04 PM", 
+      "repoName": "raphw/byte-buddy"
+    }
+  }, 
+  "bugName": "raphw-byte-buddy-363589915-364299280", 
+  "version": "latest", 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 4, 
+      "numberDeleted": 3
+    }
+  }, 
+  "type": "passing_passing", 
+  "bugId": "Bears-179", 
+  "projectMetrics": {
+    "numberSourceFiles": 300, 
+    "numberLibrariesFailingModule": 11, 
+    "numberTestFiles": 681, 
+    "numberModules": 7
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 709451064, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 1901592576, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Sep 3, 2018 8:27:36 AM", 
+    "projectRootPomPath": "./workspace/raphw/byte-buddy/363589915/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          2, 
+          0, 
+          0, 
+          1, 
+          108
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 111
+      }, 
+      "testing": {
+        "stepDurations": [
+          57
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 57
+      }, 
+      "cloning": {
+        "stepDurations": [
+          247
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 247
+      }
+    }, 
+    "reproductionDateBeginning": "Sep 3, 2018 8:17:30 AM", 
+    "totalDuration": 599
+  }
+}
