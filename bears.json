@@ -1,0 +1,159 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 112, 
+      "numberRunning": 114, 
+      "numberFailing": 2, 
+      "numberErroring": 0, 
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError", 
+          "isError": false, 
+          "occurrences": 2
+        }
+      ], 
+      "numberSkipping": 0
+    }, 
+    "failingModule": "/root/workspace/thelastpickle/cassandra-reaper/365484062/src/server", 
+    "failureDetails": [
+      {
+        "failureName": "java.lang.AssertionError", 
+        "detail": "expected:<30 seconds> but was:<null>", 
+        "isError": false, 
+        "testMethod": "testAbortedRepairDuration", 
+        "testClass": "io.cassandrareaper.resources.view.RepairRunStatusTest"
+      }, 
+      {
+        "failureName": "java.lang.AssertionError", 
+        "detail": "expected:<1 minute 0 seconds> but was:<null>", 
+        "isError": false, 
+        "testMethod": "testRunningRepairDuration", 
+        "testClass": "io.cassandrareaper.resources.view.RepairRunStatusTest"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 4, 
+        "numberRunning": 6, 
+        "testClass": "io.cassandrareaper.resources.view.RepairRunStatusTest", 
+        "numberFailing": 2, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/thelastpickle/cassandra-reaper/builds/365554427", 
+      "date": "Apr 12, 2018 2:18:52 PM", 
+      "id": 365554427
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/thelastpickle/cassandra-reaper/builds/365484062", 
+      "date": "Apr 12, 2018 10:09:19 AM", 
+      "id": 365484062
+    }
+  }, 
+  "repository": {
+    "name": "thelastpickle/cassandra-reaper", 
+    "url": "https://github.com/thelastpickle/cassandra-reaper", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 70856121
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/thelastpickle/cassandra-reaper/commit/3c0a1fae7bf21f40be319464bcd16ebf50397417", 
+      "sha": "3c0a1fae7bf21f40be319464bcd16ebf50397417", 
+      "branchName": "master", 
+      "date": "Apr 12, 2018 1:03:56 PM", 
+      "repoName": "thelastpickle/cassandra-reaper"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/thelastpickle/cassandra-reaper/commit/6a59feda5c2fd4ea6f05a41a8437c3749e29fd21", 
+      "sha": "6a59feda5c2fd4ea6f05a41a8437c3749e29fd21", 
+      "branchName": "master", 
+      "date": "Apr 12, 2018 9:43:16 AM", 
+      "repoName": "thelastpickle/cassandra-reaper"
+    }
+  }, 
+  "bugName": "thelastpickle-cassandra-reaper-365484062-365554427", 
+  "version": "latest", 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 21, 
+      "numberDeleted": 28
+    }
+  }, 
+  "type": "passing_passing", 
+  "bugId": "Bears-192", 
+  "projectMetrics": {
+    "numberSourceFiles": 84, 
+    "numberLibrariesFailingModule": 182, 
+    "numberTestFiles": 37, 
+    "numberModules": 1
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 284905496, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 423100416, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Sep 3, 2018 3:09:52 AM", 
+    "projectRootPomPath": "./workspace/thelastpickle/cassandra-reaper/365484062/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          0, 
+          0, 
+          0, 
+          1, 
+          71
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 72
+      }, 
+      "testing": {
+        "stepDurations": [
+          46
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 46
+      }, 
+      "cloning": {
+        "stepDurations": [
+          8
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 8
+      }
+    }, 
+    "reproductionDateBeginning": "Sep 3, 2018 3:05:41 AM", 
+    "totalDuration": 245
+  }
+}
