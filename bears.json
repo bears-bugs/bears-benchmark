@@ -1,0 +1,152 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 590, 
+      "numberRunning": 591, 
+      "numberFailing": 1, 
+      "numberErroring": 0, 
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError", 
+          "isError": false, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 3
+    }, 
+    "failingModule": "/root/workspace/swagger-api/swagger-codegen/364149464/modules/swagger-codegen", 
+    "failureDetails": [
+      {
+        "failureName": "java.lang.AssertionError", 
+        "detail": "expected [true] but found [false]", 
+        "isError": false, 
+        "testMethod": "testNumberAsStrings", 
+        "testClass": "io.swagger.codegen.swaggeryaml.SwaggerYamlGeneratorTest"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 1, 
+        "numberRunning": 2, 
+        "testClass": "io.swagger.codegen.swaggeryaml.SwaggerYamlGeneratorTest", 
+        "numberFailing": 1, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/swagger-api/swagger-codegen/builds/364892960", 
+      "date": "Apr 11, 2018 3:01:44 AM", 
+      "id": 364892960
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/swagger-api/swagger-codegen/builds/364149464", 
+      "date": "Apr 9, 2018 4:54:31 PM", 
+      "id": 364149464
+    }
+  }, 
+  "repository": {
+    "name": "swagger-api/swagger-codegen", 
+    "url": "https://github.com/swagger-api/swagger-codegen", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 2006876
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/swagger-api/swagger-codegen/commit/338b9c04b839d27e4597577b0670ad2695609aff", 
+      "sha": "338b9c04b839d27e4597577b0670ad2695609aff", 
+      "branchName": "master", 
+      "date": "Apr 11, 2018 2:48:40 AM", 
+      "repoName": "swagger-api/swagger-codegen"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/swagger-api/swagger-codegen/commit/c91ce17aeeeae2982b4a648333835377adc8d054", 
+      "sha": "c91ce17aeeeae2982b4a648333835377adc8d054", 
+      "branchName": "master", 
+      "date": "Apr 9, 2018 4:41:22 PM", 
+      "repoName": "swagger-api/swagger-codegen"
+    }
+  }, 
+  "bugName": "swagger-api-swagger-codegen-364149464-364892960", 
+  "version": "latest", 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 3, 
+      "numberDeleted": 1
+    }
+  }, 
+  "type": "passing_passing", 
+  "bugId": "Bears-187", 
+  "projectMetrics": {
+    "numberSourceFiles": 195, 
+    "numberLibrariesFailingModule": 57, 
+    "numberTestFiles": 200, 
+    "numberModules": 4
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 365683256, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 973602816, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Sep 3, 2018 12:26:04 PM", 
+    "projectRootPomPath": "./workspace/swagger-api/swagger-codegen/364149464/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          1, 
+          1, 
+          0, 
+          2, 
+          239
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 243
+      }, 
+      "testing": {
+        "stepDurations": [
+          44
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 44
+      }, 
+      "cloning": {
+        "stepDurations": [
+          33
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 33
+      }
+    }, 
+    "reproductionDateBeginning": "Sep 3, 2018 12:17:40 PM", 
+    "totalDuration": 497
+  }
+}
