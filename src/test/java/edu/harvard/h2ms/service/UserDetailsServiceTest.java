@@ -53,6 +53,15 @@ public class UserDetailsServiceTest {
 				);
 	}
 	
+	@Test
+	@DirtiesContext(classMode = DirtiesContext.ClassMode.AFTER_EACH_TEST_METHOD)
+	public void testLoadUserByUsernameIsCaseInsensitive() {
+		assertThat(
+				userDetailsService.loadUserByUsername("JqAdAmS@h2Ms.oRg"),
+				is(user)
+				);
+	}
+	
 	@Test(expected=UsernameNotFoundException.class)
 	public void testNonExistentUserThrows() {
 		userDetailsService.loadUserByUsername("doesntexist@example.com");
