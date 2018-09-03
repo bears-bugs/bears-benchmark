@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>net.bytebuddy</groupId>
+        <artifactId>byte-buddy-parent</artifactId>
+        <!-- The version number is not updated by the release plugin as this artifact is not released! -->
+        <version>1.7.2-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>byte-buddy-android-test</artifactId>
+    <packaging>apk</packaging>
+
+    <name>Byte Buddy for Android (test application)</name>
+    <description>An Android test application that runs Byte Buddy in an Android environment.</description>
+
+    <properties>
+        <version.maven.android>3.8.2</version.maven.android>
+        <version.android.sdk.platform>4</version.android.sdk.platform>
+    </properties>
+
+    <!--
+      Be aware that not all IDEs automatically add all dependencies and their transitive dependencies to the
+      build path of the built APK. Therefore, the dx.jar dependency sometimes needs to be added explicitly
+      to the project build. This is further described here:
+      http://stackoverflow.com/questions/14765910/could-not-find-class-xxx-referenced-from-method-xxx-yyy
+
+      This module is activated by the 'android' Maven profile.
+    -->
+
+    <dependencies>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>byte-buddy-android</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.android</groupId>
+            <artifactId>android</artifactId>
+            <version>${version.android.sdk}</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
+        <plugins>
+            <!-- Build Android application from Maven. -->
+            <plugin>
+                <groupId>com.jayway.maven.plugins.android.generation2</groupId>
+                <artifactId>android-maven-plugin</artifactId>
+                <version>${version.maven.android}</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <run>
+                        <debug>true</debug>
+                    </run>
+                    <sdk>
+                        <platform>${version.android.sdk.platform}</platform>
+                    </sdk>
+                    <undeployBeforeDeploy>true</undeployBeforeDeploy>
+                </configuration>
+            </plugin>
+            <!-- This artifact should not be deployed. -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-deploy-plugin</artifactId>
+                <version>${version.plugin.deploy}</version>
+                <configuration>
+                    <skip>true</skip>
+                </configuration>
+            </plugin>
+            <!-- Mutation testing is not required for this example project. -->
+            <plugin>
+                <groupId>org.pitest</groupId>
+                <artifactId>pitest-maven</artifactId>
+                <version>${version.plugin.pitest}</version>
+                <configuration>
+                    <skip>true</skip>
+                </configuration>
+            </plugin>
+            <plugin>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>2.5</version>
+                <executions>
+                    <execution>
+                        <phase>initialize</phase>
+                        <goals>
+                            <goal>resources</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
