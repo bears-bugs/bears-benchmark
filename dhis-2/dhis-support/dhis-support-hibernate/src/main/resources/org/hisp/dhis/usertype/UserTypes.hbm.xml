@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+  "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+  "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+  <!-- AES-128 encrypted string type -->
+
+  <typedef class="org.hisp.dhis.hibernate.encryption.type.EncryptedStringUserType" name="Aes128EncryptedString">
+    <!-- Must be registered in the org.hisp.dhis.hibernate.encryption.HibernateEncryptorRegistry bean -->
+    <param name="encryptor">aes128StringEncryptor</param>
+  </typedef>
+
+  <!-- Jsonb type -->
+
+  <typedef class="org.hisp.dhis.hibernate.jsonb.type.JsonBinaryType" name="jbObject">
+    <param name="clazz">java.lang.Object</param>
+  </typedef>
+
+  <typedef class="org.hisp.dhis.hibernate.jsonb.type.JsonBinaryType" name="jbObjectStyle">
+    <param name="clazz">org.hisp.dhis.common.ObjectStyle</param>
+  </typedef>
+
+  <typedef class="org.hisp.dhis.hibernate.jsonb.type.JsonBinaryType" name="jbTextPattern">
+    <param name="clazz">org.hisp.dhis.textpattern.TextPattern</param>
+  </typedef>
+
+  <typedef class="org.hisp.dhis.hibernate.jsonb.type.JsonBinaryType" name="jbRenderType">
+    <param name="clazz">org.hisp.dhis.render.DeviceRenderTypeMap</param>
+  </typedef>
+  
+  <typedef class="org.hisp.dhis.hibernate.jsonb.type.JsonBinaryType" name="jbFilterPeriod">
+    <param name="clazz">org.hisp.dhis.trackedentityfilter.FilterPeriod</param>
+  </typedef>
+  
+  <typedef class="org.hisp.dhis.hibernate.jsonb.type.JsonBinaryType" name="jbSet">
+    <param name="clazz">java.util.HashSet</param>
+  </typedef>
+  
+  <typedef class="org.hisp.dhis.hibernate.jsonb.type.JsonListBinaryType" name="jlbEventFilter">
+    <param name="clazz">org.hisp.dhis.trackedentityfilter.EventFilter</param>
+  </typedef>
+
+</hibernate-mapping>

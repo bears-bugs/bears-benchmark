@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+  "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+  "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"
+  [<!ENTITY identifiableProperties SYSTEM "classpath://org/hisp/dhis/common/identifiableProperties.hbm">]
+  >
+
+<hibernate-mapping>
+  <class name="org.hisp.dhis.program.notification.ProgramNotificationTemplate" table="programnotificationtemplate">
+
+    <id name="id" column="programnotificationtemplateid">
+      <generator class="native" />
+    </id>
+    &identifiableProperties;
+
+    <property name="name" column="name" not-null="true" unique="false" length="230" />
+
+    <property name="relativeScheduledDays" column="relativeScheduledDays" not-null="false" />
+
+    <many-to-one name="recipientUserGroup" class="org.hisp.dhis.user.UserGroup"
+      column="usergroupid" foreign-key="fk_programstagenotification_usergroup" not-null="false" />
+
+    <many-to-one name="recipientProgramAttribute" class="org.hisp.dhis.trackedentity.TrackedEntityAttribute"
+                 column="trackedentityattributeid" foreign-key="fk_programstagenotification_trackedentityattributeid" not-null="false" />
+
+    <many-to-one name="recipientDataElement" class="org.hisp.dhis.dataelement.DataElement"
+                 column="dataelementid" foreign-key="fk_programstagenotification_dataelementid" not-null="false" />
+
+    <!-- TODO Should we allow null-templates? -->
+
+    <property name="subjectTemplate" column="subjecttemplate" not-null="false" length="100" />
+
+    <property name="messageTemplate" column="messagetemplate" not-null="true" type="text" />
+
+    <property name="notificationTrigger" column="notificationtrigger">
+      <type name="org.hibernate.type.EnumType">
+        <param name="enumClass">org.hisp.dhis.program.notification.NotificationTrigger</param>
+        <param name="useNamed">true</param>
+        <param name="type">12</param>
+      </type>
+    </property>
+
+    <property name="notificationRecipient" column="notificationrecipienttype">
+      <type name="org.hibernate.type.EnumType">
+        <param name="enumClass">org.hisp.dhis.program.notification.ProgramNotificationRecipient</param>
+        <param name="useNamed">true</param>
+        <param name="type">12</param>
+      </type>
+    </property>
+
+    <set name="deliveryChannels" table="programnotificationtemplate_deliverychannel" fetch="select">
+      <key column="programnotificationtemplatedeliverychannelid" />
+      <element column="deliverychannel">
+        <type name="org.hibernate.type.EnumType">
+          <param name="enumClass">org.hisp.dhis.common.DeliveryChannel</param>
+          <param name="useNamed">true</param>
+          <param name="type">12</param>
+        </type>
+      </element>
+    </set>
+
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+  "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+  "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"
+  [<!ENTITY identifiableProperties SYSTEM "classpath://org/hisp/dhis/common/identifiableProperties.hbm">]
+  >
+
+<hibernate-mapping>
+  <class name="org.hisp.dhis.mapping.Map" table="map">
+
+    <cache usage="read-write" />
+
+    <id name="id" column="mapid">
+      <generator class="native" />
+    </id>
+    &identifiableProperties;
+
+    <property name="name" column="name" not-null="true" length="230" />
+
+    <property name="description" type="text" />
+
+    <property name="longitude" />
+
+    <property name="latitude" />
+
+    <property name="zoom" />
+
+    <property name="basemap" />
+
+    <property name="title" />
+
+    <list name="mapViews" table="mapmapviews" cascade="all">
+      <cache usage="read-write" />
+      <key column="mapid" foreign-key="fk_mapmapview_mapid" />
+      <list-index column="sort_order" base="0" />
+      <many-to-many column="mapviewid" class="org.hisp.dhis.mapping.MapView"
+        foreign-key="fk_mapmapview_mapviewid" />
+    </list>
+
+    <set name="interpretations" inverse="true">
+      <key column="mapid" />
+      <one-to-many class="org.hisp.dhis.interpretation.Interpretation" />
+    </set>
+
+    <!-- Access properties -->
+    <property name="externalAccess" />
+
+    <many-to-one name="user" class="org.hisp.dhis.user.User" column="userid" foreign-key="fk_mapview_userid" />
+
+    <property name="publicAccess" length="8" />
+
+    <set name="userGroupAccesses" table="mapusergroupaccesses" cascade="all-delete-orphan">
+      <cache usage="read-write" />
+      <key column="mapid" />
+      <many-to-many class="org.hisp.dhis.user.UserGroupAccess" column="usergroupaccessid" unique="true" />
+    </set>
+
+    <set name="userAccesses" table="mapuseraccesses" cascade="all-delete-orphan">
+      <cache usage="read-write" />
+      <key column="mapid" />
+      <many-to-many class="org.hisp.dhis.user.UserAccess" column="useraccessid" unique="true" />
+    </set>
+
+    <property name="favorites" type="jbSet" />
+    
+  </class>
+
+</hibernate-mapping>
