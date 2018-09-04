@@ -1,0 +1,156 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 805, 
+      "numberRunning": 807, 
+      "numberFailing": 2, 
+      "numberErroring": 0, 
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError", 
+          "isError": false, 
+          "occurrences": 2
+        }
+      ], 
+      "numberSkipping": 14
+    }, 
+    "failingModule": "/root/workspace/apache/activemq-artemis/367687093/artemis-jdbc-store", 
+    "failureDetails": [
+      {
+        "failureName": "java.lang.AssertionError", 
+        "detail": "bytes read should be < 0", 
+        "isError": false, 
+        "testClass": "org.apache.activemq.artemis.jdbc.file.JDBCSequentialFileFactoryTest", 
+        "testMethod": "testReadOutOfBoundsOnNotEmptyFile"
+      }, 
+      {
+        "failureName": "java.lang.AssertionError", 
+        "detail": "bytes read should be < 0", 
+        "isError": false, 
+        "testClass": "org.apache.activemq.artemis.jdbc.file.JDBCSequentialFileFactoryTest", 
+        "testMethod": "testReadOutOfBoundsOnEmptyFile"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 8, 
+        "numberRunning": 10, 
+        "testClass": "org.apache.activemq.artemis.jdbc.file.JDBCSequentialFileFactoryTest", 
+        "numberFailing": 2, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/apache/activemq-artemis/builds/367688011", 
+      "date": "Apr 17, 2018 5:03:24 PM", 
+      "id": 367688011
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/apache/activemq-artemis/builds/367687093", 
+      "date": "Apr 17, 2018 5:02:11 PM", 
+      "id": 367687093
+    }
+  }, 
+  "repository": {
+    "name": "apache/activemq-artemis", 
+    "url": "https://github.com/apache/activemq-artemis", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 36057260
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/apache/activemq-artemis/commit/59162653a4f53275259e88c40e0ba2d861f0fc7a", 
+      "sha": "59162653a4f53275259e88c40e0ba2d861f0fc7a", 
+      "branchName": "master", 
+      "date": "Apr 17, 2018 4:43:28 PM", 
+      "repoName": "apache/activemq-artemis"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/apache/activemq-artemis/commit/95e9e6e2b6783d17e5bddaf2a8855a1e124a20a5", 
+      "sha": "95e9e6e2b6783d17e5bddaf2a8855a1e124a20a5", 
+      "branchName": "master", 
+      "date": "Apr 17, 2018 4:41:15 PM", 
+      "repoName": "apache/activemq-artemis"
+    }
+  }, 
+  "projectMetrics": {
+    "numberSourceFiles": 1491, 
+    "numberLibrariesFailingModule": 31, 
+    "numberTestFiles": 1164, 
+    "numberModules": 53
+  }, 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 18, 
+      "numberDeleted": 4
+    }
+  }, 
+  "type": "passing_passing", 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 184525056, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 605552640, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Sep 4, 2018 7:08:06 AM", 
+    "projectRootPomPath": "./workspace/apache/activemq-artemis/367687093/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          1, 
+          7, 
+          0, 
+          1, 
+          478
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 487
+      }, 
+      "testing": {
+        "stepDurations": [
+          328
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 328
+      }, 
+      "cloning": {
+        "stepDurations": [
+          27
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 27
+      }
+    }, 
+    "reproductionDateBeginning": "Sep 4, 2018 6:39:34 AM", 
+    "totalDuration": 1704
+  }
+}
