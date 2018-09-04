@@ -1,0 +1,152 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 218, 
+      "numberRunning": 219, 
+      "numberFailing": 1, 
+      "numberErroring": 0, 
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure", 
+          "isError": false, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 3
+    }, 
+    "failingModule": "/root/workspace/spring-cloud/spring-cloud-gcp/367417648/spring-cloud-gcp-data-spanner", 
+    "failureDetails": [
+      {
+        "failureName": "org.junit.ComparisonFailure", 
+        "detail": "expected:<...able ORDER BY id ASC[ LIMIT 5 OFFSET 3];> but was:<...able ORDER BY id ASC[];>", 
+        "isError": false, 
+        "testMethod": "findAllPageableNoOptionsTest", 
+        "testClass": "org.springframework.cloud.gcp.data.spanner.core.SpannerTemplateTests"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 29, 
+        "numberRunning": 30, 
+        "testClass": "org.springframework.cloud.gcp.data.spanner.core.SpannerTemplateTests", 
+        "numberFailing": 1, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/spring-cloud/spring-cloud-gcp/builds/367667323", 
+      "date": "Apr 17, 2018 4:07:00 PM", 
+      "id": 367667323
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/spring-cloud/spring-cloud-gcp/builds/367417648", 
+      "date": "Apr 17, 2018 1:34:49 AM", 
+      "id": 367417648
+    }
+  }, 
+  "repository": {
+    "name": "spring-cloud/spring-cloud-gcp", 
+    "url": "https://github.com/spring-cloud/spring-cloud-gcp", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 86105877
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/spring-cloud/spring-cloud-gcp/commit/1bc8d0d634443ff0d67725fa5ebcb5beb7a7e588", 
+      "sha": "1bc8d0d634443ff0d67725fa5ebcb5beb7a7e588", 
+      "branchName": "master", 
+      "date": "Apr 17, 2018 3:58:56 PM", 
+      "repoName": "spring-cloud/spring-cloud-gcp"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/spring-cloud/spring-cloud-gcp/commit/fc3c3aedc7ffcd04c4913f11a373f6f0861a9d4b", 
+      "sha": "fc3c3aedc7ffcd04c4913f11a373f6f0861a9d4b", 
+      "branchName": "master", 
+      "date": "Apr 17, 2018 1:28:35 AM", 
+      "repoName": "spring-cloud/spring-cloud-gcp"
+    }
+  }, 
+  "bugName": "spring-cloud-spring-cloud-gcp-367417648-367667323", 
+  "version": "latest", 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 2, 
+      "numberDeleted": 1
+    }
+  }, 
+  "type": "passing_passing", 
+  "bugId": "Bears-183", 
+  "projectMetrics": {
+    "numberSourceFiles": 157, 
+    "numberLibrariesFailingModule": 81, 
+    "numberTestFiles": 62, 
+    "numberModules": 32
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 275739272, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 659554304, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Sep 4, 2018 11:48:47 AM", 
+    "projectRootPomPath": "./workspace/spring-cloud/spring-cloud-gcp/367417648/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          0, 
+          10, 
+          5, 
+          0, 
+          471
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 486
+      }, 
+      "testing": {
+        "stepDurations": [
+          32
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 32
+      }, 
+      "cloning": {
+        "stepDurations": [
+          4
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 4
+      }
+    }, 
+    "reproductionDateBeginning": "Sep 4, 2018 11:36:53 AM", 
+    "totalDuration": 706
+  }
+}
