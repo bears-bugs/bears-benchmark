@@ -1,0 +1,151 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 753, 
+      "numberRunning": 754, 
+      "numberFailing": 1, 
+      "numberErroring": 0, 
+      "failures": [
+        {
+          "failureName": "junit.framework.AssertionFailedError", 
+          "isError": false, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 7
+    }, 
+    "failingModule": "/root/workspace/apache/incubator-dubbo/370383941/dubbo-rpc/dubbo-rpc-dubbo", 
+    "failureDetails": [
+      {
+        "failureName": "junit.framework.AssertionFailedError", 
+        "testClass": "com.alibaba.dubbo.rpc.protocol.dubbo.DubboInvokerAvilableTest", 
+        "testMethod": "test_normal_channel_close_wait_gracefully", 
+        "isError": false
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 4, 
+        "numberRunning": 5, 
+        "testClass": "com.alibaba.dubbo.rpc.protocol.dubbo.DubboInvokerAvilableTest", 
+        "numberFailing": 1, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/apache/incubator-dubbo/builds/370422750", 
+      "date": "Apr 24, 2018 8:26:37 AM", 
+      "id": 370422750
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/apache/incubator-dubbo/builds/370383941", 
+      "date": "Apr 24, 2018 4:41:13 AM", 
+      "id": 370383941
+    }
+  }, 
+  "repository": {
+    "name": "apache/incubator-dubbo", 
+    "url": "https://github.com/apache/incubator-dubbo", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 4710920
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/apache/incubator-dubbo/commit/d29052904765d59e549286fc8545bf5b0e760048", 
+      "sha": "d29052904765d59e549286fc8545bf5b0e760048", 
+      "branchName": "master", 
+      "date": "Apr 24, 2018 8:00:32 AM", 
+      "repoName": "apache/incubator-dubbo"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/apache/incubator-dubbo/commit/d07c64f809361ec629b738ca223c7e89d08c03f4", 
+      "sha": "d07c64f809361ec629b738ca223c7e89d08c03f4", 
+      "branchName": "master", 
+      "date": "Apr 24, 2018 4:21:04 AM", 
+      "repoName": "apache/incubator-dubbo"
+    }
+  }, 
+  "bugName": "apache-incubator-dubbo-370383941-370422750", 
+  "version": "latest", 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 3, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 29, 
+      "numberDeleted": 9
+    }
+  }, 
+  "type": "passing_passing", 
+  "bugId": "Bears-152", 
+  "projectMetrics": {
+    "numberSourceFiles": 733, 
+    "numberLibrariesFailingModule": 31, 
+    "numberTestFiles": 480, 
+    "numberModules": 60
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 348655224, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 462946304, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Sep 5, 2018 11:46:36 PM", 
+    "projectRootPomPath": "./workspace/apache/incubator-dubbo/370383941/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          2, 
+          2, 
+          0, 
+          1, 
+          741
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 746
+      }, 
+      "testing": {
+        "stepDurations": [
+          137
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 137
+      }, 
+      "cloning": {
+        "stepDurations": [
+          9
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 9
+      }
+    }, 
+    "reproductionDateBeginning": "Sep 5, 2018 11:23:26 PM", 
+    "totalDuration": 1382
+  }
+}
