@@ -1,0 +1,149 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 4558, 
+      "numberRunning": 4559, 
+      "numberFailing": 0, 
+      "numberErroring": 1, 
+      "failures": [
+        {
+          "failureName": "java.lang.RuntimeException", 
+          "isError": true, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 109
+    }, 
+    "failingModule": "/root/workspace/apache/calcite/370260137/core", 
+    "failureDetails": [
+      {
+        "failureName": "java.lang.RuntimeException", 
+        "detail": "exception while executing [explain plan for select \"empid\" from \"emps\"\nwhere \"deptno\" in (select \"deptno\" from \"depts\")]", 
+        "isError": true, 
+        "testClass": "org.apache.calcite.test.MaterializationTest", 
+        "testMethod": "testJoinMaterialization11"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 112, 
+        "numberRunning": 113, 
+        "testClass": "org.apache.calcite.test.MaterializationTest", 
+        "numberFailing": 0, 
+        "numberErroring": 1, 
+        "numberSkipping": 17
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/apache/calcite/builds/370643791", 
+      "date": "Apr 24, 2018 6:17:49 PM", 
+      "id": 370643791
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/apache/calcite/builds/370260137", 
+      "date": "Apr 23, 2018 10:04:41 PM", 
+      "id": 370260137
+    }
+  }, 
+  "repository": {
+    "name": "apache/calcite", 
+    "url": "https://github.com/apache/calcite", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 21193524
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/apache/calcite/commit/fd5dc8adf4bca6a4f0c631479985cbb2b43b47e4", 
+      "sha": "fd5dc8adf4bca6a4f0c631479985cbb2b43b47e4", 
+      "branchName": "master", 
+      "date": "Apr 24, 2018 5:51:41 PM", 
+      "repoName": "apache/calcite"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/apache/calcite/commit/26ce10f9d7cd16dfab4030995cfc0f4387097041", 
+      "sha": "26ce10f9d7cd16dfab4030995cfc0f4387097041", 
+      "branchName": "master", 
+      "date": "Apr 23, 2018 9:43:47 PM", 
+      "repoName": "apache/calcite"
+    }
+  }, 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 2, 
+      "numberDeleted": 2
+    }
+  }, 
+  "type": "passing_passing", 
+  "projectMetrics": {
+    "numberSourceFiles": 1497, 
+    "numberLibrariesFailingModule": 46, 
+    "numberTestFiles": 192, 
+    "numberModules": 19
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 358997688, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 492306432, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Sep 5, 2018 7:13:39 PM", 
+    "projectRootPomPath": "./workspace/apache/calcite/370260137/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          1, 
+          1, 
+          0, 
+          0, 
+          147
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 149
+      }, 
+      "testing": {
+        "stepDurations": [
+          403
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 403
+      }, 
+      "cloning": {
+        "stepDurations": [
+          24
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 24
+      }
+    }, 
+    "reproductionDateBeginning": "Sep 5, 2018 6:54:22 PM", 
+    "totalDuration": 1147
+  }
+}
