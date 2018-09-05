@@ -1,0 +1,148 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 807, 
+      "numberRunning": 808, 
+      "numberFailing": 1, 
+      "numberErroring": 0, 
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError", 
+          "isError": false, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 14
+    }, 
+    "failingModule": "/root/workspace/apache/activemq-artemis/370393731/artemis-server", 
+    "failureDetails": [
+      {
+        "failureName": "java.lang.AssertionError", 
+        "isError": false, 
+        "testClass": "org.apache.activemq.artemis.core.security.jaas.LDAPLoginModuleTest", 
+        "testMethod": "testCommitOnFailedLogin"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 3, 
+        "numberRunning": 4, 
+        "testClass": "org.apache.activemq.artemis.core.security.jaas.LDAPLoginModuleTest", 
+        "numberFailing": 1, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/apache/activemq-artemis/builds/370397486", 
+      "date": "Apr 24, 2018 5:55:54 AM", 
+      "id": 370397486
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/apache/activemq-artemis/builds/370393731", 
+      "date": "Apr 24, 2018 5:36:13 AM", 
+      "id": 370393731
+    }
+  }, 
+  "repository": {
+    "name": "apache/activemq-artemis", 
+    "url": "https://github.com/apache/activemq-artemis", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 36057260
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/apache/activemq-artemis/commit/932f0f4086f4560ce013bbbc612225ea5695f678", 
+      "sha": "932f0f4086f4560ce013bbbc612225ea5695f678", 
+      "branchName": "master", 
+      "date": "Apr 24, 2018 5:33:35 AM", 
+      "repoName": "apache/activemq-artemis"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/apache/activemq-artemis/commit/d1c3ed5543eb150d701753133cb0d3c5bdd2c3d3", 
+      "sha": "d1c3ed5543eb150d701753133cb0d3c5bdd2c3d3", 
+      "branchName": "master", 
+      "date": "Apr 24, 2018 5:11:11 AM", 
+      "repoName": "apache/activemq-artemis"
+    }
+  }, 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 10, 
+      "numberDeleted": 5
+    }
+  }, 
+  "type": "passing_passing", 
+  "projectMetrics": {
+    "numberSourceFiles": 1492, 
+    "numberLibrariesFailingModule": 93, 
+    "numberTestFiles": 1165, 
+    "numberModules": 53
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 398944968, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 919601152, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Sep 5, 2018 8:10:23 PM", 
+    "projectRootPomPath": "./workspace/apache/activemq-artemis/370393731/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          3, 
+          1, 
+          0, 
+          0, 
+          465
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 469
+      }, 
+      "testing": {
+        "stepDurations": [
+          325
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 325
+      }, 
+      "cloning": {
+        "stepDurations": [
+          28
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 28
+      }
+    }, 
+    "reproductionDateBeginning": "Sep 5, 2018 7:43:56 PM", 
+    "totalDuration": 1577
+  }
+}
