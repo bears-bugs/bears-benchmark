@@ -1,0 +1,152 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 143, 
+      "numberRunning": 144, 
+      "numberFailing": 1, 
+      "numberErroring": 0, 
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure", 
+          "isError": false, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 0
+    }, 
+    "failingModule": "/root/workspace/apache/incubator-servicecomb-java-chassis/371353019/foundations/foundation-config", 
+    "failureDetails": [
+      {
+        "failureName": "org.junit.ComparisonFailure", 
+        "detail": "expected:<[higher_priority]> but was:<[value]>", 
+        "isError": false, 
+        "testMethod": "testCreateLocalConfigWithExtraConfig", 
+        "testClass": "org.apache.servicecomb.config.TestConfigUtil"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 13, 
+        "numberRunning": 14, 
+        "testClass": "org.apache.servicecomb.config.TestConfigUtil", 
+        "numberFailing": 1, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/apache/incubator-servicecomb-java-chassis/builds/371886679", 
+      "date": "Apr 27, 2018 8:49:26 AM", 
+      "id": 371886679
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/apache/incubator-servicecomb-java-chassis/builds/371353019", 
+      "date": "Apr 26, 2018 4:32:23 AM", 
+      "id": 371353019
+    }
+  }, 
+  "repository": {
+    "name": "apache/incubator-servicecomb-java-chassis", 
+    "url": "https://github.com/apache/incubator-servicecomb-java-chassis", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 91674936
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/apache/incubator-servicecomb-java-chassis/commit/122a4865de381986700705eb8d7dcf286b294007", 
+      "sha": "122a4865de381986700705eb8d7dcf286b294007", 
+      "branchName": "master", 
+      "date": "Apr 27, 2018 8:10:59 AM", 
+      "repoName": "apache/incubator-servicecomb-java-chassis"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/apache/incubator-servicecomb-java-chassis/commit/5348393b977f5e6a8eac87016dd1f969a7a1e6df", 
+      "sha": "5348393b977f5e6a8eac87016dd1f969a7a1e6df", 
+      "branchName": "master", 
+      "date": "Apr 26, 2018 3:53:33 AM", 
+      "repoName": "apache/incubator-servicecomb-java-chassis"
+    }
+  }, 
+  "bugName": "apache-incubator-servicecomb-java-chassis-371353019-371886679", 
+  "version": "latest", 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 5, 
+      "numberDeleted": 5
+    }
+  }, 
+  "type": "passing_passing", 
+  "bugId": "Bears-154", 
+  "projectMetrics": {
+    "numberSourceFiles": 867, 
+    "numberLibrariesFailingModule": 74, 
+    "numberTestFiles": 530, 
+    "numberModules": 64
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 235782768, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 924319744, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Sep 5, 2018 6:39:09 PM", 
+    "projectRootPomPath": "./workspace/apache/incubator-servicecomb-java-chassis/371353019/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          1, 
+          5, 
+          1, 
+          0, 
+          208
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 215
+      }, 
+      "testing": {
+        "stepDurations": [
+          28
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 28
+      }, 
+      "cloning": {
+        "stepDurations": [
+          10
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 10
+      }
+    }, 
+    "reproductionDateBeginning": "Sep 5, 2018 6:25:08 PM", 
+    "totalDuration": 832
+  }
+}
