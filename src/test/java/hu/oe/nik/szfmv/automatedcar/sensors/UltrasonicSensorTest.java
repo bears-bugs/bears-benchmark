@@ -31,9 +31,13 @@ public class UltrasonicSensorTest {
         closer.generateShape();
         w.addObjectToWorld(closer);
 
-        RoadSign other = new RoadSign(150, 100, "roadsign_speed_50.png");
+        RoadSign other = new RoadSign(150, 120, "roadsign_speed_50.png");
         other.generateShape();
         w.addObjectToWorld(other);
+
+        RoadSign bottom = new RoadSign(100, 150, "bottom_sign.png");
+        bottom.generateShape();
+        w.addObjectToWorld(bottom);
     }
 
     /**
@@ -77,5 +81,13 @@ public class UltrasonicSensorTest {
     public void testSensorCreation() {
         UltrasonicSensor.createUltrasonicSensors(car, w);
         assertEquals(8, car.getUltrasonicSensors().size());
+    }
+
+    @Test
+    public void testSensorRotation() {
+        UltrasonicSensor sensor = new UltrasonicSensor(0, 0, 0, car, w);
+        car.setRotation(Math.toRadians(180));
+
+        assertEquals(sensor.getNearestObject().getImageFileName(), "bottom_sign.png");
     }
 }
