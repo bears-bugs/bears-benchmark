@@ -1,0 +1,149 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 90, 
+      "numberRunning": 91, 
+      "numberFailing": 1, 
+      "numberErroring": 0, 
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure", 
+          "isError": false, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 0
+    }, 
+    "failingModule": "/root/workspace/SzFMV2018-Tavasz/AutomatedCar/367724825", 
+    "failureDetails": [
+      {
+        "failureName": "org.junit.ComparisonFailure", 
+        "detail": "expected:<[roadsign_speed_40].png> but was:<[bottom_sign].png>", 
+        "isError": false, 
+        "testClass": "hu.oe.nik.szfmv.automatedcar.sensors.UltrasonicSensorTest", 
+        "testMethod": "testSensorRotation"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 4, 
+        "numberRunning": 5, 
+        "testClass": "hu.oe.nik.szfmv.automatedcar.sensors.UltrasonicSensorTest", 
+        "numberFailing": 1, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/SzFMV2018-Tavasz/AutomatedCar/builds/369995672", 
+      "date": "Apr 23, 2018 10:44:57 AM", 
+      "id": 369995672
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/SzFMV2018-Tavasz/AutomatedCar/builds/367724825", 
+      "date": "Apr 17, 2018 6:01:04 PM", 
+      "id": 367724825
+    }
+  }, 
+  "repository": {
+    "name": "SzFMV2018-Tavasz/AutomatedCar", 
+    "url": "https://github.com/SzFMV2018-Tavasz/AutomatedCar", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 117655293
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/SzFMV2018-Tavasz/AutomatedCar/commit/04348e7bf0010d50f88469ade5d935eaa843a1cb", 
+      "sha": "04348e7bf0010d50f88469ade5d935eaa843a1cb", 
+      "branchName": "team4", 
+      "date": "Apr 23, 2018 10:42:30 AM", 
+      "repoName": "SzFMV2018-Tavasz/AutomatedCar"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/SzFMV2018-Tavasz/AutomatedCar/commit/4b43bf5e8117482bd35e6bd119531f175d9be914", 
+      "sha": "4b43bf5e8117482bd35e6bd119531f175d9be914", 
+      "branchName": "team4", 
+      "date": "Apr 17, 2018 5:58:44 PM", 
+      "repoName": "SzFMV2018-Tavasz/AutomatedCar"
+    }
+  }, 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 32, 
+      "numberDeleted": 13
+    }
+  }, 
+  "type": "passing_passing", 
+  "projectMetrics": {
+    "numberSourceFiles": 57, 
+    "numberLibrariesFailingModule": 7, 
+    "numberTestFiles": 20, 
+    "numberModules": 1
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 357910136, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 432537600, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Sep 6, 2018 6:19:59 AM", 
+    "projectRootPomPath": "./workspace/SzFMV2018-Tavasz/AutomatedCar/367724825/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          0, 
+          0, 
+          0, 
+          0, 
+          23
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 23
+      }, 
+      "testing": {
+        "stepDurations": [
+          13
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 13
+      }, 
+      "cloning": {
+        "stepDurations": [
+          9
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 9
+      }
+    }, 
+    "reproductionDateBeginning": "Sep 6, 2018 6:18:37 AM", 
+    "totalDuration": 78
+  }
+}
