@@ -1,0 +1,172 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 452, 
+      "numberRunning": 454, 
+      "numberFailing": 0, 
+      "numberErroring": 2, 
+      "failures": [
+        {
+          "failureName": "org.junit.runners.model.TestTimedOutException", 
+          "isError": true, 
+          "occurrences": 1
+        }, 
+        {
+          "failureName": "dk.alexandra.fresco.framework.TestFrameworkException", 
+          "isError": true, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 0
+    }, 
+    "failingModule": "/root/workspace/aicis/fresco/370467437/core", 
+    "failureDetails": [
+      {
+        "failureName": "dk.alexandra.fresco.framework.TestFrameworkException", 
+        "detail": "TestThread(dk.alexandra.fresco.suite.dummy.arithmetic.DummyArithmeticResourcePoolImpl@226b70b3) threw exception in test (see stderr)", 
+        "isError": true, 
+        "testMethod": "testGenerateRandomBitMask", 
+        "testClass": "dk.alexandra.fresco.suite.dummy.arithmetic.TestDummyArithmeticProtocolSuite"
+      }, 
+      {
+        "failureName": "org.junit.runners.model.TestTimedOutException", 
+        "detail": "test timed out after 120000 milliseconds", 
+        "isError": true, 
+        "testMethod": "testReceiveAfterClose", 
+        "testClass": "dk.alexandra.fresco.framework.network.async.TestAsyncNetwork"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 25, 
+        "numberRunning": 26, 
+        "testClass": "dk.alexandra.fresco.framework.network.async.TestAsyncNetwork", 
+        "numberFailing": 0, 
+        "numberErroring": 1, 
+        "numberSkipping": 0
+      }, 
+      {
+        "numberPassing": 138, 
+        "numberRunning": 139, 
+        "testClass": "dk.alexandra.fresco.suite.dummy.arithmetic.TestDummyArithmeticProtocolSuite", 
+        "numberFailing": 0, 
+        "numberErroring": 1, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/aicis/fresco/builds/370477490", 
+      "date": "Apr 24, 2018 11:24:16 AM", 
+      "id": 370477490
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/aicis/fresco/builds/370467437", 
+      "date": "Apr 24, 2018 10:54:54 AM", 
+      "id": 370467437
+    }
+  }, 
+  "repository": {
+    "name": "aicis/fresco", 
+    "url": "https://github.com/aicis/fresco", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 46789213
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/aicis/fresco/commit/7a0fc3391f36c444a2a1215f43144f39c923a3f1", 
+      "sha": "7a0fc3391f36c444a2a1215f43144f39c923a3f1", 
+      "branchName": "spdz2k-less-than", 
+      "date": "Apr 24, 2018 11:05:38 AM", 
+      "repoName": "aicis/fresco"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/aicis/fresco/commit/35049205806bf206f79ed969cd2456bcd9ff6e4c", 
+      "sha": "35049205806bf206f79ed969cd2456bcd9ff6e4c", 
+      "branchName": "spdz2k-less-than", 
+      "date": "Apr 24, 2018 10:37:53 AM", 
+      "repoName": "aicis/fresco"
+    }
+  }, 
+  "bugName": "aicis-fresco-370467437-370477490", 
+  "version": "latest", 
+  "projectMetrics": {
+    "numberSourceFiles": 454, 
+    "numberLibrariesFailingModule": 12, 
+    "numberTestFiles": 248, 
+    "numberModules": 15
+  }, 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 3, 
+      "numberDeleted": 2
+    }
+  }, 
+  "bugId": "Bears-147", 
+  "type": "passing_passing", 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 290623912, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 472907776, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Sep 6, 2018 4:08:08 AM", 
+    "projectRootPomPath": "./workspace/aicis/fresco/370467437/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          0, 
+          0, 
+          0, 
+          0, 
+          93
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 93
+      }, 
+      "testing": {
+        "stepDurations": [
+          377
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 377
+      }, 
+      "cloning": {
+        "stepDurations": [
+          8
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 8
+      }
+    }, 
+    "reproductionDateBeginning": "Sep 6, 2018 3:37:32 AM", 
+    "totalDuration": 1827
+  }
+}
