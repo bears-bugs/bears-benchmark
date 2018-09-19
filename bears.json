@@ -1,0 +1,149 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 871, 
+      "numberRunning": 872, 
+      "numberFailing": 1, 
+      "numberErroring": 0, 
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError", 
+          "isError": false, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 14
+    }, 
+    "failingModule": "/root/workspace/apache/activemq-artemis/430707789/artemis-junit", 
+    "failureDetails": [
+      {
+        "failureName": "java.lang.AssertionError", 
+        "detail": "Unexpected message count in destination topic://test.topic expected:<1> but was:<2>", 
+        "isError": false, 
+        "testClass": "org.apache.activemq.artemis.junit.EmbeddedJMSResourceTopicTest", 
+        "testMethod": "testPushTextMessageWithProperties"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 7, 
+        "numberRunning": 8, 
+        "testClass": "org.apache.activemq.artemis.junit.EmbeddedJMSResourceTopicTest", 
+        "numberFailing": 1, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/apache/activemq-artemis/builds/430745973", 
+      "date": "Sep 19, 2018 11:56:17 PM", 
+      "id": 430745973
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/apache/activemq-artemis/builds/430707789", 
+      "date": "Sep 19, 2018 10:26:48 PM", 
+      "id": 430707789
+    }
+  }, 
+  "repository": {
+    "name": "apache/activemq-artemis", 
+    "url": "https://github.com/apache/activemq-artemis", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 36057260
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/apache/activemq-artemis/commit/9a949230d24f6aa0ca9e7e7da6ae29ede3dcc240", 
+      "sha": "9a949230d24f6aa0ca9e7e7da6ae29ede3dcc240", 
+      "branchName": "2.6.x", 
+      "date": "Sep 19, 2018 11:05:28 PM", 
+      "repoName": "apache/activemq-artemis"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/apache/activemq-artemis/commit/e358fbde6610c6a7fbfa69650741cab0a5be3d46", 
+      "sha": "e358fbde6610c6a7fbfa69650741cab0a5be3d46", 
+      "branchName": "2.6.x", 
+      "date": "Sep 19, 2018 9:32:24 PM", 
+      "repoName": "apache/activemq-artemis"
+    }
+  }, 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 4, 
+      "numberDeleted": 1
+    }
+  }, 
+  "type": "passing_passing", 
+  "projectMetrics": {
+    "numberSourceFiles": 1514, 
+    "numberLibrariesFailingModule": 34, 
+    "numberTestFiles": 1201, 
+    "numberModules": 53
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 230757912, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 643825664, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Sep 20, 2018 12:24:18 AM", 
+    "projectRootPomPath": "./workspace/apache/activemq-artemis/430707789/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          1, 
+          1, 
+          0, 
+          1, 
+          511
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 514
+      }, 
+      "testing": {
+        "stepDurations": [
+          348
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 348
+      }, 
+      "cloning": {
+        "stepDurations": [
+          30
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 30
+      }
+    }, 
+    "reproductionDateBeginning": "Sep 19, 2018 11:56:32 PM", 
+    "totalDuration": 1657
+  }
+}
