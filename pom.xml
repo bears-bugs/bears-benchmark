@@ -1,0 +1,1748 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed to the Apache Software Foundation (ASF) under one or more
+  contributor license agreements.  See the NOTICE file distributed with
+  this work for additional information regarding copyright ownership.
+  The ASF licenses this file to You under the Apache License, Version 2.0
+  (the "License"); you may not use this file except in compliance with
+  the License.  You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+   <modelVersion>4.0.0</modelVersion>
+   <groupId>org.apache.activemq</groupId>
+   <artifactId>artemis-pom</artifactId>
+   <packaging>pom</packaging>
+   <version>2.7.0-SNAPSHOT</version>
+
+   <parent>
+      <groupId>org.apache</groupId>
+      <artifactId>apache</artifactId>
+      <version>18</version>
+      <relativePath>org.apache:apache</relativePath>
+   </parent>
+
+   <modules>
+      <module>artemis-protocols</module>
+      <module>artemis-dto</module>
+      <module>artemis-cdi-client</module>
+      <module>artemis-boot</module>
+      <module>artemis-web</module>
+      <module>artemis-website</module>
+      <module>artemis-cli</module>
+      <module>artemis-commons</module>
+      <module>artemis-selector</module>
+      <module>artemis-core-client</module>
+      <module>artemis-core-client-all</module>
+      <module>artemis-core-client-osgi</module>
+      <module>artemis-server</module>
+      <module>artemis-junit</module>
+      <module>artemis-jms-client</module>
+      <module>artemis-jms-client-all</module>
+      <module>artemis-jms-client-osgi</module>
+      <module>artemis-jms-server</module>
+      <module>artemis-native</module>
+      <module>artemis-journal</module>
+      <module>artemis-ra</module>
+      <module>artemis-rest</module>
+      <module>artemis-service-extensions</module>
+      <module>artemis-jdbc-store</module>
+      <module>artemis-maven-plugin</module>
+      <module>artemis-server-osgi</module>
+      <module>artemis-hawtio</module>
+      <module>integration/activemq-spring-integration</module>
+      <module>artemis-distribution</module>
+      <module>artemis-tools</module>
+      <module>tests</module>
+      <module>artemis-features</module>
+   </modules>
+
+   <name>ActiveMQ Artemis Parent</name>
+   <url>http://apache.org/activemq</url>
+
+   <prerequisites>
+      <maven>3.1.0</maven>
+   </prerequisites>
+
+   <properties>
+       <!-- base url for site deployment.  See distribution management for full url.  Override this in settings.xml for staging -->
+      <staging.siteURL>scp://people.apache.org/x1/www/activemq.apache.org</staging.siteURL>
+
+      <karaf.version>4.0.6</karaf.version>
+      <pax.exam.version>4.9.1</pax.exam.version>
+      <commons.config.version>2.1</commons.config.version>
+      <commons.lang.version>3.0</commons.lang.version>
+      <activemq5-version>5.14.5</activemq5-version>
+      <apache.derby.version>10.11.1.1</apache.derby.version>
+      <commons.beanutils.version>1.9.3</commons.beanutils.version>
+      <commons.collections.version>3.2.2</commons.collections.version>
+      <fuse.mqtt.client.version>1.14</fuse.mqtt.client.version>
+      <guava.version>19.0</guava.version>
+      <jboss.logging.version>3.3.1.Final</jboss.logging.version>
+      <jetty.version>9.4.3.v20170317</jetty.version>
+      <jgroups.version>3.6.13.Final</jgroups.version>
+      <maven.assembly.plugin.version>2.4</maven.assembly.plugin.version>
+      <mockito.version>2.8.47</mockito.version>
+      <netty.version>4.1.24.Final</netty.version>
+      <proton.version>0.27.3</proton.version>
+      <resteasy.version>3.0.19.Final</resteasy.version>
+      <slf4j.version>1.7.21</slf4j.version>
+      <qpid.jms.version>0.32.0</qpid.jms.version>
+      <johnzon.version>0.9.5</johnzon.version>
+      <json-p.spec.version>1.0-alpha-1</json-p.spec.version>
+      <javax.inject.version>1</javax.inject.version>
+      <hawtbuff.version>1.11</hawtbuff.version>
+      <jb.logmanager.version>2.0.3.Final</jb.logmanager.version>
+      <jb.slf4j-jboss-logmanager.version>1.0.4.GA</jb.slf4j-jboss-logmanager.version>
+      <airlift.version>0.7</airlift.version>
+      <geronimo.annotation.1.1.spec.version>1.0.1</geronimo.annotation.1.1.spec.version>
+      <geronimo.ejb.3.0.spec.version>1.0.1</geronimo.ejb.3.0.spec.version>
+      <geronimo.jta.1.1.spec.version>1.1.1</geronimo.jta.1.1.spec.version>
+      <geronimo.jms.2.spec.version>1.0-alpha-2</geronimo.jms.2.spec.version>
+      <weld.version>2.4.0.Final</weld.version>
+      <arquillian-weld-embedded.version>2.0.0.Beta3</arquillian-weld-embedded.version>
+      <owb.version>1.7.0</owb.version>
+      <arquillian.version>1.1.11.Final</arquillian.version>
+      <servicemix.json-1.1.spec.version>2.9.0</servicemix.json-1.1.spec.version>
+      <version.org.jacoco>0.7.9</version.org.jacoco>
+      <version.org.jacoco.plugin>0.7.9</version.org.jacoco.plugin>
+      <version.maven.jar.plugin>2.4</version.maven.jar.plugin>
+
+      <!-- used on tests -->
+      <groovy.version>2.4.3</groovy.version>
+
+      <owasp.version>1.4.3</owasp.version>
+      <spring.version>5.0.1.RELEASE</spring.version>
+
+      <activemq.version.versionName>${project.version}</activemq.version.versionName>
+      <activemq.version.majorVersion>1</activemq.version.majorVersion>
+      <activemq.version.minorVersion>0</activemq.version.minorVersion>
+      <activemq.version.microVersion>0</activemq.version.microVersion>
+      <activemq.version.incrementingVersion>129,128,127,126,125,124,123,122</activemq.version.incrementingVersion>
+      <activemq.version.versionTag>${project.version}</activemq.version.versionTag>
+      <ActiveMQ-Version>${project.version}(${activemq.version.incrementingVersion})</ActiveMQ-Version>
+
+      <skipUnitTests>true</skipUnitTests>
+      <skipJmsTests>true</skipJmsTests>
+      <skipExtraTests>true</skipExtraTests>
+      <skipIntegrationTests>true</skipIntegrationTests>
+      <skipCompatibilityTests>true</skipCompatibilityTests>
+      <skipSmokeTests>true</skipSmokeTests>
+      <skipJoramTests>true</skipJoramTests>
+      <skipTimingTests>true</skipTimingTests>
+      <skipStressTests>true</skipStressTests>
+      <skipSoakTests>true</skipSoakTests>
+      <skipPerformanceTests>true</skipPerformanceTests>
+      <skipConcurrentTests>true</skipConcurrentTests>
+      <skipRestTests>true</skipRestTests>
+      <skipActiveMQ5Tests>true</skipActiveMQ5Tests>
+
+      <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+      <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+      <maven.compiler.source>1.8</maven.compiler.source>
+      <maven.compiler.target>1.8</maven.compiler.target>
+
+     <!--
+
+       note for idea users:
+       Idea picks up surefire argline by default:
+       if You don't want it, you can add -Didea.maven.surefire.disable.argLine=true to idea.vmoptions files,
+       see https://intellij-support.jetbrains.com/entries/23395793
+
+       Also see: http://youtrack.jetbrains.com/issue/IDEA-125696
+
+
+       For profiling add this line and use jmc (Java Mission Control) to evaluate the results:
+           -XX:+UnlockCommercialFeatures -XX:+FlightRecorder -XX:StartFlightRecording=delay=30s,duration=120s,filename=/tmp/myrecording.jfr
+
+      -->
+
+      <activemq-surefire-argline>-Djava.util.logging.manager=org.jboss.logmanager.LogManager
+         -Dlogging.configuration="file:${activemq.basedir}/tests/config/logging.properties"
+         -Djava.library.path="${activemq.basedir}/artemis-native/bin" -Djgroups.bind_addr=localhost -Dorg.apache.activemq.artemis.api.core.UDPBroadcastEndpointFactory.localBindAddress=localhost
+         -Djava.net.preferIPv4Stack=true -Dbasedir=${basedir}
+      </activemq-surefire-argline>
+      <activemq.basedir>${project.basedir}</activemq.basedir>
+      <skipLicenseCheck>true</skipLicenseCheck>
+      <skipStyleCheck>true</skipStyleCheck>
+      <skipOWASP>true</skipOWASP>
+
+      <javac-compiler-id>javac-with-errorprone</javac-compiler-id>
+
+      <directory-version>2.0.0-M15</directory-version>
+      <directory-jdbm2-version>2.0.0-M1</directory-jdbm2-version>
+
+      <cdi-api.version>1.2</cdi-api.version>
+      <geronimo-annotation_1.2_spec.version>1.0</geronimo-annotation_1.2_spec.version>
+
+      <netty-transport-native-epoll-classifier>linux-x86_64</netty-transport-native-epoll-classifier>
+      <netty-transport-native-kqueue-classifier>osx-x86_64</netty-transport-native-kqueue-classifier>
+
+      <!-- Ignore failed tests by default because there are "known" failures in the full test-suite.
+           This will be set to false for the "fast-tests" profile as none of those tests should fail. -->
+      <testFailureIgnore>true</testFailureIgnore>
+   </properties>
+
+   <scm>
+      <connection>scm:git:http://git-wip-us.apache.org/repos/asf/activemq-artemis.git</connection>
+      <developerConnection>scm:git:https://git-wip-us.apache.org/repos/asf/activemq-artemis.git</developerConnection>
+      <url>https://fisheye6.atlassian.com/browse/~br=master/activemq-artemis-git</url>
+      <tag>1.0.0-SNAPSHOT</tag>
+   </scm>
+
+   <distributionManagement>
+      <site>
+         <!-- this needs to match a server in your settings.xml with upload settings -->
+         <id>activemq-website</id>
+         <!-- set the staging.siteURL in your ~/.m2/settings.xml in a release or other profile -->
+         <url>${staging.siteURL}/maven/${project.version}</url>
+         <!--<url>${site-repo-url}</url>-->
+      </site>
+      <snapshotRepository>
+         <id>apache.snapshots.https</id>
+         <name>Apache Development Snapshot Repository</name>
+         <url>https://repository.apache.org/content/repositories/snapshots</url>
+         <uniqueVersion>false</uniqueVersion>
+      </snapshotRepository>
+   </distributionManagement>
+
+   <issueManagement>
+      <system>JIRA</system>
+      <url>https://issues.apache.org/jira/browse/ARTEMIS</url>
+   </issueManagement>
+   <developers>
+       <developer>
+           <name>The Apache ActiveMQ Team</name>
+           <email>dev@activemq.apache.org</email>
+           <url>http://activemq.apache.org</url>
+           <organization>Apache Software Foundation</organization>
+           <organizationUrl>http://apache.org/</organizationUrl>
+       </developer>
+   </developers>
+    <mailingLists>
+        <mailingList>
+            <name>User List</name>
+            <subscribe>users-subscribe@activemq.apache.org</subscribe>
+            <unsubscribe>users-unsubscribe@activemq.apache.org</unsubscribe>
+            <post>users@activemq.apache.org</post>
+        </mailingList>
+        <mailingList>
+            <name>Development List</name>
+            <subscribe>dev-subscribe@activemq.apache.org</subscribe>
+            <unsubscribe>dev-unsubscribe@activemq.apache.org</unsubscribe>
+            <post>dev@activemq.apache.org</post>
+        </mailingList>
+    </mailingLists>
+
+   <dependencyManagement>
+      <dependencies>
+         <!-- ## Test Dependencies ## Note: Junit is required in certain module tests.  We should control versions from here. -->
+         <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.11</version>
+            <scope>test</scope>
+            <!-- License: CPL 1.0 -->
+            <!-- There are newer versions of the JUnit but they break our tests -->
+         </dependency>
+         <dependency>
+            <groupId>org.easymock</groupId>
+            <artifactId>easymock</artifactId>
+            <version>3.2</version>
+            <scope>test</scope>
+         </dependency>
+
+         <!-- ### For MQTT Tests && Examples -->
+         <dependency>
+            <groupId>org.fusesource.mqtt-client</groupId>
+            <artifactId>mqtt-client</artifactId>
+            <version>${fuse.mqtt.client.version}</version>
+            <!-- Apache v2.0 License -->
+         </dependency>
+         <dependency>
+            <groupId>org.apache.derby</groupId>
+            <artifactId>derby</artifactId>
+            <version>${apache.derby.version}</version>
+            <scope>test</scope>
+         </dependency>
+         <dependency>
+            <groupId>org.eclipse.paho</groupId>
+            <artifactId>mqtt-client</artifactId>
+            <version>0.4.0</version>
+            <scope>test</scope>
+            <!-- Eclipse Public License - v 1.0 -->
+         </dependency>
+
+         <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>9.4-1205-jdbc4</version>
+            <scope>provided</scope>
+            <!-- postgresql license -->
+         </dependency>
+
+         <dependency>
+            <groupId>commons-collections</groupId>
+            <artifactId>commons-collections-testframework</artifactId>
+            <version>${commons.collections.version}</version>
+            <!-- License: Apache 2.0 -->
+         </dependency>
+
+         <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-core</artifactId>
+            <version>${mockito.version}</version>
+            <scope>test</scope>
+            <!-- License: MIT -->
+         </dependency>
+         <!-- ## End Test Dependencies ## -->
+
+         <!-- ### Build Time Dependencies ### -->
+         <!-- This is a build dependency of this project, but is not needed at compile or runtime by other
+         projects that depend on this project. This should be in the compiler plugin but can't because of a bug,
+         see https://issues.apache.org/jira/browse/MCOMPILER-203-->
+         <dependency>
+            <groupId>org.jboss.logging</groupId>
+            <artifactId>jboss-logging-processor</artifactId>
+            <version>2.1.0.Final</version>
+            <optional>true</optional>
+            <!-- License: LGPL-->
+         </dependency>
+         <dependency>
+            <groupId>org.jboss.logging</groupId>
+            <artifactId>jboss-logging-annotations</artifactId>
+            <version>2.1.0.Final</version>
+            <scope>provided</scope>
+            <optional>true</optional>
+            <!-- License: Apache 2.0-->
+         </dependency>
+         <!--needed to compile the logging jar-->
+         <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.16</version>
+            <scope>compile</scope>
+            <!-- License: Apache 2.0 -->
+         </dependency>
+         <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+            <version>${spring.version}</version>
+            <scope>compile</scope>
+            <!-- License: Apache 2.0 -->
+         </dependency>
+         <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-beans</artifactId>
+            <version>${spring.version}</version>
+            <scope>compile</scope>
+            <!-- License: Apache 2.0 -->
+         </dependency>
+         <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>${spring.version}</version>
+            <scope>compile</scope>
+            <!-- License: Apache 2.0 -->
+         </dependency>
+         <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jms</artifactId>
+            <version>${spring.version}</version>
+            <scope>compile</scope>
+            <!-- License: Apache 2.0 -->
+         </dependency>
+         <!-- ### End Build Time Dependencies ### -->
+
+         <dependency>
+            <groupId>org.owasp</groupId>
+            <artifactId>dependency-check-core</artifactId>
+            <version>${owasp.version}</version>
+            <!-- License: Apache 2.0 -->
+         </dependency>
+         <dependency>
+            <groupId>org.owasp</groupId>
+            <artifactId>dependency-check-utils</artifactId>
+            <version>${owasp.version}</version>
+            <!-- License: Apache 2.0 -->
+         </dependency>
+
+         <!-- ### Run Time Dependencies: MUST NOT INCLUDE CAT X LICENSES ###-->
+         <dependency>
+            <groupId>javax.inject</groupId>
+            <artifactId>javax.inject</artifactId>
+            <version>${javax.inject.version}</version>
+         </dependency>
+         <dependency>
+            <groupId>org.fusesource.hawtbuf</groupId>
+            <artifactId>hawtbuf</artifactId>
+            <version>${hawtbuff.version}</version>
+            <!-- License: Apache 2.0 -->
+         </dependency>
+         <dependency>
+            <groupId>org.jboss.logging</groupId>
+            <artifactId>jboss-logging</artifactId>
+            <version>${jboss.logging.version}</version>
+            <!-- License: Apache 2.0 -->
+         </dependency>
+         <dependency>
+            <groupId>org.jboss.logmanager</groupId>
+            <artifactId>jboss-logmanager</artifactId>
+            <version>${jb.logmanager.version}</version>
+            <!-- License: Apache 2.0 -->
+         </dependency>
+         <dependency>
+            <groupId>org.jboss.slf4j</groupId>
+            <artifactId>slf4j-jboss-logmanager</artifactId>
+            <version>${jb.slf4j-jboss-logmanager.version}</version>
+            <!-- License: Apache 2.0 -->
+         </dependency>
+         <dependency>
+            <groupId>net.java.dev.javacc</groupId>
+            <artifactId>javacc</artifactId>
+            <version>4.0</version>
+            <!-- License: BSD -->
+         </dependency>
+         <dependency>
+            <groupId>org.apache.geronimo.specs</groupId>
+            <artifactId>geronimo-jms_2.0_spec</artifactId>
+            <version>${geronimo.jms.2.spec.version}</version>
+            <!-- License: Apache 2.0 -->
+         </dependency>
+
+         <dependency>
+            <groupId>commons-collections</groupId>
+            <artifactId>commons-collections</artifactId>
+            <version>${commons.collections.version}</version>
+            <!-- License: Apache 2.0 -->
+         </dependency>
+         <dependency>
+             <groupId>org.apache.commons</groupId>
+             <artifactId>commons-configuration2</artifactId>
+             <version>${commons.config.version}</version>
+             <!-- License: Apache 2.0 -->
+         </dependency>
+         <dependency>
+             <groupId>org.apache.commons</groupId>
+             <artifactId>commons-lang3</artifactId>
+             <version>${commons.lang.version}</version>
+             <!-- License: Apache 2.0 -->
+         </dependency>
+
+         <!-- End JMS Injection -->
+
+         <!-- ## Examples Dependencies ## -->
+         <dependency>
+             <groupId>org.apache.geronimo.specs</groupId>
+             <artifactId>geronimo-ejb_3.0_spec</artifactId>
+             <version>${geronimo.ejb.3.0.spec.version}</version>
+             <!-- License: Apache 2.0 -->
+         </dependency>
+         <dependency>
+            <groupId>org.apache.geronimo.specs</groupId>
+            <artifactId>geronimo-jta_1.1_spec</artifactId>
+            <version>${geronimo.jta.1.1.spec.version}</version>
+            <!-- License: Apache 2.0 -->
+         </dependency>
+         <dependency>
+             <groupId>org.slf4j</groupId>
+             <artifactId>slf4j-simple</artifactId>
+             <version>${slf4j.version}</version>
+         </dependency>
+         <dependency>
+             <groupId>org.slf4j</groupId>
+             <artifactId>slf4j-nop</artifactId>
+             <version>${slf4j.version}</version>
+         </dependency>
+         <dependency>
+             <groupId>org.slf4j</groupId>
+             <artifactId>slf4j-log4j12</artifactId>
+             <version>${slf4j.version}</version>
+         </dependency>
+         <!-- ## End Examples Dependencies ## -->
+
+         <!--needed to compile the bootstrap jar-->
+         <dependency>
+            <groupId>org.jgroups</groupId>
+            <artifactId>jgroups</artifactId>
+            <version>${jgroups.version}</version>
+            <!-- License: Apache 2.0 -->
+         </dependency>
+         <dependency>
+            <groupId>io.airlift</groupId>
+            <artifactId>airline</artifactId>
+            <version>${airlift.version}</version>
+            <!-- License: Apache 2.0 -->
+         </dependency>
+         <!--needed to compile transport jar-->
+         <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-all</artifactId>
+            <version>${netty.version}</version>
+            <!-- License: Apache 2.0 -->
+         </dependency>
+         <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-buffer</artifactId>
+            <version>${netty.version}</version>
+            <!-- License: Apache 2.0 -->
+         </dependency>
+         <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-transport</artifactId>
+            <version>${netty.version}</version>
+            <!-- License: Apache 2.0 -->
+         </dependency>
+         <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-handler</artifactId>
+            <version>${netty.version}</version>
+            <!-- License: Apache 2.0 -->
+         </dependency>
+         <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-codec</artifactId>
+            <version>${netty.version}</version>
+            <!-- License: Apache 2.0 -->
+         </dependency>
+         <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-common</artifactId>
+            <version>${netty.version}</version>
+            <!-- License: Apache 2.0 -->
+         </dependency>
+         <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-transport-native-epoll</artifactId>
+            <version>${netty.version}</version>
+            <classifier>${netty-transport-native-epoll-classifier}</classifier>
+            <!-- License: Apache 2.0 -->
+         </dependency>
+         <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-transport-native-kqueue</artifactId>
+            <version>${netty.version}</version>
+            <classifier>${netty-transport-native-kqueue-classifier}</classifier>
+            <!-- License: Apache 2.0 -->
+         </dependency>
+         <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-codec-http</artifactId>
+            <version>${netty.version}</version>
+            <!-- License: Apache 2.0 -->
+         </dependency>
+         <dependency>
+            <groupId>org.apache.qpid</groupId>
+            <artifactId>proton-j</artifactId>
+            <version>${proton.version}</version>
+            <!-- License: Apache 2.0 -->
+         </dependency>
+         <dependency>
+            <groupId>org.apache.activemq</groupId>
+            <artifactId>activemq-client</artifactId>
+            <version>${activemq5-version}</version>
+            <!-- License: Apache 2.0 -->
+         </dependency>
+         <dependency>
+           <groupId>org.slf4j</groupId>
+           <artifactId>slf4j-api</artifactId>
+           <version>${slf4j.version}</version>
+           <!-- License: MIT -->
+         </dependency>
+         <!-- json -->
+         <dependency>
+            <groupId>org.apache.geronimo.specs</groupId>
+            <artifactId>geronimo-json_1.0_spec</artifactId>
+            <version>${json-p.spec.version}</version>
+         </dependency>
+         <dependency>
+            <groupId>org.apache.johnzon</groupId>
+            <artifactId>johnzon-core</artifactId>
+            <version>${johnzon.version}</version>
+         </dependency>
+
+         <!--needed for the rest support-->
+         <dependency>
+            <groupId>org.jboss.resteasy</groupId>
+            <artifactId>resteasy-jaxrs</artifactId>
+            <version>${resteasy.version}</version>
+            <exclusions>
+               <exclusion>
+                  <!-- We exclude this dep as it is GPL licensed.  Instead we include the Geronimo annotations -->
+                  <groupId>org.jboss.spec.javax.annotation</groupId>
+                  <artifactId>jboss-annotations-api_1.1_spec</artifactId>
+               </exclusion>
+            </exclusions>
+            <!-- License: Apache 2.0 -->
+         </dependency>
+         <dependency>
+            <groupId>org.jboss.resteasy</groupId>
+            <artifactId>resteasy-jaxb-provider</artifactId>
+            <version>${resteasy.version}</version>
+            <exclusions>
+               <exclusion>
+                  <!-- We exclude this dep as it is GPL licensed.  Instead we include the Geronimo annotations -->
+                  <groupId>org.jboss.spec.javax.annotation</groupId>
+                  <artifactId>jboss-annotations-api_1.1_spec</artifactId>
+               </exclusion>
+            </exclusions>
+            <!-- License: Apache 2.0 -->
+         </dependency>
+         <dependency>
+            <groupId>org.jboss.resteasy</groupId>
+            <artifactId>resteasy-jackson-provider</artifactId>
+            <version>${resteasy.version}</version>
+            <exclusions>
+               <exclusion>
+                  <!-- We exclude this dep as it is GPL licensed.  Instead we include the Geronimo annotations -->
+                  <groupId>org.jboss.spec.javax.annotation</groupId>
+                  <artifactId>jboss-annotations-api_1.1_spec</artifactId>
+               </exclusion>
+            </exclusions>
+            <!-- License: Apache 2.0 -->
+         </dependency>
+         <dependency>
+            <groupId>org.jboss.resteasy</groupId>
+            <artifactId>resteasy-atom-provider</artifactId>
+            <version>${resteasy.version}</version>
+            <exclusions>
+               <exclusion>
+                  <!-- We exclude this dep as it is GPL licensed.  Instead we include the Geronimo annotations -->
+                  <groupId>org.jboss.spec.javax.annotation</groupId>
+                  <artifactId>jboss-annotations-api_1.1_spec</artifactId>
+               </exclusion>
+            </exclusions>
+            <!-- License: Apache 2.0 -->
+         </dependency>
+         <dependency>
+            <groupId>org.jboss.resteasy</groupId>
+            <artifactId>tjws</artifactId>
+            <version>${resteasy.version}</version>
+            <exclusions>
+               <exclusion>
+                  <!-- We exclude this dep as it is GPL licensed.  Instead we include the Geronimo annotations -->
+                  <groupId>org.jboss.spec.javax.annotation</groupId>
+                  <artifactId>jboss-annotations-api_1.1_spec</artifactId>
+               </exclusion>
+            </exclusions>
+            <!-- License: Apache 2.0 -->
+         </dependency>
+
+         <!-- Replacement for jboss annotations -->
+         <dependency>
+            <groupId>org.apache.geronimo.specs</groupId>
+            <artifactId>geronimo-annotation_1.1_spec</artifactId>
+            <version>${geronimo.annotation.1.1.spec.version}</version>
+            <!-- License: Apache 2.0 -->
+         </dependency>
+
+         <!-- ## Jetty web Dependencies ##-->
+         <dependency>
+            <groupId>org.eclipse.jetty.aggregate</groupId>
+            <artifactId>jetty-all</artifactId>
+            <version>${jetty.version}</version>
+            <type>jar</type>
+            <classifier>uber</classifier>
+            <!-- License: (Joint): Apache 2.0 & EPL 1.0 -->
+        </dependency>
+         <dependency>
+            <groupId>org.apache.tomcat</groupId>
+            <artifactId>tomcat-servlet-api</artifactId>
+            <version>8.5.5</version>
+         </dependency>
+         <!-- ## End Jetty Wed Dependencies ## -->
+
+         <dependency>
+            <groupId>org.apache.geronimo.specs</groupId>
+            <artifactId>geronimo-j2ee-connector_1.5_spec</artifactId>
+            <version>2.0.0</version>
+            <!-- License: Apache 2.0 -->
+         </dependency>
+
+         <!-- for URL reflection. Using Populate on URI Factory at activemq-commons -->
+         <dependency>
+            <groupId>commons-beanutils</groupId>
+            <artifactId>commons-beanutils</artifactId>
+            <version>${commons.beanutils.version}</version>
+            <!-- License: Apache 2.0 -->
+         </dependency>
+
+         <!-- needed by commons-beanutils-->
+         <dependency>
+            <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
+            <version>1.2</version>
+            <!-- License: Apache 2.0 -->
+         </dependency>
+
+         <!-- needed by artemis-selector -->
+         <dependency>
+            <groupId>xml-apis</groupId>
+            <artifactId>xml-apis</artifactId>
+            <version>2.0.2</version>
+         </dependency>
+         <dependency>
+            <groupId>xalan</groupId>
+            <artifactId>xalan</artifactId>
+            <version>2.7.2</version>
+         </dependency>
+
+         <dependency>
+            <groupId>org.apache.openwebbeans</groupId>
+            <artifactId>openwebbeans-impl</artifactId>
+            <version>${owb.version}</version>
+            <scope>test</scope>
+         </dependency>
+         <dependency>
+            <groupId>org.apache.openwebbeans</groupId>
+            <artifactId>openwebbeans-spi</artifactId>
+            <version>${owb.version}</version>
+            <scope>test</scope>
+         </dependency>
+         <dependency>
+            <groupId>org.apache.openwebbeans</groupId>
+            <artifactId>openwebbeans-resource</artifactId>
+            <version>${owb.version}</version>
+            <scope>test</scope>
+         </dependency>
+         <dependency>
+            <groupId>org.apache.openwebbeans.arquillian</groupId>
+            <artifactId>owb-arquillian-standalone</artifactId>
+            <version>${owb.version}</version>
+            <scope>test</scope>
+         </dependency>
+         <dependency>
+            <groupId>org.apache.geronimo.specs</groupId>
+            <artifactId>geronimo-annotation_1.2_spec</artifactId>
+            <version>${geronimo-annotation_1.2_spec.version}</version>
+            <scope>provided</scope>
+         </dependency>
+         <dependency>
+            <groupId>org.jboss.weld.se</groupId>
+            <artifactId>weld-se</artifactId>
+            <version>${weld.version}</version>
+            <scope>test</scope>
+         </dependency>
+         <dependency>
+            <groupId>org.jboss.arquillian.container</groupId>
+            <artifactId>arquillian-weld-embedded</artifactId>
+            <version>${arquillian-weld-embedded.version}</version>
+            <scope>test</scope>
+         </dependency>
+         <dependency>
+            <groupId>org.jboss.arquillian.junit</groupId>
+            <artifactId>arquillian-junit-container</artifactId>
+            <version>${arquillian.version}</version>
+            <scope>test</scope>
+         </dependency>
+         <dependency>
+            <groupId>org.jboss.arquillian.junit</groupId>
+            <artifactId>arquillian-junit-core</artifactId>
+            <version>${arquillian.version}</version>
+            <scope>test</scope>
+         </dependency>
+         <dependency>
+             <groupId>org.jacoco</groupId>
+             <artifactId>org.jacoco.ant</artifactId>
+             <version>${version.org.jacoco}</version>
+             <scope>test</scope>
+         </dependency>
+         <dependency>
+             <groupId>org.jacoco</groupId>
+             <artifactId>org.jacoco.core</artifactId>
+             <version>${version.org.jacoco}</version>
+             <scope>test</scope>
+         </dependency>
+         <dependency>
+            <groupId>javax.enterprise</groupId>
+            <artifactId>cdi-api</artifactId>
+            <version>${cdi-api.version}</version>
+            <scope>provided</scope>
+         </dependency>
+         <!--  OSGi support -->
+         <dependency>
+            <groupId>org.osgi</groupId>
+            <artifactId>org.osgi.core</artifactId>
+            <version>6.0.0</version>
+            <scope>provided</scope>
+            <!-- License: Apache 2.0 -->
+         </dependency>
+         <dependency>
+            <groupId>org.osgi</groupId>
+            <artifactId>osgi.cmpn</artifactId>
+            <version>6.0.0</version>
+            <scope>provided</scope>
+            <!-- License: Apache 2.0 -->
+         </dependency>
+      </dependencies>
+   </dependencyManagement>
+
+   <profiles>
+       <profile>
+           <id>M2E</id>
+           <activation>
+               <property>
+                   <name>m2e.version</name>
+               </property>
+           </activation>
+           <properties>
+               <javac-compiler-id>javac</javac-compiler-id>
+           </properties>
+        </profile>
+      <!-- Google Error Prone has issues with IBM JDK 8 -->
+      <!-- See ARTEMIS-861 -->
+      <profile>
+         <id>ibm-jdk8</id>
+         <activation>
+            <jdk>1.8</jdk>
+            <property>
+               <name>java.vendor</name>
+               <value>IBM Corporation</value>
+            </property>
+         </activation>
+         <build>
+            <plugins>
+               <plugin>
+                  <groupId>org.apache.maven.plugins</groupId>
+                  <artifactId>maven-javadoc-plugin</artifactId>
+                  <configuration>
+                     <additionalparam>-Xdoclint:none</additionalparam>
+                  </configuration>
+               </plugin>
+               <plugin>
+                  <groupId>org.apache.maven.plugins</groupId>
+                  <artifactId>maven-compiler-plugin</artifactId>
+                  <!-- version 3.2 is having problems with the APT processor resulting in
+                    java.lang.IllegalStateException: endPosTable already set  -->
+                  <version>3.1</version>
+                  <configuration combine.self="override" />
+               </plugin>
+               <plugin>
+                  <groupId>org.apache.maven.plugins</groupId>
+                  <artifactId>maven-surefire-plugin</artifactId>
+                  <configuration>
+                     <systemPropertyVariables>
+                        <com.ibm.jsse2.overrideDefaultTLS>true</com.ibm.jsse2.overrideDefaultTLS>
+                     </systemPropertyVariables>
+                  </configuration>
+               </plugin>
+            </plugins>
+         </build>
+      </profile>
+      <profile>
+         <id>jdk18</id>
+         <activation>
+            <jdk>1.8</jdk>
+         </activation>
+         <build>
+            <plugins>
+               <plugin>
+                  <groupId>org.apache.maven.plugins</groupId>
+                  <artifactId>maven-javadoc-plugin</artifactId>
+                  <configuration>
+                     <additionalparam>-Xdoclint:none</additionalparam>
+                  </configuration>
+               </plugin>
+            </plugins>
+         </build>
+      </profile>
+      <profile>
+         <id>owasp</id>
+         <properties>
+            <skipOWASP>false</skipOWASP>
+         </properties>
+      </profile>
+      <profile>
+         <id>dev</id>
+         <modules>
+            <module>artemis-boot</module>
+            <module>artemis-dto</module>
+            <module>artemis-web</module>
+            <module>artemis-cli</module>
+            <module>artemis-commons</module>
+            <module>artemis-selector</module>
+            <module>artemis-core-client</module>
+            <module>artemis-server</module>
+            <module>artemis-jms-client</module>
+            <module>artemis-jms-server</module>
+            <module>artemis-native</module>
+            <module>artemis-protocols</module>
+            <module>artemis-journal</module>
+            <module>artemis-jdbc-store</module>
+            <module>artemis-ra</module>
+            <module>artemis-rest</module>
+            <module>artemis-service-extensions</module>
+            <module>artemis-maven-plugin</module>
+            <module>artemis-jdbc-store</module>
+            <module>integration/activemq-spring-integration</module>
+            <module>tests</module>
+         </modules>
+         <properties>
+            <skipStyleCheck>false</skipStyleCheck>
+            <skipLicenseCheck>false</skipLicenseCheck>
+         </properties>
+      </profile>
+      <profile>
+         <id>distro</id>
+         <activation>
+            <activeByDefault>true</activeByDefault>
+         </activation>
+      </profile>
+      <profile>
+         <id>release</id>
+         <modules>
+            <module>artemis-dto</module>
+            <module>artemis-web</module>
+            <module>artemis-website</module>
+            <module>artemis-cli</module>
+            <module>artemis-commons</module>
+            <module>artemis-selector</module>
+            <module>artemis-core-client</module>
+            <module>artemis-server</module>
+            <module>artemis-jms-client</module>
+            <module>artemis-jms-client-all</module>
+            <module>artemis-jms-server</module>
+            <module>artemis-native</module>
+            <module>artemis-journal</module>
+            <module>artemis-jdbc-store</module>
+            <module>artemis-ra</module>
+            <module>artemis-rest</module>
+            <module>artemis-service-extensions</module>
+            <module>artemis-maven-plugin</module>
+            <module>integration/activemq-spring-integration</module>
+            <module>examples</module>
+            <module>tests</module>
+            <module>artemis-distribution</module>
+         </modules>
+         <properties>
+            <skipStyleCheck>false</skipStyleCheck>
+            <skipLicenseCheck>false</skipLicenseCheck>
+         </properties>
+         <build>
+            <plugins>
+               <plugin>
+                  <groupId>org.apache.maven.plugins</groupId>
+                  <artifactId>maven-enforcer-plugin</artifactId>
+                  <version>1.4</version>
+                  <executions>
+                     <execution>
+                        <id>enforce-java</id>
+                        <goals>
+                           <goal>enforce</goal>
+                        </goals>
+                        <configuration>
+                           <rules>
+                              <!-- we need java8 when building the release -->
+                              <requireJavaVersion>
+                                 <version>1.8.0</version>
+                              </requireJavaVersion>
+                           </rules>
+                        </configuration>
+                     </execution>
+                  </executions>
+               </plugin>
+            </plugins>
+         </build>
+      </profile>
+      <profile>
+         <!-- tests is the profile we use to run the entire testsuite
+               Running this entire build could take up to 2 hours -->
+         <id>tests</id>
+         <modules>
+            <module>artemis-dto</module>
+            <module>artemis-web</module>
+            <module>artemis-website</module>
+            <module>artemis-cli</module>
+            <module>artemis-commons</module>
+            <module>artemis-selector</module>
+            <module>artemis-core-client</module>
+            <module>artemis-server</module>
+            <module>artemis-jms-client</module>
+            <module>artemis-jms-server</module>
+            <module>artemis-native</module>
+            <module>artemis-journal</module>
+            <module>artemis-jdbc-store</module>
+            <module>artemis-ra</module>
+            <module>artemis-rest</module>
+            <module>artemis-service-extensions</module>
+            <module>artemis-maven-plugin</module>
+            <module>integration/activemq-spring-integration</module>
+            <module>tests</module>
+         </modules>
+         <properties>
+            <skipUnitTests>false</skipUnitTests>
+            <skipJmsTests>false</skipJmsTests>
+            <skipJoramTests>false</skipJoramTests>
+            <skipIntegrationTests>false</skipIntegrationTests>
+            <skipCompatibilityTests>false</skipCompatibilityTests>
+            <skipSmokeTests>false</skipSmokeTests>
+            <skipTimingTests>true</skipTimingTests>
+            <skipConcurrentTests>false</skipConcurrentTests>
+            <skipRestTests>false</skipRestTests>
+            <skipStressTests>true</skipStressTests>
+            <skipSoakTests>true</skipSoakTests>
+            <skipPerformanceTests>true</skipPerformanceTests>
+            <skipExtraTests>false</skipExtraTests>
+            <skipStyleCheck>false</skipStyleCheck>
+            <skipLicenseCheck>false</skipLicenseCheck>
+         </properties>
+      </profile>
+      <profile>
+         <!-- This will represent a subset of the tests
+              This is used on PR checks -->
+         <id>fast-tests</id>
+         <modules>
+            <module>artemis-dto</module>
+            <module>artemis-cli</module>
+            <module>artemis-commons</module>
+            <module>artemis-selector</module>
+            <module>artemis-core-client</module>
+            <module>artemis-server</module>
+            <module>artemis-jms-client</module>
+            <module>artemis-jms-server</module>
+            <module>artemis-native</module>
+            <module>artemis-journal</module>
+            <module>artemis-jdbc-store</module>
+            <module>artemis-ra</module>
+            <module>artemis-service-extensions</module>
+            <module>artemis-maven-plugin</module>
+            <module>integration/activemq-spring-integration</module>
+            <module>tests</module>
+         </modules>
+         <properties>
+            <skipUnitTests>false</skipUnitTests>
+            <skipJmsTests>false</skipJmsTests>
+            <skipJoramTests>false</skipJoramTests>
+            <skipConcurrentTests>false</skipConcurrentTests>
+            <skipStyleCheck>false</skipStyleCheck>
+            <skipLicenseCheck>false</skipLicenseCheck>
+            <skipCompatibilityTests>false</skipCompatibilityTests>
+            <testFailureIgnore>false</testFailureIgnore>
+         </properties>
+      </profile>
+      <profile>
+         <id>examples</id>
+         <modules>
+            <module>artemis-dto</module>
+            <module>artemis-web</module>
+            <module>artemis-cli</module>
+            <module>artemis-commons</module>
+            <module>artemis-selector</module>
+            <module>artemis-core-client</module>
+            <module>artemis-server</module>
+            <module>artemis-jms-client</module>
+            <module>artemis-jms-server</module>
+            <module>artemis-native</module>
+            <module>artemis-journal</module>
+            <module>artemis-jdbc-store</module>
+            <module>artemis-ra</module>
+            <module>artemis-rest</module>
+            <module>artemis-service-extensions</module>
+            <module>artemis-maven-plugin</module>
+            <module>integration/activemq-spring-integration</module>
+            <module>tests</module>
+            <module>examples</module>
+         </modules>
+         <properties>
+            <skipTests>true</skipTests>
+         </properties>
+      </profile>
+      <!-- This profile generates jacoco coverage files. To generate html report use "-Pjacoco-generate-report" -->
+      <profile>
+         <id>jacoco</id>
+         <dependencies>
+            <dependency>
+               <groupId>org.jacoco</groupId>
+               <artifactId>org.jacoco.core</artifactId>
+            </dependency>
+         </dependencies>
+         <properties>
+
+            <!-- Property set by Jacoco plugin -->
+            <jacoco.agent />
+
+            <activemq-surefire-argline>-Djava.util.logging.manager=org.jboss.logmanager.LogManager
+               -Dlogging.configuration="file:${activemq.basedir}/tests/config/logging.properties"
+               -Djava.library.path="${activemq.basedir}/artemis-native/bin" -Djgroups.bind_addr=localhost -Dorg.apache.activemq.artemis.api.core.UDPBroadcastEndpointFactory.localBindAddress=localhost
+               -Djava.net.preferIPv4Stack=true -Dbasedir=${basedir}
+               @{jacoco.agent} -Djacoco.agent=@{jacoco.agent}
+            </activemq-surefire-argline>
+         </properties>
+         <build>
+            <plugins>
+               <plugin>
+                  <groupId>org.jacoco</groupId>
+                  <artifactId>jacoco-maven-plugin</artifactId>
+                  <executions>
+                     <execution>
+                        <id>jacoco-prepare</id>
+                        <phase>validate</phase>
+                        <goals>
+                           <goal>prepare-agent</goal>
+                        </goals>
+                        <configuration>
+                           <destFile>${project.build.directory}/jacoco.exec</destFile>
+                           <!-- Jacoco sets this property with agent configuration.
+                           This property is passed to maven-surefire-plugin -->
+                           <propertyName>jacoco.agent</propertyName>
+                        </configuration>
+                     </execution>
+                     <execution>
+                        <id>merge</id>
+                        <phase>none</phase>
+                        <goals>
+                           <goal>merge</goal>
+                        </goals>
+                     </execution>
+                  </executions>
+                  <configuration>
+                     <fileSets>
+                        <fileSet implementation="org.apache.maven.shared.model.fileset.FileSet">
+                           <directory>${activemq.basedir}</directory>
+                           <includes>
+                              <include>**/*.exec</include>
+                           </includes>
+                        </fileSet>
+                     </fileSets>
+                  </configuration>
+               </plugin>
+            </plugins>
+         </build>
+      </profile>
+      <!-- This profile generates html report from jacoco coverage files. Use "-Pjacoco" profile to generate coverage. -->
+      <profile>
+         <id>jacoco-generate-report</id>
+         <build>
+            <plugins>
+               <plugin>
+                  <groupId>org.apache.maven.plugins</groupId>
+                  <artifactId>maven-dependency-plugin</artifactId>
+                  <executions>
+                     <!-- Copy jacoco ant jar. This is needed to generate jacoco report with maven-antrun-plugin -->
+                     <execution>
+                        <goals>
+                           <goal>copy</goal>
+                        </goals>
+                        <phase>process-test-resources</phase>
+                        <inherited>false</inherited>
+                        <configuration>
+                           <artifactItems>
+                              <artifactItem>
+                                 <groupId>org.jacoco</groupId>
+                                 <artifactId>org.jacoco.ant</artifactId>
+                                 <version>${version.org.jacoco.plugin}</version>
+                              </artifactItem>
+                           </artifactItems>
+                           <stripVersion>true</stripVersion>
+                           <outputDirectory>${project.build.directory}/jacoco-jars</outputDirectory>
+                        </configuration>
+                     </execution>
+                  </executions>
+               </plugin>
+               <plugin>
+                  <groupId>org.apache.maven.plugins</groupId>
+                  <artifactId>maven-antrun-plugin</artifactId>
+                  <executions>
+                     <execution>
+                        <phase>post-integration-test</phase>
+                        <goals><goal>run</goal></goals>
+                        <inherited>false</inherited>
+                        <configuration>
+                           <target>
+                              <property name="result.report.dir" location="target/jacoco-report" />
+                              <taskdef name="report" classname="org.jacoco.ant.ReportTask">
+                                 <classpath path="${project.build.directory}/jacoco-jars/org.jacoco.ant.jar" />
+                              </taskdef>
+                              <echo>Creating JaCoCo ActiveMQ Artemis test coverage reports...</echo>
+                              <report>
+                                 <executiondata>
+                                    <fileset dir="${basedir}">
+                                       <include name="**/target/jacoco.exec" />
+                                    </fileset>
+                                 </executiondata>
+                                 <structure name="JaCoCo ActiveMQ Artemis">
+                                    <classfiles>
+                                       <fileset dir="${activemq.basedir}/artemis-boot/target/classes" />
+                                       <fileset dir="${activemq.basedir}/artemis-cdi-client/target/classes" />
+                                       <fileset dir="${activemq.basedir}/artemis-cli/target/classes" />
+                                       <fileset dir="${activemq.basedir}/artemis-commons/target/classes" />
+                                       <fileset dir="${activemq.basedir}/artemis-core-client/target/classes" />
+                                       <fileset dir="${activemq.basedir}/artemis-dto/target/classes" />
+                                       <fileset dir="${activemq.basedir}/artemis-jdbc-store/target/classes" />
+                                       <fileset dir="${activemq.basedir}/artemis-jms-client/target/classes" />
+                                       <fileset dir="${activemq.basedir}/artemis-jms-server/target/classes" />
+                                       <fileset dir="${activemq.basedir}/artemis-journal/target/classes" />
+                                       <fileset dir="${activemq.basedir}/artemis-native/target/classes" />
+                                       <fileset dir="${activemq.basedir}/artemis-ra/target/classes" />
+                                       <fileset dir="${activemq.basedir}/artemis-rest/target/classes" />
+                                       <fileset dir="${activemq.basedir}/artemis-selector/target/classes" />
+                                       <fileset dir="${activemq.basedir}/artemis-server/target/classes" />
+                                       <fileset dir="${activemq.basedir}/artemis-server-osgi/target/classes" />
+                                       <fileset dir="${activemq.basedir}/artemis-service-extensions/target" />
+                                       <fileset dir="${activemq.basedir}/artemis-tools/target/classes" />
+                                       <fileset dir="${activemq.basedir}/artemis-web/target/classes" />
+                                    </classfiles>
+                                    <sourcefiles encoding="UTF-8">
+                                       <fileset dir="${activemq.basedir}/artemis-boot/src/main/java" />
+                                       <fileset dir="${activemq.basedir}/artemis-cdi-client/src/main/java" />
+                                       <fileset dir="${activemq.basedir}/artemis-cli/src/main/java" />
+                                       <fileset dir="${activemq.basedir}/artemis-commons/src/main/java" />
+                                       <fileset dir="${activemq.basedir}/artemis-core-client/src/main/java" />
+                                       <fileset dir="${activemq.basedir}/artemis-dto/src/main/java" />
+                                       <fileset dir="${activemq.basedir}/artemis-jdbc-store/src/main/java" />
+                                       <fileset dir="${activemq.basedir}/artemis-jms-client/src/main/java" />
+                                       <fileset dir="${activemq.basedir}/artemis-jms-server/src/main/java" />
+                                       <fileset dir="${activemq.basedir}/artemis-journal/src/main/java" />
+                                       <fileset dir="${activemq.basedir}/artemis-native/src/main/java" />
+                                       <fileset dir="${activemq.basedir}/artemis-ra/src/main/java" />
+                                       <fileset dir="${activemq.basedir}/artemis-rest/src/main/java" />
+                                       <fileset dir="${activemq.basedir}/artemis-selector/src/main/java" />
+                                       <fileset dir="${activemq.basedir}/artemis-server/src/main/java" />
+                                       <fileset dir="${activemq.basedir}/artemis-server-osgi/src/main/java" />
+                                       <fileset dir="${activemq.basedir}/artemis-service-extensions/src/main/java" />
+                                       <fileset dir="${activemq.basedir}/artemis-tools/src/main/java" />
+                                       <fileset dir="${activemq.basedir}/artemis-web/src/main/java" />
+                                    </sourcefiles>
+                                 </structure>
+                                 <html destdir="\${result.report.dir}" />
+                                 <xml destfile="\${result.report.dir}/report.xml" />
+                              </report>
+                           </target>
+                        </configuration>
+                     </execution>
+                  </executions>
+                  <dependencies>
+                     <dependency>
+                        <groupId>org.jacoco</groupId>
+                        <artifactId>org.jacoco.ant</artifactId>
+                        <version>${version.org.jacoco.plugin}</version>
+                     </dependency>
+                  </dependencies>
+               </plugin>
+            </plugins>
+         </build>
+      </profile>
+   </profiles>
+
+   <build>
+      <pluginManagement>
+         <plugins>
+         <plugin>
+            <groupId>org.eclipse.m2e</groupId>
+            <artifactId>lifecycle-mapping</artifactId>
+            <version>1.0.0</version>
+            <configuration>
+               <lifecycleMappingMetadata>
+                  <pluginExecutions>
+                     <pluginExecution>
+                        <pluginExecutionFilter>
+                           <groupId>org.apache.rat</groupId>
+                           <artifactId>apache-rat-plugin</artifactId>
+                           <versionRange>[0.12,)</versionRange>
+                           <goals>
+                              <goal>check</goal>
+                           </goals>
+                        </pluginExecutionFilter>
+                        <action>
+                           <ignore />
+                        </action>
+                     </pluginExecution>
+                     <pluginExecution>
+                        <pluginExecutionFilter>
+                           <groupId>
+                              org.apache.servicemix.tooling
+                           </groupId>
+                           <artifactId>
+                              depends-maven-plugin
+                           </artifactId>
+                           <versionRange>
+                              [1.2,)
+                           </versionRange>
+                           <goals>
+                              <goal>
+                                 generate-depends-file
+                              </goal>
+                           </goals>
+                        </pluginExecutionFilter>
+                        <action>
+                           <ignore />
+                        </action>
+                     </pluginExecution>
+                  </pluginExecutions>
+               </lifecycleMappingMetadata>
+            </configuration>
+         </plugin>
+            <plugin>
+              <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-enforcer-plugin</artifactId>
+              <version>1.4.1</version>
+              <executions>
+                <execution>
+                  <id>enforce-maven</id>
+                  <goals>
+                    <goal>enforce</goal>
+                  </goals>
+                  <configuration>
+                    <rules>
+                      <requireMavenVersion>
+                        <version>3.1</version>
+                      </requireMavenVersion>
+                    </rules>
+                  </configuration>
+                </execution>
+              </executions>
+            </plugin>
+            <plugin>
+               <groupId>org.codehaus.mojo</groupId>
+                  <artifactId>javacc-maven-plugin</artifactId>
+               <version>2.6</version>
+               <executions>
+                  <execution>
+                     <id>javacc</id>
+                     <goals>
+                        <goal>javacc</goal>
+                     </goals>
+                  </execution>
+               </executions>
+            </plugin>
+            <plugin>
+               <groupId>org.apache.maven.plugins</groupId>
+               <artifactId>maven-compiler-plugin</artifactId>
+               <!-- version 3.2 is having problems with the APT processor resulting in
+                    java.lang.IllegalStateException: endPosTable already set  -->
+               <version>3.1</version>
+               <!-- Enable Google's Error-Prone https://github.com/google/error-prone -->
+               <configuration>
+                 <showWarnings>true</showWarnings>
+                 <forceJavacCompilerUse>true</forceJavacCompilerUse>
+                 <compilerId>${javac-compiler-id}</compilerId>
+                 <compilerArgs>
+                    <arg>-Xep:MissingOverride:ERROR</arg>
+                    <arg>-Xep:NonAtomicVolatileUpdate:ERROR</arg>
+                    <arg>-Xep:SynchronizeOnNonFinalField:ERROR</arg>
+                    <arg>-Xep:StaticAccessedFromInstance:ERROR</arg>
+                    <arg>-Xep:SynchronizeOnNonFinalField:ERROR</arg>
+                    <arg>-Xep:WaitNotInLoop:ERROR</arg>
+                    <arg>-Xdiags:verbose</arg>
+                 </compilerArgs>
+               </configuration>
+               <dependencies>
+                 <dependency>
+                   <groupId>org.codehaus.plexus</groupId>
+                   <artifactId>plexus-compiler-javac-errorprone</artifactId>
+                   <version>2.8</version>
+                 </dependency>
+                 <dependency>
+                   <groupId>com.google.errorprone</groupId>
+                   <artifactId>error_prone_core</artifactId>
+                   <version>2.0.9</version>
+                 </dependency>
+               </dependencies>
+            </plugin>
+            <plugin>
+               <groupId>org.apache.maven.plugins</groupId>
+               <artifactId>maven-clean-plugin</artifactId>
+               <version>2.5</version>
+            </plugin>
+            <plugin>
+               <groupId>org.apache.maven.plugins</groupId>
+               <artifactId>maven-javadoc-plugin</artifactId>
+
+               <version>2.9</version>
+            </plugin>
+            <plugin>
+               <groupId>org.apache.maven.plugins</groupId>
+               <artifactId>maven-rar-plugin</artifactId>
+               <version>2.3</version>
+            </plugin>
+            <plugin>
+               <groupId>org.apache.maven.plugins</groupId>
+               <artifactId>maven-jar-plugin</artifactId>
+               <version>${version.maven.jar.plugin}</version>
+            </plugin>
+            <plugin>
+               <groupId>net.sf.maven-sar</groupId>
+               <artifactId>maven-sar-plugin</artifactId>
+               <version>1.0</version>
+            </plugin>
+            <plugin>
+               <groupId>org.apache.maven.plugins</groupId>
+               <artifactId>maven-site-plugin</artifactId>
+               <version>3.3</version>
+            </plugin>
+            <plugin>
+               <groupId>org.apache.maven.plugins</groupId>
+               <artifactId>maven-shade-plugin</artifactId>
+               <version>2.1</version>
+            </plugin>
+            <plugin>
+               <groupId>org.eclipse.jetty</groupId>
+               <artifactId>jetty-maven-plugin</artifactId>
+               <version>${jetty.version}</version>
+            </plugin>
+            <plugin>
+               <groupId>org.apache.maven.plugins</groupId>
+               <artifactId>maven-deploy-plugin</artifactId>
+               <version>2.7</version>
+            </plugin>
+
+            <plugin>
+               <inherited>true</inherited>
+               <groupId>org.apache.maven.plugins</groupId>
+               <artifactId>maven-source-plugin</artifactId>
+               <version>2.2.1</version>
+               <executions>
+                  <execution>
+                     <id>attach-sources</id>
+                     <goals>
+                        <goal>jar</goal>
+                     </goals>
+                  </execution>
+               </executions>
+            </plugin>
+            <plugin>
+               <groupId>org.apache.maven.plugins</groupId>
+               <artifactId>maven-surefire-plugin</artifactId>
+               <version>2.18.1</version>
+               <configuration>
+                  <forkMode>once</forkMode>
+                  <testFailureIgnore>${testFailureIgnore}</testFailureIgnore>
+                  <runOrder>alphabetical</runOrder>
+                  <redirectTestOutputToFile>false</redirectTestOutputToFile>
+                  <argLine>${activemq-surefire-argline}</argLine>
+               </configuration>
+            </plugin>
+            <plugin>
+               <groupId>org.apache.maven.plugins</groupId>
+               <artifactId>maven-surefire-report-plugin</artifactId>
+               <version>2.18.1</version>
+            </plugin>
+            <plugin>
+               <groupId>org.apache.maven.plugins</groupId>
+               <artifactId>maven-install-plugin</artifactId>
+               <version>2.4</version>
+               <configuration>
+                  <createChecksum>true</createChecksum>
+               </configuration>
+            </plugin>
+            <plugin>
+               <groupId>org.apache.maven.plugins</groupId>
+               <artifactId>maven-pmd-plugin</artifactId>
+               <version>3.6</version>
+               <configuration>
+                  <linkXRef>true</linkXRef>
+                  <minimumTokens>100</minimumTokens>
+               </configuration>
+            </plugin>
+            <plugin>
+               <groupId>org.codehaus.mojo</groupId>
+               <artifactId>build-helper-maven-plugin</artifactId>
+               <version>1.8</version>
+            </plugin>
+            <plugin>
+               <groupId>org.codehaus.mojo</groupId>
+               <artifactId>xml-maven-plugin</artifactId>
+               <version>1.0</version>
+            </plugin>
+            <plugin>
+               <groupId>org.codehaus.mojo</groupId>
+               <artifactId>cobertura-maven-plugin</artifactId>
+               <configuration />
+               <executions>
+                  <execution>
+                     <goals>
+                        <goal>clean</goal>
+                     </goals>
+                  </execution>
+               </executions>
+            </plugin>
+            <plugin>
+               <groupId>org.apache.maven.plugins</groupId>
+               <artifactId>maven-resources-plugin</artifactId>
+               <version>2.6</version>
+            </plugin>
+            <!-- Many examples use it -->
+            <plugin>
+               <groupId>org.apache.activemq</groupId>
+               <artifactId>artemis-maven-plugin</artifactId>
+               <version>${project.version}</version>
+            </plugin>
+            <plugin>
+               <groupId>org.jacoco</groupId>
+               <artifactId>jacoco-maven-plugin</artifactId>
+               <version>${version.org.jacoco.plugin}</version>
+            </plugin>
+         </plugins>
+      </pluginManagement>
+
+      <plugins>
+         <plugin>
+           <groupId>org.apache.maven.plugins</groupId>
+           <artifactId>maven-enforcer-plugin</artifactId>
+           <version>1.4</version>
+           <executions>
+             <execution>
+               <id>enforce-java</id>
+               <goals>
+                 <goal>enforce</goal>
+               </goals>
+               <configuration>
+                 <rules>
+                   <requireJavaVersion>
+                     <version>1.8.0</version>
+                   </requireJavaVersion>
+                 </rules>
+               </configuration>
+             </execution>
+           </executions>
+         </plugin>
+         <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-javadoc-plugin</artifactId>
+         </plugin>
+         <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-install-plugin</artifactId>
+            <configuration>
+               <createChecksum>true</createChecksum>
+            </configuration>
+         </plugin>
+         <plugin>
+            <artifactId>maven-source-plugin</artifactId>
+            <executions>
+               <execution>
+                  <phase>verify</phase>
+                  <goals>
+                     <goal>jar</goal>
+                  </goals>
+               </execution>
+            </executions>
+         </plugin>
+         <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-help-plugin</artifactId>
+            <version>2.2</version>
+         </plugin>
+         <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-checkstyle-plugin</artifactId>
+            <version>2.17</version>
+            <dependencies>
+               <dependency>
+                  <groupId>com.github.sevntu-checkstyle</groupId>
+                  <artifactId>sevntu-checkstyle-maven-plugin</artifactId>
+                  <version>1.24.0</version>
+               </dependency>
+               <dependency>
+                  <groupId>com.puppycrawl.tools</groupId>
+                  <artifactId>checkstyle</artifactId>
+                  <version>7.7</version>
+               </dependency>
+            </dependencies>
+            <configuration>
+               <skip>${skipStyleCheck}</skip>
+               <configLocation>${activemq.basedir}/etc/checkstyle.xml</configLocation>
+               <suppressionsLocation>${activemq.basedir}/etc/checkstyle-suppressions.xml</suppressionsLocation>
+               <failsOnError>false</failsOnError>
+               <failOnViolation>true</failOnViolation>
+               <consoleOutput>true</consoleOutput>
+               <includeTestSourceDirectory>true</includeTestSourceDirectory>
+            </configuration>
+            <executions>
+               <execution>
+                  <phase>compile</phase>
+                  <goals>
+                     <goal>check</goal>
+                  </goals>
+               </execution>
+            </executions>
+         </plugin>
+
+         <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>findbugs-maven-plugin</artifactId>
+            <version>2.5.2</version>
+            <configuration>
+               <excludeFilterFile>${user.dir}/etc/findbugs-exclude.xml</excludeFilterFile>
+               <findbugsXmlOutput>true</findbugsXmlOutput>
+               <xmlOutput>true</xmlOutput>
+               <effort>Max</effort>
+               <failOnError>false</failOnError>
+            </configuration>
+         </plugin>
+         <plugin>
+            <groupId>org.apache.rat</groupId>
+            <artifactId>apache-rat-plugin</artifactId>
+            <version>0.12</version>
+            <configuration>
+               <reportFile>${activemq.basedir}/ratReport.txt</reportFile>
+               <skip>${skipLicenseCheck}</skip>
+               <excludes>
+                  <exclude>.travis.yml</exclude>
+                  <exclude>**/footer.html</exclude>
+                  <exclude>**/*.txt</exclude>
+                  <exclude>**/*.md</exclude>
+                  <exclude>etc/ide-settings/**</exclude>
+                  <exclude>docs/**/*.json</exclude>
+                  <exclude>docs/**/_book/</exclude>
+                  <exclude>**/target/</exclude>
+                  <exclude>**/META-INF/services/*</exclude>
+                  <exclude>**/META-INF/MANIFEST.MF</exclude>
+                  <exclude>**/*.iml</exclude>
+                  <exclude>**/*.jceks</exclude>
+                  <exclude>**/*.jks</exclude>
+                  <exclude>**/xml.xsd</exclude>
+                  <exclude>**/org/apache/activemq/artemis/utils/json/**</exclude>
+                  <exclude>**/org/apache/activemq/artemis/utils/Base64.java</exclude>
+                  <exclude>**/.settings/**</exclude>
+                  <exclude>**/.project</exclude>
+                  <exclude>**/.classpath</exclude>
+                  <exclude>**/.editorconfig</exclude>
+                  <exclude>**/.checkstyle</exclude>
+                  <exclude>**/.factorypath</exclude>
+                  <exclude>**/org.apache.activemq.artemis.cfg</exclude>
+                  <exclude>**/nb-configuration.xml</exclude>
+                  <!-- activemq5 unit tests exclude -->
+                  <exclude>**/*.data</exclude>
+                  <exclude>**/*.bin</exclude>
+                  <exclude>**/src/test/resources/keystore</exclude>
+                  <exclude>**/*.log</exclude>
+                  <exclude>**/*.redo</exclude>
+
+                  <!-- NPM files -->
+                  <exclude>**/node/**</exclude>
+                  <exclude>**/node_modules/**</exclude>
+                  <exclude>**/package.json</exclude>
+                  <exclude>**/npm-shrinkwrap.json</exclude>
+
+                  <!-- Build time overlay folder -->
+                  <exclude>**/overlays/**</exclude>
+
+                  <!-- things from cmake on the native build -->
+                  <exclude>**/CMakeFiles/</exclude>
+                  <exclude>**/Makefile</exclude>
+                  <exclude>**/cmake_install.cmake</exclude>
+                  <exclude>artemis-native/src/main/c/org_apache_activemq_artemis_jlibaio_LibaioContext.h</exclude>
+                  <exclude>**/dependency-reduced-pom.xml</exclude>
+
+               </excludes>
+            </configuration>
+            <executions>
+               <execution>
+                  <phase>compile</phase>
+                  <goals>
+                     <goal>check</goal>
+                  </goals>
+               </execution>
+            </executions>
+         </plugin>
+         <plugin>
+            <groupId>org.apache.felix</groupId>
+            <artifactId>maven-bundle-plugin</artifactId>
+            <version>3.0.0</version>
+            <extensions>true</extensions>
+         </plugin>
+         <plugin>
+            <groupId>org.owasp</groupId>
+            <artifactId>dependency-check-maven</artifactId>
+            <version>${owasp.version}</version>
+            <configuration>
+                <skip>${skipOWASP}</skip>
+                <!-- <skipProvidedScope>true</skipProvidedScope>
+                <skipRuntimeScope>true</skipRuntimeScope> -->
+            </configuration>
+            <executions>
+               <execution>
+                  <goals>
+                     <goal>check</goal>
+                  </goals>
+               </execution>
+            </executions>
+         </plugin>
+
+      </plugins>
+   </build>
+
+   <reporting>
+      <plugins>
+         <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>cobertura-maven-plugin</artifactId>
+            <version>2.5.2</version>
+            <configuration>
+               <check />
+               <formats>
+                  <format>html</format>
+                  <format>xml</format>
+               </formats>
+            </configuration>
+         </plugin>
+         <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-checkstyle-plugin</artifactId>
+            <version>2.17</version>
+            <configuration>
+               <configLocation>${activemq.basedir}/etc/checkstyle.xml</configLocation>
+               <suppressionsLocation>${activemq.basedir}/etc/checkstyle-suppressions.xml</suppressionsLocation>
+               <failsOnError>false</failsOnError>
+            </configuration>
+         </plugin>
+         <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>findbugs-maven-plugin</artifactId>
+            <version>2.5.2</version>
+            <configuration>
+               <excludeFilterFile>${user.dir}/etc/findbugs-exclude.xml</excludeFilterFile>
+               <effort>Max</effort>
+               <failOnError>false</failOnError>
+            </configuration>
+         </plugin>
+         <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-javadoc-plugin</artifactId>
+            <version>2.9</version>
+            <configuration>
+               <minmemory>128m</minmemory>
+               <maxmemory>1024m</maxmemory>
+               <quiet>false</quiet>
+               <!-- XXX FIXME 'aggregate' is deprecated -->
+               <aggregate>true</aggregate>
+               <excludePackageNames>com.restfully.*:org.jboss.resteasy.examples.*:org.jboss.resteasy.tests.*
+               </excludePackageNames>
+            </configuration>
+         </plugin>
+         <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-project-info-reports-plugin</artifactId>
+            <version>2.7</version>
+         </plugin>
+         <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-surefire-report-plugin</artifactId>
+            <version>2.14.1</version>
+         </plugin>
+         <plugin>
+            <groupId>org.owasp</groupId>
+            <artifactId>dependency-check-maven</artifactId>
+            <version>${owasp.version}</version>
+            <reportSets>
+               <reportSet>
+                  <reports>
+                     <report>aggregate</report>
+                  </reports>
+               </reportSet>
+            </reportSets>
+         </plugin>
+
+      </plugins>
+   </reporting>
+
+</project>
