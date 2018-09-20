@@ -1,0 +1,24 @@
+gitHub:
+  api.url: "http://localhost:9900/api/v3"
+  login: "someLogin"
+  password: "somePassword"
+
+spring:
+  mail:
+    protocol: smtp
+    host: localhost
+    port: 3025
+    sender: ci-droid.test@myDomain.com
+
+notifiers:
+  http.targetUrl: "http://localhost:9901/notify"
+  github.prComment.enable: true
+
+ciDroidBehavior:
+# whenPushOnDefaultBranch:
+  tryToRebaseOpenPrs.enabled: true
+  notifyOwnerForNonMergeablePr.enabled: true
+# whenPullRequestEvent:
+  bestPracticeNotifier.enabled: true
+  patternToResourceMapping:
+    "**/*Dto.java": "https://someLinkToSomeResource/ci-droid-best-practices/noDtoClass.md"

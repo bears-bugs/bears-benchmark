@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.societegenerale.ci-droid.tasks-consumer</groupId>
+    <artifactId>ci-droid-tasks-consumer-starter</artifactId>
+    <version>1.0.6-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <name>CI droid starter</name>
+
+    <parent>
+        <groupId>com.societegenerale.ci-droid.tasks-consumer</groupId>
+        <artifactId>ci-droid-tasks-consumer-parent</artifactId>
+        <version>1.0.6-SNAPSHOT</version>
+    </parent>
+
+
+    <description>CI-droid tasks consumer starter</description>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>com.societegenerale.ci-droid.tasks-consumer</groupId>
+            <artifactId>ci-droid-tasks-consumer-autoconfigure</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+
+                <!-- This is required so that we have more flexibility :
+
+                - the -exec jar can be used directly from command line
+                - the regular jar can be used as a dependency in projects that need it
+
+                -->
+
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <mainClass>com.societegenerale.cidroid.tasks.consumer.autoconfigure.CiDroidTasksConsumerApplication</mainClass>
+                    <classifier>exec</classifier>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

@@ -1,0 +1,24 @@
+{
+  "gitLogin": "vincent.fuchs",
+  "gitPassword": "*******",
+  "email": "vincent.fuchs@sgcib.com",
+
+  "commitMessage" : "adding lombok exclusion config",
+
+  "updateAction": {
+    "@class": "com.societegenerale.cidroid.extensions.actionToReplicate.OverwriteStaticFileAction",
+    "staticContent": "lombok.addLombokGeneratedAnnotation=true"
+  },
+
+  "gitHubInteractionType": {
+    "@c": ".PullRequestGitHubInteraction",
+    "branchNameToCreate": "lombokUpgrade"
+  },
+
+  "resourcesToUpdate": [
+
+    {"repoFullName": "vincent-fuchs/in-memory-testing","filePathOnRepo": "lombok.config","branchName": "master"}
+
+  ]
+
+}

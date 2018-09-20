@@ -1,0 +1,21 @@
+{
+  "gitLogin": "someUserName",
+  "gitHubOauthToken": "somePassword",
+  "email": "someEmail@someDomain.com",
+  "updateAction": {
+    "@type": "replaceProfileInPomXmlAction",
+    "profileName": "quality",
+    "newProfileContent": "<profile>   <id>quality</id>    <properties>        <sonar.language>java</sonar.language>       <sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>       <project.coverage.directory>${project.build.directory}/coverage-results</project.coverage.directory>        <sonar.jacoco.itReportPaths>${project.coverage.directory}/jacoco-it.exec</sonar.jacoco.itReportPaths>       <sonar.jacoco.reportPaths>${project.coverage.directory}/jacoco-ut.exec</sonar.jacoco.reportPaths>       <jacoco.version>0.8.1</jacoco.version>      <sonar-maven-plugin.version>3.4.0.905</sonar-maven-plugin.version>  </properties>   <build>         <plugins>           <plugin>                <groupId>org.apache.maven.plugins</groupId>                 <artifactId>maven-surefire-plugin</artifactId>              <configuration>                     <!-- Sets the VM argument line used when unit tests are run. -->                    <argLine>${surefireArgLine}</argLine>               </configuration>            </plugin>           <plugin>                <groupId>org.apache.maven.plugins</groupId>                 <artifactId>maven-failsafe-plugin</artifactId>              <executions>                    <execution>                         <goals>                             <goal>integration-test</goal>                           <goal>verify</goal>                         </goals>                        <configuration>                             <argLine>${failsafeArgLine}</argLine>                       </configuration>                    </execution>                </executions>           </plugin>           <plugin>                <groupId>org.jacoco</groupId>               <artifactId>jacoco-maven-plugin</artifactId>                <version>${jacoco.version}</version>                <executions>                    <execution>                         <id>pre-unit-tests</id>                         <goals>                             <goal>prepare-agent</goal>                      </goals>                        <configuration>                             <destFile>${project.coverage.directory}/jacoco-ut.exec</destFile>                           <propertyName>surefireArgLine</propertyName>                        </configuration>                    </execution>                    <execution>                         <id>pre-integration-tests</id>                      <goals>                             <goal>prepare-agent-integration</goal>                      </goals>                        <configuration>                             <destFile>${project.coverage.directory}/jacoco-it.exec</destFile>                           <propertyName>failsafeArgLine</propertyName>                        </configuration>                    </execution>                </executions>           </plugin>           <plugin>                <groupId>org.sonarsource.scanner.maven</groupId>                <artifactId>sonar-maven-plugin</artifactId>                 <version>${sonar-maven-plugin.version}</version>            </plugin>       </plugins>  </build> </profile>"
+  },
+  "gitHubInteractionType": {
+    "@type": "pullRequest",
+    "branchNameToCreate": "sonarUpgrade"
+  },
+  "resourcesToUpdate": [
+    {
+      "repoFullName": "myOrga/myProject",
+      "filePathOnRepo": "pom.xml",
+      "branchName": "master"
+    }
+  ]
+}

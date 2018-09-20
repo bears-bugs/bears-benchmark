@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <property name="FILE_LOG_PATTERN"
+              value="%d{yyyy-MM-dd HH:mm:ss.SSS} [%mdc{username}] %5p ${PID:- } --- [%t] %-40.40logger{39} : %m%n%wex"/>
+    <property name="LOG_FILE"
+              value="./logs/ApplicativeLogs.log}"/>
+    <include resource="org/springframework/boot/logging/logback/defaults.xml"/>
+    <!-- This brings a rolling file appender -->
+    <include resource="org/springframework/boot/logging/logback/file-appender.xml"/>
+
+
+    <if condition='isDefined("LOGSTASH_URL")'>
+        <then>
+            <appender name="stash" class="net.logstash.logback.appender.LogstashTcpSocketAppender">
+                <destination>${LOGSTASH_URL}</destination>
+
+                <encoder class="net.logstash.logback.encoder.LogstashEncoder">
+                    <customFields>{"service.platform":"FPL", "service.name":"@application.name.for.logstash@", "service.version":"${version}", "service.environment":"${ENVNAME}", "service.hostname":"${HOSTNAME}"}</customFields>
+                </encoder>
+                <keepAliveDuration>1 minutes</keepAliveDuration>
+            </appender>
+            <root level="INFO">
+                <appender-ref ref="stash"/>
+                <appender-ref ref="FILE"/>
+            </root>
+        </then>
+
+        <else>
+            <property name="CONSOLE_LOG_PATTERN"
+                      value="%clr(%d{yyyy-MM-dd HH:mm:ss.SSS}){faint} [%mdc{username}] %clr(%5p) %clr(${PID:- }){magenta} %clr(---){faint} %clr([%15.15t]){faint} %clr(%-40.40logger{39}){cyan} %clr(:){faint} %m%n%wex"/>
+
+            <include resource="org/springframework/boot/logging/logback/console-appender.xml"/>
+
+            <root level="INFO">
+                <appender-ref ref="CONSOLE"/>
+                <appender-ref ref="FILE"/>
+            </root>
+        </else>
+    </if>
+</configuration>
