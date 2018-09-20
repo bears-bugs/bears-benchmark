@@ -1,0 +1,38 @@
+[
+  {
+    "sha": "eb62b795f2d806cbffad5126d06ad3601fd88c79",
+    "filename": "bootstrap/src/main/resources/application.yml",
+    "status": "modified",
+    "additions": 1,
+    "deletions": 0,
+    "changes": 1,
+    "blob_url": "https://www.github.com/myOrga/myProject/blob/0c5dd31bda76090fa6038f945f6eabe557c8eb49/bootstrap/src/main/resources/application.yml",
+    "raw_url": "https://www.github.com/myOrga/myProject/raw/0c5dd31bda76090fa6038f945f6eabe557c8eb49/bootstrap/src/main/resources/application.yml",
+    "contents_url": "https://www.github.com/api/v3/repos/myOrga/myProject/contents/bootstrap/src/main/resources/application.yml?ref=0c5dd31bda76090fa6038f945f6eabe557c8eb49",
+    "patch": "@@ -69,6 +69,7 @@ service:\n     - /riskOrder\n     - /guaranteeAssignments/guarantee/inputTypeCurrency\n     - /guaranteeAssignments/guarantee/conditional\n+    - /borrowingBase/asset/[0-9]*/valuationDate\n   shouldPublishFullDocumentsToMonitoring: false\n   sortablePaths:\n     /securityPackage/guarantees: code"
+  },
+  {
+    "sha": "1b138ccb9c2881936287f4253ea0e7089dabc6b0",
+    "filename": "domain/src/main/java/com/myProject/domain/exclusion/ExclusionStrategy.java",
+    "status": "modified",
+    "additions": 8,
+    "deletions": 1,
+    "changes": 9,
+    "blob_url": "https://www.github.com/myOrga/myProject/blob/0c5dd31bda76090fa6038f945f6eabe557c8eb49/domain/src/main/java/com/myProject/domain/exclusion/ExclusionStrategy.java",
+    "raw_url": "https://www.github.com/myOrga/myProject/raw/0c5dd31bda76090fa6038f945f6eabe557c8eb49/domain/src/main/java/com/myProject/domain/exclusion/ExclusionStrategy.java",
+    "contents_url": "https://www.github.com/api/v3/repos/myOrga/myProject/contents/domain/src/main/java/com/myProject/domain/exclusion/ExclusionStrategy.java?ref=0c5dd31bda76090fa6038f945f6eabe557c8eb49",
+    "patch": "@@ -7,6 +7,8 @@\n \n import java.util.List;\n import java.util.concurrent.CopyOnWriteArrayList;\n+import java.util.regex.Matcher;\n+import java.util.regex.Pattern;\n \n @Slf4j\n public class ExclusionStrategy {\n@@ -36,7 +38,7 @@ public ExclusionStrategy(List<String> exclusionRules) {\n                 path = GenericDiff.trimLeadingAndTrailingDoubleQuotes(path);\n                 for (String exclusionPath : exclusionRules) {\n                     //remove object from list if it matches with path in exclusionlist\n-                    if (path.equals(exclusionPath) || path.contains(exclusionPath)) {\n+                    if(isARegularExpressionMatch(path, exclusionPath)){\n                         differences.remove(diff);\n                     }\n                 }\n@@ -46,4 +48,9 @@ public ExclusionStrategy(List<String> exclusionRules) {\n         return differences;\n     }\n \n+    private boolean isARegularExpressionMatch(String actualPath, String regexPath){\n+        Pattern pattern = Pattern.compile(regexPath);\n+        Matcher matcher = pattern.matcher(actualPath);\n+        return matcher.find();\n+    }\n }"
+  },
+  {
+    "sha": "62dc3ab6e0a56049aa6fa18c99f02589f1a3c33e",
+    "filename": "domain/src/test/java/com/myProject/domain/service/JsonConsistencyServiceTest.java",
+    "status": "modified",
+    "additions": 1,
+    "deletions": 1,
+    "changes": 2,
+    "blob_url": "https://www.github.com/myOrga/myProject/blob/0c5dd31bda76090fa6038f945f6eabe557c8eb49/domain/src/test/java/com/myProject/domain/service/JsonConsistencyServiceTest.java",
+    "raw_url": "https://www.github.com/myOrga/myProject/raw/0c5dd31bda76090fa6038f945f6eabe557c8eb49/domain/src/test/java/com/myProject/domain/service/JsonConsistencyServiceTest.java",
+    "contents_url": "https://www.github.com/api/v3/repos/myOrga/myProject/contents/domain/src/test/java/com/myProject/domain/service/JsonConsistencyServiceTest.java?ref=0c5dd31bda76090fa6038f945f6eabe557c8eb49",
+    "patch": "@@ -208,7 +208,7 @@ private ExclusionStrategy createExclusionStrategy() {\n         exclusionRules.add(\"/collateralAssignments/collateral/holdingPeriod/isSchedule\");\n         exclusionRules.add(\"/collateralAssignments/collateral/valuation/currency/label\");\n         exclusionRules.add(\"/collateralAssignments/collateral/valuation/currency/rateBasisCalendar\");\n+        exclusionRules.add(\"/borrowingBase/borrowingBase/asset/[0-9]*/valuationDate\");\n         return new ExclusionStrategy(exclusionRules);\n     }\n-\n }\n\\ No newline at end of file"
+  }
+]

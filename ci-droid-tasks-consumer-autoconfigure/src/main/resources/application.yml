@@ -1,0 +1,73 @@
+info:
+  build:
+    artifact: "@project.artifactId@"
+    name: "@project.name@"
+    description: "@project.description@"
+    version: "@project.version@"
+
+spring:
+  application.name: ci-droid-tasks-consumer
+ # used in case of email notifications are enabled
+  mail:
+    protocol: smtp
+    host: yourMailServer
+    port: 25
+    sender: ci-droid@yourDomain.com
+    smtp:
+      auth: false
+      starttls.enable: false
+   # ----------------------------------------
+  # MESSAGING PROPERTIES
+  # ----------------------------------------
+  cloud:
+   stream:
+     default-binder: rabbit
+     bindings:
+       push-on-default-branch:
+         destination: ${user.name}.ci-droid.github-push-events.default-branch.v1
+         content-type: application/json
+         group: live-ci-droid.github-events
+       pull-request-event:
+         destination: ${user.name}.ci-droid.github-pull-request-events.v1
+         content-type: application/json
+         group: live-ci-droid.github-events
+       actions-to-perform:
+         destination: ${user.name}.ci-droid.actions-to-perform.v1
+         content-type: application/json
+         group: live-ci-droid.github-events
+  rabbitmq:
+    username: ${RABBITMQ_USER}
+    password: ${RABBITMQ_PASSWORD}
+    addresses: ${RABBITMQ_URL}
+    virtual-host: ${ENVNAME}
+    ssl.enabled: ${RABBITMQ_SSL}
+
+
+hystrix.command.default.execution.timeout.enabled: false
+feign.hystrix.enabled: false
+
+gitHub:
+  api.url: "https://api.github.com"
+#below credentials should be a service account credentials - they will be used to rebase PRs automatically using Git commands.
+  login: ${SERVICE_ACCOUNT_USERNAME}
+  password: ${SERVICE_ACCOUNT_PASSWORD}
+
+notifiers:
+  github.prComment.enable: true
+#  email.enable: true
+#  http.targetUrl: "http://localhost:9901/notify"
+
+ciDroidBehavior:
+#  whenPushOnDefaultBranch:
+  tryToRebaseOpenPrs.enabled: true
+  notifyOwnerForNonMergeablePr.enabled: true
+#  whenPullRequestEvent:
+  bestPracticeNotifier.enabled: true
+  patternToResourceMapping:
+# example of associating a document with a file pattern
+    "**/*Dto.java": "https://some_link_to_some_best_practices_repo/noDtoClass.md"
+
+
+logging:
+  level:
+    root: info

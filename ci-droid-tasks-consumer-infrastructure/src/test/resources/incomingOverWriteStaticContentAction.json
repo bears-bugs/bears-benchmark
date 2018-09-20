@@ -1,0 +1,18 @@
+{
+  "gitLogin": "someUserName",
+  "gitHubOauthToken": "somePassword",
+  "email": "someEmail@someDomain.com",
+  "updateAction": {
+    "@class": "com.societegenerale.cidroid.extensions.actionToReplicate.OverwriteStaticFileAction",
+    "staticContent": "some new content"
+  },
+  "gitHubInteractionType": {
+    "@c": ".DirectPushGitHubInteraction"
+  },
+  "resourcesToUpdate": [
+    {
+      "filePathOnRepo": "someRepo/jenkinsFile",
+      "branchName": "master"
+    }
+  ]
+}
