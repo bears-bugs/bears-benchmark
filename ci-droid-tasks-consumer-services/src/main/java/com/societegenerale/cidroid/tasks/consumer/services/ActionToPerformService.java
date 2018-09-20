@@ -115,9 +115,11 @@ public class ActionToPerformService {
             if (existingResourceExists(existingResourceContent)) {
                 decodedOriginalContent = GitHubContentBase64codec.decode(existingResourceContent.getBase64EncodedContent());
                 newContent = actionToReplicate.provideContent(decodedOriginalContent);
-            } else if (actionToReplicate.canContinueIfResourceDoesntExist()) {
+            }
+            else if (actionToReplicate.canContinueIfResourceDoesntExist()) {
                 newContent = actionToReplicate.provideContent(null);
-            } else {
+            }
+            else {
                 //existing resource doesnt exist and we should not continue
 
                 log.info("{} NOT updated on repo {}, on branch {}, as it doesnt exist", resourceToUpdate.getFilePathOnRepo(),
@@ -203,7 +205,12 @@ public class ActionToPerformService {
         PullRequestToCreate newPr = new PullRequestToCreate();
         newPr.setHead(branchName);
         newPr.setBase(impactedRepo.getDefaultBranch());
-        newPr.setTitle(action.getCommitMessage());
+
+        PullRequestGitHubInteraction pullRequestGitHubInteraction=(PullRequestGitHubInteraction)action.getGitHubInteraction();
+
+        String providedPrTitle=pullRequestGitHubInteraction.getPullRequestTitle();
+
+        newPr.setTitle(providedPrTitle!=null ? providedPrTitle : branchName);
         newPr.setBody("performed on behalf of " + action.getGitLogin() + " by CI-droid\n\n" + action.getCommitMessage());
 
         try{
