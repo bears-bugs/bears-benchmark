@@ -227,7 +227,7 @@ public class ActionToPerformServiceTest {
     }
 
     @Test
-    public void continueIfExistingResourceisNull_whenActionPermitsIt() throws GitHubAuthorizationException {
+    public void continueIfExistingResourceIsNull_whenActionPermitsIt() throws GitHubAuthorizationException {
 
         BulkActionToPerform bulkActionToPerform = bulkActionToPerformBuilder.gitHubInteraction(new DirectPushGitHubInteraction()).build();
 
@@ -370,18 +370,53 @@ public class ActionToPerformServiceTest {
         assertThat(updatedResourceCaptor.getValue().getUpdateStatus()).isEqualTo(UPDATE_KO_AUTHENTICATION_ISSUE);
     }
 
+    @Test
+    public void shouldCreatePRwithProvidedTitle() throws GitHubAuthorizationException, BranchAlreadyExistsException {
+
+        mockPullRequestSpecificBehavior();
+        when(mockRemoteGitHub.createPullRequest(eq(REPO_FULL_NAME), any(PullRequestToCreate.class), anyString())).thenReturn(fakePullRequest);
+
+        BulkActionToPerform bulkActionToPerform = bulkActionToPerformBuilder.gitHubInteraction(new PullRequestGitHubInteraction(branchNameToCreateForPR,"new feature branch")).build();
+
+        actionToPerformService.perform(bulkActionToPerform);
+
+        verify(mockRemoteGitHub, times(1)).createPullRequest(eq(REPO_FULL_NAME),
+                newPrCaptor.capture(),
+                eq(SOME_OAUTH_TOKEN));
+
+        assertThat(newPrCaptor.getValue().getTitle()).isEqualTo("new feature branch");
+    }
+
+    @Test
+    public void shouldCreatePRwithBranchName_whenPRtitleIsNotProvided() throws GitHubAuthorizationException, BranchAlreadyExistsException {
+
+        mockPullRequestSpecificBehavior();
+        when(mockRemoteGitHub.createPullRequest(eq(REPO_FULL_NAME), any(PullRequestToCreate.class), anyString())).thenReturn(fakePullRequest);
+
+        BulkActionToPerform bulkActionToPerform = bulkActionToPerformBuilder.gitHubInteraction(new PullRequestGitHubInteraction(branchNameToCreateForPR,null)).build();
+
+        actionToPerformService.perform(bulkActionToPerform);
+
+        verify(mockRemoteGitHub, times(1)).createPullRequest(eq(REPO_FULL_NAME),
+                newPrCaptor.capture(),
+                eq(SOME_OAUTH_TOKEN));
+
+        assertThat(newPrCaptor.getValue().getTitle()).isEqualTo(branchNameToCreateForPR);
+
+    }
+
     private BulkActionToPerform doApullRequestAction() throws BranchAlreadyExistsException, GitHubAuthorizationException {
 
         mockPullRequestSpecificBehavior();
 
-        return bulkActionToPerformBuilder.gitHubInteraction(new PullRequestGitHubInteraction(branchNameToCreateForPR)).build();
+        return bulkActionToPerformBuilder.gitHubInteraction(new PullRequestGitHubInteraction(branchNameToCreateForPR,null)).build();
     }
 
     private void assertPullRequestHasBeenCreated(String expectedCommitMessage) {
         PullRequestToCreate actualPrToCreate = newPrCaptor.getValue();
         assertThat(actualPrToCreate.getBase()).isEqualTo("masterBranch");
         assertThat(actualPrToCreate.getHead()).isEqualTo(branchNameToCreateForPR);
-        assertThat(actualPrToCreate.getTitle()).isEqualTo(expectedCommitMessage);
+        assertThat(actualPrToCreate.getTitle()).isEqualTo(branchNameToCreateForPR);
 
         assertThat(actualPrToCreate.getBody()).startsWith("performed on behalf of someUserName by CI-droid");
         assertThat(actualPrToCreate.getBody()).endsWith(expectedCommitMessage);
