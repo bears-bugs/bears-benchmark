@@ -1,0 +1,151 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 18, 
+      "numberRunning": 19, 
+      "numberFailing": 0, 
+      "numberErroring": 1, 
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException", 
+          "isError": true, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 0
+    }, 
+    "failingModule": "/root/workspace/opentracing-contrib/java-p6spy/390188323", 
+    "failureDetails": [
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "io.opentracing.contrib.p6spy.JdbcTest", 
+        "testMethod": "should_report_one_span_with_null_url", 
+        "isError": true
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 4, 
+        "numberRunning": 5, 
+        "testClass": "io.opentracing.contrib.p6spy.JdbcTest", 
+        "numberFailing": 0, 
+        "numberErroring": 1, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/opentracing-contrib/java-p6spy/builds/431527545", 
+      "date": "Sep 21, 2018 4:43:22 PM", 
+      "id": 431527545
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/opentracing-contrib/java-p6spy/builds/390188323", 
+      "date": "Jun 9, 2018 8:38:52 PM", 
+      "id": 390188323
+    }
+  }, 
+  "repository": {
+    "name": "opentracing-contrib/java-p6spy", 
+    "url": "https://github.com/opentracing-contrib/java-p6spy", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 105222576
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/opentracing-contrib/java-p6spy/commit/72faab4a5a793b3251c29a2796dac3b95de14717", 
+      "sha": "72faab4a5a793b3251c29a2796dac3b95de14717", 
+      "branchName": "master", 
+      "date": "Sep 21, 2018 4:35:46 PM", 
+      "repoName": "opentracing-contrib/java-p6spy"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/opentracing-contrib/java-p6spy/commit/c8426e6f359f5fb7ed928e151c97029d752955f8", 
+      "sha": "c8426e6f359f5fb7ed928e151c97029d752955f8", 
+      "branchName": "master", 
+      "date": "Jun 9, 2018 8:37:04 PM", 
+      "repoName": "opentracing-contrib/java-p6spy"
+    }
+  }, 
+  "bugName": "opentracing-contrib-java-p6spy-390188323-431527545", 
+  "version": "latest", 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 14, 
+      "numberDeleted": 12
+    }
+  }, 
+  "type": "passing_passing", 
+  "bugId": "Bears-230", 
+  "projectMetrics": {
+    "numberSourceFiles": 3, 
+    "numberLibrariesFailingModule": 31, 
+    "numberTestFiles": 4, 
+    "numberModules": 1
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 281226472, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 392167424, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Sep 21, 2018 5:27:31 PM", 
+    "projectRootPomPath": "./workspace/opentracing-contrib/java-p6spy/390188323/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          0, 
+          0, 
+          0, 
+          0, 
+          32
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 32
+      }, 
+      "testing": {
+        "stepDurations": [
+          26
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 26
+      }, 
+      "cloning": {
+        "stepDurations": [
+          2
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 2
+      }
+    }, 
+    "reproductionDateBeginning": "Sep 21, 2018 5:25:37 PM", 
+    "totalDuration": 110
+  }
+}
