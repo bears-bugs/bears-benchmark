@@ -1,0 +1,148 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 4712, 
+      "numberRunning": 4713, 
+      "numberFailing": 0, 
+      "numberErroring": 1, 
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException", 
+          "isError": true, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 118
+    }, 
+    "failingModule": "/root/workspace/apache/calcite/431543614/core", 
+    "failureDetails": [
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "isError": true, 
+        "testClass": "org.apache.calcite.util.UtilTest", 
+        "testMethod": "testFlatList"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 68, 
+        "numberRunning": 69, 
+        "testClass": "org.apache.calcite.util.UtilTest", 
+        "numberFailing": 0, 
+        "numberErroring": 1, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/apache/calcite/builds/431566773", 
+      "date": "Sep 21, 2018 6:32:25 PM", 
+      "id": 431566773
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/apache/calcite/builds/431543614", 
+      "date": "Sep 21, 2018 6:00:02 PM", 
+      "id": 431543614
+    }
+  }, 
+  "repository": {
+    "name": "apache/calcite", 
+    "url": "https://github.com/apache/calcite", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 21193524
+  }, 
+  "projectMetrics": {
+    "numberSourceFiles": 1512, 
+    "numberLibrariesFailingModule": 48, 
+    "numberTestFiles": 228, 
+    "numberModules": 19
+  }, 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 42, 
+      "numberDeleted": 42
+    }
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/apache/calcite/commit/ef822607649ad157568f868086923b2c62a316dc", 
+      "sha": "ef822607649ad157568f868086923b2c62a316dc", 
+      "branchName": "master", 
+      "date": "Sep 21, 2018 5:48:01 PM", 
+      "repoName": "apache/calcite"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/apache/calcite/commit/56def3946d7e30706b2845464f7fc575c66e4694", 
+      "sha": "56def3946d7e30706b2845464f7fc575c66e4694", 
+      "branchName": "master", 
+      "date": "Sep 21, 2018 5:12:21 PM", 
+      "repoName": "apache/calcite"
+    }
+  }, 
+  "type": "passing_passing", 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 239912088, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 584056832, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Sep 21, 2018 6:47:49 PM", 
+    "projectRootPomPath": "./workspace/apache/calcite/431543614/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          0, 
+          1, 
+          0, 
+          0, 
+          181
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 182
+      }, 
+      "testing": {
+        "stepDurations": [
+          225
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 225
+      }, 
+      "cloning": {
+        "stepDurations": [
+          24
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 24
+      }
+    }, 
+    "reproductionDateBeginning": "Sep 21, 2018 6:32:39 PM", 
+    "totalDuration": 901
+  }
+}
