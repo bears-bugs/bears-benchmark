@@ -18,7 +18,7 @@ import com.p6spy.engine.spy.option.SpyDotProperties;
 import io.opentracing.Scope;
 import io.opentracing.mock.MockSpan;
 import io.opentracing.mock.MockTracer;
-import io.opentracing.util.GlobalTracer;
+import io.opentracing.util.GlobalTracerTestUtil;
 import io.opentracing.util.ThreadLocalScopeManager;
 import java.util.List;
 import javax.persistence.Column;
@@ -51,7 +51,7 @@ public class HibernateTest {
 
   @BeforeClass
   public static void init() {
-    GlobalTracer.register(mockTracer);
+    GlobalTracerTestUtil.setGlobalTracerUnconditionally(mockTracer);
   }
 
   @Before

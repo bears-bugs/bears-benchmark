@@ -16,7 +16,7 @@ package io.opentracing.contrib.p6spy;
 import io.opentracing.Scope;
 import io.opentracing.mock.MockSpan;
 import io.opentracing.mock.MockTracer;
-import io.opentracing.util.GlobalTracer;
+import io.opentracing.util.GlobalTracerTestUtil;
 import io.opentracing.util.ThreadLocalScopeManager;
 import java.sql.SQLException;
 import java.util.List;
@@ -38,7 +38,7 @@ public class SpringTest {
 
   @BeforeClass
   public static void init() {
-    GlobalTracer.register(mockTracer);
+    GlobalTracerTestUtil.setGlobalTracerUnconditionally(mockTracer);
   }
 
   @Before
