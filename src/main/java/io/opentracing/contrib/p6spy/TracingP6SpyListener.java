@@ -122,13 +122,17 @@ class TracingP6SpyListener extends SimpleJdbcEventListener {
 
     Tags.COMPONENT.set(span, "java-p6spy");
     Tags.DB_STATEMENT.set(span, statementInformation.getSql());
-    Tags.DB_TYPE.set(span, extractDbType(dbUrl));
-    Tags.DB_INSTANCE.set(span, dbInstance);
-    span.setTag("peer.address", dbUrl);
-    if (peerName != null && !peerName.isEmpty()) {
+    if (!isNullOrEmpty(dbUrl)) {
+      span.setTag("peer.address", dbUrl);
+      Tags.DB_TYPE.set(span, extractDbType(dbUrl));
+    }
+    if (!isNullOrEmpty(dbInstance)) {
+      Tags.DB_INSTANCE.set(span, dbInstance);
+    }
+    if (!isNullOrEmpty(peerName)) {
       Tags.PEER_SERVICE.set(span, peerName);
     }
-    if (dbUser != null && !dbUser.isEmpty()) {
+    if (!isNullOrEmpty(dbUser)) {
       Tags.DB_USER.set(span, dbUser);
     }
   }
@@ -138,9 +142,11 @@ class TracingP6SpyListener extends SimpleJdbcEventListener {
   }
 
   private static String extractPeerService(String url) {
-    Matcher matcher = URL_PEER_SERVICE_FINDER.matcher(url);
-    if (matcher.find() && matcher.groupCount() == 1) {
-      return matcher.group(1);
+    if (url != null) {
+      Matcher matcher = URL_PEER_SERVICE_FINDER.matcher(url);
+      if (matcher.find() && matcher.groupCount() == 1) {
+        return matcher.group(1);
+      }
     }
     return "";
   }
@@ -166,5 +172,9 @@ class TracingP6SpyListener extends SimpleJdbcEventListener {
       return OptionalBoolean.FALSE;
     }
     return OptionalBoolean.OPTION_NOT_FOUND;
+  }
+
+  private static boolean isNullOrEmpty(String s) {
+    return s == null || s.isEmpty();
   }
 }
