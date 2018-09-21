@@ -1,0 +1,137 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building io.opentracing.contrib:opentracing-p6spy 0.2.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:prepare-agent (prepare-agent) @ opentracing-p6spy ---
+[INFO] argLine set to -javaagent:/root/./workspace/opentracing-contrib/java-p6spy/390188323/.m2/org/jacoco/org.jacoco.agent/0.8.1/org.jacoco.agent-0.8.1-runtime.jar=destfile=/root/workspace/opentracing-contrib/java-p6spy/390188323/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ opentracing-p6spy ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/opentracing-contrib/java-p6spy/390188323/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ opentracing-p6spy ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- license-maven-plugin:3.0:check (default) @ opentracing-p6spy ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ opentracing-p6spy ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ opentracing-p6spy ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ opentracing-p6spy ---
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.20.1/surefire-junit4-2.20.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.20.1/surefire-junit4-2.20.1.pom (4 KB at 6.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.20.1/surefire-providers-2.20.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.20.1/surefire-providers-2.20.1.pom (3 KB at 71.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.20.1/surefire-junit4-2.20.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.20.1/surefire-junit4-2.20.1.jar (81 KB at 968.1 KB/sec)
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running io.opentracing.contrib.p6spy.JdbcTest
+[ERROR] Tests run: 5, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 3.981 s <<< FAILURE! - in io.opentracing.contrib.p6spy.JdbcTest
+[ERROR] should_report_one_span_with_null_url(io.opentracing.contrib.p6spy.JdbcTest)  Time elapsed: 0.108 s  <<< ERROR!
+java.lang.NullPointerException
+	at io.opentracing.contrib.p6spy.JdbcTest.simulateExecuteQuery(JdbcTest.java:118)
+	at io.opentracing.contrib.p6spy.JdbcTest.should_report_one_span_with_null_url(JdbcTest.java:67)
+
+[INFO] Running io.opentracing.contrib.p6spy.HibernateTest
+Hibernate: drop table Employee if exists
+Hibernate: drop sequence if exists hibernate_sequence
+Hibernate: create sequence hibernate_sequence start with 1 increment by 1
+Hibernate: create table Employee (id bigint not null, primary key (id))
+Hibernate: call next value for hibernate_sequence
+Hibernate: insert into Employee (id) values (?)
+Hibernate: drop table Employee if exists
+Hibernate: drop sequence if exists hibernate_sequence
+Hibernate: drop table Employee if exists
+Hibernate: drop sequence if exists hibernate_sequence
+Hibernate: create sequence hibernate_sequence start with 1 increment by 1
+Hibernate: create table Employee (id bigint not null, primary key (id))
+Hibernate: call next value for hibernate_sequence
+Hibernate: insert into Employee (id) values (?)
+Hibernate: drop table Employee if exists
+Hibernate: drop sequence if exists hibernate_sequence
+Hibernate: drop table Employee if exists
+Hibernate: drop sequence if exists hibernate_sequence
+Hibernate: create sequence hibernate_sequence start with 1 increment by 1
+Hibernate: create table Employee (id bigint not null, primary key (id))
+Hibernate: call next value for hibernate_sequence
+Hibernate: insert into Employee (id) values (?)
+Hibernate: drop table Employee if exists
+Hibernate: drop sequence if exists hibernate_sequence
+Hibernate: drop table Employee if exists
+Hibernate: drop sequence if exists hibernate_sequence
+Hibernate: create sequence hibernate_sequence start with 1 increment by 1
+Hibernate: create table Employee (id bigint not null, primary key (id))
+Hibernate: call next value for hibernate_sequence
+Hibernate: insert into Employee (id) values (?)
+Hibernate: drop table Employee if exists
+Hibernate: drop sequence if exists hibernate_sequence
+Hibernate: drop table Employee if exists
+Hibernate: drop sequence if exists hibernate_sequence
+Hibernate: create sequence hibernate_sequence start with 1 increment by 1
+Hibernate: create table Employee (id bigint not null, primary key (id))
+Hibernate: call next value for hibernate_sequence
+Hibernate: insert into Employee (id) values (?)
+Hibernate: drop table Employee if exists
+Hibernate: drop sequence if exists hibernate_sequence
+Hibernate: drop table Employee if exists
+Hibernate: drop sequence if exists hibernate_sequence
+Hibernate: create sequence hibernate_sequence start with 1 increment by 1
+Hibernate: create table Employee (id bigint not null, primary key (id))
+Hibernate: call next value for hibernate_sequence
+Hibernate: insert into Employee (id) values (?)
+Hibernate: drop table Employee if exists
+Hibernate: drop sequence if exists hibernate_sequence
+Hibernate: drop table Employee if exists
+Hibernate: drop sequence if exists hibernate_sequence
+Hibernate: create sequence hibernate_sequence start with 1 increment by 1
+Hibernate: create table Employee (id bigint not null, primary key (id))
+Hibernate: call next value for hibernate_sequence
+Hibernate: insert into Employee (id) values (?)
+Hibernate: drop table Employee if exists
+Hibernate: drop sequence if exists hibernate_sequence
+Hibernate: drop table Employee if exists
+Hibernate: drop sequence if exists hibernate_sequence
+Hibernate: create sequence hibernate_sequence start with 1 increment by 1
+Hibernate: create table Employee (id bigint not null, primary key (id))
+Hibernate: call next value for hibernate_sequence
+Hibernate: insert into Employee (id) values (?)
+Hibernate: drop table Employee if exists
+Hibernate: drop sequence if exists hibernate_sequence
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.588 s - in io.opentracing.contrib.p6spy.HibernateTest
+[INFO] Running io.opentracing.contrib.p6spy.SpringTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.865 s - in io.opentracing.contrib.p6spy.SpringTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Errors: 
+[ERROR]   JdbcTest.should_report_one_span_with_null_url:67->simulateExecuteQuery:118 » NullPointer
+[INFO] 
+[ERROR] Tests run: 19, Failures: 0, Errors: 1, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 23.019 s
+[INFO] Finished at: 2018-09-21T17:26:38+02:00
+[INFO] Final Memory: 23M/586M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.20.1:test (default-test) on project opentracing-p6spy: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/opentracing-contrib/java-p6spy/390188323/target/surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
