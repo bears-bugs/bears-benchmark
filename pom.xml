@@ -1,0 +1,275 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>org.sonatype.oss</groupId>
+    <artifactId>oss-parent</artifactId>
+    <version>7</version>
+  </parent>
+
+  <groupId>fr.inria.gforge.spoon.labs</groupId>
+  <artifactId>gumtree-spoon-ast-diff</artifactId>
+  <version>10-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>Gumtree Spoon AST Diff</name>
+  <description>Computes the AST difference between two Spoon abstract syntax trees using the Gumtree algorithm.</description>
+  <url>https://github.com/SpoonLabs/gumtree-spoon-ast-diff</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+    <!-- Compilation -->
+    <java.src.version>1.8</java.src.version>
+    <java.test.version>1.8</java.test.version>
+
+    <!-- Dependencies -->
+    <gumtree.version>2.1.0</gumtree.version>
+    <cli.version>1.2</cli.version>
+    <log.version>1.2.15</log.version>
+
+    <!-- Test dependencies -->
+    <junit.version>4.12</junit.version>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>fr.inria.gforge.spoon</groupId>
+      <artifactId>spoon-core</artifactId>
+      <version>7.1.0-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>com.github.gumtreediff</groupId>
+      <artifactId>core</artifactId>
+      <version>${gumtree.version}</version>
+    </dependency>
+    <!-- for having ctfieldread in exampleInsertAndUpdate -->
+    <dependency>
+      <groupId>commons-cli</groupId>
+      <artifactId>commons-cli</artifactId>
+      <version>${cli.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>log4j</groupId>
+      <artifactId>log4j</artifactId>
+      <version>${log.version}</version>
+      <exclusions>
+        <exclusion>
+          <groupId>com.sun.jmx</groupId>
+          <artifactId>jmxri</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>com.sun.jdmk</groupId>
+          <artifactId>jmxtools</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>javax.jms</groupId>
+          <artifactId>jms</artifactId>
+        </exclusion>
+      </exclusions>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>${junit.version}</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.1</version>
+        <configuration>
+          <source>${java.src.version}</source>
+          <target>${java.src.version}</target>
+          <testSource>${java.test.version}</testSource>
+          <testTarget>${java.test.version}</testTarget>
+        </configuration>
+      </plugin>
+
+      <plugin>
+        <artifactId>maven-assembly-plugin</artifactId>
+        <configuration>
+          <archive>
+            <manifest>
+              <mainClass>gumtree.spoon.AstComparator</mainClass>
+            </manifest>
+          </archive>
+          <descriptorRefs>
+            <descriptorRef>jar-with-dependencies</descriptorRef>
+          </descriptorRefs>
+        </configuration>
+        <executions>
+          <execution>
+            <id>make-assembly</id> <!-- this is used for inheritance merges -->
+            <phase>package</phase> <!-- bind to the packaging phase -->
+            <goals>
+              <goal>single</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>2.16</version>
+        <configuration>
+          <!-- the following is required to have the same execution semantics as eclipse (hence all tests passing) -->
+          <!-- the reason is that it switches Spoon in noclasspath or not for this particular file -->
+          <useSystemClassLoader>false</useSystemClassLoader>
+          <forkCount>1</forkCount>
+        </configuration>
+      </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-release-plugin</artifactId>
+        <version>2.5.3</version>
+        <configuration>
+          <autoVersionSubmodules>true</autoVersionSubmodules>
+          <useReleaseProfile>false</useReleaseProfile>
+          <releaseProfiles>release</releaseProfiles>
+          <goals>deploy</goals>
+        </configuration>
+      </plugin>
+
+      <plugin>
+        <groupId>org.sonatype.plugins</groupId>
+        <artifactId>nexus-staging-maven-plugin</artifactId>
+        <version>1.6.2</version>
+        <extensions>true</extensions>
+        <configuration>
+          <serverId>ossrh</serverId>
+          <nexusUrl>https://oss.sonatype.org/</nexusUrl>
+          <autoReleaseAfterClose>true</autoReleaseAfterClose>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+  <profiles>
+    <profile>
+      <id>release</id>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-source-plugin</artifactId>
+            <version>2.3</version>
+            <executions>
+              <execution>
+                <id>attach-sources</id>
+                <goals>
+                  <goal>jar-no-fork</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
+
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-javadoc-plugin</artifactId>
+            <version>2.9.1</version>
+            <executions>
+              <execution>
+                <id>attach-javadocs</id>
+                <goals>
+                  <goal>jar</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
+
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-gpg-plugin</artifactId>
+            <version>1.5</version>
+            <executions>
+              <execution>
+                <id>sign-artifacts</id>
+                <phase>verify</phase>
+                <goals>
+                  <goal>sign</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+  </profiles>
+
+  
+  
+  <distributionManagement>
+    <repository>
+      <id>ossrh</id>
+      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+    </repository>
+    <snapshotRepository>
+      <id>ossrh-snapshot</id>
+      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+    </snapshotRepository>
+  </distributionManagement>
+  
+  <repositories>
+      <repository>
+          <id>gforge.inria.fr-release</id>
+          <name>Maven Repository for Spoon Release</name>
+          <url>http://maven.inria.fr/artifactory/spoon-public-snapshot/</url>
+      </repository>
+  </repositories>
+    
+  <scm>
+    <url>https://github.com/SpoonLabs/gumtree-spoon-ast-diff/</url>
+    <connection>scm:git:https://github.com/SpoonLabs/gumtree-spoon-ast-diff.git</connection>
+    <developerConnection>scm:git:git@github.com:SpoonLabs/gumtree-spoon-ast-diff.git</developerConnection>
+    <tag>HEAD</tag>
+  </scm>
+
+  <issueManagement>
+    <system>GitHub</system>
+    <url>https://github.com/SpoonLabs/gumtree-spoon-ast-diff/issues</url>
+  </issueManagement>
+
+  <licenses>
+    <license>
+      <name>Apache License 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+    </license>
+  </licenses>
+
+  <developers>
+    <developer>
+      <id>matias</id>
+      <name>Matias Martinez</name>
+      <email>matias.martinez@inria.fr</email>
+    </developer>
+    <developer>
+      <id>gpaligot</id>
+      <name>Gérard Paligot</name>
+      <email>gerard.paligot@gmail.com</email>
+    </developer>
+    <developer>
+      <id>tdurieux</id>
+      <name>Thomas Durieux</name>
+    </developer>
+    <developer>
+      <id>monperrus</id>
+      <name>Martin Monperrus</name>
+    </developer>
+  </developers>
+
+
+</project>
+
+
+
+
