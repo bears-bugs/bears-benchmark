@@ -1,0 +1,151 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 95, 
+      "numberRunning": 96, 
+      "numberFailing": 1, 
+      "numberErroring": 0, 
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError", 
+          "isError": false, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 1
+    }, 
+    "failingModule": "/root/workspace/SpoonLabs/gumtree-spoon-ast-diff/431628140", 
+    "failureDetails": [
+      {
+        "failureName": "java.lang.AssertionError", 
+        "testClass": "gumtree.spoon.AstComparatorTest", 
+        "testMethod": "test_t_209184_buggy_allopsNPE", 
+        "isError": false
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 79, 
+        "numberRunning": 80, 
+        "testClass": "gumtree.spoon.AstComparatorTest", 
+        "numberFailing": 1, 
+        "numberErroring": 0, 
+        "numberSkipping": 1
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/SpoonLabs/gumtree-spoon-ast-diff/builds/431912220", 
+      "date": "Sep 22, 2018 6:50:00 PM", 
+      "id": 431912220
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/SpoonLabs/gumtree-spoon-ast-diff/builds/431628140", 
+      "date": "Sep 21, 2018 8:44:35 PM", 
+      "id": 431628140
+    }
+  }, 
+  "repository": {
+    "name": "SpoonLabs/gumtree-spoon-ast-diff", 
+    "url": "https://github.com/SpoonLabs/gumtree-spoon-ast-diff", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 25924085
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/SpoonLabs/gumtree-spoon-ast-diff/commit/8eaaa2ac48a1bb384aa95b28bf00df444bf421f9", 
+      "sha": "8eaaa2ac48a1bb384aa95b28bf00df444bf421f9", 
+      "branchName": "master", 
+      "date": "Sep 22, 2018 6:46:27 PM", 
+      "repoName": "SpoonLabs/gumtree-spoon-ast-diff"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/SpoonLabs/gumtree-spoon-ast-diff/commit/820db5860556768256c5fbda3c41c9e62e772c33", 
+      "sha": "820db5860556768256c5fbda3c41c9e62e772c33", 
+      "branchName": "master", 
+      "date": "Sep 21, 2018 8:41:08 PM", 
+      "repoName": "SpoonLabs/gumtree-spoon-ast-diff"
+    }
+  }, 
+  "bugName": "SpoonLabs-gumtree-spoon-ast-diff-431628140-431912220", 
+  "version": "latest", 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 22, 
+      "numberDeleted": 23
+    }
+  }, 
+  "type": "passing_passing", 
+  "bugId": "Bears-243", 
+  "projectMetrics": {
+    "numberSourceFiles": 15, 
+    "numberLibrariesFailingModule": 39, 
+    "numberTestFiles": 3, 
+    "numberModules": 1
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 283096968, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 371195904, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Sep 22, 2018 6:54:00 PM", 
+    "projectRootPomPath": "./workspace/SpoonLabs/gumtree-spoon-ast-diff/431628140/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          0, 
+          0, 
+          0, 
+          0, 
+          55
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 55
+      }, 
+      "testing": {
+        "stepDurations": [
+          64
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 64
+      }, 
+      "cloning": {
+        "stepDurations": [
+          4
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 4
+      }
+    }, 
+    "reproductionDateBeginning": "Sep 22, 2018 6:50:16 PM", 
+    "totalDuration": 219
+  }
+}
