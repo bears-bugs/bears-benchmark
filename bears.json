@@ -1,0 +1,149 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 32, 
+      "numberRunning": 33, 
+      "numberFailing": 1, 
+      "numberErroring": 0, 
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure", 
+          "isError": false, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 0
+    }, 
+    "failingModule": "/root/workspace/tilln/jmeter-wssecurity/431819946", 
+    "failureDetails": [
+      {
+        "failureName": "org.junit.ComparisonFailure", 
+        "detail": "expected:<Content-Type:[ ]text/plain\n> but was:<Content-Type:[]text/plain\n>", 
+        "isError": false, 
+        "testClass": "nz.co.breakpoint.jmeter.modifiers.TestWSSDecryptionPostProcessor", 
+        "testMethod": "testSwADecryptionWithHeaders"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 8, 
+        "numberRunning": 9, 
+        "testClass": "nz.co.breakpoint.jmeter.modifiers.TestWSSDecryptionPostProcessor", 
+        "numberFailing": 1, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/tilln/jmeter-wssecurity/builds/432218723", 
+      "date": "Sep 23, 2018 9:13:56 PM", 
+      "id": 432218723
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/tilln/jmeter-wssecurity/builds/431819946", 
+      "date": "Sep 22, 2018 11:41:03 AM", 
+      "id": 431819946
+    }
+  }, 
+  "repository": {
+    "name": "tilln/jmeter-wssecurity", 
+    "url": "https://github.com/tilln/jmeter-wssecurity", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 81063858
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/tilln/jmeter-wssecurity/commit/82698a280229dd9dae1228494f485f944de98f35", 
+      "sha": "82698a280229dd9dae1228494f485f944de98f35", 
+      "branchName": "feature/attachments", 
+      "date": "Sep 23, 2018 9:11:30 PM", 
+      "repoName": "tilln/jmeter-wssecurity"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/tilln/jmeter-wssecurity/commit/ff060984b7185641faa765f871ebccf5a3996e55", 
+      "sha": "ff060984b7185641faa765f871ebccf5a3996e55", 
+      "branchName": "feature/attachments", 
+      "date": "Sep 22, 2018 11:38:48 AM", 
+      "repoName": "tilln/jmeter-wssecurity"
+    }
+  }, 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 2, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 4, 
+      "numberDeleted": 3
+    }
+  }, 
+  "type": "passing_passing", 
+  "projectMetrics": {
+    "numberSourceFiles": 26, 
+    "numberLibrariesFailingModule": 168, 
+    "numberTestFiles": 12, 
+    "numberModules": 1
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 252585200, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 389021696, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Sep 24, 2018 12:04:47 AM", 
+    "projectRootPomPath": "./workspace/tilln/jmeter-wssecurity/431819946/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          0, 
+          0, 
+          0, 
+          0, 
+          39
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 39
+      }, 
+      "testing": {
+        "stepDurations": [
+          37
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 37
+      }, 
+      "cloning": {
+        "stepDurations": [
+          2
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 2
+      }
+    }, 
+    "reproductionDateBeginning": "Sep 24, 2018 12:02:26 AM", 
+    "totalDuration": 137
+  }
+}
