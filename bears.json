@@ -1,0 +1,197 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 8301, 
+      "numberRunning": 8305, 
+      "numberFailing": 4, 
+      "numberErroring": 0, 
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError", 
+          "isError": false, 
+          "occurrences": 4
+        }
+      ], 
+      "numberSkipping": 27
+    }, 
+    "failingModule": "/root/workspace/raphw/byte-buddy/432194751/byte-buddy-dep", 
+    "failureDetails": [
+      {
+        "failureName": "java.lang.AssertionError", 
+        "detail": "\nExpected: is <false>\n     but: was <true>", 
+        "isError": false, 
+        "testMethod": "testNonEnclosedAnonymousType", 
+        "testClass": "net.bytebuddy.pool.TypePoolDefaultTypeDescriptionTest"
+      }, 
+      {
+        "failureName": "java.lang.AssertionError", 
+        "detail": "\nExpected: is <false>\n     but: was <true>", 
+        "isError": false, 
+        "testMethod": "testNonEnclosedAnonymousType", 
+        "testClass": "net.bytebuddy.pool.TypePoolLazyFacadeTypeDescriptionTest"
+      }, 
+      {
+        "failureName": "java.lang.AssertionError", 
+        "detail": "\nExpected: is <false>\n     but: was <true>", 
+        "isError": false, 
+        "testMethod": "testNonEnclosedAnonymousType", 
+        "testClass": "net.bytebuddy.pool.TypePoolDefaultWithLazyResolutionTypeDescriptionTest"
+      }, 
+      {
+        "failureName": "java.lang.AssertionError", 
+        "detail": "\nExpected: is <false>\n     but: was <true>", 
+        "isError": false, 
+        "testMethod": "testNonEnclosedAnonymousType", 
+        "testClass": "net.bytebuddy.pool.TypePoolDefaultTypeDescriptionSuperClassLoadingTest"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 220, 
+        "numberRunning": 221, 
+        "testClass": "net.bytebuddy.pool.TypePoolDefaultTypeDescriptionTest", 
+        "numberFailing": 1, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }, 
+      {
+        "numberPassing": 235, 
+        "numberRunning": 236, 
+        "testClass": "net.bytebuddy.pool.TypePoolDefaultWithLazyResolutionTypeDescriptionTest", 
+        "numberFailing": 1, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }, 
+      {
+        "numberPassing": 220, 
+        "numberRunning": 221, 
+        "testClass": "net.bytebuddy.pool.TypePoolDefaultTypeDescriptionSuperClassLoadingTest", 
+        "numberFailing": 1, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }, 
+      {
+        "numberPassing": 220, 
+        "numberRunning": 221, 
+        "testClass": "net.bytebuddy.pool.TypePoolLazyFacadeTypeDescriptionTest", 
+        "numberFailing": 1, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/raphw/byte-buddy/builds/432199042", 
+      "date": "Sep 23, 2018 8:03:08 PM", 
+      "id": 432199042
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/raphw/byte-buddy/builds/432194751", 
+      "date": "Sep 23, 2018 7:45:56 PM", 
+      "id": 432194751
+    }
+  }, 
+  "repository": {
+    "name": "raphw/byte-buddy", 
+    "url": "https://github.com/raphw/byte-buddy", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 14696091
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/raphw/byte-buddy/commit/96df8c354d6573aea2c2a63b836f1ff37a18ca95", 
+      "sha": "96df8c354d6573aea2c2a63b836f1ff37a18ca95", 
+      "branchName": "master", 
+      "date": "Sep 23, 2018 7:57:14 PM", 
+      "repoName": "raphw/byte-buddy"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/raphw/byte-buddy/commit/23ad858aee1f55940adb28c6cdcf63f7ad78135b", 
+      "sha": "23ad858aee1f55940adb28c6cdcf63f7ad78135b", 
+      "branchName": "master", 
+      "date": "Sep 23, 2018 7:40:08 PM", 
+      "repoName": "raphw/byte-buddy"
+    }
+  }, 
+  "bugName": "raphw-byte-buddy-432194751-432199042", 
+  "version": "latest", 
+  "projectMetrics": {
+    "numberSourceFiles": 306, 
+    "numberLibrariesFailingModule": 11, 
+    "numberTestFiles": 702, 
+    "numberModules": 7
+  }, 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 2, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 8, 
+      "numberDeleted": 5
+    }
+  }, 
+  "bugId": "Bears-236", 
+  "type": "passing_passing", 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 1508493176, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 1979711488, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Sep 23, 2018 8:13:56 PM", 
+    "projectRootPomPath": "./workspace/raphw/byte-buddy/432194751/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          0, 
+          0, 
+          0, 
+          2, 
+          131
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 133
+      }, 
+      "testing": {
+        "stepDurations": [
+          62
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 62
+      }, 
+      "cloning": {
+        "stepDurations": [
+          232
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 232
+      }
+    }, 
+    "reproductionDateBeginning": "Sep 23, 2018 8:03:24 PM", 
+    "totalDuration": 625
+  }
+}
