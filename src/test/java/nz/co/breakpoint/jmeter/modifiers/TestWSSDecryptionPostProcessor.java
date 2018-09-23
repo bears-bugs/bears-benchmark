@@ -149,7 +149,7 @@ public class TestWSSDecryptionPostProcessor extends TestWSSSecurityPreProcessorB
         SampleResult a = result.getSubResults()[0];
         assertEquals("Attachment cid:foobar", a.getSampleLabel());
         assertEquals("attachme", a.getResponseDataAsString());
-        assertEquals("Content-Type:text/plain\n", a.getResponseHeaders());
+        assertEquals("Content-Type: text/plain\n", a.getResponseHeaders());
     }
 
     @Test
