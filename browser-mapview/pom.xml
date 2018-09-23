@@ -1,0 +1,47 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>browser-mapview</artifactId>
+    <packaging>jar</packaging>
+    <name>Code shared by all browser based MapViews</name>
+    <parent>
+        <groupId>slash.navigation</groupId>
+        <artifactId>RouteConverter</artifactId>
+        <version>2.25-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <dependencies>
+        <dependency>
+            <groupId>slash.navigation</groupId>
+            <artifactId>common-navigation</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>slash.navigation</groupId>
+            <artifactId>mapview</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>slash.navigation</groupId>
+            <artifactId>tileserver-maps</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>slash.navigation</groupId>
+            <artifactId>common-gui</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>commons-lang</groupId>
+            <artifactId>commons-lang</artifactId>
+            <version>2.6</version>
+            <classifier>stripped</classifier>
+        </dependency>
+        <dependency>
+            <groupId>net.andreinc.aleph</groupId>
+            <artifactId>aleph-formatter</artifactId>
+            <version>${alephformatter.version}</version>
+        </dependency>
+    </dependencies>
+</project>
