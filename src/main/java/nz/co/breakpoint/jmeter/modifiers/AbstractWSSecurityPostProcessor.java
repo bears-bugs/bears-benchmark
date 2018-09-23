@@ -97,7 +97,8 @@ public abstract class AbstractWSSecurityPostProcessor extends AbstractWSSecurity
                     result.setSuccessful(true);
                 }
                 result.setContentType(attachment.getMimeType());
-                result.setResponseHeaders(Attachment.fromHeadersMap(attachment.getHeaders()));
+                result.setEncodingAndType(attachment.getMimeType());
+                result.setResponseHeaders(result.getResponseHeaders() + Attachment.fromHeadersMap(attachment.getHeaders()));
                 try {
                     result.setResponseData(IOUtils.toByteArray(attachment.getSourceStream())); // could be a binary attachment, so don't just treat as String
                 }
@@ -110,7 +111,7 @@ public abstract class AbstractWSSecurityPostProcessor extends AbstractWSSecurity
 
     // Recursivley (depth-first) look for a SampleResult matching the decrypted attachment's cid
     protected SampleResult findAttachment(String cid, SampleResult result) {
-        if (result == null) return null; // recursion anchor
+        if (result == null) return null; // should not normally happen
 
         if (resultContainsCid(cid, result)) { return result; }
 

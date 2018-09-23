@@ -95,7 +95,7 @@ public class Attachment extends AbstractTestElement {
         StringBuilder sb = new StringBuilder();
         if (headers != null) {
             for (Map.Entry<String, String> entry : headers.entrySet()) {
-                sb.append(entry.getKey()+":"+entry.getValue()+"\n");
+                sb.append(entry.getKey()+": "+entry.getValue()+"\n");
             }
         }
         return sb.toString();
