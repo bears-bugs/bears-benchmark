@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap:Header>
+        <wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" soap:mustUnderstand="1">
+            <xenc:EncryptedKey xmlns:xenc="http://www.w3.org/2001/04/xmlenc#" Id="key">
+                <xenc:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#rsa-oaep"/>
+                <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+                    <wsse:SecurityTokenReference>
+                        <ds:X509Data>
+                            <ds:X509IssuerSerial>
+                                <ds:X509IssuerName>CN=wssecurity,OU=preprocessor,O=jmeter</ds:X509IssuerName>
+                                <ds:X509SerialNumber>1487469814</ds:X509SerialNumber>
+                            </ds:X509IssuerSerial>
+                        </ds:X509Data>
+                    </wsse:SecurityTokenReference>
+                </ds:KeyInfo>
+                <xenc:CipherData>
+                    <xenc:CipherValue>KfC3FJsH+8jl32Wc/tqJmPbOApIcZChJzLYJsFBrY0Y6KaPPuHiHla+m1MY4Nu12zPLYGKbfu2D+8VL0iHQtRa4+fAbm7B7A2GeGRWj4DuC4WJaCWCDAF5Xdx5eWRT5xSlt6LYG3yDwvlCda0PSRF4xa+nrdJ4DtLsB7aomL1aMSxzHJn6GsJPX8Bp5AWGvh2HYjCLajXlqb3A2GDaDJiHO9OXrPr+1is4ZhsNWU+jTsCiCp7p11rxkxZOJfFC8TqlwdLyHB1s3BmH2ZJpyVuc2sCX3f20CJIc6FN3cwZSqbzsP8rrign2hQdcDx29jO6jSZeltP3U5v6Pp2ftwKMQ==</xenc:CipherValue>
+                </xenc:CipherData>
+                <xenc:ReferenceList>
+                    <xenc:DataReference URI="#data"/>
+                </xenc:ReferenceList>
+            </xenc:EncryptedKey>
+        </wsse:Security>
+    </soap:Header>
+    <soap:Body>
+        <xenc:EncryptedData xmlns:xenc="http://www.w3.org/2001/04/xmlenc#" Id="data" Type="http://www.w3.org/2001/04/xmlenc#Content">
+            <xenc:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes128-cbc"/>
+            <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+                <wsse:SecurityTokenReference xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsse11="http://docs.oasis-open.org/wss/oasis-wss-wssecurity-secext-1.1.xsd" wsse11:TokenType="http://docs.oasis-open.org/wss/oasis-wss-soap-message-security-1.1#EncryptedKey">
+                    <wsse:Reference URI="#key"/>
+                </wsse:SecurityTokenReference>
+            </ds:KeyInfo>
+            <xenc:CipherData>
+                <xenc:CipherValue>EMJvOM38XPrYsoNXb84ouRw1lE0UNtxvnoN39efo2KxOF3lCGzpYufteCKtG9eRF</xenc:CipherValue>
+            </xenc:CipherData>
+        </xenc:EncryptedData>
+    </soap:Body>
+</soap:Envelope>
