@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>de.mindconsulting</groupId>
+    <artifactId>ladon-s3-server</artifactId>
+    <version>1.1.2</version>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>maven-bundle-plugin</artifactId>
+                <extensions>true</extensions>
+                <configuration>
+                    <instructions>
+                        <Bundle-SymbolicName>${groupId}.${artifactId}</Bundle-SymbolicName>
+                        <Export-Package>
+                            de.mc.ladon.s3server.servlet,
+                            de.mc.ladon.s3server.repository.api,
+                            de.mc.ladon.s3server.entities.*,
+                            de.mc.ladon.s3server.logging,
+                            de.mc.ladon.s3server.exceptions,
+                            de.mc.ladon.s3server.common,
+                        </Export-Package>
+                        <Private-Package>de.mc.ladon.s3server.*</Private-Package>
+                        <Bundle-Name>Mind Consulting :: Ladon S3 Server</Bundle-Name>
+                        <Bundle-Description>${project.description}</Bundle-Description>
+                        <Bundle-Version>${project.version}</Bundle-Version>
+                        <Bundle-Vendor>Mind Consulting UG</Bundle-Vendor>
+                    </instructions>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    <packaging>bundle</packaging>
+
+    <name>ladon-s3-server</name>
+    <description>Ladon S3 implementation</description>
+
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <java.version>1.8</java.version>
+    </properties>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>19.0</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>3.1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.18</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+    <distributionManagement>
+        <repository>
+            <id>mind</id>
+            <name>Mind</name>
+            <url>${repo.internal.url}</url>
+        </repository>
+    </distributionManagement>
+</project>

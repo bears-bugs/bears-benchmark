@@ -1,0 +1,107 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for de.mindconsulting:ladon-s3-server:bundle:1.1.2
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 11, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.felix:maven-bundle-plugin is missing. @ line 19, column 21
+[WARNING] The expression ${groupId} is deprecated. Please use ${project.groupId} instead.
+[WARNING] The expression ${artifactId} is deprecated. Please use ${project.artifactId} instead.
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for de.mindconsulting:ladon-s3-server-fs:bundle:1.1.2
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 11, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.felix:maven-bundle-plugin is missing. @ line 19, column 21
+[WARNING] The expression ${groupId} is deprecated. Please use ${project.groupId} instead.
+[WARNING] The expression ${artifactId} is deprecated. Please use ${project.artifactId} instead.
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for de.mindconsulting:ladon-s3-server-osgi-starter:bundle:1.1.2
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 11, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.felix:maven-bundle-plugin is missing. @ line 19, column 21
+[WARNING] The expression ${groupId} is deprecated. Please use ${project.groupId} instead.
+[WARNING] The expression ${artifactId} is deprecated. Please use ${project.artifactId} instead.
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for de.mindconsulting:s3-server:pom:1.1.2
+[WARNING] 'build.plugins.plugin.version' for org.springframework.boot:spring-boot-maven-plugin is missing. @ line 43, column 21
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] ladon-s3-server
+[INFO] ladon-s3-server-fs
+[INFO] s3-server-boot
+[INFO] ladon-s3-server-osgi-starter
+[INFO] s3-server-boot
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building ladon-s3-server 1.1.2
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ ladon-s3-server ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/mindmill/ladon-s3-server/432224417/ladon-s3-server/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ ladon-s3-server ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ ladon-s3-server ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 155 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ ladon-s3-server ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ ladon-s3-server ---
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.22.0/surefire-junit4-2.22.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.22.0/surefire-junit4-2.22.0.pom (4 KB at 7.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.22.0/surefire-providers-2.22.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.22.0/surefire-providers-2.22.0.pom (3 KB at 67.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.22.0/surefire-junit4-2.22.0.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.22.0/surefire-junit4-2.22.0.jar (83 KB at 1100.8 KB/sec)
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running de.mc.ladon.s3server.auth.TestAuthKeyGen
+AwsKeyPair{awsSecretAccessKey='WGOtCjmag62rnsaGsVkP9QnNGMypADCSbNqzNTM1', awsAccessKeyId='M1bJrV8c6bRjA5S5Zx7P'}
+AwsKeyPair{awsSecretAccessKey='-ZOiYJ5TBLXOkdW681OUNRwzaMmDAsVxqcTSaZr3', awsAccessKeyId='TtUwBREYqTTcm4SW2Pxs'}
+[ERROR] Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.243 s <<< FAILURE! - in de.mc.ladon.s3server.auth.TestAuthKeyGen
+[ERROR] testNoMinusNoUnderscore(de.mc.ladon.s3server.auth.TestAuthKeyGen)  Time elapsed: 0.15 s  <<< FAILURE!
+java.lang.AssertionError
+	at de.mc.ladon.s3server.auth.TestAuthKeyGen.testNoMinusNoUnderscore(TestAuthKeyGen.java:18)
+
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   TestAuthKeyGen.testNoMinusNoUnderscore:18
+[INFO] 
+[ERROR] Tests run: 1, Failures: 1, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] ladon-s3-server .................................... FAILURE [  3.006 s]
+[INFO] ladon-s3-server-fs ................................. SKIPPED
+[INFO] s3-server-boot ..................................... SKIPPED
+[INFO] ladon-s3-server-osgi-starter ....................... SKIPPED
+[INFO] s3-server-boot ..................................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 4.816 s
+[INFO] Finished at: 2018-09-30T20:44:38+02:00
+[INFO] Final Memory: 25M/603M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.22.0:test (default-test) on project ladon-s3-server: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/mindmill/ladon-s3-server/432224417/ladon-s3-server/target/surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
