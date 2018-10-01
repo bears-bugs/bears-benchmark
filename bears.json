@@ -1,0 +1,152 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 404, 
+      "numberRunning": 405, 
+      "numberFailing": 1, 
+      "numberErroring": 0, 
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure", 
+          "isError": false, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 0
+    }, 
+    "failingModule": "/root/workspace/javadev/underscore-java/435386942", 
+    "failureDetails": [
+      {
+        "failureName": "org.junit.ComparisonFailure", 
+        "detail": "expected:<...encoding=\"UTF-8\"?> <[root>   <a>0</a> </root]>> but was:<...encoding=\"UTF-8\"?> <[a>   <a>0</a> </a]>>", 
+        "isError": false, 
+        "testMethod": "toXmlFromJson21", 
+        "testClass": "com.github.underscore.lodash.StringTest"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 132, 
+        "numberRunning": 133, 
+        "testClass": "com.github.underscore.lodash.StringTest", 
+        "numberFailing": 1, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/javadev/underscore-java/builds/435396295", 
+      "date": "Oct 1, 2018 2:32:15 AM", 
+      "id": 435396295
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/javadev/underscore-java/builds/435386942", 
+      "date": "Oct 1, 2018 1:35:20 AM", 
+      "id": 435386942
+    }
+  }, 
+  "repository": {
+    "name": "javadev/underscore-java", 
+    "url": "https://github.com/javadev/underscore-java", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 18259368
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/javadev/underscore-java/commit/321c6af83d17da58ee078eec8f916366dc8381f3", 
+      "sha": "321c6af83d17da58ee078eec8f916366dc8381f3", 
+      "branchName": "master", 
+      "date": "Oct 1, 2018 2:27:14 AM", 
+      "repoName": "javadev/underscore-java"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/javadev/underscore-java/commit/148c98222b1c79c1517de4a8cf37a2928f74b306", 
+      "sha": "148c98222b1c79c1517de4a8cf37a2928f74b306", 
+      "branchName": "master", 
+      "date": "Oct 1, 2018 1:31:00 AM", 
+      "repoName": "javadev/underscore-java"
+    }
+  }, 
+  "bugName": "javadev-underscore-java-435386942-435396295", 
+  "version": "latest", 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 9, 
+      "numberDeleted": 1
+    }
+  }, 
+  "type": "passing_passing", 
+  "bugId": "Bears-220", 
+  "projectMetrics": {
+    "numberSourceFiles": 19, 
+    "numberLibrariesFailingModule": 5, 
+    "numberTestFiles": 11, 
+    "numberModules": 1
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 393988168, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 438304768, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Oct 1, 2018 2:34:34 AM", 
+    "projectRootPomPath": "./workspace/javadev/underscore-java/435386942/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          0, 
+          0, 
+          0, 
+          0, 
+          45
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 45
+      }, 
+      "testing": {
+        "stepDurations": [
+          13
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 13
+      }, 
+      "cloning": {
+        "stepDurations": [
+          5
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 5
+      }
+    }, 
+    "reproductionDateBeginning": "Oct 1, 2018 2:32:36 AM", 
+    "totalDuration": 113
+  }
+}
