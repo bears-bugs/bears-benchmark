@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="133" failures="1" name="com.github.underscore.lodash.StringTest" time="0.476" errors="0" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
+    <property name="java.vm.version" value="25.121-b13"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/root/workspace/javadev/underscore-java/435386942"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="skip.gulp" value="true"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="findbugs.skip" value="true"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/root/workspace/javadev/underscore-java/435386942"/>
+    <property name="checkstyle.skip" value="true"/>
+    <property name="java.runtime.version" value="1.8.0_121-8u121-b13-1~bpo8+1-b13"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="skip.npm" value="true"/>
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="gpg.skip" value="true"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="cobertura.skip" value="true"/>
+    <property name="os.name" value="Linux"/>
+    <property name="classworlds.conf" value="/usr/share/maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="license.skip" value="true"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="skip.bower" value="true"/>
+    <property name="maven.repo.local" value="/root/./workspace/javadev/underscore-java/435386942/.m2"/>
+    <property name="os.version" value="4.9.0-6-amd64"/>
+    <property name="user.home" value="/root"/>
+    <property name="user.timezone" value="Europe/Paris"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="root"/>
+    <property name="java.class.path" value="/usr/share/maven/boot/plexus-classworlds-2.5.2.jar"/>
+    <property name="skipITs" value="true"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/usr/lib/jvm/java-8-openjdk-amd64/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B -D enforcer.skip=true -D dependency-check.skip=true -D skipITs=true -D cobertura.skip=true -D maven.repo.local=/root/./workspace/javadev/underscore-java/435386942/.m2 -D rat.skip=true -D findbugs.skip=true -D skip.bower=true -D gpg.skip=true -D checkstyle.skip=true -D skip.gulp=true -D license.skip=true -D skip.npm=true test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="dependency-check.skip" value="true"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_121"/>
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="enforcer.skip" value="true"/>
+    <property name="rat.skip" value="true"/>
+    <property name="maven.home" value="/usr/share/maven"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="startCase" time="0.049"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="testXmlShortArrayToString" time="0.011"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="testXmlIntArrayToString" time="0"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="testDecodeMap2" time="0.019"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="testDecodeMap3" time="0.005"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="capitalize" time="0.004"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="upperFirst" time="0"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="testXmlCharArrayToString" time="0"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="toXmlFromJson10" time="0.034"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="toXmlFromJson11" time="0.001"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="toXmlFromJson12" time="0.002"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="toXmlFromJson13" time="0.003"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="toXmlFromJson14" time="0.004"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="toXmlFromJson15" time="0.002"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="toXmlFromJson16" time="0.002"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="toXmlFromJson17" time="0.007"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="toXmlFromJson18" time="0.001"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="toXmlFromJson19" time="0.001"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="toXmlFromJson20" time="0.001"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="toXmlFromJson21" time="0.017">
+    <failure message="expected:&lt;...encoding=&quot;UTF-8&quot;?&gt;
+&lt;[root&gt;
+  &lt;a&gt;0&lt;/a&gt;
+&lt;/root]&gt;&gt; but was:&lt;...encoding=&quot;UTF-8&quot;?&gt;
+&lt;[a&gt;
+  &lt;a&gt;0&lt;/a&gt;
+&lt;/a]&gt;&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: expected:&lt;...encoding=&quot;UTF-8&quot;?&gt;
+&lt;[root&gt;
+  &lt;a&gt;0&lt;/a&gt;
+&lt;/root]&gt;&gt; but was:&lt;...encoding=&quot;UTF-8&quot;?&gt;
+&lt;[a&gt;
+  &lt;a&gt;0&lt;/a&gt;
+&lt;/a]&gt;&gt;
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at com.github.underscore.lodash.StringTest.toXmlFromJson21(StringTest.java:1972)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</failure>
+  </testcase>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="startsWith" time="0"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="testDecodeParseXmlErr13" time="0.075"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="testDecodeParseXmlErr14" time="0.003"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="testJavaFloatArrayToString" time="0.009"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="testJsonJavaArrayCollection" time="0.005"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="testFloatArrayToString" time="0"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="deburr" time="0.001"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="escape" time="0.001"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="trimEnd" time="0"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="testXmlDecodeCyrillic" time="0.001"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="testIntArrayToString" time="0.001"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="padEnd" time="0.003"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="testXmlDoubleArrayToString" time="0"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="repeat" time="0.001"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="toXml2" time="0"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="testXmlFloatArrayToString" time="0"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="fromXml" time="0.038"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="kebabCase" time="0.004"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="testXmlObjectArrayToString" time="0"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="toXmlFromJson" time="0"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="toXmlFromList" time="0.001"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="trimStart" time="0"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="testJavaDoubleArrayToString" time="0"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="testJsonArray" time="0.002"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="camelCase" time="0.004"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="testJsonArrayCollection" time="0.006"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="toXmlAndFromXmlFromMap" time="0.003"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="testDoubleArrayToString" time="0.001"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="escapeJava" time="0"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="testJavaBooleanArrayToString" time="0"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="pad" time="0.001"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="main" time="0.007"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="trim" time="0"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="testJavaObjectArrayToString" time="0"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="snakeCase" time="0.002"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="chain" time="0.054"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="toXml" time="0.003"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="trunc" time="0"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="words" time="0.001"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="testObjectArrayToString" time="0"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="testDecodeTrueFalse" time="0.002"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="toJsonFromXml10" time="0.005"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="toJsonFromXml11" time="0.008"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="toJsonFromXml12" time="0.002"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="testDecodeParseErr10" time="0.001"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="testDecodeParseErr11" time="0.001"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="testDecodeParseErr12" time="0"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="testDecodeParseErr13" time="0.001"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="testDecodeParseErr14" time="0"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="testJavaLongArrayToString" time="0.001"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="testJavaByteArrayToString" time="0"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="toJsonJavaFromMap" time="0.001"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="uncapitalize" time="0"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="testXmlArray" time="0.002"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="testDecodeSpecialCharacter" time="0.001"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="testXmlBooleanArrayToString" time="0.001"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="testJsonDecodeCyrillic" time="0"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="padStart" time="0.001"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="toJsonJavaFromList" time="0"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="fromXmlMakeArrays" time="0.006"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="testJavaCharArrayToString" time="0"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="testXmlArrayCollection" time="0.006"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="toJsonJavaString" time="0.001"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="toXmlFromMap" time="0.001"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="toJsonFromList" time="0"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="toJsonFromXml2" time="0.008"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="toJsonFromXml3" time="0.002"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="toJsonFromXml4" time="0.004"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="toJsonFromXml5" time="0.001"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="toJsonFromXml6" time="0.002"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="toJsonFromXml7" time="0.002"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="toJsonFromXml8" time="0"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="toJsonFromXml9" time="0.002"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="testDecode2" time="0"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="testDecode3" time="0"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="testDecodeMap" time="0.001"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="lowerFirst" time="0"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="escapeXml" time="0.001"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="testDecode" time="0.001"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="testDecodeParseErr1" time="0"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="testDecodeParseErr2" time="0"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="testDecodeParseErr3" time="0"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="testDecodeParseErr4" time="0"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="testDecodeParseErr5" time="0"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="testDecodeParseErr6" time="0.001"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="testDecodeParseErr8" time="0"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="testDecodeParseErr9" time="0.001"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="testLongArrayToString" time="0"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="testByteArrayToString" time="0.001"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="toJsonFromMapFormatted" time="0.001"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="toXmlFromJson2" time="0.002"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="toXmlFromJson3" time="0.002"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="toXmlFromJson4" time="0.001"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="toXmlFromJson5" time="0"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="toXmlFromJson6" time="0.001"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="toXmlFromJson7" time="0.001"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="toXmlFromJson8" time="0.001"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="toXmlFromJson9" time="0.001"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="toJsonFromMap" time="0"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="toJsonFromXml" time="0.003"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="testDecodeUnicode" time="0.001"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="testJavaShortArrayToString" time="0"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="testShortArrayToString" time="0"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="testBooleanArrayToString" time="0.001"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="endsWith" time="0"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="testDecodeUnicode1" time="0.001"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="testDecodeUnicode2" time="0"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="testDecodeUnicode3" time="0"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="testJsonJavaArray" time="0.001"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="testCharArrayToString" time="0.001"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="testJavaIntArrayToString" time="0"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="testXmlLongArrayToString" time="0"/>
+  <testcase classname="com.github.underscore.lodash.StringTest" name="testXmlByteArrayToString" time="0"/>
+</testsuite>
