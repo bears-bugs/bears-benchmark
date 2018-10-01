@@ -25,70 +25,23 @@
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ underscore ---
 [INFO] Surefire report directory: /root/workspace/javadev/underscore-java/435386942/target/surefire-reports
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.pom (3 KB at 5.9 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom (3 KB at 65.5 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.jar
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.jar (37 KB at 611.1 KB/sec)
 
 -------------------------------------------------------
  T E S T S
 -------------------------------------------------------
 Running com.github.underscore.ObjectsTest
-Tests run: 33, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.272 sec
+Tests run: 33, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.328 sec
 Running com.github.underscore.ArraysTest
-Tests run: 31, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.084 sec
+Tests run: 31, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.062 sec
 Running com.github.underscore.FunctionsTest
-Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.965 sec
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.937 sec
 Running com.github.underscore.lodash.StringTest
 Underscore-java is a java port of Underscore.js.
 
 In addition to porting Underscore's functionality, Underscore-java includes matching unit tests.
 
 For docs, license, tests, and downloads, see: http://javadev.github.io/underscore-java
-Tests run: 133, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.563 sec <<< FAILURE!
-toXmlFromJson21(com.github.underscore.lodash.StringTest)  Time elapsed: 0.017 sec  <<< FAILURE!
-org.junit.ComparisonFailure: expected:<...encoding="UTF-8"?>
-<[root>
-  <a>0</a>
-</root]>> but was:<...encoding="UTF-8"?>
-<[a>
-  <a>0</a>
-</a]>>
-	at org.junit.Assert.assertEquals(Assert.java:115)
-	at org.junit.Assert.assertEquals(Assert.java:144)
-	at com.github.underscore.lodash.StringTest.toXmlFromJson21(StringTest.java:1972)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-
+Tests run: 133, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.514 sec
 Running com.github.underscore.lodash.Base32Test
 Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running com.github.underscore.lodash.MathTest
@@ -97,11 +50,11 @@ Underscore-java is a java port of Underscore.js.
 In addition to porting Underscore's functionality, Underscore-java includes matching unit tests.
 
 For docs, license, tests, and downloads, see: http://javadev.github.io/underscore-java
-Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 sec
 Running com.github.underscore.lodash.LodashTest
-Tests run: 40, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.551 sec
+Tests run: 40, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.188 sec
 Running com.github.underscore.CollectionsTest
-Tests run: 61, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.187 sec
+Tests run: 61, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.196 sec
 Running com.github.underscore.UnderscoreTest
 Underscore-java is a java port of Underscore.js.
 
@@ -112,28 +65,414 @@ Tests run: 37, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.055 sec
 Running com.github.underscore.ChainingTest
 Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.076 sec
 Running com.github.underscore.UtilityTest
-Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.062 sec
+Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.059 sec
 
 Results :
 
-Failed tests:   toXmlFromJson21(com.github.underscore.lodash.StringTest): expected:<...encoding="UTF-8"?>(..)
+Tests run: 405, Failures: 0, Errors: 0, Skipped: 0
 
-Tests run: 405, Failures: 1, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] --- jasmine-maven-plugin:1.3.1.4:test (default) @ underscore ---
+[INFO] jetty-8.1.14.v20131031
+[INFO] Started SelectChannelConnector@0.0.0.0:38689
+[INFO] Executing Jasmine Specs
+[INFO] 
+-------------------------------------------------------
+ J A S M I N E   S P E C S
+-------------------------------------------------------
+[INFO] 
+first
+  can pull out the first element of an array
+  can perform OO-style "first()"
+  can pass an index to first
+  can pass an index to first
+  can pass an index to first
+  works on an arguments object.
+  works well with _.map
+  aliased as take
+  handles nulls
+  undefined
 
+rest
+  working rest()
+  working rest(0)
+  rest can take an index
+  aliased as tail and works on arguments object
+  works well with _.map
+  aliased as drop and works on arguments object
+
+initial
+  working initial()
+  initial can take an index
+  initial works on arguments object
+  initial works with _.map
+
+last
+  can pull out the last element of an array
+  can pass an index to last
+  can pass an index to last
+  can pass an index to last
+  works on an arguments object
+  works well with _.map
+  handles nulls
+  undefined
+
+compact
+  can trim out all falsy values
+  works on an arguments object
+
+flatten
+  can flatten nested arrays
+  can shallowly flatten nested arrays
+  works on an arguments object
+  can shallowly flatten arrays containing only other arrays
+
+without
+  can remove all instances of an object
+  works on an arguments object
+
+uniq
+  can find the unique values of an unsorted array
+  can find the unique values of a sorted array faster
+  can find the unique values of an array using a custom iterator
+  can find the unique values of an array using a custom iterator without specifying whether array is sorted
+  iterator works with sorted array
+  works on an arguments object
+  undefined
+  undefined
+  undefined
+  undefined
+
+intersection
+  can take the set intersection of two arrays
+  can perform an OO-style intersection
+  works on an arguments object
+  returns a duplicate-free array
+  preserves order of first array
+  returns an empty array when passed null as first argument
+  returns an empty array when passed null as first argument
+  returns an empty array when passed null as argument beyond the first
+  returns an empty array when passed null as argument beyond the first
+
+union
+  takes the union of a list of arrays
+  takes the union of a list of nested arrays
+  takes the union of a list of arrays
+
+difference
+  takes the difference of two arrays
+  takes the difference of three arrays
+
+zip
+  zipped together arrays of different lengths
+  zipped pairs
+  zipped pairs with empties
+  unzipped empty
+
+object
+
+indexOf
+  can compute indexOf, even without the native function
+  works on an arguments object
+  handles nulls properly
+  35 is not in the list
+  40 is in the list
+  40 is in the list
+  supports the fromIndex argument
+
+lastIndexOf
+  undefined
+  can compute lastIndexOf, even without the native function
+  lastIndexOf the other element
+  works on an arguments object
+  handles nulls properly
+  supports the fromIndex argument
+
+range
+  range with 0 as a first argument generates an empty array
+  range with a single positive argument generates an array of elements 0,1,2,...,n-1
+  range with two arguments a &amp; b, a&lt;b generates an array of elements a,a+1,a+2,...,b-2,b-1
+  range with two arguments a &amp; b, b&lt;a generates an empty array
+  range with three arguments a &amp; b &amp; c, c &lt; b-a, a &lt; b generates an array of elements a,a+c,a+2c,...,b - (multiplier of a) &lt; c
+  range with three arguments a &amp; b &amp; c, c &gt; b-a, a &lt; b generates an array with a single element, equal to a
+  range with three arguments a &amp; b &amp; c, a &gt; b, c &lt; 0 generates an array of elements a,a-c,a-2c and ends with the number not less than b
+  final example in the Python docs
+
+map/flatten/reduce
+
+select/reject/sortBy
+  filtered and reversed the numbers
+
+select/reject/sortBy in functional style
+  filtered and reversed the numbers
+
+reverse/concat/unshift/pop/map
+  can chain together array functions.
+
+chaining works in small stages
+  undefined
+  undefined
+
+each
+  each iterators provide value and iteration count
+  each iterators provide value and iteration count
+  each iterators provide value and iteration count
+  context object property accessed
+  aliased as "forEach"
+  iterating over objects works, and ignores the object prototype.
+  handles a null properly
+  undefined
+  undefined
+
+map
+  doubled numbers
+  aliased as "collect"
+  tripled numbers with context
+  OO-style doubled numbers
+  Can use collection methods on Array-likes.
+
+reduce
+  can sum up an array
+  can reduce with a context object
+  aliased as "inject"
+  OO-style reduce
+  default initial value
+  can reduce via multiplication
+
+reduceRight
+  can perform right folds
+  aliased as "foldr"
+  default initial value
+  default initial value on object
+  undefined
+  undefined
+
+find
+  should return first found `value`
+  should return `undefined` if `value` is not found
+
+detect
+  found the first "2" and broke the loop
+
+select
+  selected each even number
+  aliased as "filter"
+
+reject
+  rejected each even number
+  undefined
+  undefined
+  undefined
+  undefined
+  undefined
+  undefined
+  rejected each odd number
+
+all
+
+any
+
+include
+
+invoke
+  first array sorted
+  second array sorted
+
+invoke w/ function reference
+  first array sorted
+  second array sorted
+
+invoke when strings have a call method
+  call function exists
+  first array sorted
+  second array sorted
+  call function removed
+
+pluck
+  pulls names out of objects
+
+where
+  undefined
+  undefined
+  undefined
+  undefined
+  undefined
+
+findWhere
+  undefined
+  undefined
+
+max
+  can perform a regular Math.max
+  can perform a computation-based max
+  Maximum value of an empty object
+  Maximum value of an empty array
+  Maximum value of a non-numeric collection
+  Maximum value of a too-big array
+
+min
+  can perform a regular Math.min
+  can perform a computation-based min
+  Minimum value of an empty object
+  Minimum value of an empty array
+  Minimum value of a non-numeric collection
+  undefined
+  Minimum value of a too-big array
+
+sortBy
+  stooges sorted by age
+  sortBy with undefined values
+  sorted by length
+  sortBy should be stable
+  uses _.identity if iterator is not specified
+
+groupBy
+  put each even number in the right group
+  undefined
+  undefined
+  undefined
+  undefined
+  undefined
+  undefined
+  undefined
+  undefined
+  undefined
+
+indexBy
+  undefined
+  undefined
+  undefined
+  undefined
+  undefined
+  undefined
+  undefined
+  undefined
+
+countBy
+  undefined
+  undefined
+  undefined
+  undefined
+  undefined
+  undefined
+  undefined
+  undefined
+  undefined
+
+sortedIndex
+  35 should be inserted at index 3
+  30 should be inserted at index 2
+  undefined
+  undefined
+  undefined
+
+shuffle
+  original object is unmodified
+  contains the same members before and after shuffle
+
+sample
+  contains the same members before and after sample
+  also works when sampling more objects than are present
+  sampling empty array with no number returns undefined
+  sampling empty array with a number returns an empty array
+  sampling an array with 0 picks returns an empty array
+  sampling a negative number of picks returns an empty array
+
+toArray
+  cloned array contains same elements
+  object flattened into array
+
+size
+  can compute the size of an object
+  can compute the size of an array
+  can compute the size of Array-likes
+  can test the size of the arguments object
+  can compute the size of a string literal
+  can compute the size of string object
+  handles nulls
+
+partition
+  handles bool return values
+  handles 0 and 1 return values
+  handles other numeric return values
+  handles null return values
+  handles undefined return values
+  handles objects
+  Default iterator
+  Takes a string
+  partition takes a context argument
+
+bind
+  can bind a function to a context
+  can do OO-style binding
+  can bind without specifying a context
+  the function was partially applied in advance
+  the function was completely applied in advance
+  the function was partially applied in advance and can accept multiple arguments
+  function should not be bound to the context, to comply with ECMAScript 5
+  When called without the new operator, it's OK to be bound to the context
+
+debounce
+
+once
+  undefined
+  stores a memo to the last value
+
+underscore tests
+  each
+  eachMap
+  map
+  mapMap
+  reduce
+  reduceRight
+  foldl
+  foldr
+  contains
+  find
+  filter
+  where
+  first
+  initial
+  last
+  flatten
+  compact
+  without
+  max
+  min
+  shuffle
+  sample
+  pluck
+  sortBy
+  groupBy
+  indexBy
+  toArray
+  size
+  union
+  intersection
+  difference
+  uniq
+  zip
+  object
+  indexOf
+  lastIndexOf
+  sortedIndex
+  range
+  chain
+  template
+  template each
+  template value
+  template print
+  chain
+
+Results: 275 specs, 0 failures
+
+[INFO] stopped o.e.j.s.h.ContextHandler{/,file:/root/workspace/javadev/underscore-java/435386942/}
+[INFO] stopped o.e.j.s.h.ContextHandler{/spec,file:/root/workspace/javadev/underscore-java/435386942/}
+[INFO] stopped o.e.j.s.h.ContextHandler{/src,file:/root/workspace/javadev/underscore-java/435386942/}
 [INFO] ------------------------------------------------------------------------
-[INFO] BUILD FAILURE
+[INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 9.638 s
-[INFO] Finished at: 2018-10-01T02:33:39+02:00
-[INFO] Final Memory: 23M/601M
+[INFO] Total time: 16.767 s
+[INFO] Finished at: 2018-10-01T02:34:32+02:00
+[INFO] Final Memory: 28M/822M
 [INFO] ------------------------------------------------------------------------
-[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (default-test) on project underscore: There are test failures.
-[ERROR] 
-[ERROR] Please refer to /root/workspace/javadev/underscore-java/435386942/target/surefire-reports for the individual test results.
-[ERROR] -> [Help 1]
-[ERROR] 
-[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
-[ERROR] Re-run Maven using the -X switch to enable full debug logging.
-[ERROR] 
-[ERROR] For more information about the errors and possible solutions, please read the following articles:
-[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
