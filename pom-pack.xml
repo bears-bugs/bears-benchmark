@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  
+  <groupId>com.github.javadev</groupId>
+  <artifactId>underscore</artifactId>
+  <packaging>jar</packaging>
+  <version>1.37</version>
+  <name>java port of Underscore.js</name>
+  <description>The java port of Underscore.js</description>
+  <url>https://github.com/javadev/underscore-java</url>
+  
+  <developers>
+    <developer>
+      <id>javadev</id>
+      <name>Valentyn Kolesnikov</name>
+    </developer>
+  </developers>
+
+  <licenses>
+    <license>
+      <name>The MIT License</name>
+      <url>http://opensource.org/licenses/MIT</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+
+  <scm>
+    <connection>scm:git:git://github.com/javadev/underscore-java.git</connection>
+    <developerConnection>scm:git:git://github.com/javadev/underscore-java.git</developerConnection>
+    <url>https://github.com/javadev/underscore-java</url>
+  </scm>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <ciManagement>
+    <system>Travis CI</system>
+    <url>https://travis-ci.org/javadev/underscore-java</url>
+  </ciManagement>
+
+  <issueManagement>
+    <system>GitHub Issues</system>
+    <url>https://github.com/javadev/underscore-java/issues</url>
+  </issueManagement>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.7.0</version>
+        <configuration>
+          <source>1.6</source>
+          <target>1.6</target>
+          <encoding>UTF-8</encoding>
+        </configuration>
+      </plugin>
+      <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-jar-plugin</artifactId>
+          <version>2.4</version>
+          <configuration>
+              <archive>
+                  <manifest>
+                      <mainClass>com.github.underscore.U</mainClass>
+                  </manifest>
+              </archive>
+          </configuration>
+      </plugin>
+      <plugin>
+          <groupId>com.github.wvengen</groupId>
+          <artifactId>proguard-maven-plugin</artifactId>
+          <version>2.0.14</version>
+          <executions>
+             <execution>
+                 <phase>package</phase>
+                 <goals><goal>proguard</goal></goals>
+             </execution>
+          </executions>
+          <configuration>
+              <options>
+                  <option>-allowaccessmodification</option>
+                  <option>-keepattributes Signature,InnerClasses</option>
+                  <option>-keep public class com.github.underscore.U { *; }</option>
+                  <option>-keep public class com.github.underscore.*$Chain { *; }</option>
+                  <option>-keep public class com.github.underscore.BiConsumer { *; }</option>
+                  <option>-keep public class com.github.underscore.BiFunction { *; }</option>
+                  <option>-keep public class com.github.underscore.BinaryOperator { *; }</option>
+                  <option>-keep public class com.github.underscore.Consumer { *; }</option>
+                  <option>-keep public class com.github.underscore.Function { *; }</option>
+                  <option>-keep public class com.github.underscore.Function3 { *; }</option>
+                  <option>-keep public class com.github.underscore.MemoizeFunction { *; }</option>
+                  <option>-keep public class com.github.underscore.Optional { *; }</option>
+                  <option>-keep public class com.github.underscore.Predicate { *; }</option>
+                  <option>-keep public class com.github.underscore.PredicateIndexed { *; }</option>
+                  <option>-keep public class com.github.underscore.Supplier { *; }</option>
+                  <option>-keep public class com.github.underscore.Template { *; }</option>
+                  <option>-keep public class com.github.underscore.Tuple { *; }</option>
+                  <option>-keep public class com.github.underscore.UnaryOperator { *; }</option>
+                  <option>-keep public class com.github.underscore.lodash.Base32 { *; }</option>
+                  <option>-keep public class com.github.underscore.lodash.Json { *; }</option>
+                  <option>-keep public class com.github.underscore.lodash.U { *; }</option>
+                  <option>-keep public class com.github.underscore.lodash.Xml { *; }</option>
+                  <option>-keep public class com.github.underscore.lodash.*$Chain { *; }</option>
+                  <option>-keep public class com.github.underscore.lodash.*$ParseException { *; }</option>
+                  <option>-keep public class com.github.underscore.lodash.*$FetchResponse { *; }</option>
+                  <option>-keep public class com.github.underscore.lodash.*$LRUCache { *; }</option>
+                  <option>-keep public class com.github.underscore.lodash.Json$JsonStringBuilder$Step { *; }</option>
+                  <option>-keep public class com.github.underscore.lodash.Xml$XmlStringBuilder$Step { *; }</option>
+                  <option>-keepclassmembers class * { *** newArrayList(); *** newLinkedHashSet(); *** newHashSet(java.lang.Iterable); *** newLinkedHashMap(); }</option>
+                  <option>-dontnote com.github.underscore.*$ClassForName</option>
+              </options>
+              <libs>
+                  <lib>${java.home}/lib/rt.jar</lib>
+              </libs>
+          </configuration>
+      </plugin>
+      <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-source-plugin</artifactId>
+          <version>2.4</version>
+          <executions>
+              <execution>
+                  <id>attach-sources</id>
+                  <goals>
+                      <goal>jar</goal>
+                      <goal>test-jar</goal>
+                  </goals>
+              </execution>
+          </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <version>3.0.0</version>
+          <executions>
+              <execution>
+                  <id>attach-sources</id>
+                  <goals>
+                      <goal>jar</goal>
+                      <goal>test-jar</goal>
+                  </goals>
+              </execution>
+          </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-gpg-plugin</artifactId>
+          <version>1.4</version>
+          <executions>
+            <execution>
+              <id>sign-artifacts</id>
+              <phase>verify</phase>
+              <goals>
+                <goal>sign</goal>
+              </goals>
+            </execution>
+          </executions>
+      </plugin>
+    </plugins>
+  </build>
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.12</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.awaitility</groupId>
+      <artifactId>awaitility</artifactId>
+      <version>3.1.2</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+  
+</project>
