@@ -696,7 +696,15 @@ public final class Xml {
             if (localMap != null && localMap.size() == 1
                 && ((Map.Entry) localMap.entrySet().iterator().next()).getValue() instanceof List
                 && !((List) ((Map.Entry) localMap.entrySet().iterator().next()).getValue()).isEmpty()) {
-                name = String.valueOf(((Map.Entry) localMap.entrySet().iterator().next()).getKey());
+                boolean allMapItems = true;
+                for (Object item : (List) ((Map.Entry) localMap.entrySet().iterator().next()).getValue()) {
+                    if (!(item instanceof Map)) {
+                       allMapItems = false;
+                       break;
+                    }
+                }
+                name = allMapItems ? String.valueOf(((Map.Entry) localMap.entrySet().iterator().next()).getKey())
+                    : "root";
             } else {
                 name = "root";
             }
