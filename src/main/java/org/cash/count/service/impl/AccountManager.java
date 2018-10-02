@@ -105,7 +105,17 @@ public class AccountManager implements IAccountManager {
     public void disable(int accountId) {
         Optional<Account> wrappedAccount = accountRepository.findById(accountId);
         Account account = wrappedAccount.orElseThrow(NoSuchElementException::new);
+        if (hasAnyChildrenAccountEnabled(account)){
+            throw new IllegalStateException("Children accounts enabled");
+        }    
         account.setDisabled(true);
         accountRepository.save(account);
+    }
+    
+    private boolean hasAnyChildrenAccountEnabled(Account account){
+        return account.getChildren().stream()
+                .filter(a -> !a.isDisabled())
+                .findAny()
+                .isPresent();
     }
 }
