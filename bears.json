@@ -1,0 +1,151 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 16, 
+      "numberRunning": 17, 
+      "numberFailing": 1, 
+      "numberErroring": 0, 
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError", 
+          "isError": false, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 0
+    }, 
+    "failingModule": "/root/workspace/rafonsecad/cash-count/435958219", 
+    "failureDetails": [
+      {
+        "failureName": "java.lang.AssertionError", 
+        "testClass": "org.cash.count.service.impl.AccountManagerTest", 
+        "testMethod": "shouldNotDisableAccount_accountHasChildrenEnabledAccounts", 
+        "isError": false
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 10, 
+        "numberRunning": 11, 
+        "testClass": "org.cash.count.service.impl.AccountManagerTest", 
+        "numberFailing": 1, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/rafonsecad/cash-count/builds/435967865", 
+      "date": "Oct 2, 2018 7:24:55 AM", 
+      "id": 435967865
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/rafonsecad/cash-count/builds/435958219", 
+      "date": "Oct 2, 2018 6:27:44 AM", 
+      "id": 435958219
+    }
+  }, 
+  "repository": {
+    "name": "rafonsecad/cash-count", 
+    "url": "https://github.com/rafonsecad/cash-count", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 147287009
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/rafonsecad/cash-count/commit/56033af0343521249b0ad6d150bd972638d16c0a", 
+      "sha": "56033af0343521249b0ad6d150bd972638d16c0a", 
+      "branchName": "master", 
+      "date": "Oct 2, 2018 7:19:03 AM", 
+      "repoName": "rafonsecad/cash-count"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/rafonsecad/cash-count/commit/13288f1282bdb1237c98aec02b89edcee813915b", 
+      "sha": "13288f1282bdb1237c98aec02b89edcee813915b", 
+      "branchName": "master", 
+      "date": "Oct 2, 2018 6:26:11 AM", 
+      "repoName": "rafonsecad/cash-count"
+    }
+  }, 
+  "bugName": "rafonsecad-cash-count-435958219-435967865", 
+  "version": "latest", 
+  "projectMetrics": {
+    "numberSourceFiles": 13, 
+    "numberLibrariesFailingModule": 89, 
+    "numberTestFiles": 3, 
+    "numberModules": 1
+  }, 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 0, 
+      "numberDeleted": 10
+    }
+  }, 
+  "bugId": "Bears-235", 
+  "type": "passing_passing", 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 339320336, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 398983168, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Oct 2, 2018 7:26:35 AM", 
+    "projectRootPomPath": "./workspace/rafonsecad/cash-count/435958219/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          0, 
+          3, 
+          0, 
+          0, 
+          31
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 34
+      }, 
+      "testing": {
+        "stepDurations": [
+          11
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 11
+      }, 
+      "cloning": {
+        "stepDurations": [
+          1
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 1
+      }
+    }, 
+    "reproductionDateBeginning": "Oct 2, 2018 7:25:10 AM", 
+    "totalDuration": 80
+  }
+}
