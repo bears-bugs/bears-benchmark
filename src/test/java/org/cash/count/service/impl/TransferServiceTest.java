@@ -13,6 +13,7 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 import org.cash.count.constant.AccountType;
 import org.cash.count.model.Account;
 import org.cash.count.repository.AccountRepository;
+import static org.junit.Assert.fail;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -210,5 +211,30 @@ public class TransferServiceTest {
         when(accountRepository.findById(2)).thenReturn(Optional.of(new Account()));
         
         transferService.transfer(2, 323, "100");
+    }
+    
+    /**
+     * Should not make the transfer. An account is disabled
+     */
+    @Test
+    public void shouldNotExecuteTransfer_accountDisabled(){
+        Account cashAccount = new Account();
+        cashAccount.setBalance(new BigDecimal("4000"));
+        cashAccount.setIncreasedBy(AccountType.DEBIT);
+        
+        Account equipmentAccount = new Account();
+        equipmentAccount.setBalance(new BigDecimal("1000"));
+        equipmentAccount.setIncreasedBy(AccountType.DEBIT);
+        equipmentAccount.setDisabled(true);
+        
+        when(accountRepository.findById(2)).thenReturn(Optional.of(equipmentAccount));
+        when(accountRepository.findById(5)).thenReturn(Optional.of(cashAccount));
+        
+        try{
+            transferService.transfer(2, 5, "100");
+            fail();
+        } catch(IllegalStateException e){
+            assertThat(e.getMessage()).isEqualTo("Account disabled");
+        }
     }
 }
