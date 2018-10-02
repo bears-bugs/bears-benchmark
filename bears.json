@@ -1,0 +1,151 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 14, 
+      "numberRunning": 15, 
+      "numberFailing": 1, 
+      "numberErroring": 0, 
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError", 
+          "isError": false, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 0
+    }, 
+    "failingModule": "/root/workspace/rafonsecad/cash-count/435955189", 
+    "failureDetails": [
+      {
+        "failureName": "java.lang.AssertionError", 
+        "testClass": "org.cash.count.service.impl.TransferServiceTest", 
+        "testMethod": "shouldNotExecuteTransfer_accountDisabled", 
+        "isError": false
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 5, 
+        "numberRunning": 6, 
+        "testClass": "org.cash.count.service.impl.TransferServiceTest", 
+        "numberFailing": 1, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/rafonsecad/cash-count/builds/435958219", 
+      "date": "Oct 2, 2018 6:27:44 AM", 
+      "id": 435958219
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/rafonsecad/cash-count/builds/435955189", 
+      "date": "Oct 2, 2018 6:19:14 AM", 
+      "id": 435955189
+    }
+  }, 
+  "repository": {
+    "name": "rafonsecad/cash-count", 
+    "url": "https://github.com/rafonsecad/cash-count", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 147287009
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/rafonsecad/cash-count/commit/13288f1282bdb1237c98aec02b89edcee813915b", 
+      "sha": "13288f1282bdb1237c98aec02b89edcee813915b", 
+      "branchName": "master", 
+      "date": "Oct 2, 2018 6:26:11 AM", 
+      "repoName": "rafonsecad/cash-count"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/rafonsecad/cash-count/commit/1019f4ae787bd616e432f364917e83ab2fe35587", 
+      "sha": "1019f4ae787bd616e432f364917e83ab2fe35587", 
+      "branchName": "master", 
+      "date": "Oct 2, 2018 6:11:09 AM", 
+      "repoName": "rafonsecad/cash-count"
+    }
+  }, 
+  "bugName": "rafonsecad-cash-count-435955189-435958219", 
+  "version": "latest", 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 0, 
+      "numberDeleted": 4
+    }
+  }, 
+  "type": "passing_passing", 
+  "bugId": "Bears-234", 
+  "projectMetrics": {
+    "numberSourceFiles": 13, 
+    "numberLibrariesFailingModule": 89, 
+    "numberTestFiles": 3, 
+    "numberModules": 1
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 345099016, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 400556032, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Oct 2, 2018 6:29:19 AM", 
+    "projectRootPomPath": "./workspace/rafonsecad/cash-count/435955189/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          0, 
+          3, 
+          0, 
+          0, 
+          32
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 35
+      }, 
+      "testing": {
+        "stepDurations": [
+          11
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 11
+      }, 
+      "cloning": {
+        "stepDurations": [
+          1
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 1
+      }
+    }, 
+    "reproductionDateBeginning": "Oct 2, 2018 6:27:54 AM", 
+    "totalDuration": 80
+  }
+}
