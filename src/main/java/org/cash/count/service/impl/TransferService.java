@@ -41,6 +41,10 @@ public class TransferService implements ITransferService{
         Account debitedAccount = debitedAccountWrapper.orElseThrow(NoSuchElementException::new);
         Account creditedAccount = creditedAccountWrapper.orElseThrow(NoSuchElementException::new);
         
+        if (debitedAccount.isDisabled() || creditedAccount.isDisabled()){
+            throw new IllegalStateException("Account disabled");
+        }
+        
         BigDecimal debitedAccountBalance = calculateDebitedBalance(debitedAccount, amount);
         BigDecimal creditedAccountBalance = calculateCreditedBalance(creditedAccount, amount);
         
