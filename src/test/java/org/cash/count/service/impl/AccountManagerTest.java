@@ -6,6 +6,8 @@
 package org.cash.count.service.impl;
 
 import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.Optional;
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
@@ -238,6 +240,7 @@ public class AccountManagerTest {
         Account account = new Account();
         account.setId(5);
         account.setDisabled(false);
+        account.setChildren(new ArrayList<>());
         
         Account storedAccount = new Account();
         storedAccount.setId(5);
@@ -252,5 +255,64 @@ public class AccountManagerTest {
         
         Account capturedAccount = accountCaptor.getValue();
         assertThat(capturedAccount.isDisabled()).isEqualTo(storedAccount.isDisabled());
+    }
+    
+    /**
+     * Should disabled account. Children accounts are all disabled
+     */
+    @Test
+    public void shouldDisableAccount_childrenAccountsDisabled(){
+        Account childAccount = new Account();
+        childAccount.setId(6);
+        childAccount.setDisabled(true);
+        
+        List<Account> childrenAccounts = new ArrayList<>();
+        childrenAccounts.add(childAccount);
+        
+        Account account = new Account();
+        account.setId(5);
+        account.setDisabled(false);
+        account.setChildren(childrenAccounts);
+        
+        Account storedAccount = new Account();
+        storedAccount.setId(5);
+        storedAccount.setDisabled(true);
+        
+        when(accountRepository.findById(5)).thenReturn(Optional.of(account));
+        when(accountRepository.save(any())).thenReturn(storedAccount);
+        
+        accountManager.disable(5);
+        
+        verify(accountRepository).save(accountCaptor.capture());
+        
+        Account capturedAccount = accountCaptor.getValue();
+        assertThat(capturedAccount.isDisabled()).isEqualTo(storedAccount.isDisabled());
+    }
+    
+    /**
+     * Should not disable account. Children accounts are enabled
+     */
+    @Test
+    public void shouldNotDisableAccount_accountHasChildrenEnabledAccounts(){
+        Account childAccount = new Account();
+        childAccount.setId(6);
+        childAccount.setDisabled(false);
+        
+        List<Account> childrenAccounts = new ArrayList<>();
+        childrenAccounts.add(childAccount);
+        
+        Account account = new Account();
+        account.setId(5);
+        account.setDisabled(false);
+        account.setChildren(childrenAccounts);
+        
+        when(accountRepository.findById(5)).thenReturn(Optional.of(account));
+        
+        try{
+            accountManager.disable(5);
+            fail();
+        } catch(IllegalStateException e){
+            assertThat(e.getMessage()).isEqualTo("Children accounts enabled");
+        }
     }
 }
