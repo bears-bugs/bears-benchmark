@@ -1,0 +1,159 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 176, 
+      "numberRunning": 178, 
+      "numberFailing": 2, 
+      "numberErroring": 0, 
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError", 
+          "isError": false, 
+          "occurrences": 2
+        }
+      ], 
+      "numberSkipping": 0
+    }, 
+    "failingModule": "/root/workspace/dungba88/libra/436514153", 
+    "failureDetails": [
+      {
+        "failureName": "java.lang.AssertionError", 
+        "detail": "expected:<false> but was:<true>", 
+        "isError": false, 
+        "testMethod": "testVariable[40]", 
+        "testClass": "org.joo.libra.test.TestSqlVariable"
+      }, 
+      {
+        "failureName": "java.lang.AssertionError", 
+        "detail": "expected:<false> but was:<true>", 
+        "isError": false, 
+        "testMethod": "testVariable[41]", 
+        "testClass": "org.joo.libra.test.TestSqlVariable"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 66, 
+        "numberRunning": 68, 
+        "testClass": "org.joo.libra.test.TestSqlVariable", 
+        "numberFailing": 2, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/dungba88/libra/builds/436524727", 
+      "date": "Oct 3, 2018 10:41:19 AM", 
+      "id": 436524727
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/dungba88/libra/builds/436514153", 
+      "date": "Oct 3, 2018 10:10:51 AM", 
+      "id": 436514153
+    }
+  }, 
+  "repository": {
+    "name": "dungba88/libra", 
+    "url": "https://github.com/dungba88/libra", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 110289100
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/dungba88/libra/commit/fbe5d265849641ee3e49f5ffe81db87534525859", 
+      "sha": "fbe5d265849641ee3e49f5ffe81db87534525859", 
+      "branchName": "master", 
+      "date": "Oct 3, 2018 10:38:04 AM", 
+      "repoName": "dungba88/libra"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/dungba88/libra/commit/fd48492de18ad9abd87c58b286f1c3e5028d2fed", 
+      "sha": "fd48492de18ad9abd87c58b286f1c3e5028d2fed", 
+      "branchName": "master", 
+      "date": "Oct 3, 2018 10:06:19 AM", 
+      "repoName": "dungba88/libra"
+    }
+  }, 
+  "bugName": "dungba88-libra-436514153-436524727", 
+  "version": "latest", 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 0, 
+      "numberDeleted": 6
+    }
+  }, 
+  "type": "passing_passing", 
+  "bugId": "Bears-210", 
+  "projectMetrics": {
+    "numberSourceFiles": 59, 
+    "numberLibrariesFailingModule": 7, 
+    "numberTestFiles": 12, 
+    "numberModules": 1
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 244856160, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 382730240, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Oct 3, 2018 10:44:56 AM", 
+    "projectRootPomPath": "./workspace/dungba88/libra/436514153/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          0, 
+          0, 
+          0, 
+          0, 
+          40
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 40
+      }, 
+      "testing": {
+        "stepDurations": [
+          61
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 61
+      }, 
+      "cloning": {
+        "stepDurations": [
+          2
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 2
+      }
+    }, 
+    "reproductionDateBeginning": "Oct 3, 2018 10:41:40 AM", 
+    "totalDuration": 192
+  }
+}
