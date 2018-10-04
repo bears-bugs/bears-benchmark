@@ -1,0 +1,167 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 817, 
+      "numberRunning": 819, 
+      "numberFailing": 2, 
+      "numberErroring": 0, 
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError", 
+          "isError": false, 
+          "occurrences": 2
+        }
+      ], 
+      "numberSkipping": 0
+    }, 
+    "failingModule": "/root/workspace/vkostyukov/la4j/414793864", 
+    "failureDetails": [
+      {
+        "failureName": "java.lang.AssertionError", 
+        "detail": "expected:<1.000 0.000 0.000 2.000 0.000 1.000 0.000> but was:<0.000 0.000 0.000 0.000 0.000 1.000 0.000>", 
+        "isError": false, 
+        "testMethod": "testFromMap_unordered", 
+        "testClass": "org.la4j.vector.sparse.CompressedVectorTest"
+      }, 
+      {
+        "failureName": "java.lang.AssertionError", 
+        "detail": "expected:<1.000 0.000 0.000 2.000 0.000 1.000 0.000> but was:<0.000 0.000 0.000 0.000 0.000 1.000 0.000>", 
+        "isError": false, 
+        "testMethod": "testFromMap_unordered", 
+        "testClass": "org.la4j.vector.dense.BasicVectorTest"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 64, 
+        "numberRunning": 65, 
+        "testClass": "org.la4j.vector.dense.BasicVectorTest", 
+        "numberFailing": 1, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }, 
+      {
+        "numberPassing": 77, 
+        "numberRunning": 78, 
+        "testClass": "org.la4j.vector.sparse.CompressedVectorTest", 
+        "numberFailing": 1, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/vkostyukov/la4j/builds/436911083", 
+      "date": "Oct 4, 2018 2:37:37 AM", 
+      "id": 436911083
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/vkostyukov/la4j/builds/414793864", 
+      "date": "Aug 11, 2018 8:32:37 AM", 
+      "id": 414793864
+    }
+  }, 
+  "repository": {
+    "name": "vkostyukov/la4j", 
+    "url": "https://github.com/vkostyukov/la4j", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 7235555
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/vkostyukov/la4j/commit/1229fcf1bec83b678ae8655fac893dc14b8e70ec", 
+      "sha": "1229fcf1bec83b678ae8655fac893dc14b8e70ec", 
+      "branchName": "master", 
+      "date": "Oct 4, 2018 2:34:43 AM", 
+      "repoName": "vkostyukov/la4j"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/vkostyukov/la4j/commit/c396addd2a046b7cc971750d592cf3a15eceb202", 
+      "sha": "c396addd2a046b7cc971750d592cf3a15eceb202", 
+      "branchName": "master", 
+      "date": "Aug 11, 2018 8:31:12 AM", 
+      "repoName": "vkostyukov/la4j"
+    }
+  }, 
+  "bugName": "vkostyukov-la4j-414793864-436911083", 
+  "version": "latest", 
+  "projectMetrics": {
+    "numberSourceFiles": 86, 
+    "numberLibrariesFailingModule": 2, 
+    "numberTestFiles": 31, 
+    "numberModules": 1
+  }, 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 3, 
+      "numberDeleted": 2
+    }
+  }, 
+  "bugId": "Bears-250", 
+  "type": "passing_passing", 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 273899272, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 379060224, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Oct 4, 2018 2:39:44 AM", 
+    "projectRootPomPath": "./workspace/vkostyukov/la4j/414793864/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          0, 
+          0, 
+          0, 
+          0, 
+          30
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 30
+      }, 
+      "testing": {
+        "stepDurations": [
+          25
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 25
+      }, 
+      "cloning": {
+        "stepDurations": [
+          4
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 4
+      }
+    }, 
+    "reproductionDateBeginning": "Oct 4, 2018 2:37:51 AM", 
+    "totalDuration": 108
+  }
+}
