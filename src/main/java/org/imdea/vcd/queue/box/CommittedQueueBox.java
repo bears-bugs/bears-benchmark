@@ -35,7 +35,11 @@ public class CommittedQueueBox implements QueueBox<CommittedQueueBox> {
 
     public CommittedQueueBox(CommittedQueueBox commitDepBox) {
         this.dots = new Dots(commitDepBox.dots);
-        this.dep = new Clock<>(commitDepBox.dep);
+        if (commitDepBox.dep != null) {
+            this.dep = new Clock<>(commitDepBox.dep);
+        } else {
+            this.dep = null;
+        }
         this.messageMap = new MessageMap(commitDepBox.messageMap);
     }
 
