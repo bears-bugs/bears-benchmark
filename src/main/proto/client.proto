@@ -1,0 +1,61 @@
+syntax = "proto3";
+
+option java_package = "org.imdea.vcd.pb";
+option java_outer_classname = "Proto";
+
+message Init {
+  map<int32, ExceptionSet> committed = 1;
+  int32 site = 2;
+}
+
+message Message {
+  repeated bytes hashes = 1;
+  bytes data = 2;
+}
+
+message MessageSet {
+  repeated Message messages = 1;
+  enum Status {
+    START = 0;
+    DURABLE = 1;
+    DELIVERED = 2;
+  }
+  Status status = 2;
+}
+
+message NodeSpec {
+  int32 id = 1;
+  string ip = 2;
+  int32 port = 3;
+}
+
+message Dot {
+  int32 id = 1;
+  int64 seq = 2;
+}
+
+message ExceptionSet {
+  int64 seq = 1;
+  repeated int64 ex = 2;
+}
+
+message Commit {
+  Dot dot = 1;
+  Message message = 2;
+  map<int32, ExceptionSet> dep = 3;
+  map<int32, int64> conf = 4;
+}
+
+message Reply {
+  oneof reply {
+    // initialize queue with dots of committed messages
+    Init init = 1;
+
+    // durable notification
+    MessageSet set = 2;
+
+    // commit notification
+    Commit commit = 3;
+  }
+}
+

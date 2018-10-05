@@ -1,0 +1,463 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building vcdjavaclient 0.1
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- protoc-jar-maven-plugin:3.4.0:run (default) @ vcdjavaclient ---
+[INFO] Resolving artifact: com.google.protobuf:protoc:3.4.0, platform: linux-x86_64
+protoc-jar: executing: [/tmp/protoc5888044645667397154.exe, --version]
+libprotoc 3.4.0
+[INFO] Protoc command: /tmp/protoc5888044645667397154.exe
+[INFO] Input directories:
+[INFO]     /root/workspace/vitorenesduarte/VCD-java-client/437204853/src/main/proto
+[INFO] Output targets:
+[INFO]     java: /root/workspace/vitorenesduarte/VCD-java-client/437204853/src/main/java (add: main, clean: false, plugin: null, outputOptions: null)
+[INFO]     Processing (java): client.proto
+protoc-jar: executing: [/tmp/protoc5888044645667397154.exe, -I/root/workspace/vitorenesduarte/VCD-java-client/437204853/src/main/proto, --java_out=/root/workspace/vitorenesduarte/VCD-java-client/437204853/src/main/java, /root/workspace/vitorenesduarte/VCD-java-client/437204853/src/main/proto/client.proto]
+[INFO] Adding generated classes to classpath
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-source (default) @ vcdjavaclient ---
+[INFO] Source directory: /root/workspace/vitorenesduarte/VCD-java-client/437204853/src/test added.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ vcdjavaclient ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/vitorenesduarte/VCD-java-client/437204853/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ vcdjavaclient ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 32 source files to /root/workspace/vitorenesduarte/VCD-java-client/437204853/target/classes
+[WARNING] /root/workspace/vitorenesduarte/VCD-java-client/437204853/src/main/java/org/imdea/vcd/queue/ConfQueue.java: Some input files use unchecked or unsafe operations.
+[WARNING] /root/workspace/vitorenesduarte/VCD-java-client/437204853/src/main/java/org/imdea/vcd/queue/ConfQueue.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ vcdjavaclient ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/vitorenesduarte/VCD-java-client/437204853/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ vcdjavaclient ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ vcdjavaclient ---
+[INFO] Surefire report directory: /root/workspace/vitorenesduarte/VCD-java-client/437204853/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.pom (3 KB at 7.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom (3 KB at 65.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.jar (37 KB at 480.8 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.imdea.vcd.queue.ConfQueueTest
+Tests run: 9, Failures: 0, Errors: 9, Skipped: 0, Time elapsed: 0.925 sec <<< FAILURE!
+testAdd1(org.imdea.vcd.queue.ConfQueueTest)  Time elapsed: 0.833 sec  <<< ERROR!
+java.lang.NullPointerException
+	at org.imdea.vcd.queue.clock.Clock.<init>(Clock.java:24)
+	at org.imdea.vcd.queue.box.CommittedQueueBox.<init>(CommittedQueueBox.java:38)
+	at org.imdea.vcd.queue.box.CommittedQueueBox.clone(CommittedQueueBox.java:119)
+	at org.imdea.vcd.queue.QueueAddArgs.<init>(QueueAddArgs.java:22)
+	at org.imdea.vcd.queue.QueueAddArgs.clone(QueueAddArgs.java:62)
+	at org.imdea.vcd.queue.ConfQueueTest.checkTermination(ConfQueueTest.java:355)
+	at org.imdea.vcd.queue.ConfQueueTest.checkTermination(ConfQueueTest.java:349)
+	at org.imdea.vcd.queue.ConfQueueTest.checkTerminationRandomShuffles(ConfQueueTest.java:333)
+	at org.imdea.vcd.queue.ConfQueueTest.testAdd1(ConfQueueTest.java:123)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+testAdd2(org.imdea.vcd.queue.ConfQueueTest)  Time elapsed: 0.004 sec  <<< ERROR!
+java.lang.NullPointerException
+	at org.imdea.vcd.queue.clock.Clock.<init>(Clock.java:24)
+	at org.imdea.vcd.queue.box.CommittedQueueBox.<init>(CommittedQueueBox.java:38)
+	at org.imdea.vcd.queue.box.CommittedQueueBox.clone(CommittedQueueBox.java:119)
+	at org.imdea.vcd.queue.QueueAddArgs.<init>(QueueAddArgs.java:22)
+	at org.imdea.vcd.queue.QueueAddArgs.clone(QueueAddArgs.java:62)
+	at org.imdea.vcd.queue.ConfQueueTest.checkTermination(ConfQueueTest.java:355)
+	at org.imdea.vcd.queue.ConfQueueTest.checkTermination(ConfQueueTest.java:349)
+	at org.imdea.vcd.queue.ConfQueueTest.checkTerminationRandomShuffles(ConfQueueTest.java:333)
+	at org.imdea.vcd.queue.ConfQueueTest.testAdd2(ConfQueueTest.java:167)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+testAdd3(org.imdea.vcd.queue.ConfQueueTest)  Time elapsed: 0.002 sec  <<< ERROR!
+java.lang.NullPointerException
+	at org.imdea.vcd.queue.clock.Clock.<init>(Clock.java:24)
+	at org.imdea.vcd.queue.box.CommittedQueueBox.<init>(CommittedQueueBox.java:38)
+	at org.imdea.vcd.queue.box.CommittedQueueBox.clone(CommittedQueueBox.java:119)
+	at org.imdea.vcd.queue.QueueAddArgs.<init>(QueueAddArgs.java:22)
+	at org.imdea.vcd.queue.QueueAddArgs.clone(QueueAddArgs.java:62)
+	at org.imdea.vcd.queue.ConfQueueTest.checkTermination(ConfQueueTest.java:355)
+	at org.imdea.vcd.queue.ConfQueueTest.checkTermination(ConfQueueTest.java:349)
+	at org.imdea.vcd.queue.ConfQueueTest.checkTerminationRandomShuffles(ConfQueueTest.java:333)
+	at org.imdea.vcd.queue.ConfQueueTest.testAdd3(ConfQueueTest.java:201)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+testAdd4(org.imdea.vcd.queue.ConfQueueTest)  Time elapsed: 0.003 sec  <<< ERROR!
+java.lang.NullPointerException
+	at org.imdea.vcd.queue.clock.Clock.<init>(Clock.java:24)
+	at org.imdea.vcd.queue.box.CommittedQueueBox.<init>(CommittedQueueBox.java:38)
+	at org.imdea.vcd.queue.box.CommittedQueueBox.clone(CommittedQueueBox.java:119)
+	at org.imdea.vcd.queue.QueueAddArgs.<init>(QueueAddArgs.java:22)
+	at org.imdea.vcd.queue.QueueAddArgs.clone(QueueAddArgs.java:62)
+	at org.imdea.vcd.queue.ConfQueueTest.checkTermination(ConfQueueTest.java:355)
+	at org.imdea.vcd.queue.ConfQueueTest.checkTermination(ConfQueueTest.java:349)
+	at org.imdea.vcd.queue.ConfQueueTest.checkTerminationRandomShuffles(ConfQueueTest.java:333)
+	at org.imdea.vcd.queue.ConfQueueTest.testAdd4(ConfQueueTest.java:240)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+testAdd5(org.imdea.vcd.queue.ConfQueueTest)  Time elapsed: 0.001 sec  <<< ERROR!
+java.lang.NullPointerException
+	at org.imdea.vcd.queue.clock.Clock.<init>(Clock.java:24)
+	at org.imdea.vcd.queue.box.CommittedQueueBox.<init>(CommittedQueueBox.java:38)
+	at org.imdea.vcd.queue.box.CommittedQueueBox.clone(CommittedQueueBox.java:119)
+	at org.imdea.vcd.queue.QueueAddArgs.<init>(QueueAddArgs.java:22)
+	at org.imdea.vcd.queue.QueueAddArgs.clone(QueueAddArgs.java:62)
+	at org.imdea.vcd.queue.ConfQueueTest.checkTermination(ConfQueueTest.java:355)
+	at org.imdea.vcd.queue.ConfQueueTest.checkTermination(ConfQueueTest.java:349)
+	at org.imdea.vcd.queue.ConfQueueTest.checkTerminationRandomShuffles(ConfQueueTest.java:333)
+	at org.imdea.vcd.queue.ConfQueueTest.testAdd5(ConfQueueTest.java:264)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+testAdd6(org.imdea.vcd.queue.ConfQueueTest)  Time elapsed: 0.003 sec  <<< ERROR!
+java.lang.NullPointerException
+	at org.imdea.vcd.queue.clock.Clock.<init>(Clock.java:24)
+	at org.imdea.vcd.queue.box.CommittedQueueBox.<init>(CommittedQueueBox.java:38)
+	at org.imdea.vcd.queue.box.CommittedQueueBox.clone(CommittedQueueBox.java:119)
+	at org.imdea.vcd.queue.QueueAddArgs.<init>(QueueAddArgs.java:22)
+	at org.imdea.vcd.queue.QueueAddArgs.clone(QueueAddArgs.java:62)
+	at org.imdea.vcd.queue.ConfQueueTest.checkTermination(ConfQueueTest.java:355)
+	at org.imdea.vcd.queue.ConfQueueTest.checkTermination(ConfQueueTest.java:349)
+	at org.imdea.vcd.queue.ConfQueueTest.checkTerminationRandomShuffles(ConfQueueTest.java:333)
+	at org.imdea.vcd.queue.ConfQueueTest.testAdd6(ConfQueueTest.java:303)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+testFailure1(org.imdea.vcd.queue.ConfQueueTest)  Time elapsed: 0.002 sec  <<< ERROR!
+java.lang.NullPointerException
+	at org.imdea.vcd.queue.clock.Clock.<init>(Clock.java:24)
+	at org.imdea.vcd.queue.box.CommittedQueueBox.<init>(CommittedQueueBox.java:38)
+	at org.imdea.vcd.queue.box.CommittedQueueBox.clone(CommittedQueueBox.java:119)
+	at org.imdea.vcd.queue.QueueAddArgs.<init>(QueueAddArgs.java:22)
+	at org.imdea.vcd.queue.QueueAddArgs.clone(QueueAddArgs.java:62)
+	at org.imdea.vcd.queue.ConfQueueTest.checkTermination(ConfQueueTest.java:355)
+	at org.imdea.vcd.queue.ConfQueueTest.checkTermination(ConfQueueTest.java:349)
+	at org.imdea.vcd.queue.ConfQueueTest.checkTerminationRandomShuffles(ConfQueueTest.java:333)
+	at org.imdea.vcd.queue.ConfQueueTest.testFailure1(ConfQueueTest.java:328)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+testFailures(org.imdea.vcd.queue.ConfQueueTest)  Time elapsed: 0.002 sec  <<< ERROR!
+java.lang.NullPointerException
+	at org.imdea.vcd.queue.clock.Clock.<init>(Clock.java:24)
+	at org.imdea.vcd.queue.box.CommittedQueueBox.<init>(CommittedQueueBox.java:38)
+	at org.imdea.vcd.queue.box.CommittedQueueBox.clone(CommittedQueueBox.java:119)
+	at org.imdea.vcd.queue.QueueAddArgs.<init>(QueueAddArgs.java:22)
+	at org.imdea.vcd.queue.QueueAddArgs.clone(QueueAddArgs.java:62)
+	at org.imdea.vcd.queue.ConfQueueTest.checkTermination(ConfQueueTest.java:355)
+	at org.imdea.vcd.queue.ConfQueueTest.checkTermination(ConfQueueTest.java:349)
+	at org.imdea.vcd.queue.ConfQueueTest.checkTerminationRandomShuffles(ConfQueueTest.java:333)
+	at org.imdea.vcd.queue.ConfQueueTest.testFailures(ConfQueueTest.java:68)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+testRandom(org.imdea.vcd.queue.ConfQueueTest)  Time elapsed: 0.002 sec  <<< ERROR!
+java.lang.NullPointerException
+	at org.imdea.vcd.queue.clock.Clock.<init>(Clock.java:24)
+	at org.imdea.vcd.queue.box.CommittedQueueBox.<init>(CommittedQueueBox.java:38)
+	at org.imdea.vcd.queue.box.CommittedQueueBox.clone(CommittedQueueBox.java:119)
+	at org.imdea.vcd.queue.QueueAddArgs.<init>(QueueAddArgs.java:22)
+	at org.imdea.vcd.queue.QueueAddArgs.clone(QueueAddArgs.java:62)
+	at org.imdea.vcd.queue.ConfQueueTest.checkTermination(ConfQueueTest.java:355)
+	at org.imdea.vcd.queue.ConfQueueTest.checkTermination(ConfQueueTest.java:349)
+	at org.imdea.vcd.queue.ConfQueueTest.checkTerminationRandomShuffles(ConfQueueTest.java:333)
+	at org.imdea.vcd.queue.ConfQueueTest.testRandom(ConfQueueTest.java:43)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+Running org.imdea.vcd.queue.DepQueueTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 20.703 sec
+Running org.imdea.vcd.queue.clock.MaxIntTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.imdea.vcd.queue.clock.ExceptionSetTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.imdea.vcd.queue.clock.ClockTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+
+Results :
+
+Tests in error: 
+  testAdd1(org.imdea.vcd.queue.ConfQueueTest)
+  testAdd2(org.imdea.vcd.queue.ConfQueueTest)
+  testAdd3(org.imdea.vcd.queue.ConfQueueTest)
+  testAdd4(org.imdea.vcd.queue.ConfQueueTest)
+  testAdd5(org.imdea.vcd.queue.ConfQueueTest)
+  testAdd6(org.imdea.vcd.queue.ConfQueueTest)
+  testFailure1(org.imdea.vcd.queue.ConfQueueTest)
+  testFailures(org.imdea.vcd.queue.ConfQueueTest)
+  testRandom(org.imdea.vcd.queue.ConfQueueTest)
+
+Tests run: 24, Failures: 0, Errors: 9, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 30.630 s
+[INFO] Finished at: 2018-10-05T13:21:41+02:00
+[INFO] Final Memory: 24M/456M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (default-test) on project vcdjavaclient: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/vitorenesduarte/VCD-java-client/437204853/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
