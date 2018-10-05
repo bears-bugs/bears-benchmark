@@ -24,9 +24,18 @@ public class Generator {
 
     public static Message message() {
         Integer conflicts = RANDOM().nextInt(100);
+        ByteString key = hash(randomByteString(KEY_SIZE), conflicts);
+        return message(key);
+    }
+
+    public static Message message(String key) {
+        return message(bs(key.getBytes()));
+    }
+
+    public static Message message(ByteString key) {
         ByteString data = randomByteString(RANDOM().nextInt(100));
         return Message.newBuilder()
-                .addHashes(hash(randomByteString(KEY_SIZE), conflicts))
+                .addHashes(key)
                 .setData(data)
                 .build();
     }
