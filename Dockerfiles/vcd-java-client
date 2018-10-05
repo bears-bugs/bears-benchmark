@@ -1,0 +1,24 @@
+FROM vitorenesduarte/vcd-java-client-base
+
+MAINTAINER Vitor Enes <vitorenesduarte@gmail.com>
+
+ENV NAME=vcd-java-client
+ENV JAR=$NAME-0.1.jar
+
+ADD target/$JAR $NAME/
+
+WORKDIR $NAME
+
+CMD java -jar $JAR -ops=${OPS} \
+                   -op=${OP} \
+                   -clients=${CLIENTS} \
+                   -conflicts=${CONFLICTS} \
+                   -payload_size=${PAYLOAD_SIZE} \
+                   -node_number=${NODE_NUMBER} \
+                   -max_faults=${MAX_FAULTS} \
+                   -cluster=${CLUSTER} \
+                   -timestamp=${TIMESTAMP} \
+                   -redis=${REDIS} \
+                   -zk=${ZK} \
+                   -batch_wait=${BATCH_WAIT} \
+                   -queue_type=${QUEUE_TYPE}
