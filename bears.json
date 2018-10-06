@@ -1,0 +1,152 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 615, 
+      "numberRunning": 616, 
+      "numberFailing": 1, 
+      "numberErroring": 0, 
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError", 
+          "isError": false, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 0
+    }, 
+    "failingModule": "/root/workspace/SonarOpenCommunity/sonar-cxx/437974912/cxx-checks", 
+    "failureDetails": [
+      {
+        "failureName": "java.lang.AssertionError", 
+        "detail": "\nExpected: 96\ngot: 67", 
+        "isError": false, 
+        "testMethod": "test", 
+        "testClass": "org.sonar.cxx.checks.naming.MethodNameCheckTest"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 0, 
+        "numberRunning": 1, 
+        "testClass": "org.sonar.cxx.checks.naming.MethodNameCheckTest", 
+        "numberFailing": 1, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/SonarOpenCommunity/sonar-cxx/builds/438070185", 
+      "date": "Oct 6, 2018 8:51:20 PM", 
+      "id": 438070185
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/SonarOpenCommunity/sonar-cxx/builds/437974912", 
+      "date": "Oct 6, 2018 1:55:17 PM", 
+      "id": 437974912
+    }
+  }, 
+  "repository": {
+    "name": "SonarOpenCommunity/sonar-cxx", 
+    "url": "https://github.com/SonarOpenCommunity/sonar-cxx", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 6140556
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/SonarOpenCommunity/sonar-cxx/commit/040a94a2104f7cd9ad7e0d0cb4d8935052264720", 
+      "sha": "040a94a2104f7cd9ad7e0d0cb4d8935052264720", 
+      "branchName": "master", 
+      "date": "Oct 6, 2018 8:14:52 PM", 
+      "repoName": "SonarOpenCommunity/sonar-cxx"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/SonarOpenCommunity/sonar-cxx/commit/21562864e471b5a1db1c85ef08ed082168894e1b", 
+      "sha": "21562864e471b5a1db1c85ef08ed082168894e1b", 
+      "branchName": "master", 
+      "date": "Oct 6, 2018 1:18:31 PM", 
+      "repoName": "SonarOpenCommunity/sonar-cxx"
+    }
+  }, 
+  "bugName": "SonarOpenCommunity-sonar-cxx-437974912-438070185", 
+  "version": "latest", 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 4, 
+      "numberDeleted": 25
+    }
+  }, 
+  "type": "passing_passing", 
+  "bugId": "Bears-242", 
+  "projectMetrics": {
+    "numberSourceFiles": 226, 
+    "numberLibrariesFailingModule": 47, 
+    "numberTestFiles": 162, 
+    "numberModules": 8
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 318911656, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 465043456, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Oct 6, 2018 8:55:27 PM", 
+    "projectRootPomPath": "./workspace/SonarOpenCommunity/sonar-cxx/437974912/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          0, 
+          0, 
+          0, 
+          0, 
+          83
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 83
+      }, 
+      "testing": {
+        "stepDurations": [
+          29
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 29
+      }, 
+      "cloning": {
+        "stepDurations": [
+          12
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 12
+      }
+    }, 
+    "reproductionDateBeginning": "Oct 6, 2018 8:51:36 PM", 
+    "totalDuration": 223
+  }
+}
