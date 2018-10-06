@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>org.sonarsource.parent</groupId>
+    <artifactId>parent</artifactId>
+    <version>44</version>
+  </parent>
+
+  <groupId>org.sonarsource.sonarqube-plugins.cxx</groupId>
+  <artifactId>cxx</artifactId>
+  <version>1.2.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
+  <name>Cxx</name>
+  <url>https://github.com/SonarOpenCommunity/sonar-cxx</url>
+  <inceptionYear>2010</inceptionYear>
+  <organization>
+    <name>SonarOpenCommunity</name>
+    <url>https://github.com/SonarOpenCommunity</url>
+  </organization>
+  <licenses>
+    <license>
+      <name>GNU LGPL 3</name>
+      <url>http://www.gnu.org/licenses/lgpl.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+
+  <developers>
+    <developer>
+      <id>wenns</id>
+      <name>Waleri Enns</name>
+      <email>wen@contact.de</email>
+    </developer>
+    <developer>
+      <name>Francois Dorin</name>
+      <email>f.dorin@free.fr</email>
+    </developer>
+    <developer>
+      <id>jmecosta</id>
+      <name>Jorge Costa</name>
+      <email>jmecosta@gmail.com</email>
+    </developer>
+    <developer>
+      <name>Vincent Hardion</name>
+      <email>vincent.hardion@gmail.com</email>
+    </developer>
+    <developer>
+      <name>Mathias Cocheril</name>
+      <email>mathias.cocheril-ext@sgcib.com</email>
+    </developer>
+    <developer>
+      <name>JP Chemali</name>
+      <email>jshemali@hotmail.com</email>
+    </developer>
+    <developer>
+      <name>Sylvain Hellegouarch</name>
+      <email>sh@defuze.org</email>
+    </developer>
+    <developer>
+      <name>Przemyslaw Kociolek</name>
+      <email>przemyslaw.kociolek@sabre.com</email>
+    </developer>
+    <developer>
+      <name>Patrick Gansterer</name>
+      <email>paroga@paroga.com</email>
+    </developer>
+    <developer>
+      <id>Bertk</id>
+      <name>Bert Kandert</name>
+      <email>bert.k@hotmail.com</email>
+    </developer>
+    <developer>
+      <name>Wolfgang Buckel</name>
+      <email>wolfgang.buckel@siemens.com</email>
+    </developer>
+    <developer>
+      <name>keithmarsh</name>
+      <email>bitbucket@keithmarsh.com</email>
+    </developer>
+    <developer>
+      <id>guwirth</id>
+      <name>Günter Wirth</name>
+      <email>guenter.wirth@etas.com</email>
+    </developer>
+    <developer>
+      <id>Typz</id>
+      <name>Francois Ferrand</name>
+      <email>thetypz@gmail.com</email>
+    </developer>
+    <developer>
+      <id>lcintrat</id>
+      <name>Ludovic Cintrat</name>
+      <email>lcintrat@gmail.com</email>
+    </developer>
+    <developer>
+      <id>Zetten</id>
+      <name>Peter van Zetten</name>
+      <email>peter.vanzetten@gmail.com</email>
+    </developer>
+    <developer>
+      <id>cbagwell</id>
+      <name>Chris Bagwell</name>
+      <email>chris@cnpbagwell.com</email>
+    </developer>
+    <developer>
+      <id>mjdetullio</id>
+      <name>Matthew DeTullio</name>
+      <email/>
+    </developer>
+    <developer>
+      <id>felipebz</id>
+      <name>Felipe Zorzo</name>
+      <email/>
+    </developer>
+    <developer>
+      <id>selltc</id>
+      <name/>
+      <email/>
+    </developer>
+    <developer>
+      <id>wichtounet</id>
+      <name>Baptiste Wicht</name>
+      <email/>
+    </developer>
+    <developer>
+      <id>arnaudsylvestre</id>
+      <name>Arnaud SYLVESTRE</name>
+      <email>Arnaud.Sylvestre@gmail.com</email>
+    </developer>
+    <developer>
+      <id>BobSilent</id>
+      <name>BobSilent</name>
+      <email/>
+    </developer>
+     <developer>
+      <id>Kochise</id>
+      <name>Kochise</name>
+      <email/>
+    </developer>
+    <developer>
+      <id>gyorb</id>
+      <name>gyorb</name>
+      <email/>
+    </developer>
+    <developer>
+      <id>nathanaelg</id>
+      <name>nathanaelg</name>
+      <email/>
+    </developer>
+    <developer>
+      <id>gena01</id>
+      <name>gena01</name>
+      <email/>
+    </developer>
+    <developer>
+      <id>MarcAntoineCRUE</id>
+      <name>MarcAntoineCRUE</name>
+      <email/>
+    </developer>
+    <developer>
+      <id>Pasick</id>
+      <name>Pasick</name>
+      <email/>
+    </developer>
+    <developer>
+      <id>stefanweiser</id>
+      <name>stefanweiser</name>
+      <email/>
+    </developer>
+    <developer>
+      <id>ericlemes</id>
+      <name>Eric Lemes</name>
+      <email/>
+    </developer>
+    <developer>
+      <id>ivangalkin</id>
+      <name>ivangalkin</name>
+      <email/>
+    </developer>
+    <developer>
+      <id>rufinio</id>
+      <name>rufinio</name>
+      <email/>
+    </developer>
+  </developers>
+
+  <modules>
+    <module>cxx-squid</module>
+    <module>cxx-checks</module>
+    <module>cxx-lint</module>
+    <module>cxx-sensors</module>
+    <module>sonar-cxx-plugin</module>
+    <module>sonar-c-plugin</module>    
+    <module>sslr-cxx-toolkit</module>
+    <module>integration-tests</module>
+  </modules>
+
+  <scm>
+    <connection>scm:git:git@github.com:SonarOpenCommunity/sonar-cxx.git</connection>
+    <developerConnection>https://github.com/SonarOpenCommunity/sonar-cxx</developerConnection>
+    <url>https://github.com/SonarOpenCommunity/sonar-cxx</url>
+    <tag>HEAD</tag>
+  </scm>
+  <issueManagement>
+    <system>Git</system>
+    <url>https://github.com/SonarOpenCommunity/sonar-cxx/issues?state=open</url>
+  </issueManagement>
+  <ciManagement>
+    <system>Travis-CI</system>
+    <url>https://travis-ci.org/SonarOpenCommunity/sonar-cxx/</url>
+  </ciManagement>
+
+  <properties>
+    <license.title>Sonar C++ Plugin (Community)</license.title>
+    <license.owner>SonarOpenCommunity</license.owner>
+    <license.mailto>http://github.com/SonarOpenCommunity/sonar-cxx</license.mailto>
+    <maven.test.redirectTestOutputToFile>true</maven.test.redirectTestOutputToFile>
+    <sonar.version>6.7</sonar.version>
+    <sslr.version>1.22</sslr.version>
+    <sslr-squid-bridge.version>2.6.1</sslr-squid-bridge.version>
+    <sonar.artifact.path>target/${project.artifactId}-${project.version}.jar</sonar.artifact.path>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <animal.sniffer.skip>true</animal.sniffer.skip>
+  </properties>
+
+  <dependencyManagement>
+    <dependencies>
+
+      <dependency>
+        <groupId>org.sonarsource.sonarqube</groupId>
+        <artifactId>sonar-plugin-api</artifactId>
+        <version>${sonar.version}</version>
+      </dependency>
+    <dependency>
+      <groupId>commons-io</groupId>
+      <artifactId>commons-io</artifactId>
+      <version>2.6</version>
+    </dependency>
+      <dependency>
+        <groupId>commons-lang</groupId>
+        <artifactId>commons-lang</artifactId>
+        <version>2.6</version>
+      </dependency>
+      <dependency>
+        <groupId>com.google.guava</groupId>
+        <artifactId>guava</artifactId>
+        <version>19.0</version>
+      </dependency>
+      <dependency>
+        <groupId>org.sonarsource.sonarqube</groupId>
+        <artifactId>sonar-testing-harness</artifactId>
+        <version>${sonar.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.sonarsource.sslr</groupId>
+        <artifactId>sslr-core</artifactId>
+        <version>${sslr.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.sonarsource.sslr</groupId>
+        <artifactId>sslr-testing-harness</artifactId>
+        <version>${sslr.version}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>cglib</groupId>
+            <artifactId>cglib-nodep</artifactId>
+          </exclusion>
+        </exclusions>        
+      </dependency>
+      <dependency>
+        <groupId>org.sonarsource.sslr-squid-bridge</groupId>
+        <artifactId>sslr-squid-bridge</artifactId>
+        <version>${sslr-squid-bridge.version}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>org.codehaus.sonar.sslr</groupId>
+            <artifactId>sslr-core</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.codehaus.sonar</groupId>
+            <artifactId>sonar-plugin-api</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.picocontainer</groupId>
+            <artifactId>picocontainer</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.slf4j</groupId>
+            <artifactId>jcl-over-slf4j</artifactId>
+          </exclusion>
+        </exclusions>
+      </dependency>
+      <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>4.12</version>
+      </dependency>
+    <dependency>
+      <groupId>org.assertj</groupId>
+      <artifactId>assertj-core</artifactId>
+      <version>3.10.0</version>
+    </dependency>
+      <dependency>
+        <groupId>org.mockito</groupId>
+        <artifactId>mockito-core</artifactId>
+        <version>2.19.0</version>
+      </dependency>
+      <dependency>
+        <groupId>ch.qos.logback</groupId>
+        <artifactId>logback-classic</artifactId>
+        <version>1.2.3</version>
+        <scope>test</scope>        
+      </dependency>
+      <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-api</artifactId>
+        <version>1.7.25</version>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.maven</groupId>
+        <artifactId>maven-project</artifactId>
+        <version>2.2.1</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.ant</groupId>
+        <artifactId>ant</artifactId>
+        <version>1.10.4</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jdom</groupId>
+        <artifactId>jdom2</artifactId>
+        <version>2.0.6</version>
+      </dependency>
+      <dependency>
+        <groupId>org.hamcrest</groupId>
+        <artifactId>hamcrest-all</artifactId>
+        <version>1.3</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+  <build>
+    <!-- To define the plugin version in your parent POM -->
+    <pluginManagement>
+      <plugins>
+        <!--This plugin's configuration is used to store Eclipse m2e settings only. It has no influence on the Maven build itself.-->
+        <plugin>
+          <groupId>org.eclipse.m2e</groupId>
+          <artifactId>lifecycle-mapping</artifactId>
+          <version>1.2.0-SNAPSHOT</version>
+          <configuration>
+            <lifecycleMappingMetadata>
+              <pluginExecutions>
+                <pluginExecution>
+                  <pluginExecutionFilter>
+                    <groupId>com.mycila.maven-license-plugin</groupId>
+                    <artifactId>maven-license-plugin</artifactId>
+                    <versionRange>[1.9.0,)</versionRange>
+                    <goals>
+                      <goal>check</goal>
+                    </goals>
+                  </pluginExecutionFilter>
+                  <action>
+                    <ignore></ignore>
+                  </action>
+                </pluginExecution>
+              </pluginExecutions>
+            </lifecycleMappingMetadata>
+          </configuration>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-surefire-plugin</artifactId>
+          <version>2.22.0</version>
+        </plugin>
+        <plugin>
+          <groupId>com.mycila</groupId>
+          <artifactId>license-maven-plugin</artifactId>
+          <version>3.0</version>
+        </plugin>
+        <plugin>
+          <groupId>org.sonarsource.scanner.maven</groupId>
+          <artifactId>sonar-maven-plugin</artifactId>
+          <version>3.4.0.905</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+    <!-- To use the plugin goals in your POM or parent POM -->
+    <plugins>
+      <plugin>
+        <groupId>com.mycila</groupId>
+        <artifactId>license-maven-plugin</artifactId>
+        <version>3.0</version>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.7.0</version>
+        <configuration>
+          <showDeprecation>true</showDeprecation>
+        </configuration>
+      </plugin>
+    </plugins>      
+  </build>
+  <!-- BEGIN: Specific to mapping unit tests and covered code 
+   Usage:
+1) Prepare jacoco agent to allow coverage report generation, build the project, and execute the unit tests:
+   mvn org.jacoco:jacoco-maven-plugin:prepare-agent clean install
+2) To get coverage per tests information, you will need to activate the profile when running the instrumented tests:
+   mvn org.jacoco:jacoco-maven-plugin:prepare-agent clean install -Pcoverage-per-test
+3) Analyze the project with SonarQube using Maven:
+   mvn sonar:sonar
+  -->
+  <profiles>
+    <profile>
+      <id>coverage-per-test</id>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-surefire-plugin</artifactId>
+            <!-- Minimal supported version is 2.4 -->
+            <version>2.22.0</version>
+            <configuration>
+              <properties>
+                <property>
+                  <name>listener</name>
+                  <value>org.sonar.java.jacoco.JUnitListener</value>
+                </property>
+              </properties>
+            </configuration>
+          </plugin>
+        </plugins>
+      </build>
+
+      <dependencies>
+        <dependency>
+          <groupId>org.sonarsource.java</groupId>
+          <artifactId>sonar-jacoco-listeners</artifactId>
+          <version>5.4.0.14284</version>
+          <scope>test</scope>
+        </dependency>
+      </dependencies>
+    </profile>
+  </profiles>
+</project>
