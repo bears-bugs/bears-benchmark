@@ -1,0 +1,350 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Cxx
+[INFO] Cxx :: Squid
+[INFO] Cxx :: Checks
+[INFO] Cxx :: Lint
+[INFO] Cxx :: Sensors
+[INFO] Cxx :: Sonar Plugin
+[INFO] Cxx :: Sonar C Plugin
+[INFO] Cxx :: SSLR Toolkit
+[INFO] Cxx :: Integration Tests
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Cxx 1.2.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (default) @ cxx ---
+[INFO] Executing: /bin/sh -c cd '/root/workspace/SonarOpenCommunity/sonar-cxx/437974912' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /root/workspace/SonarOpenCommunity/sonar-cxx/437974912
+[INFO] Storing buildNumber: 473f0ac70208700595ec08b92100a654b998f79c at timestamp: 1538851999282
+[WARNING] Cannot get the branch information from the git repository: 
+Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref
+
+[INFO] Executing: /bin/sh -c cd '/root/workspace/SonarOpenCommunity/sonar-cxx/437974912' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /root/workspace/SonarOpenCommunity/sonar-cxx/437974912
+[INFO] Storing buildScmBranch: UNKNOWN
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce) @ cxx ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- license-maven-plugin:3.0:check (enforce-license-headers) @ cxx ---
+[INFO] 
+[INFO] --- beanshell-maven-plugin:1.4:run (compute-artifact-display-version) @ cxx ---
+[INFO] Executing Script
+[INFO] file class java.lang.Object
+[INFO] script class java.lang.String
+[INFO] evaluating script if (! "1.2.0-SNAPSHOT".endsWith("-SNAPSHOT")) { [+ 14 omitted line(s)]
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Cxx :: Squid 1.2.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (default) @ cxx-squid ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce) @ cxx-squid ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- license-maven-plugin:3.0:check (enforce-license-headers) @ cxx-squid ---
+[INFO] 
+[INFO] --- beanshell-maven-plugin:1.4:run (compute-artifact-display-version) @ cxx-squid ---
+[INFO] Executing Script
+[INFO] file class java.lang.Object
+[INFO] script class java.lang.String
+[INFO] evaluating script if (! "1.2.0-SNAPSHOT".endsWith("-SNAPSHOT")) { [+ 14 omitted line(s)]
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ cxx-squid ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/SonarOpenCommunity/sonar-cxx/437974912/cxx-squid/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ cxx-squid ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ cxx-squid ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 443 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ cxx-squid ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ cxx-squid ---
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.22.0/surefire-junit4-2.22.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.22.0/surefire-junit4-2.22.0.pom (4 KB at 9.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.22.0/surefire-providers-2.22.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.22.0/surefire-providers-2.22.0.pom (3 KB at 69.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.22.0/surefire-junit4-2.22.0.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.22.0/surefire-junit4-2.22.0.jar (83 KB at 1032.0 KB/sec)
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.sonar.cxx.preprocessor.ExpressionEvaluatorTest
+[INFO] Tests run: 33, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.487 s - in org.sonar.cxx.preprocessor.ExpressionEvaluatorTest
+[INFO] Running org.sonar.cxx.lexer.CxxLexerTest
+[INFO] Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.473 s - in org.sonar.cxx.lexer.CxxLexerTest
+[INFO] Running org.sonar.cxx.CxxLanguageTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.063 s - in org.sonar.cxx.CxxLanguageTest
+[INFO] Running org.sonar.cxx.api.CxxPunctuatorTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.738 s - in org.sonar.cxx.api.CxxPunctuatorTest
+[INFO] Running org.sonar.cxx.visitors.CxxParseErrorLoggerVisitorTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.271 s - in org.sonar.cxx.visitors.CxxParseErrorLoggerVisitorTest
+[INFO] Running org.sonar.cxx.preprocessor.CppGrammarTest
+[INFO] Tests run: 53, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.121 s - in org.sonar.cxx.preprocessor.CppGrammarTest
+[INFO] Running org.sonar.cxx.parser.SpecialMemberFunctionsTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 s - in org.sonar.cxx.parser.SpecialMemberFunctionsTest
+[INFO] Running org.sonar.cxx.lexer.CxxLexer_PreprocessorDisabled_Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 s - in org.sonar.cxx.lexer.CxxLexer_PreprocessorDisabled_Test
+[INFO] Running org.sonar.cxx.parser.LamdaExpressionsTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.135 s - in org.sonar.cxx.parser.LamdaExpressionsTest
+[INFO] Running org.sonar.cxx.parser.DeclarationsTest
+[INFO] Tests run: 44, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.363 s - in org.sonar.cxx.parser.DeclarationsTest
+[INFO] Running org.sonar.cxx.parser.AttributeTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 s - in org.sonar.cxx.parser.AttributeTest
+[INFO] Running org.sonar.cxx.visitors.CxxCognitiveComplexityVisitorTest
+[INFO] Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.24 s - in org.sonar.cxx.visitors.CxxCognitiveComplexityVisitorTest
+[INFO] Running org.sonar.cxx.parser.CxxParserTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.117 s - in org.sonar.cxx.parser.CxxParserTest
+[INFO] Running org.sonar.cxx.CxxAstScannerTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.356 s - in org.sonar.cxx.CxxAstScannerTest
+[INFO] Running org.sonar.cxx.parser.PreprocessorDirectivesTest
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.371 s - in org.sonar.cxx.parser.PreprocessorDirectivesTest
+[INFO] Running org.sonar.cxx.visitors.CxxPublicApiVisitorTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.15 s - in org.sonar.cxx.visitors.CxxPublicApiVisitorTest
+[INFO] Running org.sonar.cxx.preprocessor.IncludeLexerTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.sonar.cxx.preprocessor.IncludeLexerTest
+[INFO] Running org.sonar.cxx.api.CppPunctuatorTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 s - in org.sonar.cxx.api.CppPunctuatorTest
+[INFO] Running org.sonar.cxx.api.CxxMetricTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.367 s - in org.sonar.cxx.api.CxxMetricTest
+[INFO] Running org.sonar.cxx.utils.CxxReportIssueTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.sonar.cxx.utils.CxxReportIssueTest
+[INFO] Running org.sonar.cxx.parser.AttributedAtlTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 s - in org.sonar.cxx.parser.AttributedAtlTest
+[INFO] Running org.sonar.cxx.parser.ExpressionTest
+[INFO] Tests run: 43, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.169 s - in org.sonar.cxx.parser.ExpressionTest
+[INFO] Running org.sonar.cxx.parser.StatementTest
+[INFO] Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.062 s - in org.sonar.cxx.parser.StatementTest
+[INFO] Running org.sonar.cxx.api.CppKeywordTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.sonar.cxx.api.CppKeywordTest
+[INFO] Running org.sonar.cxx.api.CxxTokenTypeTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.sonar.cxx.api.CxxTokenTypeTest
+[INFO] Running org.sonar.cxx.parser.ExceptionHandlingTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.sonar.cxx.parser.ExceptionHandlingTest
+[INFO] Running org.sonar.cxx.AggregateMeasureComputerTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 s - in org.sonar.cxx.AggregateMeasureComputerTest
+[INFO] Running org.sonar.cxx.parser.OverloadingTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.sonar.cxx.parser.OverloadingTest
+[INFO] Running org.sonar.cxx.parser.DeclaratorsTest
+[INFO] Tests run: 40, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.086 s - in org.sonar.cxx.parser.DeclaratorsTest
+[INFO] Running org.sonar.cxx.parser.ClassesTest
+[INFO] Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.056 s - in org.sonar.cxx.parser.ClassesTest
+[INFO] Running org.sonar.cxx.preprocessor.MapChainTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.sonar.cxx.preprocessor.MapChainTest
+[INFO] Running org.sonar.cxx.api.CxxKeywordTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.sonar.cxx.api.CxxKeywordTest
+[INFO] Running org.sonar.cxx.lexer.CxxLexerWithPreprocessingTest
+[INFO] Tests run: 58, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.157 s - in org.sonar.cxx.lexer.CxxLexerWithPreprocessingTest
+[INFO] Running org.sonar.cxx.preprocessor.SourceCodeProviderTest
+[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.sonar.cxx.preprocessor.SourceCodeProviderTest
+[INFO] Running org.sonar.cxx.parser.TemplatesTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 s - in org.sonar.cxx.parser.TemplatesTest
+[INFO] Running org.sonar.cxx.DensityMeasureComputerTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.sonar.cxx.DensityMeasureComputerTest
+[INFO] Running org.sonar.cxx.visitors.CxxFunctionComplexityVisitorTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 s - in org.sonar.cxx.visitors.CxxFunctionComplexityVisitorTest
+[INFO] Running org.sonar.cxx.parser.FileInputTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.sonar.cxx.parser.FileInputTest
+[INFO] Running org.sonar.cxx.CxxConfigurationTest
+[INFO] Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.091 s - in org.sonar.cxx.CxxConfigurationTest
+[INFO] Running org.sonar.cxx.visitors.CxxFunctionSizeVisitorTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 s - in org.sonar.cxx.visitors.CxxFunctionSizeVisitorTest
+[INFO] Running org.sonar.cxx.parser.AssemblerTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.sonar.cxx.parser.AssemblerTest
+[INFO] Running org.sonar.cxx.parser.BalancedTokensTest
+[INFO] Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 s - in org.sonar.cxx.parser.BalancedTokensTest
+[INFO] Running org.sonar.cxx.preprocessor.CppLexerTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.sonar.cxx.preprocessor.CppLexerTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 541, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Cxx :: Checks 1.2.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (default) @ cxx-checks ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce) @ cxx-checks ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- license-maven-plugin:3.0:check (enforce-license-headers) @ cxx-checks ---
+[INFO] 
+[INFO] --- beanshell-maven-plugin:1.4:run (compute-artifact-display-version) @ cxx-checks ---
+[INFO] Executing Script
+[INFO] file class java.lang.Object
+[INFO] script class java.lang.String
+[INFO] evaluating script if (! "1.2.0-SNAPSHOT".endsWith("-SNAPSHOT")) { [+ 14 omitted line(s)]
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ cxx-checks ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/SonarOpenCommunity/sonar-cxx/437974912/cxx-checks/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ cxx-checks ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ cxx-checks ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 63 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ cxx-checks ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ cxx-checks ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.sonar.cxx.checks.metrics.TooManyParametersCheckTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.087 s - in org.sonar.cxx.checks.metrics.TooManyParametersCheckTest
+[INFO] Running org.sonar.cxx.checks.CollapsibleIfCandidateCheckTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.07 s - in org.sonar.cxx.checks.CollapsibleIfCandidateCheckTest
+[INFO] Running org.sonar.cxx.checks.metrics.FileComplexityCheckTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.246 s - in org.sonar.cxx.checks.metrics.FileComplexityCheckTest
+[INFO] Running org.sonar.cxx.checks.regex.FileHeaderCheckTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.23 s - in org.sonar.cxx.checks.regex.FileHeaderCheckTest
+[INFO] Running org.sonar.cxx.checks.MagicNumberCheckTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 s - in org.sonar.cxx.checks.MagicNumberCheckTest
+[INFO] Running org.sonar.cxx.checks.metrics.TooManyLinesOfCodeInFunctionCheckTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in org.sonar.cxx.checks.metrics.TooManyLinesOfCodeInFunctionCheckTest
+[INFO] Running org.sonar.cxx.checks.naming.FunctionNameCheckTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 s - in org.sonar.cxx.checks.naming.FunctionNameCheckTest
+[INFO] Running org.sonar.cxx.checks.regex.TodoTagPresenceCheckTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in org.sonar.cxx.checks.regex.TodoTagPresenceCheckTest
+[INFO] Running org.sonar.cxx.checks.SafetyTagCheckTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.037 s - in org.sonar.cxx.checks.SafetyTagCheckTest
+[INFO] Running org.sonar.cxx.checks.StringLiteralDuplicatedCheckTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 s - in org.sonar.cxx.checks.StringLiteralDuplicatedCheckTest
+[INFO] Running org.sonar.cxx.checks.file.FileEncodingCheckTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.07 s - in org.sonar.cxx.checks.file.FileEncodingCheckTest
+[INFO] Running org.sonar.cxx.checks.metrics.ClassComplexityCheckTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 s - in org.sonar.cxx.checks.metrics.ClassComplexityCheckTest
+[INFO] Running org.sonar.cxx.checks.CommentedCodeCheckTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.041 s - in org.sonar.cxx.checks.CommentedCodeCheckTest
+[INFO] Running org.sonar.cxx.checks.regex.FixmeTagPresenceCheckTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.sonar.cxx.checks.regex.FixmeTagPresenceCheckTest
+[INFO] Running org.sonar.cxx.checks.SwitchLastCaseIsDefaultCheckTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 s - in org.sonar.cxx.checks.SwitchLastCaseIsDefaultCheckTest
+[INFO] Running org.sonar.cxx.checks.HardcodedIpCheckTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 s - in org.sonar.cxx.checks.HardcodedIpCheckTest
+[INFO] Running org.sonar.cxx.tag.TagTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 s - in org.sonar.cxx.tag.TagTest
+[INFO] Running org.sonar.cxx.checks.UnnamedNamespaceInHeaderCheckTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 s - in org.sonar.cxx.checks.UnnamedNamespaceInHeaderCheckTest
+[INFO] Running org.sonar.cxx.checks.metrics.FunctionComplexityCheckTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.052 s - in org.sonar.cxx.checks.metrics.FunctionComplexityCheckTest
+[INFO] Running org.sonar.cxx.checks.error.ParsingErrorCheckTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 s - in org.sonar.cxx.checks.error.ParsingErrorCheckTest
+[INFO] Running org.sonar.cxx.checks.naming.ClassNameCheckTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 s - in org.sonar.cxx.checks.naming.ClassNameCheckTest
+[INFO] Running org.sonar.cxx.checks.metrics.TooLongLineCheckTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in org.sonar.cxx.checks.metrics.TooLongLineCheckTest
+[INFO] Running org.sonar.cxx.checks.UselessParenthesesCheckTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 s - in org.sonar.cxx.checks.UselessParenthesesCheckTest
+[INFO] Running org.sonar.cxx.checks.error.ParsingErrorRecoveryCheckTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 s - in org.sonar.cxx.checks.error.ParsingErrorRecoveryCheckTest
+[INFO] Running org.sonar.cxx.checks.api.UndocumentedApiCheckTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.152 s - in org.sonar.cxx.checks.api.UndocumentedApiCheckTest
+[INFO] Running org.sonar.cxx.checks.file.MissingNewLineAtEndOfFileCheckTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 s - in org.sonar.cxx.checks.file.MissingNewLineAtEndOfFileCheckTest
+[INFO] Running org.sonar.cxx.checks.HardcodedAccountCheckTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.sonar.cxx.checks.HardcodedAccountCheckTest
+[INFO] Running org.sonar.cxx.checks.UsingNamespaceInHeaderCheckTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 s - in org.sonar.cxx.checks.UsingNamespaceInHeaderCheckTest
+[INFO] Running org.sonar.cxx.checks.WrongIncludeCheckTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.sonar.cxx.checks.WrongIncludeCheckTest
+[INFO] Running org.sonar.cxx.checks.UseCorrectTypeCheckTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 s - in org.sonar.cxx.checks.UseCorrectTypeCheckTest
+[INFO] Running org.sonar.cxx.checks.naming.FileNameCheckTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 s - in org.sonar.cxx.checks.naming.FileNameCheckTest
+[INFO] Running org.sonar.cxx.checks.regex.NoSonarCheckTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 s - in org.sonar.cxx.checks.regex.NoSonarCheckTest
+[INFO] Running org.sonar.cxx.checks.xpath.XPathCheckTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.14 s - in org.sonar.cxx.checks.xpath.XPathCheckTest
+[INFO] Running org.sonar.cxx.checks.regex.CommentRegularExpressionCheckTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in org.sonar.cxx.checks.regex.CommentRegularExpressionCheckTest
+[INFO] Running org.sonar.cxx.checks.naming.MethodNameCheckTest
+[ERROR] Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.042 s <<< FAILURE! - in org.sonar.cxx.checks.naming.MethodNameCheckTest
+[ERROR] test(org.sonar.cxx.checks.naming.MethodNameCheckTest)  Time elapsed: 0.042 s  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expected: 96
+got: 67
+	at org.sonar.cxx.checks.naming.MethodNameCheckTest.test(MethodNameCheckTest.java:50)
+
+[INFO] Running org.sonar.cxx.checks.file.TabCharacterCheckTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 s - in org.sonar.cxx.checks.file.TabCharacterCheckTest
+[INFO] Running org.sonar.cxx.checks.MissingCurlyBracesCheckTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.sonar.cxx.checks.MissingCurlyBracesCheckTest
+[INFO] Running org.sonar.cxx.checks.BooleanEqualityComparisonCheckTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in org.sonar.cxx.checks.BooleanEqualityComparisonCheckTest
+[INFO] Running org.sonar.cxx.checks.NestedStatementsCheckTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 s - in org.sonar.cxx.checks.NestedStatementsCheckTest
+[INFO] Running org.sonar.cxx.checks.metrics.TooManyStatementsPerLineCheckTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.112 s - in org.sonar.cxx.checks.metrics.TooManyStatementsPerLineCheckTest
+[INFO] Running org.sonar.cxx.checks.metrics.TooManyLinesOfCodeInFileCheckTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 s - in org.sonar.cxx.checks.metrics.TooManyLinesOfCodeInFileCheckTest
+[INFO] Running org.sonar.cxx.checks.metrics.FunctionCognitiveComplexityCheckTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.068 s - in org.sonar.cxx.checks.metrics.FunctionCognitiveComplexityCheckTest
+[INFO] Running org.sonar.cxx.checks.regex.FileRegularExpressionCheckTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.047 s - in org.sonar.cxx.checks.regex.FileRegularExpressionCheckTest
+[INFO] Running org.sonar.cxx.checks.ReservedNamesCheckTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 s - in org.sonar.cxx.checks.ReservedNamesCheckTest
+[INFO] Running org.sonar.cxx.checks.regex.LineRegularExpressionCheckTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.049 s - in org.sonar.cxx.checks.regex.LineRegularExpressionCheckTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   MethodNameCheckTest.test:50 
+Expected: 96
+got: 67
+[INFO] 
+[ERROR] Tests run: 75, Failures: 1, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] Cxx ................................................ SUCCESS [  1.950 s]
+[INFO] Cxx :: Squid ....................................... SUCCESS [ 15.342 s]
+[INFO] Cxx :: Checks ...................................... FAILURE [  7.335 s]
+[INFO] Cxx :: Lint ........................................ SKIPPED
+[INFO] Cxx :: Sensors ..................................... SKIPPED
+[INFO] Cxx :: Sonar Plugin ................................ SKIPPED
+[INFO] Cxx :: Sonar C Plugin .............................. SKIPPED
+[INFO] Cxx :: SSLR Toolkit ................................ SKIPPED
+[INFO] Cxx :: Integration Tests ........................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 25.812 s
+[INFO] Finished at: 2018-10-06T20:53:43+02:00
+[INFO] Final Memory: 32M/581M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.22.0:test (default-test) on project cxx-checks: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/SonarOpenCommunity/sonar-cxx/437974912/cxx-checks/target/surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :cxx-checks

@@ -1,0 +1,248 @@
+<rules>
+  <rule>
+    <key>=CustomRuleTemplate</key>
+    <cardinality>MULTIPLE</cardinality>
+    <name><![CDATA[Template for custom Custom rules]]></name>
+    <description>
+      <![CDATA[
+<p>
+Follow these steps to make your custom Custom rules available in SonarQube:
+</p>
+
+<ol>
+  <ol>
+    <li>Create a new rule in SonarQube by "copying" this rule template and specify the <code>CheckId</code> of your custom rule, a title, a description, and a default severity.</li>
+    <li>Enable the newly created rule in your quality profile</li>
+  </ol>
+  <li>Relaunch an analysis on your projects, et voilà, your custom rules are executed!</li>
+</ol>
+      ]]>
+    </description>
+    <severity>MAJOR</severity>
+  </rule>
+  <rule>
+    <key>InvalidFree</key>
+    <name>Invalid free</name>
+    <description>
+      Calling free with the given address is illegal. This usually means
+      that the block is already freed or that the block has never been
+      allocated on the heap.
+    </description>
+    <internalKey>InvalidFree</internalKey>
+    <severity>CRITICAL</severity>
+    <type>BUG</type>
+    <remediationFunction>LINEAR</remediationFunction>
+    <remediationFunctionGapMultiplier>5min</remediationFunctionGapMultiplier>
+  </rule>
+  <rule>
+    <key>MismatchedFree</key>
+    <name>Mismatched free() / delete / delete []</name>
+    <description>
+      Wrong deallocation function used to deallocate an allocated
+      block. C++ rules are:
+      - deallocate with 'free' when allocated with 'malloc', 'calloc',
+      'realloc', 'valloc' or 'memalign'
+      - deallocate with 'delete' when allocated with 'new'
+      - deallocate with 'delete []' when allocated with 'new []'
+    </description>
+    <internalKey>MismatchedFree</internalKey>
+    <severity>CRITICAL</severity>
+    <type>BUG</type>
+    <remediationFunction>LINEAR</remediationFunction>
+    <remediationFunctionGapMultiplier>5min</remediationFunctionGapMultiplier>
+  </rule>
+
+  <rule>
+    <key>InvalidRead</key>
+    <name>Invalid read</name>
+    <description>
+      This happens when your program reads memory at a place which
+      Memcheck reckons it shouldn't. The reasons include reading memory which
+      isn't mapped, reading already freed memory etc.
+    </description>
+    <internalKey>InvalidRead</internalKey>
+    <severity>CRITICAL</severity>
+    <type>BUG</type>
+    <remediationFunction>LINEAR</remediationFunction>
+    <remediationFunctionGapMultiplier>5min</remediationFunctionGapMultiplier>
+  </rule>
+
+  <rule>
+    <key>InvalidWrite</key>
+    <name>Invalid write</name>
+    <description>
+      This happens when your program writes memory at a place which
+      Memcheck reckons it shouldn't. The reasons include writing to memory
+      which isn't mapped, writing to already freed memory, writing to
+      read-only memory etc.
+    </description>
+    <internalKey>InvalidWrite</internalKey>
+    <severity>CRITICAL</severity>
+    <type>BUG</type>
+    <remediationFunction>LINEAR</remediationFunction>
+    <remediationFunctionGapMultiplier>5min</remediationFunctionGapMultiplier>
+  </rule>
+
+  <rule>
+    <key>InvalidJump</key>
+    <name>Invalid jump or move</name>
+    <description>
+      The program tried to jump or move to an invalid address.
+    </description>
+    <internalKey>InvalidJump</internalKey>
+    <severity>CRITICAL</severity>
+    <type>BUG</type>
+    <remediationFunction>LINEAR</remediationFunction>
+    <remediationFunctionGapMultiplier>5min</remediationFunctionGapMultiplier>
+  </rule>
+
+  <rule>
+    <key>Overlap</key>
+    <name>Overlap of source and destination memory blocks</name>
+    <description>
+      The following C library functions copy some data from one memory
+      block to another (or something similar): memcpy, strcpy, strncpy,
+      strcat, strncat. The blocks pointed to by their 'src' and 'dst' pointers
+      aren't allowed to overlap.
+    </description>
+    <internalKey>Overlap</internalKey>
+    <severity>CRITICAL</severity>
+    <type>BUG</type>
+    <remediationFunction>LINEAR</remediationFunction>
+    <remediationFunctionGapMultiplier>5min</remediationFunctionGapMultiplier>
+  </rule>
+
+  <rule>
+    <key>InvalidMemPool</key>
+    <name>Invalid memory pool</name>
+    <description>
+      Invalid memory pool specified in client request.
+    </description>
+    <internalKey>InvalidMemPool</internalKey>
+    <severity>MINOR</severity>
+    <type>CODE_SMELL</type>
+    <remediationFunction>LINEAR</remediationFunction>
+    <remediationFunctionGapMultiplier>5min</remediationFunctionGapMultiplier>
+  </rule>
+
+  <rule>
+    <key>UninitCondition</key>
+    <name>Condition depends on undefined value</name>
+    <description>
+      Programs behavior relies on a variable whose value is not initialized,
+      i.e. the program has undefined behavior.
+    </description>
+    <internalKey>UninitCondition</internalKey>
+    <severity>CRITICAL</severity>
+    <type>BUG</type>
+    <remediationFunction>LINEAR</remediationFunction>
+    <remediationFunctionGapMultiplier>5min</remediationFunctionGapMultiplier>
+  </rule>
+
+  <rule>
+    <key>UninitValue</key>
+    <name>Use of undefined value</name>
+    <description>
+      Other uses of undefined values (primarily memory addresses).
+    </description>
+    <internalKey>UninitValue</internalKey>
+    <severity>MAJOR</severity>
+    <type>BUG</type>
+    <remediationFunction>LINEAR</remediationFunction>
+    <remediationFunctionGapMultiplier>5min</remediationFunctionGapMultiplier>
+  </rule>
+
+  <rule>
+    <key>SyscallParam</key>
+    <name>Invalid system call parameter</name>
+    <description>
+      A system call has been passed an 'out' or 'in' buffer which
+      either isn't fully addressable or hasn't been properly initialized.
+    </description>
+    <internalKey>SyscallParam</internalKey>
+    <severity>CRITICAL</severity>
+    <type>CODE_SMELL</type>
+    <remediationFunction>LINEAR</remediationFunction>
+    <remediationFunctionGapMultiplier>5min</remediationFunctionGapMultiplier>
+  </rule>
+
+  <rule>
+    <key>ClientCheck</key>
+    <name>Error in client request</name>
+    <description>
+      "Error" resulting from a client check request.
+    </description>
+    <internalKey>ClientCheck</internalKey>
+    <severity>MINOR</severity>
+    <type>CODE_SMELL</type>
+    <remediationFunction>LINEAR</remediationFunction>
+    <remediationFunctionGapMultiplier>5min</remediationFunctionGapMultiplier>
+  </rule>
+
+  <rule>
+    <key>Leak_DefinitelyLost</key>
+    <name>Memory leak (definitely lost)</name>
+    <description>
+      Memory block which was unfreed at programs exit and for which
+      no pointer pointing at it could be found.  Such blocks are
+      classified as "lost", because the programmer could not possibly have
+      freed it at program exit, since no pointer to it exists. This is
+      likely a symptom of having lost the pointer at some earlier point in
+      the program. Such cases should be fixed by the programmer.
+    </description>
+    <internalKey>Leak_DefinitelyLost</internalKey>
+    <severity>MAJOR</severity>
+    <type>BUG</type>
+    <remediationFunction>LINEAR</remediationFunction>
+    <remediationFunctionGapMultiplier>5min</remediationFunctionGapMultiplier>
+  </rule>
+
+  <rule>
+    <key>Leak_IndirectlyLost</key>
+    <name>Memory leak (indirectly lost)</name>
+    <description>
+      This means that the block is lost, not because there are no
+      pointers to it, but rather because all the blocks that point to it are
+      themselves lost. For example, if you have a binary tree and the root
+      node is lost, all its children nodes will be indirectly lost.
+    </description>
+    <internalKey>Leak_IndirectlyLost</internalKey>
+    <severity>MAJOR</severity>
+    <type>BUG</type>
+    <remediationFunction>LINEAR</remediationFunction>
+    <remediationFunctionGapMultiplier>5min</remediationFunctionGapMultiplier>
+  </rule>
+
+  <rule>
+    <key>Leak_PossiblyLost</key>
+    <name>Memory leak (possibly lost)</name>
+    <description>
+      This means that a chain of one or more pointers to a block
+      has been found, but at least one of the pointers is an
+      interior-pointer. This could just be a random value in memory that
+      happens to point into a block, and so you shouldn't consider this OK
+      unless you know you have interior-pointers.
+    </description>
+    <internalKey>Leak_PossiblyLost</internalKey>
+    <severity>MAJOR</severity>
+    <type>CODE_SMELL</type>
+    <remediationFunction>LINEAR</remediationFunction>
+    <remediationFunctionGapMultiplier>5min</remediationFunctionGapMultiplier>
+  </rule>
+
+  <rule>
+    <key>Leak_StillReachable</key>
+    <name>Memory leak (still reachable)</name>
+    <description>
+      Blocks of memory which weren't lost (pointers pointing to them existed)
+      but also weren't freed at process' exit. Since the block are pointed at,
+      the programmer could, at least in principle, have freed it before
+      the exit.
+    </description>
+    <internalKey>Leak_StillReachable</internalKey>
+    <severity>MINOR</severity>
+    <type>CODE_SMELL</type>
+    <remediationFunction>LINEAR</remediationFunction>
+    <remediationFunctionGapMultiplier>5min</remediationFunctionGapMultiplier>
+  </rule>
+</rules>
