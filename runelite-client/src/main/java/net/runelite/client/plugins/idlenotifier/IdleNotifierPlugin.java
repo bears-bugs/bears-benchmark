@@ -205,11 +205,6 @@ public class IdleNotifierPlugin extends Plugin
 			/* Magic */
 			case MAGIC_CHARGING_ORBS:
 			case MAGIC_LUNAR_STRING_JEWELRY:
-			case MAGIC_LUNAR_SHARED:
-				if (graphic != GraphicID.BAKE_PIE) // Don't send an alert unless the graphic matches Bake Pie from the shared animation
-				{
-					break;
-				}
 			case MAGIC_MAKE_TABLET:
 			/* Prayer */
 			case USING_GILDED_ALTAR:
@@ -218,6 +213,13 @@ public class IdleNotifierPlugin extends Plugin
 				resetTimers();
 				lastAnimation = animation;
 				break;
+			case MAGIC_LUNAR_SHARED:
+				if (graphic != GraphicID.BAKE_PIE) // Don't send an alert unless the graphic matches Bake Pie from the shared animation
+				{
+					resetTimers();
+					lastAnimation = animation;
+					break;
+				}
 			case IDLE:
 				break;
 			default:
