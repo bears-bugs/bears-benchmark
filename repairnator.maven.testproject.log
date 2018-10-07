@@ -1,0 +1,762 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] RuneLite
+[INFO] Web API
+[INFO] Cache
+[INFO] RuneLite API
+[INFO] Protocol API
+[INFO] Protocol
+[INFO] Cache Client
+[INFO] Cache Server
+[INFO] Cache Updater
+[INFO] Model Viewer
+[INFO] RuneScape API
+[INFO] Script Assembler Plugin
+[INFO] RuneLite Client
+[INFO] RuneLite Mixins
+[INFO] Web Service
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building RuneLite 1.4.21-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (verify-style) @ runelite-parent ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Web API 1.4.21-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ http-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ http-api ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (verify-style) @ http-api ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ http-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/runelite/runelite/438254091/http-api/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ http-api ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18:test (default-test) @ http-api ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Cache 1.4.21-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- antlr4-maven-plugin:4.6:antlr4 (process-resources) @ cache ---
+[INFO] No grammars to process
+[INFO] ANTLR 4: Processing source directory /root/workspace/runelite/runelite/438254091/cache/src/main/antlr4
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ cache ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ cache ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (verify-style) @ cache ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ cache ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 5 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ cache ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18:test (default-test) @ cache ---
+[INFO] Surefire report directory: /root/workspace/runelite/runelite/438254091/cache/target/surefire-reports
+[INFO] Downloading: http://repo1.maven.org/maven2/org/apache/maven/surefire/surefire-junit4/2.18/surefire-junit4-2.18.pom
+[INFO] Downloaded: http://repo1.maven.org/maven2/org/apache/maven/surefire/surefire-junit4/2.18/surefire-junit4-2.18.pom (3 KB at 14.4 KB/sec)
+[INFO] Downloading: http://repo1.maven.org/maven2/org/apache/maven/surefire/surefire-providers/2.18/surefire-providers-2.18.pom
+[INFO] Downloaded: http://repo1.maven.org/maven2/org/apache/maven/surefire/surefire-providers/2.18/surefire-providers-2.18.pom (3 KB at 72.6 KB/sec)
+[INFO] Downloading: http://repo1.maven.org/maven2/org/apache/maven/surefire/surefire-junit4/2.18/surefire-junit4-2.18.jar
+[INFO] Downloaded: http://repo1.maven.org/maven2/org/apache/maven/surefire/surefire-junit4/2.18/surefire-junit4-2.18.jar (67 KB at 934.1 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running net.runelite.cache.TrackDumperTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 5.565 sec - in net.runelite.cache.TrackDumperTest
+Running net.runelite.cache.ObjectManagerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.779 sec - in net.runelite.cache.ObjectManagerTest
+Running net.runelite.cache.MapDumperTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0 sec - in net.runelite.cache.MapDumperTest
+Running net.runelite.cache.SoundEffectsDumperTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.851 sec - in net.runelite.cache.SoundEffectsDumperTest
+Running net.runelite.cache.script.disassembler.DisassemblerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.164 sec - in net.runelite.cache.script.disassembler.DisassemblerTest
+Running net.runelite.cache.script.InstructionsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in net.runelite.cache.script.InstructionsTest
+Running net.runelite.cache.script.assembler.AssemblerTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.272 sec - in net.runelite.cache.script.assembler.AssemblerTest
+Running net.runelite.cache.WorldMapDumperTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 sec - in net.runelite.cache.WorldMapDumperTest
+Running net.runelite.cache.ItemManagerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.669 sec - in net.runelite.cache.ItemManagerTest
+Running net.runelite.cache.fs.jagex.DataFileTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.11 sec - in net.runelite.cache.fs.jagex.DataFileTest
+Running net.runelite.cache.fs.jagex.DiskStorageTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in net.runelite.cache.fs.jagex.DiskStorageTest
+Running net.runelite.cache.fs.jagex.IndexFileTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in net.runelite.cache.fs.jagex.IndexFileTest
+Running net.runelite.cache.fs.StoreTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in net.runelite.cache.fs.StoreTest
+Running net.runelite.cache.fs.StoreLoadTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.547 sec - in net.runelite.cache.fs.StoreLoadTest
+Running net.runelite.cache.fs.ContainerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in net.runelite.cache.fs.ContainerTest
+Running net.runelite.cache.ModelDumperTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.82 sec - in net.runelite.cache.ModelDumperTest
+Running net.runelite.cache.EnumDumperTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.365 sec - in net.runelite.cache.EnumDumperTest
+Running net.runelite.cache.NpcManagerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.866 sec - in net.runelite.cache.NpcManagerTest
+Running net.runelite.cache.io.OutputStreamTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in net.runelite.cache.io.OutputStreamTest
+Running net.runelite.cache.item.ItemSpriteFactoryTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.001 sec - in net.runelite.cache.item.ItemSpriteFactoryTest
+Running net.runelite.cache.util.XteaTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in net.runelite.cache.util.XteaTest
+Running net.runelite.cache.util.Djb2Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in net.runelite.cache.util.Djb2Test
+Running net.runelite.cache.InterfaceManagerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.438 sec - in net.runelite.cache.InterfaceManagerTest
+Running net.runelite.cache.SpriteManagerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.786 sec - in net.runelite.cache.SpriteManagerTest
+Running net.runelite.cache.MapImageDumperTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0 sec - in net.runelite.cache.MapImageDumperTest
+Running net.runelite.cache.KitDumperTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.037 sec - in net.runelite.cache.KitDumperTest
+Running net.runelite.cache.models.ObjExporterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0 sec - in net.runelite.cache.models.ObjExporterTest
+Running net.runelite.cache.definitions.savers.InterfaceSaverTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec - in net.runelite.cache.definitions.savers.InterfaceSaverTest
+Running net.runelite.cache.definitions.savers.ScriptSaverTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in net.runelite.cache.definitions.savers.ScriptSaverTest
+
+Results :
+
+
+
+
+Tests run: 44, Failures: 0, Errors: 0, Skipped: 7
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building RuneLite API 1.4.21-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ runelite-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/runelite/runelite/438254091/runelite-api/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ runelite-api ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (verify-style) @ runelite-api ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ runelite-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/runelite/runelite/438254091/runelite-api/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ runelite-api ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18:test (default-test) @ runelite-api ---
+[INFO] Surefire report directory: /root/workspace/runelite/runelite/438254091/runelite-api/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running net.runelite.api.coords.AngleTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec - in net.runelite.api.coords.AngleTest
+Running net.runelite.api.ExperienceTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in net.runelite.api.ExperienceTest
+Running net.runelite.api.model.JarvisTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in net.runelite.api.model.JarvisTest
+
+Results :
+
+
+
+
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Protocol API 1.4.21-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ protocol-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/runelite/runelite/438254091/protocol-api/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ protocol-api ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (verify-style) @ protocol-api ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ protocol-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/runelite/runelite/438254091/protocol-api/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ protocol-api ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18:test (default-test) @ protocol-api ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Protocol 1.4.21-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ protocol ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/runelite/runelite/438254091/protocol/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ protocol ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (verify-style) @ protocol ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ protocol ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/runelite/runelite/438254091/protocol/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ protocol ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18:test (default-test) @ protocol ---
+[INFO] Surefire report directory: /root/workspace/runelite/runelite/438254091/protocol/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running net.runelite.protocol.update.encoders.ArchiveResponseEncoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.136 sec - in net.runelite.protocol.update.encoders.ArchiveResponseEncoderTest
+Running net.runelite.protocol.update.encoders.XorEncoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in net.runelite.protocol.update.encoders.XorEncoderTest
+
+Results :
+
+
+
+
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Cache Client 1.4.21-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ cache-client ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/runelite/runelite/438254091/cache-client/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ cache-client ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (verify-style) @ cache-client ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ cache-client ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/runelite/runelite/438254091/cache-client/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ cache-client ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18:test (default-test) @ cache-client ---
+[INFO] Surefire report directory: /root/workspace/runelite/runelite/438254091/cache-client/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running net.runelite.cache.client.CacheClientTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.01 sec - in net.runelite.cache.client.CacheClientTest
+
+Results :
+
+
+
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Cache Server 1.4.21-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ cache-server ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/runelite/runelite/438254091/cache-server/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ cache-server ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (verify-style) @ cache-server ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ cache-server ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/runelite/runelite/438254091/cache-server/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ cache-server ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18:test (default-test) @ cache-server ---
+[INFO] Surefire report directory: /root/workspace/runelite/runelite/438254091/cache-server/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running net.runelite.cache.server.CacheServerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.673 sec - in net.runelite.cache.server.CacheServerTest
+
+Results :
+
+
+
+
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 1
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Cache Updater 1.4.21-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ cache-updater ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/runelite/runelite/438254091/cache-updater/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ cache-updater ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (verify-style) @ cache-updater ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ cache-updater ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/runelite/runelite/438254091/cache-updater/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ cache-updater ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18:test (default-test) @ cache-updater ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Model Viewer 1.4.21-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-nativedependencies-plugin:0.0.6:copy (unpacknatives) @ modelviewer ---
+[INFO] Saving natives in /root/workspace/runelite/runelite/438254091/model-viewer/target/natives
+[INFO] G:org.lwjgl.lwjgl - A:lwjgl-platform - C:natives-windows
+[info] Copying natives from lwjgl-platform-2.9.3-natives-windows.jar
+[info] Copying native - META-INF/
+[info] Copying native - META-INF/MANIFEST.MF
+[info] Copying native - OpenAL32.dll
+[info] Copying native - OpenAL64.dll
+[info] Copying native - lwjgl.dll
+[info] Copying native - lwjgl64.dll
+[INFO] G:org.lwjgl.lwjgl - A:lwjgl-platform - C:natives-linux
+[info] Copying natives from lwjgl-platform-2.9.3-natives-linux.jar
+[info] Copying native - META-INF/
+[info] Copying native - META-INF/MANIFEST.MF
+[info] Copying native - liblwjgl.so
+[info] Copying native - liblwjgl64.so
+[info] Copying native - libopenal.so
+[info] Copying native - libopenal64.so
+[INFO] G:org.lwjgl.lwjgl - A:lwjgl-platform - C:natives-osx
+[info] Copying natives from lwjgl-platform-2.9.3-natives-osx.jar
+[info] Copying native - META-INF/
+[info] Copying native - META-INF/MANIFEST.MF
+[info] Copying native - liblwjgl.dylib
+[info] Copying native - openal.dylib
+[INFO] G:net.java.jinput - A:jinput-platform - C:natives-linux
+[info] Copying natives from jinput-platform-2.0.5-natives-linux.jar
+[info] Copying native - libjinput-linux.so
+[info] Copying native - libjinput-linux64.so
+[INFO] G:net.java.jinput - A:jinput-platform - C:natives-windows
+[info] Copying natives from jinput-platform-2.0.5-natives-windows.jar
+[info] Copying native - jinput-dx8.dll
+[info] Copying native - jinput-dx8_64.dll
+[info] Copying native - jinput-raw.dll
+[info] Copying native - jinput-raw_64.dll
+[info] Copying native - jinput-wintab.dll
+[INFO] G:net.java.jinput - A:jinput-platform - C:natives-osx
+[info] Copying natives from jinput-platform-2.0.5-natives-osx.jar
+[info] Copying native - libjinput-osx.jnilib
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ modelviewer ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/runelite/runelite/438254091/model-viewer/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ modelviewer ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (verify-style) @ modelviewer ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ modelviewer ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/runelite/runelite/438254091/model-viewer/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ modelviewer ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18:test (default-test) @ modelviewer ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building RuneScape API 1.4.21-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ runescape-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/runelite/runelite/438254091/runescape-api/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ runescape-api ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (verify-style) @ runescape-api ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ runescape-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/runelite/runelite/438254091/runescape-api/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ runescape-api ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18:test (default-test) @ runescape-api ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Script Assembler Plugin 1.4.21-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ script-assembler-plugin ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/runelite/runelite/438254091/runelite-script-assembler-plugin/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ script-assembler-plugin ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-plugin-plugin:3.4:descriptor (default-descriptor) @ script-assembler-plugin ---
+[INFO] Using 'UTF-8' encoding to read mojo metadata.
+[INFO] Mojo extractor with id: java-javadoc found 0 mojo descriptors.
+[INFO] Mojo extractor with id: java-annotations found 2 mojo descriptors.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (verify-style) @ script-assembler-plugin ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ script-assembler-plugin ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/runelite/runelite/438254091/runelite-script-assembler-plugin/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ script-assembler-plugin ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18:test (default-test) @ script-assembler-plugin ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building RuneLite Client 1.4.21-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] Downloading: http://repo1.maven.org/maven2/javax/inject/javax.inject/1/javax.inject-1.pom
+[INFO] Downloaded: http://repo1.maven.org/maven2/javax/inject/javax.inject/1/javax.inject-1.pom (0 B at 0.0 KB/sec)
+[INFO] Downloading: http://repo1.maven.org/maven2/aopalliance/aopalliance/1.0/aopalliance-1.0.pom
+[INFO] Downloaded: http://repo1.maven.org/maven2/aopalliance/aopalliance/1.0/aopalliance-1.0.pom (0 B at 0.0 KB/sec)
+[INFO] Downloading: http://repo.runelite.net/net/runelite/injected-client/1.4.21-SNAPSHOT/maven-metadata.xml
+[INFO] Downloaded: http://repo.runelite.net/net/runelite/injected-client/1.4.21-SNAPSHOT/maven-metadata.xml (783 B at 1.8 KB/sec)
+[INFO] 
+[INFO] --- script-assembler-plugin:1.4.21-SNAPSHOT:assemble (assemble) @ client ---
+[debug] Assembling /root/workspace/runelite/runelite/438254091/runelite-client/src/main/scripts/CommandScript.rs2asm
+[debug] Assembling /root/workspace/runelite/runelite/438254091/runelite-client/src/main/scripts/BankSearchLayout.rs2asm
+[debug] Assembling /root/workspace/runelite/runelite/438254091/runelite-client/src/main/scripts/OpenBankSearchInput.rs2asm
+[debug] Assembling /root/workspace/runelite/runelite/438254091/runelite-client/src/main/scripts/ChatboxInputWidgetBuilder.rs2asm
+[debug] Assembling /root/workspace/runelite/runelite/438254091/runelite-client/src/main/scripts/OptionsPanelZoomUpdater.rs2asm
+[debug] Assembling /root/workspace/runelite/runelite/438254091/runelite-client/src/main/scripts/SendPrivateMessage.rs2asm
+[debug] Assembling /root/workspace/runelite/runelite/438254091/runelite-client/src/main/scripts/OptionsPanelZoomMouseListener.rs2asm
+[debug] Assembling /root/workspace/runelite/runelite/438254091/runelite-client/src/main/scripts/SkillTabBuilder.rs2asm
+[debug] Assembling /root/workspace/runelite/runelite/438254091/runelite-client/src/main/scripts/ChatboxInput.rs2asm
+[debug] Assembling /root/workspace/runelite/runelite/438254091/runelite-client/src/main/scripts/null.rs2asm
+[debug] Assembling /root/workspace/runelite/runelite/438254091/runelite-client/src/main/scripts/OptionsPanelRebuilder.rs2asm
+[debug] Assembling /root/workspace/runelite/runelite/438254091/runelite-client/src/main/scripts/ZoomHandler.rs2asm
+[debug] Assembling /root/workspace/runelite/runelite/438254091/runelite-client/src/main/scripts/ChatboxInputHandler.rs2asm
+[debug] Assembling /root/workspace/runelite/runelite/438254091/runelite-client/src/main/scripts/BankSearchFilter.rs2asm
+[debug] Assembling /root/workspace/runelite/runelite/438254091/runelite-client/src/main/scripts/ChatboxInputInit.rs2asm
+[debug] Assembling /root/workspace/runelite/runelite/438254091/runelite-client/src/main/scripts/PrivateMessage.rs2asm
+[debug] Assembling /root/workspace/runelite/runelite/438254091/runelite-client/src/main/scripts/ScrollWheelZoomHandler.rs2asm
+[debug] Assembling /root/workspace/runelite/runelite/438254091/runelite-client/src/main/scripts/SkillTabTotalLevel.rs2asm
+[info] Assembled 18 scripts
+[INFO] 
+[INFO] --- script-assembler-plugin:1.4.21-SNAPSHOT:build-index (build-index) @ client ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ client ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 371 resources
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ client ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (verify-style) @ client ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ client ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/runelite/runelite/438254091/runelite-client/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ client ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18:test (default-test) @ client ---
+[INFO] Surefire report directory: /root/workspace/runelite/runelite/438254091/runelite-client/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running net.runelite.client.rs.ClientConfigLoaderTest
+privacyurl: http://www.jagex.com/g=oldscape/privacy/privacy.ws
+window_preferredheight: 600
+applet_minwidth: 765
+adverturl: http://www.runescape.com/g=oldscape/bare_advert.ws
+cachedir: oldschool
+window_preferredwidth: 800
+applet_maxheight: 2160
+win_sub_version: 1
+browsercontrol_win_x86_jar: browsercontrol_0_-1928975093.jar
+other_sub_version: 2
+initial_jar: gamepack_6264206.jar
+advert_height: 96
+title: Old School RuneScape
+storebase: 0
+initial_class: client.class
+applet_maxwidth: 5760
+download: 1330951
+termsurl: http://www.jagex.com/g=oldscape/terms/terms.ws
+codebase: http://oldschool42.runescape.com/
+mac_sub_version: 2
+browsercontrol_win_amd64_jar: browsercontrol_1_1674545273.jar
+applet_minheight: 503
+viewerversion: 124
+Applet properties:
+11: https://auth.jagex.com/
+12: http://www.runescape.com/g=oldscape/slr.ws?order=LPWM&ep=175
+13: 17685
+14: true
+15: 0
+16: 0
+17: 342
+18: https://payments.jagex.com/operator/v1/
+1: .runescape.com
+2: 1
+3: 0
+4: 5
+5: ElZAIrq5NpKN6D3mDdihco3oPeYN2KFy2DCquj7JMmECPmLrDP3Bnw
+6: 0
+7: 1
+8: true
+9: false
+10: 
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.595 sec - in net.runelite.client.rs.ClientConfigLoaderTest
+Running net.runelite.client.RuneLiteModuleTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.063 sec - in net.runelite.client.RuneLiteModuleTest
+Running net.runelite.client.ui.overlay.components.TextComponentTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.546 sec - in net.runelite.client.ui.overlay.components.TextComponentTest
+Running net.runelite.client.ui.overlay.OverlayManagerTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in net.runelite.client.ui.overlay.OverlayManagerTest
+Running net.runelite.client.ui.FontManagerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.185 sec - in net.runelite.client.ui.FontManagerTest
+Running net.runelite.client.config.ConfigManagerTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.162 sec - in net.runelite.client.config.ConfigManagerTest
+Running net.runelite.client.util.ImageUtilTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.224 sec - in net.runelite.client.util.ImageUtilTest
+Running net.runelite.client.util.WildcardMatcherTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in net.runelite.client.util.WildcardMatcherTest
+Running net.runelite.client.util.ColorUtilTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec - in net.runelite.client.util.ColorUtilTest
+Running net.runelite.client.util.TextTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in net.runelite.client.util.TextTest
+Running net.runelite.client.util.StackFormatterTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in net.runelite.client.util.StackFormatterTest
+Running net.runelite.client.plugins.grounditems.WildcardMatchLoaderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in net.runelite.client.plugins.grounditems.WildcardMatchLoaderTest
+Running net.runelite.client.plugins.slayer.SlayerPluginTest
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.371 sec - in net.runelite.client.plugins.slayer.SlayerPluginTest
+Running net.runelite.client.plugins.chatcommands.ChatCommandsPluginTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.117 sec - in net.runelite.client.plugins.chatcommands.ChatCommandsPluginTest
+Running net.runelite.client.plugins.hiscore.HiscorePanelTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.301 sec - in net.runelite.client.plugins.hiscore.HiscorePanelTest
+Running net.runelite.client.plugins.idlenotifier.IdleNotifierPluginTest
+Tests run: 8, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.146 sec <<< FAILURE! - in net.runelite.client.plugins.idlenotifier.IdleNotifierPluginTest
+checkAnimationIdle(net.runelite.client.plugins.idlenotifier.IdleNotifierPluginTest)  Time elapsed: 0.031 sec  <<< FAILURE!
+org.mockito.exceptions.verification.WantedButNotInvoked: 
+Wanted but not invoked:
+notifier.notify("[Deathbeam] is now idle!");
+-> at net.runelite.client.plugins.idlenotifier.IdleNotifierPluginTest.checkAnimationIdle(IdleNotifierPluginTest.java:131)
+Actually, there were zero interactions with this mock.
+
+	at net.runelite.client.plugins.idlenotifier.IdleNotifierPluginTest.checkAnimationIdle(IdleNotifierPluginTest.java:131)
+
+Running net.runelite.client.plugins.worldmap.TeleportLocationDataTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.056 sec - in net.runelite.client.plugins.worldmap.TeleportLocationDataTest
+Running net.runelite.client.plugins.itemstats.ItemStatChangesTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec - in net.runelite.client.plugins.itemstats.ItemStatChangesTest
+Running net.runelite.client.plugins.itemcharges.ItemChargePluginTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec - in net.runelite.client.plugins.itemcharges.ItemChargePluginTest
+Running net.runelite.client.plugins.timetracking.farming.PatchImplementationTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.044 sec - in net.runelite.client.plugins.timetracking.farming.PatchImplementationTest
+Running net.runelite.client.plugins.timetracking.farming.FarmingWorldTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 sec - in net.runelite.client.plugins.timetracking.farming.FarmingWorldTest
+Running net.runelite.client.plugins.timetracking.clocks.ClockPanelTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in net.runelite.client.plugins.timetracking.clocks.ClockPanelTest
+Running net.runelite.client.plugins.grandexchange.GrandExchangeOfferSlotTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.157 sec - in net.runelite.client.plugins.grandexchange.GrandExchangeOfferSlotTest
+Running net.runelite.client.plugins.chatnotifications.ChatNotificationsPluginTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 sec - in net.runelite.client.plugins.chatnotifications.ChatNotificationsPluginTest
+Running net.runelite.client.plugins.bankvalue.BankCalculationTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec - in net.runelite.client.plugins.bankvalue.BankCalculationTest
+Running net.runelite.client.plugins.puzzlesolver.lightbox.LightboxSolverTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in net.runelite.client.plugins.puzzlesolver.lightbox.LightboxSolverTest
+Running net.runelite.client.plugins.puzzlesolver.PuzzleSolverTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.406 sec - in net.runelite.client.plugins.puzzlesolver.PuzzleSolverTest
+Running net.runelite.client.plugins.screenshot.ScreenshotPluginTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.094 sec - in net.runelite.client.plugins.screenshot.ScreenshotPluginTest
+Running net.runelite.client.plugins.npchighlight.NpcIndicatorsPluginTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 sec - in net.runelite.client.plugins.npchighlight.NpcIndicatorsPluginTest
+Running net.runelite.client.plugins.reorderprayers.ReorderPrayersPluginTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in net.runelite.client.plugins.reorderprayers.ReorderPrayersPluginTest
+Running net.runelite.client.plugins.cerberus.CerberusPluginTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec - in net.runelite.client.plugins.cerberus.CerberusPluginTest
+Running net.runelite.client.plugins.PluginManagerTest
+2018-10-07 15:02:50 [main] WARN  net.runelite.client.Notifier - null
+java.nio.file.NoSuchFileException: /root/.runelite/icon.png
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:86)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:214)
+	at java.nio.file.spi.FileSystemProvider.newOutputStream(FileSystemProvider.java:434)
+	at java.nio.file.Files.newOutputStream(Files.java:216)
+	at java.nio.file.Files.copy(Files.java:3016)
+	at net.runelite.client.Notifier.storeIcon(Notifier.java:276)
+	at net.runelite.client.Notifier.<init>(Notifier.java:92)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.google.inject.internal.DefaultConstructionProxyFactory$ReflectiveProxy.newInstance(DefaultConstructionProxyFactory.java:126)
+	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:111)
+	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:90)
+	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:268)
+	at com.google.inject.internal.ProviderToInternalFactoryAdapter$1.call(ProviderToInternalFactoryAdapter.java:46)
+	at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1092)
+	at com.google.inject.internal.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:40)
+	at com.google.inject.internal.SingletonScope$1.get(SingletonScope.java:194)
+	at com.google.inject.internal.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:41)
+	at com.google.inject.internal.SingleFieldInjector.inject(SingleFieldInjector.java:54)
+	at com.google.inject.internal.MembersInjectorImpl.injectMembers(MembersInjectorImpl.java:132)
+	at com.google.inject.internal.MembersInjectorImpl$1.call(MembersInjectorImpl.java:93)
+	at com.google.inject.internal.MembersInjectorImpl$1.call(MembersInjectorImpl.java:80)
+	at com.google.inject.internal.InjectorImpl.callInContext(InjectorImpl.java:1085)
+	at com.google.inject.internal.MembersInjectorImpl.injectAndNotify(MembersInjectorImpl.java:80)
+	at com.google.inject.internal.Initializer$InjectableReference.get(Initializer.java:223)
+	at com.google.inject.internal.Initializer.injectAll(Initializer.java:132)
+	at com.google.inject.internal.InternalInjectorCreator.injectDynamically(InternalInjectorCreator.java:174)
+	at com.google.inject.internal.InternalInjectorCreator.build(InternalInjectorCreator.java:110)
+	at com.google.inject.internal.InjectorImpl.createChildInjector(InjectorImpl.java:232)
+	at com.google.inject.internal.InjectorImpl.createChildInjector(InjectorImpl.java:236)
+	at net.runelite.client.plugins.PluginManager.instantiate(PluginManager.java:447)
+	at net.runelite.client.plugins.PluginManager.scanAndInstantiate(PluginManager.java:288)
+	at net.runelite.client.plugins.PluginManager.loadCorePlugins(PluginManager.java:197)
+	at net.runelite.client.plugins.PluginManagerTest.testLoadPlugins(PluginManagerTest.java:117)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:48)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.mockito.internal.runners.JUnit45AndHigherRunnerImpl.run(JUnit45AndHigherRunnerImpl.java:37)
+	at org.mockito.runners.MockitoJUnitRunner.run(MockitoJUnitRunner.java:62)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+2018-10-07 15:02:51 [main] INFO  n.r.c.plugins.kourendlibrary.Library - Library is now reset
+2018-10-07 15:02:52 [main] INFO  n.r.c.plugins.kourendlibrary.Library - Library is now reset
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.47 sec - in net.runelite.client.plugins.PluginManagerTest
+Running net.runelite.client.plugins.attackstyles.AttackStylesPluginTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 sec - in net.runelite.client.plugins.attackstyles.AttackStylesPluginTest
+
+Results :
+
+Failed tests: 
+  IdleNotifierPluginTest.checkAnimationIdle:131 
+Wanted but not invoked:
+notifier.notify("[Deathbeam] is now idle!");
+-> at net.runelite.client.plugins.idlenotifier.IdleNotifierPluginTest.checkAnimationIdle(IdleNotifierPluginTest.java:131)
+Actually, there were zero interactions with this mock.
+
+
+
+
+Tests run: 99, Failures: 1, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] RuneLite ........................................... SUCCESS [  1.523 s]
+[INFO] Web API ............................................ SUCCESS [  0.871 s]
+[INFO] Cache .............................................. SUCCESS [ 51.485 s]
+[INFO] RuneLite API ....................................... SUCCESS [  0.940 s]
+[INFO] Protocol API ....................................... SUCCESS [  0.044 s]
+[INFO] Protocol ........................................... SUCCESS [  0.616 s]
+[INFO] Cache Client ....................................... SUCCESS [  0.671 s]
+[INFO] Cache Server ....................................... SUCCESS [  1.340 s]
+[INFO] Cache Updater ...................................... SUCCESS [  0.263 s]
+[INFO] Model Viewer ....................................... SUCCESS [  0.330 s]
+[INFO] RuneScape API ...................................... SUCCESS [  0.031 s]
+[INFO] Script Assembler Plugin ............................ SUCCESS [  1.168 s]
+[INFO] RuneLite Client .................................... FAILURE [ 13.300 s]
+[INFO] RuneLite Mixins .................................... SKIPPED
+[INFO] Web Service ........................................ SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 01:13 min
+[INFO] Finished at: 2018-10-07T15:02:52+02:00
+[INFO] Final Memory: 27M/350M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.18:test (default-test) on project client: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/runelite/runelite/438254091/runelite-client/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :client
