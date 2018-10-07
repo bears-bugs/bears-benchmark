@@ -1,0 +1,171 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 148, 
+      "numberRunning": 149, 
+      "numberFailing": 1, 
+      "numberErroring": 0, 
+      "failures": [
+        {
+          "failureName": "org.mockito.exceptions.verification.WantedButNotInvoked", 
+          "isError": false, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 9
+    }, 
+    "failingModule": "/root/workspace/runelite/runelite/438254091/runelite-client", 
+    "failureDetails": [
+      {
+        "failureName": "org.mockito.exceptions.verification.WantedButNotInvoked", 
+        "detail": "\nWanted but not invoked:\nnotifier.notify(\"[Deathbeam] is now idle!\");\n-> at net.runelite.client.plugins.idlenotifier.IdleNotifierPluginTest.checkAnimationIdle(IdleNotifierPluginTest.java:131)\nActually, there were zero interactions with this mock.\n", 
+        "isError": false, 
+        "testClass": "net.runelite.client.plugins.idlenotifier.IdleNotifierPluginTest", 
+        "testMethod": "checkAnimationIdle"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 7, 
+        "numberRunning": 8, 
+        "testClass": "net.runelite.client.plugins.idlenotifier.IdleNotifierPluginTest", 
+        "numberFailing": 1, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/runelite/runelite/builds/438256317", 
+      "date": "Oct 7, 2018 2:59:14 PM", 
+      "id": 438256317
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/runelite/runelite/builds/438254091", 
+      "date": "Oct 7, 2018 2:50:30 PM", 
+      "id": 438254091
+    }
+  }, 
+  "repository": {
+    "name": "runelite/runelite", 
+    "url": "https://github.com/runelite/runelite", 
+    "isFork": false, 
+    "pullRequestId": 5863, 
+    "isPullRequest": true, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 57461213
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/runelite/runelite/commit/a3f6fd6d7b00d4e86a8454ca21f45dafc11c6c59", 
+      "sha": "a3f6fd6d7b00d4e86a8454ca21f45dafc11c6c59", 
+      "branchName": "master", 
+      "date": "Oct 7, 2018 2:54:44 PM", 
+      "repoName": "runelite/runelite"
+    }, 
+    "fixerBuildBaseRepo": {
+      "url": "https://github.com/runelite/runelite/commit/bd8f75cf3056309ab9832e84a9834e381d42221d", 
+      "sha": "bd8f75cf3056309ab9832e84a9834e381d42221d", 
+      "branchName": "master", 
+      "date": "Oct 7, 2018 2:20:38 PM", 
+      "repoName": "runelite/runelite"
+    }, 
+    "fixerBuildForkRepo": {
+      "url": "https://github.com/forsco/runelite/commit/895f83cb2fa2b20b62073b6bb561cb32b6b234cd", 
+      "sha": "895f83cb2fa2b20b62073b6bb561cb32b6b234cd", 
+      "branchName": "lunars-idle-alerts", 
+      "date": "Oct 7, 2018 3:00:34 PM", 
+      "repoName": "forsco/runelite"
+    }, 
+    "buggyBuildForkRepo": {
+      "url": "https://github.com/forsco/runelite/commit/1af82439005ca706ee561082b4c73e13f6d7e1fa", 
+      "sha": "1af82439005ca706ee561082b4c73e13f6d7e1fa", 
+      "branchName": "lunars-idle-alerts", 
+      "date": "Oct 7, 2018 2:56:36 PM", 
+      "repoName": "forsco/runelite"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/runelite/runelite/commit/216fddac509cfea4ec2dce35816da97a30d93ff5", 
+      "sha": "216fddac509cfea4ec2dce35816da97a30d93ff5", 
+      "branchName": "master", 
+      "date": "Oct 7, 2018 2:40:17 PM", 
+      "repoName": "runelite/runelite"
+    }, 
+    "buggyBuildBaseRepo": {
+      "url": "https://github.com/runelite/runelite/commit/bd8f75cf3056309ab9832e84a9834e381d42221d", 
+      "sha": "bd8f75cf3056309ab9832e84a9834e381d42221d", 
+      "branchName": "master", 
+      "date": "Oct 7, 2018 2:20:38 PM", 
+      "repoName": "runelite/runelite"
+    }
+  }, 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 2, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 6, 
+      "numberDeleted": 7
+    }
+  }, 
+  "type": "failing_passing", 
+  "projectMetrics": {
+    "numberSourceFiles": 1412, 
+    "numberLibrariesFailingModule": 36, 
+    "numberTestFiles": 88, 
+    "numberModules": 14
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 398487336, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 455081984, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Oct 7, 2018 3:05:34 PM", 
+    "projectRootPomPath": "./workspace/runelite/runelite/438254091/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          4, 
+          115
+        ], 
+        "stepNames": [
+          "CheckoutBuggyBuildCandidate", 
+          "BuildProjectBuggyBuildCandidate"
+        ], 
+        "nbSteps": 2, 
+        "totalDuration": 119
+      }, 
+      "testing": {
+        "stepDurations": [
+          76
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidate"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 76
+      }, 
+      "cloning": {
+        "stepDurations": [
+          12
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 12
+      }
+    }, 
+    "reproductionDateBeginning": "Oct 7, 2018 2:59:23 PM", 
+    "totalDuration": 367
+  }
+}
