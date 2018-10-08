@@ -1,0 +1,191 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 2013, 
+      "numberRunning": 2016, 
+      "numberFailing": 2, 
+      "numberErroring": 1, 
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException", 
+          "isError": true, 
+          "occurrences": 1
+        }, 
+        {
+          "failureName": "java.lang.AssertionError", 
+          "isError": false, 
+          "occurrences": 1
+        }, 
+        {
+          "failureName": "org.opentest4j.AssertionFailedError", 
+          "isError": false, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 4
+    }, 
+    "failingModule": "/root/workspace/lettuce-io/lettuce-core/438538449", 
+    "failureDetails": [
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "io.lettuce.core.dynamic.output.OutputRegistryCommandOutputFactoryResolverUnitTests", 
+        "testMethod": "shouldResolveStreamingStringListOutput", 
+        "isError": true
+      }, 
+      {
+        "failureName": "org.opentest4j.AssertionFailedError", 
+        "detail": "\nExpecting:\n <java.lang.String>\nto be equal to:\n <reactor.core.publisher.Flux>\nbut was not.", 
+        "isError": false, 
+        "testMethod": "shouldResolveFluxComponentType", 
+        "testClass": "io.lettuce.core.dynamic.DeclaredCommandMethodUnitTests"
+      }, 
+      {
+        "failureName": "java.lang.AssertionError", 
+        "detail": "\nExpecting:\n <KeyListOutput [output=[], error='null']>\nnot to be an instance of:<io.lettuce.core.output.StreamingOutput>", 
+        "isError": false, 
+        "testMethod": "shouldResolveNonStreamingOutput", 
+        "testClass": "io.lettuce.core.dynamic.ReactiveCommandSegmentCommandFactoryUnitTests"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 13, 
+        "numberRunning": 14, 
+        "testClass": "io.lettuce.core.dynamic.output.OutputRegistryCommandOutputFactoryResolverUnitTests", 
+        "numberFailing": 0, 
+        "numberErroring": 1, 
+        "numberSkipping": 0
+      }, 
+      {
+        "numberPassing": 2, 
+        "numberRunning": 3, 
+        "testClass": "io.lettuce.core.dynamic.ReactiveCommandSegmentCommandFactoryUnitTests", 
+        "numberFailing": 1, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }, 
+      {
+        "numberPassing": 2, 
+        "numberRunning": 3, 
+        "testClass": "io.lettuce.core.dynamic.DeclaredCommandMethodUnitTests", 
+        "numberFailing": 1, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/lettuce-io/lettuce-core/builds/438808943", 
+      "date": "Oct 8, 2018 10:19:58 PM", 
+      "id": 438808943
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/lettuce-io/lettuce-core/builds/438538449", 
+      "date": "Oct 8, 2018 12:21:49 PM", 
+      "id": 438538449
+    }
+  }, 
+  "repository": {
+    "name": "lettuce-io/lettuce-core", 
+    "url": "https://github.com/lettuce-io/lettuce-core", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 19641638
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/lettuce-io/lettuce-core/commit/f57be1ce30a05eb74be1f443423b1000bfa9e519", 
+      "sha": "f57be1ce30a05eb74be1f443423b1000bfa9e519", 
+      "branchName": "5.1.x", 
+      "date": "Oct 8, 2018 9:50:27 PM", 
+      "repoName": "lettuce-io/lettuce-core"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/lettuce-io/lettuce-core/commit/acdcb5ce99c30d236feba40801bfb1f3a21768df", 
+      "sha": "acdcb5ce99c30d236feba40801bfb1f3a21768df", 
+      "branchName": "5.1.x", 
+      "date": "Oct 8, 2018 11:41:47 AM", 
+      "repoName": "lettuce-io/lettuce-core"
+    }
+  }, 
+  "bugName": "lettuce-io-lettuce-core-438538449-438808943", 
+  "version": "latest", 
+  "projectMetrics": {
+    "numberSourceFiles": 618, 
+    "numberLibrariesFailingModule": 72, 
+    "numberTestFiles": 304, 
+    "numberModules": 1
+  }, 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 2, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 16, 
+      "numberDeleted": 8
+    }
+  }, 
+  "bugId": "Bears-225", 
+  "type": "passing_passing", 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 358088072, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 404226048, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Oct 8, 2018 10:31:55 PM", 
+    "projectRootPomPath": "./workspace/lettuce-io/lettuce-core/438538449/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          0, 
+          1, 
+          0, 
+          0, 
+          67
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 68
+      }, 
+      "testing": {
+        "stepDurations": [
+          45
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 45
+      }, 
+      "cloning": {
+        "stepDurations": [
+          8
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 8
+      }
+    }, 
+    "reproductionDateBeginning": "Oct 8, 2018 10:28:16 PM", 
+    "totalDuration": 213
+  }
+}
