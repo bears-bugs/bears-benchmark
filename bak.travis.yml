@@ -1,0 +1,42 @@
+dist: trusty
+
+language: java
+
+jdk:
+  - oraclejdk8
+
+env:
+  matrix:
+    - REDIS=unstable
+    - PROFILE=jmh
+    - REDIS=5.0-rc5
+    - REDIS=4.0.11
+    - REDIS=3.2.11
+
+sudo: false
+
+before_install:
+  - if [[ ! -f stunnel.tar.gz ]]; then wget -O stunnel.tar.gz ftp://ftp.stunnel.org/stunnel/archive/5.x/stunnel-5.33.tar.gz; fi
+  - if [[ ! -f ./stunnel-5.33/configure ]]; then tar -xzf stunnel.tar.gz; fi
+  - if [[ ! -f ./stunnel-5.33/src/stunnel ]]; then cd ./stunnel-5.33; ./configure; make; cd ..; fi
+  - export PATH="$PATH:$(pwd)/stunnel-5.33/src"
+
+install: make prepare ssl-keys
+
+script: make test-coverage PROFILE=${PROFILE:-ci}
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
+
+cache:
+  directories:
+    - '$HOME/.m2/repository'
+    - '$TRAVIS_BUILD_DIR/stunnel-5.33'
+
+notifications:
+  webhooks:
+    urls:
+      - https://webhooks.gitter.im/e/7c2a962829d225c47a31
+    on_success: change  # options: [always|never|change] default: always
+    on_failure: always  # options: [always|never|change] default: always
+    on_start: false     # default: false
