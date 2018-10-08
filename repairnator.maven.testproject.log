@@ -1,0 +1,375 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Detecting the operating system and CPU architecture
+[INFO] ------------------------------------------------------------------------
+[INFO] os.detected.name: linux
+[INFO] os.detected.arch: x86_64
+[INFO] os.detected.version: 4.9
+[INFO] os.detected.version.major: 4
+[INFO] os.detected.version.minor: 9
+[INFO] os.detected.release: debian
+[INFO] os.detected.release.version: 8
+[INFO] os.detected.release.like.debian: true
+[INFO] os.detected.classifier: linux-x86_64
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Lettuce 5.1.1.BUILD-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ lettuce-core ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.2:prepare-agent (prepare-agent) @ lettuce-core ---
+[INFO] argLine set to -javaagent:/root/./workspace/lettuce-io/lettuce-core/438538449/.m2/org/jacoco/org.jacoco.agent/0.8.2/org.jacoco.agent-0.8.2-runtime.jar=destfile=/root/workspace/lettuce-io/lettuce-core/438538449/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ lettuce-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ lettuce-core ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 618 source files to /root/workspace/lettuce-io/lettuce-core/438538449/target/classes
+[WARNING] /root/workspace/lettuce-io/lettuce-core/438538449/src/main/java/io/lettuce/core/protocol/CommandArgs.java:[110,31] Varargs method could cause heap pollution from non-reifiable varargs parameter keys
+[WARNING] /root/workspace/lettuce-io/lettuce-core/438538449/src/main/java/io/lettuce/core/protocol/CommandArgs.java:[155,31] Varargs method could cause heap pollution from non-reifiable varargs parameter values
+[WARNING] /root/workspace/lettuce-io/lettuce-core/438538449/src/main/java/io/lettuce/core/GeoRadiusStoreArgs.java:[56,27] found raw type: io.lettuce.core.GeoRadiusStoreArgs
+  missing type arguments for generic class io.lettuce.core.GeoRadiusStoreArgs<K>
+[WARNING] /root/workspace/lettuce-io/lettuce-core/438538449/src/main/java/io/lettuce/core/GeoRadiusStoreArgs.java:[67,27] found raw type: io.lettuce.core.GeoRadiusStoreArgs
+  missing type arguments for generic class io.lettuce.core.GeoRadiusStoreArgs<K>
+[WARNING] /root/workspace/lettuce-io/lettuce-core/438538449/src/main/java/io/lettuce/core/GeoRadiusStoreArgs.java:[78,27] found raw type: io.lettuce.core.GeoRadiusStoreArgs
+  missing type arguments for generic class io.lettuce.core.GeoRadiusStoreArgs<K>
+[WARNING] /root/workspace/lettuce-io/lettuce-core/438538449/src/main/java/io/lettuce/core/GeoRadiusStoreArgs.java:[90,12] found raw type: io.lettuce.core.GeoRadiusStoreArgs
+  missing type arguments for generic class io.lettuce.core.GeoRadiusStoreArgs<K>
+[WARNING] /root/workspace/lettuce-io/lettuce-core/438538449/src/main/java/io/lettuce/core/GeoRadiusStoreArgs.java:[105,12] found raw type: io.lettuce.core.GeoRadiusStoreArgs
+  missing type arguments for generic class io.lettuce.core.GeoRadiusStoreArgs<K>
+[WARNING] /root/workspace/lettuce-io/lettuce-core/438538449/src/main/java/io/lettuce/core/GeoRadiusStoreArgs.java:[119,12] found raw type: io.lettuce.core.GeoRadiusStoreArgs
+  missing type arguments for generic class io.lettuce.core.GeoRadiusStoreArgs<K>
+[WARNING] /root/workspace/lettuce-io/lettuce-core/438538449/src/main/java/io/lettuce/core/GeoRadiusStoreArgs.java:[132,12] found raw type: io.lettuce.core.GeoRadiusStoreArgs
+  missing type arguments for generic class io.lettuce.core.GeoRadiusStoreArgs<K>
+[WARNING] /root/workspace/lettuce-io/lettuce-core/438538449/src/main/java/io/lettuce/core/GeoRadiusStoreArgs.java:[141,12] found raw type: io.lettuce.core.GeoRadiusStoreArgs
+  missing type arguments for generic class io.lettuce.core.GeoRadiusStoreArgs<K>
+[WARNING] /root/workspace/lettuce-io/lettuce-core/438538449/src/main/java/io/lettuce/core/GeoRadiusStoreArgs.java:[165,12] found raw type: io.lettuce.core.GeoRadiusStoreArgs
+  missing type arguments for generic class io.lettuce.core.GeoRadiusStoreArgs<K>
+[WARNING] /root/workspace/lettuce-io/lettuce-core/438538449/src/main/java/io/lettuce/core/MigrateArgs.java:[93,46] Varargs method could cause heap pollution from non-reifiable varargs parameter keys
+[WARNING] /root/workspace/lettuce-io/lettuce-core/438538449/src/main/java/io/lettuce/core/MigrateArgs.java:[173,32] Varargs method could cause heap pollution from non-reifiable varargs parameter keys
+[WARNING] /root/workspace/lettuce-io/lettuce-core/438538449/src/main/java/io/lettuce/core/MigrateArgs.java:[175,40] Varargs method could cause heap pollution from non-reifiable varargs parameter keys
+[WARNING] /root/workspace/lettuce-io/lettuce-core/438538449/src/main/java/io/lettuce/core/dynamic/support/ResolvableType.java:[37,8] Class io.lettuce.core.dynamic.support.ResolvableType overrides equals, but neither it nor any superclass overrides hashCode method
+[WARNING] /root/workspace/lettuce-io/lettuce-core/438538449/src/main/java/io/lettuce/core/resource/Futures.java:[128,35] Varargs method could cause heap pollution from non-reifiable varargs parameter promises
+[WARNING] /root/workspace/lettuce-io/lettuce-core/438538449/src/main/java/io/lettuce/core/RedisCommandBuilder.java:[3130,17] notNull(io.lettuce.core.output.ScoredValueStreamingChannel<?>) in io.lettuce.core.RedisCommandBuilder is potentially ambiguous with notNull(io.lettuce.core.output.ValueStreamingChannel<?>) in io.lettuce.core.RedisCommandBuilder
+[WARNING] /root/workspace/lettuce-io/lettuce-core/438538449/src/main/java/io/lettuce/core/pubsub/PubSubOutput.java:[86,13] possible fall-through into case
+[INFO] /root/workspace/lettuce-io/lettuce-core/438538449/src/main/java/io/lettuce/core/AbstractRedisReactiveCommands.java: Some input files use or override a deprecated API.
+[INFO] /root/workspace/lettuce-io/lettuce-core/438538449/src/main/java/io/lettuce/core/AbstractRedisReactiveCommands.java: Recompile with -Xlint:deprecation for details.
+[INFO] /root/workspace/lettuce-io/lettuce-core/438538449/src/main/java/io/lettuce/core/cluster/api/reactive/RedisAdvancedClusterReactiveCommands.java: Some input files use unchecked or unsafe operations.
+[INFO] /root/workspace/lettuce-io/lettuce-core/438538449/src/main/java/io/lettuce/core/cluster/api/reactive/RedisAdvancedClusterReactiveCommands.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ lettuce-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 5 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ lettuce-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ lettuce-core ---
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng-utils/2.22.0/surefire-testng-utils-2.22.0.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng-utils/2.22.0/surefire-testng-utils-2.22.0.jar (27 KB at 49.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.22.0/surefire-grouper-2.22.0.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.22.0/surefire-grouper-2.22.0.jar (40 KB at 629.8 KB/sec)
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running io.lettuce.codec.CRC16UnitTests
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.529 s - in io.lettuce.codec.CRC16UnitTests
+[INFO] Running io.lettuce.core.dynamic.codec.ParameterWrappersUnitTests
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.65 s - in io.lettuce.core.dynamic.codec.ParameterWrappersUnitTests
+[INFO] Running io.lettuce.core.dynamic.codec.AnnotationRedisCodecResolverUnitTests
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.197 s - in io.lettuce.core.dynamic.codec.AnnotationRedisCodecResolverUnitTests
+[INFO] Running io.lettuce.core.dynamic.SimpleBatcherUnitTests
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.213 s - in io.lettuce.core.dynamic.SimpleBatcherUnitTests
+[INFO] Running io.lettuce.core.dynamic.DefaultCommandMethodVerifierUnitTests
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 s - in io.lettuce.core.dynamic.DefaultCommandMethodVerifierUnitTests
+[INFO] Running io.lettuce.core.dynamic.ReactiveTypeAdaptersUnitTests
+[INFO] Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.15 s - in io.lettuce.core.dynamic.ReactiveTypeAdaptersUnitTests
+[INFO] Running io.lettuce.core.dynamic.BatchExecutableCommandLookupStrategyUnitTests
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.365 s - in io.lettuce.core.dynamic.BatchExecutableCommandLookupStrategyUnitTests
+[INFO] Running io.lettuce.core.dynamic.output.OutputRegistryUnitTests
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.046 s - in io.lettuce.core.dynamic.output.OutputRegistryUnitTests
+[INFO] Running io.lettuce.core.dynamic.output.CodecAwareOutputResolverUnitTests
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.059 s - in io.lettuce.core.dynamic.output.CodecAwareOutputResolverUnitTests
+[INFO] Running io.lettuce.core.dynamic.output.OutputRegistryCommandOutputFactoryResolverUnitTests
+[ERROR] Tests run: 14, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.102 s <<< FAILURE! - in io.lettuce.core.dynamic.output.OutputRegistryCommandOutputFactoryResolverUnitTests
+[ERROR] shouldResolveStreamingStringListOutput  Time elapsed: 0.017 s  <<< ERROR!
+java.lang.NullPointerException
+	at io.lettuce.core.dynamic.output.OutputRegistryCommandOutputFactoryResolverUnitTests.getStreamingCommandOutput(OutputRegistryCommandOutputFactoryResolverUnitTests.java:168)
+	at io.lettuce.core.dynamic.output.OutputRegistryCommandOutputFactoryResolverUnitTests.shouldResolveStreamingStringListOutput(OutputRegistryCommandOutputFactoryResolverUnitTests.java:54)
+
+[INFO] Running io.lettuce.core.dynamic.intercept.InvocationProxyFactoryUnitTests
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 s - in io.lettuce.core.dynamic.intercept.InvocationProxyFactoryUnitTests
+[INFO] Running io.lettuce.core.dynamic.segment.AnnotationCommandSegmentFactoryUnitTests
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.042 s - in io.lettuce.core.dynamic.segment.AnnotationCommandSegmentFactoryUnitTests
+[INFO] Running io.lettuce.core.dynamic.ConversionServiceUnitTests
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 s - in io.lettuce.core.dynamic.ConversionServiceUnitTests
+[INFO] Running io.lettuce.core.dynamic.DeclaredCommandMethodUnitTests
+[ERROR] Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.017 s <<< FAILURE! - in io.lettuce.core.dynamic.DeclaredCommandMethodUnitTests
+[ERROR] shouldResolveFluxComponentType  Time elapsed: 0.015 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+
+Expecting:
+ <java.lang.String>
+to be equal to:
+ <reactor.core.publisher.Flux>
+but was not.
+	at io.lettuce.core.dynamic.DeclaredCommandMethodUnitTests.shouldResolveFluxComponentType(DeclaredCommandMethodUnitTests.java:55)
+
+[INFO] Running io.lettuce.core.dynamic.ParameterBinderUnitTests
+[INFO] Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.243 s - in io.lettuce.core.dynamic.ParameterBinderUnitTests
+[INFO] Running io.lettuce.core.dynamic.ReactiveCommandSegmentCommandFactoryUnitTests
+[ERROR] Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.017 s <<< FAILURE! - in io.lettuce.core.dynamic.ReactiveCommandSegmentCommandFactoryUnitTests
+[ERROR] shouldResolveNonStreamingOutput  Time elapsed: 0.01 s  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expecting:
+ <KeyListOutput [output=[], error='null']>
+not to be an instance of:<io.lettuce.core.output.StreamingOutput>
+	at io.lettuce.core.dynamic.ReactiveCommandSegmentCommandFactoryUnitTests.shouldResolveNonStreamingOutput(ReactiveCommandSegmentCommandFactoryUnitTests.java:66)
+
+[INFO] Running io.lettuce.core.dynamic.CommandSegmentCommandFactoryUnitTests
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.058 s - in io.lettuce.core.dynamic.CommandSegmentCommandFactoryUnitTests
+[INFO] Running io.lettuce.core.dynamic.support.ParametrizedTypeInformationUnitTests
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in io.lettuce.core.dynamic.support.ParametrizedTypeInformationUnitTests
+[INFO] Running io.lettuce.core.dynamic.support.WildcardTypeInformationUnitTests
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 s - in io.lettuce.core.dynamic.support.WildcardTypeInformationUnitTests
+[INFO] Running io.lettuce.core.codec.CompressionCodecUnitTests
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 s - in io.lettuce.core.codec.CompressionCodecUnitTests
+[INFO] Running io.lettuce.core.codec.StringCodecUnitTests
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 s - in io.lettuce.core.codec.StringCodecUnitTests
+[INFO] Running io.lettuce.core.ReactiveBackpressurePropagationUnitTests
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.689 s - in io.lettuce.core.ReactiveBackpressurePropagationUnitTests
+[INFO] Running io.lettuce.core.ScanArgsUnitTests
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in io.lettuce.core.ScanArgsUnitTests
+[INFO] Running io.lettuce.core.ConnectionFutureUnitTests
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 s - in io.lettuce.core.ConnectionFutureUnitTests
+[INFO] Running io.lettuce.core.ExceptionFactoryUnitTests
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 s - in io.lettuce.core.ExceptionFactoryUnitTests
+[INFO] Running io.lettuce.core.RedisClientFactoryBeanUnitTests
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.346 s - in io.lettuce.core.RedisClientFactoryBeanUnitTests
+[INFO] Running io.lettuce.core.RangeUnitTests
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in io.lettuce.core.RangeUnitTests
+[INFO] Running io.lettuce.core.output.GeoCoordinatesValueListOutputUnitTests
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in io.lettuce.core.output.GeoCoordinatesValueListOutputUnitTests
+[INFO] Running io.lettuce.core.output.SocketAddressOutputUnitTests
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in io.lettuce.core.output.SocketAddressOutputUnitTests
+[INFO] Running io.lettuce.core.output.ReplayOutputUnitTests
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in io.lettuce.core.output.ReplayOutputUnitTests
+[INFO] Running io.lettuce.core.output.MultiOutputUnitTests
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in io.lettuce.core.output.MultiOutputUnitTests
+[INFO] Running io.lettuce.core.output.BooleanListOutputUnitTests
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in io.lettuce.core.output.BooleanListOutputUnitTests
+[INFO] Running io.lettuce.core.output.ScoredValueListOutputUnitTests
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in io.lettuce.core.output.ScoredValueListOutputUnitTests
+[INFO] Running io.lettuce.core.output.GeoCoordinatesListOutputUnitTests
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in io.lettuce.core.output.GeoCoordinatesListOutputUnitTests
+[INFO] Running io.lettuce.core.output.ListOutputUnitTests
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 s - in io.lettuce.core.output.ListOutputUnitTests
+[INFO] Running io.lettuce.core.output.GeoWithinListOutputUnitTests
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 s - in io.lettuce.core.output.GeoWithinListOutputUnitTests
+[INFO] Running io.lettuce.core.output.NestedMultiOutputUnitTests
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in io.lettuce.core.output.NestedMultiOutputUnitTests
+[INFO] Running io.lettuce.core.cluster.topology.NodeTopologyViewsUnitTests
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.04 s - in io.lettuce.core.cluster.topology.NodeTopologyViewsUnitTests
+[INFO] Running io.lettuce.core.cluster.topology.ClusterTopologyRefreshUnitTests
+[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.927 s - in io.lettuce.core.cluster.topology.ClusterTopologyRefreshUnitTests
+[INFO] Running io.lettuce.core.cluster.topology.RequestsUnitTests
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.103 s - in io.lettuce.core.cluster.topology.RequestsUnitTests
+[INFO] Running io.lettuce.core.cluster.topology.TopologyComparatorsUnitTests
+[INFO] Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.187 s - in io.lettuce.core.cluster.topology.TopologyComparatorsUnitTests
+[INFO] Running io.lettuce.core.cluster.topology.ConnectionsUnitTests
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in io.lettuce.core.cluster.topology.ConnectionsUnitTests
+[INFO] Running io.lettuce.core.cluster.ClusterCommandUnitTests
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.035 s - in io.lettuce.core.cluster.ClusterCommandUnitTests
+[INFO] Running io.lettuce.core.cluster.ReadFromUnitTests
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 s - in io.lettuce.core.cluster.ReadFromUnitTests
+[INFO] Running io.lettuce.core.cluster.ClusterTopologyRefreshSchedulerUnitTests
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.217 s - in io.lettuce.core.cluster.ClusterTopologyRefreshSchedulerUnitTests
+[INFO] Running io.lettuce.core.cluster.RedisClusterURIUtilUnitTests
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in io.lettuce.core.cluster.RedisClusterURIUtilUnitTests
+[INFO] Running io.lettuce.core.cluster.KnownMajorityPartitionsConsensusUnitTests
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 s - in io.lettuce.core.cluster.KnownMajorityPartitionsConsensusUnitTests
+[INFO] Running io.lettuce.core.cluster.PooledClusterConnectionProviderUnitTests
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.671 s - in io.lettuce.core.cluster.PooledClusterConnectionProviderUnitTests
+[INFO] Running io.lettuce.core.cluster.SlotHashUnitTests
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in io.lettuce.core.cluster.SlotHashUnitTests
+[INFO] Running io.lettuce.core.cluster.ClusterClientOptionsUnitTests
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in io.lettuce.core.cluster.ClusterClientOptionsUnitTests
+[INFO] Running io.lettuce.core.cluster.ClusterTopologyRefreshOptionsUnitTests
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in io.lettuce.core.cluster.ClusterTopologyRefreshOptionsUnitTests
+[INFO] Running io.lettuce.core.cluster.HealthyMajorityPartitionsConsensusUnitTests
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in io.lettuce.core.cluster.HealthyMajorityPartitionsConsensusUnitTests
+[INFO] Running io.lettuce.core.cluster.ReadOnlyCommandsUnitTests
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in io.lettuce.core.cluster.ReadOnlyCommandsUnitTests
+[INFO] Running io.lettuce.core.cluster.ClusterDistributionChannelWriterUnitTests
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in io.lettuce.core.cluster.ClusterDistributionChannelWriterUnitTests
+[INFO] Running io.lettuce.core.cluster.ClusterNodeEndpointUnitTests
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.079 s - in io.lettuce.core.cluster.ClusterNodeEndpointUnitTests
+[INFO] Running io.lettuce.core.cluster.RoundRobinSocketAddressSupplierUnitTests
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in io.lettuce.core.cluster.RoundRobinSocketAddressSupplierUnitTests
+[INFO] Running io.lettuce.core.cluster.models.partitions.RedisClusterNodeUnitTests
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in io.lettuce.core.cluster.models.partitions.RedisClusterNodeUnitTests
+[INFO] Running io.lettuce.core.cluster.models.partitions.ClusterPartitionParserUnitTests
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 s - in io.lettuce.core.cluster.models.partitions.ClusterPartitionParserUnitTests
+[INFO] Running io.lettuce.core.cluster.models.partitions.PartitionsUnitTests
+[INFO] Tests run: 28, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 s - in io.lettuce.core.cluster.models.partitions.PartitionsUnitTests
+[INFO] Running io.lettuce.core.cluster.models.slots.ClusterSlotsParserUnitTests
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 s - in io.lettuce.core.cluster.models.slots.ClusterSlotsParserUnitTests
+[INFO] Running io.lettuce.core.cluster.PipelinedRedisFutureUnitTests
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in io.lettuce.core.cluster.PipelinedRedisFutureUnitTests
+[INFO] Running io.lettuce.core.cluster.RedisClusterClientFactoryTests
+[INFO] Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.037 s - in io.lettuce.core.cluster.RedisClusterClientFactoryTests
+[INFO] Running io.lettuce.core.ScoredValueUnitTests
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in io.lettuce.core.ScoredValueUnitTests
+[INFO] Running io.lettuce.core.ClientOptionsUnitTests
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in io.lettuce.core.ClientOptionsUnitTests
+[INFO] Running io.lettuce.core.SocketOptionsUnitTests
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in io.lettuce.core.SocketOptionsUnitTests
+[INFO] Running io.lettuce.core.pubsub.PubSubCommandHandlerUnitTests
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.389 s - in io.lettuce.core.pubsub.PubSubCommandHandlerUnitTests
+[INFO] Running io.lettuce.core.LettuceFuturesUnitTests
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in io.lettuce.core.LettuceFuturesUnitTests
+[INFO] Running io.lettuce.core.ScanCursorUnitTests
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in io.lettuce.core.ScanCursorUnitTests
+[INFO] Running io.lettuce.core.SyncAsyncApiConvergenceUnitTests
+[INFO] Tests run: 1188, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.926 s - in io.lettuce.core.SyncAsyncApiConvergenceUnitTests
+[INFO] Running io.lettuce.core.event.DefaultEventBusUnitTests
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.046 s - in io.lettuce.core.event.DefaultEventBusUnitTests
+[INFO] Running io.lettuce.core.event.DefaultEventPublisherOptionsUnitTests
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in io.lettuce.core.event.DefaultEventPublisherOptionsUnitTests
+[INFO] Running io.lettuce.core.RedisURIUnitTests
+[INFO] Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in io.lettuce.core.RedisURIUnitTests
+[INFO] Running io.lettuce.core.ProtectedModeTests
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.605 s - in io.lettuce.core.ProtectedModeTests
+[INFO] Running io.lettuce.core.protocol.AsyncCommandUnitTests
+[INFO] Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 s - in io.lettuce.core.protocol.AsyncCommandUnitTests
+[INFO] Running io.lettuce.core.protocol.CommandUnitTests
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in io.lettuce.core.protocol.CommandUnitTests
+[INFO] Running io.lettuce.core.protocol.DefaultEndpointUnitTests
+[INFO] Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.332 s - in io.lettuce.core.protocol.DefaultEndpointUnitTests
+[INFO] Running io.lettuce.core.protocol.CommandWrapperUnitTests
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in io.lettuce.core.protocol.CommandWrapperUnitTests
+[INFO] Running io.lettuce.core.protocol.TransactionalCommandUnitTests
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in io.lettuce.core.protocol.TransactionalCommandUnitTests
+[INFO] Running io.lettuce.core.protocol.CommandHandlerUnitTests
+[INFO] Tests run: 27, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.37 s - in io.lettuce.core.protocol.CommandHandlerUnitTests
+[INFO] Running io.lettuce.core.protocol.CommandArgsUnitTests
+[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 s - in io.lettuce.core.protocol.CommandArgsUnitTests
+[INFO] Running io.lettuce.core.protocol.StateMachineUnitTests
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in io.lettuce.core.protocol.StateMachineUnitTests
+[INFO] Running io.lettuce.core.internal.AbstractInvocationHandlerUnitTests
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in io.lettuce.core.internal.AbstractInvocationHandlerUnitTests
+[INFO] Running io.lettuce.core.internal.HostAndPortUnitTests
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in io.lettuce.core.internal.HostAndPortUnitTests
+[INFO] Running io.lettuce.core.masterslave.MasterSlaveUtilsUnitTests
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in io.lettuce.core.masterslave.MasterSlaveUtilsUnitTests
+[INFO] Running io.lettuce.core.masterslave.MasterSlaveTopologyProviderUnitTests
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in io.lettuce.core.masterslave.MasterSlaveTopologyProviderUnitTests
+[INFO] Running io.lettuce.core.masterslave.ConnectionsUnitTests
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in io.lettuce.core.masterslave.ConnectionsUnitTests
+[INFO] Running io.lettuce.core.masterslave.MasterSlaveTopologyRefreshUnitTests
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.047 s - in io.lettuce.core.masterslave.MasterSlaveTopologyRefreshUnitTests
+[INFO] Running io.lettuce.core.masterslave.MasterSlaveChannelWriterUnitTests
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.133 s - in io.lettuce.core.masterslave.MasterSlaveChannelWriterUnitTests
+[INFO] Running io.lettuce.core.masterslave.SentinelTopologyRefreshUnitTests
+[INFO] Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.666 s - in io.lettuce.core.masterslave.SentinelTopologyRefreshUnitTests
+[INFO] Running io.lettuce.core.masterslave.MasterSlaveConnectionProviderUnitTests
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in io.lettuce.core.masterslave.MasterSlaveConnectionProviderUnitTests
+[INFO] Running io.lettuce.core.KeyValueUnitTests
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in io.lettuce.core.KeyValueUnitTests
+[INFO] Running io.lettuce.core.metrics.CommandLatencyIdUnitTests
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in io.lettuce.core.metrics.CommandLatencyIdUnitTests
+[INFO] Running io.lettuce.core.metrics.DefaultDefaultCommandLatencyCollectorOptionsUnitTests
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in io.lettuce.core.metrics.DefaultDefaultCommandLatencyCollectorOptionsUnitTests
+[INFO] Running io.lettuce.core.metrics.DefaultCommandLatencyCollectorUnitTests
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.044 s - in io.lettuce.core.metrics.DefaultCommandLatencyCollectorUnitTests
+[INFO] Running io.lettuce.core.LimitUnitTests
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in io.lettuce.core.LimitUnitTests
+[INFO] Running io.lettuce.core.ZStoreArgsUnitTests
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in io.lettuce.core.ZStoreArgsUnitTests
+[INFO] Running io.lettuce.core.JavaRuntimeUnitTests
+[WARNING] Tests run: 3, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.003 s - in io.lettuce.core.JavaRuntimeUnitTests
+[INFO] Running io.lettuce.core.GeoModelUnitTests
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in io.lettuce.core.GeoModelUnitTests
+[INFO] Running io.lettuce.core.TimeoutOptionsUnitTests
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in io.lettuce.core.TimeoutOptionsUnitTests
+[INFO] Running io.lettuce.core.resource.FullJitterDelayUnitTests
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in io.lettuce.core.resource.FullJitterDelayUnitTests
+[INFO] Running io.lettuce.core.resource.DirContextDnsResolverTests
+[WARNING] Tests run: 11, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 0.266 s - in io.lettuce.core.resource.DirContextDnsResolverTests
+[INFO] Running io.lettuce.core.resource.ExponentialDelayUnitTests
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in io.lettuce.core.resource.ExponentialDelayUnitTests
+[INFO] Running io.lettuce.core.resource.DefaultClientResourcesUnitTests
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.181 s - in io.lettuce.core.resource.DefaultClientResourcesUnitTests
+[INFO] Running io.lettuce.core.resource.MappingSocketAddressResolverUnitTests
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 s - in io.lettuce.core.resource.MappingSocketAddressResolverUnitTests
+[INFO] Running io.lettuce.core.resource.DefaultEventLoopGroupProviderUnitTests
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.107 s - in io.lettuce.core.resource.DefaultEventLoopGroupProviderUnitTests
+[INFO] Running io.lettuce.core.resource.EqualJitterDelayUnitTests
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in io.lettuce.core.resource.EqualJitterDelayUnitTests
+[INFO] Running io.lettuce.core.resource.ConstantDelayUnitTests
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in io.lettuce.core.resource.ConstantDelayUnitTests
+[INFO] Running io.lettuce.core.resource.FuturesUnitTests
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in io.lettuce.core.resource.FuturesUnitTests
+[INFO] Running io.lettuce.core.resource.DecorrelatedJitterDelayUnitTests
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.189 s - in io.lettuce.core.resource.DecorrelatedJitterDelayUnitTests
+[INFO] Running io.lettuce.core.support.BoundedAsyncPoolUnitTests
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 s - in io.lettuce.core.support.BoundedAsyncPoolUnitTests
+[INFO] Running io.lettuce.core.support.AsyncPoolWithValidationUnitTests
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.053 s - in io.lettuce.core.support.AsyncPoolWithValidationUnitTests
+[INFO] Running io.lettuce.core.support.RedisClusterClientFactoryBeanUnitTests
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 s - in io.lettuce.core.support.RedisClusterClientFactoryBeanUnitTests
+[INFO] Running io.lettuce.core.ValueUnitTests
+[INFO] Tests run: 27, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 s - in io.lettuce.core.ValueUnitTests
+[INFO] Running io.lettuce.core.RedisClientFactoryUnitTests
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.042 s - in io.lettuce.core.RedisClientFactoryUnitTests
+[INFO] Running io.lettuce.core.models.role.RoleParserUnitTests
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 s - in io.lettuce.core.models.role.RoleParserUnitTests
+[INFO] Running io.lettuce.core.models.stream.PendingParserUnitTests
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in io.lettuce.core.models.stream.PendingParserUnitTests
+[INFO] Running io.lettuce.core.models.command.CommandDetailParserUnitTests
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in io.lettuce.core.models.command.CommandDetailParserUnitTests
+[INFO] Running io.lettuce.core.RedisURIBuilderUnitTests
+[INFO] Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 s - in io.lettuce.core.RedisURIBuilderUnitTests
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   DeclaredCommandMethodUnitTests.shouldResolveFluxComponentType:55 
+Expecting:
+ <java.lang.String>
+to be equal to:
+ <reactor.core.publisher.Flux>
+but was not.
+[ERROR]   ReactiveCommandSegmentCommandFactoryUnitTests.shouldResolveNonStreamingOutput:66 
+Expecting:
+ <KeyListOutput [output=[], error='null']>
+not to be an instance of:<io.lettuce.core.output.StreamingOutput>
+[ERROR] Errors: 
+[ERROR]   OutputRegistryCommandOutputFactoryResolverUnitTests.shouldResolveStreamingStringListOutput:54->getStreamingCommandOutput:168 » NullPointer
+[INFO] 
+[ERROR] Tests run: 2020, Failures: 2, Errors: 1, Skipped: 4
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 41.303 s
+[INFO] Finished at: 2018-10-08T22:30:17+02:00
+[INFO] Final Memory: 34M/811M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.22.0:test (default-test) on project lettuce-core: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/lettuce-io/lettuce-core/438538449/target/surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
