@@ -1,0 +1,152 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 1573, 
+      "numberRunning": 1574, 
+      "numberFailing": 1, 
+      "numberErroring": 0, 
+      "failures": [
+        {
+          "failureName": "junit.framework.AssertionFailedError", 
+          "isError": false, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 0
+    }, 
+    "failingModule": "/root/workspace/FasterXML/jackson-databind/221825856", 
+    "failureDetails": [
+      {
+        "failureName": "junit.framework.AssertionFailedError", 
+        "detail": "Expected an exception with one of substrings ([Illegal type]): got one with message \"N/A\n at [Source: {\"id\": 124,\n \"obj\":[ \"com.sun.org.apache.xalan.internal.xsltc.trax.TemplatesImpl\",\n  {\n    \"transletBytecodes\" : [ \"AAIAZQ==\" ],\n    \"transletName\" : \"a.b\",\n    \"outputProperties\" : { }\n  }\n ]\n}; line: 6, column: 26] (through reference chain: com.fasterxml.jackson.databind.interop.Bean1599[\"obj\"]->com.sun.org.apache.xalan.internal.xsltc.trax.TemplatesImpl[\"outputProperties\"])\"", 
+        "isError": false, 
+        "testMethod": "testIssue1599", 
+        "testClass": "com.fasterxml.jackson.databind.interop.IllegalTypesCheckTest"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 0, 
+        "numberRunning": 1, 
+        "testClass": "com.fasterxml.jackson.databind.interop.IllegalTypesCheckTest", 
+        "numberFailing": 1, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/FasterXML/jackson-databind/builds/221903238", 
+      "date": "Apr 14, 2017 12:14:16 AM", 
+      "id": 221903238
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/FasterXML/jackson-databind/builds/221825856", 
+      "date": "Apr 13, 2017 8:05:15 PM", 
+      "id": 221825856
+    }
+  }, 
+  "repository": {
+    "name": "FasterXML/jackson-databind", 
+    "url": "https://github.com/FasterXML/jackson-databind", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 3038937
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/FasterXML/jackson-databind/commit/6ce32ffd18facac6abdbbf559c817b47fcb622c1", 
+      "sha": "6ce32ffd18facac6abdbbf559c817b47fcb622c1", 
+      "branchName": "2.7", 
+      "date": "Apr 14, 2017 12:08:10 AM", 
+      "repoName": "FasterXML/jackson-databind"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/FasterXML/jackson-databind/commit/28ec8a47d381311818f805ae76bf84da30f516f9", 
+      "sha": "28ec8a47d381311818f805ae76bf84da30f516f9", 
+      "branchName": "2.7", 
+      "date": "Apr 13, 2017 8:00:31 PM", 
+      "repoName": "FasterXML/jackson-databind"
+    }
+  }, 
+  "bugName": "FasterXML-jackson-databind-221825856-221903238", 
+  "version": "latest", 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 0, 
+      "numberDeleted": 23
+    }
+  }, 
+  "type": "passing_passing", 
+  "bugId": "Bears-14", 
+  "projectMetrics": {
+    "numberSourceFiles": 389, 
+    "numberLibrariesFailingModule": 14, 
+    "numberTestFiles": 365, 
+    "numberModules": 1
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 121731360, 
+      "hostName": "local", 
+      "totalMemory": 381157376, 
+      "numberCPU": 4
+    }, 
+    "reproductionDateEnd": "Oct 9, 2018 11:35:04 PM", 
+    "projectRootPomPath": "./workspace/FasterXML/jackson-databind/221825856/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          0, 
+          0, 
+          0, 
+          0, 
+          52
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 52
+      }, 
+      "testing": {
+        "stepDurations": [
+          31
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 31
+      }, 
+      "cloning": {
+        "stepDurations": [
+          56
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 56
+      }
+    }, 
+    "reproductionDateBeginning": "Oct 9, 2018 11:31:34 PM", 
+    "totalDuration": 203
+  }
+}
