@@ -1,0 +1,152 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 1057, 
+      "numberRunning": 1058, 
+      "numberFailing": 0, 
+      "numberErroring": 1, 
+      "failures": [
+        {
+          "failureName": "spoon.SpoonException", 
+          "isError": true, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 2
+    }, 
+    "failingModule": "/root/workspace/INRIA/spoon/225344336", 
+    "failureDetails": [
+      {
+        "failureName": "spoon.SpoonException", 
+        "detail": "Cannot resolve 1) type parameter <T>  of declarer public class Banana<T> {\n    abstract class Vitamins extends java.util.AbstractList<T> {    }\n}", 
+        "isError": true, 
+        "testMethod": "testClassContextOnInnerClass", 
+        "testClass": "spoon.test.generics.GenericsTest"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 31, 
+        "numberRunning": 32, 
+        "testClass": "spoon.test.generics.GenericsTest", 
+        "numberFailing": 0, 
+        "numberErroring": 1, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/INRIA/spoon/builds/226528821", 
+      "date": "Apr 27, 2017 9:17:25 PM", 
+      "id": 226528821
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/INRIA/spoon/builds/225344336", 
+      "date": "Apr 24, 2017 9:37:50 PM", 
+      "id": 225344336
+    }
+  }, 
+  "repository": {
+    "name": "INRIA/spoon", 
+    "url": "https://github.com/INRIA/spoon", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 14176513
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/INRIA/spoon/commit/4c0ac3299569c30661ef249b9a30813fc1081b62", 
+      "sha": "4c0ac3299569c30661ef249b9a30813fc1081b62", 
+      "branchName": "master", 
+      "date": "Apr 27, 2017 9:08:19 PM", 
+      "repoName": "INRIA/spoon"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/INRIA/spoon/commit/27fc8208c4da4145c687c7f4db057de7dbed50f6", 
+      "sha": "27fc8208c4da4145c687c7f4db057de7dbed50f6", 
+      "branchName": "master", 
+      "date": "Apr 24, 2017 9:28:30 PM", 
+      "repoName": "INRIA/spoon"
+    }
+  }, 
+  "bugName": "INRIA-spoon-225344336-226528821", 
+  "version": "latest", 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 1, 
+      "numberDeleted": 12
+    }
+  }, 
+  "type": "passing_passing", 
+  "bugId": "Bears-48", 
+  "projectMetrics": {
+    "numberSourceFiles": 478, 
+    "numberLibrariesFailingModule": 10, 
+    "numberTestFiles": 484, 
+    "numberModules": 1
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 151565960, 
+      "hostName": "local", 
+      "totalMemory": 377487360, 
+      "numberCPU": 4
+    }, 
+    "reproductionDateEnd": "Oct 9, 2018 11:54:40 PM", 
+    "projectRootPomPath": "./workspace/INRIA/spoon/225344336/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          1, 
+          0, 
+          0, 
+          0, 
+          100
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 101
+      }, 
+      "testing": {
+        "stepDurations": [
+          299
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 299
+      }, 
+      "cloning": {
+        "stepDurations": [
+          21
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 21
+      }
+    }, 
+    "reproductionDateBeginning": "Oct 9, 2018 11:40:54 PM", 
+    "totalDuration": 820
+  }
+}
