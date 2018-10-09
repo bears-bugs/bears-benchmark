@@ -1,0 +1,152 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 232, 
+      "numberRunning": 233, 
+      "numberFailing": 1, 
+      "numberErroring": 0, 
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError", 
+          "isError": false, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 4
+    }, 
+    "failingModule": "/root/workspace/traccar/traccar/219945896", 
+    "failureDetails": [
+      {
+        "failureName": "java.lang.AssertionError", 
+        "detail": "position is null", 
+        "isError": false, 
+        "testMethod": "testDecode", 
+        "testClass": "org.traccar.protocol.CguardProtocolDecoderTest"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 0, 
+        "numberRunning": 1, 
+        "testClass": "org.traccar.protocol.CguardProtocolDecoderTest", 
+        "numberFailing": 1, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/traccar/traccar/builds/220224837", 
+      "date": "Apr 9, 2017 11:49:17 AM", 
+      "id": 220224837
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/traccar/traccar/builds/219945896", 
+      "date": "Apr 8, 2017 6:43:53 AM", 
+      "id": 219945896
+    }
+  }, 
+  "repository": {
+    "name": "traccar/traccar", 
+    "url": "https://github.com/traccar/traccar", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 4038949
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/traccar/traccar/commit/1f4dc7e4413aae6f8e927d7d5a9c40a8bd0ae082", 
+      "sha": "1f4dc7e4413aae6f8e927d7d5a9c40a8bd0ae082", 
+      "branchName": "master", 
+      "date": "Apr 9, 2017 11:47:16 AM", 
+      "repoName": "traccar/traccar"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/traccar/traccar/commit/e104f5636d53311dfd91cafaa2cdea65260ae7dc", 
+      "sha": "e104f5636d53311dfd91cafaa2cdea65260ae7dc", 
+      "branchName": "master", 
+      "date": "Apr 8, 2017 6:42:23 AM", 
+      "repoName": "traccar/traccar"
+    }
+  }, 
+  "bugName": "traccar-traccar-219945896-220224837", 
+  "version": "latest", 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 7, 
+      "numberDeleted": 7
+    }
+  }, 
+  "type": "passing_passing", 
+  "bugId": "Bears-108", 
+  "projectMetrics": {
+    "numberSourceFiles": 507, 
+    "numberLibrariesFailingModule": 96, 
+    "numberTestFiles": 210, 
+    "numberModules": 1
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 119918408, 
+      "hostName": "local", 
+      "totalMemory": 203423744, 
+      "numberCPU": 4
+    }, 
+    "reproductionDateEnd": "Oct 9, 2018 11:02:46 PM", 
+    "projectRootPomPath": "./workspace/traccar/traccar/219945896/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          1, 
+          0, 
+          0, 
+          0, 
+          140
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 141
+      }, 
+      "testing": {
+        "stepDurations": [
+          11
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 11
+      }, 
+      "cloning": {
+        "stepDurations": [
+          23
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 23
+      }
+    }, 
+    "reproductionDateBeginning": "Oct 9, 2018 10:59:04 PM", 
+    "totalDuration": 215
+  }
+}
