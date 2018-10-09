@@ -1,0 +1,152 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 1047, 
+      "numberRunning": 1048, 
+      "numberFailing": 1, 
+      "numberErroring": 0, 
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure", 
+          "isError": false, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 2
+    }, 
+    "failingModule": "/root/workspace/INRIA/spoon/218213030", 
+    "failureDetails": [
+      {
+        "failureName": "org.junit.ComparisonFailure", 
+        "detail": "expected:<...gImport#doSomething([externallib].SomeType)> but was:<...gImport#doSomething([fr.inria].SomeType)>", 
+        "isError": false, 
+        "testMethod": "testAnotherMissingImport", 
+        "testClass": "spoon.test.imports.ImportTest"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 27, 
+        "numberRunning": 28, 
+        "testClass": "spoon.test.imports.ImportTest", 
+        "numberFailing": 1, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/INRIA/spoon/builds/221992429", 
+      "date": "Apr 14, 2017 9:23:15 AM", 
+      "id": 221992429
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/INRIA/spoon/builds/218213030", 
+      "date": "Apr 3, 2017 10:15:39 PM", 
+      "id": 218213030
+    }
+  }, 
+  "repository": {
+    "name": "INRIA/spoon", 
+    "url": "https://github.com/INRIA/spoon", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 14176513
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/INRIA/spoon/commit/d25247f87b6bdb3aa917a90e70f1d1117424f153", 
+      "sha": "d25247f87b6bdb3aa917a90e70f1d1117424f153", 
+      "branchName": "master", 
+      "date": "Apr 14, 2017 9:14:26 AM", 
+      "repoName": "INRIA/spoon"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/INRIA/spoon/commit/11d500fb62e40afef7e00af14a5cfadf4eb73011", 
+      "sha": "11d500fb62e40afef7e00af14a5cfadf4eb73011", 
+      "branchName": "master", 
+      "date": "Apr 3, 2017 10:03:43 PM", 
+      "repoName": "INRIA/spoon"
+    }
+  }, 
+  "bugName": "INRIA-spoon-218213030-221992429", 
+  "version": "latest", 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 0, 
+      "numberDeleted": 3
+    }
+  }, 
+  "type": "passing_passing", 
+  "bugId": "Bears-47", 
+  "projectMetrics": {
+    "numberSourceFiles": 474, 
+    "numberLibrariesFailingModule": 10, 
+    "numberTestFiles": 480, 
+    "numberModules": 1
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 143795520, 
+      "hostName": "local", 
+      "totalMemory": 284164096, 
+      "numberCPU": 4
+    }, 
+    "reproductionDateEnd": "Oct 9, 2018 11:59:49 PM", 
+    "projectRootPomPath": "./workspace/INRIA/spoon/218213030/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          1, 
+          0, 
+          0, 
+          1, 
+          102
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 104
+      }, 
+      "testing": {
+        "stepDurations": [
+          271
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 271
+      }, 
+      "cloning": {
+        "stepDurations": [
+          23
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 23
+      }
+    }, 
+    "reproductionDateBeginning": "Oct 9, 2018 11:48:23 PM", 
+    "totalDuration": 678
+  }
+}
