@@ -1,0 +1,149 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 277, 
+      "numberRunning": 278, 
+      "numberFailing": 1, 
+      "numberErroring": 0, 
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure", 
+          "isError": false, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 0
+    }, 
+    "failingModule": "/root/workspace/apache/calcite/438471840/linq4j", 
+    "failureDetails": [
+      {
+        "failureName": "org.junit.ComparisonFailure", 
+        "detail": "Expected to optimize Boolean.FALSE = null to false expected:<{\n  return [false];\n}\n> but was:<{\n  return [!null];\n}\n>", 
+        "isError": false, 
+        "testClass": "org.apache.calcite.linq4j.test.BlockBuilderTest", 
+        "testMethod": "testOptimizeBoxedFalseEqNull"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 5, 
+        "numberRunning": 6, 
+        "testClass": "org.apache.calcite.linq4j.test.BlockBuilderTest", 
+        "numberFailing": 1, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/apache/calcite/builds/439261190", 
+      "date": "Oct 9, 2018 8:13:16 PM", 
+      "id": 439261190
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/apache/calcite/builds/438471840", 
+      "date": "Oct 8, 2018 8:47:19 AM", 
+      "id": 438471840
+    }
+  }, 
+  "repository": {
+    "name": "apache/calcite", 
+    "url": "https://github.com/apache/calcite", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 21193524
+  }, 
+  "projectMetrics": {
+    "numberSourceFiles": 1513, 
+    "numberLibrariesFailingModule": 3, 
+    "numberTestFiles": 231, 
+    "numberModules": 19
+  }, 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 2, 
+      "numberDeleted": 2
+    }
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/apache/calcite/commit/dfd012cf082adf50688c2cc57c7e857f6d702f72", 
+      "sha": "dfd012cf082adf50688c2cc57c7e857f6d702f72", 
+      "branchName": "master", 
+      "date": "Oct 9, 2018 7:49:56 PM", 
+      "repoName": "apache/calcite"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/apache/calcite/commit/6b3844c0634792263a5073b8ea93565fb3415f41", 
+      "sha": "6b3844c0634792263a5073b8ea93565fb3415f41", 
+      "branchName": "master", 
+      "date": "Oct 7, 2018 10:34:53 PM", 
+      "repoName": "apache/calcite"
+    }
+  }, 
+  "type": "passing_passing", 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 271401688, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 617086976, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Oct 9, 2018 8:25:05 PM", 
+    "projectRootPomPath": "./workspace/apache/calcite/438471840/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          0, 
+          1, 
+          0, 
+          0, 
+          177
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 178
+      }, 
+      "testing": {
+        "stepDurations": [
+          10
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 10
+      }, 
+      "cloning": {
+        "stepDurations": [
+          22
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 22
+      }
+    }, 
+    "reproductionDateBeginning": "Oct 9, 2018 8:13:43 PM", 
+    "totalDuration": 675
+  }
+}
