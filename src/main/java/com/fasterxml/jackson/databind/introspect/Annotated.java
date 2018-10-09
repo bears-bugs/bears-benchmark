@@ -1,0 +1,89 @@
+package com.fasterxml.jackson.databind.introspect;
+
+import java.lang.annotation.Annotation;
+import java.lang.reflect.AnnotatedElement;
+import java.lang.reflect.Modifier;
+import java.lang.reflect.Type;
+
+import com.fasterxml.jackson.databind.JavaType;
+import com.fasterxml.jackson.databind.type.TypeBindings;
+
+/**
+ * Shared base class used for anything on which annotations (included
+ * within a {@link AnnotationMap}).
+ */
+public abstract class Annotated
+{
+    protected Annotated() { }
+
+    public abstract <A extends Annotation> A getAnnotation(Class<A> acls);
+
+    public abstract boolean hasAnnotation(Class<?> acls);
+
+    /**
+     * @since 2.7
+     */
+    public abstract boolean hasOneOf(Class<? extends Annotation>[] annoClasses);
+
+    /**
+     * Method that can be used to find actual JDK element that this instance
+     * represents. It is non-null, except for method/constructor parameters
+     * which do not have a JDK counterpart.
+     */
+    public abstract AnnotatedElement getAnnotated();
+
+    protected abstract int getModifiers();
+
+    public boolean isPublic() {
+        return Modifier.isPublic(getModifiers());
+    }
+
+    public abstract String getName();
+
+    /**
+     * Full generic type of the annotated element; definition
+     * of what exactly this means depends on sub-class.
+     *
+     * @since 2.7
+     */
+    public abstract JavaType getType();
+
+    /**
+     * @deprecated Since 2.7 Use {@link #getType()} instead. To be removed from 2.9
+     */
+    @Deprecated
+    public final JavaType getType(TypeBindings bogus) {
+        return getType();
+    }
+
+    /**
+     * JDK declared generic type of the annotated element; definition
+     * of what exactly this means depends on sub-class. Note that such type
+     * can not be reliably resolved without {@link TypeResolutionContext}, and
+     * as a result use of this method was deprecated in Jackson 2.7: see
+     * {@link #getType} for replacement.
+     *
+     * @deprecated Since 2.7 should instead use {@link #getType()}. To be removed from 2.9
+     */
+    @Deprecated
+    public Type getGenericType() {
+        return getRawType();
+    }
+
+    /**
+     * "Raw" type (type-erased class) of the annotated element; definition
+     * of what exactly this means depends on sub-class.
+     */
+    public abstract Class<?> getRawType();
+
+    // Also: ensure we can use #equals, #hashCode
+    
+    @Override
+    public abstract boolean equals(Object o);
+
+    @Override
+    public abstract int hashCode();
+
+    @Override
+    public abstract String toString();
+}
