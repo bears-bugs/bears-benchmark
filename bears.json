@@ -1,0 +1,159 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 1026, 
+      "numberRunning": 1028, 
+      "numberFailing": 2, 
+      "numberErroring": 0, 
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError", 
+          "isError": false, 
+          "occurrences": 2
+        }
+      ], 
+      "numberSkipping": 2
+    }, 
+    "failingModule": "/root/workspace/INRIA/spoon/211086222", 
+    "failureDetails": [
+      {
+        "failureName": "java.lang.AssertionError", 
+        "detail": "expected:<3> but was:<2>", 
+        "isError": false, 
+        "testMethod": "testOverridingMethodFromSubClassOfAbstractClass", 
+        "testClass": "spoon.test.filters.FilterTest"
+      }, 
+      {
+        "failureName": "java.lang.AssertionError", 
+        "detail": "expected:<1> but was:<0>", 
+        "isError": false, 
+        "testMethod": "testOverridingMethodFromSubClassOfInterface", 
+        "testClass": "spoon.test.filters.FilterTest"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 37, 
+        "numberRunning": 39, 
+        "testClass": "spoon.test.filters.FilterTest", 
+        "numberFailing": 2, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/INRIA/spoon/builds/211090498", 
+      "date": "Mar 14, 2017 9:12:55 PM", 
+      "id": 211090498
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/INRIA/spoon/builds/211086222", 
+      "date": "Mar 14, 2017 9:01:01 PM", 
+      "id": 211086222
+    }
+  }, 
+  "repository": {
+    "name": "INRIA/spoon", 
+    "url": "https://github.com/INRIA/spoon", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 14176513
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/INRIA/spoon/commit/286e6e993ab642e2e4331ba4573eadab5ca12b1c", 
+      "sha": "286e6e993ab642e2e4331ba4573eadab5ca12b1c", 
+      "branchName": "master", 
+      "date": "Mar 14, 2017 9:04:50 PM", 
+      "repoName": "INRIA/spoon"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/INRIA/spoon/commit/f87ba4fe585aa93f9ec950b08179b5a1411e1e28", 
+      "sha": "f87ba4fe585aa93f9ec950b08179b5a1411e1e28", 
+      "branchName": "master", 
+      "date": "Mar 14, 2017 8:53:04 PM", 
+      "repoName": "INRIA/spoon"
+    }
+  }, 
+  "bugName": "INRIA-spoon-211086222-211090498", 
+  "version": "latest", 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 5, 
+      "numberDeleted": 1
+    }
+  }, 
+  "type": "passing_passing", 
+  "bugId": "Bears-43", 
+  "projectMetrics": {
+    "numberSourceFiles": 469, 
+    "numberLibrariesFailingModule": 10, 
+    "numberTestFiles": 470, 
+    "numberModules": 1
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 144297976, 
+      "hostName": "local", 
+      "totalMemory": 285212672, 
+      "numberCPU": 4
+    }, 
+    "reproductionDateEnd": "Oct 10, 2018 7:36:50 AM", 
+    "projectRootPomPath": "./workspace/INRIA/spoon/211086222/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          0, 
+          0, 
+          0, 
+          0, 
+          67
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 67
+      }, 
+      "testing": {
+        "stepDurations": [
+          181
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 181
+      }, 
+      "cloning": {
+        "stepDurations": [
+          21
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 21
+      }
+    }, 
+    "reproductionDateBeginning": "Oct 10, 2018 7:28:11 AM", 
+    "totalDuration": 511
+  }
+}
