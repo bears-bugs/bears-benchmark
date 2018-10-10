@@ -1,0 +1,17 @@
+#set($subject = "$device.name: exceeds the speed")
+#if($speedUnits == 'kmh')
+#set($speedString = $position.speed * 1.852 + ' km/h')
+#elseif($speedUnits == 'mph')
+#set($speedString = $position.speed * 1.15078 + ' mph')
+#else
+#set($speedString = "$position.speed kn")
+#end
+<!DOCTYPE html>
+<html>
+<body>
+Device: $device.name<br>
+Exceeds the speed: $speedString<br>
+Time: $dateTool.format("YYYY-MM-dd HH:mm:ss", $event.serverTime, $locale, $timezone)<br>
+Point: <a href="$webUrl?eventId=$event.id">#{if}($position.address)$position.address#{else}$position.latitude&deg;, $position.longitude&deg;#{end}</a><br>
+</body>
+</html>  
