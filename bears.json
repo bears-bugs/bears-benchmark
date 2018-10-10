@@ -1,0 +1,152 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 1001, 
+      "numberRunning": 1002, 
+      "numberFailing": 1, 
+      "numberErroring": 0, 
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError", 
+          "isError": false, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 2
+    }, 
+    "failingModule": "/root/workspace/INRIA/spoon/197674087", 
+    "failureDetails": [
+      {
+        "failureName": "java.lang.AssertionError", 
+        "detail": "The method in the interface must to be default", 
+        "isError": false, 
+        "testMethod": "testDefaultMethodInConsumer", 
+        "testClass": "spoon.test.interfaces.InterfaceTest"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 5, 
+        "numberRunning": 6, 
+        "testClass": "spoon.test.interfaces.InterfaceTest", 
+        "numberFailing": 1, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/INRIA/spoon/builds/198523383", 
+      "date": "Feb 5, 2017 11:23:59 AM", 
+      "id": 198523383
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/INRIA/spoon/builds/197674087", 
+      "date": "Feb 2, 2017 4:27:43 PM", 
+      "id": 197674087
+    }
+  }, 
+  "repository": {
+    "name": "INRIA/spoon", 
+    "url": "https://github.com/INRIA/spoon", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 14176513
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/INRIA/spoon/commit/870a297e6b21673c5c62890cf4b57807dfaf3480", 
+      "sha": "870a297e6b21673c5c62890cf4b57807dfaf3480", 
+      "branchName": "master", 
+      "date": "Feb 5, 2017 11:15:35 AM", 
+      "repoName": "INRIA/spoon"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/INRIA/spoon/commit/a727953e00ea1f8fa64b11cb2d237a709fd15e38", 
+      "sha": "a727953e00ea1f8fa64b11cb2d237a709fd15e38", 
+      "branchName": "master", 
+      "date": "Feb 2, 2017 4:18:40 PM", 
+      "repoName": "INRIA/spoon"
+    }
+  }, 
+  "bugName": "INRIA-spoon-197674087-198523383", 
+  "version": "latest", 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 2, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 29, 
+      "numberDeleted": 12
+    }
+  }, 
+  "type": "passing_passing", 
+  "bugId": "Bears-37", 
+  "projectMetrics": {
+    "numberSourceFiles": 461, 
+    "numberLibrariesFailingModule": 10, 
+    "numberTestFiles": 470, 
+    "numberModules": 1
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 97150032, 
+      "hostName": "local", 
+      "totalMemory": 279445504, 
+      "numberCPU": 4
+    }, 
+    "reproductionDateEnd": "Oct 10, 2018 8:32:42 AM", 
+    "projectRootPomPath": "./workspace/INRIA/spoon/197674087/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          0, 
+          0, 
+          0, 
+          0, 
+          103
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 103
+      }, 
+      "testing": {
+        "stepDurations": [
+          283
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 283
+      }, 
+      "cloning": {
+        "stepDurations": [
+          20
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 20
+      }
+    }, 
+    "reproductionDateBeginning": "Oct 10, 2018 8:19:47 AM", 
+    "totalDuration": 768
+  }
+}
