@@ -1,0 +1,152 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 240, 
+      "numberRunning": 241, 
+      "numberFailing": 0, 
+      "numberErroring": 1, 
+      "failures": [
+        {
+          "failureName": "java.lang.NumberFormatException", 
+          "isError": true, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 5
+    }, 
+    "failingModule": "/root/workspace/traccar/traccar/237845618", 
+    "failureDetails": [
+      {
+        "failureName": "java.lang.NumberFormatException", 
+        "detail": "For input string: \"100]\"", 
+        "isError": true, 
+        "testMethod": "testDecode", 
+        "testClass": "org.traccar.protocol.WatchProtocolDecoderTest"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 0, 
+        "numberRunning": 1, 
+        "testClass": "org.traccar.protocol.WatchProtocolDecoderTest", 
+        "numberFailing": 0, 
+        "numberErroring": 1, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/traccar/traccar/builds/237846623", 
+      "date": "May 31, 2017 11:13:23 AM", 
+      "id": 237846623
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/traccar/traccar/builds/237845618", 
+      "date": "May 31, 2017 11:10:30 AM", 
+      "id": 237845618
+    }
+  }, 
+  "repository": {
+    "name": "traccar/traccar", 
+    "url": "https://github.com/traccar/traccar", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 4038949
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/traccar/traccar/commit/c3be37febe85bbaa69b7112f6d9a04b19b8b9253", 
+      "sha": "c3be37febe85bbaa69b7112f6d9a04b19b8b9253", 
+      "branchName": "master", 
+      "date": "May 31, 2017 11:11:00 AM", 
+      "repoName": "traccar/traccar"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/traccar/traccar/commit/62028d2d507f54ed50962bdb9dfb027baccb5e1c", 
+      "sha": "62028d2d507f54ed50962bdb9dfb027baccb5e1c", 
+      "branchName": "master", 
+      "date": "May 31, 2017 11:07:43 AM", 
+      "repoName": "traccar/traccar"
+    }
+  }, 
+  "bugName": "traccar-traccar-237845618-237846623", 
+  "version": "latest", 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 3, 
+      "numberDeleted": 2
+    }
+  }, 
+  "type": "passing_passing", 
+  "bugId": "Bears-115", 
+  "projectMetrics": {
+    "numberSourceFiles": 531, 
+    "numberLibrariesFailingModule": 96, 
+    "numberTestFiles": 218, 
+    "numberModules": 1
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 193874280, 
+      "hostName": "local", 
+      "totalMemory": 382205952, 
+      "numberCPU": 4
+    }, 
+    "reproductionDateEnd": "Oct 10, 2018 2:45:09 PM", 
+    "projectRootPomPath": "./workspace/traccar/traccar/237845618/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          1, 
+          0, 
+          0, 
+          0, 
+          146
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 147
+      }, 
+      "testing": {
+        "stepDurations": [
+          8
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 8
+      }, 
+      "cloning": {
+        "stepDurations": [
+          22
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 22
+      }
+    }, 
+    "reproductionDateBeginning": "Oct 10, 2018 2:41:18 PM", 
+    "totalDuration": 223
+  }
+}
