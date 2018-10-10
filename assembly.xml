@@ -1,0 +1,84 @@
+<!--
+
+    Licensed to Jasig under one or more contributor license
+    agreements. See the NOTICE file distributed with this work
+    for additional information regarding copyright ownership.
+    Jasig licenses this file to you under the Apache License,
+    Version 2.0 (the "License"); you may not use this file
+    except in compliance with the License.  You may obtain a
+    copy of the License at the following location:
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+    KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+
+-->
+<assembly>
+    <id>release</id>
+    <formats>
+        <format>zip</format>
+        <format>tar.gz</format>
+    </formats>
+    <includeBaseDirectory>true</includeBaseDirectory>
+    <fileSets>
+        <fileSet>
+            <lineEnding>unix</lineEnding>
+            <useDefaultExcludes>true</useDefaultExcludes>
+            <useStrictFiltering>false</useStrictFiltering>
+            <directory>${basedir}</directory>
+            <outputDirectory></outputDirectory>
+            <includes>
+                <include>*.xml</include>
+                <include>*.txt</include>
+            </includes>
+        </fileSet>
+    </fileSets>
+    <moduleSets>
+        <moduleSet>
+            <includes></includes>
+            <sources>
+                <fileSets>
+                    <fileSet>
+                        <directory>src</directory>
+                        <outputDirectory>src</outputDirectory>
+                        <lineEnding>unix</lineEnding>
+                        <useDefaultExcludes>true</useDefaultExcludes>
+                    </fileSet>
+
+                    <fileSet>
+                        <lineEnding>unix</lineEnding>
+                        <useDefaultExcludes>true</useDefaultExcludes>
+                        <includes>
+                            <include>*.xml</include>
+                        </includes>
+                    </fileSet>
+
+                    <fileSet>
+                        <lineEnding>unix</lineEnding>
+                        <directory>target/site/apidocs/</directory>
+                        <useDefaultExcludes>true</useDefaultExcludes>
+                        <outputDirectory>docs</outputDirectory>
+                        <includes>
+                            <include>**/*</include>
+                        </includes>
+                    </fileSet>
+                </fileSets>
+
+                <includeModuleDirectory>true</includeModuleDirectory>
+                <useDefaultExcludes>true</useDefaultExcludes>
+            </sources>
+            <binaries>
+                <outputDirectory>modules</outputDirectory>
+                <includeDependencies>true</includeDependencies>
+                <unpack>false</unpack>
+                <useDefaultExcludes>true</useDefaultExcludes>
+                <includes/>
+            </binaries>
+        </moduleSet>
+    </moduleSets>
+</assembly>

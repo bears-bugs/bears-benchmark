@@ -1,0 +1,557 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Jasig CAS Client for Java
+[INFO] Jasig CAS Client for Java - Core
+[INFO] Jasig CAS Client for Java - Atlassian Integration
+[INFO] Jasig CAS Client for Java - JBoss Integration
+[INFO] Jasig CAS Client for Java - Distributed Proxy Storage Support: EhCache
+[INFO] Jasig CAS Client for Java - Distributed Proxy Storage Support:
+        Memcached
+[INFO] Jasig CAS Client for Java - SAML Protocol Support
+[INFO] Jasig CAS Client for Java - Common Tomcat Integration Support
+[INFO] Jasig CAS Client for Java - Tomcat 6.x Integration
+[INFO] Jasig CAS Client for Java - Tomcat 7.x Integration
+[INFO] Jasig CAS Client for Java - Tomcat 8.x Integration
+[INFO] Jasig CAS Client for Java - Tomcat 8.5.x Integration
+[INFO] Jasig CAS Client for Java - Jetty Container Integration
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Jasig CAS Client for Java 3.5.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ cas-client ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-banned-dependencies) @ cas-client ---
+[INFO] Skipping Rule Enforcement.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Jasig CAS Client for Java - Core 3.5.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ cas-client-core ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-banned-dependencies) @ cas-client-core ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ cas-client-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ cas-client-core ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 83 source files to /root/workspace/apereo/java-cas-client/408206584/cas-client-core/target/classes
+[WARNING] /root/workspace/apereo/java-cas-client/408206584/cas-client-core/src/main/java/org/jasig/cas/client/proxy/Cas20ProxyRetriever.java: /root/workspace/apereo/java-cas-client/408206584/cas-client-core/src/main/java/org/jasig/cas/client/proxy/Cas20ProxyRetriever.java uses or overrides a deprecated API.
+[WARNING] /root/workspace/apereo/java-cas-client/408206584/cas-client-core/src/main/java/org/jasig/cas/client/proxy/Cas20ProxyRetriever.java: Recompile with -Xlint:deprecation for details.
+[WARNING] /root/workspace/apereo/java-cas-client/408206584/cas-client-core/src/main/java/org/jasig/cas/client/configuration/ConfigurationStrategyName.java: Some input files use unchecked or unsafe operations.
+[WARNING] /root/workspace/apereo/java-cas-client/408206584/cas-client-core/src/main/java/org/jasig/cas/client/configuration/ConfigurationStrategyName.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ cas-client-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ cas-client-core ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 34 source files to /root/workspace/apereo/java-cas-client/408206584/cas-client-core/target/test-classes
+[WARNING] /root/workspace/apereo/java-cas-client/408206584/cas-client-core/src/test/java/org/jasig/cas/client/util/CommonUtilsTests.java: /root/workspace/apereo/java-cas-client/408206584/cas-client-core/src/test/java/org/jasig/cas/client/util/CommonUtilsTests.java uses or overrides a deprecated API.
+[WARNING] /root/workspace/apereo/java-cas-client/408206584/cas-client-core/src/test/java/org/jasig/cas/client/util/CommonUtilsTests.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.6:test (default-test) @ cas-client-core ---
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.6/surefire-junit4-2.6.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.6/surefire-junit4-2.6.pom (2 KB at 4.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.6/surefire-providers-2.6.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.6/surefire-providers-2.6.pom (2 KB at 45.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.6/surefire-junit4-2.6.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.6/surefire-junit4-2.6.jar (12 KB at 192.6 KB/sec)
+[INFO] Surefire report directory: /root/workspace/apereo/java-cas-client/408206584/cas-client-core/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.jasig.cas.client.ssl.WhitelistHostnameVerifierTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.096 sec
+Running org.jasig.cas.client.session.SingleSignOutHandlerTests
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.308 sec
+Running org.jasig.cas.client.validation.Cas20ProxyReceivingTicketValidationFilterTests
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [service] loaded from ServletContext.getInitParameter with value [http://www.jasig.org]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerUrlPrefix] loaded from ServletContext.getInitParameter with value [https://cas.example.com]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [renew] loaded from ServletContext.getInitParameter with value [true]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerUrlPrefix] loaded from ServletContext.getInitParameter with value [https://cas.example.com]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [renew] loaded from ServletContext.getInitParameter with value [true]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [service] loaded from FilterConfig.getInitParameter with value [http://www.jasig.org]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [allowedProxyChains] loaded from FilterConfig.getInitParameter with value [https://a.example.com]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [https://cas.jasig.org/]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [allowedProxyChains] loaded from FilterConfig.getInitParameter with value [https://a.example.com]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [https://cas.jasig.org/]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [https://cas.example.com]
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.107 sec
+Running org.jasig.cas.client.authentication.DefaultAuthenticationRedirectStrategyTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec
+Running org.jasig.cas.client.util.HttpServletRequestWrapperFilterTests
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [roleAttribute] loaded from FilterConfig.getInitParameter with value [memberOf]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [roleAttribute] loaded from FilterConfig.getInitParameter with value [groupMembership]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [ignoreCase] loaded from FilterConfig.getInitParameter with value [true]
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec
+Running org.jasig.cas.client.validation.Cas20ProxyTicketValidatorTests
+Accepting connections on port 8089
+[main] INFO org.jasig.cas.client.proxy.ProxyGrantingTicketStorageImpl - No Proxy Ticket found for [PGTIOU-84678-8a9d...].
+[main] INFO org.jasig.cas.client.validation.ProxyList - Proxy chain matched: proxy1->proxy2->proxy3
+[main] INFO org.jasig.cas.client.proxy.ProxyGrantingTicketStorageImpl - No Proxy Ticket found for [PGTIOU-84678-8a9d...].
+[main] WARN org.jasig.cas.client.validation.ProxyList - Proxy chain did not match at proxy7. Skipping to next allowedProxyChain
+[main] WARN org.jasig.cas.client.validation.ProxyList - No proxy chain matched the allowedProxyChains list.
+[main] WARN org.jasig.cas.client.validation.Cas20ProxyTicketValidator - Proxies received from the CAS validation response are [proxy7, proxy2, proxy3]. However, none are allowed by allowed proxy chain of the client which is [[org.jasig.cas.client.authentication.ExactUrlPatternMatcherStrategy@2aafb23c, org.jasig.cas.client.authentication.ExactUrlPatternMatcherStrategy@2b80d80f, org.jasig.cas.client.authentication.ExactUrlPatternMatcherStrategy@3ab39c39]]
+[main] INFO org.jasig.cas.client.proxy.ProxyGrantingTicketStorageImpl - No Proxy Ticket found for [PGTIOU-84678-8a9d...].
+[main] INFO org.jasig.cas.client.validation.ProxyList - Proxy chain matched: proxy1->proxy2->proxy3/abc/
+[main] INFO org.jasig.cas.client.proxy.ProxyGrantingTicketStorageImpl - No Proxy Ticket found for [PGTIOU-84678-8a9d...].
+[main] WARN org.jasig.cas.client.validation.ProxyList - Proxy chain did not match at proxy1->proxy2->proxy3/ABC/. Skipping to next allowedProxyChain
+[main] WARN org.jasig.cas.client.validation.ProxyList - No proxy chain matched the allowedProxyChains list.
+[main] WARN org.jasig.cas.client.validation.Cas20ProxyTicketValidator - Proxies received from the CAS validation response are [proxy1, proxy2, proxy3/ABC/]. However, none are allowed by allowed proxy chain of the client which is [[org.jasig.cas.client.authentication.ExactUrlPatternMatcherStrategy@2eee9593, org.jasig.cas.client.authentication.ExactUrlPatternMatcherStrategy@7907ec20, org.jasig.cas.client.authentication.RegexUrlPatternMatcherStrategy@546a03af]]
+[main] INFO org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@edf4efb: startup date [Wed Oct 10 09:02:06 CEST 2018]; root of context hierarchy
+[main] INFO org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [cas20ProxyTicketValidator.xml]
+[main] INFO org.springframework.beans.factory.support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@2781e022: defining beans [proxyTicketValidator,proxyTicketValidatorWithAllowAnyProxy]; root of factory hierarchy
+[main] INFO org.jasig.cas.client.validation.ProxyList - Proxy chain matched: proxy1->proxy2->proxy3
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.97 sec
+Running org.jasig.cas.client.ssl.HttpsURLConnectionFactoryTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 sec
+Running org.jasig.cas.client.validation.Cas10TicketValidationFilterTests
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [https://cas.example.com]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [service] loaded from ServletContext.getInitParameter with value [http://www.jasig.org]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerUrlPrefix] loaded from ServletContext.getInitParameter with value [https://cas.example.com]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [renew] loaded from ServletContext.getInitParameter with value [true]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerUrlPrefix] loaded from ServletContext.getInitParameter with value [https://cas.example.com]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [renew] loaded from ServletContext.getInitParameter with value [true]
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec
+Running org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImplTests
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [acceptAnyProxy] loaded from FilterConfig.getInitParameter with value [true]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [artifactParameterName] loaded from FilterConfig.getInitParameter with value [foobar]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [tolerance] loaded from FilterConfig.getInitParameter with value [1500]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [millisBetweenCleanUps] loaded from FilterConfig.getInitParameter with value [1500]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [acceptAnyProxy] loaded from ServletContext.getInitParameter with value [true]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [artifactParameterName] loaded from ServletContext.getInitParameter with value [foobar]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [tolerance] loaded from ServletContext.getInitParameter with value [1500]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [millisBetweenCleanUps] loaded from ServletContext.getInitParameter with value [1500]
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec
+Running org.jasig.cas.client.ssl.RegexHostnameVerifierTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running org.jasig.cas.client.validation.Cas10TicketValidatorTests
+Accepting connections on port 8989
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec
+Running org.jasig.cas.client.util.URIBuilderTests
+Tests run: 27, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 sec
+Running org.jasig.cas.client.authentication.DefaultGatewayResolverImplTests
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running org.jasig.cas.client.validation.json.Cas30JsonServiceTicketValidatorTests
+Accepting connections on port 8088
+[main] WARN org.jasig.cas.client.validation.json.Cas30JsonServiceTicketValidator - Unable parse the JSON response. Falling back to XML
+com.fasterxml.jackson.core.JsonParseException: Unexpected character ('<' (code 60)): expected a valid value (number, String, array, object, 'true', 'false' or 'null')
+ at [Source: <cas:serviceResponse xmlns:cas='http://www.yale.edu/tp/cas'><cas:authenticationSuccess><cas:user>test</cas:user><cas:proxyGrantingTicket>PGTIOU</cas:proxyGrantingTicket></cas:authenticationSuccess></cas:serviceResponse>; line: 1, column: 2]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1702)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:558)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:456)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddValue(ReaderBasedJsonParser.java:1906)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:749)
+	at com.fasterxml.jackson.databind.ObjectMapper._initForReading(ObjectMapper.java:3850)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:3799)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:2858)
+	at org.jasig.cas.client.validation.json.JsonValidationResponseParser.parse(JsonValidationResponseParser.java:27)
+	at org.jasig.cas.client.validation.json.Cas30JsonServiceTicketValidator.parseResponseFromServer(Cas30JsonServiceTicketValidator.java:30)
+	at org.jasig.cas.client.validation.AbstractUrlBasedTicketValidator.validate(AbstractUrlBasedTicketValidator.java:198)
+	at org.jasig.cas.client.validation.json.Cas30JsonServiceTicketValidatorTests.testSuccessfulXmlResponseWithJson(Cas30JsonServiceTicketValidatorTests.java:88)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.BlockJUnit4ClassRunner.runNotIgnored(BlockJUnit4ClassRunner.java:79)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:71)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:49)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:59)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.executeTestSet(AbstractDirectoryTestSuite.java:120)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.execute(AbstractDirectoryTestSuite.java:103)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:169)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:350)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1021)
+[main] INFO org.jasig.cas.client.proxy.ProxyGrantingTicketStorageImpl - No Proxy Ticket found for [PGTIOU].
+[main] INFO org.jasig.cas.client.proxy.ProxyGrantingTicketStorageImpl - No Proxy Ticket found for [PGTIOU-84678-8a9d].
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.499 sec
+Running org.jasig.cas.client.util.CasFilterTests
+[main] INFO org.jasig.cas.client.util.CasFilterTests$TestCasFilter - Eliminated extra slash from serverName [http://www.cnn.com/].  It is now [http://www.cnn.com]
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running org.jasig.cas.client.authentication.AuthenticationFilterTests
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [service] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/service]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/cas/login]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [service] loaded from ServletContext.getInitParameter with value [https://localhost:8443/service]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerLoginUrl] loaded from ServletContext.getInitParameter with value [https://localhost:8443/cas/login]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [renew] loaded from ServletContext.getInitParameter with value [true]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [service] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/service]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/cas/login]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [service] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/service]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/cas/login]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [service] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/service]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/cas/login]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [serverName] loaded from FilterConfig.getInitParameter with value [localhost:8443]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/cas/login]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [service] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/service]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/cas/login]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [service] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/service]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/cas/login]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [service] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/service]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/cas/login]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [service] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/service]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/cas/login]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [service] loaded from ServletContext.getInitParameter with value [https://localhost:8443/service]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerLoginUrl] loaded from ServletContext.getInitParameter with value [https://localhost:8443/cas/login]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [authenticationRedirectStrategyClass] loaded from ServletContext.getInitParameter with value [org.jasig.cas.client.authentication.FacesCompatibleAuthenticationRedirectStrategy]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [service] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/service]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/cas/login]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [service] loaded from ServletContext.getInitParameter with value [https://localhost:8443/service]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerLoginUrl] loaded from ServletContext.getInitParameter with value [https://localhost:8443/cas/login]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [ignorePattern] loaded from ServletContext.getInitParameter with value [=valueTo(\w+)]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [service] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/service]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/cas/login]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [service] loaded from ServletContext.getInitParameter with value [https://localhost:8443/service]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerLoginUrl] loaded from ServletContext.getInitParameter with value [https://localhost:8443/cas/login]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [ignorePattern] loaded from ServletContext.getInitParameter with value [=valueToIgnore]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [ignoreUrlPatternType] loaded from ServletContext.getInitParameter with value [CONTAINS]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [service] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/service]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/cas/login]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [service] loaded from ServletContext.getInitParameter with value [https://localhost:8443/service]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerLoginUrl] loaded from ServletContext.getInitParameter with value [https://localhost:8443/cas/login]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [ignorePattern] loaded from ServletContext.getInitParameter with value [https://localhost:8443/service?param=valueToIgnore]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [ignoreUrlPatternType] loaded from ServletContext.getInitParameter with value [EXACT]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [service] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/service]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/cas/login]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [service] loaded from ServletContext.getInitParameter with value [https://localhost:8443/service]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerLoginUrl] loaded from ServletContext.getInitParameter with value [https://localhost:8443/cas/login]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [ignorePattern] loaded from ServletContext.getInitParameter with value [=valueToIgnore]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [ignoreUrlPatternType] loaded from ServletContext.getInitParameter with value [org.jasig.cas.client.authentication.ContainsPatternUrlPatternMatcherStrategy]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [service] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/service]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/cas/login]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [service] loaded from ServletContext.getInitParameter with value [https://localhost:8443/service]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerLoginUrl] loaded from ServletContext.getInitParameter with value [https://localhost:8443/cas/login]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [ignorePattern] loaded from ServletContext.getInitParameter with value [=valueToIgnore]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [ignoreUrlPatternType] loaded from ServletContext.getInitParameter with value [unknown.class.name]
+https://localhost:8443/cas/login?service=https%3A%2F%2Flocalhost%3A8443%2Fservice
+[main] ERROR org.jasig.cas.client.authentication.AuthenticationFilter - Could not instantiate class [unknown.class.name]
+java.lang.IllegalArgumentException: unknown.class.name class not found.
+	at org.jasig.cas.client.util.ReflectUtils.loadClass(ReflectUtils.java:53)
+	at org.jasig.cas.client.util.ReflectUtils.newInstance(ReflectUtils.java:65)
+	at org.jasig.cas.client.authentication.AuthenticationFilter.initInternal(AuthenticationFilter.java:117)
+	at org.jasig.cas.client.util.AbstractCasFilter.init(AbstractCasFilter.java:72)
+	at org.jasig.cas.client.authentication.AuthenticationFilterTests.testIgnorePatternsWithInvalidClassname(AuthenticationFilterTests.java:376)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.junit.runners.BlockJUnit4ClassRunner.runNotIgnored(BlockJUnit4ClassRunner.java:79)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:71)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:49)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:59)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.executeTestSet(AbstractDirectoryTestSuite.java:120)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.execute(AbstractDirectoryTestSuite.java:103)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:169)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:350)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1021)
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [service] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/service]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/cas/login]
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.068 sec
+Running org.jasig.cas.client.util.ReflectUtilsTests
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [service] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/service]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/cas/login]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [service] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/service]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/cas]
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec
+Running org.jasig.cas.client.util.CommonUtilsTests
+Accepting connections on port 8092
+Tests run: 26, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec <<< FAILURE!
+Running org.jasig.cas.client.jaas.CasLoginModuleTests
+Accepting connections on port 8091
+[main] WARN org.jasig.cas.client.jaas.CasLoginModule - Cannot find property principalGroupName on org.jasig.cas.client.validation.Cas20ServiceTicketValidator
+[main] WARN org.jasig.cas.client.jaas.CasLoginModule - Cannot find property service on org.jasig.cas.client.validation.Cas20ServiceTicketValidator
+[main] WARN org.jasig.cas.client.jaas.CasLoginModule - Cannot find property ticketValidatorClass on org.jasig.cas.client.validation.Cas20ServiceTicketValidator
+[main] WARN org.jasig.cas.client.jaas.CasLoginModule - Cannot find property defaultRoles on org.jasig.cas.client.validation.Cas20ServiceTicketValidator
+[main] WARN org.jasig.cas.client.jaas.CasLoginModule - Cannot find property roleGroupName on org.jasig.cas.client.validation.Cas20ServiceTicketValidator
+[main] INFO org.jasig.cas.client.jaas.CasLoginModule - Login succeeded.
+[main] WARN org.jasig.cas.client.jaas.CasLoginModule - Cannot find property principalGroupName on org.jasig.cas.client.validation.Cas20ServiceTicketValidator
+[main] WARN org.jasig.cas.client.jaas.CasLoginModule - Cannot find property service on org.jasig.cas.client.validation.Cas20ServiceTicketValidator
+[main] WARN org.jasig.cas.client.jaas.CasLoginModule - Cannot find property ticketValidatorClass on org.jasig.cas.client.validation.Cas20ServiceTicketValidator
+[main] WARN org.jasig.cas.client.jaas.CasLoginModule - Cannot find property defaultRoles on org.jasig.cas.client.validation.Cas20ServiceTicketValidator
+[main] WARN org.jasig.cas.client.jaas.CasLoginModule - Cannot find property roleGroupName on org.jasig.cas.client.validation.Cas20ServiceTicketValidator
+[main] INFO org.jasig.cas.client.jaas.CasLoginModule - Login failed due to CAS ticket validation failure: {}
+org.jasig.cas.client.validation.TicketValidationException: Ticket ST-200000-aA5Yuvrxzpv8Tau1cYQ7-srv1 not recognized
+	at org.jasig.cas.client.validation.Cas20ServiceTicketValidator.parseResponseFromServer(Cas20ServiceTicketValidator.java:84)
+	at org.jasig.cas.client.validation.AbstractUrlBasedTicketValidator.validate(AbstractUrlBasedTicketValidator.java:198)
+	at org.jasig.cas.client.jaas.CasLoginModule.login(CasLoginModule.java:325)
+	at org.jasig.cas.client.jaas.CasLoginModuleTests.testLoginFailure(CasLoginModuleTests.java:118)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.BlockJUnit4ClassRunner.runNotIgnored(BlockJUnit4ClassRunner.java:79)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:71)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:49)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:59)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.executeTestSet(AbstractDirectoryTestSuite.java:120)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.execute(AbstractDirectoryTestSuite.java:103)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:169)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:350)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1021)
+[main] WARN org.jasig.cas.client.jaas.CasLoginModule - Cannot find property principalGroupName on org.jasig.cas.client.validation.Cas20ServiceTicketValidator
+[main] WARN org.jasig.cas.client.jaas.CasLoginModule - Cannot find property service on org.jasig.cas.client.validation.Cas20ServiceTicketValidator
+[main] WARN org.jasig.cas.client.jaas.CasLoginModule - Cannot find property ticketValidatorClass on org.jasig.cas.client.validation.Cas20ServiceTicketValidator
+[main] WARN org.jasig.cas.client.jaas.CasLoginModule - Cannot find property defaultRoles on org.jasig.cas.client.validation.Cas20ServiceTicketValidator
+[main] WARN org.jasig.cas.client.jaas.CasLoginModule - Cannot find property roleGroupName on org.jasig.cas.client.validation.Cas20ServiceTicketValidator
+[main] INFO org.jasig.cas.client.jaas.CasLoginModule - Login succeeded.
+[main] INFO org.jasig.cas.client.jaas.CasLoginModule - Logout succeeded.
+[main] WARN org.jasig.cas.client.jaas.CasLoginModule - Cannot find property principalGroupName on org.jasig.cas.client.validation.Cas20ServiceTicketValidator
+[main] WARN org.jasig.cas.client.jaas.CasLoginModule - Cannot find property cacheAssertions on org.jasig.cas.client.validation.Cas20ServiceTicketValidator
+[main] WARN org.jasig.cas.client.jaas.CasLoginModule - Cannot find property cacheTimeout on org.jasig.cas.client.validation.Cas20ServiceTicketValidator
+[main] WARN org.jasig.cas.client.jaas.CasLoginModule - Cannot find property service on org.jasig.cas.client.validation.Cas20ServiceTicketValidator
+[main] WARN org.jasig.cas.client.jaas.CasLoginModule - Cannot find property ticketValidatorClass on org.jasig.cas.client.validation.Cas20ServiceTicketValidator
+[main] WARN org.jasig.cas.client.jaas.CasLoginModule - Cannot find property defaultRoles on org.jasig.cas.client.validation.Cas20ServiceTicketValidator
+[main] WARN org.jasig.cas.client.jaas.CasLoginModule - Cannot find property roleGroupName on org.jasig.cas.client.validation.Cas20ServiceTicketValidator
+[main] INFO org.jasig.cas.client.jaas.CasLoginModule - Login succeeded.
+[main] INFO org.jasig.cas.client.jaas.CasLoginModule - Logout succeeded.
+[main] WARN org.jasig.cas.client.jaas.CasLoginModule - Cannot find property principalGroupName on org.jasig.cas.client.validation.Cas20ServiceTicketValidator
+[main] WARN org.jasig.cas.client.jaas.CasLoginModule - Cannot find property cacheAssertions on org.jasig.cas.client.validation.Cas20ServiceTicketValidator
+[main] WARN org.jasig.cas.client.jaas.CasLoginModule - Cannot find property cacheTimeout on org.jasig.cas.client.validation.Cas20ServiceTicketValidator
+[main] WARN org.jasig.cas.client.jaas.CasLoginModule - Cannot find property service on org.jasig.cas.client.validation.Cas20ServiceTicketValidator
+[main] WARN org.jasig.cas.client.jaas.CasLoginModule - Cannot find property ticketValidatorClass on org.jasig.cas.client.validation.Cas20ServiceTicketValidator
+[main] WARN org.jasig.cas.client.jaas.CasLoginModule - Cannot find property defaultRoles on org.jasig.cas.client.validation.Cas20ServiceTicketValidator
+[main] WARN org.jasig.cas.client.jaas.CasLoginModule - Cannot find property roleGroupName on org.jasig.cas.client.validation.Cas20ServiceTicketValidator
+[main] INFO org.jasig.cas.client.jaas.CasLoginModule - Login failed due to CAS ticket validation failure: {}
+org.jasig.cas.client.validation.TicketValidationException: Ticket ST-300000-aA5Yuvrxzpv8Tau1cYQ7-srv1 not recognized
+	at org.jasig.cas.client.validation.Cas20ServiceTicketValidator.parseResponseFromServer(Cas20ServiceTicketValidator.java:84)
+	at org.jasig.cas.client.validation.AbstractUrlBasedTicketValidator.validate(AbstractUrlBasedTicketValidator.java:198)
+	at org.jasig.cas.client.jaas.CasLoginModule.login(CasLoginModule.java:325)
+	at org.jasig.cas.client.jaas.CasLoginModuleTests.testAssertionCaching(CasLoginModuleTests.java:181)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.BlockJUnit4ClassRunner.runNotIgnored(BlockJUnit4ClassRunner.java:79)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:71)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:49)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:59)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.executeTestSet(AbstractDirectoryTestSuite.java:120)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.execute(AbstractDirectoryTestSuite.java:103)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:169)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:350)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1021)
+[main] WARN org.jasig.cas.client.jaas.CasLoginModule - Cannot find property principalGroupName on org.jasig.cas.client.validation.Cas20ServiceTicketValidator
+[main] WARN org.jasig.cas.client.jaas.CasLoginModule - Cannot find property cacheAssertions on org.jasig.cas.client.validation.Cas20ServiceTicketValidator
+[main] WARN org.jasig.cas.client.jaas.CasLoginModule - Cannot find property cacheTimeout on org.jasig.cas.client.validation.Cas20ServiceTicketValidator
+[main] WARN org.jasig.cas.client.jaas.CasLoginModule - Cannot find property service on org.jasig.cas.client.validation.Cas20ServiceTicketValidator
+[main] WARN org.jasig.cas.client.jaas.CasLoginModule - Cannot find property ticketValidatorClass on org.jasig.cas.client.validation.Cas20ServiceTicketValidator
+[main] WARN org.jasig.cas.client.jaas.CasLoginModule - Cannot find property defaultRoles on org.jasig.cas.client.validation.Cas20ServiceTicketValidator
+[main] WARN org.jasig.cas.client.jaas.CasLoginModule - Cannot find property cacheTimeoutUnit on org.jasig.cas.client.validation.Cas20ServiceTicketValidator
+[main] WARN org.jasig.cas.client.jaas.CasLoginModule - Cannot find property roleGroupName on org.jasig.cas.client.validation.Cas20ServiceTicketValidator
+[main] INFO org.jasig.cas.client.jaas.CasLoginModule - Login succeeded.
+[main] WARN org.jasig.cas.client.jaas.CasLoginModule - Cannot find property principalGroupName on org.jasig.cas.client.validation.Cas20ServiceTicketValidator
+[main] WARN org.jasig.cas.client.jaas.CasLoginModule - Cannot find property cacheAssertions on org.jasig.cas.client.validation.Cas20ServiceTicketValidator
+[main] WARN org.jasig.cas.client.jaas.CasLoginModule - Cannot find property cacheTimeout on org.jasig.cas.client.validation.Cas20ServiceTicketValidator
+[main] WARN org.jasig.cas.client.jaas.CasLoginModule - Cannot find property service on org.jasig.cas.client.validation.Cas20ServiceTicketValidator
+[main] WARN org.jasig.cas.client.jaas.CasLoginModule - Cannot find property ticketValidatorClass on org.jasig.cas.client.validation.Cas20ServiceTicketValidator
+[main] WARN org.jasig.cas.client.jaas.CasLoginModule - Cannot find property defaultRoles on org.jasig.cas.client.validation.Cas20ServiceTicketValidator
+[main] WARN org.jasig.cas.client.jaas.CasLoginModule - Cannot find property cacheTimeoutUnit on org.jasig.cas.client.validation.Cas20ServiceTicketValidator
+[main] WARN org.jasig.cas.client.jaas.CasLoginModule - Cannot find property roleGroupName on org.jasig.cas.client.validation.Cas20ServiceTicketValidator
+[main] INFO org.jasig.cas.client.jaas.CasLoginModule - Login failed due to CAS ticket validation failure: {}
+org.jasig.cas.client.validation.TicketValidationException: Ticket ST-12345-ABCDEFGHIJKLMNOPQRSTUVWXYZ-hosta not recognized
+	at org.jasig.cas.client.validation.Cas20ServiceTicketValidator.parseResponseFromServer(Cas20ServiceTicketValidator.java:84)
+	at org.jasig.cas.client.validation.AbstractUrlBasedTicketValidator.validate(AbstractUrlBasedTicketValidator.java:198)
+	at org.jasig.cas.client.jaas.CasLoginModule.login(CasLoginModule.java:325)
+	at org.jasig.cas.client.jaas.CasLoginModuleTests.testAssertionCachingExpiration(CasLoginModuleTests.java:230)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.BlockJUnit4ClassRunner.runNotIgnored(BlockJUnit4ClassRunner.java:79)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:71)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:49)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:59)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.executeTestSet(AbstractDirectoryTestSuite.java:120)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.execute(AbstractDirectoryTestSuite.java:103)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:169)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:350)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1021)
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.221 sec
+Running org.jasig.cas.client.configuration.SystemPropertiesConfigurationStrategyImplTests
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running org.jasig.cas.client.util.ErrorRedirectFilterTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Running org.jasig.cas.client.SerializationTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 sec
+Running org.jasig.cas.client.validation.AssertionImplTests
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running org.jasig.cas.client.authentication.FacesCompatibleAuthenticationRedirectStrategyTests
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Running org.jasig.cas.client.configuration.ConfigurationKeyTests
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running org.jasig.cas.client.validation.Cas20ServiceTicketValidatorTests
+[main] INFO org.jasig.cas.client.proxy.ProxyGrantingTicketStorageImpl - No Proxy Ticket found for [testPgtIou].
+[main] INFO org.jasig.cas.client.proxy.ProxyGrantingTicketStorageImpl - No Proxy Ticket found for [testPgtIou].
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.041 sec
+Running org.jasig.cas.client.session.SingleSignOutFilterTests
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec
+Running org.jasig.cas.client.configuration.ConfigurationStrategyNameTests
+[main] ERROR org.jasig.cas.client.configuration.ConfigurationStrategyName - Unable to locate strategy bleh! by name or class name.  Using default strategy instead.
+java.lang.ClassNotFoundException: bleh!
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at org.jasig.cas.client.configuration.ConfigurationStrategyName.resolveToConfigurationStrategy(ConfigurationStrategyName.java:63)
+	at org.jasig.cas.client.configuration.ConfigurationStrategyNameTests.stringToClass(ConfigurationStrategyNameTests.java:37)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.runners.BlockJUnit4ClassRunner.runNotIgnored(BlockJUnit4ClassRunner.java:79)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:71)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:49)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:59)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.executeTestSet(AbstractDirectoryTestSuite.java:120)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.execute(AbstractDirectoryTestSuite.java:103)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:169)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:350)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1021)
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec
+
+Results :
+
+Failed tests: 
+  testConstructServiceUrlWithServerNameContainingPathAndSchema(org.jasig.cas.client.util.CommonUtilsTests)
+
+Tests run: 154, Failures: 1, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] Jasig CAS Client for Java .......................... SUCCESS [  0.750 s]
+[INFO] Jasig CAS Client for Java - Core ................... FAILURE [ 11.071 s]
+[INFO] Jasig CAS Client for Java - Atlassian Integration .. SKIPPED
+[INFO] Jasig CAS Client for Java - JBoss Integration ...... SKIPPED
+[INFO] Jasig CAS Client for Java - Distributed Proxy Storage Support: EhCache SKIPPED
+[INFO] Jasig CAS Client for Java - Distributed Proxy Storage Support:
+        Memcached SKIPPED
+[INFO] Jasig CAS Client for Java - SAML Protocol Support .. SKIPPED
+[INFO] Jasig CAS Client for Java - Common Tomcat Integration Support SKIPPED
+[INFO] Jasig CAS Client for Java - Tomcat 6.x Integration . SKIPPED
+[INFO] Jasig CAS Client for Java - Tomcat 7.x Integration . SKIPPED
+[INFO] Jasig CAS Client for Java - Tomcat 8.x Integration . SKIPPED
+[INFO] Jasig CAS Client for Java - Tomcat 8.5.x Integration SKIPPED
+[INFO] Jasig CAS Client for Java - Jetty Container Integration SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 12.366 s
+[INFO] Finished at: 2018-10-10T09:02:09+02:00
+[INFO] Final Memory: 26M/492M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.6:test (default-test) on project cas-client-core: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/apereo/java-cas-client/408206584/cas-client-core/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :cas-client-core
