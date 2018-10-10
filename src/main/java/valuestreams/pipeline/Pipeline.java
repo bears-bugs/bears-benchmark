@@ -109,19 +109,23 @@ public class Pipeline<I, O> {
      */
     @SuppressWarnings({"rawtypes", "unchecked"})
     public Value<O> apply(I input) {
-        Object source = input;
-        Object target = null;
+        try {
+            Object source = input;
+            Object target = null;
 
-        for (Operation p : operations) {
-            target = p.apply(source);
-            source = target;
+            for (Operation p : operations) {
+                target = p.apply(source);
+                source = target;
 
-            if (source == null) {
-                break;
+                if (source == null) {
+                    break;
+                }
             }
-        }
 
-        return target != null ? Value.of((O) target) : Value.empty();
+            return target != null ? Value.of((O) target) : Value.empty();
+        } catch (Exception ex) {
+            return Value.empty();
+        }
     }
 
     public CompletableFuture<Value<O>> applyAsync(I input) {
