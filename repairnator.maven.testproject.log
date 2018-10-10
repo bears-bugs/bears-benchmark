@@ -1,0 +1,1370 @@
+[INFO] Scanning for projects...
+[INFO] Inspecting build with total of 1 modules...
+[INFO] Installing Nexus Staging features:
+[INFO]   ... total of 1 executions of maven-deploy-plugin replaced with nexus-staging-maven-plugin
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Spoon Core 5.5.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven) @ spoon-core ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-bytecode-version) @ spoon-core ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.5.201505241946:prepare-agent (default) @ spoon-core ---
+[INFO] argLine set to -javaagent:/root/./workspace/INRIA/spoon/190241093/.m2/org/jacoco/org.jacoco.agent/0.7.5.201505241946/org.jacoco.agent-0.7.5.201505241946-runtime.jar=destfile=/root/workspace/INRIA/spoon/190241093/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ spoon-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ spoon-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ spoon-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 86 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ spoon-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ spoon-core ---
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.pom (4 KB at 7.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom (3 KB at 67.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar (74 KB at 675.7 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running spoon.support.compiler.classpath.ComputeClasspathTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.552 sec - in spoon.support.compiler.classpath.ComputeClasspathTest
+Running spoon.support.compiler.jdt.JDTBuilderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in spoon.support.compiler.jdt.JDTBuilderTest
+Running spoon.support.compiler.jdt.JDTBatchCompilerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.746 sec - in spoon.support.compiler.jdt.JDTBatchCompilerTest
+Running spoon.support.compiler.jdt.ExtendedStringLiteralTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.32 sec - in spoon.support.compiler.jdt.ExtendedStringLiteralTest
+Running spoon.support.visitor.java.JavaReflectionTreeBuilderTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.446 sec - in spoon.support.visitor.java.JavaReflectionTreeBuilderTest
+Running spoon.test.support.ResourceTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.327 sec - in spoon.test.support.ResourceTest
+Running spoon.test.staticFieldAccess2.ImplicitStaticFieldReferenceTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.794 sec - in spoon.test.staticFieldAccess2.ImplicitStaticFieldReferenceTest
+Running spoon.test.prettyprinter.PrinterTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.082 sec - in spoon.test.prettyprinter.PrinterTest
+Running spoon.test.prettyprinter.DefaultPrettyPrinterTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.519 sec - in spoon.test.prettyprinter.DefaultPrettyPrinterTest
+Running spoon.test.prettyprinter.LinesTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.139 sec - in spoon.test.prettyprinter.LinesTest
+Running spoon.test.prettyprinter.QualifiedThisRefTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.369 sec - in spoon.test.prettyprinter.QualifiedThisRefTest
+Running spoon.test.limits.utils.InternalTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.245 sec - in spoon.test.limits.utils.InternalTest
+Running spoon.test.enums.EnumsTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.536 sec - in spoon.test.enums.EnumsTest
+Running spoon.test.architecture.SpoonArchitectureEnforcerTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 13.993 sec - in spoon.test.architecture.SpoonArchitectureEnforcerTest
+Running spoon.test.imports.ImportTest
+Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.611 sec - in spoon.test.imports.ImportTest
+Running spoon.test.imports.ImportScannerTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.618 sec - in spoon.test.imports.ImportScannerTest
+Running spoon.test.imports.ImportAndExtendWithPackageNameTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.118 sec - in spoon.test.imports.ImportAndExtendWithPackageNameTest
+Running spoon.test.targeted.TargetedExpressionTest
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.817 sec - in spoon.test.targeted.TargetedExpressionTest
+Running spoon.test.position.PositionTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.829 sec - in spoon.test.position.PositionTest
+Running spoon.test.compilation.CompilationTest
+>> Hello: Bar <<
+>> Hello: FooEx <<
+>> Hello: IBar <<
+>> Hello: SimpleProcessor <<
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.363 sec - in spoon.test.compilation.CompilationTest
+Running spoon.test.loop.LoopTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.238 sec - in spoon.test.loop.LoopTest
+Running spoon.test.comparison.EqualTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.661 sec - in spoon.test.comparison.EqualTest
+Running spoon.test.strings.StringTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.118 sec - in spoon.test.strings.StringTest
+Running spoon.test.strings.StringLiteralTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.122 sec - in spoon.test.strings.StringLiteralTest
+Running spoon.test.jar.JarTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.349 sec - in spoon.test.jar.JarTest
+Running spoon.test.path.PathTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.718 sec - in spoon.test.path.PathTest
+Running spoon.test.parent.TopLevelTypeTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.117 sec - in spoon.test.parent.TopLevelTypeTest
+Running spoon.test.parent.NullParentTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.451 sec - in spoon.test.parent.NullParentTest
+Running spoon.test.parent.ParentContractTest
+Tests run: 59, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.181 sec - in spoon.test.parent.ParentContractTest
+Running spoon.test.parent.ParentTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 2.105 sec - in spoon.test.parent.ParentTest
+Running spoon.test.trycatch.TryCatchTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.818 sec - in spoon.test.trycatch.TryCatchTest
+Running spoon.test.lambda.LambdaTest
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.148 sec - in spoon.test.lambda.LambdaTest
+Running spoon.test.reflect.visitor.ReferenceQueryTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.121 sec - in spoon.test.reflect.visitor.ReferenceQueryTest
+Running spoon.test.condition.ConditionalTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.525 sec - in spoon.test.condition.ConditionalTest
+Running spoon.test.properties.PropertiesTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.189 sec - in spoon.test.properties.PropertiesTest
+Running spoon.test.factory.ClassFactoryTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in spoon.test.factory.ClassFactoryTest
+Running spoon.test.factory.FieldFactoryTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.464 sec - in spoon.test.factory.FieldFactoryTest
+Running spoon.test.factory.ConstructorFactoryTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.145 sec - in spoon.test.factory.ConstructorFactoryTest
+Running spoon.test.factory.AnnotationFactoryTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.181 sec - in spoon.test.factory.AnnotationFactoryTest
+Running spoon.test.factory.CodeFactoryTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in spoon.test.factory.CodeFactoryTest
+Running spoon.test.factory.ExecutableFactoryTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in spoon.test.factory.ExecutableFactoryTest
+Running spoon.test.factory.FactoryTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.849 sec - in spoon.test.factory.FactoryTest
+Running spoon.test.factory.TypeFactoryTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.318 sec - in spoon.test.factory.TypeFactoryTest
+Running spoon.test.sourcePosition.SourcePositionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.245 sec - in spoon.test.sourcePosition.SourcePositionTest
+Running spoon.test.ctCase.SwitchCaseTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.317 sec - in spoon.test.ctCase.SwitchCaseTest
+Running spoon.test.casts.CastTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.613 sec - in spoon.test.casts.CastTest
+Running spoon.test.ctClass.CtClassTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.828 sec - in spoon.test.ctClass.CtClassTest
+Running spoon.test.delete.DeleteTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.695 sec - in spoon.test.delete.DeleteTest
+Running spoon.test.comment.CommentTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.048 sec - in spoon.test.comment.CommentTest
+Running spoon.test.interfaces.InterfaceTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.585 sec - in spoon.test.interfaces.InterfaceTest
+Running spoon.test.secondaryclasses.ClassesTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.736 sec - in spoon.test.secondaryclasses.ClassesTest
+Running spoon.test.serializable.SerializableTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.41 sec - in spoon.test.serializable.SerializableTest
+Running spoon.test.constructor.ConstructorTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.874 sec - in spoon.test.constructor.ConstructorTest
+Running spoon.test.constructorcallnewclass.ConstructorCallTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.754 sec - in spoon.test.constructorcallnewclass.ConstructorCallTest
+Running spoon.test.constructorcallnewclass.NewClassTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.4 sec - in spoon.test.constructorcallnewclass.NewClassTest
+Running spoon.test.main.MainTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 32.889 sec - in spoon.test.main.MainTest
+Running spoon.test.pkg.PackageTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.424 sec - in spoon.test.pkg.PackageTest
+Running spoon.test.logging.LogTest
+2018-10-10 20:24:31,608 DEBUG spoon.Launcher - output: spooned
+2018-10-10 20:24:31,610 DEBUG spoon.Launcher - destination: /root/workspace/INRIA/spoon/190241093/spooned-classes
+2018-10-10 20:24:31,610 DEBUG spoon.Launcher - source classpath: null
+2018-10-10 20:24:31,610 DEBUG spoon.Launcher - template classpath: []
+2018-10-10 20:24:31,611 INFO spoon.Launcher - Log info
+2018-10-10 20:24:31,611 WARN spoon.Launcher - Log warn
+2018-10-10 20:24:31,612 ERROR spoon.Launcher - Log error
+2018-10-10 20:24:31,612 DEBUG spoon.Launcher - Log debug
+2018-10-10 20:24:31,613 DEBUG spoon.Launcher - output: spooned
+2018-10-10 20:24:31,613 DEBUG spoon.Launcher - destination: /root/workspace/INRIA/spoon/190241093/spooned-classes
+2018-10-10 20:24:31,613 DEBUG spoon.Launcher - source classpath: null
+2018-10-10 20:24:31,613 DEBUG spoon.Launcher - template classpath: []
+2018-10-10 20:24:31,614 INFO spoon.Launcher - Log info
+2018-10-10 20:24:31,614 WARN spoon.Launcher - Log warn
+2018-10-10 20:24:31,614 ERROR spoon.Launcher - Log error
+2018-10-10 20:24:31,615 DEBUG spoon.Launcher - Log debug
+2018-10-10 20:24:31,616 INFO spoon.Launcher - Log info
+2018-10-10 20:24:31,616 WARN spoon.Launcher - Log warn
+2018-10-10 20:24:31,616 ERROR spoon.Launcher - Log error
+2018-10-10 20:24:31,618 WARN spoon.Launcher - Log warn
+2018-10-10 20:24:31,618 ERROR spoon.Launcher - Log error
+2018-10-10 20:24:31,619 ERROR spoon.Launcher - Log error
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec - in spoon.test.logging.LogTest
+Running spoon.test.ctBodyHolder.CtBodyHolderTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.928 sec - in spoon.test.ctBodyHolder.CtBodyHolderTest
+Running spoon.test.signature.SignatureTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.589 sec - in spoon.test.signature.SignatureTest
+Running spoon.test.annotation.AnnotationTest
+Tests run: 35, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.054 sec - in spoon.test.annotation.AnnotationTest
+Running spoon.test.annotation.AnnotationValuesTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.452 sec - in spoon.test.annotation.AnnotationValuesTest
+Running spoon.test.annotation.AnnotationLoopTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.148 sec - in spoon.test.annotation.AnnotationLoopTest
+Running spoon.test.control.ControlTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.289 sec - in spoon.test.control.ControlTest
+Running spoon.test.reference.ExecutableReferenceGenericTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.915 sec - in spoon.test.reference.ExecutableReferenceGenericTest
+Running spoon.test.reference.AnnotationFieldReferenceTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.199 sec - in spoon.test.reference.AnnotationFieldReferenceTest
+Running spoon.test.reference.VariableAccessTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.449 sec - in spoon.test.reference.VariableAccessTest
+Running spoon.test.reference.ExecutableReferenceTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.905 sec - in spoon.test.reference.ExecutableReferenceTest
+Running spoon.test.reference.TypeReferenceTest
+Tests run: 26, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 3.487 sec <<< FAILURE! - in spoon.test.reference.TypeReferenceTest
+testEqualityTypeReference(spoon.test.reference.TypeReferenceTest)  Time elapsed: 0.158 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<spoon.test.reference.testclasses.ParamRefs> but was:<void>
+	at spoon.test.reference.TypeReferenceTest.testEqualityTypeReference(TypeReferenceTest.java:606)
+
+Running spoon.test.reference.CloneReferenceTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.244 sec - in spoon.test.reference.CloneReferenceTest
+Running spoon.test.arrays.ArraysTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.954 sec - in spoon.test.arrays.ArraysTest
+Running spoon.test.visitor.VisitorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.16 sec - in spoon.test.visitor.VisitorTest
+Running spoon.test.exceptions.ExceptionTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.602 sec - in spoon.test.exceptions.ExceptionTest
+Running spoon.test.eval.EvalTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.073 sec - in spoon.test.eval.EvalTest
+Running spoon.test.api.FileSystemFolderTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in spoon.test.api.FileSystemFolderTest
+Running spoon.test.api.APITest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.048 sec - in spoon.test.api.APITest
+Running spoon.test.api.NoClasspathTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.31 sec - in spoon.test.api.NoClasspathTest
+Running spoon.test.staticFieldAccess.StaticAccessTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.486 sec - in spoon.test.staticFieldAccess.StaticAccessTest
+Running spoon.test.initializers.InitializerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.458 sec - in spoon.test.initializers.InitializerTest
+Running spoon.test.ctType.CtTypeTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.139 sec - in spoon.test.ctType.CtTypeTest
+Running spoon.test.generics.GenericsTest
+Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.649 sec - in spoon.test.generics.GenericsTest
+Running spoon.test.field.FieldTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.29 sec - in spoon.test.field.FieldTest
+Running spoon.test.variable.AccessTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.196 sec - in spoon.test.variable.AccessTest
+Running spoon.test.variable.AccessFullyQualifiedFieldTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.613 sec - in spoon.test.variable.AccessFullyQualifiedFieldTest
+Running spoon.test.template.TemplateTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.643 sec - in spoon.test.template.TemplateTest
+Running spoon.test.method.MethodTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.448 sec - in spoon.test.method.MethodTest
+Running spoon.test.javadoc.JavaDocTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.292 sec - in spoon.test.javadoc.JavaDocTest
+Running spoon.test.type.TypeTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.996 sec - in spoon.test.type.TypeTest
+Running spoon.test.filters.FilterTest
+2018-10-10 20:25:29,549 INFO spoon.Launcher - Spoon version 5.5.0-SNAPSHOT
+2018-10-10 20:25:29,550 INFO spoon.Launcher - running Spoon...
+2018-10-10 20:25:29,550 INFO spoon.Launcher - start processing...
+2018-10-10 20:25:29,699 INFO spoon.Launcher - end of processing: 
+2018-10-10 20:25:29,699 INFO spoon.Launcher - no errors, no warnings
+2018-10-10 20:25:29,703 INFO spoon.Launcher - Step 1) CtScanner received
+Parameter 1) unnamed package
+2018-10-10 20:25:29,703 INFO spoon.Launcher - Step 1) spoon.reflect.CtModelImpl$CtRootPackage cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) unnamed package
+2018-10-10 20:25:29,703 INFO spoon.Launcher - Step 1) spoon.support.reflect.declaration.CtPackageImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon
+2018-10-10 20:25:29,703 INFO spoon.Launcher - Step 1) spoon.support.reflect.declaration.CtPackageImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test
+2018-10-10 20:25:29,703 INFO spoon.Launcher - Step 1) spoon.support.reflect.declaration.CtPackageImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters
+2018-10-10 20:25:29,704 INFO spoon.Launcher - Step 1) spoon.support.reflect.declaration.CtPackageImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses
+2018-10-10 20:25:29,704 INFO spoon.Launcher - Step 2) received
+Parameter 1) public abstract class AbstractTostada implements spoon.test.filters.testclasses.ITostada {
+    @java.lang.Override
+    public spoon.test.filters.testclasses.ITostada make() {
+        return new spoon.test.filters.testclasses.Tostada() {
+            @java.lang.Override
+            public void prepare() {
+                super.prepare();
+            }
+
+            @java.lang.Override
+            public spoon.test.filters.testclasses.ITostada make() {
+                return super.make();
+            }
+        };
+    }
+
+    public abstract void prepare();
+}
+2018-10-10 20:25:29,704 INFO spoon.Launcher - Step 3) received
+Parameter 1) spoon.test.filters.testclasses.ITostada
+2018-10-10 20:25:29,705 INFO spoon.Launcher - Step 4) received
+Parameter 1) public interface ITostada {
+    spoon.test.filters.testclasses.ITostada make();
+}
+2018-10-10 20:25:29,705 INFO spoon.Launcher - Step 5) received
+Parameter 1) spoon.test.filters.testclasses.ITostada make();
+2018-10-10 20:25:29,705 INFO spoon.Launcher - Step 6) received
+Parameter 1) spoon.test.filters.testclasses.ITostada make();
+2018-10-10 20:25:29,705 INFO spoon.Launcher - Step 7) received
+Parameter 1) spoon.test.filters.testclasses.ITostada
+2018-10-10 20:25:29,705 INFO spoon.Launcher - Step 8) received
+Parameter 1) public interface ITostada {
+    spoon.test.filters.testclasses.ITostada make();
+}
+2018-10-10 20:25:29,706 INFO spoon.Launcher - Step TailConsumer) received
+Parameter 1) public interface ITostada {
+    spoon.test.filters.testclasses.ITostada make();
+}
+2018-10-10 20:25:29,706 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.ITostada
+2018-10-10 20:25:29,706 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses
+2018-10-10 20:25:29,706 INFO spoon.Launcher - Step 1) spoon.support.reflect.declaration.CtConstructorImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) public AbstractTostada() {
+}
+2018-10-10 20:25:29,707 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtBlockImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) {
+}
+2018-10-10 20:25:29,707 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtInvocationImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) super()
+2018-10-10 20:25:29,707 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtExecutableReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.Object#Object()
+2018-10-10 20:25:29,707 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.Object
+2018-10-10 20:25:29,708 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang
+2018-10-10 20:25:29,708 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.Object
+2018-10-10 20:25:29,708 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang
+2018-10-10 20:25:29,708 INFO spoon.Launcher - Step 1) spoon.support.reflect.declaration.CtMethodImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) @java.lang.Override
+public spoon.test.filters.testclasses.ITostada make() {
+    return new spoon.test.filters.testclasses.Tostada() {
+        @java.lang.Override
+        public void prepare() {
+            super.prepare();
+        }
+
+        @java.lang.Override
+        public spoon.test.filters.testclasses.ITostada make() {
+            return super.make();
+        }
+    };
+}
+2018-10-10 20:25:29,709 INFO spoon.Launcher - Step 1) spoon.support.reflect.declaration.CtAnnotationImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) @java.lang.Override
+
+2018-10-10 20:25:29,709 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.Override
+2018-10-10 20:25:29,709 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang
+2018-10-10 20:25:29,709 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.Override
+2018-10-10 20:25:29,710 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang
+2018-10-10 20:25:29,710 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.ITostada
+2018-10-10 20:25:29,710 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses
+2018-10-10 20:25:29,710 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtBlockImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) {
+    return new spoon.test.filters.testclasses.Tostada() {
+        @java.lang.Override
+        public void prepare() {
+            super.prepare();
+        }
+
+        @java.lang.Override
+        public spoon.test.filters.testclasses.ITostada make() {
+            return super.make();
+        }
+    };
+}
+2018-10-10 20:25:29,710 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtReturnImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) return new spoon.test.filters.testclasses.Tostada() {
+    @java.lang.Override
+    public void prepare() {
+        super.prepare();
+    }
+
+    @java.lang.Override
+    public spoon.test.filters.testclasses.ITostada make() {
+        return super.make();
+    }
+}
+2018-10-10 20:25:29,711 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtNewClassImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) new spoon.test.filters.testclasses.Tostada() {
+    @java.lang.Override
+    public void prepare() {
+        super.prepare();
+    }
+
+    @java.lang.Override
+    public spoon.test.filters.testclasses.ITostada make() {
+        return super.make();
+    }
+}
+2018-10-10 20:25:29,711 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtExecutableReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.AbstractTostada$1#1()
+2018-10-10 20:25:29,712 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.AbstractTostada.1
+2018-10-10 20:25:29,712 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.AbstractTostada
+2018-10-10 20:25:29,712 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses
+2018-10-10 20:25:29,712 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.Tostada
+2018-10-10 20:25:29,713 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses
+2018-10-10 20:25:29,713 INFO spoon.Launcher - Step 2) received
+Parameter 1)  {
+    @java.lang.Override
+    public void prepare() {
+        super.prepare();
+    }
+
+    @java.lang.Override
+    public spoon.test.filters.testclasses.ITostada make() {
+        return super.make();
+    }
+}
+2018-10-10 20:25:29,713 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.Tostada
+2018-10-10 20:25:29,713 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses
+2018-10-10 20:25:29,713 INFO spoon.Launcher - Step 1) spoon.support.reflect.declaration.CtConstructorImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) 1() {
+}
+2018-10-10 20:25:29,714 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtBlockImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) {
+}
+2018-10-10 20:25:29,714 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtInvocationImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) super()
+2018-10-10 20:25:29,714 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtExecutableReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.Tostada#Tostada()
+2018-10-10 20:25:29,714 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.Tostada
+2018-10-10 20:25:29,715 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses
+2018-10-10 20:25:29,715 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.Tostada
+2018-10-10 20:25:29,715 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses
+2018-10-10 20:25:29,715 INFO spoon.Launcher - Step 1) spoon.support.reflect.declaration.CtMethodImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) @java.lang.Override
+public void prepare() {
+    super.prepare();
+}
+2018-10-10 20:25:29,715 INFO spoon.Launcher - Step 1) spoon.support.reflect.declaration.CtAnnotationImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) @java.lang.Override
+
+2018-10-10 20:25:29,716 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.Override
+2018-10-10 20:25:29,716 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang
+2018-10-10 20:25:29,716 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.Override
+2018-10-10 20:25:29,716 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang
+2018-10-10 20:25:29,717 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) void
+2018-10-10 20:25:29,717 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtBlockImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) {
+    super.prepare();
+}
+2018-10-10 20:25:29,717 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtInvocationImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) super.prepare()
+2018-10-10 20:25:29,717 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtSuperAccessImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) super
+2018-10-10 20:25:29,718 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtLocalVariableReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) 
+2018-10-10 20:25:29,718 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtExecutableReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.Tostada#prepare()
+2018-10-10 20:25:29,718 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.Tostada
+2018-10-10 20:25:29,719 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses
+2018-10-10 20:25:29,719 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) void
+2018-10-10 20:25:29,720 INFO spoon.Launcher - Step 1) spoon.support.reflect.declaration.CtMethodImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) @java.lang.Override
+public spoon.test.filters.testclasses.ITostada make() {
+    return super.make();
+}
+2018-10-10 20:25:29,720 INFO spoon.Launcher - Step 1) spoon.support.reflect.declaration.CtAnnotationImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) @java.lang.Override
+
+2018-10-10 20:25:29,721 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.Override
+2018-10-10 20:25:29,721 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang
+2018-10-10 20:25:29,721 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.Override
+2018-10-10 20:25:29,721 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang
+2018-10-10 20:25:29,722 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.ITostada
+2018-10-10 20:25:29,722 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses
+2018-10-10 20:25:29,722 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtBlockImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) {
+    return super.make();
+}
+2018-10-10 20:25:29,722 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtReturnImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) return super.make()
+2018-10-10 20:25:29,723 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtInvocationImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) super.make()
+2018-10-10 20:25:29,723 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtSuperAccessImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) super
+2018-10-10 20:25:29,723 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtLocalVariableReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) 
+2018-10-10 20:25:29,724 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtExecutableReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.Tostada#make()
+2018-10-10 20:25:29,724 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.Tostada
+2018-10-10 20:25:29,724 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses
+2018-10-10 20:25:29,724 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.ITostada
+2018-10-10 20:25:29,724 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses
+2018-10-10 20:25:29,725 INFO spoon.Launcher - Step 1) spoon.support.reflect.declaration.CtMethodImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) public abstract void prepare();
+2018-10-10 20:25:29,725 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) void
+2018-10-10 20:25:29,725 INFO spoon.Launcher - Step 2) received
+Parameter 1) public class Antojito extends spoon.test.filters.testclasses.AbstractTostada {
+    @java.lang.Override
+    public void prepare() {
+        java.lang.System.out.println("Antojito");
+    }
+
+    public void prepare(java.lang.String ingredient) {
+    }
+}
+2018-10-10 20:25:29,725 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.AbstractTostada
+2018-10-10 20:25:29,726 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses
+2018-10-10 20:25:29,726 INFO spoon.Launcher - Step 1) spoon.support.reflect.declaration.CtConstructorImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) public Antojito() {
+}
+2018-10-10 20:25:29,726 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtBlockImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) {
+}
+2018-10-10 20:25:29,726 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtInvocationImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) super()
+2018-10-10 20:25:29,727 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtExecutableReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.AbstractTostada#AbstractTostada()
+2018-10-10 20:25:29,727 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.AbstractTostada
+2018-10-10 20:25:29,727 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses
+2018-10-10 20:25:29,727 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.AbstractTostada
+2018-10-10 20:25:29,727 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses
+2018-10-10 20:25:29,728 INFO spoon.Launcher - Step 1) spoon.support.reflect.declaration.CtMethodImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) @java.lang.Override
+public void prepare() {
+    java.lang.System.out.println("Antojito");
+}
+2018-10-10 20:25:29,728 INFO spoon.Launcher - Step 1) spoon.support.reflect.declaration.CtAnnotationImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) @java.lang.Override
+
+2018-10-10 20:25:29,728 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.Override
+2018-10-10 20:25:29,728 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang
+2018-10-10 20:25:29,729 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.Override
+2018-10-10 20:25:29,729 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang
+2018-10-10 20:25:29,729 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) void
+2018-10-10 20:25:29,729 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtBlockImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) {
+    java.lang.System.out.println("Antojito");
+}
+2018-10-10 20:25:29,729 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtInvocationImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.System.out.println("Antojito")
+2018-10-10 20:25:29,730 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtFieldReadImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.System.out
+2018-10-10 20:25:29,730 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtTypeAccessImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.System
+2018-10-10 20:25:29,730 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.System
+2018-10-10 20:25:29,730 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang
+2018-10-10 20:25:29,731 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtFieldReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.System.out
+2018-10-10 20:25:29,731 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.System
+2018-10-10 20:25:29,731 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang
+2018-10-10 20:25:29,731 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.io.PrintStream
+2018-10-10 20:25:29,731 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.io
+2018-10-10 20:25:29,732 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtExecutableReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.io.PrintStream#println(java.lang.String)
+2018-10-10 20:25:29,732 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.io.PrintStream
+2018-10-10 20:25:29,732 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.io
+2018-10-10 20:25:29,732 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) void
+2018-10-10 20:25:29,733 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.String
+2018-10-10 20:25:29,733 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang
+2018-10-10 20:25:29,733 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtLiteralImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) "Antojito"
+2018-10-10 20:25:29,733 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.String
+2018-10-10 20:25:29,734 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang
+2018-10-10 20:25:29,734 INFO spoon.Launcher - Step 1) spoon.support.reflect.declaration.CtMethodImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) public void prepare(java.lang.String ingredient) {
+}
+2018-10-10 20:25:29,734 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) void
+2018-10-10 20:25:29,734 INFO spoon.Launcher - Step 1) spoon.support.reflect.declaration.CtParameterImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.String ingredient
+2018-10-10 20:25:29,734 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.String
+2018-10-10 20:25:29,735 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang
+2018-10-10 20:25:29,735 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtBlockImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) {
+}
+2018-10-10 20:25:29,735 INFO spoon.Launcher - Step 2) received
+Parameter 1) public class FieldAccessFilterTacos extends java.util.ArrayList {
+    private int myfield = 0;
+
+    FieldAccessFilterTacos() {
+        super();
+        this.myfield = 0;
+    }
+
+    public void m() {
+        myfield = super.size();
+        java.lang.Object o = super.get(myfield);
+    }
+}
+2018-10-10 20:25:29,735 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.util.ArrayList
+2018-10-10 20:25:29,736 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.util
+2018-10-10 20:25:29,736 INFO spoon.Launcher - Step 1) spoon.support.reflect.declaration.CtFieldImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) private int myfield = 0;
+2018-10-10 20:25:29,736 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) int
+2018-10-10 20:25:29,736 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtLiteralImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) 0
+2018-10-10 20:25:29,736 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) int
+2018-10-10 20:25:29,737 INFO spoon.Launcher - Step 1) spoon.support.reflect.declaration.CtConstructorImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) FieldAccessFilterTacos() {
+    super();
+    this.myfield = 0;
+}
+2018-10-10 20:25:29,737 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtBlockImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) {
+    super();
+    this.myfield = 0;
+}
+2018-10-10 20:25:29,737 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtInvocationImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) super()
+2018-10-10 20:25:29,737 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtExecutableReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.util.ArrayList#ArrayList()
+2018-10-10 20:25:29,738 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.util.ArrayList
+2018-10-10 20:25:29,738 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.util
+2018-10-10 20:25:29,738 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.util.ArrayList
+2018-10-10 20:25:29,738 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.util
+2018-10-10 20:25:29,738 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtAssignmentImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) this.myfield = 0
+2018-10-10 20:25:29,738 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) int
+2018-10-10 20:25:29,739 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtFieldWriteImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) this.myfield
+2018-10-10 20:25:29,739 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtThisAccessImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) this
+2018-10-10 20:25:29,739 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.FieldAccessFilterTacos
+2018-10-10 20:25:29,739 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses
+2018-10-10 20:25:29,739 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtTypeAccessImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.FieldAccessFilterTacos
+2018-10-10 20:25:29,740 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.FieldAccessFilterTacos
+2018-10-10 20:25:29,740 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses
+2018-10-10 20:25:29,740 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtFieldReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) myfield
+2018-10-10 20:25:29,740 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.FieldAccessFilterTacos
+2018-10-10 20:25:29,740 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses
+2018-10-10 20:25:29,740 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) int
+2018-10-10 20:25:29,741 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtLiteralImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) 0
+2018-10-10 20:25:29,741 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) int
+2018-10-10 20:25:29,741 INFO spoon.Launcher - Step 1) spoon.support.reflect.declaration.CtMethodImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) public void m() {
+    myfield = super.size();
+    java.lang.Object o = super.get(myfield);
+}
+2018-10-10 20:25:29,741 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) void
+2018-10-10 20:25:29,741 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtBlockImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) {
+    myfield = super.size();
+    java.lang.Object o = super.get(myfield);
+}
+2018-10-10 20:25:29,741 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtAssignmentImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) myfield = super.size()
+2018-10-10 20:25:29,742 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) int
+2018-10-10 20:25:29,742 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtFieldWriteImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) myfield
+2018-10-10 20:25:29,742 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtThisAccessImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) 
+2018-10-10 20:25:29,742 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.FieldAccessFilterTacos
+2018-10-10 20:25:29,742 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses
+2018-10-10 20:25:29,742 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtTypeAccessImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.FieldAccessFilterTacos
+2018-10-10 20:25:29,742 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.FieldAccessFilterTacos
+2018-10-10 20:25:29,743 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses
+2018-10-10 20:25:29,743 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtFieldReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) myfield
+2018-10-10 20:25:29,743 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.FieldAccessFilterTacos
+2018-10-10 20:25:29,743 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses
+2018-10-10 20:25:29,743 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) int
+2018-10-10 20:25:29,743 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtInvocationImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) super.size()
+2018-10-10 20:25:29,743 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtSuperAccessImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) super
+2018-10-10 20:25:29,743 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtLocalVariableReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) 
+2018-10-10 20:25:29,743 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtExecutableReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.util.ArrayList#size()
+2018-10-10 20:25:29,744 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.util.ArrayList
+2018-10-10 20:25:29,744 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.util
+2018-10-10 20:25:29,744 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) int
+2018-10-10 20:25:29,744 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtLocalVariableImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.Object o = super.get(myfield)
+2018-10-10 20:25:29,744 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.Object
+2018-10-10 20:25:29,744 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang
+2018-10-10 20:25:29,744 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtInvocationImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) super.get(myfield)
+2018-10-10 20:25:29,744 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtSuperAccessImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) super
+2018-10-10 20:25:29,744 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtLocalVariableReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) 
+2018-10-10 20:25:29,745 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtExecutableReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.util.ArrayList#get(int)
+2018-10-10 20:25:29,745 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.util.ArrayList
+2018-10-10 20:25:29,745 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.util
+2018-10-10 20:25:29,745 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.Object
+2018-10-10 20:25:29,745 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang
+2018-10-10 20:25:29,745 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) int
+2018-10-10 20:25:29,745 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtFieldReadImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) myfield
+2018-10-10 20:25:29,745 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtThisAccessImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) 
+2018-10-10 20:25:29,746 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.FieldAccessFilterTacos
+2018-10-10 20:25:29,746 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses
+2018-10-10 20:25:29,746 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtTypeAccessImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.FieldAccessFilterTacos
+2018-10-10 20:25:29,746 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.FieldAccessFilterTacos
+2018-10-10 20:25:29,746 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses
+2018-10-10 20:25:29,746 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtFieldReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) myfield
+2018-10-10 20:25:29,746 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.FieldAccessFilterTacos
+2018-10-10 20:25:29,746 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses
+2018-10-10 20:25:29,746 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) int
+2018-10-10 20:25:29,747 INFO spoon.Launcher - Step 1) spoon.support.reflect.declaration.CtInterfaceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) public interface ITostada {
+    spoon.test.filters.testclasses.ITostada make();
+}
+2018-10-10 20:25:29,747 INFO spoon.Launcher - Step 1) spoon.support.reflect.declaration.CtMethodImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.ITostada make();
+2018-10-10 20:25:29,747 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.ITostada
+2018-10-10 20:25:29,747 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses
+2018-10-10 20:25:29,747 INFO spoon.Launcher - Step 2) received
+Parameter 1) public class SubTostada extends spoon.test.filters.testclasses.Tostada {
+    @java.lang.Override
+    public void prepare() {
+        java.lang.System.out.println("SubTostada");
+        super.prepare();
+    }
+}
+2018-10-10 20:25:29,747 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.Tostada
+2018-10-10 20:25:29,748 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses
+2018-10-10 20:25:29,748 INFO spoon.Launcher - Step 1) spoon.support.reflect.declaration.CtConstructorImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) public SubTostada() {
+}
+2018-10-10 20:25:29,748 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtBlockImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) {
+}
+2018-10-10 20:25:29,748 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtInvocationImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) super()
+2018-10-10 20:25:29,748 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtExecutableReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.Tostada#Tostada()
+2018-10-10 20:25:29,748 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.Tostada
+2018-10-10 20:25:29,748 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses
+2018-10-10 20:25:29,749 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.Tostada
+2018-10-10 20:25:29,749 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses
+2018-10-10 20:25:29,749 INFO spoon.Launcher - Step 1) spoon.support.reflect.declaration.CtMethodImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) @java.lang.Override
+public void prepare() {
+    java.lang.System.out.println("SubTostada");
+    super.prepare();
+}
+2018-10-10 20:25:29,749 INFO spoon.Launcher - Step 1) spoon.support.reflect.declaration.CtAnnotationImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) @java.lang.Override
+
+2018-10-10 20:25:29,749 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.Override
+2018-10-10 20:25:29,749 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang
+2018-10-10 20:25:29,749 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.Override
+2018-10-10 20:25:29,750 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang
+2018-10-10 20:25:29,750 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) void
+2018-10-10 20:25:29,750 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtBlockImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) {
+    java.lang.System.out.println("SubTostada");
+    super.prepare();
+}
+2018-10-10 20:25:29,750 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtInvocationImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.System.out.println("SubTostada")
+2018-10-10 20:25:29,751 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtFieldReadImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.System.out
+2018-10-10 20:25:29,751 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtTypeAccessImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.System
+2018-10-10 20:25:29,751 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.System
+2018-10-10 20:25:29,751 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang
+2018-10-10 20:25:29,751 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtFieldReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.System.out
+2018-10-10 20:25:29,751 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.System
+2018-10-10 20:25:29,751 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang
+2018-10-10 20:25:29,752 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.io.PrintStream
+2018-10-10 20:25:29,752 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.io
+2018-10-10 20:25:29,752 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtExecutableReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.io.PrintStream#println(java.lang.String)
+2018-10-10 20:25:29,752 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.io.PrintStream
+2018-10-10 20:25:29,752 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.io
+2018-10-10 20:25:29,752 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) void
+2018-10-10 20:25:29,752 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.String
+2018-10-10 20:25:29,752 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang
+2018-10-10 20:25:29,753 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtLiteralImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) "SubTostada"
+2018-10-10 20:25:29,753 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.String
+2018-10-10 20:25:29,753 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang
+2018-10-10 20:25:29,753 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtInvocationImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) super.prepare()
+2018-10-10 20:25:29,753 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtSuperAccessImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) super
+2018-10-10 20:25:29,753 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtLocalVariableReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) 
+2018-10-10 20:25:29,753 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtExecutableReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.Tostada#prepare()
+2018-10-10 20:25:29,754 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.Tostada
+2018-10-10 20:25:29,754 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses
+2018-10-10 20:25:29,754 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) void
+2018-10-10 20:25:29,754 INFO spoon.Launcher - Step 2) received
+Parameter 1) public class Tacos implements spoon.test.filters.testclasses.ITostada {
+    @java.lang.Override
+    public spoon.test.filters.testclasses.ITostada make() {
+        return null;
+    }
+
+    public void prepare() {
+        final java.util.ArrayList<java.lang.String> strings = new java.util.ArrayList<java.lang.String>();
+        strings.size();
+    }
+}
+2018-10-10 20:25:29,754 INFO spoon.Launcher - Step 3) received
+Parameter 1) spoon.test.filters.testclasses.ITostada
+2018-10-10 20:25:29,754 INFO spoon.Launcher - Step 4) received
+Parameter 1) public interface ITostada {
+    spoon.test.filters.testclasses.ITostada make();
+}
+2018-10-10 20:25:29,754 INFO spoon.Launcher - Step 5) received
+Parameter 1) spoon.test.filters.testclasses.ITostada make();
+2018-10-10 20:25:29,755 INFO spoon.Launcher - Step 6) received
+Parameter 1) spoon.test.filters.testclasses.ITostada make();
+2018-10-10 20:25:29,755 INFO spoon.Launcher - Step 7) received
+Parameter 1) spoon.test.filters.testclasses.ITostada
+2018-10-10 20:25:29,755 INFO spoon.Launcher - Step 8) received
+Parameter 1) public interface ITostada {
+    spoon.test.filters.testclasses.ITostada make();
+}
+2018-10-10 20:25:29,755 INFO spoon.Launcher - Step TailConsumer) received
+Parameter 1) public interface ITostada {
+    spoon.test.filters.testclasses.ITostada make();
+}
+2018-10-10 20:25:29,755 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.ITostada
+2018-10-10 20:25:29,755 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses
+2018-10-10 20:25:29,755 INFO spoon.Launcher - Step 1) spoon.support.reflect.declaration.CtConstructorImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) public Tacos() {
+}
+2018-10-10 20:25:29,756 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtBlockImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) {
+}
+2018-10-10 20:25:29,756 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtInvocationImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) super()
+2018-10-10 20:25:29,756 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtExecutableReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.Object#Object()
+2018-10-10 20:25:29,756 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.Object
+2018-10-10 20:25:29,756 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang
+2018-10-10 20:25:29,756 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.Object
+2018-10-10 20:25:29,756 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang
+2018-10-10 20:25:29,757 INFO spoon.Launcher - Step 1) spoon.support.reflect.declaration.CtMethodImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) @java.lang.Override
+public spoon.test.filters.testclasses.ITostada make() {
+    return null;
+}
+2018-10-10 20:25:29,757 INFO spoon.Launcher - Step 1) spoon.support.reflect.declaration.CtAnnotationImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) @java.lang.Override
+
+2018-10-10 20:25:29,757 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.Override
+2018-10-10 20:25:29,757 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang
+2018-10-10 20:25:29,757 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.Override
+2018-10-10 20:25:29,757 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang
+2018-10-10 20:25:29,758 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.ITostada
+2018-10-10 20:25:29,758 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses
+2018-10-10 20:25:29,758 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtBlockImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) {
+    return null;
+}
+2018-10-10 20:25:29,758 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtReturnImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) return null
+2018-10-10 20:25:29,758 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtLiteralImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) null
+2018-10-10 20:25:29,758 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) <nulltype>
+2018-10-10 20:25:29,758 INFO spoon.Launcher - Step 1) spoon.support.reflect.declaration.CtMethodImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) public void prepare() {
+    final java.util.ArrayList<java.lang.String> strings = new java.util.ArrayList<java.lang.String>();
+    strings.size();
+}
+2018-10-10 20:25:29,759 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) void
+2018-10-10 20:25:29,759 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtBlockImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) {
+    final java.util.ArrayList<java.lang.String> strings = new java.util.ArrayList<java.lang.String>();
+    strings.size();
+}
+2018-10-10 20:25:29,759 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtLocalVariableImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) final java.util.ArrayList<java.lang.String> strings = new java.util.ArrayList<java.lang.String>()
+2018-10-10 20:25:29,759 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.util.ArrayList<java.lang.String>
+2018-10-10 20:25:29,759 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.util
+2018-10-10 20:25:29,760 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.String
+2018-10-10 20:25:29,760 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang
+2018-10-10 20:25:29,760 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtConstructorCallImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) new java.util.ArrayList<java.lang.String>()
+2018-10-10 20:25:29,760 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtExecutableReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.util.ArrayList#ArrayList()
+2018-10-10 20:25:29,760 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.util.ArrayList
+2018-10-10 20:25:29,760 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.util
+2018-10-10 20:25:29,761 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.util.ArrayList<java.lang.String>
+2018-10-10 20:25:29,761 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.util
+2018-10-10 20:25:29,761 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.String
+2018-10-10 20:25:29,761 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang
+2018-10-10 20:25:29,761 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtInvocationImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) strings.size()
+2018-10-10 20:25:29,761 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtVariableReadImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) strings
+2018-10-10 20:25:29,761 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtLocalVariableReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) strings
+2018-10-10 20:25:29,762 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.util.ArrayList<java.lang.String>
+2018-10-10 20:25:29,762 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.util
+2018-10-10 20:25:29,762 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.String
+2018-10-10 20:25:29,762 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang
+2018-10-10 20:25:29,762 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtExecutableReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.util.ArrayList#size()
+2018-10-10 20:25:29,762 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.util.ArrayList
+2018-10-10 20:25:29,762 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.util
+2018-10-10 20:25:29,764 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) int
+2018-10-10 20:25:29,764 INFO spoon.Launcher - Step 2) received
+Parameter 1) public class Tostada extends spoon.test.filters.testclasses.AbstractTostada {
+    @java.lang.Override
+    public spoon.test.filters.testclasses.ITostada make() {
+        return new spoon.test.filters.testclasses.Tostada() {
+            @java.lang.Override
+            public void prepare() {
+                int a = 3;
+                super.prepare();
+            }
+        };
+    }
+
+    @java.lang.Override
+    public void prepare() {
+    }
+}
+2018-10-10 20:25:29,765 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.AbstractTostada
+2018-10-10 20:25:29,765 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses
+2018-10-10 20:25:29,765 INFO spoon.Launcher - Step 1) spoon.support.reflect.declaration.CtConstructorImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) public Tostada() {
+}
+2018-10-10 20:25:29,765 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtBlockImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) {
+}
+2018-10-10 20:25:29,766 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtInvocationImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) super()
+2018-10-10 20:25:29,766 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtExecutableReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.AbstractTostada#AbstractTostada()
+2018-10-10 20:25:29,766 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.AbstractTostada
+2018-10-10 20:25:29,766 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses
+2018-10-10 20:25:29,766 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.AbstractTostada
+2018-10-10 20:25:29,766 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses
+2018-10-10 20:25:29,767 INFO spoon.Launcher - Step 1) spoon.support.reflect.declaration.CtMethodImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) @java.lang.Override
+public spoon.test.filters.testclasses.ITostada make() {
+    return new spoon.test.filters.testclasses.Tostada() {
+        @java.lang.Override
+        public void prepare() {
+            int a = 3;
+            super.prepare();
+        }
+    };
+}
+2018-10-10 20:25:29,767 INFO spoon.Launcher - Step 1) spoon.support.reflect.declaration.CtAnnotationImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) @java.lang.Override
+
+2018-10-10 20:25:29,767 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.Override
+2018-10-10 20:25:29,767 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang
+2018-10-10 20:25:29,767 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.Override
+2018-10-10 20:25:29,767 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang
+2018-10-10 20:25:29,767 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.ITostada
+2018-10-10 20:25:29,767 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses
+2018-10-10 20:25:29,768 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtBlockImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) {
+    return new spoon.test.filters.testclasses.Tostada() {
+        @java.lang.Override
+        public void prepare() {
+            int a = 3;
+            super.prepare();
+        }
+    };
+}
+2018-10-10 20:25:29,768 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtReturnImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) return new spoon.test.filters.testclasses.Tostada() {
+    @java.lang.Override
+    public void prepare() {
+        int a = 3;
+        super.prepare();
+    }
+}
+2018-10-10 20:25:29,768 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtNewClassImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) new spoon.test.filters.testclasses.Tostada() {
+    @java.lang.Override
+    public void prepare() {
+        int a = 3;
+        super.prepare();
+    }
+}
+2018-10-10 20:25:29,768 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtExecutableReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.Tostada$1#1()
+2018-10-10 20:25:29,769 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.Tostada.1
+2018-10-10 20:25:29,769 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.Tostada
+2018-10-10 20:25:29,769 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses
+2018-10-10 20:25:29,769 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.Tostada
+2018-10-10 20:25:29,769 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses
+2018-10-10 20:25:29,769 INFO spoon.Launcher - Step 2) received
+Parameter 1)  {
+    @java.lang.Override
+    public void prepare() {
+        int a = 3;
+        super.prepare();
+    }
+}
+2018-10-10 20:25:29,770 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.Tostada
+2018-10-10 20:25:29,770 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses
+2018-10-10 20:25:29,770 INFO spoon.Launcher - Step 1) spoon.support.reflect.declaration.CtConstructorImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) 1() {
+}
+2018-10-10 20:25:29,770 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtBlockImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) {
+}
+2018-10-10 20:25:29,770 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtInvocationImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) super()
+2018-10-10 20:25:29,770 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtExecutableReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.Tostada#Tostada()
+2018-10-10 20:25:29,770 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.Tostada
+2018-10-10 20:25:29,771 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses
+2018-10-10 20:25:29,771 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.Tostada
+2018-10-10 20:25:29,771 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses
+2018-10-10 20:25:29,771 INFO spoon.Launcher - Step 1) spoon.support.reflect.declaration.CtMethodImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) @java.lang.Override
+public void prepare() {
+    int a = 3;
+    super.prepare();
+}
+2018-10-10 20:25:29,771 INFO spoon.Launcher - Step 1) spoon.support.reflect.declaration.CtAnnotationImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) @java.lang.Override
+
+2018-10-10 20:25:29,771 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.Override
+2018-10-10 20:25:29,771 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang
+2018-10-10 20:25:29,772 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.Override
+2018-10-10 20:25:29,772 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang
+2018-10-10 20:25:29,791 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) void
+2018-10-10 20:25:29,791 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtBlockImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) {
+    int a = 3;
+    super.prepare();
+}
+2018-10-10 20:25:29,791 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtLocalVariableImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) int a = 3
+2018-10-10 20:25:29,791 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) int
+2018-10-10 20:25:29,791 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtLiteralImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) 3
+2018-10-10 20:25:29,791 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) int
+2018-10-10 20:25:29,792 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtInvocationImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) super.prepare()
+2018-10-10 20:25:29,792 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtSuperAccessImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) super
+2018-10-10 20:25:29,792 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtLocalVariableReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) 
+2018-10-10 20:25:29,792 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtExecutableReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.Tostada#prepare()
+2018-10-10 20:25:29,792 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses.Tostada
+2018-10-10 20:25:29,792 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) spoon.test.filters.testclasses
+2018-10-10 20:25:29,792 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) void
+2018-10-10 20:25:29,792 INFO spoon.Launcher - Step 1) spoon.support.reflect.declaration.CtMethodImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) @java.lang.Override
+public void prepare() {
+}
+2018-10-10 20:25:29,793 INFO spoon.Launcher - Step 1) spoon.support.reflect.declaration.CtAnnotationImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) @java.lang.Override
+
+2018-10-10 20:25:29,793 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.Override
+2018-10-10 20:25:29,793 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang
+2018-10-10 20:25:29,793 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang.Override
+2018-10-10 20:25:29,793 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtPackageReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) java.lang
+2018-10-10 20:25:29,793 INFO spoon.Launcher - Step 1) spoon.support.reflect.reference.CtTypeReferenceImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) void
+2018-10-10 20:25:29,793 INFO spoon.Launcher - Step 1) spoon.support.reflect.code.CtBlockImpl cannot be cast to spoon.reflect.declaration.CtClass
+Parameter 1) {
+}
+Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.503 sec - in spoon.test.filters.FilterTest
+Running spoon.test.filters.CUFilterTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.435 sec - in spoon.test.filters.CUFilterTest
+Running spoon.test.invocations.InvocationTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.297 sec - in spoon.test.invocations.InvocationTest
+Running spoon.test.parameters.ParameterTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.324 sec - in spoon.test.parameters.ParameterTest
+Running spoon.test.intercession.insertBefore.InsertMethodsTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.068 sec - in spoon.test.intercession.insertBefore.InsertMethodsTest
+Running spoon.test.intercession.IntercessionContractTest
+Tests run: 92, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.305 sec - in spoon.test.intercession.IntercessionContractTest
+Running spoon.test.intercession.IntercessionTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 2.787 sec - in spoon.test.intercession.IntercessionTest
+Running spoon.test.intercession.RemoveTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.145 sec - in spoon.test.intercession.RemoveTest
+Running spoon.test.executable.ExecutableRefTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.055 sec - in spoon.test.executable.ExecutableRefTest
+Running spoon.test.executable.ExecutableTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.502 sec - in spoon.test.executable.ExecutableTest
+Running spoon.test.literal.LiteralTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.98 sec - in spoon.test.literal.LiteralTest
+Running spoon.test.model.AnonymousExecutableTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.202 sec - in spoon.test.model.AnonymousExecutableTest
+Running spoon.test.model.TypeTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.179 sec - in spoon.test.model.TypeTest
+Running spoon.test.model.SwitchCaseTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.343 sec - in spoon.test.model.SwitchCaseTest
+Running spoon.test.model.BlockTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.307 sec - in spoon.test.model.BlockTest
+Running spoon.test.ctElement.MetadataTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.159 sec - in spoon.test.ctElement.MetadataTest
+Running spoon.test.methodreference.MethodReferenceTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.073 sec - in spoon.test.methodreference.MethodReferenceTest
+Running spoon.test.snippets.SnippetTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.354 sec - in spoon.test.snippets.SnippetTest
+Running spoon.test.varargs.VarArgsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.148 sec - in spoon.test.varargs.VarArgsTest
+Running spoon.test.processing.ProcessingTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.304 sec - in spoon.test.processing.ProcessingTest
+Running spoon.test.refactoring.RefactoringTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.783 sec - in spoon.test.refactoring.RefactoringTest
+Running spoon.test.replace.ReplaceTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.216 sec - in spoon.test.replace.ReplaceTest
+Running spoon.test.replace.ReplaceParametrizedTest
+Tests run: 71, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.94 sec - in spoon.test.replace.ReplaceParametrizedTest
+Running spoon.test.fieldaccesses.FieldAccessTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.714 sec - in spoon.test.fieldaccesses.FieldAccessTest
+Running spoon.test.visibility.VisibilityTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.197 sec - in spoon.test.visibility.VisibilityTest
+Running spoon.test.OutputTypeTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in spoon.test.OutputTypeTest
+Running spoon.reflect.visitor.CtVisitorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.607 sec - in spoon.reflect.visitor.CtVisitorTest
+Running spoon.reflect.visitor.CtInheritanceScannerMethodsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.635 sec - in spoon.reflect.visitor.CtInheritanceScannerMethodsTest
+Running spoon.reflect.visitor.CtScannerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.275 sec - in spoon.reflect.visitor.CtScannerTest
+Running spoon.reflect.visitor.CtInheritanceScannerTest
+Tests run: 71, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.528 sec - in spoon.reflect.visitor.CtInheritanceScannerTest
+Running spoon.reflect.ast.CloneTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.119 sec - in spoon.reflect.ast.CloneTest
+Running spoon.reflect.declaration.CtTypeInformationTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.175 sec - in spoon.reflect.declaration.CtTypeInformationTest
+Running spoon.reflect.declaration.UnknownDeclarationTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.157 sec - in spoon.reflect.declaration.UnknownDeclarationTest
+Running spoon.testing.FileAssertTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.677 sec - in spoon.testing.FileAssertTest
+Running spoon.testing.CtElementAssertTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.663 sec - in spoon.testing.CtElementAssertTest
+Running spoon.testing.AbstractAssertTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.198 sec - in spoon.testing.AbstractAssertTest
+Running spoon.testing.CtPackageAssertTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.474 sec - in spoon.testing.CtPackageAssertTest
+Running spoon.LauncherTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.062 sec - in spoon.LauncherTest
+Running spoon.processing.CtGenerationTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.033 sec - in spoon.processing.CtGenerationTest
+Running spoon.processing.ProcessingTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.24 sec - in spoon.processing.ProcessingTest
+
+Results :
+
+Failed tests: 
+  TypeReferenceTest.testEqualityTypeReference:606 expected:<spoon.test.reference.testclasses.ParamRefs> but was:<void>
+
+Tests run: 971, Failures: 1, Errors: 0, Skipped: 2
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 03:55 min
+[INFO] Finished at: 2018-10-10T20:26:21+02:00
+[INFO] Final Memory: 19M/292M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-test) on project spoon-core: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/INRIA/spoon/190241093/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
