@@ -1,0 +1,152 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 1695, 
+      "numberRunning": 1696, 
+      "numberFailing": 0, 
+      "numberErroring": 1, 
+      "failures": [
+        {
+          "failureName": "com.fasterxml.jackson.databind.JsonMappingException", 
+          "isError": true, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 0
+    }, 
+    "failingModule": "/root/workspace/FasterXML/jackson-databind/203649003", 
+    "failureDetails": [
+      {
+        "failureName": "com.fasterxml.jackson.databind.JsonMappingException", 
+        "detail": "Unexpected token (VALUE_STRING), expected FIELD_NAME: missing property 'type' that is to contain type id  (for class com.fasterxml.jackson.databind.jsontype.TestPolymorphicWithDefaultImpl$AsProperty)\n at [Source: { \"value\": \"\" }; line: 1, column: 12] (through reference chain: com.fasterxml.jackson.databind.jsontype.TestPolymorphicWithDefaultImpl$AsPropertyWrapper[\"value\"])", 
+        "isError": true, 
+        "testMethod": "testWithEmptyStringAsNullObject1533", 
+        "testClass": "com.fasterxml.jackson.databind.jsontype.TestPolymorphicWithDefaultImpl"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 12, 
+        "numberRunning": 13, 
+        "testClass": "com.fasterxml.jackson.databind.jsontype.TestPolymorphicWithDefaultImpl", 
+        "numberFailing": 0, 
+        "numberErroring": 1, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/FasterXML/jackson-databind/builds/204682356", 
+      "date": "Feb 23, 2017 7:04:53 PM", 
+      "id": 204682356
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/FasterXML/jackson-databind/builds/203649003", 
+      "date": "Feb 21, 2017 2:22:54 AM", 
+      "id": 203649003
+    }
+  }, 
+  "repository": {
+    "name": "FasterXML/jackson-databind", 
+    "url": "https://github.com/FasterXML/jackson-databind", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 3038937
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/FasterXML/jackson-databind/commit/10d5ab37f06f7925bf959312bfb6211f5bc4a1cb", 
+      "sha": "10d5ab37f06f7925bf959312bfb6211f5bc4a1cb", 
+      "branchName": "2.8", 
+      "date": "Feb 23, 2017 7:00:47 PM", 
+      "repoName": "FasterXML/jackson-databind"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/FasterXML/jackson-databind/commit/ce37efcefbfab0fa91562a492f0f80af018a5313", 
+      "sha": "ce37efcefbfab0fa91562a492f0f80af018a5313", 
+      "branchName": "2.8", 
+      "date": "Feb 21, 2017 2:06:13 AM", 
+      "repoName": "FasterXML/jackson-databind"
+    }
+  }, 
+  "bugName": "FasterXML-jackson-databind-203649003-204682356", 
+  "version": "latest", 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 0, 
+      "numberDeleted": 7
+    }
+  }, 
+  "type": "passing_passing", 
+  "bugId": "Bears-9", 
+  "projectMetrics": {
+    "numberSourceFiles": 397, 
+    "numberLibrariesFailingModule": 17, 
+    "numberTestFiles": 385, 
+    "numberModules": 1
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 266944648, 
+      "hostName": "local", 
+      "totalMemory": 354942976, 
+      "numberCPU": 4
+    }, 
+    "reproductionDateEnd": "Oct 10, 2018 6:27:40 AM", 
+    "projectRootPomPath": "./workspace/FasterXML/jackson-databind/203649003/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          0, 
+          0, 
+          0, 
+          0, 
+          52
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 52
+      }, 
+      "testing": {
+        "stepDurations": [
+          33
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 33
+      }, 
+      "cloning": {
+        "stepDurations": [
+          47
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 47
+      }
+    }, 
+    "reproductionDateBeginning": "Oct 10, 2018 6:24:31 AM", 
+    "totalDuration": 183
+  }
+}
