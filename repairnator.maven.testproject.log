@@ -42,12 +42,7 @@
 [INFO] Copying 1 resource
 [INFO] 
 [INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ cas-client-core ---
-[INFO] Changes detected - recompiling the module!
-[INFO] Compiling 83 source files to /root/workspace/apereo/java-cas-client/408206584/cas-client-core/target/classes
-[WARNING] /root/workspace/apereo/java-cas-client/408206584/cas-client-core/src/main/java/org/jasig/cas/client/proxy/Cas20ProxyRetriever.java: /root/workspace/apereo/java-cas-client/408206584/cas-client-core/src/main/java/org/jasig/cas/client/proxy/Cas20ProxyRetriever.java uses or overrides a deprecated API.
-[WARNING] /root/workspace/apereo/java-cas-client/408206584/cas-client-core/src/main/java/org/jasig/cas/client/proxy/Cas20ProxyRetriever.java: Recompile with -Xlint:deprecation for details.
-[WARNING] /root/workspace/apereo/java-cas-client/408206584/cas-client-core/src/main/java/org/jasig/cas/client/configuration/ConfigurationStrategyName.java: Some input files use unchecked or unsafe operations.
-[WARNING] /root/workspace/apereo/java-cas-client/408206584/cas-client-core/src/main/java/org/jasig/cas/client/configuration/ConfigurationStrategyName.java: Recompile with -Xlint:unchecked for details.
+[INFO] Nothing to compile - all classes are up to date
 [INFO] 
 [INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ cas-client-core ---
 [INFO] Using 'UTF-8' encoding to copy filtered resources.
@@ -60,21 +55,15 @@
 [WARNING] /root/workspace/apereo/java-cas-client/408206584/cas-client-core/src/test/java/org/jasig/cas/client/util/CommonUtilsTests.java: Recompile with -Xlint:deprecation for details.
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.6:test (default-test) @ cas-client-core ---
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.6/surefire-junit4-2.6.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.6/surefire-junit4-2.6.pom (2 KB at 4.0 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.6/surefire-providers-2.6.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.6/surefire-providers-2.6.pom (2 KB at 45.1 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.6/surefire-junit4-2.6.jar
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.6/surefire-junit4-2.6.jar (12 KB at 192.6 KB/sec)
 [INFO] Surefire report directory: /root/workspace/apereo/java-cas-client/408206584/cas-client-core/target/surefire-reports
 
 -------------------------------------------------------
  T E S T S
 -------------------------------------------------------
 Running org.jasig.cas.client.ssl.WhitelistHostnameVerifierTests
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.096 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.098 sec
 Running org.jasig.cas.client.session.SingleSignOutHandlerTests
-Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.308 sec
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.313 sec
 Running org.jasig.cas.client.validation.Cas20ProxyReceivingTicketValidationFilterTests
 [main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [service] loaded from ServletContext.getInitParameter with value [http://www.jasig.org]
 [main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerUrlPrefix] loaded from ServletContext.getInitParameter with value [https://cas.example.com]
@@ -87,14 +76,14 @@ Running org.jasig.cas.client.validation.Cas20ProxyReceivingTicketValidationFilte
 [main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [allowedProxyChains] loaded from FilterConfig.getInitParameter with value [https://a.example.com]
 [main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [https://cas.jasig.org/]
 [main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [https://cas.example.com]
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.107 sec
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.095 sec
 Running org.jasig.cas.client.authentication.DefaultAuthenticationRedirectStrategyTests
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
 Running org.jasig.cas.client.util.HttpServletRequestWrapperFilterTests
 [main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [roleAttribute] loaded from FilterConfig.getInitParameter with value [memberOf]
 [main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [roleAttribute] loaded from FilterConfig.getInitParameter with value [groupMembership]
 [main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [ignoreCase] loaded from FilterConfig.getInitParameter with value [true]
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 sec
 Running org.jasig.cas.client.validation.Cas20ProxyTicketValidatorTests
 Accepting connections on port 8089
 [main] INFO org.jasig.cas.client.proxy.ProxyGrantingTicketStorageImpl - No Proxy Ticket found for [PGTIOU-84678-8a9d...].
@@ -109,11 +98,11 @@ Accepting connections on port 8089
 [main] WARN org.jasig.cas.client.validation.ProxyList - Proxy chain did not match at proxy1->proxy2->proxy3/ABC/. Skipping to next allowedProxyChain
 [main] WARN org.jasig.cas.client.validation.ProxyList - No proxy chain matched the allowedProxyChains list.
 [main] WARN org.jasig.cas.client.validation.Cas20ProxyTicketValidator - Proxies received from the CAS validation response are [proxy1, proxy2, proxy3/ABC/]. However, none are allowed by allowed proxy chain of the client which is [[org.jasig.cas.client.authentication.ExactUrlPatternMatcherStrategy@2eee9593, org.jasig.cas.client.authentication.ExactUrlPatternMatcherStrategy@7907ec20, org.jasig.cas.client.authentication.RegexUrlPatternMatcherStrategy@546a03af]]
-[main] INFO org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@edf4efb: startup date [Wed Oct 10 09:02:06 CEST 2018]; root of context hierarchy
+[main] INFO org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@edf4efb: startup date [Wed Oct 10 09:02:47 CEST 2018]; root of context hierarchy
 [main] INFO org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [cas20ProxyTicketValidator.xml]
 [main] INFO org.springframework.beans.factory.support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@2781e022: defining beans [proxyTicketValidator,proxyTicketValidatorWithAllowAnyProxy]; root of factory hierarchy
 [main] INFO org.jasig.cas.client.validation.ProxyList - Proxy chain matched: proxy1->proxy2->proxy3
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.97 sec
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.972 sec
 Running org.jasig.cas.client.ssl.HttpsURLConnectionFactoryTests
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 sec
 Running org.jasig.cas.client.validation.Cas10TicketValidationFilterTests
@@ -123,26 +112,26 @@ Running org.jasig.cas.client.validation.Cas10TicketValidationFilterTests
 [main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [renew] loaded from ServletContext.getInitParameter with value [true]
 [main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerUrlPrefix] loaded from ServletContext.getInitParameter with value [https://cas.example.com]
 [main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [renew] loaded from ServletContext.getInitParameter with value [true]
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec
 Running org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImplTests
-[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [acceptAnyProxy] loaded from FilterConfig.getInitParameter with value [true]
-[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [artifactParameterName] loaded from FilterConfig.getInitParameter with value [foobar]
-[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [tolerance] loaded from FilterConfig.getInitParameter with value [1500]
 [main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [millisBetweenCleanUps] loaded from FilterConfig.getInitParameter with value [1500]
 [main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [acceptAnyProxy] loaded from ServletContext.getInitParameter with value [true]
 [main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [artifactParameterName] loaded from ServletContext.getInitParameter with value [foobar]
 [main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [tolerance] loaded from ServletContext.getInitParameter with value [1500]
 [main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [millisBetweenCleanUps] loaded from ServletContext.getInitParameter with value [1500]
-Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [acceptAnyProxy] loaded from FilterConfig.getInitParameter with value [true]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [artifactParameterName] loaded from FilterConfig.getInitParameter with value [foobar]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [tolerance] loaded from FilterConfig.getInitParameter with value [1500]
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.04 sec
 Running org.jasig.cas.client.ssl.RegexHostnameVerifierTests
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
 Running org.jasig.cas.client.validation.Cas10TicketValidatorTests
 Accepting connections on port 8989
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec
 Running org.jasig.cas.client.util.URIBuilderTests
-Tests run: 27, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 sec
+Tests run: 27, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.054 sec
 Running org.jasig.cas.client.authentication.DefaultGatewayResolverImplTests
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec
 Running org.jasig.cas.client.validation.json.Cas30JsonServiceTicketValidatorTests
 Accepting connections on port 8088
 [main] WARN org.jasig.cas.client.validation.json.Cas30JsonServiceTicketValidator - Unable parse the JSON response. Falling back to XML
@@ -190,10 +179,10 @@ com.fasterxml.jackson.core.JsonParseException: Unexpected character ('<' (code 6
 	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1021)
 [main] INFO org.jasig.cas.client.proxy.ProxyGrantingTicketStorageImpl - No Proxy Ticket found for [PGTIOU].
 [main] INFO org.jasig.cas.client.proxy.ProxyGrantingTicketStorageImpl - No Proxy Ticket found for [PGTIOU-84678-8a9d].
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.499 sec
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.552 sec
 Running org.jasig.cas.client.util.CasFilterTests
 [main] INFO org.jasig.cas.client.util.CasFilterTests$TestCasFilter - Eliminated extra slash from serverName [http://www.cnn.com/].  It is now [http://www.cnn.com]
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
 Running org.jasig.cas.client.authentication.AuthenticationFilterTests
 [main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [service] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/service]
 [main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/cas/login]
@@ -204,32 +193,6 @@ Running org.jasig.cas.client.authentication.AuthenticationFilterTests
 [main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/cas/login]
 [main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [service] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/service]
 [main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/cas/login]
-[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [service] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/service]
-[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/cas/login]
-[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [serverName] loaded from FilterConfig.getInitParameter with value [localhost:8443]
-[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/cas/login]
-[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [service] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/service]
-[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/cas/login]
-[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [service] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/service]
-[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/cas/login]
-[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [service] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/service]
-[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/cas/login]
-[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [service] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/service]
-[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/cas/login]
-[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [service] loaded from ServletContext.getInitParameter with value [https://localhost:8443/service]
-[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerLoginUrl] loaded from ServletContext.getInitParameter with value [https://localhost:8443/cas/login]
-[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [authenticationRedirectStrategyClass] loaded from ServletContext.getInitParameter with value [org.jasig.cas.client.authentication.FacesCompatibleAuthenticationRedirectStrategy]
-[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [service] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/service]
-[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/cas/login]
-[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [service] loaded from ServletContext.getInitParameter with value [https://localhost:8443/service]
-[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerLoginUrl] loaded from ServletContext.getInitParameter with value [https://localhost:8443/cas/login]
-[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [ignorePattern] loaded from ServletContext.getInitParameter with value [=valueTo(\w+)]
-[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [service] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/service]
-[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/cas/login]
-[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [service] loaded from ServletContext.getInitParameter with value [https://localhost:8443/service]
-[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerLoginUrl] loaded from ServletContext.getInitParameter with value [https://localhost:8443/cas/login]
-[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [ignorePattern] loaded from ServletContext.getInitParameter with value [=valueToIgnore]
-[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [ignoreUrlPatternType] loaded from ServletContext.getInitParameter with value [CONTAINS]
 [main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [service] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/service]
 [main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/cas/login]
 [main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [service] loaded from ServletContext.getInitParameter with value [https://localhost:8443/service]
@@ -248,7 +211,6 @@ Running org.jasig.cas.client.authentication.AuthenticationFilterTests
 [main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerLoginUrl] loaded from ServletContext.getInitParameter with value [https://localhost:8443/cas/login]
 [main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [ignorePattern] loaded from ServletContext.getInitParameter with value [=valueToIgnore]
 [main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [ignoreUrlPatternType] loaded from ServletContext.getInitParameter with value [unknown.class.name]
-https://localhost:8443/cas/login?service=https%3A%2F%2Flocalhost%3A8443%2Fservice
 [main] ERROR org.jasig.cas.client.authentication.AuthenticationFilter - Could not instantiate class [unknown.class.name]
 java.lang.IllegalArgumentException: unknown.class.name class not found.
 	at org.jasig.cas.client.util.ReflectUtils.loadClass(ReflectUtils.java:53)
@@ -285,18 +247,45 @@ java.lang.IllegalArgumentException: unknown.class.name class not found.
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:350)
 	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1021)
-[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [service] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/service]
-[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/cas/login]
-Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.068 sec
-Running org.jasig.cas.client.util.ReflectUtilsTests
+https://localhost:8443/cas/login?service=https%3A%2F%2Flocalhost%3A8443%2Fservice
 [main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [service] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/service]
 [main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/cas/login]
 [main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [service] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/service]
 [main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/cas]
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [service] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/service]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/cas/login]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [service] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/service]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/cas/login]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [serverName] loaded from FilterConfig.getInitParameter with value [localhost:8443]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/cas/login]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [service] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/service]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/cas/login]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [service] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/service]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/cas/login]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [service] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/service]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/cas/login]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [service] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/service]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/cas/login]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [service] loaded from ServletContext.getInitParameter with value [https://localhost:8443/service]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerLoginUrl] loaded from ServletContext.getInitParameter with value [https://localhost:8443/cas/login]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [authenticationRedirectStrategyClass] loaded from ServletContext.getInitParameter with value [org.jasig.cas.client.authentication.FacesCompatibleAuthenticationRedirectStrategy]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [service] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/service]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/cas/login]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [service] loaded from ServletContext.getInitParameter with value [https://localhost:8443/service]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerLoginUrl] loaded from ServletContext.getInitParameter with value [https://localhost:8443/cas/login]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [ignorePattern] loaded from ServletContext.getInitParameter with value [=valueTo(\w+)]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [service] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/service]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [https://localhost:8443/cas/login]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [service] loaded from ServletContext.getInitParameter with value [https://localhost:8443/service]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerLoginUrl] loaded from ServletContext.getInitParameter with value [https://localhost:8443/cas/login]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [ignorePattern] loaded from ServletContext.getInitParameter with value [=valueToIgnore]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [ignoreUrlPatternType] loaded from ServletContext.getInitParameter with value [CONTAINS]
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.078 sec
+Running org.jasig.cas.client.util.ReflectUtilsTests
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec
 Running org.jasig.cas.client.util.CommonUtilsTests
 Accepting connections on port 8092
-Tests run: 26, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec <<< FAILURE!
+Tests run: 26, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 sec
 Running org.jasig.cas.client.jaas.CasLoginModuleTests
 Accepting connections on port 8091
 [main] WARN org.jasig.cas.client.jaas.CasLoginModule - Cannot find property principalGroupName on org.jasig.cas.client.validation.Cas20ServiceTicketValidator
@@ -452,25 +441,25 @@ org.jasig.cas.client.validation.TicketValidationException: Ticket ST-12345-ABCDE
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:350)
 	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1021)
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.221 sec
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.185 sec
 Running org.jasig.cas.client.configuration.SystemPropertiesConfigurationStrategyImplTests
 Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
 Running org.jasig.cas.client.util.ErrorRedirectFilterTests
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
 Running org.jasig.cas.client.SerializationTests
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec
 Running org.jasig.cas.client.validation.AssertionImplTests
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
 Running org.jasig.cas.client.authentication.FacesCompatibleAuthenticationRedirectStrategyTests
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
 Running org.jasig.cas.client.configuration.ConfigurationKeyTests
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
 Running org.jasig.cas.client.validation.Cas20ServiceTicketValidatorTests
 [main] INFO org.jasig.cas.client.proxy.ProxyGrantingTicketStorageImpl - No Proxy Ticket found for [testPgtIou].
 [main] INFO org.jasig.cas.client.proxy.ProxyGrantingTicketStorageImpl - No Proxy Ticket found for [testPgtIou].
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.041 sec
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.045 sec
 Running org.jasig.cas.client.session.SingleSignOutFilterTests
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec
 Running org.jasig.cas.client.configuration.ConfigurationStrategyNameTests
 [main] ERROR org.jasig.cas.client.configuration.ConfigurationStrategyName - Unable to locate strategy bleh! by name or class name.  Using default strategy instead.
 java.lang.ClassNotFoundException: bleh!
@@ -509,49 +498,464 @@ java.lang.ClassNotFoundException: bleh!
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:350)
 	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1021)
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
 
 Results :
 
-Failed tests: 
-  testConstructServiceUrlWithServerNameContainingPathAndSchema(org.jasig.cas.client.util.CommonUtilsTests)
+Tests run: 154, Failures: 0, Errors: 0, Skipped: 0
 
-Tests run: 154, Failures: 1, Errors: 0, Skipped: 0
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Jasig CAS Client for Java - Atlassian Integration 3.5.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ cas-client-integration-atlassian ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-banned-dependencies) @ cas-client-integration-atlassian ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ cas-client-integration-atlassian ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/apereo/java-cas-client/408206584/cas-client-integration-atlassian/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ cas-client-integration-atlassian ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ cas-client-integration-atlassian ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/apereo/java-cas-client/408206584/cas-client-integration-atlassian/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ cas-client-integration-atlassian ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.6:test (default-test) @ cas-client-integration-atlassian ---
+[INFO] No tests to run.
+[INFO] Surefire report directory: /root/workspace/apereo/java-cas-client/408206584/cas-client-integration-atlassian/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+There are no tests to run.
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Jasig CAS Client for Java - JBoss Integration 3.5.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ cas-client-integration-jboss ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-banned-dependencies) @ cas-client-integration-jboss ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ cas-client-integration-jboss ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/apereo/java-cas-client/408206584/cas-client-integration-jboss/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ cas-client-integration-jboss ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ cas-client-integration-jboss ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/apereo/java-cas-client/408206584/cas-client-integration-jboss/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ cas-client-integration-jboss ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.6:test (default-test) @ cas-client-integration-jboss ---
+[INFO] No tests to run.
+[INFO] Surefire report directory: /root/workspace/apereo/java-cas-client/408206584/cas-client-integration-jboss/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+There are no tests to run.
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Jasig CAS Client for Java - Distributed Proxy Storage Support: EhCache 3.5.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ cas-client-support-distributed-ehcache ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-banned-dependencies) @ cas-client-support-distributed-ehcache ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ cas-client-support-distributed-ehcache ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/apereo/java-cas-client/408206584/cas-client-support-distributed-ehcache/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ cas-client-support-distributed-ehcache ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ cas-client-support-distributed-ehcache ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/apereo/java-cas-client/408206584/cas-client-support-distributed-ehcache/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ cas-client-support-distributed-ehcache ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /root/workspace/apereo/java-cas-client/408206584/cas-client-support-distributed-ehcache/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.6:test (default-test) @ cas-client-support-distributed-ehcache ---
+[INFO] Surefire report directory: /root/workspace/apereo/java-cas-client/408206584/cas-client-support-distributed-ehcache/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running EhCacheBackedProxyGrantingTicketStorageImplTests
+[main] WARN net.sf.ehcache.config.ConfigurationFactory - No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/root/./workspace/apereo/java-cas-client/408206584/.m2/net/sf/ehcache/ehcache-core/2.2.0/ehcache-core-2.2.0.jar!/ehcache-failsafe.xml
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.412 sec
+
+Results :
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Jasig CAS Client for Java - Distributed Proxy Storage Support:
+        Memcached 3.5.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ cas-client-support-distributed-memcached ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-banned-dependencies) @ cas-client-support-distributed-memcached ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ cas-client-support-distributed-memcached ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/apereo/java-cas-client/408206584/cas-client-support-distributed-memcached/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ cas-client-support-distributed-memcached ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ cas-client-support-distributed-memcached ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/apereo/java-cas-client/408206584/cas-client-support-distributed-memcached/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ cas-client-support-distributed-memcached ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.6:test (default-test) @ cas-client-support-distributed-memcached ---
+[INFO] No tests to run.
+[INFO] Surefire report directory: /root/workspace/apereo/java-cas-client/408206584/cas-client-support-distributed-memcached/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+There are no tests to run.
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Jasig CAS Client for Java - SAML Protocol Support 3.5.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ cas-client-support-saml ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-banned-dependencies) @ cas-client-support-saml ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ cas-client-support-saml ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/apereo/java-cas-client/408206584/cas-client-support-saml/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ cas-client-support-saml ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ cas-client-support-saml ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/apereo/java-cas-client/408206584/cas-client-support-saml/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ cas-client-support-saml ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 3 source files to /root/workspace/apereo/java-cas-client/408206584/cas-client-support-saml/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.6:test (default-test) @ cas-client-support-saml ---
+[INFO] Surefire report directory: /root/workspace/apereo/java-cas-client/408206584/cas-client-support-saml/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.jasig.cas.client.validation.Saml11TicketValidatorTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.089 sec
+Running org.jasig.cas.client.validation.Saml11TicketValidationFilterTests
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [service] loaded from ServletContext.getInitParameter with value [http://www.jasig.org]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerUrlPrefix] loaded from ServletContext.getInitParameter with value [https://cas.example.com]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [renew] loaded from ServletContext.getInitParameter with value [true]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerUrlPrefix] loaded from ServletContext.getInitParameter with value [https://cas.example.com]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [renew] loaded from ServletContext.getInitParameter with value [true]
+[main] INFO org.jasig.cas.client.configuration.WebXmlConfigurationStrategyImpl - Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [https://cas.example.com]
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.197 sec
+
+Results :
+
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 1
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Jasig CAS Client for Java - Common Tomcat Integration Support 3.5.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ cas-client-integration-tomcat-common ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-banned-dependencies) @ cas-client-integration-tomcat-common ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ cas-client-integration-tomcat-common ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/apereo/java-cas-client/408206584/cas-client-integration-tomcat-common/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ cas-client-integration-tomcat-common ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ cas-client-integration-tomcat-common ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ cas-client-integration-tomcat-common ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /root/workspace/apereo/java-cas-client/408206584/cas-client-integration-tomcat-common/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.6:test (default-test) @ cas-client-integration-tomcat-common ---
+[INFO] Surefire report directory: /root/workspace/apereo/java-cas-client/408206584/cas-client-integration-tomcat-common/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.jasig.cas.client.tomcat.PropertiesCasRealmDelegateTests
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.127 sec
+
+Results :
+
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Jasig CAS Client for Java - Tomcat 6.x Integration 3.5.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ cas-client-integration-tomcat-v6 ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-banned-dependencies) @ cas-client-integration-tomcat-v6 ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ cas-client-integration-tomcat-v6 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/apereo/java-cas-client/408206584/cas-client-integration-tomcat-v6/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ cas-client-integration-tomcat-v6 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ cas-client-integration-tomcat-v6 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/apereo/java-cas-client/408206584/cas-client-integration-tomcat-v6/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ cas-client-integration-tomcat-v6 ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.6:test (default-test) @ cas-client-integration-tomcat-v6 ---
+[INFO] No tests to run.
+[INFO] Surefire report directory: /root/workspace/apereo/java-cas-client/408206584/cas-client-integration-tomcat-v6/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+There are no tests to run.
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Jasig CAS Client for Java - Tomcat 7.x Integration 3.5.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ cas-client-integration-tomcat-v7 ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-banned-dependencies) @ cas-client-integration-tomcat-v7 ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ cas-client-integration-tomcat-v7 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/apereo/java-cas-client/408206584/cas-client-integration-tomcat-v7/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ cas-client-integration-tomcat-v7 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ cas-client-integration-tomcat-v7 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/apereo/java-cas-client/408206584/cas-client-integration-tomcat-v7/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ cas-client-integration-tomcat-v7 ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.6:test (default-test) @ cas-client-integration-tomcat-v7 ---
+[INFO] No tests to run.
+[INFO] Surefire report directory: /root/workspace/apereo/java-cas-client/408206584/cas-client-integration-tomcat-v7/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+There are no tests to run.
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Jasig CAS Client for Java - Tomcat 8.x Integration 3.5.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ cas-client-integration-tomcat-v8 ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-banned-dependencies) @ cas-client-integration-tomcat-v8 ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ cas-client-integration-tomcat-v8 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/apereo/java-cas-client/408206584/cas-client-integration-tomcat-v8/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ cas-client-integration-tomcat-v8 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ cas-client-integration-tomcat-v8 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/apereo/java-cas-client/408206584/cas-client-integration-tomcat-v8/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ cas-client-integration-tomcat-v8 ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.6:test (default-test) @ cas-client-integration-tomcat-v8 ---
+[INFO] No tests to run.
+[INFO] Surefire report directory: /root/workspace/apereo/java-cas-client/408206584/cas-client-integration-tomcat-v8/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+There are no tests to run.
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Jasig CAS Client for Java - Tomcat 8.5.x Integration 3.5.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ cas-client-integration-tomcat-v85 ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-banned-dependencies) @ cas-client-integration-tomcat-v85 ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ cas-client-integration-tomcat-v85 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/apereo/java-cas-client/408206584/cas-client-integration-tomcat-v85/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ cas-client-integration-tomcat-v85 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ cas-client-integration-tomcat-v85 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/apereo/java-cas-client/408206584/cas-client-integration-tomcat-v85/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ cas-client-integration-tomcat-v85 ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.6:test (default-test) @ cas-client-integration-tomcat-v85 ---
+[INFO] No tests to run.
+[INFO] Surefire report directory: /root/workspace/apereo/java-cas-client/408206584/cas-client-integration-tomcat-v85/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+There are no tests to run.
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Jasig CAS Client for Java - Jetty Container Integration 3.5.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ cas-client-integration-jetty ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-banned-dependencies) @ cas-client-integration-jetty ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ cas-client-integration-jetty ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/apereo/java-cas-client/408206584/cas-client-integration-jetty/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ cas-client-integration-jetty ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ cas-client-integration-jetty ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ cas-client-integration-jetty ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /root/workspace/apereo/java-cas-client/408206584/cas-client-integration-jetty/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.6:test (default-test) @ cas-client-integration-jetty ---
+[INFO] Surefire report directory: /root/workspace/apereo/java-cas-client/408206584/cas-client-integration-jetty/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+There are no tests to run.
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
 
 [INFO] ------------------------------------------------------------------------
 [INFO] Reactor Summary:
 [INFO] 
-[INFO] Jasig CAS Client for Java .......................... SUCCESS [  0.750 s]
-[INFO] Jasig CAS Client for Java - Core ................... FAILURE [ 11.071 s]
-[INFO] Jasig CAS Client for Java - Atlassian Integration .. SKIPPED
-[INFO] Jasig CAS Client for Java - JBoss Integration ...... SKIPPED
-[INFO] Jasig CAS Client for Java - Distributed Proxy Storage Support: EhCache SKIPPED
+[INFO] Jasig CAS Client for Java .......................... SUCCESS [  0.545 s]
+[INFO] Jasig CAS Client for Java - Core ................... SUCCESS [  8.438 s]
+[INFO] Jasig CAS Client for Java - Atlassian Integration .. SUCCESS [  0.906 s]
+[INFO] Jasig CAS Client for Java - JBoss Integration ...... SUCCESS [  0.422 s]
+[INFO] Jasig CAS Client for Java - Distributed Proxy Storage Support: EhCache SUCCESS [  0.854 s]
 [INFO] Jasig CAS Client for Java - Distributed Proxy Storage Support:
-        Memcached SKIPPED
-[INFO] Jasig CAS Client for Java - SAML Protocol Support .. SKIPPED
-[INFO] Jasig CAS Client for Java - Common Tomcat Integration Support SKIPPED
-[INFO] Jasig CAS Client for Java - Tomcat 6.x Integration . SKIPPED
-[INFO] Jasig CAS Client for Java - Tomcat 7.x Integration . SKIPPED
-[INFO] Jasig CAS Client for Java - Tomcat 8.x Integration . SKIPPED
-[INFO] Jasig CAS Client for Java - Tomcat 8.5.x Integration SKIPPED
-[INFO] Jasig CAS Client for Java - Jetty Container Integration SKIPPED
+        Memcached SUCCESS [  0.412 s]
+[INFO] Jasig CAS Client for Java - SAML Protocol Support .. SUCCESS [  0.899 s]
+[INFO] Jasig CAS Client for Java - Common Tomcat Integration Support SUCCESS [  0.618 s]
+[INFO] Jasig CAS Client for Java - Tomcat 6.x Integration . SUCCESS [  0.451 s]
+[INFO] Jasig CAS Client for Java - Tomcat 7.x Integration . SUCCESS [  0.419 s]
+[INFO] Jasig CAS Client for Java - Tomcat 8.x Integration . SUCCESS [  0.450 s]
+[INFO] Jasig CAS Client for Java - Tomcat 8.5.x Integration SUCCESS [  0.446 s]
+[INFO] Jasig CAS Client for Java - Jetty Container Integration SUCCESS [  0.800 s]
 [INFO] ------------------------------------------------------------------------
-[INFO] BUILD FAILURE
+[INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 12.366 s
-[INFO] Finished at: 2018-10-10T09:02:09+02:00
-[INFO] Final Memory: 26M/492M
+[INFO] Total time: 16.234 s
+[INFO] Finished at: 2018-10-10T09:02:57+02:00
+[INFO] Final Memory: 27M/478M
 [INFO] ------------------------------------------------------------------------
-[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.6:test (default-test) on project cas-client-core: There are test failures.
-[ERROR] 
-[ERROR] Please refer to /root/workspace/apereo/java-cas-client/408206584/cas-client-core/target/surefire-reports for the individual test results.
-[ERROR] -> [Help 1]
-[ERROR] 
-[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
-[ERROR] Re-run Maven using the -X switch to enable full debug logging.
-[ERROR] 
-[ERROR] For more information about the errors and possible solutions, please read the following articles:
-[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
-[ERROR] 
-[ERROR] After correcting the problems, you can resume the build with the command
-[ERROR]   mvn <goals> -rf :cas-client-core
