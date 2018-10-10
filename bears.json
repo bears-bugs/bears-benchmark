@@ -1,0 +1,152 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 967, 
+      "numberRunning": 968, 
+      "numberFailing": 1, 
+      "numberErroring": 0, 
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError", 
+          "isError": false, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 2
+    }, 
+    "failingModule": "/root/workspace/INRIA/spoon/189186902", 
+    "failureDetails": [
+      {
+        "failureName": "java.lang.AssertionError", 
+        "detail": "expected:<(unknown file)> but was:<(/root/workspace/INRIA/spoon/189186902/src/test/java/spoon/test/position/testclasses/Foo.java:3)>", 
+        "isError": false, 
+        "testMethod": "defaultConstructorPositionTest", 
+        "testClass": "spoon.test.position.PositionTest"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 6, 
+        "numberRunning": 7, 
+        "testClass": "spoon.test.position.PositionTest", 
+        "numberFailing": 1, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/INRIA/spoon/builds/189233591", 
+      "date": "Jan 5, 2017 5:20:38 PM", 
+      "id": 189233591
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/INRIA/spoon/builds/189186902", 
+      "date": "Jan 5, 2017 2:58:41 PM", 
+      "id": 189186902
+    }
+  }, 
+  "repository": {
+    "name": "INRIA/spoon", 
+    "url": "https://github.com/INRIA/spoon", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 14176513
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/INRIA/spoon/commit/bf0652c5a3dddb0322ff2b471071ffecce7b7c70", 
+      "sha": "bf0652c5a3dddb0322ff2b471071ffecce7b7c70", 
+      "branchName": "master", 
+      "date": "Jan 5, 2017 5:11:54 PM", 
+      "repoName": "INRIA/spoon"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/INRIA/spoon/commit/af9ecca3acc9eab0c78f75491f5218beaac17486", 
+      "sha": "af9ecca3acc9eab0c78f75491f5218beaac17486", 
+      "branchName": "master", 
+      "date": "Jan 5, 2017 2:49:59 PM", 
+      "repoName": "INRIA/spoon"
+    }
+  }, 
+  "bugName": "INRIA-spoon-189186902-189233591", 
+  "version": "latest", 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 1, 
+      "numberDeleted": 1
+    }
+  }, 
+  "type": "passing_passing", 
+  "bugId": "Bears-27", 
+  "projectMetrics": {
+    "numberSourceFiles": 446, 
+    "numberLibrariesFailingModule": 9, 
+    "numberTestFiles": 459, 
+    "numberModules": 1
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 126159672, 
+      "hostName": "local", 
+      "totalMemory": 245366784, 
+      "numberCPU": 4
+    }, 
+    "reproductionDateEnd": "Oct 10, 2018 8:43:38 PM", 
+    "projectRootPomPath": "./workspace/INRIA/spoon/189186902/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          0, 
+          0, 
+          0, 
+          0, 
+          69
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 69
+      }, 
+      "testing": {
+        "stepDurations": [
+          257
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 257
+      }, 
+      "cloning": {
+        "stepDurations": [
+          17
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 17
+      }
+    }, 
+    "reproductionDateBeginning": "Oct 10, 2018 8:32:30 PM", 
+    "totalDuration": 662
+  }
+}
