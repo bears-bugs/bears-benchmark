@@ -1,0 +1,152 @@
+/* *********************************************************************** *
+ * project: org.matsim.*
+ *                                                                         *
+ * *********************************************************************** *
+ *                                                                         *
+ * copyright       : (C) 2017 by the members listed in the COPYING,        *
+ *                   LICENSE and WARRANTY file.                            *
+ * email           : info at matsim dot org                                *
+ *                                                                         *
+ * *********************************************************************** *
+ *                                                                         *
+ *   This program is free software; you can redistribute it and/or modify  *
+ *   it under the terms of the GNU General Public License as published by  *
+ *   the Free Software Foundation; either version 2 of the License, or     *
+ *   (at your option) any later version.                                   *
+ *   See also COPYING, LICENSE and WARRANTY file                           *
+ *                                                                         *
+ * *********************************************************************** */
+
+/**
+ *
+ */
+package org.matsim.contrib.drt.run;
+
+import java.util.Arrays;
+import java.util.function.Function;
+
+import org.apache.log4j.Logger;
+import org.matsim.api.core.v01.Scenario;
+import org.matsim.api.core.v01.TransportMode;
+import org.matsim.contrib.drt.analysis.DrtAnalysisModule;
+import org.matsim.contrib.drt.optimizer.DrtOptimizer;
+import org.matsim.contrib.drt.optimizer.insertion.DefaultUnplannedRequestInserter;
+import org.matsim.contrib.drt.optimizer.insertion.ParallelPathDataProvider;
+import org.matsim.contrib.drt.routing.DrtRoute;
+import org.matsim.contrib.drt.routing.DrtRouteFactory;
+import org.matsim.contrib.drt.routing.DrtStageActivityType;
+import org.matsim.contrib.dvrp.run.DvrpModule;
+import org.matsim.contrib.otfvis.OTFVisLiveModule;
+import org.matsim.core.config.Config;
+import org.matsim.core.config.groups.PlanCalcScoreConfigGroup.ActivityParams;
+import org.matsim.core.config.groups.PlanCalcScoreConfigGroup.ModeParams;
+import org.matsim.core.controler.Controler;
+import org.matsim.core.population.routes.RouteFactories;
+import org.matsim.core.scenario.ScenarioUtils;
+
+/**
+ * @author jbischoff
+ * @author michalm (Michal Maciejewski)
+ */
+public final class DrtControlerCreator {
+
+	/**
+	 * Creates a standard scenario and adds a DRT route factory to the default route factories.
+	 *
+	 * @param config
+	 * @return
+	 */
+	public static Scenario createScenarioWithDrtRouteFactory(Config config) {
+		Scenario scenario = ScenarioUtils.createScenario(config);
+		RouteFactories routeFactories = scenario.getPopulation().getFactory().getRouteFactories();
+		routeFactories.setRouteFactory(DrtRoute.class, new DrtRouteFactory());
+		return scenario;
+	}
+
+	/**
+	 * Creates a controller in one step.
+	 *
+	 * @param config
+	 * @param otfvis
+	 * @return
+	 */
+	public static Controler createControler(Config config, boolean otfvis) {
+		return createControler(config, otfvis, cfg -> {
+			Scenario scenario = createScenarioWithDrtRouteFactory(cfg);
+			ScenarioUtils.loadScenario(scenario);
+			return scenario;
+		});
+	}
+
+	/**
+	 * Creates a controller in one step. Allows for customised scenario creation.
+	 *
+	 * @param config
+	 * @param otfvis
+	 * @param scenarioLoader
+	 * @return
+	 */
+	public static Controler createControler(Config config, boolean otfvis, Function<Config, Scenario> scenarioLoader) {
+		adjustDrtConfig(config);
+		Scenario scenario = scenarioLoader.apply(config);
+		Controler controler = new Controler(scenario);
+		addDrtAsSingleDvrpModeToControler(controler);
+		if (otfvis) {
+			controler.addOverridingModule(new OTFVisLiveModule());
+		}
+		return controler;
+	}
+
+	public static void addDrtAsSingleDvrpModeToControler(Controler controler) {
+		addDrtWithoutDvrpModuleToControler(controler);
+		controler.addOverridingModule(DvrpModule.createModule(DrtConfigGroup.get(controler.getConfig()).getMode(),
+				Arrays.asList(DrtOptimizer.class, DefaultUnplannedRequestInserter.class,
+						ParallelPathDataProvider.class)));
+	}
+
+	public static void addDrtWithoutDvrpModuleToControler(Controler controler) {
+		controler.addQSimModule(new DrtQSimModule());
+		controler.addOverridingModule(new DrtModule());
+		controler.addOverridingModule(new DrtAnalysisModule());
+	}
+
+	public static void adjustDrtConfig(Config config) {
+		DrtConfigGroup drtCfg = DrtConfigGroup.get(config);
+		if (drtCfg.getOperationalScheme().equals(DrtConfigGroup.OperationalScheme.stopbased)) {
+			if (config.planCalcScore().getActivityParams(DrtStageActivityType.DRT_STAGE_ACTIVITY) == null) {
+				addDrtStageActivityParams(config);
+			}
+		}
+		if (!config.planCalcScore().getModes().containsKey(DrtStageActivityType.DRT_WALK)) {
+			addDrtWalkModeParams(config);
+		}
+
+		config.addConfigConsistencyChecker(new DrtConfigConsistencyChecker());
+		config.checkConsistency();
+	}
+
+	private static void addDrtStageActivityParams(Config config) {
+		ActivityParams params = new ActivityParams(DrtStageActivityType.DRT_STAGE_ACTIVITY);
+		params.setTypicalDuration(1);
+		params.setScoringThisActivityAtAll(false);
+		config.planCalcScore()
+				.getScoringParametersPerSubpopulation()
+				.values()
+				.forEach(k -> k.addActivityParams(params));
+		config.planCalcScore().addActivityParams(params);
+		Logger.getLogger(DrtControlerCreator.class)
+				.info("drt interaction scoring parameters not set. Adding default values (activity will not be scored).");
+	}
+
+	private static void addDrtWalkModeParams(Config config) {
+		ModeParams drtWalk = new ModeParams(DrtStageActivityType.DRT_WALK);
+		ModeParams walk = config.planCalcScore().getModes().get(TransportMode.walk);
+		drtWalk.setConstant(walk.getConstant());
+		drtWalk.setMarginalUtilityOfDistance(walk.getMarginalUtilityOfDistance());
+		drtWalk.setMarginalUtilityOfTraveling(walk.getMarginalUtilityOfTraveling());
+		drtWalk.setMonetaryDistanceRate(walk.getMonetaryDistanceRate());
+		config.planCalcScore().getScoringParametersPerSubpopulation().values().forEach(k -> k.addModeParams(drtWalk));
+		Logger.getLogger(DrtControlerCreator.class)
+				.info("drt_walk scoring parameters not set. Adding default values (same as for walk mode).");
+	}
+}
