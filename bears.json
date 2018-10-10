@@ -1,0 +1,149 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 2010, 
+      "numberRunning": 2011, 
+      "numberFailing": 1, 
+      "numberErroring": 0, 
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError", 
+          "isError": false, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 2
+    }, 
+    "failingModule": "/root/workspace/spring-projects/spring-data-commons/207045952", 
+    "failureDetails": [
+      {
+        "failureName": "java.lang.AssertionError", 
+        "detail": "\nExpected: is <true>\n     but: was <false>", 
+        "isError": false, 
+        "testClass": "org.springframework.data.mapping.SimpleTypeHolderUnitTests", 
+        "testMethod": "considersJavaLangTypesSimple"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 10, 
+        "numberRunning": 11, 
+        "testClass": "org.springframework.data.mapping.SimpleTypeHolderUnitTests", 
+        "numberFailing": 1, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/spring-projects/spring-data-commons/builds/208573806", 
+      "date": "Mar 7, 2017 1:57:07 PM", 
+      "id": 208573806
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/spring-projects/spring-data-commons/builds/207045952", 
+      "date": "Mar 2, 2017 7:21:31 PM", 
+      "id": 207045952
+    }
+  }, 
+  "repository": {
+    "name": "spring-projects/spring-data-commons", 
+    "url": "https://github.com/spring-projects/spring-data-commons", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 1072614
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/spring-projects/spring-data-commons/commit/6ef41f6a7625e67bebbd42bb6239c1b7382467ef", 
+      "sha": "6ef41f6a7625e67bebbd42bb6239c1b7382467ef", 
+      "branchName": "1.13.x", 
+      "date": "Mar 7, 2017 1:45:38 PM", 
+      "repoName": "spring-projects/spring-data-commons"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/spring-projects/spring-data-commons/commit/b46b84d4bf8acdfda56f01e3d6f2f5368cae9990", 
+      "sha": "b46b84d4bf8acdfda56f01e3d6f2f5368cae9990", 
+      "branchName": "1.13.x", 
+      "date": "Mar 2, 2017 4:57:41 PM", 
+      "repoName": "spring-projects/spring-data-commons"
+    }
+  }, 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 0, 
+      "numberDeleted": 4
+    }
+  }, 
+  "type": "passing_passing", 
+  "projectMetrics": {
+    "numberSourceFiles": 378, 
+    "numberLibrariesFailingModule": 71, 
+    "numberTestFiles": 231, 
+    "numberModules": 1
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 111524648, 
+      "hostName": "local", 
+      "totalMemory": 238551040, 
+      "numberCPU": 4
+    }, 
+    "reproductionDateEnd": "Oct 10, 2018 6:59:01 AM", 
+    "projectRootPomPath": "./workspace/spring-projects/spring-data-commons/207045952/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          0, 
+          1, 
+          0, 
+          0, 
+          172
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 173
+      }, 
+      "testing": {
+        "stepDurations": [
+          31
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 31
+      }, 
+      "cloning": {
+        "stepDurations": [
+          7
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 7
+      }
+    }, 
+    "reproductionDateBeginning": "Oct 10, 2018 6:53:45 AM", 
+    "totalDuration": 311
+  }
+}
