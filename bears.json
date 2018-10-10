@@ -1,0 +1,149 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 1998, 
+      "numberRunning": 1999, 
+      "numberFailing": 1, 
+      "numberErroring": 0, 
+      "failures": [
+        {
+          "failureName": "org.mockito.exceptions.verification.NeverWantedButInvoked", 
+          "isError": false, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 2
+    }, 
+    "failingModule": "/root/workspace/spring-projects/spring-data-commons/191588471", 
+    "failureDetails": [
+      {
+        "failureName": "org.mockito.exceptions.verification.NeverWantedButInvoked", 
+        "detail": "\npublisher.publishEvent(<any>);\nNever wanted here:\n-> at org.springframework.data.repository.core.support.EventPublishingRepositoryProxyPostProcessorUnitTests.publishesEventsAfterSaveInvocation(EventPublishingRepositoryProxyPostProcessorUnitTests.java:190)\nBut invoked here:\n-> at org.springframework.data.repository.core.support.EventPublishingRepositoryProxyPostProcessor$EventPublishingMethod.publishEventsFrom(EventPublishingRepositoryProxyPostProcessor.java:166)\n", 
+        "isError": false, 
+        "testClass": "org.springframework.data.repository.core.support.EventPublishingRepositoryProxyPostProcessorUnitTests", 
+        "testMethod": "publishesEventsAfterSaveInvocation"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 11, 
+        "numberRunning": 12, 
+        "testClass": "org.springframework.data.repository.core.support.EventPublishingRepositoryProxyPostProcessorUnitTests", 
+        "numberFailing": 1, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/spring-projects/spring-data-commons/builds/191604001", 
+      "date": "Jan 13, 2017 1:19:52 PM", 
+      "id": 191604001
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/spring-projects/spring-data-commons/builds/191588471", 
+      "date": "Jan 13, 2017 11:33:09 AM", 
+      "id": 191588471
+    }
+  }, 
+  "repository": {
+    "name": "spring-projects/spring-data-commons", 
+    "url": "https://github.com/spring-projects/spring-data-commons", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 1072614
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/spring-projects/spring-data-commons/commit/9ada55b050607e6000905ea9093e3026cacfacfe", 
+      "sha": "9ada55b050607e6000905ea9093e3026cacfacfe", 
+      "branchName": "master", 
+      "date": "Jan 13, 2017 12:18:25 PM", 
+      "repoName": "spring-projects/spring-data-commons"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/spring-projects/spring-data-commons/commit/389b88626434a1f1cd24d740f010e9fed220fdd0", 
+      "sha": "389b88626434a1f1cd24d740f010e9fed220fdd0", 
+      "branchName": "master", 
+      "date": "Jan 13, 2017 11:29:12 AM", 
+      "repoName": "spring-projects/spring-data-commons"
+    }
+  }, 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 2, 
+      "numberDeleted": 4
+    }
+  }, 
+  "type": "passing_passing", 
+  "projectMetrics": {
+    "numberSourceFiles": 378, 
+    "numberLibrariesFailingModule": 71, 
+    "numberTestFiles": 226, 
+    "numberModules": 1
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 113397536, 
+      "hostName": "local", 
+      "totalMemory": 238551040, 
+      "numberCPU": 4
+    }, 
+    "reproductionDateEnd": "Oct 10, 2018 7:08:01 PM", 
+    "projectRootPomPath": "./workspace/spring-projects/spring-data-commons/191588471/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          0, 
+          1, 
+          0, 
+          0, 
+          166
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 167
+      }, 
+      "testing": {
+        "stepDurations": [
+          40
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 40
+      }, 
+      "cloning": {
+        "stepDurations": [
+          8
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 8
+      }
+    }, 
+    "reproductionDateBeginning": "Oct 10, 2018 7:02:31 PM", 
+    "totalDuration": 325
+  }
+}
