@@ -1,0 +1,152 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 11, 
+      "numberRunning": 12, 
+      "numberFailing": 0, 
+      "numberErroring": 1, 
+      "failures": [
+        {
+          "failureName": "java.lang.NumberFormatException", 
+          "isError": true, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 0
+    }, 
+    "failingModule": "/root/workspace/kmehrunes/valuestreams/438682914", 
+    "failureDetails": [
+      {
+        "failureName": "java.lang.NumberFormatException", 
+        "detail": "For input string: \"a\"", 
+        "isError": true, 
+        "testMethod": "basicUsage", 
+        "testClass": "PipelineTests"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 1, 
+        "numberRunning": 2, 
+        "testClass": "PipelineTests", 
+        "numberFailing": 0, 
+        "numberErroring": 1, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/kmehrunes/valuestreams/builds/439585987", 
+      "date": "Oct 10, 2018 1:10:25 PM", 
+      "id": 439585987
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/kmehrunes/valuestreams/builds/438682914", 
+      "date": "Oct 8, 2018 5:25:03 PM", 
+      "id": 438682914
+    }
+  }, 
+  "repository": {
+    "name": "kmehrunes/valuestreams", 
+    "url": "https://github.com/kmehrunes/valuestreams", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 148899028
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/kmehrunes/valuestreams/commit/e9d52b5221079373033876d8b7a24277a1388568", 
+      "sha": "e9d52b5221079373033876d8b7a24277a1388568", 
+      "branchName": "master", 
+      "date": "Oct 10, 2018 1:05:41 PM", 
+      "repoName": "kmehrunes/valuestreams"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/kmehrunes/valuestreams/commit/7ab21ffddc91744488f4459caaedb617872a5c9e", 
+      "sha": "7ab21ffddc91744488f4459caaedb617872a5c9e", 
+      "branchName": "master", 
+      "date": "Oct 8, 2018 5:23:17 PM", 
+      "repoName": "kmehrunes/valuestreams"
+    }
+  }, 
+  "bugName": "kmehrunes-valuestreams-438682914-439585987", 
+  "version": "latest", 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 11, 
+      "numberDeleted": 11
+    }
+  }, 
+  "type": "passing_passing", 
+  "bugId": "Bears-224", 
+  "projectMetrics": {
+    "numberSourceFiles": 14, 
+    "numberLibrariesFailingModule": 11, 
+    "numberTestFiles": 5, 
+    "numberModules": 1
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 299904696, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 393740288, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Oct 10, 2018 1:46:20 PM", 
+    "projectRootPomPath": "./workspace/kmehrunes/valuestreams/438682914/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          0, 
+          0, 
+          0, 
+          0, 
+          20
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 20
+      }, 
+      "testing": {
+        "stepDurations": [
+          9
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 9
+      }, 
+      "cloning": {
+        "stepDurations": [
+          1
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 1
+      }
+    }, 
+    "reproductionDateBeginning": "Oct 10, 2018 1:45:19 PM", 
+    "totalDuration": 58
+  }
+}
