@@ -1,0 +1,152 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 153, 
+      "numberRunning": 154, 
+      "numberFailing": 1, 
+      "numberErroring": 0, 
+      "failures": [
+        {
+          "failureName": "junit.framework.ComparisonFailure", 
+          "isError": false, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 0
+    }, 
+    "failingModule": "/root/workspace/apereo/java-cas-client/408206584/cas-client-core", 
+    "failureDetails": [
+      {
+        "failureName": "junit.framework.ComparisonFailure", 
+        "detail": "null expected:<...//www.my.server.com/[app/]hello/hithere/> but was:<...//www.my.server.com/[]hello/hithere/>", 
+        "isError": false, 
+        "testMethod": "testConstructServiceUrlWithServerNameContainingPathAndSchema", 
+        "testClass": "org.jasig.cas.client.util.CommonUtilsTests"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 25, 
+        "numberRunning": 26, 
+        "testClass": "org.jasig.cas.client.util.CommonUtilsTests", 
+        "numberFailing": 1, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/apereo/java-cas-client/builds/439486928", 
+      "date": "Oct 10, 2018 8:59:34 AM", 
+      "id": 439486928
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/apereo/java-cas-client/builds/408206584", 
+      "date": "Jul 25, 2018 10:12:15 PM", 
+      "id": 408206584
+    }
+  }, 
+  "repository": {
+    "name": "apereo/java-cas-client", 
+    "url": "https://github.com/apereo/java-cas-client", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 3645037
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/apereo/java-cas-client/commit/82c21161b9ef7abf0001ecfcd8800e669bd54b43", 
+      "sha": "82c21161b9ef7abf0001ecfcd8800e669bd54b43", 
+      "branchName": "master", 
+      "date": "Oct 10, 2018 8:22:17 AM", 
+      "repoName": "apereo/java-cas-client"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/apereo/java-cas-client/commit/ee9dcc61cdaab8ce9b9d50dddea06a31bd363529", 
+      "sha": "ee9dcc61cdaab8ce9b9d50dddea06a31bd363529", 
+      "branchName": "master", 
+      "date": "Jul 25, 2018 9:17:05 PM", 
+      "repoName": "apereo/java-cas-client"
+    }
+  }, 
+  "bugName": "apereo-java-cas-client-408206584-439486928", 
+  "version": "latest", 
+  "projectMetrics": {
+    "numberSourceFiles": 163, 
+    "numberLibrariesFailingModule": 20, 
+    "numberTestFiles": 40, 
+    "numberModules": 12
+  }, 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 2, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 21, 
+      "numberDeleted": 10
+    }
+  }, 
+  "bugId": "Bears-197", 
+  "type": "passing_passing", 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 318225856, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 389545984, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Oct 10, 2018 9:03:00 AM", 
+    "projectRootPomPath": "./workspace/apereo/java-cas-client/408206584/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          0, 
+          1, 
+          0, 
+          0, 
+          116
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 117
+      }, 
+      "testing": {
+        "stepDurations": [
+          16
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 16
+      }, 
+      "cloning": {
+        "stepDurations": [
+          3
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 3
+      }
+    }, 
+    "reproductionDateBeginning": "Oct 10, 2018 8:59:53 AM", 
+    "totalDuration": 181
+  }
+}
