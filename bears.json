@@ -1,0 +1,152 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 1569, 
+      "numberRunning": 1570, 
+      "numberFailing": 0, 
+      "numberErroring": 1, 
+      "failures": [
+        {
+          "failureName": "com.fasterxml.jackson.databind.JsonMappingException", 
+          "isError": true, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 0
+    }, 
+    "failingModule": "/root/workspace/FasterXML/jackson-databind/176912167", 
+    "failureDetails": [
+      {
+        "failureName": "com.fasterxml.jackson.databind.JsonMappingException", 
+        "detail": "Could not find creator property with name 'intField' (in class com.fasterxml.jackson.databind.creators.Creator1476Test$SimplePojo)\n at [Source: { \"intField\": 1, \"stringField\": \"foo\" }; line: 1, column: 1]", 
+        "isError": true, 
+        "testMethod": "testConstructorChoice", 
+        "testClass": "com.fasterxml.jackson.databind.creators.Creator1476Test"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 0, 
+        "numberRunning": 1, 
+        "testClass": "com.fasterxml.jackson.databind.creators.Creator1476Test", 
+        "numberFailing": 0, 
+        "numberErroring": 1, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/FasterXML/jackson-databind/builds/190405643", 
+      "date": "Jan 9, 2017 10:46:51 PM", 
+      "id": 190405643
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/FasterXML/jackson-databind/builds/176912167", 
+      "date": "Nov 18, 2016 4:09:26 AM", 
+      "id": 176912167
+    }
+  }, 
+  "repository": {
+    "name": "FasterXML/jackson-databind", 
+    "url": "https://github.com/FasterXML/jackson-databind", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 3038937
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/FasterXML/jackson-databind/commit/d44600d3750e5dba9fac68aee7248ed2a80a2225", 
+      "sha": "d44600d3750e5dba9fac68aee7248ed2a80a2225", 
+      "branchName": "2.7", 
+      "date": "Jan 9, 2017 10:42:27 PM", 
+      "repoName": "FasterXML/jackson-databind"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/FasterXML/jackson-databind/commit/002a9a3e9b98ebebf53e43aed0536d3c50851c84", 
+      "sha": "002a9a3e9b98ebebf53e43aed0536d3c50851c84", 
+      "branchName": "2.7", 
+      "date": "Nov 18, 2016 4:05:35 AM", 
+      "repoName": "FasterXML/jackson-databind"
+    }
+  }, 
+  "bugName": "FasterXML-jackson-databind-176912167-190405643", 
+  "version": "latest", 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 30, 
+      "numberDeleted": 24
+    }
+  }, 
+  "type": "passing_passing", 
+  "bugId": "Bears-1", 
+  "projectMetrics": {
+    "numberSourceFiles": 389, 
+    "numberLibrariesFailingModule": 14, 
+    "numberTestFiles": 362, 
+    "numberModules": 1
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 172426376, 
+      "hostName": "local", 
+      "totalMemory": 396886016, 
+      "numberCPU": 4
+    }, 
+    "reproductionDateEnd": "Oct 10, 2018 6:44:09 PM", 
+    "projectRootPomPath": "./workspace/FasterXML/jackson-databind/176912167/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          0, 
+          0, 
+          0, 
+          0, 
+          51
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 51
+      }, 
+      "testing": {
+        "stepDurations": [
+          31
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 31
+      }, 
+      "cloning": {
+        "stepDurations": [
+          57
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 57
+      }
+    }, 
+    "reproductionDateBeginning": "Oct 10, 2018 6:41:02 PM", 
+    "totalDuration": 181
+  }
+}
