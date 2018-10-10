@@ -1,0 +1,152 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 1693, 
+      "numberRunning": 1694, 
+      "numberFailing": 0, 
+      "numberErroring": 1, 
+      "failures": [
+        {
+          "failureName": "com.fasterxml.jackson.databind.JsonMappingException", 
+          "isError": true, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 0
+    }, 
+    "failingModule": "/root/workspace/FasterXML/jackson-databind/203042777", 
+    "failureDetails": [
+      {
+        "failureName": "com.fasterxml.jackson.databind.JsonMappingException", 
+        "detail": "[no message for java.lang.NullPointerException]", 
+        "isError": true, 
+        "testMethod": "testConcurrentMaps", 
+        "testClass": "com.fasterxml.jackson.databind.ser.TestMapSerialization"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 13, 
+        "numberRunning": 14, 
+        "testClass": "com.fasterxml.jackson.databind.ser.TestMapSerialization", 
+        "numberFailing": 0, 
+        "numberErroring": 1, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/FasterXML/jackson-databind/builds/203306015", 
+      "date": "Feb 20, 2017 3:55:22 AM", 
+      "id": 203306015
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/FasterXML/jackson-databind/builds/203042777", 
+      "date": "Feb 19, 2017 12:18:29 AM", 
+      "id": 203042777
+    }
+  }, 
+  "repository": {
+    "name": "FasterXML/jackson-databind", 
+    "url": "https://github.com/FasterXML/jackson-databind", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 3038937
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/FasterXML/jackson-databind/commit/64967c410514ec8a94bb11bb26d6a37fafafc14b", 
+      "sha": "64967c410514ec8a94bb11bb26d6a37fafafc14b", 
+      "branchName": "2.8", 
+      "date": "Feb 20, 2017 3:47:15 AM", 
+      "repoName": "FasterXML/jackson-databind"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/FasterXML/jackson-databind/commit/dc02ceac1c3d0939ddf8692f62be52da0e1a242b", 
+      "sha": "dc02ceac1c3d0939ddf8692f62be52da0e1a242b", 
+      "branchName": "2.8", 
+      "date": "Feb 19, 2017 12:14:01 AM", 
+      "repoName": "FasterXML/jackson-databind"
+    }
+  }, 
+  "bugName": "FasterXML-jackson-databind-203042777-203306015", 
+  "version": "latest", 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 3, 
+      "numberDeleted": 17
+    }
+  }, 
+  "type": "passing_passing", 
+  "bugId": "Bears-8", 
+  "projectMetrics": {
+    "numberSourceFiles": 397, 
+    "numberLibrariesFailingModule": 17, 
+    "numberTestFiles": 385, 
+    "numberModules": 1
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 249634072, 
+      "hostName": "local", 
+      "totalMemory": 340787200, 
+      "numberCPU": 4
+    }, 
+    "reproductionDateEnd": "Oct 10, 2018 6:31:00 AM", 
+    "projectRootPomPath": "./workspace/FasterXML/jackson-databind/203042777/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          0, 
+          0, 
+          0, 
+          0, 
+          48
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 48
+      }, 
+      "testing": {
+        "stepDurations": [
+          41
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 41
+      }, 
+      "cloning": {
+        "stepDurations": [
+          45
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 45
+      }
+    }, 
+    "reproductionDateBeginning": "Oct 10, 2018 6:27:44 AM", 
+    "totalDuration": 190
+  }
+}
