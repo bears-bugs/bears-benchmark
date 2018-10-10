@@ -1,0 +1,152 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 1721, 
+      "numberRunning": 1722, 
+      "numberFailing": 0, 
+      "numberErroring": 1, 
+      "failures": [
+        {
+          "failureName": "com.fasterxml.jackson.databind.exc.InvalidFormatException", 
+          "isError": true, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 0
+    }, 
+    "failingModule": "/root/workspace/FasterXML/jackson-databind/233857275", 
+    "failureDetails": [
+      {
+        "failureName": "com.fasterxml.jackson.databind.exc.InvalidFormatException", 
+        "detail": "Can not deserialize value of type java.util.UUID from String \"not a uuid!\": not a valid textual representation\n at [Source: \"not a uuid!\"; line: 1, column: 1]", 
+        "isError": true, 
+        "testMethod": "testWeirdStringHandling", 
+        "testClass": "com.fasterxml.jackson.databind.filter.ProblemHandlerTest"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 8, 
+        "numberRunning": 9, 
+        "testClass": "com.fasterxml.jackson.databind.filter.ProblemHandlerTest", 
+        "numberFailing": 0, 
+        "numberErroring": 1, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/FasterXML/jackson-databind/builds/234147085", 
+      "date": "May 19, 2017 10:12:31 PM", 
+      "id": 234147085
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/FasterXML/jackson-databind/builds/233857275", 
+      "date": "May 19, 2017 3:39:30 AM", 
+      "id": 233857275
+    }
+  }, 
+  "repository": {
+    "name": "FasterXML/jackson-databind", 
+    "url": "https://github.com/FasterXML/jackson-databind", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 3038937
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/FasterXML/jackson-databind/commit/9a083ad56b20711eab368a7818fb079a870feb93", 
+      "sha": "9a083ad56b20711eab368a7818fb079a870feb93", 
+      "branchName": "2.8", 
+      "date": "May 19, 2017 10:07:44 PM", 
+      "repoName": "FasterXML/jackson-databind"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/FasterXML/jackson-databind/commit/edaa4ad8204dfda985d3c74ffe542c9eb67a201d", 
+      "sha": "edaa4ad8204dfda985d3c74ffe542c9eb67a201d", 
+      "branchName": "2.8", 
+      "date": "May 19, 2017 3:34:35 AM", 
+      "repoName": "FasterXML/jackson-databind"
+    }
+  }, 
+  "bugName": "FasterXML-jackson-databind-233857275-234147085", 
+  "version": "latest", 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 6, 
+      "numberDeleted": 6
+    }
+  }, 
+  "type": "passing_passing", 
+  "bugId": "Bears-20", 
+  "projectMetrics": {
+    "numberSourceFiles": 397, 
+    "numberLibrariesFailingModule": 17, 
+    "numberTestFiles": 396, 
+    "numberModules": 1
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 270497080, 
+      "hostName": "local", 
+      "totalMemory": 377487360, 
+      "numberCPU": 4
+    }, 
+    "reproductionDateEnd": "Oct 10, 2018 3:20:44 PM", 
+    "projectRootPomPath": "./workspace/FasterXML/jackson-databind/233857275/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          0, 
+          0, 
+          0, 
+          0, 
+          45
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 45
+      }, 
+      "testing": {
+        "stepDurations": [
+          37
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 37
+      }, 
+      "cloning": {
+        "stepDurations": [
+          49
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 49
+      }
+    }, 
+    "reproductionDateBeginning": "Oct 10, 2018 3:17:16 PM", 
+    "totalDuration": 201
+  }
+}
