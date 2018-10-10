@@ -1,0 +1,150 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 1766, 
+      "numberRunning": 1768, 
+      "numberFailing": 0, 
+      "numberErroring": 2, 
+      "failures": [
+        {
+          "failureName": "org.matsim.core.utils.io.UncheckedIOException", 
+          "isError": true, 
+          "occurrences": 2
+        }
+      ], 
+      "numberSkipping": 9
+    }, 
+    "failingModule": "/root/workspace/matsim-org/matsim/439539681/contribs/signals", 
+    "failureDetails": [
+      {
+        "failureName": "org.matsim.core.utils.io.UncheckedIOException", 
+        "detail": "java.io.FileNotFoundException: testAmberTimes_v1.0.xml", 
+        "isError": true, 
+        "testClass": "org.matsim.contrib.signals.TravelTimeFourWaysTest", 
+        "testMethod": "testTrafficLightIntersection4armsWithUTurn"
+      }, 
+      {
+        "failureName": "org.matsim.core.utils.io.UncheckedIOException", 
+        "detail": "java.io.FileNotFoundException: testAmberTimes_v1.0.xml", 
+        "isError": true, 
+        "testClass": "org.matsim.contrib.signals.TravelTimeFourWaysTest", 
+        "testMethod": "testTrafficLightIntersection4arms"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 0, 
+        "numberRunning": 2, 
+        "testClass": "org.matsim.contrib.signals.TravelTimeFourWaysTest", 
+        "numberFailing": 0, 
+        "numberErroring": 2, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/matsim-org/matsim/builds/439592768", 
+      "date": "Oct 10, 2018 3:18:03 PM", 
+      "id": 439592768
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/matsim-org/matsim/builds/439539681", 
+      "date": "Oct 10, 2018 11:45:53 AM", 
+      "id": 439539681
+    }
+  }, 
+  "repository": {
+    "name": "matsim-org/matsim", 
+    "url": "https://github.com/matsim-org/matsim", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 39812341
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/matsim-org/matsim/commit/b112b0739b9c04720bdbd35bf1f283492acd49fb", 
+      "sha": "b112b0739b9c04720bdbd35bf1f283492acd49fb", 
+      "branchName": "mr_improvements", 
+      "date": "Oct 10, 2018 1:29:14 PM", 
+      "repoName": "matsim-org/matsim"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/matsim-org/matsim/commit/c0d08a831bed77a4e9f2c1366815444b824abf27", 
+      "sha": "c0d08a831bed77a4e9f2c1366815444b824abf27", 
+      "branchName": "mr_improvements", 
+      "date": "Oct 10, 2018 11:03:25 AM", 
+      "repoName": "matsim-org/matsim"
+    }
+  }, 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 2, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 18, 
+      "numberDeleted": 21
+    }
+  }, 
+  "type": "failing_passing", 
+  "projectMetrics": {
+    "numberSourceFiles": 3124, 
+    "numberLibrariesFailingModule": 67, 
+    "numberTestFiles": 648, 
+    "numberModules": 33
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 1363103472, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 2337275904, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Oct 10, 2018 4:55:33 PM", 
+    "projectRootPomPath": "./workspace/matsim-org/matsim/439539681/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          3, 
+          1325
+        ], 
+        "stepNames": [
+          "CheckoutBuggyBuildCandidate", 
+          "BuildProjectBuggyBuildCandidate"
+        ], 
+        "nbSteps": 2, 
+        "totalDuration": 1328
+      }, 
+      "testing": {
+        "stepDurations": [
+          1113
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidate"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 1113
+      }, 
+      "cloning": {
+        "stepDurations": [
+          160
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 160
+      }
+    }, 
+    "reproductionDateBeginning": "Oct 10, 2018 3:46:09 PM", 
+    "totalDuration": 4160
+  }
+}
