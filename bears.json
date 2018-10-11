@@ -1,0 +1,152 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 91, 
+      "numberRunning": 92, 
+      "numberFailing": 1, 
+      "numberErroring": 0, 
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError", 
+          "isError": false, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 1
+    }, 
+    "failingModule": "/root/workspace/vert-x3/vertx-jdbc-client/438227334", 
+    "failureDetails": [
+      {
+        "failureName": "java.lang.AssertionError", 
+        "detail": "expected:<1> but was:<0>", 
+        "isError": false, 
+        "testMethod": "testInsertOneShot", 
+        "testClass": "io.vertx.ext.jdbc.JDBCClientTest"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 42, 
+        "numberRunning": 43, 
+        "testClass": "io.vertx.ext.jdbc.JDBCClientTest", 
+        "numberFailing": 1, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/vert-x3/vertx-jdbc-client/builds/440167311", 
+      "date": "Oct 11, 2018 4:23:15 PM", 
+      "id": 440167311
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/vert-x3/vertx-jdbc-client/builds/438227334", 
+      "date": "Oct 7, 2018 1:45:22 PM", 
+      "id": 438227334
+    }
+  }, 
+  "repository": {
+    "name": "vert-x3/vertx-jdbc-client", 
+    "url": "https://github.com/vert-x3/vertx-jdbc-client", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 26814908
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/vert-x3/vertx-jdbc-client/commit/351d8a489ba9cca11ef6a148e4d6aa9bae0ce8e0", 
+      "sha": "351d8a489ba9cca11ef6a148e4d6aa9bae0ce8e0", 
+      "branchName": "master", 
+      "date": "Oct 11, 2018 4:17:21 PM", 
+      "repoName": "vert-x3/vertx-jdbc-client"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/vert-x3/vertx-jdbc-client/commit/9f3f6ececa3527614163aede9b27fe4766e0d550", 
+      "sha": "9f3f6ececa3527614163aede9b27fe4766e0d550", 
+      "branchName": "master", 
+      "date": "Oct 7, 2018 12:09:50 PM", 
+      "repoName": "vert-x3/vertx-jdbc-client"
+    }
+  }, 
+  "bugName": "vert-x3-vertx-jdbc-client-438227334-440167311", 
+  "version": "latest", 
+  "projectMetrics": {
+    "numberSourceFiles": 23, 
+    "numberLibrariesFailingModule": 35, 
+    "numberTestFiles": 23, 
+    "numberModules": 1
+  }, 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 2, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 46, 
+      "numberDeleted": 17
+    }
+  }, 
+  "bugId": "Bears-247", 
+  "type": "passing_passing", 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 308363424, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 396361728, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Oct 11, 2018 4:26:17 PM", 
+    "projectRootPomPath": "./workspace/vert-x3/vertx-jdbc-client/438227334/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          0, 
+          2, 
+          1, 
+          0, 
+          42
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 45
+      }, 
+      "testing": {
+        "stepDurations": [
+          41
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 41
+      }, 
+      "cloning": {
+        "stepDurations": [
+          2
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 2
+      }
+    }, 
+    "reproductionDateBeginning": "Oct 11, 2018 4:23:38 PM", 
+    "totalDuration": 154
+  }
+}
