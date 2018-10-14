@@ -1,0 +1,7 @@
+{# used by CoreFunctionsTest.testParentFunction #}
+{% extends "templates/function/template.parent.peb" %}
+child text
+{% block head %}
+	{{ parent() }}
+	child head
+{% endblock head %}

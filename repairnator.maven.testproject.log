@@ -1,0 +1,188 @@
+[INFO] Scanning for projects...
+[INFO] Inspecting build with total of 8 modules...
+[INFO] Installing Nexus Staging features:
+[INFO]   ... total of 8 executions of maven-deploy-plugin replaced with nexus-staging-maven-plugin
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Pebble Project
+[INFO] Pebble
+[INFO] Pebble Spring Project
+[INFO] Pebble Integration with Spring 3
+[INFO] Pebble Integration with Spring 4.x
+[INFO] Pebble Integration with Spring 5.x
+[INFO] Pebble Spring Boot Starter
+[INFO] Pebble Spring Boot 2 Starter
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Pebble Project 3.0.6-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Pebble 3.0.6-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ pebble ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/PebbleTemplates/pebble/435286638/pebble/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.2:compile (default-compile) @ pebble ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ pebble ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 103 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.2:testCompile (default-testCompile) @ pebble ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.21.0:test (default-test) @ pebble ---
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.21.0/surefire-junit4-2.21.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.21.0/surefire-junit4-2.21.0.pom (4 KB at 5.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.21.0/surefire-providers-2.21.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.21.0/surefire-providers-2.21.0.pom (3 KB at 68.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.21.0/surefire-junit4-2.21.0.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.21.0/surefire-junit4-2.21.0.jar (83 KB at 950.1 KB/sec)
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.mitchellbosecke.pebble.WritingTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.986 s - in com.mitchellbosecke.pebble.WritingTest
+[INFO] Running com.mitchellbosecke.pebble.ParsingOdditiesTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.041 s - in com.mitchellbosecke.pebble.ParsingOdditiesTest
+[INFO] Running com.mitchellbosecke.pebble.ForTest
+[ERROR] Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.002 s <<< FAILURE! - in com.mitchellbosecke.pebble.ForTest
+[ERROR] testInvalidIdentifierName(com.mitchellbosecke.pebble.ForTest)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError: Exception not thrown
+	at com.mitchellbosecke.pebble.ForTest.testInvalidIdentifierName(ForTest.java:62)
+
+[INFO] Running com.mitchellbosecke.pebble.ErrorReportingTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.068 s - in com.mitchellbosecke.pebble.ErrorReportingTest
+[INFO] Running com.mitchellbosecke.pebble.node.IfNodeTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 s - in com.mitchellbosecke.pebble.node.IfNodeTest
+[INFO] Running com.mitchellbosecke.pebble.node.expression.AndExpressionTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 s - in com.mitchellbosecke.pebble.node.expression.AndExpressionTest
+[INFO] Running com.mitchellbosecke.pebble.node.expression.UnaryNotExpressionTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 s - in com.mitchellbosecke.pebble.node.expression.UnaryNotExpressionTest
+[INFO] Running com.mitchellbosecke.pebble.node.expression.OrExpressionTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in com.mitchellbosecke.pebble.node.expression.OrExpressionTest
+[INFO] Running com.mitchellbosecke.pebble.node.ForNodeTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 s - in com.mitchellbosecke.pebble.node.ForNodeTest
+[INFO] Running com.mitchellbosecke.pebble.macro.TestMacroCalls
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 s - in com.mitchellbosecke.pebble.macro.TestMacroCalls
+[INFO] Running com.mitchellbosecke.pebble.StringInterpolationTest
+[INFO] Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 s - in com.mitchellbosecke.pebble.StringInterpolationTest
+[INFO] Running com.mitchellbosecke.pebble.EnumEqualsTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in com.mitchellbosecke.pebble.EnumEqualsTest
+[INFO] Running com.mitchellbosecke.pebble.RenderSingleBlockTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 s - in com.mitchellbosecke.pebble.RenderSingleBlockTest
+[INFO] Running com.mitchellbosecke.pebble.TernaryExpressionTest
+[INFO] Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.053 s - in com.mitchellbosecke.pebble.TernaryExpressionTest
+[INFO] Running com.mitchellbosecke.pebble.CompilerTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 s - in com.mitchellbosecke.pebble.CompilerTest
+[INFO] Running com.mitchellbosecke.pebble.CoreTestsTest
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 s - in com.mitchellbosecke.pebble.CoreTestsTest
+[INFO] Running com.mitchellbosecke.pebble.CoreFunctionsTest
+[INFO] Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.042 s - in com.mitchellbosecke.pebble.CoreFunctionsTest
+[INFO] Running com.mitchellbosecke.pebble.IncludeWithParameterTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in com.mitchellbosecke.pebble.IncludeWithParameterTest
+[INFO] Running com.mitchellbosecke.pebble.MacroTest
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 s - in com.mitchellbosecke.pebble.MacroTest
+[INFO] Running com.mitchellbosecke.pebble.TestParallelParsing
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.305 s - in com.mitchellbosecke.pebble.TestParallelParsing
+[INFO] Running com.mitchellbosecke.pebble.ExtendingPebbleTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in com.mitchellbosecke.pebble.ExtendingPebbleTest
+[INFO] Running com.mitchellbosecke.pebble.utils.PathUtilsTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in com.mitchellbosecke.pebble.utils.PathUtilsTest
+[INFO] Running com.mitchellbosecke.pebble.I18nExtensionTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 s - in com.mitchellbosecke.pebble.I18nExtensionTest
+[INFO] Running com.mitchellbosecke.pebble.MapSyntaxTest
+[INFO] Tests run: 30, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.064 s - in com.mitchellbosecke.pebble.MapSyntaxTest
+[INFO] Running com.mitchellbosecke.pebble.RenderWithoutEndBlockTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in com.mitchellbosecke.pebble.RenderWithoutEndBlockTest
+[INFO] Running com.mitchellbosecke.pebble.GetAttributeTest
+[INFO] Tests run: 51, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.086 s - in com.mitchellbosecke.pebble.GetAttributeTest
+[INFO] Running com.mitchellbosecke.pebble.AttributeSubscriptSyntaxTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in com.mitchellbosecke.pebble.AttributeSubscriptSyntaxTest
+[INFO] Running com.mitchellbosecke.pebble.StrictModeTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in com.mitchellbosecke.pebble.StrictModeTest
+[INFO] Running com.mitchellbosecke.pebble.ContextTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 s - in com.mitchellbosecke.pebble.ContextTest
+[INFO] Running com.mitchellbosecke.pebble.ArraySyntaxTest
+[INFO] Tests run: 53, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.07 s - in com.mitchellbosecke.pebble.ArraySyntaxTest
+[INFO] Running com.mitchellbosecke.pebble.NewlineTrimmingTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in com.mitchellbosecke.pebble.NewlineTrimmingTest
+[INFO] Running com.mitchellbosecke.pebble.LogicTest
+[INFO] Tests run: 47, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.086 s - in com.mitchellbosecke.pebble.LogicTest
+[INFO] Running com.mitchellbosecke.pebble.CacheTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.751 s - in com.mitchellbosecke.pebble.CacheTest
+[INFO] Running com.mitchellbosecke.pebble.CoreTagsTest
+00:31:16.916 INFO  c.m.pebble.node.ParallelNode - The parallel tag was used [beginning {% parallel %}{{ slowObject.first }}{% endparallel %}:1] but no ExecutorService was provided. The parallel tag will be ignored and it's contents will be rendered in sequence with the rest of the template.
+[INFO] Tests run: 47, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.09 s - in com.mitchellbosecke.pebble.CoreTagsTest
+[INFO] Running com.mitchellbosecke.pebble.ConcurrencyTest
+00:31:18.148 INFO  c.m.pebble.node.ParallelNode - The parallel tag was used [template:1] but no ExecutorService was provided. The parallel tag will be ignored and it's contents will be rendered in sequence with the rest of the template.
+00:31:18.157 INFO  c.m.pebble.node.ParallelNode - The parallel tag was used [{% for i in [1,2,3,4,5,6,7,8,9,10] %}{% parallel %}{{test(i)}}{% endparallel %}{% endfor %}:1] but no ExecutorService was provided. The parallel tag will be ignored and it's contents will be rendered in sequence with the rest of the template.
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.527 s - in com.mitchellbosecke.pebble.ConcurrencyTest
+[INFO] Running com.mitchellbosecke.pebble.ArgumentsNodeTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in com.mitchellbosecke.pebble.ArgumentsNodeTest
+[INFO] Running com.mitchellbosecke.pebble.LoaderTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in com.mitchellbosecke.pebble.LoaderTest
+[INFO] Running com.mitchellbosecke.pebble.OverrideCoreExtensionTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in com.mitchellbosecke.pebble.OverrideCoreExtensionTest
+[INFO] Running com.mitchellbosecke.pebble.EscaperExtensionTest
+[INFO] Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 s - in com.mitchellbosecke.pebble.EscaperExtensionTest
+[INFO] Running com.mitchellbosecke.pebble.OverloadedMethodTest
+[INFO] Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 s - in com.mitchellbosecke.pebble.OverloadedMethodTest
+[INFO] Running com.mitchellbosecke.pebble.extension.escaper.RawFilterTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in com.mitchellbosecke.pebble.extension.escaper.RawFilterTest
+[INFO] Running com.mitchellbosecke.pebble.CoreFiltersTest
+[INFO] Tests run: 75, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.129 s - in com.mitchellbosecke.pebble.CoreFiltersTest
+[INFO] Running com.mitchellbosecke.pebble.TestRelativePath
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in com.mitchellbosecke.pebble.TestRelativePath
+[INFO] Running com.mitchellbosecke.pebble.WhitespaceControlTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in com.mitchellbosecke.pebble.WhitespaceControlTest
+[INFO] Running com.mitchellbosecke.pebble.ScopeChainTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.mitchellbosecke.pebble.ScopeChainTest
+[INFO] Running com.mitchellbosecke.pebble.InheritanceTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 s - in com.mitchellbosecke.pebble.InheritanceTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   ForTest.testInvalidIdentifierName:62 Exception not thrown
+[INFO] 
+[ERROR] Tests run: 599, Failures: 1, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] Pebble Project ..................................... SUCCESS [  0.006 s]
+[INFO] Pebble ............................................. FAILURE [  9.804 s]
+[INFO] Pebble Spring Project .............................. SKIPPED
+[INFO] Pebble Integration with Spring 3 ................... SKIPPED
+[INFO] Pebble Integration with Spring 4.x ................. SKIPPED
+[INFO] Pebble Integration with Spring 5.x ................. SKIPPED
+[INFO] Pebble Spring Boot Starter ......................... SKIPPED
+[INFO] Pebble Spring Boot 2 Starter ....................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 11.574 s
+[INFO] Finished at: 2018-10-15T00:31:19+02:00
+[INFO] Final Memory: 23M/598M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.21.0:test (default-test) on project pebble: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/PebbleTemplates/pebble/435286638/pebble/target/surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :pebble

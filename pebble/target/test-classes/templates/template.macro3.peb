@@ -1,0 +1,4 @@
+{# used by CoreTagsTest.testMacroBeingFiltered #}
+{{ returnItem("hello") | upper }}
+
+{% macro returnItem(item) %}{{ item }}{% endmacro %}
