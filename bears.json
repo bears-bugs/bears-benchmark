@@ -1,0 +1,149 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 598, 
+      "numberRunning": 599, 
+      "numberFailing": 1, 
+      "numberErroring": 0, 
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError", 
+          "isError": false, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 0
+    }, 
+    "failingModule": "/root/workspace/PebbleTemplates/pebble/435286638/pebble", 
+    "failureDetails": [
+      {
+        "failureName": "java.lang.AssertionError", 
+        "detail": "Exception not thrown", 
+        "isError": false, 
+        "testClass": "com.mitchellbosecke.pebble.ForTest", 
+        "testMethod": "testInvalidIdentifierName"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 2, 
+        "numberRunning": 3, 
+        "testClass": "com.mitchellbosecke.pebble.ForTest", 
+        "numberFailing": 1, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/PebbleTemplates/pebble/builds/441417724", 
+      "date": "Oct 15, 2018 12:29:42 AM", 
+      "id": 441417724
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/PebbleTemplates/pebble/builds/435286638", 
+      "date": "Sep 30, 2018 6:13:10 PM", 
+      "id": 435286638
+    }
+  }, 
+  "repository": {
+    "name": "PebbleTemplates/pebble", 
+    "url": "https://github.com/PebbleTemplates/pebble", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 7334654
+  }, 
+  "projectMetrics": {
+    "numberSourceFiles": 260, 
+    "numberLibrariesFailingModule": 8, 
+    "numberTestFiles": 87, 
+    "numberModules": 7
+  }, 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 3, 
+      "numberDeleted": 1
+    }
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/PebbleTemplates/pebble/commit/c0e5bde637293132a7a983f95083fcde96465ae0", 
+      "sha": "c0e5bde637293132a7a983f95083fcde96465ae0", 
+      "branchName": "master", 
+      "date": "Oct 15, 2018 12:25:56 AM", 
+      "repoName": "PebbleTemplates/pebble"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/PebbleTemplates/pebble/commit/5b5e65ca693da52d77493510a9a1c76cfd47f45a", 
+      "sha": "5b5e65ca693da52d77493510a9a1c76cfd47f45a", 
+      "branchName": "master", 
+      "date": "Sep 30, 2018 6:09:42 PM", 
+      "repoName": "PebbleTemplates/pebble"
+    }
+  }, 
+  "type": "passing_passing", 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 359891784, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 485490688, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Oct 15, 2018 12:32:37 AM", 
+    "projectRootPomPath": "./workspace/PebbleTemplates/pebble/435286638/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          0, 
+          1, 
+          0, 
+          0, 
+          49
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 50
+      }, 
+      "testing": {
+        "stepDurations": [
+          15
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 15
+      }, 
+      "cloning": {
+        "stepDurations": [
+          10
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 10
+      }
+    }, 
+    "reproductionDateBeginning": "Oct 15, 2018 12:30:04 AM", 
+    "totalDuration": 148
+  }
+}
