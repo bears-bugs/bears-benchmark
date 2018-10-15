@@ -1,0 +1,191 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bears Charts</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style/style.css">
+
+    <script type="text/javascript">
+			function loadData(callback) {
+				var bugs = null;
+				var classification = null;
+
+				function end() {
+					if (bugs != null && classification != null) {
+						callback(classification, bugs);
+					}
+				}
+				var xhttp = new XMLHttpRequest();
+				xhttp.onreadystatechange = function() {
+					if (this.readyState == 4 && this.status == 200) {
+						bugs = JSON.parse(this.responseText);
+						end();
+					}
+				};
+				xhttp.open("GET", "data/bears-bugs.json", true);
+				xhttp.send();
+
+				xhttp = new XMLHttpRequest();
+				xhttp.onreadystatechange = function() {
+					if (this.readyState == 4 && this.status == 200) {
+						classification = JSON.parse(this.responseText);
+						end();
+					}
+				};
+				xhttp.open("GET", "data/classification.json", true);
+				xhttp.send();
+			}
+			loadData(function (classifications, bugs) {
+
+				function getLabelData (obj, sort) {
+					if (sort ==null) {
+						sort = true;
+					} 
+					var labels = Object.keys(obj)
+					if (sort) {
+						labels = labels.sort(function (a, b) {
+							return obj[b] - obj[a];
+						});
+					}
+					var data = Object.values(obj);
+					if (sort) {
+						data = data.sort(function (a, b) {
+							return b - a;
+						});
+					}
+					return {labels: labels, data:data};
+				}
+
+				var nbProjects = {};
+				for (var i in bugs) {
+					var bug = bugs[i];
+					var project = bug.repository.name;
+
+					if (nbProjects[project] == null) {
+						nbProjects[project] = 0;
+					}
+					nbProjects[project]++;
+				}
+
+				var nbProjectsLD = getLabelData(nbProjects);
+				new Chart(document.getElementById("bugPerProject").getContext('2d'), {
+					type: 'horizontalBar',
+					data: {
+						labels: nbProjectsLD.labels,
+						datasets: [{
+							label: '# of Bugs',
+							data: nbProjectsLD.data,
+							backgroundColor: '#24292E',
+							borderWidth: 0
+						}]
+					},
+				});
+
+				var nbExceptions = {};
+				for (var i in bugs) {
+					var bug = bugs[i];
+
+                    var tmpNbExceptions = [];
+                    var k = 0;
+					for (var j in bug.tests.failureDetails) {
+                        var exception = bug.tests.failureDetails[j].failureName.substring(bug.tests.failureDetails[j].failureName.lastIndexOf(".") + 1);
+
+                        if (tmpNbExceptions.indexOf(exception) === -1) {
+                            tmpNbExceptions[k] = exception;
+                            k++;
+                        }
+					}
+
+					for (var j in tmpNbExceptions) {
+					    var exception = tmpNbExceptions[j];
+
+					    if (nbExceptions[exception] == null) {
+                            nbExceptions[exception] = 0;
+                        }
+                        nbExceptions[exception]++;
+					}
+				}
+
+				var nbExceptionsLD =  getLabelData(nbExceptions);
+				new Chart(document.getElementById("bugPerException").getContext('2d'), {
+					type: 'horizontalBar',
+					data: {
+						labels: nbExceptionsLD.labels,
+						datasets: [{
+							label: '# of Bugs',
+							data: nbExceptionsLD.data,
+							backgroundColor: '#24292E',
+							borderWidth: 0
+						}]
+					},
+				});
+			});
+
+    </script>
+
+    <style>
+			#wrapper {
+				padding: 0;
+			}
+			@media(min-width:768px) {
+    			.navbar-header {
+    				left: 0px;
+    				padding-left: 10vw;
+    			}
+    		}
+    		#page-wrapper {
+    			position: relative;
+    			width:80vw;
+    			padding-top: 50px;
+				margin: auto;
+    		}
+			.chart-container {
+				position: relative;
+				width:80vw;
+				margin: auto;
+			}
+			.grid-chart {
+				width: 380px;
+				float: left;
+			}
+
+    </style>
+</head>
+<body>
+<div id="wrapper">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="navbar-header">
+            <h2>Bears Charts
+                <a href="http://bears-bugs.github.io/bears-benchmark"><i class="fa fa-table"
+                                                                           aria-hidden="true"></i></a>
+                <a href="https://github.com/bears-bugs/bears-benchmark"><i class="fa fa-github"
+                                                                             aria-hidden="true"></i></a></h2>
+        </div>
+    </nav>
+    <div id="page-wrapper">
+        <h2>Number of bugs per project</h2>
+        <div class="chart-container">
+            <canvas id="bugPerProject" width="400" height="200"></canvas>
+        </div>
+        <h2>Number of bugs per exception</h2>
+        <div class="chart-container">
+            <canvas id="bugPerException" width="400" height="200"></canvas>
+        </div>
+    </div>
+</div>
+</body>
+</html>

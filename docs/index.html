@@ -1,0 +1,208 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en" ng-app="bears-bugs" ng-controller="mainController">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-5954162-27"></script>
+    <script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+    </script>
+
+    <meta charset="UTF-8">
+    <title>{{pageTitle}}</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/diff2html/2.3.1/diff2html.min.css">
+    <link rel="stylesheet" href="style/style.css">
+
+
+    <!-- JS -->
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular-animate.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular-touch.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular-route.js"></script>
+    <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-2.5.0.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/angu-fixed-header-table@1.2.1/angu-fixed-header-table.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/diff2html/2.3.1/diff2html.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/diff2html/2.3.1/diff2html-ui.min.js"></script>
+
+
+    <script src="js/app.js"></script>
+</head>
+<body keypress-events>
+<div id="wrapper">
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="navbar-header">
+            <h2>Bears bugs (showing {{filteredBug.length}})
+                <a href="http://bears-bugs.github.io/bears-benchmark/charts.html"><i class="fa fa-bar-chart"
+                                                                                       aria-hidden="true"></i></a>
+                <a href="https://github.com/bears-bugs/bears-benchmark">
+                    <i class="fa fa-github" aria-hidden="true"></i></a></h2>
+        </div>
+        <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul id="menu" class="nav navbar-nav side-nav">
+                <li>
+                    <h3>Filters</h3>
+                </li>
+                <li>
+                    <div>
+                        Match
+                        <label><input type="radio" name="match" value="any" ng-model="match"> Any</label>
+                        <label><input type="radio" name="match" value="all" ng-model="match"> All</label>
+                        filters
+                    </div>
+                </li>
+                <li ng-repeat="(topFilter, filters) in classifications">
+                    <h4>> {{ topFilter }}</h4>
+                    <ul class="nav">
+                        <li ng-repeat="(key,values) in filters">
+                            <a href="#" ng-click="submenu1 = !submenu1">
+                                <h5> {{ key }}</h5><i class="fa fa-fw fa-angle-down pull-right"
+                                                      style="margin-top:-16px;"></i></a>
+                            <ul class="collapse" uib-collapse="!submenu1">
+                                <li ng-repeat="(vKey,value) in values">
+                                    <label for="{{ vKey }}" ng-class="{'actived': filter[vKey]}"><input type="checkbox"
+                                                                                                        id="{{ vKey }}"
+                                                                                                        ng-model="filter[vKey]"
+                                                                                                        ng-click="clickFilter(vKey)">{{value.name}}
+                                        ({{ countBugs(vKey, value) }})</label>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </nav>
+
+    <div id="page-wrapper">
+        <div class="container-fluid">
+            <div class="row" id="main">
+                <section class="filters" ng-show="filteredBug.length != bugs.length">
+                    Match {{match}} of these filter(s):
+                    <span class="filter" ng-repeat="(k,v) in filter" ng-if="v" ng-click="filter[k]=false">{{filterName(k)}} <i
+                            class="fa fa-fw fa-times"></i></span>
+                </section>
+                <table fixed-header id="mainTable" class="table table-striped">
+                    <thead>
+                    <tr>
+                        <th>
+                            <a href="#" ng-click="sort('bug.bugId')">
+                                Bug ID
+                                <span ng-show="sortType == 'bug.bugId' && sortReverse" class="fa fa-caret-down"></span>
+                                <span ng-show="sortType == 'bug.bugId' && !sortReverse" class="fa fa-caret-up"></span>
+                            </a>
+                        </th>
+                        <th>
+                            <a href="#" ng-click="sort('bug.repository.name')">
+                                Project
+                                <span ng-show="sortType == 'bug.repository.name' && sortReverse"
+                                      class="fa fa-caret-down"></span>
+                                <span ng-show="sortType == 'bug.repository.name' && !sortReverse"
+                                      class="fa fa-caret-up"></span>
+                            </a>
+                        </th>
+                        <th style="text-align:center;">
+                            <a href="#" ng-click="sort('bug.builds.buggyBuild.id')">
+                                Buggy build
+                                <span ng-show="sortType == 'bug.builds.buggyBuild.id' && sortReverse"
+                                      class="fa fa-caret-down"></span>
+                                <span ng-show="sortType == 'bug.builds.buggyBuild.id' && !sortReverse"
+                                      class="fa fa-caret-up"></span>
+                            </a>
+                        </th>
+                        <th style="text-align:center;">
+                            <a href="#" ng-click="sort('bug.builds.fixerBuild.id')">
+                                Patched build
+                                <span ng-show="sortType == 'bug.builds.fixerBuild.id' && sortReverse"
+                                      class="fa fa-caret-down"></span>
+                                <span ng-show="sortType == 'bug.builds.fixerBuild.id' && !sortReverse"
+                                      class="fa fa-caret-up"></span>
+                            </a>
+                        </th>
+                        <th style="text-align:center;">
+                            <a href="#" ng-click="sort('bug.tests.overallMetrics.numberFailing')">
+                                #Test failure
+                                <span ng-show="sortType == 'bug.tests.overallMetrics.numberFailing' && sortReverse"
+                                      class="fa fa-caret-down"></span>
+                                <span ng-show="sortType == 'bug.tests.overallMetrics.numberFailing' && !sortReverse"
+                                      class="fa fa-caret-up"></span>
+                            </a>
+                        </th>
+                        <th style="text-align:center;">
+                            <a href="#" ng-click="sort('bug.tests.overallMetrics.numberErroring')">
+                                #Test in error
+                                <span ng-show="sortType == 'bug.tests.overallMetrics.numberErroring' && sortReverse"
+                                      class="fa fa-caret-down"></span>
+                                <span ng-show="sortType == 'bug.tests.overallMetrics.numberErroring' && !sortReverse"
+                                      class="fa fa-caret-up"></span>
+                            </a>
+                        </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr ng-repeat="bug in bugs| orderBy:sortType:sortReverse| filter:bugsFilter as filteredBug"
+                        ng-click="openBug(bug)">
+                        <td>{{ bug.bugId }}</td>
+                        <td><a href="{{ bug.repository.url }}">{{ bug.repository.name }}</a></td>
+                        <td style="text-align:center;"><a href="{{ bug.builds.buggyBuild.url }}">{{
+                            bug.builds.buggyBuild.id }}</a></td>
+                        <td style="text-align:center;"><a href="{{ bug.builds.fixerBuild.url }}">{{
+                            bug.builds.fixerBuild.id }}</a></td>
+                        <td style="text-align:center;">{{ bug.tests.overallMetrics.numberFailing }}</td>
+                        <td style="text-align:center;">{{ bug.tests.overallMetrics.numberErroring }}</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- /.container-fluid -->
+    </div>
+    <!-- /#page-wrapper -->
+</div><!-- /#wrapper -->
+<span ng-controller="bugController"></span>
+</body>
+<script type="text/ng-template" id="modelBug.html">
+    <div class="modal-header">
+        <a ng-click="$ctrl.previousBug()"><i class="fa fa-arrow-left" aria-hidden="true"></i> Previous Bug</a> | <a
+            ng-click="$ctrl.nextBug()">Next Bug <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+        <h3 class="modal-title" id="modal-title"><a href="{{ $ctrl.bug.repository.url }}">{{ $ctrl.bug.repository.name
+            }}</a> <a href="{{ $ctrl.bug.builds.buggyBuild.url }}">{{ $ctrl.bug.builds.buggyBuild.id }}</a>-<a
+                href="{{ $ctrl.bug.builds.fixerBuild.url }}">{{ $ctrl.bug.builds.fixerBuild.id }}</a></h3>
+        <h5 style="margin-top:10;">Branch in Bears: <a href="{{ $ctrl.bug.branchUrl }}">{{ $ctrl.bug.branchUrl }}</a></h5>
+        <h5 style="margin-top:0;">Original patched commit: <a href="{{ $ctrl.bug.commits.fixerBuild.url }}">{{
+            $ctrl.bug.commits.fixerBuild.url }}</a></h5>
+    </div>
+    <div class="modal-body" id="modal-body">
+        <h4>Human Patch</h4>
+        <div diff></div>
+
+        <h4>Failing Tests</h4>
+        <section ng-repeat="test in $ctrl.bug.tests.failureDetails">
+            <h5>{{test.testClass}}.{{test.testMethod}}</h5>
+            <span>{{test.failureName}}: {{test.detail}}</span><br>
+        </section>
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-primary" type="button" ng-click="$ctrl.ok()">OK</button>
+    </div>
+</script>
+</html>
