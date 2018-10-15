@@ -1,0 +1,66 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building aws-encryption-sdk-java 1.3.6-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ aws-encryption-sdk-java ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/aws/aws-encryption-sdk-java/441438164/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ aws-encryption-sdk-java ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 67 source files to /root/workspace/aws/aws-encryption-sdk-java/441438164/target/classes
+[WARNING] /root/workspace/aws/aws-encryption-sdk-java/441438164/src/main/java/com/amazonaws/encryptionsdk/CryptoOutputStream.java: Some input files use unchecked or unsafe operations.
+[WARNING] /root/workspace/aws/aws-encryption-sdk-java/441438164/src/main/java/com/amazonaws/encryptionsdk/CryptoOutputStream.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ aws-encryption-sdk-java ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/aws/aws-encryption-sdk-java/441438164/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ aws-encryption-sdk-java ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20:test (default-test) @ aws-encryption-sdk-java ---
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.20/surefire-junit4-2.20.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.20/surefire-junit4-2.20.pom (4 KB at 5.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.20/surefire-providers-2.20.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.20/surefire-providers-2.20.pom (3 KB at 62.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.20/surefire-junit4-2.20.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.20/surefire-junit4-2.20.jar (81 KB at 837.6 KB/sec)
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.amazonaws.encryptionsdk.AllTestsSuite
+[ERROR] Tests run: 5726, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 424.685 s <<< FAILURE! - in com.amazonaws.encryptionsdk.AllTestsSuite
+[ERROR] build(com.amazonaws.encryptionsdk.model.DecryptionMaterialsRequestTest)  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.NullPointerException
+	at com.amazonaws.encryptionsdk.model.DecryptionMaterialsRequestTest.build(DecryptionMaterialsRequestTest.java:46)
+
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Errors: 
+[ERROR]   DecryptionMaterialsRequestTest.build:46 NullPointer
+[INFO] 
+[ERROR] Tests run: 5726, Failures: 0, Errors: 1, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 07:14 min
+[INFO] Finished at: 2018-10-16T00:18:20+02:00
+[INFO] Final Memory: 31M/651M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.20:test (default-test) on project aws-encryption-sdk-java: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/aws/aws-encryption-sdk-java/441438164/target/surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
