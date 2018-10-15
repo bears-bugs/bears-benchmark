@@ -1,0 +1,100 @@
+language: bash
+
+sudo: true
+
+env:
+  global:
+    - secure: "J3h7KCN6J0GCKo925eXeZv1Wprhm8i/cIM/QKsmgyOPUfjDe9+jOPQc+Jkya5LKSzRjyXalGbPIV4WUxktcGkoquQCnlTn9RA43WGzwRHHxpI7GYWL/OPhd74Xl1CIrW2BqxedbpA5J6giaOAIAlqK/aky1mpvXi1V3Zrlq6Z/awSVNeQGpD5ulhUPuyNyMex3Y8L2tm727ny+32BstFdf2u4E2HQwz07n/7SBxBbhDuwhPr/6OJTxLrldp+GlKL4NZyNZyI+DoZFbmjrsLz6ln/f7uAeiCqHdM1ID+2nY0pLqCktSUx01DrJ9giyhxKNC/pOZHQYmjdQiwN+Q5TNVS//rdUvn8XIU2j750fqyUn+XRCO4z27ODaBVZOeicNKQtMZJlFxmKYDYP0TTQXzXyhMIRYVY6cmTlojAxBl5oejezzPn9gu9xHGLmFaChR+AQDSnNhzy/LYsYq8vs0ExSn2zurJsMdf8hKFCjqQBIvMLNIvYylMtpn2uJn1bhOpvtxY9Q2l26vD/5l3eiKkIRZz5lkHXsi2lfn8xjaGTqAXTvwRTpGOehYhRRAHDSP2CUx013If0BhR/OtZw1v1ITlg7wEXF0DTb00nni1ZkhmwetgkEKfkztb6JP1W+juajgaWZgAAbzAIeC4DEhdKav2hdcxMZ0mWQcldo04pGk="
+    - DOCKER_TAG=fermadeiral/bears-validation:1.0
+    - BUGGY_COMMIT_MESSAGE_PATTERN="Bug commit"
+    - PATCHED_COMMIT_MESSAGE_PATTERN="Human patch"
+    - TEST_COMMIT_MESSAGE_PATTERN="Changes in the tests"
+    - END_COMMIT_MESSAGE_PATTERN="End of the bug and patch reproduction process"
+    - NEW_BRANCH_NAME=""
+
+jobs:
+  include:
+    - stage: Validation - check the existence and validity of bears.json file
+      if: type = pull_request
+      install: ./.travis_bears/install/install_ajv.sh
+      script: ./.travis_bears/check_pr/check_bears_json_file.sh;
+
+    - stage: Validation - check the existence of mandatory commits and their sequence
+      if: type = pull_request
+      script: ./.travis_bears/check_pr/check_commits.sh;
+
+    - stage: Validation - check the existence of java file in the patched commit
+      if: type = pull_request
+      script: ./.travis_bears/check_pr/check_existence_java_file.sh;
+
+    - stage: Validation - check the existence of build and test log files in the buggy and patched commits
+      if: type = pull_request
+      script: ./.travis_bears/check_pr/check_existence_build_and_test_log_files.sh;
+
+    - stage: Validation - check the non-existence of the bug in Bears
+      if: type = pull_request
+      install: ./.travis_bears/install/install_jq.sh
+      script: ./.travis_bears/check_pr/check_non_existence_bug_in_bears.sh;
+
+    - stage: Validation - run tests with Maven on buggy and patched commits
+      if: type = pull_request
+      services: docker
+      script: ./.travis_bears/check_pr/run_check_with_maven.sh 1
+
+    - stage: Validation - run tests with Maven on buggy and patched commits
+      if: type = pull_request
+      services: docker
+      script: ./.travis_bears/check_pr/run_check_with_maven.sh 0
+
+    - stage: Merge
+      if: type = push
+      install: ./.travis_bears/install/install_jq.sh
+      before_script:
+        - END_COMMIT_ID=$(git log --format=format:%H --grep="$END_COMMIT_MESSAGE_PATTERN");
+          if [ ! -z "$END_COMMIT_ID" ]; then
+            git checkout pr-add-bug;
+            echo "> Last 10 commits:";
+            git log -n 10;
+
+            COMMITTER_USERNAME=$(git log -n 1 --skip 1 --pretty="%cn");
+            COMMITTER_EMAIL=$(git log -n 1 --skip 1 --pretty="%ce");
+            git config --global user.name "$COMMITTER_USERNAME";
+            git config --global user.email "$COMMITTER_EMAIL";
+            git config user.name;
+            git config user.email;
+            git remote add github https://${GH_TOKEN}@github.com/"$TRAVIS_REPO_SLUG".git > /dev/null 2>&1;
+
+            git checkout pr-add-bug;
+            REPO_SLUG=$(jq '.repository.name' bears.json);
+            REPO_SLUG=$(echo "$REPO_SLUG" | sed -e 's/\"//g');
+            REPO_SLUG=$(echo "$REPO_SLUG" | sed -e 's/\//-/g');
+            BUGGY_BUILD_ID=$(jq '.builds.buggyBuild.id' bears.json);
+            PATCHED_BUILD_ID=$(jq '.builds.fixerBuild.id' bears.json);
+            NEW_BRANCH_NAME=$REPO_SLUG-$BUGGY_BUILD_ID-$PATCHED_BUILD_ID;
+            echo "Branch to be created - $NEW_BRANCH_NAME";
+
+            git config --replace-all remote.origin.fetch +refs/heads/*:refs/remotes/origin/*;
+            git fetch;
+          fi
+      script:
+        - END_COMMIT_ID=$(git log --format=format:%H --grep="$END_COMMIT_MESSAGE_PATTERN");
+          if [ ! -z "$END_COMMIT_ID" ]; then
+            ./.travis_bears/add_bug/create_new_branch.sh;
+          fi
+      after_success:
+        - END_COMMIT_ID=$(git log --format=format:%H --grep="$END_COMMIT_MESSAGE_PATTERN");
+          if [ ! -z "$END_COMMIT_ID" ]; then
+            git checkout pr-add-bug;
+            ./.travis_bears/add_bug/update_data.sh;
+          fi
+      after_script:
+        - END_COMMIT_ID=$(git log --format=format:%H --grep="$END_COMMIT_MESSAGE_PATTERN");
+            if [ ! -z "$END_COMMIT_ID" ]; then
+            git stash;
+            git checkout pr-add-bug;
+            ./.travis_bears/add_bug/reset_branch_pr-add-bug.sh;
+          fi
+
+branches:
+  - only:
+    - pr-add-bug
