@@ -1,0 +1,151 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 5725, 
+      "numberRunning": 5726, 
+      "numberFailing": 0, 
+      "numberErroring": 1, 
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException", 
+          "isError": true, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 0
+    }, 
+    "failingModule": "/root/workspace/aws/aws-encryption-sdk-java/441438164", 
+    "failureDetails": [
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "com.amazonaws.encryptionsdk.model.DecryptionMaterialsRequestTest", 
+        "testMethod": "build", 
+        "isError": true
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 0, 
+        "numberRunning": 1, 
+        "testClass": "com.amazonaws.encryptionsdk.model.DecryptionMaterialsRequestTest", 
+        "numberFailing": 0, 
+        "numberErroring": 1, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/aws/aws-encryption-sdk-java/builds/441901187", 
+      "date": "Oct 16, 2018 12:10:13 AM", 
+      "id": 441901187
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/aws/aws-encryption-sdk-java/builds/441438164", 
+      "date": "Oct 15, 2018 2:22:56 AM", 
+      "id": 441438164
+    }
+  }, 
+  "repository": {
+    "name": "aws/aws-encryption-sdk-java", 
+    "url": "https://github.com/aws/aws-encryption-sdk-java", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 53990057
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/aws/aws-encryption-sdk-java/commit/7cca10f14f7436b02e156abd0033cd6f88b02d4d", 
+      "sha": "7cca10f14f7436b02e156abd0033cd6f88b02d4d", 
+      "branchName": "master", 
+      "date": "Oct 16, 2018 12:03:31 AM", 
+      "repoName": "aws/aws-encryption-sdk-java"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/aws/aws-encryption-sdk-java/commit/aa7934a9cd1fb8c30d3c911e4ad8661ae5e3f2f5", 
+      "sha": "aa7934a9cd1fb8c30d3c911e4ad8661ae5e3f2f5", 
+      "branchName": "master", 
+      "date": "Sep 12, 2018 12:07:58 AM", 
+      "repoName": "aws/aws-encryption-sdk-java"
+    }
+  }, 
+  "bugName": "aws-aws-encryption-sdk-java-441438164-441901187", 
+  "version": "latest", 
+  "projectMetrics": {
+    "numberSourceFiles": 67, 
+    "numberLibrariesFailingModule": 122, 
+    "numberTestFiles": 45, 
+    "numberModules": 1
+  }, 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 1, 
+      "numberDeleted": 1
+    }
+  }, 
+  "bugId": "Bears-198", 
+  "type": "passing_passing", 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 298566936, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 363855872, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Oct 16, 2018 12:26:07 AM", 
+    "projectRootPomPath": "./workspace/aws/aws-encryption-sdk-java/441438164/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          0, 
+          0, 
+          0, 
+          0, 
+          35
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 35
+      }, 
+      "testing": {
+        "stepDurations": [
+          438
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 438
+      }, 
+      "cloning": {
+        "stepDurations": [
+          3
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 3
+      }
+    }, 
+    "reproductionDateBeginning": "Oct 16, 2018 12:10:24 AM", 
+    "totalDuration": 938
+  }
+}
