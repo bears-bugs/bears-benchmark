@@ -1,1 +1,155 @@
-[]
+[
+  {
+    "tests": {
+      "overallMetrics": {
+        "numberPassing": 1569, 
+        "numberRunning": 1570, 
+        "numberFailing": 0, 
+        "numberErroring": 1, 
+        "failures": [
+          {
+            "failureName": "com.fasterxml.jackson.databind.JsonMappingException", 
+            "isError": true, 
+            "occurrences": 1
+          }
+        ], 
+        "numberSkipping": 0
+      }, 
+      "failingModule": "/root/workspace/FasterXML/jackson-databind/176912167", 
+      "failureDetails": [
+        {
+          "failureName": "com.fasterxml.jackson.databind.JsonMappingException", 
+          "detail": "Could not find creator property with name 'intField' (in class com.fasterxml.jackson.databind.creators.Creator1476Test$SimplePojo)\n at [Source: { \"intField\": 1, \"stringField\": \"foo\" }; line: 1, column: 1]", 
+          "isError": true, 
+          "testMethod": "testConstructorChoice", 
+          "testClass": "com.fasterxml.jackson.databind.creators.Creator1476Test"
+        }
+      ], 
+      "failingClasses": [
+        {
+          "numberPassing": 0, 
+          "numberRunning": 1, 
+          "testClass": "com.fasterxml.jackson.databind.creators.Creator1476Test", 
+          "numberFailing": 0, 
+          "numberErroring": 1, 
+          "numberSkipping": 0
+        }
+      ]
+    }, 
+    "builds": {
+      "fixerBuild": {
+        "url": "http://travis-ci.org/FasterXML/jackson-databind/builds/190405643", 
+        "date": "Jan 9, 2017 10:46:51 PM", 
+        "id": 190405643
+      }, 
+      "buggyBuild": {
+        "url": "http://travis-ci.org/FasterXML/jackson-databind/builds/176912167", 
+        "date": "Nov 18, 2016 4:09:26 AM", 
+        "id": 176912167
+      }
+    }, 
+    "repository": {
+      "name": "FasterXML-jackson-databind", 
+      "url": "https://github.com/FasterXML/jackson-databind", 
+      "isFork": false, 
+      "pullRequestId": 0, 
+      "isPullRequest": false, 
+      "original": {
+        "url": "", 
+        "name": "", 
+        "githubId": 0
+      }, 
+      "githubId": 3038937
+    }, 
+    "commits": {
+      "fixerBuild": {
+        "url": "http://github.com/FasterXML/jackson-databind/commit/d44600d3750e5dba9fac68aee7248ed2a80a2225", 
+        "sha": "d44600d3750e5dba9fac68aee7248ed2a80a2225", 
+        "branchName": "2.7", 
+        "date": "Jan 9, 2017 10:42:27 PM", 
+        "repoName": "FasterXML/jackson-databind"
+      }, 
+      "buggyBuild": {
+        "url": "http://github.com/FasterXML/jackson-databind/commit/002a9a3e9b98ebebf53e43aed0536d3c50851c84", 
+        "sha": "002a9a3e9b98ebebf53e43aed0536d3c50851c84", 
+        "branchName": "2.7", 
+        "date": "Nov 18, 2016 4:05:35 AM", 
+        "repoName": "FasterXML/jackson-databind"
+      }
+    }, 
+    "branchUrl": "https://github.com/bears-bugs/bears-benchmark/tree/FasterXML-jackson-databind-176912167-190405643", 
+    "version": "latest", 
+    "patchDiff": {
+      "files": {
+        "numberAdded": 0, 
+        "numberChanged": 1, 
+        "numberDeleted": 0
+      }, 
+      "lines": {
+        "numberAdded": 30, 
+        "numberDeleted": 24
+      }
+    }, 
+    "type": "passing_passing", 
+    "bugId": "Bears_1", 
+    "diff": "diff --git a/src/main/java/com/fasterxml/jackson/databind/deser/impl/CreatorCollector.java b/src/main/java/com/fasterxml/jackson/databind/deser/impl/CreatorCollector.java\nindex 8e38f5d..a530e4b 100644\n--- a/src/main/java/com/fasterxml/jackson/databind/deser/impl/CreatorCollector.java\n+++ b/src/main/java/com/fasterxml/jackson/databind/deser/impl/CreatorCollector.java\n@@ -162,36 +162,39 @@ public class CreatorCollector\n             SettableBeanProperty[] injectables)\n     {\n         if (creator.getParameterType(0).isCollectionLikeType()) {\n-            verifyNonDup(creator, C_ARRAY_DELEGATE, explicit);\n-            _arrayDelegateArgs = injectables;\n+            if (verifyNonDup(creator, C_ARRAY_DELEGATE, explicit)) {\n+                _arrayDelegateArgs = injectables;\n+            }\n         } else {\n-            verifyNonDup(creator, C_DELEGATE, explicit);\n-            _delegateArgs = injectables;\n+            if (verifyNonDup(creator, C_DELEGATE, explicit)) {\n+                _delegateArgs = injectables;\n+            }\n         }\n     }\n     \n     public void addPropertyCreator(AnnotatedWithParams creator, boolean explicit,\n             SettableBeanProperty[] properties)\n     {\n-        verifyNonDup(creator, C_PROPS, explicit);\n-        // Better ensure we have no duplicate names either...\n-        if (properties.length > 1) {\n-            HashMap<String,Integer> names = new HashMap<String,Integer>();\n-            for (int i = 0, len = properties.length; i < len; ++i) {\n-                String name = properties[i].getName();\n-                /* [Issue-13]: Need to consider Injectables, which may not have\n-                 *   a name at all, and need to be skipped\n-                 */\n-                if (name.length() == 0 && properties[i].getInjectableValueId() != null) {\n-                    continue;\n-                }\n-                Integer old = names.put(name, Integer.valueOf(i));\n-                if (old != null) {\n-                    throw new IllegalArgumentException(\"Duplicate creator property \\\"\"+name+\"\\\" (index \"+old+\" vs \"+i+\")\");\n+        if (verifyNonDup(creator, C_PROPS, explicit)) {\n+            // Better ensure we have no duplicate names either...\n+            if (properties.length > 1) {\n+                HashMap<String,Integer> names = new HashMap<String,Integer>();\n+                for (int i = 0, len = properties.length; i < len; ++i) {\n+                    String name = properties[i].getName();\n+                    /* [Issue-13]: Need to consider Injectables, which may not have\n+                     *   a name at all, and need to be skipped\n+                     */\n+                    if (name.length() == 0 && properties[i].getInjectableValueId() != null) {\n+                        continue;\n+                    }\n+                    Integer old = names.put(name, Integer.valueOf(i));\n+                    if (old != null) {\n+                        throw new IllegalArgumentException(\"Duplicate creator property \\\"\"+name+\"\\\" (index \"+old+\" vs \"+i+\")\");\n+                    }\n                 }\n             }\n+            _propertyBasedArgs = properties;\n         }\n-        _propertyBasedArgs = properties;\n     }\n \n     public void addIncompeteParameter(AnnotatedParameter parameter) {\n@@ -293,7 +296,10 @@ public class CreatorCollector\n         return member;\n     }\n \n-    protected void verifyNonDup(AnnotatedWithParams newOne, int typeIndex, boolean explicit)\n+    /**\n+     * @return True if specified Creator is to be used\n+     */\n+    protected boolean verifyNonDup(AnnotatedWithParams newOne, int typeIndex, boolean explicit)\n     {\n         final int mask = (1 << typeIndex);\n         _hasNonDefaultCreator = true;\n@@ -301,11 +307,10 @@ public class CreatorCollector\n         // already had an explicitly marked one?\n         if (oldOne != null) {\n             boolean verify;\n-\n             if ((_explicitCreators & mask) != 0) { // already had explicitly annotated, leave as-is\n                 // but skip, if new one not annotated\n                 if (!explicit) {\n-                    return;\n+                    return false;\n                 }\n                 // both explicit: verify\n                 verify = true;\n@@ -327,7 +332,7 @@ public class CreatorCollector\n                 // otherwise, which one to choose?\n                 if (newType.isAssignableFrom(oldType)) {\n                     // new type more generic, use old\n-                    return;\n+                    return false;\n                 }\n                 // new type more specific, use it\n             }\n@@ -336,6 +341,7 @@ public class CreatorCollector\n             _explicitCreators |= mask;\n         }\n         _creators[typeIndex] = _fixAccess(newOne);\n+        return true;\n     }\n \n     /*\n", 
+    "projectMetrics": {
+      "numberSourceFiles": 389, 
+      "numberLibrariesFailingModule": 14, 
+      "numberTestFiles": 362, 
+      "numberModules": 1
+    }, 
+    "reproductionBuggyBuild": {
+      "machineInfo": {
+        "freeMemory": 172426376, 
+        "hostName": "local", 
+        "totalMemory": 396886016, 
+        "numberCPU": 4
+      }, 
+      "reproductionDateEnd": "Oct 10, 2018 6:44:09 PM", 
+      "projectRootPomPath": "./workspace/FasterXML/jackson-databind/176912167/pom.xml", 
+      "processDurations": {
+        "building": {
+          "stepDurations": [
+            0, 
+            0, 
+            0, 
+            0, 
+            51
+          ], 
+          "stepNames": [
+            "CheckoutPatchedBuildCandidate", 
+            "ComputeSourceDir", 
+            "ComputeTestDir", 
+            "CheckoutBuggyBuildCandidateSourceCode", 
+            "BuildProjectBuggyBuildCandidateSourceCode"
+          ], 
+          "nbSteps": 5, 
+          "totalDuration": 51
+        }, 
+        "testing": {
+          "stepDurations": [
+            31
+          ], 
+          "stepNames": [
+            "TestProjectBuggyBuildCandidateSourceCode"
+          ], 
+          "nbSteps": 1, 
+          "totalDuration": 31
+        }, 
+        "cloning": {
+          "stepDurations": [
+            57
+          ], 
+          "stepNames": [
+            "CloneRepository"
+          ], 
+          "nbSteps": 1, 
+          "totalDuration": 57
+        }
+      }, 
+      "reproductionDateBeginning": "Oct 10, 2018 6:41:02 PM", 
+      "totalDuration": 181
+    }
+  }
+]
