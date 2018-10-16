@@ -1,0 +1,159 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 7, 
+      "numberRunning": 9, 
+      "numberFailing": 2, 
+      "numberErroring": 0, 
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure", 
+          "isError": false, 
+          "occurrences": 2
+        }
+      ], 
+      "numberSkipping": 0
+    }, 
+    "failingModule": "/root/workspace/rkonovalov/jsonignore/442009574", 
+    "failureDetails": [
+      {
+        "failureName": "org.junit.ComparisonFailure", 
+        "detail": "expected:<{\"intValue\":[-2147483648,\"boolValue\":fals]e}> but was:<{\"intValue\":[0,\"boolValue\":tru]e}>", 
+        "isError": false, 
+        "testMethod": "testConstructorMap", 
+        "testClass": "com.json.ignore.JsonIgnoreFieldsTest"
+      }, 
+      {
+        "failureName": "org.junit.ComparisonFailure", 
+        "detail": "expected:<{\"intValue\":[-2147483648,\"boolValue\":fals]e}> but was:<{\"intValue\":[0,\"boolValue\":tru]e}>", 
+        "isError": false, 
+        "testMethod": "testMultipleAnnotationMethod", 
+        "testClass": "com.json.ignore.JsonIgnoreFieldsTest"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 7, 
+        "numberRunning": 9, 
+        "testClass": "com.json.ignore.JsonIgnoreFieldsTest", 
+        "numberFailing": 2, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/rkonovalov/jsonignore/builds/442015798", 
+      "date": "Oct 16, 2018 8:17:22 AM", 
+      "id": 442015798
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/rkonovalov/jsonignore/builds/442009574", 
+      "date": "Oct 16, 2018 7:50:39 AM", 
+      "id": 442009574
+    }
+  }, 
+  "repository": {
+    "name": "rkonovalov/jsonignore", 
+    "url": "https://github.com/rkonovalov/jsonignore", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 152902358
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/rkonovalov/jsonignore/commit/6332d138bad2ab898f1759eb65d5061681737f5d", 
+      "sha": "6332d138bad2ab898f1759eb65d5061681737f5d", 
+      "branchName": "master", 
+      "date": "Oct 16, 2018 8:16:01 AM", 
+      "repoName": "rkonovalov/jsonignore"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/rkonovalov/jsonignore/commit/ca101d8215af7403bf3d52bcd4650a3e09be7d74", 
+      "sha": "ca101d8215af7403bf3d52bcd4650a3e09be7d74", 
+      "branchName": "master", 
+      "date": "Oct 16, 2018 7:49:29 AM", 
+      "repoName": "rkonovalov/jsonignore"
+    }
+  }, 
+  "bugName": "rkonovalov-jsonignore-442009574-442015798", 
+  "version": "latest", 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 1, 
+      "numberDeleted": 1
+    }
+  }, 
+  "type": "passing_passing", 
+  "bugId": "Bears-238", 
+  "projectMetrics": {
+    "numberSourceFiles": 3, 
+    "numberLibrariesFailingModule": 7, 
+    "numberTestFiles": 2, 
+    "numberModules": 1
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 293823496, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 387973120, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Oct 16, 2018 8:18:35 AM", 
+    "projectRootPomPath": "./workspace/rkonovalov/jsonignore/442009574/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          0, 
+          0, 
+          0, 
+          0, 
+          19
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 19
+      }, 
+      "testing": {
+        "stepDurations": [
+          9
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 9
+      }, 
+      "cloning": {
+        "stepDurations": [
+          1
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 1
+      }
+    }, 
+    "reproductionDateBeginning": "Oct 16, 2018 8:17:35 AM", 
+    "totalDuration": 56
+  }
+}
