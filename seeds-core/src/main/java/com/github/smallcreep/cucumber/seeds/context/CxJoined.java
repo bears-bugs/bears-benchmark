@@ -63,7 +63,7 @@ public final class CxJoined implements Context {
      * Ctor.
      * @param contexts Contexts
      */
-    CxJoined(final Iterable<Context> contexts) {
+    public CxJoined(final Iterable<Context> contexts) {
         this(contexts, new CxSimple());
     }
 
