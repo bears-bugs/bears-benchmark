@@ -24,9 +24,12 @@
 
 package com.github.smallcreep.cucumber.seeds.suit;
 
+import com.github.smallcreep.cucumber.seeds.Context;
 import com.github.smallcreep.cucumber.seeds.Suit;
 import com.github.smallcreep.cucumber.seeds.context.CxJoined;
 import com.github.smallcreep.cucumber.seeds.context.CxProperties;
+import org.cactoos.iterable.IterableOf;
+import org.cactoos.iterable.Joined;
 
 /**
  * Default suit.
@@ -39,20 +42,38 @@ public final class StDefault extends StEnvelope {
      * @param origin Origin suit
      */
     public StDefault(final Suit origin) {
-        this(origin, new CxProperties());
+        this(
+            origin,
+            new CxProperties(System.getProperties()),
+            new CxProperties()
+        );
     }
 
     /**
      * Ctor.
      * @param origin Origin suit
-     * @param ctx Properties context
+     * @param ctxs Contexts
      */
-    StDefault(final Suit origin, final CxProperties ctx) {
+    StDefault(final Suit origin, final Context... ctxs) {
+        this(
+            origin,
+            new IterableOf<>(ctxs)
+        );
+    }
+
+    /**
+     * Ctor.
+     * @param origin Origin suit
+     * @param ctxs Contexts
+     */
+    StDefault(final Suit origin, final Iterable<Context> ctxs) {
         this(
             origin,
             new CxJoined(
-                ctx,
-                origin.context()
+                new Joined<>(
+                    origin.context(),
+                    ctxs
+                )
             )
         );
     }
