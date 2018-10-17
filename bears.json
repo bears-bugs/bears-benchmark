@@ -1,0 +1,152 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 25, 
+      "numberRunning": 26, 
+      "numberFailing": 1, 
+      "numberErroring": 0, 
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError", 
+          "isError": false, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 0
+    }, 
+    "failingModule": "/root/workspace/smallcreep/cucumber-seeds/442531821/seeds-core", 
+    "failureDetails": [
+      {
+        "failureName": "java.lang.AssertionError", 
+        "detail": "\nExpected: \"overridden\"\n     but: was \"test2\"", 
+        "isError": false, 
+        "testMethod": "checkSystemPropertiesOverriddenInContext", 
+        "testClass": "com.github.smallcreep.cucumber.seeds.suit.StDefaultTest"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 1, 
+        "numberRunning": 2, 
+        "testClass": "com.github.smallcreep.cucumber.seeds.suit.StDefaultTest", 
+        "numberFailing": 1, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/smallcreep/cucumber-seeds/builds/442559338", 
+      "date": "Oct 17, 2018 10:23:19 AM", 
+      "id": 442559338
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/smallcreep/cucumber-seeds/builds/442531821", 
+      "date": "Oct 17, 2018 9:01:19 AM", 
+      "id": 442531821
+    }
+  }, 
+  "repository": {
+    "name": "smallcreep/cucumber-seeds", 
+    "url": "https://github.com/smallcreep/cucumber-seeds", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 149168009
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/smallcreep/cucumber-seeds/commit/3bb56dcd0df3b928c893cca953db6df99656dbb6", 
+      "sha": "3bb56dcd0df3b928c893cca953db6df99656dbb6", 
+      "branchName": "master", 
+      "date": "Oct 17, 2018 9:46:28 AM", 
+      "repoName": "smallcreep/cucumber-seeds"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/smallcreep/cucumber-seeds/commit/ce492ac132444ce379262d1f6b3ed5175ea5f364", 
+      "sha": "ce492ac132444ce379262d1f6b3ed5175ea5f364", 
+      "branchName": "master", 
+      "date": "Oct 17, 2018 8:37:25 AM", 
+      "repoName": "smallcreep/cucumber-seeds"
+    }
+  }, 
+  "bugName": "smallcreep-cucumber-seeds-442531821-442559338", 
+  "version": "latest", 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 2, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 24, 
+      "numberDeleted": 9
+    }
+  }, 
+  "type": "passing_passing", 
+  "bugId": "Bears-240", 
+  "projectMetrics": {
+    "numberSourceFiles": 34, 
+    "numberLibrariesFailingModule": 13, 
+    "numberTestFiles": 28, 
+    "numberModules": 3
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 335051448, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 398983168, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Oct 17, 2018 10:29:27 AM", 
+    "projectRootPomPath": "./workspace/smallcreep/cucumber-seeds/442531821/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          0, 
+          0, 
+          0, 
+          0, 
+          244
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 244
+      }, 
+      "testing": {
+        "stepDurations": [
+          15
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 15
+      }, 
+      "cloning": {
+        "stepDurations": [
+          2
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 2
+      }
+    }, 
+    "reproductionDateBeginning": "Oct 17, 2018 10:23:38 AM", 
+    "totalDuration": 344
+  }
+}
