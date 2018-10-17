@@ -24,6 +24,8 @@
 
 package com.github.smallcreep.cucumber.seeds.suit;
 
+import com.github.smallcreep.cucumber.seeds.context.CxSimple;
+import org.cactoos.map.MapOf;
 import org.hamcrest.CoreMatchers;
 import org.hamcrest.MatcherAssert;
 import org.junit.Test;
@@ -46,6 +48,26 @@ public class StDefaultTest {
             CoreMatchers.equalTo(
                 StSmart.instance().scenario()
             )
+        );
+    }
+
+    /**
+     * Check System Properties overridden properties from file.
+     */
+    @Test
+    public void checkSystemPropertiesOverriddenInContext() {
+        final String value = "overridden";
+        final String key = "test.prop";
+        System.getProperties().put(key, value);
+        MatcherAssert.assertThat(
+            new StDefault(
+                new StSmart(
+                    new CxSimple(
+                        new MapOf<String, Object>()
+                    )
+                )
+            ).context().value(key),
+            CoreMatchers.equalTo(value)
         );
     }
 }
