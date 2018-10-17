@@ -1,0 +1,152 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 228, 
+      "numberRunning": 229, 
+      "numberFailing": 1, 
+      "numberErroring": 0, 
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError", 
+          "isError": false, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 0
+    }, 
+    "failingModule": "/root/workspace/thelinmichael/spotify-web-api-java/441742384", 
+    "failureDetails": [
+      {
+        "failureName": "java.lang.AssertionError", 
+        "detail": "Request \"StartResumeUsersPlaybackRequest\" does not contain form parameter \"position_ms\" with value \"10000\"", 
+        "isError": false, 
+        "testMethod": "shouldComplyWithReference", 
+        "testClass": "com.wrapper.spotify.requests.data.player.StartResumeUsersPlaybackRequestTest"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 2, 
+        "numberRunning": 3, 
+        "testClass": "com.wrapper.spotify.requests.data.player.StartResumeUsersPlaybackRequestTest", 
+        "numberFailing": 1, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/thelinmichael/spotify-web-api-java/builds/442933713", 
+      "date": "Oct 18, 2018 12:49:22 AM", 
+      "id": 442933713
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/thelinmichael/spotify-web-api-java/builds/441742384", 
+      "date": "Oct 15, 2018 6:17:20 PM", 
+      "id": 441742384
+    }
+  }, 
+  "repository": {
+    "name": "thelinmichael/spotify-web-api-java", 
+    "url": "https://github.com/thelinmichael/spotify-web-api-java", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 18928344
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/thelinmichael/spotify-web-api-java/commit/a30e1e142c0a5d9a72b352f7596b339f1be9db81", 
+      "sha": "a30e1e142c0a5d9a72b352f7596b339f1be9db81", 
+      "branchName": "master", 
+      "date": "Oct 18, 2018 12:46:59 AM", 
+      "repoName": "thelinmichael/spotify-web-api-java"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/thelinmichael/spotify-web-api-java/commit/06af71333bc7be2c190fd6cf836cae271dee2e0f", 
+      "sha": "06af71333bc7be2c190fd6cf836cae271dee2e0f", 
+      "branchName": "master", 
+      "date": "Oct 15, 2018 6:11:30 PM", 
+      "repoName": "thelinmichael/spotify-web-api-java"
+    }
+  }, 
+  "bugName": "thelinmichael-spotify-web-api-java-441742384-442933713", 
+  "version": "latest", 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 1, 
+      "numberDeleted": 1
+    }
+  }, 
+  "type": "passing_passing", 
+  "bugId": "Bears-246", 
+  "projectMetrics": {
+    "numberSourceFiles": 149, 
+    "numberLibrariesFailingModule": 10, 
+    "numberTestFiles": 78, 
+    "numberModules": 1
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 235860016, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 442499072, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Oct 18, 2018 1:34:45 AM", 
+    "projectRootPomPath": "./workspace/thelinmichael/spotify-web-api-java/441742384/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          1, 
+          0, 
+          0, 
+          0, 
+          22
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 23
+      }, 
+      "testing": {
+        "stepDurations": [
+          11
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 11
+      }, 
+      "cloning": {
+        "stepDurations": [
+          10
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 10
+      }
+    }, 
+    "reproductionDateBeginning": "Oct 18, 2018 1:33:16 AM", 
+    "totalDuration": 84
+  }
+}
