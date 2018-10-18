@@ -28,6 +28,15 @@ fi
 
 PATCHED_COMMIT_ID=$(git log --format=format:%H --grep="Human patch")
 
+BUGGY_BUILD_ID=$(jq -r '.["builds"]["buggyBuild"]["id"]' bears.json)
+POM_PATH=$(jq -r '.["reproductionBuggyBuild"]["projectRootPomPath"]' bears.json)
+POM_PATH=$(echo "$POM_PATH" | sed -e "s/.*$BUGGY_BUILD_ID\///g")
+POM_PATH=$(echo "$POM_PATH" | sed -e 's/pom.xml//g')
+
+if [ ! -z "$POM_PATH" ]; then
+    cd "$POM_PATH"
+fi
+
 if [ "$IS_BUGGY_COMMIT" -eq 1 ]; then
 
     echo "> Checking out the buggy commit: $BUGGY_COMMIT_ID"

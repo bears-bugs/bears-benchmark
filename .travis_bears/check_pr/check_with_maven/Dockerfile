@@ -1,12 +1,14 @@
 FROM maven:3.3.9-jdk-8
 
-LABEL Description="Bears checkbranch docker image" Vendor="Spirals" Version="0.0.0"
+LABEL Description="Bears checking with maven docker image" Vendor="Spirals" Version="0.0.0"
 
 RUN mkdir -p /var/app/pr/
 
 COPY . /var/app/
 
 RUN echo "Europe/Paris" > /etc/timezone && chmod +x /var/app/*.sh
+RUN apt-get update
+RUN apt-get install jq -y
 
 ENV M2_HOME=$MAVEN_HOME
 
