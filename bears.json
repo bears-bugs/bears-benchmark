@@ -1,0 +1,149 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 893, 
+      "numberRunning": 894, 
+      "numberFailing": 0, 
+      "numberErroring": 1, 
+      "failures": [
+        {
+          "failureName": "java.io.IOException", 
+          "isError": true, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 3
+    }, 
+    "failingModule": "/root/workspace/apache/incubator-dubbo/443225947/dubbo-remoting/dubbo-remoting-api", 
+    "failureDetails": [
+      {
+        "failureName": "java.io.IOException", 
+        "detail": "Unexpected serialization id:15 received from network, please check if the peer send the right id.", 
+        "isError": true, 
+        "testClass": "org.apache.dubbo.remoting.codec.ExchangeCodecTest", 
+        "testMethod": "testInvalidSerializaitonId"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 34, 
+        "numberRunning": 35, 
+        "testClass": "org.apache.dubbo.remoting.codec.ExchangeCodecTest", 
+        "numberFailing": 0, 
+        "numberErroring": 1, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/apache/incubator-dubbo/builds/443504181", 
+      "date": "Oct 19, 2018 5:35:36 AM", 
+      "id": 443504181
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/apache/incubator-dubbo/builds/443225947", 
+      "date": "Oct 18, 2018 5:08:27 PM", 
+      "id": 443225947
+    }
+  }, 
+  "repository": {
+    "name": "apache/incubator-dubbo", 
+    "url": "https://github.com/apache/incubator-dubbo", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 4710920
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/apache/incubator-dubbo/commit/b7238372a2f65d03517693a0a99ce63e2c03cc42", 
+      "sha": "b7238372a2f65d03517693a0a99ce63e2c03cc42", 
+      "branchName": "master", 
+      "date": "Oct 19, 2018 5:19:57 AM", 
+      "repoName": "apache/incubator-dubbo"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/apache/incubator-dubbo/commit/d8282fe1b8075a453c7b44b4ae7982a4285df7b7", 
+      "sha": "d8282fe1b8075a453c7b44b4ae7982a4285df7b7", 
+      "branchName": "master", 
+      "date": "Oct 17, 2018 4:14:45 AM", 
+      "repoName": "apache/incubator-dubbo"
+    }
+  }, 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 11, 
+      "numberDeleted": 12
+    }
+  }, 
+  "type": "passing_passing", 
+  "projectMetrics": {
+    "numberSourceFiles": 761, 
+    "numberLibrariesFailingModule": 25, 
+    "numberTestFiles": 631, 
+    "numberModules": 65
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 253416352, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 661127168, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Oct 19, 2018 5:57:39 AM", 
+    "projectRootPomPath": "./workspace/apache/incubator-dubbo/443225947/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          0, 
+          30, 
+          20, 
+          0, 
+          354
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 404
+      }, 
+      "testing": {
+        "stepDurations": [
+          93
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 93
+      }, 
+      "cloning": {
+        "stepDurations": [
+          8
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 8
+      }
+    }, 
+    "reproductionDateBeginning": "Oct 19, 2018 5:35:51 AM", 
+    "totalDuration": 1301
+  }
+}
