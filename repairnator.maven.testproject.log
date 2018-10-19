@@ -1,0 +1,1554 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.apache.dubbo:dubbo-dependencies-bom:pom:2.7.0-SNAPSHOT
+[WARNING] 'parent.relativePath' of POM org.apache.dubbo:dubbo-dependencies-bom:2.7.0-SNAPSHOT (/root/workspace/apache/incubator-dubbo/443225947/dubbo-dependencies-bom/pom.xml) points at org.apache.dubbo:dubbo-parent instead of org.apache:apache, please verify your project structure @ line 5, column 13
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] dubbo-parent
+[INFO] dubbo-common
+[INFO] dubbo-metrics
+[INFO] dubbo-metrics-api
+[INFO] dubbo-container
+[INFO] dubbo-container-api
+[INFO] dubbo-serialization
+[INFO] dubbo-serialization-api
+[INFO] dubbo-serialization-hessian2
+[INFO] dubbo-remoting
+[INFO] dubbo-remoting-api
+[INFO] dubbo-rpc
+[INFO] dubbo-rpc-api
+[INFO] dubbo-cluster
+[INFO] dubbo-registry
+[INFO] dubbo-registry-api
+[INFO] dubbo-monitor
+[INFO] dubbo-monitor-api
+[INFO] dubbo-rpc-injvm
+[INFO] dubbo-filter
+[INFO] dubbo-filter-validation
+[INFO] dubbo-filter-cache
+[INFO] dubbo-remoting-netty4
+[INFO] dubbo-rpc-dubbo
+[INFO] dubbo-registry-default
+[INFO] dubbo-monitor-default
+[INFO] dubbo-rpc-rmi
+[INFO] dubbo-registry-multicast
+[INFO] dubbo-serialization-jdk
+[INFO] dubbo-config
+[INFO] dubbo-config-api
+[INFO] dubbo-bootstrap
+[INFO] dubbo-config-spring
+[INFO] dubbo-container-spring
+[INFO] dubbo-container-log4j
+[INFO] dubbo-container-logback
+[INFO] dubbo-remoting-netty
+[INFO] dubbo-remoting-mina
+[INFO] dubbo-remoting-grizzly
+[INFO] dubbo-remoting-p2p
+[INFO] dubbo-remoting-http
+[INFO] dubbo-remoting-zookeeper
+[INFO] dubbo-rpc-hessian
+[INFO] dubbo-rpc-http
+[INFO] dubbo-rpc-webservice
+[INFO] dubbo-rpc-thrift
+[INFO] dubbo-rpc-memcached
+[INFO] dubbo-rpc-redis
+[INFO] dubbo-rpc-rest
+[INFO] dubbo-registry-zookeeper
+[INFO] dubbo-registry-redis
+[INFO] dubbo-demo
+[INFO] dubbo-demo-api
+[INFO] dubbo-demo-provider
+[INFO] dubbo-demo-consumer
+[INFO] dubbo-plugin
+[INFO] dubbo-qos
+[INFO] dubbo-serialization-fastjson
+[INFO] dubbo-serialization-kryo
+[INFO] dubbo-serialization-fst
+[INFO] dubbo-serialization-test
+[INFO] dubbo-compatible
+[INFO] dubbo-dependencies-bom
+[INFO] dubbo-bom
+[INFO] dubbo-all
+[INFO] dubbo-distribution
+[INFO] dubbo-test
+[INFO] dubbo-test-compatibility
+[INFO] dubbo-test-spring3
+[INFO] dubbo-test-integration
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building dubbo-parent 2.7.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven-version) @ dubbo-parent ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:3.0.0:check (checkstyle-validation) @ dubbo-parent ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.2:prepare-agent (jacoco-initialize) @ dubbo-parent ---
+[INFO] jacocoArgLine set to -javaagent:/root/./workspace/apache/incubator-dubbo/443225947/.m2/org/jacoco/org.jacoco.agent/0.8.2/org.jacoco.agent-0.8.2-runtime.jar=destfile=/root/workspace/apache/incubator-dubbo/443225947/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ dubbo-parent ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building dubbo-common 2.7.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven-version) @ dubbo-common ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:3.0.0:check (checkstyle-validation) @ dubbo-common ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.2:prepare-agent (jacoco-initialize) @ dubbo-common ---
+[INFO] jacocoArgLine set to -javaagent:/root/./workspace/apache/incubator-dubbo/443225947/.m2/org/jacoco/org.jacoco.agent/0.8.2/org.jacoco.agent-0.8.2-runtime.jar=destfile=/root/workspace/apache/incubator-dubbo/443225947/dubbo-common/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ dubbo-common ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ dubbo-common ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 6 resources
+[INFO] Copying 2 resources to META-INF/
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:compile (default-compile) @ dubbo-common ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ dubbo-common ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 24 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:testCompile (default-testCompile) @ dubbo-common ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ dubbo-common ---
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.pom (4 KB at 5.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom (3 KB at 67.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar (74 KB at 856.4 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.dubbo.common.logger.LoggerTest
+2018-10-19 05:42:58,371 ERROR [org.apache.dubbo.common.logger.LoggerTest:error] - error
+2018-10-19 05:42:58,380 WARN [org.apache.dubbo.common.logger.LoggerTest:warn] - warn
+2018-10-19 05:42:58,380 INFO [org.apache.dubbo.common.logger.LoggerTest:info] - info
+2018-10-19 05:42:58,381 ERROR [org.apache.dubbo.common.logger.LoggerTest:error] - java.lang.Exception: error
+2018-10-19 05:42:58,382 WARN [org.apache.dubbo.common.logger.LoggerTest:warn] - java.lang.Exception: warn
+2018-10-19 05:42:58,384 INFO [org.apache.dubbo.common.logger.LoggerTest:info] - java.lang.Exception: info
+2018-10-19 05:42:58,386 ERROR [org.apache.dubbo.common.logger.LoggerTest:error] - error
+java.lang.Exception: error
+	at org.apache.dubbo.common.logger.LoggerTest.testAllLogMethod(LoggerTest.java:69)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+2018-10-19 05:42:58,393 WARN [org.apache.dubbo.common.logger.LoggerTest:warn] - warn
+java.lang.Exception: warn
+	at org.apache.dubbo.common.logger.LoggerTest.testAllLogMethod(LoggerTest.java:70)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+2018-10-19 05:42:58,402 INFO [org.apache.dubbo.common.logger.LoggerTest:info] - info
+java.lang.Exception: info
+	at org.apache.dubbo.common.logger.LoggerTest.testAllLogMethod(LoggerTest.java:71)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+2018-10-19 05:42:58,479 ERROR [org.apache.dubbo.common.logger.LoggerTest:?] - error
+2018-10-19 05:42:58,479 WARN [org.apache.dubbo.common.logger.LoggerTest:?] - warn
+2018-10-19 05:42:58,480 INFO [org.apache.dubbo.common.logger.LoggerTest:?] - info
+2018-10-19 05:42:58,480 DEBUG [org.apache.dubbo.common.logger.LoggerTest:?] - debug
+2018-10-19 05:42:58,481 TRACE [org.apache.dubbo.common.logger.LoggerTest:?] - info
+2018-10-19 05:42:58,482 ERROR [org.apache.dubbo.common.logger.LoggerTest:?] - error
+java.lang.Exception: error
+	at org.apache.dubbo.common.logger.LoggerTest.testAllLogMethod(LoggerTest.java:63)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+2018-10-19 05:42:58,484 WARN [org.apache.dubbo.common.logger.LoggerTest:?] - warn
+java.lang.Exception: warn
+	at org.apache.dubbo.common.logger.LoggerTest.testAllLogMethod(LoggerTest.java:64)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+2018-10-19 05:42:58,488 INFO [org.apache.dubbo.common.logger.LoggerTest:?] - info
+java.lang.Exception: info
+	at org.apache.dubbo.common.logger.LoggerTest.testAllLogMethod(LoggerTest.java:65)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+2018-10-19 05:42:58,491 DEBUG [org.apache.dubbo.common.logger.LoggerTest:?] - debug
+java.lang.Exception: debug
+	at org.apache.dubbo.common.logger.LoggerTest.testAllLogMethod(LoggerTest.java:66)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+2018-10-19 05:42:58,494 TRACE [org.apache.dubbo.common.logger.LoggerTest:?] - trace
+java.lang.Exception: trace
+	at org.apache.dubbo.common.logger.LoggerTest.testAllLogMethod(LoggerTest.java:67)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+2018-10-19 05:42:58,496 ERROR [org.apache.dubbo.common.logger.LoggerTest:?] - error
+java.lang.Exception: error
+	at org.apache.dubbo.common.logger.LoggerTest.testAllLogMethod(LoggerTest.java:69)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+2018-10-19 05:42:58,498 WARN [org.apache.dubbo.common.logger.LoggerTest:?] - warn
+java.lang.Exception: warn
+	at org.apache.dubbo.common.logger.LoggerTest.testAllLogMethod(LoggerTest.java:70)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+2018-10-19 05:42:58,500 INFO [org.apache.dubbo.common.logger.LoggerTest:?] - info
+java.lang.Exception: info
+	at org.apache.dubbo.common.logger.LoggerTest.testAllLogMethod(LoggerTest.java:71)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+2018-10-19 05:42:58,501 DEBUG [org.apache.dubbo.common.logger.LoggerTest:?] - debug
+java.lang.Exception: debug
+	at org.apache.dubbo.common.logger.LoggerTest.testAllLogMethod(LoggerTest.java:72)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+2018-10-19 05:42:58,503 TRACE [org.apache.dubbo.common.logger.LoggerTest:?] - trace
+java.lang.Exception: trace
+	at org.apache.dubbo.common.logger.LoggerTest.testAllLogMethod(LoggerTest.java:73)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.652 sec - in org.apache.dubbo.common.logger.LoggerTest
+Running org.apache.dubbo.common.logger.LoggerFactoryTest
+2018-10-19 05:42:58,557 INFO [org.apache.dubbo.common.logger.LoggerFactory:?] - using logger: org.apache.dubbo.common.logger.log4j.Log4jLoggerAdapter
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.105 sec - in org.apache.dubbo.common.logger.LoggerFactoryTest
+Running org.apache.dubbo.common.logger.slf4j.Slf4jLoggerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.345 sec - in org.apache.dubbo.common.logger.slf4j.Slf4jLoggerTest
+Running org.apache.dubbo.common.logger.LoggerAdapterTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.031 sec - in org.apache.dubbo.common.logger.LoggerAdapterTest
+Running org.apache.dubbo.common.logger.support.FailsafeLoggerTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.137 sec - in org.apache.dubbo.common.logger.support.FailsafeLoggerTest
+Running org.apache.dubbo.common.json.JSONReaderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 sec - in org.apache.dubbo.common.json.JSONReaderTest
+Running org.apache.dubbo.common.json.JSONWriterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in org.apache.dubbo.common.json.JSONWriterTest
+Running org.apache.dubbo.common.json.JSONTest
+{"code":"001","message":"AAAAAAAA"}
+parse to JSONObject 10000 times in: 96
+parse to Class 10000 times in: 119
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.249 sec - in org.apache.dubbo.common.json.JSONTest
+Running org.apache.dubbo.common.bytecode.WrapperTest
+hello qianlei
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.114 sec - in org.apache.dubbo.common.bytecode.WrapperTest
+Running org.apache.dubbo.common.bytecode.MixinTest
+setMixinInstance:org.apache.dubbo.common.bytecode.mixin0@1014c825
+setMixinInstance:org.apache.dubbo.common.bytecode.mixin0@1014c825
+c1.m1();
+c1.m2();
+c2.m3();
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec - in org.apache.dubbo.common.bytecode.MixinTest
+Running org.apache.dubbo.common.bytecode.ClassGeneratorTest
+org.apache.dubbo.common.bytecode.Bean$Builder2
+qianlei
+ok
+org.apache.dubbo.common.bytecode.Bean$Builder
+qianlei
+ok
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec - in org.apache.dubbo.common.bytecode.ClassGeneratorTest
+Running org.apache.dubbo.common.bytecode.ProxyTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.252 sec - in org.apache.dubbo.common.bytecode.ProxyTest
+Running org.apache.dubbo.common.store.support.SimpleDataStoreTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in org.apache.dubbo.common.store.support.SimpleDataStoreTest
+Running org.apache.dubbo.common.version.VersionTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.apache.dubbo.common.version.VersionTest
+Running org.apache.dubbo.common.compiler.support.ClassUtilsTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 sec - in org.apache.dubbo.common.compiler.support.ClassUtilsTest
+Running org.apache.dubbo.common.compiler.support.JdkCompilerTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.793 sec - in org.apache.dubbo.common.compiler.support.JdkCompilerTest
+Running org.apache.dubbo.common.compiler.support.JavassistCompilerTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 sec - in org.apache.dubbo.common.compiler.support.JavassistCompilerTest
+Running org.apache.dubbo.common.compiler.support.AdaptiveCompilerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.088 sec - in org.apache.dubbo.common.compiler.support.AdaptiveCompilerTest
+Running org.apache.dubbo.common.URLTest
+Tests run: 28, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 sec - in org.apache.dubbo.common.URLTest
+Running org.apache.dubbo.common.utils.LogHelperTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec - in org.apache.dubbo.common.utils.LogHelperTest
+Running org.apache.dubbo.common.utils.DubboAppenderTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.571 sec - in org.apache.dubbo.common.utils.DubboAppenderTest
+Running org.apache.dubbo.common.utils.UrlUtilsTest
+Tests run: 30, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 sec - in org.apache.dubbo.common.utils.UrlUtilsTest
+Running org.apache.dubbo.common.utils.CollectionUtilsTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in org.apache.dubbo.common.utils.CollectionUtilsTest
+Running org.apache.dubbo.common.utils.LogTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.dubbo.common.utils.LogTest
+Running org.apache.dubbo.common.utils.AtomicPositiveIntegerTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec - in org.apache.dubbo.common.utils.AtomicPositiveIntegerTest
+Running org.apache.dubbo.common.utils.ClassHelperTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.202 sec - in org.apache.dubbo.common.utils.ClassHelperTest
+Running org.apache.dubbo.common.utils.ConfigUtilsTest
+Tests run: 27, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.043 sec - in org.apache.dubbo.common.utils.ConfigUtilsTest
+Running org.apache.dubbo.common.utils.LogUtilTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.087 sec - in org.apache.dubbo.common.utils.LogUtilTest
+Running org.apache.dubbo.common.utils.ParametersTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.apache.dubbo.common.utils.ParametersTest
+Running org.apache.dubbo.common.utils.ExecutorUtilTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.16 sec - in org.apache.dubbo.common.utils.ExecutorUtilTest
+Running org.apache.dubbo.common.utils.NamedThreadFactoryTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 sec - in org.apache.dubbo.common.utils.NamedThreadFactoryTest
+Running org.apache.dubbo.common.utils.PojoUtilsTest
+{k=v, m=(this Map)}
+{k=v, m=(this Map)}
+{k=v, m=(this Map)}
+Tests run: 32, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.141 sec - in org.apache.dubbo.common.utils.PojoUtilsTest
+Running org.apache.dubbo.common.utils.NetUtilsTest
+Tests run: 20, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.187 sec - in org.apache.dubbo.common.utils.NetUtilsTest
+Running org.apache.dubbo.common.utils.StackTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.apache.dubbo.common.utils.StackTest
+Running org.apache.dubbo.common.utils.CompatibleTypeUtilsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.apache.dubbo.common.utils.CompatibleTypeUtilsTest
+Running org.apache.dubbo.common.utils.ReflectUtilsTest
+Tests run: 35, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 sec - in org.apache.dubbo.common.utils.ReflectUtilsTest
+Running org.apache.dubbo.common.utils.LRUCacheTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.dubbo.common.utils.LRUCacheTest
+Running org.apache.dubbo.common.utils.IOUtilsTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 sec - in org.apache.dubbo.common.utils.IOUtilsTest
+Running org.apache.dubbo.common.utils.AssertTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.apache.dubbo.common.utils.AssertTest
+Running org.apache.dubbo.common.utils.StringUtilsTest
+Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.204 sec - in org.apache.dubbo.common.utils.StringUtilsTest
+Running org.apache.dubbo.common.utils.HolderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.dubbo.common.utils.HolderTest
+Running org.apache.dubbo.common.threadpool.support.cached.CachedThreadPoolTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in org.apache.dubbo.common.threadpool.support.cached.CachedThreadPoolTest
+Running org.apache.dubbo.common.threadpool.support.fixed.FixedThreadPoolTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.dubbo.common.threadpool.support.fixed.FixedThreadPoolTest
+Running org.apache.dubbo.common.threadpool.support.AbortPolicyWithReportTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.031 sec - in org.apache.dubbo.common.threadpool.support.AbortPolicyWithReportTest
+Running org.apache.dubbo.common.threadpool.support.limited.LimitedThreadPoolTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.apache.dubbo.common.threadpool.support.limited.LimitedThreadPoolTest
+Running org.apache.dubbo.common.threadpool.support.eager.EagerThreadPoolExecutorTest
+thread number in current pool：1,  task number in task queue：0 executor size: 1
+thread number in current pool：2,  task number in task queue：0 executor size: 2
+thread number in current pool：3,  task number in task queue：0 executor size: 3
+thread number in current pool：4,  task number in task queue：0 executor size: 4
+thread number in current pool：5,  task number in task queue：0 executor size: 5
+thread number in current pool：6,  task number in task queue：0 executor size: 6
+thread number in current pool：7,  task number in task queue：0 executor size: 7
+thread number in current pool：8,  task number in task queue：0 executor size: 8
+thread number in current pool：9,  task number in task queue：0 executor size: 9
+thread number in current pool：10,  task number in task queue：0 executor size: 10
+thread number in current pool：10,  task number in task queue：4 executor size: 10
+thread number in current pool：10,  task number in task queue：3 executor size: 10
+thread number in current pool：10,  task number in task queue：2 executor size: 10
+thread number in current pool：10,  task number in task queue：1 executor size: 10
+thread number in current pool：10,  task number in task queue：0 executor size: 10
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.761 sec - in org.apache.dubbo.common.threadpool.support.eager.EagerThreadPoolExecutorTest
+Running org.apache.dubbo.common.threadpool.support.eager.EagerThreadPoolTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.dubbo.common.threadpool.support.eager.EagerThreadPoolTest
+Running org.apache.dubbo.common.threadpool.support.eager.TaskQueueTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.314 sec - in org.apache.dubbo.common.threadpool.support.eager.TaskQueueTest
+Running org.apache.dubbo.common.io.UnsafeStringReaderTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.apache.dubbo.common.io.UnsafeStringReaderTest
+Running org.apache.dubbo.common.io.UnsafeByteArrayOutputStreamTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.169 sec - in org.apache.dubbo.common.io.UnsafeByteArrayOutputStreamTest
+Running org.apache.dubbo.common.io.StreamUtilsTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in org.apache.dubbo.common.io.StreamUtilsTest
+Running org.apache.dubbo.common.io.UnsafeStringWriterTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.apache.dubbo.common.io.UnsafeStringWriterTest
+Running org.apache.dubbo.common.io.UnsafeByteArrayInputStreamTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.apache.dubbo.common.io.UnsafeByteArrayInputStreamTest
+Running org.apache.dubbo.common.io.BytesTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in org.apache.dubbo.common.io.BytesTest
+Running org.apache.dubbo.common.concurrent.CompletableFutureTaskTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.075 sec - in org.apache.dubbo.common.concurrent.CompletableFutureTaskTest
+Running org.apache.dubbo.common.concurrent.ExecutionListTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec - in org.apache.dubbo.common.concurrent.ExecutionListTest
+Running org.apache.dubbo.common.timer.HashedWheelTimerTest
+task :2018-10-19 05:43:18
+task :2018-10-19 05:43:19
+task :2018-10-19 05:43:20
+task :2018-10-19 05:43:21
+task :2018-10-19 05:43:22
+task :2018-10-19 05:43:23
+task :2018-10-19 05:43:24
+task :2018-10-19 05:43:25
+task :2018-10-19 05:43:26
+task :2018-10-19 05:43:27
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 16.036 sec - in org.apache.dubbo.common.timer.HashedWheelTimerTest
+Running org.apache.dubbo.common.threadlocal.NamedInternalThreadFactoryTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.apache.dubbo.common.threadlocal.NamedInternalThreadFactoryTest
+Running org.apache.dubbo.common.threadlocal.InternalThreadLocalTest
+take[6120]ms
+take[10067]ms
+thread : Thread-6 init value : 0
+thread : Thread-7 init value : 1
+thread : Thread-8 init value : 2
+thread : Thread-9 init value : 3
+thread : Thread-10 init value : 4
+thread : Thread-11 init value : 5
+thread : Thread-12 init value : 6
+thread : Thread-13 init value : 7
+thread : Thread-14 init value : 8
+thread : Thread-15 init value : 9
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 18.225 sec - in org.apache.dubbo.common.threadlocal.InternalThreadLocalTest
+Running org.apache.dubbo.common.beanutil.JavaBeanSerializeUtilTest
+Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.045 sec - in org.apache.dubbo.common.beanutil.JavaBeanSerializeUtilTest
+Running org.apache.dubbo.common.beanutil.JavaBeanAccessorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.apache.dubbo.common.beanutil.JavaBeanAccessorTest
+Running org.apache.dubbo.common.status.StatusTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in org.apache.dubbo.common.status.StatusTest
+Running org.apache.dubbo.common.status.support.MemoryStatusCheckerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in org.apache.dubbo.common.status.support.MemoryStatusCheckerTest
+Running org.apache.dubbo.common.status.support.StatusUtilsTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.apache.dubbo.common.status.support.StatusUtilsTest
+Running org.apache.dubbo.common.status.support.LoadStatusCheckerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.apache.dubbo.common.status.support.LoadStatusCheckerTest
+Running org.apache.dubbo.common.extension.ExtensionLoader_Compatible_Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in org.apache.dubbo.common.extension.ExtensionLoader_Compatible_Test
+Running org.apache.dubbo.common.extension.ExtensionLoader_Adaptive_Test
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.09 sec - in org.apache.dubbo.common.extension.ExtensionLoader_Adaptive_Test
+Running org.apache.dubbo.common.extension.ExtensionLoaderTest
+Tests run: 26, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.286 sec - in org.apache.dubbo.common.extension.ExtensionLoaderTest
+Running org.apache.dubbo.common.extension.ExtensionLoader_Adaptive_UseJdkCompiler_Test
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in org.apache.dubbo.common.extension.ExtensionLoader_Adaptive_UseJdkCompiler_Test
+Running org.apache.dubbo.common.extension.support.ActivateComparatorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in org.apache.dubbo.common.extension.support.ActivateComparatorTest
+
+Results :
+
+Tests run: 534, Failures: 0, Errors: 0, Skipped: 2
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building dubbo-metrics 2.7.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven-version) @ dubbo-metrics ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:3.0.0:check (checkstyle-validation) @ dubbo-metrics ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.2:prepare-agent (jacoco-initialize) @ dubbo-metrics ---
+[INFO] jacocoArgLine set to -javaagent:/root/./workspace/apache/incubator-dubbo/443225947/.m2/org/jacoco/org.jacoco.agent/0.8.2/org.jacoco.agent-0.8.2-runtime.jar=destfile=/root/workspace/apache/incubator-dubbo/443225947/dubbo-metrics/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ dubbo-metrics ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building dubbo-metrics-api 2.7.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven-version) @ dubbo-metrics-api ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:3.0.0:check (checkstyle-validation) @ dubbo-metrics-api ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.2:prepare-agent (jacoco-initialize) @ dubbo-metrics-api ---
+[INFO] jacocoArgLine set to -javaagent:/root/./workspace/apache/incubator-dubbo/443225947/.m2/org/jacoco/org.jacoco.agent/0.8.2/org.jacoco.agent-0.8.2-runtime.jar=destfile=/root/workspace/apache/incubator-dubbo/443225947/dubbo-metrics/dubbo-metrics-api/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ dubbo-metrics-api ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ dubbo-metrics-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/apache/incubator-dubbo/443225947/dubbo-metrics/dubbo-metrics-api/src/main/resources
+[INFO] Copying 2 resources to META-INF/
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:compile (default-compile) @ dubbo-metrics-api ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ dubbo-metrics-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/apache/incubator-dubbo/443225947/dubbo-metrics/dubbo-metrics-api/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:testCompile (default-testCompile) @ dubbo-metrics-api ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ dubbo-metrics-api ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.dubbo.metrics.MetricNameTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.257 sec - in org.apache.dubbo.metrics.MetricNameTest
+Running org.apache.dubbo.metrics.MetricManagerTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec - in org.apache.dubbo.metrics.MetricManagerTest
+
+Results :
+
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building dubbo-container 2.7.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven-version) @ dubbo-container ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:3.0.0:check (checkstyle-validation) @ dubbo-container ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.2:prepare-agent (jacoco-initialize) @ dubbo-container ---
+[INFO] jacocoArgLine set to -javaagent:/root/./workspace/apache/incubator-dubbo/443225947/.m2/org/jacoco/org.jacoco.agent/0.8.2/org.jacoco.agent-0.8.2-runtime.jar=destfile=/root/workspace/apache/incubator-dubbo/443225947/dubbo-container/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ dubbo-container ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building dubbo-container-api 2.7.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven-version) @ dubbo-container-api ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:3.0.0:check (checkstyle-validation) @ dubbo-container-api ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.2:prepare-agent (jacoco-initialize) @ dubbo-container-api ---
+[INFO] jacocoArgLine set to -javaagent:/root/./workspace/apache/incubator-dubbo/443225947/.m2/org/jacoco/org.jacoco.agent/0.8.2/org.jacoco.agent-0.8.2-runtime.jar=destfile=/root/workspace/apache/incubator-dubbo/443225947/dubbo-container/dubbo-container-api/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ dubbo-container-api ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ dubbo-container-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 6 resources
+[INFO] Copying 2 resources to META-INF/
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:compile (default-compile) @ dubbo-container-api ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ dubbo-container-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/apache/incubator-dubbo/443225947/dubbo-container/dubbo-container-api/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:testCompile (default-testCompile) @ dubbo-container-api ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ dubbo-container-api ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building dubbo-serialization 2.7.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven-version) @ dubbo-serialization ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:3.0.0:check (checkstyle-validation) @ dubbo-serialization ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.2:prepare-agent (jacoco-initialize) @ dubbo-serialization ---
+[INFO] jacocoArgLine set to -javaagent:/root/./workspace/apache/incubator-dubbo/443225947/.m2/org/jacoco/org.jacoco.agent/0.8.2/org.jacoco.agent-0.8.2-runtime.jar=destfile=/root/workspace/apache/incubator-dubbo/443225947/dubbo-serialization/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ dubbo-serialization ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building dubbo-serialization-api 2.7.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven-version) @ dubbo-serialization-api ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:3.0.0:check (checkstyle-validation) @ dubbo-serialization-api ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.2:prepare-agent (jacoco-initialize) @ dubbo-serialization-api ---
+[INFO] jacocoArgLine set to -javaagent:/root/./workspace/apache/incubator-dubbo/443225947/.m2/org/jacoco/org.jacoco.agent/0.8.2/org.jacoco.agent-0.8.2-runtime.jar=destfile=/root/workspace/apache/incubator-dubbo/443225947/dubbo-serialization/dubbo-serialization-api/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ dubbo-serialization-api ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ dubbo-serialization-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/apache/incubator-dubbo/443225947/dubbo-serialization/dubbo-serialization-api/src/main/resources
+[INFO] Copying 2 resources to META-INF/
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:compile (default-compile) @ dubbo-serialization-api ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ dubbo-serialization-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/apache/incubator-dubbo/443225947/dubbo-serialization/dubbo-serialization-api/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:testCompile (default-testCompile) @ dubbo-serialization-api ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ dubbo-serialization-api ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building dubbo-serialization-hessian2 2.7.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven-version) @ dubbo-serialization-hessian2 ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:3.0.0:check (checkstyle-validation) @ dubbo-serialization-hessian2 ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.2:prepare-agent (jacoco-initialize) @ dubbo-serialization-hessian2 ---
+[INFO] jacocoArgLine set to -javaagent:/root/./workspace/apache/incubator-dubbo/443225947/.m2/org/jacoco/org.jacoco.agent/0.8.2/org.jacoco.agent-0.8.2-runtime.jar=destfile=/root/workspace/apache/incubator-dubbo/443225947/dubbo-serialization/dubbo-serialization-hessian2/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ dubbo-serialization-hessian2 ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ dubbo-serialization-hessian2 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources to META-INF/
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:compile (default-compile) @ dubbo-serialization-hessian2 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ dubbo-serialization-hessian2 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/apache/incubator-dubbo/443225947/dubbo-serialization/dubbo-serialization-hessian2/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:testCompile (default-testCompile) @ dubbo-serialization-hessian2 ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ dubbo-serialization-hessian2 ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building dubbo-remoting 2.7.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven-version) @ dubbo-remoting ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:3.0.0:check (checkstyle-validation) @ dubbo-remoting ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.2:prepare-agent (jacoco-initialize) @ dubbo-remoting ---
+[INFO] jacocoArgLine set to -javaagent:/root/./workspace/apache/incubator-dubbo/443225947/.m2/org/jacoco/org.jacoco.agent/0.8.2/org.jacoco.agent-0.8.2-runtime.jar=destfile=/root/workspace/apache/incubator-dubbo/443225947/dubbo-remoting/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ dubbo-remoting ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building dubbo-remoting-api 2.7.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven-version) @ dubbo-remoting-api ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:3.0.0:check (checkstyle-validation) @ dubbo-remoting-api ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.2:prepare-agent (jacoco-initialize) @ dubbo-remoting-api ---
+[INFO] jacocoArgLine set to -javaagent:/root/./workspace/apache/incubator-dubbo/443225947/.m2/org/jacoco/org.jacoco.agent/0.8.2/org.jacoco.agent-0.8.2-runtime.jar=destfile=/root/workspace/apache/incubator-dubbo/443225947/dubbo-remoting/dubbo-remoting-api/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ dubbo-remoting-api ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ dubbo-remoting-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] Copying 2 resources to META-INF/
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:compile (default-compile) @ dubbo-remoting-api ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ dubbo-remoting-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:testCompile (default-testCompile) @ dubbo-remoting-api ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ dubbo-remoting-api ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.dubbo.remoting.PerformanceServerTest
+[19/10/18 05:44:01:001 CEST] main  WARN remoting.PerformanceServerTest:  [DUBBO] Please set -Dport=9911, dubbo version: , current host: 172.17.73.222
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.426 sec - in org.apache.dubbo.remoting.PerformanceServerTest
+Running org.apache.dubbo.remoting.codec.TelnetCodecTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.163 sec - in org.apache.dubbo.remoting.codec.TelnetCodecTest
+Running org.apache.dubbo.remoting.codec.ExchangeCodecTest
+[19/10/18 05:44:01:001 CEST] main ERROR transport.AbstractCodec: Data length too large: 6, max payload: 4, channel: org.apache.dubbo.remoting.codec.AbstractMockChannel@58496dc
+org.apache.dubbo.remoting.transport.ExceedPayloadLimitException: Data length too large: 6, max payload: 4, channel: org.apache.dubbo.remoting.codec.AbstractMockChannel@58496dc
+	at org.apache.dubbo.remoting.transport.AbstractCodec.checkPayload(AbstractCodec.java:44)
+	at org.apache.dubbo.remoting.exchange.codec.ExchangeCodec.encodeRequest(ExchangeCodec.java:244)
+	at org.apache.dubbo.remoting.exchange.codec.ExchangeCodec.encode(ExchangeCodec.java:72)
+	at org.apache.dubbo.remoting.codec.ExchangeCodecTest.testMessageLengthExceedPayloadLimitWhenEncode(ExchangeCodecTest.java:447)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+[19/10/18 05:44:01:001 CEST] main ERROR transport.AbstractCodec: Data length too large: 6, max payload: 4, channel: org.apache.dubbo.remoting.codec.AbstractMockChannel@1686f0b4
+org.apache.dubbo.remoting.transport.ExceedPayloadLimitException: Data length too large: 6, max payload: 4, channel: org.apache.dubbo.remoting.codec.AbstractMockChannel@1686f0b4
+	at org.apache.dubbo.remoting.transport.AbstractCodec.checkPayload(AbstractCodec.java:44)
+	at org.apache.dubbo.remoting.exchange.codec.ExchangeCodec.encodeResponse(ExchangeCodec.java:289)
+	at org.apache.dubbo.remoting.exchange.codec.ExchangeCodec.encode(ExchangeCodec.java:74)
+	at org.apache.dubbo.remoting.codec.ExchangeCodecTest.testMessageLengthExceedPayloadLimitWhenEncode(ExchangeCodecTest.java:457)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+[19/10/18 05:44:01:001 CEST] main  WARN codec.ExchangeCodec:  [DUBBO] Data length too large: 6, max payload: 4, channel: org.apache.dubbo.remoting.codec.AbstractMockChannel@1686f0b4, dubbo version: , current host: 172.17.73.222
+org.apache.dubbo.remoting.transport.ExceedPayloadLimitException: Data length too large: 6, max payload: 4, channel: org.apache.dubbo.remoting.codec.AbstractMockChannel@1686f0b4
+	at org.apache.dubbo.remoting.transport.AbstractCodec.checkPayload(AbstractCodec.java:44)
+	at org.apache.dubbo.remoting.exchange.codec.ExchangeCodec.encodeResponse(ExchangeCodec.java:289)
+	at org.apache.dubbo.remoting.exchange.codec.ExchangeCodec.encode(ExchangeCodec.java:74)
+	at org.apache.dubbo.remoting.codec.ExchangeCodecTest.testMessageLengthExceedPayloadLimitWhenEncode(ExchangeCodecTest.java:457)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+Request [id=0, version=2.0.2, twoway=true, event=true, broken=false, data=org.apache.dubbo.remoting.codec.TelnetCodecTest$Person@3c1]
+Request [id=0, version=2.0.2, twoway=true, event=true, broken=false, data=R]
+[19/10/18 05:44:01:001 CEST] main  WARN codec.ExchangeCodec:  [DUBBO] Skip input stream 265, dubbo version: , current host: 172.17.73.222
+Response [id=0, version=null, status=20, event=false, error=null, result=org.apache.dubbo.remoting.codec.TelnetCodecTest$Person@3c1]
+Request [id=0, version=2.0.2, twoway=true, event=true, broken=false, data=org.apache.dubbo.remoting.codec.TelnetCodecTest$Person@3c1]
+[19/10/18 05:44:01:001 CEST] main ERROR transport.AbstractCodec: Data length too large: 16843009, max payload: 8388608, channel: org.apache.dubbo.remoting.codec.AbstractMockChannel@6c796cc1
+org.apache.dubbo.remoting.transport.ExceedPayloadLimitException: Data length too large: 16843009, max payload: 8388608, channel: org.apache.dubbo.remoting.codec.AbstractMockChannel@6c796cc1
+	at org.apache.dubbo.remoting.transport.AbstractCodec.checkPayload(AbstractCodec.java:44)
+	at org.apache.dubbo.remoting.exchange.codec.ExchangeCodec.decode(ExchangeCodec.java:114)
+	at org.apache.dubbo.remoting.exchange.codec.ExchangeCodec.decode(ExchangeCodec.java:85)
+	at org.apache.dubbo.remoting.codec.TelnetCodecTest.testDecode_assertEquals(TelnetCodecTest.java:117)
+	at org.apache.dubbo.remoting.codec.TelnetCodecTest.testDecode_assertEquals(TelnetCodecTest.java:107)
+	at org.apache.dubbo.remoting.codec.ExchangeCodecTest.test_Decode_Check_Payload(ExchangeCodecTest.java:173)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+Request [id=0, version=2.0.2, twoway=true, event=true, broken=false, data=null]
+Response [id=0, version=null, status=20, event=false, error=null, result=org.apache.dubbo.remoting.codec.TelnetCodecTest$Person@3c1]
+Response [id=0, version=null, status=20, event=false, error=null, result=org.apache.dubbo.remoting.codec.TelnetCodecTest$Person@3c1]
+Tests run: 35, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.572 sec <<< FAILURE! - in org.apache.dubbo.remoting.codec.ExchangeCodecTest
+testInvalidSerializaitonId(org.apache.dubbo.remoting.codec.ExchangeCodecTest)  Time elapsed: 0.018 sec  <<< ERROR!
+java.io.IOException: Unexpected serialization id:15 received from network, please check if the peer send the right id.
+	at org.apache.dubbo.remoting.codec.ExchangeCodecTest.decode(ExchangeCodecTest.java:78)
+	at org.apache.dubbo.remoting.codec.ExchangeCodecTest.testInvalidSerializaitonId(ExchangeCodecTest.java:154)
+
+Running org.apache.dubbo.remoting.exchange.support.header.HeartBeatTaskTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.019 sec - in org.apache.dubbo.remoting.exchange.support.header.HeartBeatTaskTest
+Running org.apache.dubbo.remoting.exchange.support.header.HeaderExchangeChannelTest
+Tests run: 27, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.666 sec - in org.apache.dubbo.remoting.exchange.support.header.HeaderExchangeChannelTest
+Running org.apache.dubbo.remoting.exchange.support.DefaultFutureTest
+before a future is create , time is : 2018-10-19 05:44:05
+after a future is timeout , time is : 2018-10-19 05:44:10
+Waiting server-side response timeout by scan timer. start time: 2018-10-19 05:44:05.569, end time: 2018-10-19 05:44:10.588, client elapsed: 1 ms, server elapsed: 5017 ms, timeout: 5000 ms, request: Request [id=10, version=null, twoway=true, event=false, broken=false, data=null], channel: null -> null
+before a future is create , time is : 2018-10-19 05:44:10
+after a future is timeout , time is : 2018-10-19 05:44:15
+Sending request timeout in client-side by scan timer. start time: 2018-10-19 05:44:10.683, end time: 2018-10-19 05:44:15.688, elapsed: 5004 ms, timeout: 5000 ms, request: Request [id=2, version=null, twoway=true, event=false, broken=false, data=null], channel: null -> null
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.148 sec - in org.apache.dubbo.remoting.exchange.support.DefaultFutureTest
+Running org.apache.dubbo.remoting.PerformanceClientTest
+[19/10/18 05:44:15:015 CEST] main  WARN remoting.PerformanceClientTest:  [DUBBO] Please set -Dserver=127.0.0.1:9911, dubbo version: , current host: 172.17.73.222
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.apache.dubbo.remoting.PerformanceClientTest
+Running org.apache.dubbo.remoting.transport.codec.CodecAdapterTest
+[19/10/18 05:44:15:015 CEST] main ERROR codec.DeprecatedTelnetCodec: Data length too large: 6, max payload: 4, channel: org.apache.dubbo.remoting.codec.AbstractMockChannel@17f8db6
+java.io.IOException: Data length too large: 6, max payload: 4, channel: org.apache.dubbo.remoting.codec.AbstractMockChannel@17f8db6
+	at org.apache.dubbo.remoting.transport.codec.DeprecatedTelnetCodec.checkPayload(DeprecatedTelnetCodec.java:63)
+	at org.apache.dubbo.remoting.transport.codec.DeprecatedExchangeCodec.encodeRequest(DeprecatedExchangeCodec.java:235)
+	at org.apache.dubbo.remoting.transport.codec.DeprecatedExchangeCodec.encode(DeprecatedExchangeCodec.java:63)
+	at org.apache.dubbo.remoting.transport.codec.CodecAdapter.encode(CodecAdapter.java:43)
+	at org.apache.dubbo.remoting.codec.ExchangeCodecTest.testMessageLengthExceedPayloadLimitWhenEncode(ExchangeCodecTest.java:447)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+[19/10/18 05:44:15:015 CEST] main ERROR codec.DeprecatedTelnetCodec: Data length too large: 6, max payload: 4, channel: org.apache.dubbo.remoting.codec.AbstractMockChannel@5c4714ef
+java.io.IOException: Data length too large: 6, max payload: 4, channel: org.apache.dubbo.remoting.codec.AbstractMockChannel@5c4714ef
+	at org.apache.dubbo.remoting.transport.codec.DeprecatedTelnetCodec.checkPayload(DeprecatedTelnetCodec.java:63)
+	at org.apache.dubbo.remoting.transport.codec.DeprecatedExchangeCodec.encodeResponse(DeprecatedExchangeCodec.java:274)
+	at org.apache.dubbo.remoting.transport.codec.DeprecatedExchangeCodec.encode(DeprecatedExchangeCodec.java:65)
+	at org.apache.dubbo.remoting.transport.codec.CodecAdapter.encode(CodecAdapter.java:43)
+	at org.apache.dubbo.remoting.codec.ExchangeCodecTest.testMessageLengthExceedPayloadLimitWhenEncode(ExchangeCodecTest.java:457)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+[19/10/18 05:44:15:015 CEST] main  WARN codec.DeprecatedExchangeCodec:  [DUBBO] Fail to encode response: Response [id=1, version=null, status=20, event=false, error=null, result=hello], send bad_response info instead, cause: Data length too large: 6, max payload: 4, channel: org.apache.dubbo.remoting.codec.AbstractMockChannel@5c4714ef, dubbo version: , current host: 172.17.73.222
+java.io.IOException: Data length too large: 6, max payload: 4, channel: org.apache.dubbo.remoting.codec.AbstractMockChannel@5c4714ef
+	at org.apache.dubbo.remoting.transport.codec.DeprecatedTelnetCodec.checkPayload(DeprecatedTelnetCodec.java:63)
+	at org.apache.dubbo.remoting.transport.codec.DeprecatedExchangeCodec.encodeResponse(DeprecatedExchangeCodec.java:274)
+	at org.apache.dubbo.remoting.transport.codec.DeprecatedExchangeCodec.encode(DeprecatedExchangeCodec.java:65)
+	at org.apache.dubbo.remoting.transport.codec.CodecAdapter.encode(CodecAdapter.java:43)
+	at org.apache.dubbo.remoting.codec.ExchangeCodecTest.testMessageLengthExceedPayloadLimitWhenEncode(ExchangeCodecTest.java:457)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+Request [id=0, version=2.0.2, twoway=true, event=true, broken=false, data=org.apache.dubbo.remoting.codec.TelnetCodecTest$Person@3c1]
+Request [id=0, version=2.0.2, twoway=true, event=true, broken=false, data=R]
+[19/10/18 05:44:15:015 CEST] main  WARN codec.DeprecatedExchangeCodec:  [DUBBO] Skip input stream 265, dubbo version: , current host: 172.17.73.222
+Response [id=0, version=null, status=20, event=false, error=null, result=org.apache.dubbo.remoting.codec.TelnetCodecTest$Person@3c1]
+Request [id=0, version=2.0.2, twoway=true, event=true, broken=false, data=org.apache.dubbo.remoting.codec.TelnetCodecTest$Person@3c1]
+[19/10/18 05:44:15:015 CEST] main ERROR codec.DeprecatedTelnetCodec: Data length too large: 16843009, max payload: 8388608, channel: org.apache.dubbo.remoting.codec.AbstractMockChannel@1c18ee69
+java.io.IOException: Data length too large: 16843009, max payload: 8388608, channel: org.apache.dubbo.remoting.codec.AbstractMockChannel@1c18ee69
+	at org.apache.dubbo.remoting.transport.codec.DeprecatedTelnetCodec.checkPayload(DeprecatedTelnetCodec.java:63)
+	at org.apache.dubbo.remoting.transport.codec.DeprecatedExchangeCodec.decode(DeprecatedExchangeCodec.java:104)
+	at org.apache.dubbo.remoting.transport.codec.DeprecatedExchangeCodec.decode(DeprecatedExchangeCodec.java:75)
+	at org.apache.dubbo.remoting.transport.codec.CodecAdapter.decode(CodecAdapter.java:53)
+	at org.apache.dubbo.remoting.codec.TelnetCodecTest.testDecode_assertEquals(TelnetCodecTest.java:117)
+	at org.apache.dubbo.remoting.codec.TelnetCodecTest.testDecode_assertEquals(TelnetCodecTest.java:107)
+	at org.apache.dubbo.remoting.codec.ExchangeCodecTest.test_Decode_Check_Payload(ExchangeCodecTest.java:173)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+Request [id=0, version=2.0.2, twoway=true, event=true, broken=false, data=null]
+Response [id=0, version=null, status=20, event=false, error=null, result=org.apache.dubbo.remoting.codec.TelnetCodecTest$Person@3c1]
+Response [id=0, version=null, status=20, event=false, error=null, result=org.apache.dubbo.remoting.codec.TelnetCodecTest$Person@3c1]
+Tests run: 35, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.09 sec - in org.apache.dubbo.remoting.transport.codec.CodecAdapterTest
+Running org.apache.dubbo.remoting.transport.AbstractCodecTest
+[19/10/18 05:44:15:015 CEST] main ERROR transport.AbstractCodec: Data length too large: 15728640, max payload: 8388608, channel: Mock for Channel, hashCode: 1682050612
+org.apache.dubbo.remoting.transport.ExceedPayloadLimitException: Data length too large: 15728640, max payload: 8388608, channel: Mock for Channel, hashCode: 1682050612
+	at org.apache.dubbo.remoting.transport.AbstractCodec.checkPayload(AbstractCodec.java:44)
+	at org.apache.dubbo.remoting.transport.AbstractCodecTest.test_checkPayload_default8M(AbstractCodecTest.java:42)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:252)
+	at junit.framework.TestSuite.run(TestSuite.java:247)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:86)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.164 sec - in org.apache.dubbo.remoting.transport.AbstractCodecTest
+Running org.apache.dubbo.remoting.buffer.ByteBufferBackedChannelBufferTest
+Tests run: 49, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.124 sec - in org.apache.dubbo.remoting.buffer.ByteBufferBackedChannelBufferTest
+Running org.apache.dubbo.remoting.buffer.DirectChannelBufferTest
+Tests run: 49, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.082 sec - in org.apache.dubbo.remoting.buffer.DirectChannelBufferTest
+Running org.apache.dubbo.remoting.buffer.HeapChannelBufferTest
+Tests run: 49, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.06 sec - in org.apache.dubbo.remoting.buffer.HeapChannelBufferTest
+Running org.apache.dubbo.remoting.buffer.DynamicChannelBufferTest
+Tests run: 52, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.064 sec - in org.apache.dubbo.remoting.buffer.DynamicChannelBufferTest
+Running org.apache.dubbo.remoting.buffer.ChannelBufferStreamTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.apache.dubbo.remoting.buffer.ChannelBufferStreamTest
+Running org.apache.dubbo.remoting.ChanelHandlerTest
+[19/10/18 05:44:16:016 CEST] main  WARN remoting.ChanelHandlerTest:  [DUBBO] Please set -Dserver=127.0.0.1:9911, dubbo version: , current host: 172.17.73.222
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.apache.dubbo.remoting.ChanelHandlerTest
+Running org.apache.dubbo.remoting.PerformanceClientCloseTest
+[19/10/18 05:44:16:016 CEST] main  WARN remoting.PerformanceClientCloseTest:  [DUBBO] Please set -Dserver=127.0.0.1:9911, dubbo version: , current host: 172.17.73.222
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.apache.dubbo.remoting.PerformanceClientCloseTest
+Running org.apache.dubbo.remoting.PerformanceClientFixedTest
+[19/10/18 05:44:16:016 CEST] main  WARN remoting.PerformanceClientTest:  [DUBBO] Please set -Dserver=127.0.0.1:9911, dubbo version: , current host: 172.17.73.222
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.apache.dubbo.remoting.PerformanceClientFixedTest
+Running org.apache.dubbo.remoting.handler.HeaderExchangeHandlerTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 sec - in org.apache.dubbo.remoting.handler.HeaderExchangeHandlerTest
+Running org.apache.dubbo.remoting.handler.WrappedChannelHandlerTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.54 sec - in org.apache.dubbo.remoting.handler.WrappedChannelHandlerTest
+Running org.apache.dubbo.remoting.handler.ConnectChannelHandlerTest
+[19/10/18 05:44:16:016 CEST] Dubbo-thread-1  WARN dispatcher.ChannelEventRunnable:  [DUBBO] ChannelEventRunnable handle CONNECTED operation error, channel is org.apache.dubbo.remoting.handler.MockedChannel@35a427ef, dubbo version: , current host: 172.17.73.222
+org.apache.dubbo.remoting.RemotingException: test connect biz error
+	at org.apache.dubbo.remoting.handler.WrappedChannelHandlerTest$BizChannelHander.connected(WrappedChannelHandlerTest.java:123)
+	at org.apache.dubbo.remoting.transport.dispatcher.ChannelEventRunnable.run(ChannelEventRunnable.java:66)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[19/10/18 05:44:16:016 CEST] Dubbo-thread-1  WARN dispatcher.ChannelEventRunnable:  [DUBBO] ChannelEventRunnable handle DISCONNECTED operation error, channel is org.apache.dubbo.remoting.handler.MockedChannel@f1af183, dubbo version: , current host: 172.17.73.222
+org.apache.dubbo.remoting.RemotingException: test disconnect biz error
+	at org.apache.dubbo.remoting.handler.WrappedChannelHandlerTest$BizChannelHander.disconnected(WrappedChannelHandlerTest.java:131)
+	at org.apache.dubbo.remoting.transport.dispatcher.ChannelEventRunnable.run(ChannelEventRunnable.java:73)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[19/10/18 05:44:16:016 CEST] Dubbo-thread-1  WARN dispatcher.ChannelEventRunnable:  [DUBBO] ChannelEventRunnable handle CAUGHT operation error, channel is org.apache.dubbo.remoting.handler.MockedChannel@3741470a, message is: null, exception is org.apache.dubbo.remoting.handler.WrappedChannelHandlerTest$BizException, dubbo version: , current host: 172.17.73.222
+org.apache.dubbo.remoting.RemotingException: org.apache.dubbo.remoting.handler.WrappedChannelHandlerTest$BizException
+	at org.apache.dubbo.remoting.handler.MockedChannelHandler.caught(MockedChannelHandler.java:54)
+	at org.apache.dubbo.remoting.transport.dispatcher.ChannelEventRunnable.run(ChannelEventRunnable.java:88)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.dubbo.remoting.handler.WrappedChannelHandlerTest$BizException
+	at org.apache.dubbo.remoting.handler.ConnectChannelHandlerTest.test_Caught_Biz_Error(ConnectChannelHandlerTest.java:102)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+[19/10/18 05:44:16:016 CEST] Dubbo-thread-1  WARN dispatcher.ChannelEventRunnable:  [DUBBO] ChannelEventRunnable handle RECEIVED operation error, channel is org.apache.dubbo.remoting.handler.MockedChannel@2051816, message is , dubbo version: , current host: 172.17.73.222
+org.apache.dubbo.remoting.RemotingException: test received biz error
+	at org.apache.dubbo.remoting.handler.WrappedChannelHandlerTest$BizChannelHander.received(WrappedChannelHandlerTest.java:139)
+	at org.apache.dubbo.remoting.transport.dispatcher.ChannelEventRunnable.run(ChannelEventRunnable.java:57)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[19/10/18 05:44:17:017 CEST] main  WARN support.AbortPolicyWithReport:  [DUBBO] Thread pool is EXHAUSTED! Thread Name: Dubbo, Pool Size: 0 (active: 0, core: 1, max: 1, largest: 0), Task: 0 (completed: 0), Executor status:(isShutdown:true, isTerminated:true, isTerminating:false), in test://10.20.30.40:1234!, dubbo version: , current host: 172.17.73.222
+[19/10/18 05:44:17:017 CEST] main  WARN support.AbortPolicyWithReport:  [DUBBO] Thread pool is EXHAUSTED! Thread Name: Dubbo, Pool Size: 0 (active: 0, core: 1, max: 1, largest: 0), Task: 0 (completed: 0), Executor status:(isShutdown:true, isTerminated:true, isTerminating:false), in test://10.20.30.40:1234!, dubbo version: , current host: 172.17.73.222
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.93 sec - in org.apache.dubbo.remoting.handler.ConnectChannelHandlerTest
+
+Results :
+
+Tests in error: 
+  ExchangeCodecTest.testInvalidSerializaitonId:154->decode:78 » IO Unexpected se...
+
+Tests run: 344, Failures: 0, Errors: 1, Skipped: 1
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] dubbo-parent ....................................... SUCCESS [  2.076 s]
+[INFO] dubbo-common ....................................... SUCCESS [01:00 min]
+[INFO] dubbo-metrics ...................................... SUCCESS [  0.028 s]
+[INFO] dubbo-metrics-api .................................. SUCCESS [  2.508 s]
+[INFO] dubbo-container .................................... SUCCESS [  0.043 s]
+[INFO] dubbo-container-api ................................ SUCCESS [  1.255 s]
+[INFO] dubbo-serialization ................................ SUCCESS [  0.036 s]
+[INFO] dubbo-serialization-api ............................ SUCCESS [  0.824 s]
+[INFO] dubbo-serialization-hessian2 ....................... SUCCESS [  0.727 s]
+[INFO] dubbo-remoting ..................................... SUCCESS [  0.023 s]
+[INFO] dubbo-remoting-api ................................. FAILURE [ 19.405 s]
+[INFO] dubbo-rpc .......................................... SKIPPED
+[INFO] dubbo-rpc-api ...................................... SKIPPED
+[INFO] dubbo-cluster ...................................... SKIPPED
+[INFO] dubbo-registry ..................................... SKIPPED
+[INFO] dubbo-registry-api ................................. SKIPPED
+[INFO] dubbo-monitor ...................................... SKIPPED
+[INFO] dubbo-monitor-api .................................. SKIPPED
+[INFO] dubbo-rpc-injvm .................................... SKIPPED
+[INFO] dubbo-filter ....................................... SKIPPED
+[INFO] dubbo-filter-validation ............................ SKIPPED
+[INFO] dubbo-filter-cache ................................. SKIPPED
+[INFO] dubbo-remoting-netty4 .............................. SKIPPED
+[INFO] dubbo-rpc-dubbo .................................... SKIPPED
+[INFO] dubbo-registry-default ............................. SKIPPED
+[INFO] dubbo-monitor-default .............................. SKIPPED
+[INFO] dubbo-rpc-rmi ...................................... SKIPPED
+[INFO] dubbo-registry-multicast ........................... SKIPPED
+[INFO] dubbo-serialization-jdk ............................ SKIPPED
+[INFO] dubbo-config ....................................... SKIPPED
+[INFO] dubbo-config-api ................................... SKIPPED
+[INFO] dubbo-bootstrap .................................... SKIPPED
+[INFO] dubbo-config-spring ................................ SKIPPED
+[INFO] dubbo-container-spring ............................. SKIPPED
+[INFO] dubbo-container-log4j .............................. SKIPPED
+[INFO] dubbo-container-logback ............................ SKIPPED
+[INFO] dubbo-remoting-netty ............................... SKIPPED
+[INFO] dubbo-remoting-mina ................................ SKIPPED
+[INFO] dubbo-remoting-grizzly ............................. SKIPPED
+[INFO] dubbo-remoting-p2p ................................. SKIPPED
+[INFO] dubbo-remoting-http ................................ SKIPPED
+[INFO] dubbo-remoting-zookeeper ........................... SKIPPED
+[INFO] dubbo-rpc-hessian .................................. SKIPPED
+[INFO] dubbo-rpc-http ..................................... SKIPPED
+[INFO] dubbo-rpc-webservice ............................... SKIPPED
+[INFO] dubbo-rpc-thrift ................................... SKIPPED
+[INFO] dubbo-rpc-memcached ................................ SKIPPED
+[INFO] dubbo-rpc-redis .................................... SKIPPED
+[INFO] dubbo-rpc-rest ..................................... SKIPPED
+[INFO] dubbo-registry-zookeeper ........................... SKIPPED
+[INFO] dubbo-registry-redis ............................... SKIPPED
+[INFO] dubbo-demo ......................................... SKIPPED
+[INFO] dubbo-demo-api ..................................... SKIPPED
+[INFO] dubbo-demo-provider ................................ SKIPPED
+[INFO] dubbo-demo-consumer ................................ SKIPPED
+[INFO] dubbo-plugin ....................................... SKIPPED
+[INFO] dubbo-qos .......................................... SKIPPED
+[INFO] dubbo-serialization-fastjson ....................... SKIPPED
+[INFO] dubbo-serialization-kryo ........................... SKIPPED
+[INFO] dubbo-serialization-fst ............................ SKIPPED
+[INFO] dubbo-serialization-test ........................... SKIPPED
+[INFO] dubbo-compatible ................................... SKIPPED
+[INFO] dubbo-dependencies-bom ............................. SKIPPED
+[INFO] dubbo-bom .......................................... SKIPPED
+[INFO] dubbo-all .......................................... SKIPPED
+[INFO] dubbo-distribution ................................. SKIPPED
+[INFO] dubbo-test ......................................... SKIPPED
+[INFO] dubbo-test-compatibility ........................... SKIPPED
+[INFO] dubbo-test-spring3 ................................. SKIPPED
+[INFO] dubbo-test-integration ............................. SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 01:29 min
+[INFO] Finished at: 2018-10-19T05:44:18+02:00
+[INFO] Final Memory: 52M/1125M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-test) on project dubbo-remoting-api: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/apache/incubator-dubbo/443225947/dubbo-remoting/dubbo-remoting-api/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :dubbo-remoting-api
