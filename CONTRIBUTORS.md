@@ -1,0 +1,128 @@
+## Contributors ##
+
+Copyright Notice: The JGraphT project source code is a composite of contributions by multiple authors. The copyright for each contribution is owned by the corresponding author. For details, please see [HISTORY.md](HISTORY.md) as well as the complete git history. All authors have agreed to license their contributions to the public as open source under the specific terms noted in [README.md](README.md).
+
+JGraphT wouldn't be the library it is today without the source contributions and suggestions made by the authors:
+
+- [Barak Naveh](http://sourceforge.net/users/barak_naveh/) (project founder)
+- [John V Sichi](https://github.com/jsichi) (current project administrator)
+- [Joris Kinable](https://github.com/jkinable) (JGraphtT Project Reviewer/Committer and Release Manager)
+- [Dimitrios Michail](https://github.com/d-michail) (JGraphT Project Reviewer/Committer)
+- [Liviu Rau](http://sourceforge.net/users/liviu_aurelian/)
+- [Nathan Fiedler](http://www.bluemarsh.com/personal/index.html)
+- [Michael Behrisch](http://sourceforge.net/users/behrisch/)
+- [Linda Buisman](http://sourceforge.net/users/linda_buisman/)
+- Erik Postma
+- Mikael Hansen
+- Avner Linder
+- Marden Neubert
+- [Christian Soltenborn](http://sourceforge.net/users/csoltenborn/)
+- [Christian Hammer](http://sourceforge.net/users/hammerc/)
+- Ewgenij Proschak
+- [Hartmut Benz](http://sourceforge.net/users/ivins/)
+- [Charles Fry](http://frogcircus.org/)
+- Guillaume Boulmier
+- Carl Anderson
+- Khanh Vu
+- Aaron Harnly
+- Welson Sun
+- Trevor Harmon
+- David Black-Schaffer
+- Vinayak Borkar
+- Andrew Berman
+- Lucas Scharenbroich
+- Hookahey
+- Tim Shearouse
+- Holger Brandl
+- Ilya Razenshteyn
+- Peter Giles
+- Andrew Newell
+- Tim Engler
+- Tom Larkworthy
+- Soren Davidsen
+- Andrea Pagani
+- Tom Conerly
+- Michele Mancioppi
+- Adrian Marte
+- [Assaf Mizrachi](https://github.com/assimiz)
+- Harshal Vora
+- Matt Sarjent
+- Robby McKilliam
+- Yuriy Nakonechnyy
+- Andreas Schnaiter
+- Owen Jacobson
+- Alejandro R. Lopez del Huerto
+- Vladimir Kostyukov
+- Ernst de Ridder
+- Michal Pasieka
+- Alexey Kudinkin
+- Adam Gouge
+- Nikolay Ognyanov
+- Graham Hill (AzrgExplorers)
+- Leo Crawford
+- Isaac Kleinman
+- Sebastian Hubenschmid
+- JeanYves Tinevez
+- Oliver Kopp
+- Javier Gutierrez (javierj)
+- Nicolas Fortin
+- Peter Goldstein
+- Rodrigo López Dato
+- Anders Wallgren
+- Siarhei
+- Jan Altenbernd
+- Andrew Chen
+- Florian Buenzli
+- Thomas Tschager
+- Tomas Hruz
+- Philipp Hoppen
+- Chris Wensel
+- Wil Selwood
+- Mihhail Verhovtsov
+- Fabian Späh
+- Rita Dobler
+- Szabolcs Besenyei
+- Luiz Kill
+- Christophe Thiebaud
+- Jon Robinson
+- Thomas Breitbart
+- Sarah Komla-Ebri
+- Graeme Ahokas
+- Christoph Zauner
+- [Andrew Gainer-Dewar](https://github.com/agdphd)
+- Benedikt Waldvogel
+- Victor Mikhaylov
+- Nils Olberg
+- [Daniel Gomez-Sanchez](https://github.com/magicDGS)
+- [Skuratovich Sergey](https://github.com/SSNikolaevich)
+- [Martin Sturm](https://github.com/WorstCase00)
+- [Patrick Sharp](https://github.com/sharpTrick)
+- [Piotr Turski](https://github.com/piotrturski)
+- [Alexandru Văleanu](https://github.com/AlexandruValeanu)
+- [Davide Cavestro](https://github.com/davidecavestro)
+- [Mark Raynsford](https://github.com/io7m)
+- [Mariusz Smykuła](https://github.com/mariuszs)
+- [Pratik Tibrewal](https://github.com/tibrewalpratik17)
+- [Chen Kui](https://github.com/Yimismi)
+- [Timofey Chudakov](https://github.com/Toptachamann)
+- [Konstantinos Karatsenidis](https://github.com/gate2k1)
+- [Kirill Vishnyakov](https://github.com/LightnessOfBeing)
+- [Emilio Cruciani](https://github.com/ioemilio)
+- [Vivek Talreja](https://github.com/Vivek1012)
+- [Gilles Gosuin](https://github.com/gilles-gosuin)
+- [Viktor Volkov](https://github.com/chupacabra007)
+- [Philipp Kaesgen](https://github.com/PhilippKaesgen)
+- [Lukas Harzenetter](https://github.com/lharzenetter)
+- [Christoph Grüne](https://github.com/christophgruene)
+- [Daniel Mock](https://github.com/danielmock)
+- [Oliver Feith](https://github.com/Watercrystal)
+- [Abdallah Atouani](https://github.com/AbdallahAt)
+- [Peter Harman](https://github.com/harmanpa)
+- [Nikhil Sharma](https://github.com/nks1558)
+- [Dennis Fischer](https://github.com/pdelvo)
+
+(if we have missed your name on this list, please email us to get it fixed).
+
+Other people have also helped in different ways: reporting bugs, requesting features, commenting, and by merely asking very good questions.
+
+Many thanks to all of you.
