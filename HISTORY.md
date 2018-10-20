@@ -1,0 +1,437 @@
+# HISTORY #
+
+Changes to JGraphT in each version:
+
+- **version 1.2.1** (under development):
+    - Prepared release cycle 1.2.1: removed deprecated code, updated dependencies, etc (contributed by Joris Kinable)
+    - Restored optional tests for `BergeGraphInspector` (contributed by Philipp Kaesgen)
+    - Use POSIX tar format for assembly (contributed by Mark Raynsford)
+    - Moved BrownBacktrackingColoring out of experimental, fixed bugs and wrote tests (contributed by Joris Kinable)
+    - Removed code not dual licensed under EPL-1.0 and LGPL-2.1-or-later: `AsUnweightedGraph` and `AsWeightedGraph` are gone. (supported by Robert Höttger and Oliver Kopp)
+    - Added forest generator based on the Barabasi-Albert model (contributed by Alexandru Văleanu)
+    - Added new implementation of `AsUnweightedGraph` and `AsWeightedGraph` (contributed by Lukas Harzenetter)
+    - Added pull request template (contributed by Oliver Kopp)
+    - Added `GraphSpecificsStrategy` and use the same edge set factory consistently (contributed by Dimitrios Michail)
+    - Added user overview doc (contributed by John Sichi)
+    - Clarified definition of `SimpleGraph` (contributed by Joris Kinable)
+    - Added O(m^1.5) algorithm for counting triangles in undirected graphs (contributed by Alexandru Văleanu)
+    - Calculate actual path weight in `AllDirectedPaths` (contributed by Andrew Gainer-Dewar)
+    - Refactored vertex cover tests (contributed by Alexandru Văleanu)
+    - Added `SimpleGraphMLImporter` for faster parsing (contributed by Dimitrios Michail)
+    - Increased numeric precision in PushRelabelMFImpl (contributed by Alexandru Văleanu)
+    - Added ColorRefinement and ColorRefinementIsomorphismInspector (contributed by Christoph Grüne, Daniel Mock, Oliver Feith and Abdallah Atouani)
+    - Improved efficiency of `BhandariKDisjointShortestPaths` (contributed by Assaf Mizrachi)
+    - Added `UnmodifiableUnionSet` to optimize `AsGraphUnion` (contributed by Dimitrios Michail)
+    - Made `GraphWalk` serializable (contributed by Alexandru Văleanu)
+    - Optimize `JohnsonShortestPaths` space usage (contributed by Dimitrios Michail)
+    - Heuristics for `FloydWarshallShortestPaths` (suggested by shevek, contributed by Dimitrios Michail)
+    - Added new `TreeToPathDecompositionAlgorithm` interface and implementation `HeavyPathDecomposition` (contributed by Alexandru Văleanu)
+    - Removed recursion from `FibonacciHeap` (contributed by Timofey Chudakov)
+    - Added `PruferTreeGenerator` for generating trees based on Prüfer sequences (contributed by Alexandru Văleanu)
+    - Added `VertexToIntegerMapping` utility class (contributed by Alexandru Văleanu)
+    - Handle maxLength=0 case in AllDirectedPaths (reported by Nikolas Havrikov, contributed by Andrew Gainer-Dewar)
+    - Added `SuurballeKDisjointShortestPaths` (contributed by Assaf Mizrachi)
+    - Make AsWeightedGraph propagate weight changes by default when backing graph is weighted (contributed by John Sichi)
+    - Fix assumptions about SAX `characters()` method calls in GraphML importers (contributed by Dimitrios Michail)
+    - Throw exception from no-arg `addVertex` when duplicate vertex generated (contributed by Dimitrios Michail)
+    - Replace `GenericFibonacciHeap` with dependency on jheaps library (contributed by Dimitrios Michail)
+    - Added `DulmageMendelsohnDecomposition` (contributed by Peter Harman)
+    - Package one bundle jar instead of multiple uber jars (contributed by Dimitrios Michail)
+    - Removed touchgraph support and corresponding module jgrapht-touchgraph (contributed by John Sichi)
+    - Added `ClusteringCoefficient` to compute the local and global clustering coefficient of a graph (contributed by Alexandru Văleanu)
+    - Refactored LCA interface, reimplemented Tarjan's algorithm and added HeavyPathLCAFinder, BinaryLiftingLCAFinder, EulerTourRMQLCAFinder (contributed by Alexandru Văleanu)
+    - Added jgrapht-opt module with fastutil graph implementation (contributed by Dimitrios Michail)
+    - Added negative weight cycle reporting in Bellman-Ford (contributed by Dimitrios Michail in response to proposal from Miron Balcerzak)
+    - Added `KolmogorovMinimumWeightPerfectMatching` (contributed by Timofey Chudakov)
+    - Added graph implementation specific for integer vertices and fastutil map to jgrapht-opt module (contributed by Dimitrios Michail)
+    - Added Christofides algorithm for computing 3/2 approximate TSP solutions (contributed by Timofey Chudakov)
+    - Fixed bug in HeldKarpTSP (reported by Timofey Chudako, contributed by Alexandru Văleanu)
+    - Addded `PartitioningAlgorithm` interface and `BipartitePartitioning` implementation for recognizing bipartite graphs (contributed by Alexandru Văleanu)
+    - Fixed bug in `GraphTests.isStronglyConnected`: undirected graphs are now correctly identified as strongly connected whenever the graph is connected (reported by Joris Kinable, contributed by Dimitrios Michail)
+    - Upgraded EPL to v2.0, copyright header cleanup, removed @since tag (contributed by John Sichi)
+    - Use checkstyle to enforce correct file headers (contributed by John Sichi)
+    - Added `ChinesePostman` (contributed by Joris Kinable)
+    - Added `LineGraphConverter` (contributed by Joris Kinable and Nikhil Sharma)
+    - Refactoring for color refinement (contributed by Dimitrios Michail)
+    - Added implementation for minimum cost flow problems through the Successive Shortest Path algorithm with capacity scaling (contributed by Timofey Chudakov)
+    - Updated library dependencies (contributed by Joris Kinable)
+    - Added exporter for the Lemon (LGF) format (contributed by Dimitrios Michail)
+    - Added support for using an edge function in AsWeightedGraph (contributed by Joris Kinable)
+    - Fixed bug in ColorRefinementIsomorphismInspector which required a disjoint graph union (contributed by Christoph Grüne and Dennis Fischer)
+
+- **version 1.2.0** (16-May-2018):
+    - Prepared release cycle 1.1.1: removed deprecated code, updated dependencies, etc (contributed by Joris Kinable)
+    - Updated demos (contributed by Dimitrios Michail)
+    - Added assertions to NeighborCache (contributed by Joris Kinable)
+    - Upgraded Antlr version to 4.7 (contributed by Dimitrios Michail)
+    - Rewrote `MaximumWeightBipartiteMatching` with exact arithmetic, introducing a `GenericFibonacciHeap` (contributed by Dimitrios Michail)
+    - Updated jmh to jdk9 compatible version; updated xmlunit to 2.x (contributed by Dimitrios Michail)
+    - Fixed FastLookup specifics to init edge container capacity to 1 (suggested by shevek, contributed by Joris Kinable)
+    - Made `IntrusiveEdgesSpecifics` interface public and optimized add call sequence (suggested by shevek, contributed by Dimitrios Michail)
+    - Fixed deprecation of Class.newInstance for Java 9; cleaned up GraphTests (contributed by Dimitrios Michail)
+    - Fixed PathValidator interface to use GraphPath (contributed by Assaf Mizrachi)
+    - Added Held-Karp dynamic programming algorithm for TSP (contributed by Alexandru Văleanu)
+    - Added fundamental cycle basis implementations (contributed by Dimitrios Michail)
+    - Added `BetweennessCentrality` scoring algorithm (contributed by Assaf Mizrachi)
+    - Automatically publish snapshots after successful Travis CI builds (contributed by Davide Cavestro)
+    - Implemented method findLcas() in NaiveLcaFinder (contributed by Alexandru Văleanu)
+    - Added `MultiObjectiveShortestPathAlgorithm` interface and first implementation `MartinShortestPath` (contributed by Dimitrios Michail)
+    - Added `TwoOptHeuristicTSP` (contributed by Dimitrios Michail)
+    - Fixed bug in `JohnsonSimpleCycles` with custom edge type (spotted by fredshevek, fix contributed by Dimitrios Michail)
+    - Added Automatic-Module Names to the various jgrapht modules to support modularization in JDK 9 (contributed by Mark Raynsford)
+    - Added `GraphTypeBuilder` (contributed by Dimitrios Michail)
+    - Reimplemented BiconnectivityInspector with additional functionality such as computing bridges and articulation points.  BiconnectivityInspector now works on multiple graph types (contributed by Joris Kinable)
+    - Revised BlockCutpointGraph and added additional tests (contributed by Joris Kinable)
+    - Removed old JUnit 3 dependencies (contributed by Joris Kinable)
+    - Fixed bug with maxPathLength equal to 1 in AllDirectedPaths (contributed by Andrew Gainer-Dewar)
+    - Allow digits as non-leading character in DOTUtils#isValidID (contributed by Mariusz Smykuła)
+    - Escape quotes in identifiers in `DOTExporter` (contributed by Mariusz Smykuła)
+    - Added `AlphaCentrality` (contributed by Pratik Tibrewal)
+    - Fixed bug in AbstractBaseGraph where degreeOf() method would create vertex instead of throwing an exception (spotted and fixed by Chen Kui)
+    - Added Folkman, Diamond, Tietze, Pappus and Tutte named graphs (contributed by Pratik Tibrewal)
+    - Added automorphism count verification to NamedGraphGeneratorTest (contributed by Pratik Tibrewal)
+    - Removed old JGraph dependency, updated JGraphX to version 3.4.1.3, minor revision of `JGraphXAdapterDemo` (contributed by John Sichi)
+    - Added `ChordalityInspector`, `LexBreadthFirstIterator`, and `MaximumCardinalityIterator` (contributed by Timofey Chudakov)
+    - Removed redundant parameter from `TypeUtil.uncheckedCast` method (contributed by Konstantinos Karatsenidis)
+    - Removed recursion from `NaiveLcaFinder.findLca` method (contributed by Konstantinos Karatsenidis)
+    - Added `AsSynchronizedGraph` in new package `org.jgrapht.graph.concurrent` (contributed by Chen Kui)
+    - Fixed bug with `ClosestFirstIterator` when given multiple start vertices (repro by shevek, fixed by John Sichi)
+    - Added method `GraphMeasurer.getGraphPseudoPeriphery` to compute the Pseudo-Periphery of a graph (contributed by Alexandru Văleanu)
+    - Added `PalmerHamiltonianCycle` which implements Palmer's exact algorithm to find Hamiltonian Cycles in undirected graphs. Added new interface `HamiltonianCycleAlgorithm`. (contributed by Alexandru Văleanu) 
+    - Removed lazy instantiation of containers in edge specifics (contributed by Dimitrios Michail)
+    - Added `DinicMFImpl` which implements Dinic's maximum flow algorithm (contributed by Kirill Vishnyakov)
+    - Optimized `PushRelabelMFImpl` implementation which drastically improves max flow computations on certain graphs. (contributed by Alexandru Văleanu) 
+    - Added `RandomRegularGraphGenerator` (contributed by Emilio Cruciani)
+    - Reimplemented significantly faster version of Prim's minimum spanning tree algorithm using a FibonacciHeap (suggested by Joris Kinable, contributed by Alexandru Văleanu)
+    - Added new jgrapht-guava module containing adapters for package com.google.common.graph (contributed by Dimitrios Michail)
+    - Demo classes listed on our wiki page are now also included in our demo package (contributed by Vivek Talreja)
+    - Added missing math markup to javadoc in all classes (contributed by Kirill Vishnyakov)
+    - Expose lock as public for `AsSynchronizedGraph`, and add copyless access mode (contributed by John Sichi)
+    - Handle nested structures in `GmlImporter` (suggested by Philippe Marchesseault, contributed by Dimitrios Michail)
+    - Replaced StringBuffer with StringBuilder (contributed by John Sichi)
+    - Added search tree query methods to `BreadthFirstIterator` (contributed by Joris Kinable)
+    - Improved documentation of VF2 subgraph isomorphism algorithm (contributed by John Sichi)
+    - Removed recursion from DAG forward and backwards DFS methods (contributed by Gilles Gosuin)
+    - Implemented performance improvements for `GnmRandomGraphGenerator` and `GnpRandomGraphGenerator` (suggested by @Shevek, contributed by Dimitrios Michail)
+    - Added `WeakChordalityInspector` to test whether a graph is weakly chordal (contributed by Timofey Chudakov)
+    - Fixed typo in `TreeSingleSourcePathsImpl` (contributed by Viktor Volkov)
+    - Deprecated `EdgeFactory` in favor of `Supplier`, and added supplier support for vertices as well (contributed by Dimitrios Michail)
+    - Separate fast and slow tests, via mvn test vs verify (contributed by Dimitrios Michail)
+    - Added `ChordalGraphMinimalVertexSeparatorFinder` for the detection of minimal vertex separators in chordal graphs (contributed by Timofey Chudakov)
+    - Added suites for fast tests, integration tests and performance tests (contributed by John Sichi)
+    - Refactored `ChordalityInspector` and revised several interfaces (vertex cover, independent set, clique, etc) (contributed by Joris Kinable)
+    - Minor improvements to `DOTExporter` (contributed by Dimitrios Michail)
+    - Added graph listener event for edge weight update (contributed by Dimitrios Michail)
+    - Added Planted Partition Graph Generator `PlantedPartitionGraphGenerator` (contributed by Emilio Cruciani)
+    - Added `BergeGraphInspector` which checks whether a graph is perfect (contributed by Philipp Kaesgen)
+    - Added Bhandari K-disjoint shortest paths implementation `BhandariKDisjointShortestPaths` (contributed by Assaf Mizrachi)
+
+- **version 1.1.0** (13-Nov-2017):
+    - Added ID descriptor to maven-assembly-plugin configuration to prevent a 'Assembly is incorrectly configured' error being thrown (contributed by Joris Kinable)
+    - Deleted all previously deprecated methods and general cleanup (contributed by Joris Kinable)
+    - Moved all importers/exporters from org.jgrapht.ext to org.jgrapht.io. This change allows users to use importers/exporters without the dependency on the various visualization libraries. (contributed by Dimitrios Michail)
+    - Added vertex coloring interface `VertexColoringAlgorithm`, as well as several greedy graph coloring algorithms (`LargestDegreeFirstColoring`, `RandomGreedyColoring`, `SaturationDegreeColoring`, `SmallestDegreeLastColoring`). The former `ChromaticNumber` class is now deprecated, as well as some related classes in the experimental package. (contributed by Dimitrios Michail)
+    - Extended the network analysis algorithms by adding closeness centrality computation (contributed by Dimitrios Michail)
+    - Added interface `StrongConnectivityAlgorithm`; Extracted common code of strong connectivity inspectors to abstract base class; added method which computes the graph condensation. (contributed by Dimitrios Michail)
+    - Added interface `TSPAlgorithm`, Added 2-approximation algorithm for metric TSP `TwoApproxMetricTSP`. The old implementation `HamiltonianCycle` is now deprecated due to its reduced efficiency. (contributed by Dimitrios Michail)
+    - Added a new, scalable `DOTImporter` which handles the full DOT specification including XML string identifiers. A dependency on the commons-lang3 package has been added to handle escaping/unescaping of strings efficiently; Updated antlr version to 4.6. (contributed by Dimitrios Michail)
+    - Added Johnson's all-pairs-shortest paths algorithm `JohnsonShortestPaths`; Simplified Bellman-Ford implementation and added support for negative cycle detection; added `AsWeightedUndirectedGraph` and `AsUnweightedUndirectedGraph`; Constructors of `UndirectedGraphUnion` are now public. (contributed by Dimitrios Michail)
+    - Refactored `DirectedAcyclicGraph`, moved it out of the experimental package, and refactored its perfomance tests using jmh; Deleted `GraphSquare` from experimental (inefficient implementation) (contributed by Dimitrios Michail)
+    - Added Watts-Strogatz small-world graph generator, Kleinberg's small-world graph generator, Barabasi-Albert graph generator, Linearized Chord Diagram GraphGenerator, AliasMethodSampler utility class with Vose's implementation; Refactored ScaleFreeGraphGenerator (constructor with random number generator added); Refactored CompleteGraphGenerator to not assume a specific graph type (simple, etc). (contributed by Dimitrios Michail)
+    - Deleted JUnit test suites. (contributed by Joris Kinable)
+    - Added interface `MaximalCliqueEnumerationAlgorithm`; Refactored and added timeout in BronKerbosch clique enumeration; Added pivot variant of Bron-Kerbosch; Added Bron-Kerbosch variant with pivoting and degeneracy ordering; Added Coreness vertex scorer; Added Degeneracy graph iterator; Added performance test for maximal clique enumeration algorithms (contributed by Dimitrios Michail)
+    - Deprecated `DirectedGraph`, `UndirectedGraph`, and `WeightedGraph`, moving their methods up to the base `Graph` interface; added `GraphType` metadata; made usage of DefaultWeightedEdge optional for weighted graphs (contributed by Dimitrios Michail)
+    - Refactored traversal iterators (contributed by Dimitrios Michail)
+    - Backport to support build using Android SDK 24 (contributed by Dimitrios Michail)
+    - Added support for attributes in GmlImporter; extracted common code from importers and exporters into abstract base classes to avoid code duplication. (contributed by Dimitrios Michail)
+    - Fixed issue where HierholzerEulerianCycle would sometimes set the wrong startVertex (reported by Frank Gevaerts, contributed by Dimitrios Michail)
+    - Revised `GraphWalk`; added additional input checks, additional functionality such as reverse and concat, added verification and factory methods. (contributed by Joris Kinable)
+    - Made several algorithm return objects iterable. (contributed by Joris Kinable)
+    - Support latex math notation in Javadoc (contributed by Joris Kinable)
+    - Allow CrossComponentIterator to start from a collection of startVertices (contributed by Patrick Sharp)
+    - New implementation of Edmonds' maximum cardinality matching algorithm for general graphs. Added certifier for maximum cardinality by computing a Edmonds-Gallai decomposition. Reimplemented Hopcroft-Karp's algorithm for bipartite graphs. Added greedy algorithm for maximum cardinality case and enhanced greedy algorithm for the weighted case. Extended UnionFind with additional functionality. (contributed by Joris Kinable)
+    - Optimize map operations in FastLookupSpecifics (suggested by shevek, fix contributed by Joris Kinable)
+    - Added importers and exporters for the graph6 (g6) and sparse6(s6) graph format (contributed by Joris Kinable)
+    - Added graph generator for Generalized Petersen graphs (contributed by Joris Kinable)
+    - Added graph generator for Windmill, Dutch Windmill and Friendship graphs (contributed by Joris Kinable)
+    - Added collection of 31 commonly used named graphs (contributed by Joris Kinable)
+    - Added GraphMeasurer class to compute graph diameter, radius, vertex eccentricity, graph center and graph periphery (contributed by Joris Kinable)
+    - Added GraphMetrics which computes general graph metrics; added method to compute the girth of a graph (contributed by Joris Kinable)
+    - Added GraphTests: isCubic, isOverfull, isForest, isSplit (contributed by Joris Kinable)
+    - Added basic support for graph attributes in DOTExporter (contributed by Dimitrios Michail)
+    - Added a generator which generates the complement graph of a given input graph (contributed by Joris Kinable)
+    - Performance improvement for Johnson's algorithm when a directed graph has no negative edge weights (contributed by Joris Kinable)
+    - Fix `BellmanFordShortestPath` to return null instead of empty path (contributed by Dimitrios Michail)
+    - Added type information in attributes for graph importers/exporters (contributed by Dimitrios Michail, per suggestion from Dimitrij Drus)
+    - Changed `UnionFind` from recursive to iterative (contributed by Piotr Turski)
+    - New `NeighborCache` replaces both `NeighborIndex` and `DirectedNeighborIndex`; this new class supports both directed and undirected graphs (contributed by Szabolcs Besenyei)
+    - Fixed bug in `PushRelabelMFImpl`: passing an object as parameter to `calculateMaxFlow` which is equal but not identical to the corresponding node in the graph would cause a Nullpointer exception.
+
+- **version 1.0.1** (16-Jan-2017):
+    - Deleted all previously deprecated methods (cleanup contributed by Joris Kinable and Dimitrios Michail)
+    - Cleanup of main pom.xml; Added `CONTRIBUTING.md` (contributed by John Sichi)
+    - Added Checkstyle plugin and rules; they are automatically executed by Travis (contributed by Dimitrios Michail)
+    - Unified graph export name providers using a common interface (contributed by Dimitrios Michail)
+    - Fix `GnmRandomGraphGenerator` bug in computation of maximum number of edges (contributed by Dimitrios Michail)
+    - Added new demo class `GraphMLDemo` to demonstrate importing and exporting graphs in the GraphML format (contributed by Dimitrios Michail)
+    - Added project badges (contributed by Daniel Gómez-Sánchez)
+    - Hide autogenerated classes of antlr (contributed by Dimitrios Michail)
+    - DOT-language import/export changes (contributed by Daniel Gómez-Sánchez)
+    - Clean up tests and warnings (contributed by Dimitrios Michail)
+    - Fixed GraphML importer xsd resolution bug (contributed by Dimitrios Michail, spotted by Peter Manning Jr.)
+    - Replaced VertexPair/UnorderedVertexPair with Pair/UnorderedPair (contributed by Dimitrios Michail)
+    - Clean up AbstractBaseGraph/Specifics dependencies (contributed by Dimitrios Michail)
+    - `GraphTests` has been reworked, extended with additional functionality, and moved from experimental to the core package (contributed by Dimitrios Michail and Barak Naveh)
+    - a `IntegerVertexFactory` has been added to the test package to reduce code duplication (contributed by Dimitrios Michail)
+    - 2 new 1/2-approximation algorithms (greedy algorithm and Drake and Hougardy path growing algorithm) have been added; matching algorithms have been moved to dedicated package (contributed by Dimitrios Michail)
+    - Added `HierholzerEulerianCycle`, a Linear time implementation of Hierholzer's algorithm to find a Eulerian Circuit in the graph. This class replaces the old `EulerianCircuit` implementation since it is significantly faster. (contributed by Dimitrios Michail)
+    - Added methods for adding/deletion of specified edge in graph builders (contributed by Skuratovich Sergey)
+    - Fixed a NullPointerException caused by `GraphMLImport` when an attributed was associated with the graph itself (i.e. at the <graphml> level); this could occur for instance with yED graphml instances. (reported by Tim Schultze, contributed by Dimitrios Michail)
+    - Minor updates and fixes to demo (contributed by Dimitrios Michail)
+    - Removed underscore identifiers and refactored tests in `KuhnMunkresMinimalWeightBipartitePerfectMatchingTest`. (contributed by Szabolcs Besenyei)
+    - All matching algorithms are now unified under a new `MatchingAlgorithm` interface; the old `WeightedMatchingAlgorithm` interface is now deprecated. (contributed by Dimitrios Michail)
+    - Added Borůvka's algorithm for the computation of a minimum spanning tree (contributed by Dimitrios Michail)
+    - Revised spanning tree and spanner interfaces and bundled them under the alg.spanning package (contributed by Dimitrios Michail)
+    - Small improvements in `StopWatch` class (contributed by Dimitrios Michail)
+    - Revised `Subgraph`, `MaskSubgraph` and subclasses to use Java 8 features; incorporated a number of performance improvements. Revised `MaskSubgraph` uses Java 8 predicates instead of the `MaskFunctor` interface. The latter interface is now deprecated. (contributed by Dimitrios Michail)
+    - Added `GusfieldGomoryHuCutTree`, `GusfieldEquivalentFlowTree`, and `PadbergRaoOddMinimumCutset` (contributed by Joris Kinable, following up on a Gomory-Hu proposal from Mads Jensen)
+    - Added support for inconsistent admissible heuristics in A* search (contributed by Joris Kinable)
+    - Added a `DIMACSExporter` which supports exporting graphs in various DIMACS formats (contributed by Dimitrios Michail)
+    - Enforce valid nodes in `FibonacciHeap`; Fixed a bug which could cause an infinite loop in the Fibonacci heap consolidate() method. (contributed by Dimitrios Michail)
+    - Revision of shortest path algorithms. Added interfaces `ShortestPathAlgorithm` and `KShortestPathAlgorithm`, and bundled shortest path algorithms in dedicated package. Adjusted KShortestPaths returns an empty list instead of null if no path exists. (contributed by Dimitrios Michail)
+    - `FlowdWarshall` now has support for multigraphs. Fixed diameter method now returns POSITIVE_INFINITY when a graph is disconnected. (contributed by Dimitrios Michail)
+    - `GraphPath` supports zero edge paths (path consisting of 1 vertex). (contributed by Dimitrios Michail)
+    - `DijkstraShortestPath` as well as several other shortest path classes can now return single-source shortest paths, using the traditional representation of a shortest path tree (contributed by Dimitrios Michail)
+    - Added an implementation of Goldberg and Harrelson's ALT admissible heuristic for A* (contributed by Dimitrios Michail)
+    - Replaced the `ClosestFirstIterator` in `DijkstraShortestPath` by a light-weight version of the iterator which significantly speeds up the shortest path computations. (contributed by Dimitrios Michail)
+    - Added implementation of Larry Page's `PageRank` algorithm. (contributed by Dimitrios Michail)
+    - Added faster transitive closure calculation for DAGs. (contributed by Martin Sturm)
+    - K-shortest paths interface now accepts k as a parameter (contributed by Dimitrios Michail)
+    
+- **version 1.0.0** (19-Sept-2016):
+    - Moved to JDK 1.8 (cleanup contributed by Joris Kinable)
+    - Fixes for `MaskSubgraph`, contributed by Andrew Gainer-Dewar
+    - Optimized edge lookups (contributed by Joris Kinable)
+    - Use LinkedHashSet in `CycleDetector` (contributed by Benedikt Waldvogel)
+    - Use unique OSGi bundle symbolic name for uber artifact (contributed by Christoph Zauner)
+    - Replace experimental GraphReader with `DIMACSImporter` (contributed by Joris Kinable)
+    - Implement various graph utility methods (contributed by Christoph Zauner)
+    - Add getFirstHop and getLastHop to `FloydWarshallShortestPaths` (contributed by Joris Kinable)
+    - Allow paths to be expressed in terms of vertices instead of edges; deprecate `GraphPathImpl` in favor of new `GraphWalk` (contributed by Joris Kinable)
+    - Weighted graph support in `GmlExporter` (contributed by Dimitrios Michail)
+    - Add `RandomWalkIterator` (contributed by Assaf Mizrachi)
+    - Add `GreedyMultiplicativeSpanner` (contributed by Dimitrios Michail)
+    - Support undirected graphs in max flow algorithms (contributed by Joris Kinable)
+    - Fix for reading escaped quotes in `DOTImporter` (contributed by Victor Mikhaylov)
+    - Add `BidirectionalDijkstraShortestPath` (contributed by Dimitrios Michail)
+    - Add external path validator for `KShortestPaths` (contributed by Assaf Mizrachi)
+    - Add `GmlImporter` (contributed by Dimitrios Michail)
+    - Fixed bug in HopcroftKarpBipartiteMatching which caused the algorithm to occasionally throw a NullPointerException (contributed by Dimitrios Michail, bug reported by Nils Olberg)
+    - Fixed `AStarShortestPath` to use Object.equals (contributed by Joris Kinable, bug reported by Zgce)
+    - Enhance `DirectedAcyclicGraph` to extend Iterable (contributed by Joris Kinable, suggested by Andrew Pennebaker)
+    - Enhance `MinSourceSinkCut` to make max-flow implementation configurable (contributed by Joris Kinable, suggested by Roman Pearah)
+    - Add new vertex cover algorithms and package (contributed by Joris Kinable and Nils Olberg)
+    - Improved GraphML support (contributed by Dimitrios Michail)
+    - Add common `GraphExporter` and `GraphImporter` interfaces (contributed by Dimitrios Michail)
+    - DOT importer id fix (contributed by Dimitrios Michail)
+    - Add `CSVExporter` and `CSVImporter` (contributed by Dimitrios Michail)
+    - Add `MinimumSTCutAlgorithm` (contributed by Joris Kinable)
+    - Capture trivial paths in `AllDirectedPaths` (contributed by Andrew Gainer-Dewar)
+    - Switch from Jalopy source code formatter to Eclipse, since Jalopy does not support java 8 (contributed by John Sichi)
+    - Fixed a bug in `RandomGraphGenerator`, reported by (@ckapop), which could cause an overflow when calculating the maximum number of edges allowed in a graph (contributed by Dimitrios Michail)
+    - Added generics to code in test package (contributed by Dimitrios Michail)
+    - Fixed a bug in `PushRelabelMFImpl`, reported by Joris Kinable, which caused a NullPointerException whenever the network contained multiple components (contributed by Dimitrios Michail)
+    - Fixed a bug in `MaximumFlowAlgorithmBase`: some vertices ended up with a null prototype vertex (contributed by Dimitrios Michail)
+    - Use equals for compare to fix bug in `EdmondsBlossomShrinking` (contributed by Szabolcs Besenyei)
+    - Reformat all file headers (contributed by Joris Kinable)
+    - Refactor and enhance random graph generators (contributed by Dimitrios Michail)
+    - Fix DirectedAcyclicGraph.removeAllVertices (contributed by Szabolcs Besenyei)
+    - Use Travis to enforce Javadoc correctness (contributed by Joris Kinable)
+    - Corrected all javadoc warnings (contributed by Dimitrios Michail)
+
+- **version 0.9.2** (3-Apr-2016): 
+    - Add `HawickJamesSimpleCycles`, contributed by Luiz Kill
+    - Add `DOTImporter`, contributed by Wil Selwood
+    - Optimize `FloydWarshallShortestPaths`, contributed by Mihhail Verhovtsov
+    - Add VF2 isomorphism and subgraph isomorphism detection, contributed by Fabian Späh
+    - Remove old experimental isomorphism implementation
+    - Fix for empty graph input to `KuhnMunkresMinimalWeightBipartitePerfectMatching`, contributed by Szabolcs Besenyei
+    - Fix for `EdmondsBlossomShrinking`, contributed by Alexey Kudinkin
+    - Add `TransitiveReduction`, contributed by Christophe Thiebaud
+    - Add `AStarShortestPath`, contributed by Joris Kinable, Jon Robinson, and Thomas Breitbart
+    - More `FloydWarshallShortestPaths` optimizations, contributed by Joris Kinable
+    - Add `MixedGraphUnion` and `AsWeightedDirectedGraph`; fix UndirectedGraphUnion constructors; contributed by Joris Kinable
+    - Add `GabowStrongConnectivityInspector` and `KosarajuStrongConnectivityInspector`, contributed by Joris Kinable and Sarah Komla-Ebri
+    - Add `PushRelabelMaximumFlow`; boost `EdmondsKarpMaximumFlow`; add `MaximumFlowAlgorithm` interface; add `Pair` and `Extension` utility classes; optional seed parameter to `RandomGraphGenerator`, contributed by Alexey Kudinkin
+    - Add `MaximumWeightBipartiteMatching`, contributed by Graeme Ahokas
+    - Osgify jgrapht-ext, contributed by Christoph Zauner
+    - Add `AllDirectedPaths`, contributed by Andrew Gainer-Dewar
+
+- **version 0.9.1** (5-Apr-2015): 
+    - Auto-generation of bundle manifest, contributed by Nicolas Fortin
+    - Travis CI configuration, contributed by Peter Goldstein
+    - TarjanLCA bugfix, contributed by Leo Crawford
+    - Add `SimpleGraphPath`, contributed by Rodrigo Lopez Dato
+    - Add `NaiveLcaFinder`, contributed by Leo Crawford
+    - Make getEdgeWeight throw NPE on null edge, suggested by Joris Kinable
+    - Clarify that shortest path length is weighted, per gjafachini
+    - Add DAG constructor that takes an edge factory, and make TarjanLCA constructor public, contributed by Anders Wallgren
+    - Fixed rounding error in graph generation, contributed by Siarhei
+    - Fixed Javadoc for `DirectedWeightedMultigraph`, noticed by Martin Lowinski
+    - Use annotations to simplify test suites, contributed by Jan Altenbernd
+    - Add missing Override/Deprecated annotations, contributed by Jan Altenbernd
+    - Update maven-compiler-plugin version, contributed by Andrew Chen
+    - Add builder package, contributed by Andrew Chen
+    - Add CliqueMinimalSeparatorDecomposition, contributed by Florian Buenzli, Thomas Tschager, Tomas Hruz, and Philipp Hoppen
+    - Include vertex #toString value in excn message, contributed by Chris Wensel
+    - Open up Specifics to allow for custom backing containers, contributed by Chris Wensel
+    - Make abstract graph constructors protected, contributed by John Sichi
+    - Moved to JDK 1.7
+
+- **version 0.9.0** (06-Dec-2013): 
+    - Move to github for source control, and Apache Maven for build, contributed by Andreas Schnaiter, Owen Jacobson, and Isaac Kleinman.
+    - Add source/target vertices to edge events to fix sf.net bug 3486775, spotted by Frank Mori Hess.
+    - Add `EdmondsBlossomShrinking` algorithm, contributed by Alejandro R. Lopez del Huerto.
+    - Fix empty diameter calculation in `FloydWarshallShortestPaths`, contributed by Ernst de Ridder (bug spotted by Jens Lehmann)
+    - Add `HopcroftKarpBipartiteMatching` and `MinSourceSinkCut`, contributed by Joris Kinable
+    - Fix multiple bugs in `StoerWagnerMinimumCut`, contributed by Ernst de Ridder
+    - Fix path weight bug in `FloydWarshallShortestPaths`, contributed by Michal Pasieka
+    - Add `PrimMinimumSpanningTree`, contributed by Alexey Kudinkin
+    - Add `DirectedWeightedPseudograph`, and fix 'DirectedMultigraph' contributed by Adam Gouge
+    - More KSP bugfixes (spotted by Sebastian Mueller, fixed by Guillaume Boulmier)
+    - Add `KuhnMunkresMinimalWeightBipartitePerfectMatching` and associated generators+interfaces (contributed by Alexey Kudinkin)
+    - Add cycle enumeration (contributed by Nikolay Ognyanov, originally from http://code.google.com/p/niographs/ )
+    - Update `removeAllEdges` to match specification (contributed by Graham Hill)
+    - Add `TarjanLowestCommonAncestor`, contributed by Leo Crawford
+    - Add `JGraphXAdapter`, contributed by Sebastian Hubenschmid and JeanYves Tinevez
+    - Add LGPL/EPL dual licensing, coordinated by Oliver Kopp
+    - Refactoring for `DirectedAcyclicGraph`, contributed by Javier Gutierrez
+
+- **version 0.8.3** (20-Jan-2012): 
+    - fix regression in `DOTExporter` inadvertently introduced by `0.8.2` changes.
+    - Add `GridGraphGenerator`, contributed by Assaf Mizrachi.
+    - Return coloring from ChromaticNumber, contributed by Harshal Vora.
+    - Fix bugs in KSP, contributed by Guillaume Boulmier; note that these bugfixes worsen the running time.  
+    - Fix an object identity bug in CycleDetector, contributed by Matt Sarjent.
+    -Add StoerWagnerMinimumCut, contributed by Robby McKilliam.
+    - Fix `MANIFEST.MF`, spotted by Olly.
+    - Make `FloydWarshallShortestPaths.getShortestPaths` unidirectional, contributed by Yuriy Nakonechnyy.
+
+- **version 0.8.2** (27-Nov-2010): 
+    - Clean up `FibonacciHeapNode` constructor, as suggested by Johan
+Henriksson.
+    - Optimize and enhance `FloydWarshallShortestPaths`, contributed by Soren Davidsen.
+    - Optimize `ChromaticNumber`,pointed out by gpaschos@netscape.net.
+    - Add unit test for `FloydWarshallShortestPaths` for bug noticed by
+Andrea Pagani. 
+    - Add vertex factory validation to `RandomGraphGenerator` to prevent a confusing problem encountered by Andrea Pagani.
+    - Add `KruskalMinimumSpanningTree` and `UnionFind`, contributed by Tom Conerly.
+    - Add attributes to `DOTExporter`, based on suggestion from Chris Lott.
+    - Fix inefficient assertion in `TopologicalOrderIterator`, spotted by 
+Peter Lawrey.
+    - Fix induced subgraph bug with addition of edge to underlying graph, contributed by Michele Mancioppi.
+    - Make `getEdgeWeight` delegate to `DefaultWeightedEdge.getWeight`, spotted by Michael Lindig.
+    - Add maven support, contributed by Adrian Marte.
+
+- **version 0.8.1** (3-Jul-2009): 
+    - Enhanced `GmlExporter` with customized labels and ID's, contributed by Trevor Harmon.
+    - Added new algorithms `HamiltonianCycle`, `ChromaticNumber` and `EulerianCircuit`, plus new generators `HyperCubeGraphGenerator`, `StarGraphGenerator`, and `CompleteBipartiteGraphGenerator`, all contributed by Andrew Newell.
+    - Fix bug with vertices which are equals but not identity-same in graphs allowing loops, spotted by Michael Michaud.
+    - Fix bug in `EquivalenceIsomorphismInspector`, reported by Tim Engler.          - Add `toString` for shortest paths wrapper, spotted by Achim Beutel.
+    - Add `FloydWarshallShortestPaths`, contributed by Tom Larkworthy.
+    - Enhance `DijskstraShortestPath` to support `GraphPath` interface.
+    - Add `GraphUnion` (with directed and undirected variants), contributed by Ilya Razenshteyn.
+
+- **version 0.8.0** (Sept-2008): 
+    - Moved to JDK 1.6.
+    - Fixed problem with `RandomGraphGenerator` reported by Mario Rossi.
+    - Added `CompleteGraphGenerator`, contributed by Tim Shearouse.
+    - Fixed `FibonacciHeap` performance problem reported by Jason Lenderman.
+    - Made `DotExporter` reject illegal vertex ID's, contributed by Holger Brandl.
+    - Fixed bogus assertion for topological sort over empty
+graph, spotted by Harris Lin.
+    - Added scale-free graph generator and `EdmondsKarpMaximumFlow`, contributed by Ilya Razenshteyn.
+    - Added `DirectedAcyclicGraph`, contributed by Peter Giles.
+    - Added protected `getWeight` accessor to `DefaultWeightedEdge`, likewise `getSource` and `getTarget` on `DefaultEdge`.
+    - Optimized iterators to skip calling event firing routines when there are no listeners, and used `ArrayDeque` in a number of places, per suggestion from Ross Judson.
+    - Improvements to `StrongConnectivityInspector` and OSGi bundle support contributed by Christian Soltenborn.
+
+- **version 0.7.3** (Jan-2008):
+    - Patch to `JGraphModelAdapter.removeVertex` provided by Hookahey.
+    - Added `ParanoidGraph`.
+    - Removed obsolete `ArrayUtil` (spotted by Boente).
+    - Added `GraphPath`, and used it to fix mistake in `0.7.2` (k-shortest-paths was returning a private data structure,
+as discovered by numerous users).
+    - Fixed `EdgeReversedGraph.getAllEdges` (spotted by neumanns@users.sf.net).
+    - Fixed incorrect assertion in `TopologicalOrderIterator` constructor.
+    - Enabled assertions in JUnit tests.
+    - Fixed NPE in `BellmanFordShortestPath.getCost`.
+    - Fixed a few problems spotted by findbugs.
+
+- **version 0.7.2** (Sept-2007): 
+    - Added `TransitiveClosure`, contributed by Vinayak Borkar.
+    - Added biconnectivity/cutpoint inspection, k-shortest-paths, and masked
+subgraphs, all contributed by Guillaume Boulmier.
+    - Made some Graphs helper methods even more generic, as suggested by JongSoo.
+    - Test and fixes for (Directed)NeighborIndex submitted by Andrew Berman.
+    - Added `AsUnweighted(Directed)Graph` and `AsWeightedGraph`, contributed by Lucas Scharenbroich.
+    - Dropped support for retroweaver.
+
+- **version 0.7.1** (March-2007): 
+    - Fixed some bugs in `CycleDetector` reported by Khanh Vu, and added more testcases for it.
+    - Fixed bugs in `DepthFirstIterator` reported by Welson Sun, and added WHITE/GRAY/BLACK states and `vertexFinished` listener event.
+    - Exposed `Subgraph.getBase()`, and parameterized `Subgraph` on graph type (per suggestion from Aaron Harnly).
+    - Added `EdgeReversedView`.
+    - Added `GmlExporter` (contributed by Dimitrios Michail), plus `DOTExporter` and `GraphMLExporter` (both contributed by Trevor Harmon).
+    - Enhanced `TopologicalOrderIterator` to take an optional Queue parameter for tie-breaking (per suggestion from JongSoo Park).
+    - Fixed some documentation errors reported by Guillaume Boulmier.
+
+- **version 0.7.0** (July-2006) : 
+    - Upgraded to JDK 1.5 (generics support added by Christian Hammer with help from Hartmut Benz and John Sichi).
+    - Added `(Directed)NeighborIndex` and `MatrixExporter`, contributed by Charles Fry.
+    - Added BellmanFord, contributed by Guillaume Boulmier of France Telecom.
+    - Removed never-used `LabeledElement`.
+    - Renamed package from `org._3pq.jgrapht` to `org.jgrapht`.
+    - Made various breaking change to interfaces; edge collections are now Sets, not Lists.
+    - Added Touchgraph converter, contributed by Carl Anderson
+
+- **version 0.6.0** (July-2005) : 
+    - Upgraded to JDK 1.4, taking advantage of its new linked hash set/map containers to make edge/vertex set order-deterministic
+    - Added support for custom edge lists.
+    - Fixed various serialization and Subgraph issues.
+    - Added to `JGraphModelAdapter` support for JGraph's "dangling" edges; its constructors have slightly changed and now forbid `null` values.
+    - Improved interface to `DijskstraShortestPath`, and added radius support to `ClosestFirstIterator`.
+    - Added new `StrongConnectivityInspector` algorithm (contributed by Christian Soltenborn) and `TopologicalOrderIterator` (contributed by Marden Neubert).
+    - Deleted deprecated `TraverseUtils`.
+    - Upgraded to JGraph `5.6.1.1`.
+
+- **version 0.5.3** (June-2004) : 
+    - Removed Subgraph verification of element's identity to base graph, upgraded to JGraph 4.0
+    - Added the `VisioExporter` which was contributed by Avner Linder
+    - minor bug fixes and improvements.
+
+- **version 0.5.2** (March-2004) : 
+    - Serialization improvements, fixes to subgraphs and listenable graphs
+    - added support for JGraph > JGraphT change propagation for JGraph adapter (contributed by Erik Postma)
+    - upgraded to JGraph 3.1, various bug fixes and improvements.
+
+- **version 0.5.1** (November-2003) : 
+    - Semantics of `Graph.clone()` has changed, please check the documentation if you're using it.
+    - Added Dijkstra's shortest path, vertex cover approximations, new graph generation framework
+    - upgraded to JGraph 3.0
+    - various bug fixes and API improvements.
+
+- **version 0.5.0** (14-Aug-2003) : 
+    - a new connectivity inspector added
+    - edge API refactored to be simpler
+    - improved ant build
+    - improved event model
+    - all known bugs were fixed, documentation clarifications, other small improvements. 
+    - API of 0.5.0 is not 100% backward compatible with 0.4.1 but upgrade is simple and straightforward.
+
+- **version 0.4.1** (05-Aug-2003) : 
+    - A new adapter to JGraph that provides graph visualizations, new depth-first and breadth-first iteration algorithms
+    - various bug fixes and refactoring
+    - moved unit-tests to a separate folder hierarchy and added more unit-tests.
+
+- **version 0.4.0** (July-2003) : Initial public release.
