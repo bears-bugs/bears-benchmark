@@ -1,0 +1,151 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 2972, 
+      "numberRunning": 2973, 
+      "numberFailing": 0, 
+      "numberErroring": 1, 
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException", 
+          "isError": true, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 0
+    }, 
+    "failingModule": "/root/workspace/jgrapht/jgrapht/443997242/jgrapht-core", 
+    "failureDetails": [
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "org.jgrapht.generate.WattsStrogatzGraphGeneratorTest", 
+        "testMethod": "testNonIntegerVertices", 
+        "isError": true
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 9, 
+        "numberRunning": 10, 
+        "testClass": "org.jgrapht.generate.WattsStrogatzGraphGeneratorTest", 
+        "numberFailing": 0, 
+        "numberErroring": 1, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/jgrapht/jgrapht/builds/444189432", 
+      "date": "Oct 20, 2018 11:07:22 PM", 
+      "id": 444189432
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/jgrapht/jgrapht/builds/443997242", 
+      "date": "Oct 20, 2018 8:31:18 AM", 
+      "id": 443997242
+    }
+  }, 
+  "repository": {
+    "name": "jgrapht/jgrapht", 
+    "url": "https://github.com/jgrapht/jgrapht", 
+    "isFork": true, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "https://github.com/lingeringsocket/jgrapht", 
+      "name": "lingeringsocket/jgrapht", 
+      "githubId": 3945718
+    }, 
+    "githubId": 3969325
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/jgrapht/jgrapht/commit/c5c2971e96eb59a2e8a846b4ce570c872a4c5595", 
+      "sha": "c5c2971e96eb59a2e8a846b4ce570c872a4c5595", 
+      "branchName": "master", 
+      "date": "Oct 20, 2018 10:58:14 PM", 
+      "repoName": "jgrapht/jgrapht"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/jgrapht/jgrapht/commit/8f3cb1acf8221df2fd16a807dae6be1daa33298a", 
+      "sha": "8f3cb1acf8221df2fd16a807dae6be1daa33298a", 
+      "branchName": "master", 
+      "date": "Oct 20, 2018 8:22:09 AM", 
+      "repoName": "jgrapht/jgrapht"
+    }
+  }, 
+  "bugName": "jgrapht-jgrapht-443997242-444189432", 
+  "version": "latest", 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 4, 
+      "numberDeleted": 3
+    }
+  }, 
+  "type": "passing_passing", 
+  "bugId": "Bears-222", 
+  "projectMetrics": {
+    "numberSourceFiles": 415, 
+    "numberLibrariesFailingModule": 12, 
+    "numberTestFiles": 266, 
+    "numberModules": 8
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 548639008, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 761790464, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Oct 20, 2018 11:15:53 PM", 
+    "projectRootPomPath": "./workspace/jgrapht/jgrapht/443997242/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          0, 
+          0, 
+          0, 
+          0, 
+          84
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 84
+      }, 
+      "testing": {
+        "stepDurations": [
+          126
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 126
+      }, 
+      "cloning": {
+        "stepDurations": [
+          47
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 47
+      }
+    }, 
+    "reproductionDateBeginning": "Oct 20, 2018 11:07:33 PM", 
+    "totalDuration": 494
+  }
+}
