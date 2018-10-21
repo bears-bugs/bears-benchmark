@@ -1,0 +1,152 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 489, 
+      "numberRunning": 490, 
+      "numberFailing": 1, 
+      "numberErroring": 0, 
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError", 
+          "isError": false, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 0
+    }, 
+    "failingModule": "/root/workspace/ctripcorp/apollo/444069339/apollo-adminservice", 
+    "failureDetails": [
+      {
+        "failureName": "java.lang.AssertionError", 
+        "detail": "Expected exception: com.ctrip.framework.apollo.common.exception.BadRequestException", 
+        "isError": false, 
+        "testMethod": "testDeleteDefaultFail", 
+        "testClass": "com.ctrip.framework.apollo.adminservice.controller.ClusterControllerTest"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 1, 
+        "numberRunning": 2, 
+        "testClass": "com.ctrip.framework.apollo.adminservice.controller.ClusterControllerTest", 
+        "numberFailing": 1, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/ctripcorp/apollo/builds/444288772", 
+      "date": "Oct 21, 2018 9:43:01 AM", 
+      "id": 444288772
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/ctripcorp/apollo/builds/444069339", 
+      "date": "Oct 20, 2018 3:09:51 PM", 
+      "id": 444069339
+    }
+  }, 
+  "repository": {
+    "name": "ctripcorp/apollo", 
+    "url": "https://github.com/ctripcorp/apollo", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 53127403
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/ctripcorp/apollo/commit/a8a4a0d3f00e4193df90a76e20b4089574005d23", 
+      "sha": "a8a4a0d3f00e4193df90a76e20b4089574005d23", 
+      "branchName": "master", 
+      "date": "Oct 21, 2018 9:27:40 AM", 
+      "repoName": "ctripcorp/apollo"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/ctripcorp/apollo/commit/2dbb811267a56fffcdaff38915d376646fad8d98", 
+      "sha": "2dbb811267a56fffcdaff38915d376646fad8d98", 
+      "branchName": "master", 
+      "date": "Oct 20, 2018 2:53:55 PM", 
+      "repoName": "ctripcorp/apollo"
+    }
+  }, 
+  "bugName": "ctripcorp-apollo-444069339-444288772", 
+  "version": "latest", 
+  "projectMetrics": {
+    "numberSourceFiles": 491, 
+    "numberLibrariesFailingModule": 169, 
+    "numberTestFiles": 135, 
+    "numberModules": 12
+  }, 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 0, 
+      "numberDeleted": 8
+    }
+  }, 
+  "bugId": "Bears-205", 
+  "type": "passing_passing", 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 456639608, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 575143936, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Oct 21, 2018 9:51:33 AM", 
+    "projectRootPomPath": "./workspace/ctripcorp/apollo/444069339/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          0, 
+          9, 
+          0, 
+          0, 
+          82
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 91
+      }, 
+      "testing": {
+        "stepDurations": [
+          137
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 137
+      }, 
+      "cloning": {
+        "stepDurations": [
+          20
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 20
+      }
+    }, 
+    "reproductionDateBeginning": "Oct 21, 2018 9:43:15 AM", 
+    "totalDuration": 490
+  }
+}
