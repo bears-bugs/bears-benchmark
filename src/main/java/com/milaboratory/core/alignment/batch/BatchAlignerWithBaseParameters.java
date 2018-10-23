@@ -30,9 +30,11 @@ import com.milaboratory.primitivio.annotations.Serializable;
  */
 @JsonAutoDetect(fieldVisibility = JsonAutoDetect.Visibility.ANY, isGetterVisibility = JsonAutoDetect.Visibility.NONE,
         getterVisibility = JsonAutoDetect.Visibility.NONE)
-@JsonTypeInfo(use = JsonTypeInfo.Id.NAME, include = JsonTypeInfo.As.PROPERTY, property = "type", defaultImpl = KAlignerParameters.class)
-@JsonSubTypes({@JsonSubTypes.Type(value = KAlignerParameters.class, name = "kaligner"),
-        @JsonSubTypes.Type(value = KAlignerParameters2.class, name = "kaligner2")})
+@JsonTypeInfo(use = JsonTypeInfo.Id.NAME, include = JsonTypeInfo.As.PROPERTY, property = "type")
+@JsonSubTypes({
+        @JsonSubTypes.Type(value = KAlignerParameters.class, name = "kaligner"),
+        @JsonSubTypes.Type(value = KAlignerParameters2.class, name = "kaligner2")
+})
 @Serializable(asJson = true)
 public interface BatchAlignerWithBaseParameters {
     <P> BatchAlignerWithBaseWithFilter<NucleotideSequence, P, ? extends AlignmentHit<NucleotideSequence, P>> createAligner();
