@@ -1,0 +1,146 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 425, 
+      "numberRunning": 426, 
+      "numberFailing": 0, 
+      "numberErroring": 1, 
+      "failures": [
+        {
+          "failureName": "java.lang.IllegalArgumentException", 
+          "isError": true, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 12
+    }, 
+    "failingModule": "/root/workspace/milaboratory/milib/444855015", 
+    "failureDetails": [
+      {
+        "failureName": "java.lang.IllegalArgumentException", 
+        "detail": "Class com.milaboratory.core.alignment.kaligner1.KAlignerParameters not subtype of [simple type, class com.milaboratory.core.alignment.kaligner2.KAlignerParameters2]", 
+        "isError": true, 
+        "testMethod": "caseJ1", 
+        "testClass": "com.milaboratory.core.alignment.kaligner2.KAligner2Test"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 7, 
+        "numberRunning": 8, 
+        "testClass": "com.milaboratory.core.alignment.kaligner2.KAligner2Test", 
+        "numberFailing": 0, 
+        "numberErroring": 1, 
+        "numberSkipping": 1
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/milaboratory/milib/builds/444858326", 
+      "date": "Oct 23, 2018 1:44:00 AM", 
+      "id": 444858326
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/milaboratory/milib/builds/444855015", 
+      "date": "Oct 23, 2018 1:39:10 AM", 
+      "id": 444855015
+    }
+  }, 
+  "repository": {
+    "name": "milaboratory/milib", 
+    "url": "https://github.com/milaboratory/milib", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 20955566
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/milaboratory/milib/commit/039ae34f1f7a5436970703da1168f882c814b3bb", 
+      "sha": "039ae34f1f7a5436970703da1168f882c814b3bb", 
+      "branchName": "develop", 
+      "date": "Oct 23, 2018 1:41:47 AM", 
+      "repoName": "milaboratory/milib"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/milaboratory/milib/commit/1b5501f7bd80fd4435686d039116e8434b29084b", 
+      "sha": "1b5501f7bd80fd4435686d039116e8434b29084b", 
+      "branchName": "develop", 
+      "date": "Oct 23, 2018 1:29:08 AM", 
+      "repoName": "milaboratory/milib"
+    }
+  }, 
+  "bugName": "milaboratory-milib-444855015-444858326", 
+  "version": "latest", 
+  "projectMetrics": {
+    "numberSourceFiles": 576, 
+    "numberLibrariesFailingModule": 12, 
+    "numberTestFiles": 220, 
+    "numberModules": 1
+  }, 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 5, 
+      "numberDeleted": 3
+    }
+  }, 
+  "bugId": "Bears-226", 
+  "type": "failing_passing", 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 230165016, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 381157376, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Oct 23, 2018 2:17:48 AM", 
+    "projectRootPomPath": "./workspace/milaboratory/milib/444855015/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          0, 
+          44
+        ], 
+        "stepNames": [
+          "CheckoutBuggyBuildCandidate", 
+          "BuildProjectBuggyBuildCandidate"
+        ], 
+        "nbSteps": 2, 
+        "totalDuration": 44
+      }, 
+      "testing": {
+        "stepDurations": [
+          132
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidate"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 132
+      }, 
+      "cloning": {
+        "stepDurations": [
+          4
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 4
+      }
+    }, 
+    "reproductionDateBeginning": "Oct 23, 2018 2:12:16 AM", 
+    "totalDuration": 328
+  }
+}
