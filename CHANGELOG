@@ -1,0 +1,202 @@
+
+MiLib 1.8.4 (14 Jun 2018)
+========================
+
+-- Major revision and fix for affine scoring alignment algorithms
+-- Tools for (low) quality trimming
+-- `setFloatingRightBound` and `setFloatingLeftBound` generalized on `AbstractKAlignerParameters`
+-- Fix for `setReadId` for `SingleReadLazy`
+-- Fixes IllegalState exception in Sorter with empty input
+
+
+MiLib 1.8.3 (30 Mar 2018)
+========================
+
+-- New `greedy` search flag for SequenceTreeMap, with `greedy = false` SequenceTreeMap searches for 
+   all possible alignments between target sequence and sequences stored in the Trie
+-- Fixed bug in `SequenceTreeMap`, leading to missed matches for sequences with at least one 
+   deletion and one insertion compared to the target one
+-- Fixed bug in `MismatchOnlyPairedReadMerger`, leading to wrong `IllegalArgumentException`
+
+
+MiLib 1.8.2 ( 7 Feb 2018)
+========================
+
+-- Upgrade to on-HDD `Sorter` (smarter memory / speed trade-offs)
+-- Verbose exception for non-standard line breaks in fastq file
+-- `shiftIndelsAtHomopolymers` for alignments
+-- Reads/targets merging algorithms now supports differnet `IdentityType` (`Unweighted`, 
+   `MinimalQualityWeighted`)
+-- Added `SequenceReadUtil.setReadId`
+-- Added `PipeDataInputReader`
+-- `ArrayUtils` methods
+-- Added `move` method in `Alignment` object
+-- Many minor optimizations, enhancements
+
+
+MiLib 1.8.1 (24 Jul 2017)
+========================
+
+-- Backward compatibility for JSON serialization of AffineGapAlignmentScoring
+
+
+MiLib 1.8 ( 7 Jun 2017)
+========================
+
+-- `Randomizer` class, for memory-efficient randomization of huge streams of objects
+-- `reverse()` method for Range
+-- `AlignmentScoring` JSON serialization/deserialization fix
+-- `size()` method added to `SequenceProvider` interface
+-- Optional automatic inference of `size` value for `CachedSequenceProvider`
+-- Added `com.milaboratory.core.Range#getAbsoluteRangeFor`
+-- Added `com.milaboratory.core.sequence.provider.SequenceProviderUtils#subProvider`
+-- `MultiNSequenceWithQuality` abstraction
+-- Build host information added to output jar artefact
+
+
+MiLib 1.7.2 ( 2 Mar 2017)
+========================
+
+-- Sorter for long streams of object, uses merge sort and temp file to store predsorted stream 
+   chunks (`com.milaboratory.util.Sorter`).
+-- Added `Range#hasSameDirection` method
+-- Added `SmartProgressReporter#extractProgress` for `CountingOutputPort`
+-- Minor corrections for `com.milaboratory.util.TempFileManager`
+
+
+MiLib 1.7.1 (30 Jan 2017)
+========================
+
+-- Added two methods `com.milaboratory.core.alignment.Alignment#convertToSeq1Range` and 
+   `com.milaboratory.core.alignment.Alignment#convertToSeq2Range`
+-- Added `without` method in `Range` class
+-- Added `getMinimalMatchScore`, `getMaximalMatchScore`, `getMinimalMismatchScore` and 
+   `getMaximalMismatchScore` method to AlignmentScoring
+-- Fix for noncommutativity of range `intersect` and `intersectsWith` methods
+
+
+MiLib 1.7 (26 Dec 2016)
+========================
+
+-- Comprehansive set of methods to convert nucleotide mutations to amino-acid (e.g. 
+   `nt2aaWithMapping`, `nt2aaDetailed`, etc...)
+-- Encode method for mutations with separator
+-- Mutations#extractMutationsForRange renamed to extractRelativeMutationsForRange
+-- Addded Mutations#extractAbsoluteMutationsForRange
+-- Added AlignmentIterator
+-- minor: Added com.milaboratory.cli.ActionHelpProvider#printDefaultHelp
+-- minor: Fix for toString of empty mutations
+
+
+MiLib 1.6 (16 Dec 2016)
+========================
+
+-- ConvertPosition in Mutations and Alignments classes renamed to convertToSeq2Position 
+   **[migrate]**
+-- Introduced new method for reverse position conversion in alignments convertToSeq1Position (in 
+   Mutations and Alignments classes)
+
+
+MiLib 1.5.1 ( 8 Nov 2016)
+========================
+
+-- Additional sequence id extractor in RandomAccessFastaIndex
+-- Redberry pipe -> 0.9.6
+
+
+MiLib 1.5 ( 8 Sep 2016)
+========================
+
+
+
+MiLib 1.4 (20 Jun 2016)
+========================
+
+-- A bunch of classes migrated from MITools to MiLib
+-- Classes for CLI abstraction moved from MiTools
+-- Version of Jackson updated to 2.7.4
+-- Minor fixes CLI
+-- Correct offset values in PairedReadMergingResult
+-- *(Alpha)* Mutations aggregator
+
+
+MiLib 1.3 ( 1 Feb 2016)
+========================
+
+-- Major refactoring of wildcards
+-- Reverse-complement for sequences with wildcards
+-- Motif matching in sequences with wildcards
+-- Bitap search in sequences with wildcards
+-- Rename of `mismatchAndIndelMatcherFirst()` -> `substitutionAndIndelMatcherFirst()`
+
+
+MiLib 1.2 (29 Dec 2015)
+========================
+
+-- KAligner2: new aligner for amplicon-like sequencing data processing (alignments with long gaps, 
+   performance ~20-100us per query).
+-- Common API for batch aligners.
+-- Full set of banded aligners with affine gap
+-- Nuc. Mutations -> AA. Mutations utility method
+-- `removeMutationsInRanges` method for Mutations class
+-- minor: Output jar file now contain version inforamtion accessible using 
+   `VersionInfo.getVersionInfo(...)`
+-- minor: FastqRecordsReader made public
+-- minor: Access to RawFastaRecord
+
+
+MiLib 1.1.2 ( 6 Oct 2015)
+========================
+
+-- Compatibility writer for Enums in PrimitivI
+
+
+MiLib 1.1.1 (11 Sep 2015)
+========================
+
+-- exception in fastq files with `.` symbol in sequence fixed, `.` symbol in fastq files converts 
+   to 'N'
+-- verbose error message if fastq file parsing failed
+-- added `MultiAlignmentHelper` for pretty output of several alignments with common sequence (like 
+   V, D, J alignments in VDJ assembly)
+-- `charFromCodeAt` renamed to `symbolAt` in base Sequence class
+-- BLAST aligner now supports management of several concurrent BLAST instances (to align queries 
+   from a common pipe)
+
+
+MiLib 1.1 (21 Aug 2015)
+========================
+
+-- Substantial modification for basic Sequence abstraction
+-- Wildcars are incorporated into normal alphabets
+-- IncompleteSequences are removed
+-- `FastaReader` isolated into sepparate entity (now it can read AminoAcid sequences) and special 
+   wrapper is created (`FastaSequenceReaderWrapper`) to wire it back to SequenceReader abstraction
+-- `BatchAligner` abstraction
+-- `SimpleBatchAligner`
+-- Extancive binding to Blast implemeting BatchAligner abstraction for interoperability with other 
+   BatchAligners
+-- many other small modifications to support new abstraction
+
+
+MiLib 1.0.2 (12 Aug 2015)
+========================
+
+-- New automated release mechanism
+-- More named presets for TreeSearchParameters (`two`/`three`/`four` x 
+   smatches`/`indels`/`mismatchesOrIndels`)
+
+
+MiLib v1.0.1 (16 Jun 2015)
+========================
+
+-- Added StringSerializer to PrimitivIO
+-- Fixed annoying time format in SmartProgressReporter
+-- Converter from BTOP to Mutations
+
+
+
+MiLib v1.0 (23 Jan 2015)
+========================
+
+-- Initial release

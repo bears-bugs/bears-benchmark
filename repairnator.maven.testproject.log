@@ -1,0 +1,898 @@
+[INFO] Scanning for projects...
+[INFO] Inspecting build with total of 1 modules...
+[INFO] Installing Nexus Staging features:
+[INFO]   ... total of 1 executions of maven-deploy-plugin replaced with nexus-staging-maven-plugin
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building MiLib 1.9-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ milib ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-antrun-plugin:1.8:run (default) @ milib ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (create-buildnumber) @ milib ---
+[INFO] ShortRevision tag detected. The value is '7'.
+[INFO] Executing: /bin/sh -c cd '/root/workspace/milaboratory/milib/444855015' && 'git' 'rev-parse' '--verify' '--short=7' 'HEAD'
+[INFO] Working directory: /root/workspace/milaboratory/milib/444855015
+[INFO] Storing buildNumber: 1b5501f at timestamp: 1540253592807
+[WARNING] Cannot get the branch information from the git repository: 
+Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref
+
+[INFO] ShortRevision tag detected. The value is '7'.
+[INFO] Executing: /bin/sh -c cd '/root/workspace/milaboratory/milib/444855015' && 'git' 'rev-parse' '--verify' '--short=7' 'HEAD'
+[INFO] Working directory: /root/workspace/milaboratory/milib/444855015
+[INFO] Storing buildScmBranch: UNKNOWN
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create-metadata (create-metadata) @ milib ---
+[INFO] ShortRevision tag detected. The value is '7'.
+[INFO] Executing: /bin/sh -c cd '/root/workspace/milaboratory/milib/444855015' && 'git' 'rev-parse' '--verify' '--short=7' 'HEAD'
+[INFO] Working directory: /root/workspace/milaboratory/milib/444855015
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ milib ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 9 resources
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ milib ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 288 source files to /root/workspace/milaboratory/milib/444855015/target/classes
+[INFO] /root/workspace/milaboratory/milib/444855015/src/main/java/com/milaboratory/primitivio/PrimitivO.java: Some input files use unchecked or unsafe operations.
+[INFO] /root/workspace/milaboratory/milib/444855015/src/main/java/com/milaboratory/primitivio/PrimitivO.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ milib ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 10 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ milib ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ milib ---
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.22.0/surefire-junit4-2.22.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.22.0/surefire-junit4-2.22.0.pom (4 KB at 5.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.22.0/surefire-providers-2.22.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.22.0/surefire-providers-2.22.0.pom (3 KB at 63.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.22.0/surefire-junit4-2.22.0.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.22.0/surefire-junit4-2.22.0.jar (83 KB at 557.8 KB/sec)
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.milaboratory.primitivio.PrimitivIOTest
+[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.785 s - in com.milaboratory.primitivio.PrimitivIOTest
+[INFO] Running com.milaboratory.primitivio.UtilTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.milaboratory.primitivio.UtilTest
+[INFO] Running com.milaboratory.primitivio.SerializersManagerTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.milaboratory.primitivio.SerializersManagerTest
+[INFO] Running com.milaboratory.primitivio.test.TestJsonClass1Test
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.milaboratory.primitivio.test.TestJsonClass1Test
+[INFO] Running com.milaboratory.core.alignment.AlignmentUtilsTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in com.milaboratory.core.alignment.AlignmentUtilsTest
+[INFO] Running com.milaboratory.core.alignment.AlignmentTest
+8 AGACACAGATACA 20
+  ||||||| |||||
+0 AGACACATATACA 12
+0 AGACACATATACA 12
+  ||||||| |||||
+8 AGACACAGATACA 20
+
+0 GATACATTAGACACAGATACA--- 20
+          ||||||| |||||   
+0 --------AGACACATATACACAG 15
+0 --------AGACACATATACACAG 15
+          ||||||| |||||   
+0 GATACATTAGACACAGATACA--- 20
+
+0 GATACATTAGA---CACAGATACA 20
+  |||||||||||   ||||||||||
+5 GATACATTAGAGACCACAGATACA 28
+5 GATACATTAGAGACCACAGATACA 28
+  |||||||||||   ||||||||||
+0 GATACATTAGA---CACAGATACA 20
+
+0 GATAC-----ATTAGA---CACAGATACA 20
+  |||||     ||||||   ||||||||||
+0 GATACGATACATTAGAGACCACAGATACA 28
+0 GATACGATACATTAGAGACCACAGATACA 28
+  |||||     ||||||   ||||||||||
+0 GATAC-----ATTAGA---CACAGATACA 20
+
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.158 s - in com.milaboratory.core.alignment.AlignmentTest
+[INFO] Running com.milaboratory.core.alignment.BLASTMatrixTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in com.milaboratory.core.alignment.BLASTMatrixTest
+[INFO] Running com.milaboratory.core.alignment.batch.SimpleBatchAlignerTest
+4 hits.
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 s - in com.milaboratory.core.alignment.batch.SimpleBatchAlignerTest
+[INFO] Running com.milaboratory.core.alignment.ScoringMatrixIOTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 s - in com.milaboratory.core.alignment.ScoringMatrixIOTest
+[INFO] Running com.milaboratory.core.alignment.blast.BlastDBBuilderTest
+[WARNING] Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.03 s - in com.milaboratory.core.alignment.blast.BlastDBBuilderTest
+[INFO] Running com.milaboratory.core.alignment.blast.BlastAlignerParametersTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.milaboratory.core.alignment.blast.BlastAlignerParametersTest
+[INFO] Running com.milaboratory.core.alignment.blast.BlastAlignerExtTest
+[WARNING] Tests run: 2, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.001 s - in com.milaboratory.core.alignment.blast.BlastAlignerExtTest
+[INFO] Running com.milaboratory.core.alignment.blast.BlastAlignerTest
+[WARNING] Tests run: 4, Failures: 0, Errors: 0, Skipped: 4, Time elapsed: 0 s - in com.milaboratory.core.alignment.blast.BlastAlignerTest
+[INFO] Running com.milaboratory.core.alignment.SubstitutionMatrixTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 s - in com.milaboratory.core.alignment.SubstitutionMatrixTest
+[INFO] Running com.milaboratory.core.alignment.BandedAlignerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.041 s - in com.milaboratory.core.alignment.BandedAlignerTest
+[INFO] Running com.milaboratory.core.alignment.AlignmentScoringTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.1 s - in com.milaboratory.core.alignment.AlignmentScoringTest
+[INFO] Running com.milaboratory.core.alignment.BandedMatrixTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in com.milaboratory.core.alignment.BandedMatrixTest
+[INFO] Running com.milaboratory.core.alignment.BandedAffineAlignerTest
+0 atgcggggatgc 11
+0 atgcggggatgc 11
+0 --------------------- -1
+0 ATAAAAAAAAAAACGAGCTAG 20
+0 --------------------- -1
+0 ATAAAAAAAAAAACGAGCTAG 20
+0 at-----------cgagctagTTTTTTTTTTT 20
+0 atAAAAAAAAAAAcgagctag----------- 20
+0 at-----------cgagctagTTTTTTTTTTT 20
+0 atAAAAAAAAAAAcgagctag----------- 20
+0 atgcGGGGatgc 11
+0 atgcTA--atgc 9
+0 atgcGGGGatgc----------- 11
+0 atgcTA--atgcTTTTTTTTTTT 20
+ 0 cgtaGGGGcgta 11
+11 cgta--ATcgta 20
+0 -----------cgtaGGGGcgta 11
+0 TTTTTTTTTTTcgtaAT--cgta 20
+0 atgcggggat-gTTTTT 15
+0 atgcggggatAg----- 11
+0 atgcggggat-gTTTTTTT 17
+0 atgcggggatAg------- 11
+7 g-taggggcgta 17
+0 gAtaggggcgta 11
+
+0 TTTTTTTg-taggggcgta 17
+0 -------gAtaggggcgta 11
+0  0
+0  0
+[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.043 s - in com.milaboratory.core.alignment.BandedAffineAlignerTest
+[INFO] Running com.milaboratory.core.alignment.AlignerTest
+2.77us
+4.09us
+2.25us
+[INFO] Tests run: 28, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.822 s - in com.milaboratory.core.alignment.AlignerTest
+[INFO] Running com.milaboratory.core.alignment.AlignmentTrimmerTest
+lTrimmed = 1688
+rTrimmed = 1658
+lTrimmed = 2835
+rTrimmed = 2825
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.294 s - in com.milaboratory.core.alignment.AlignmentTrimmerTest
+[INFO] Running com.milaboratory.core.alignment.kaligner2.KAligner2Test
+Time per query: 398.48us
+Processed queries: 113
+Bad percent: 0.0
+False positive percent: 0.5682740704659848
+Scoring error percent: 0.8849557522123894
+4963
+[ERROR] Tests run: 9, Failures: 0, Errors: 1, Skipped: 1, Time elapsed: 16.329 s <<< FAILURE! - in com.milaboratory.core.alignment.kaligner2.KAligner2Test
+[ERROR] caseJ1(com.milaboratory.core.alignment.kaligner2.KAligner2Test)  Time elapsed: 0.03 s  <<< ERROR!
+java.lang.IllegalArgumentException: Class com.milaboratory.core.alignment.kaligner1.KAlignerParameters not subtype of [simple type, class com.milaboratory.core.alignment.kaligner2.KAlignerParameters2]
+	at com.milaboratory.core.alignment.kaligner2.KAligner2Test.caseJ1(KAligner2Test.java:451)
+
+[INFO] Running com.milaboratory.core.alignment.kaligner2.KMapper2Test
+noHits: 249
+noHits2: 0
+noHits3: 0
+wrongTopHit: 42
+wrongTopHitS: 31
+noCorrectHitInList: 21
+
+
+
+
+Timings:
+DescriptiveStatistics:
+n: 100000
+min: 6485.0
+max: 2.16650504E8
+mean: 128446.7620399956
+std dev: 1715564.480289788
+median: 101299.0
+skewness: 106.95797327266104
+kurtosis: 11793.164565433619
+
+
+
+
+
+Clusters basicSize
+DescriptiveStatistics:
+n: 99709
+min: 1.0
+max: 6.0
+mean: 2.885276153606992
+std dev: 1.1052482682709857
+median: 3.0
+skewness: 0.28014144606355607
+kurtosis: -0.6998883117363532
+
+
+
+
+
+Top Delta
+DescriptiveStatistics:
+n: 99730
+min: -33.0
+max: 0.0
+mean: -0.0015140880377017792
+std dev: 0.17484438779834457
+median: 0.0
+skewness: -133.2242155495836
+kurtosis: 19694.007981490216
+
+  ID: 0
+  Score: 1308
+  Cluster 0:
+  Q 9 -> T 15 - 6
+  Q 12 -> T 18 - 6
+  Q 15 -> T 21 - 6
+  Q 18 -> T 24 - 6
+  Q 21 -> T 27 - 6
+  Q 24 -> T 30 - 6
+  Q 27 -> T 33 - 6
+  Q 30 -> T 36 - 6
+  Cluster 1:
+  Q 57 -> T 48 - -9
+  Q 60 -> T 51 - -9
+  Q 69 -> T 61 - -8
+  Q 78 -> T 69 - -9
+  Q 81 -> T 72 - -9
+  Q 84 -> T 75 - -9
+  Q 87 -> T 78 - -9
+  Cluster 2:
+  Q 123 -> T 89 - -34
+  Q 126 -> T 92 - -34
+  Q 129 -> T 95 - -34
+  Q 132 -> T 98 - -34
+  Q 135 -> T 101 - -34
+  Q 150 -> T 116 - -34
+  Q 168 -> T 132 - -36
+  Q 171 -> T 135 - -36
+  Q 174 -> T 138 - -36
+  Q 177 -> T 141 - -36
+  Q 180 -> T 144 - -36
+  Q 183 -> T 147 - -36
+  Q 185 -> T 149 - -36
+
+  ID: 0
+  Score: 1569
+  Cluster 0:
+  Q 27 -> T 15 - -12
+  Q 39 -> T 28 - -11
+  Q 42 -> T 31 - -11
+  Q 45 -> T 34 - -11
+  Q 48 -> T 37 - -11
+  Q 51 -> T 40 - -11
+  Cluster 1:
+  Q 84 -> T 50 - -34
+  Q 87 -> T 53 - -34
+  Q 90 -> T 56 - -34
+  Q 93 -> T 59 - -34
+  Q 96 -> T 62 - -34
+  Q 99 -> T 65 - -34
+  Q 111 -> T 79 - -32
+  Q 114 -> T 82 - -32
+  Q 117 -> T 85 - -32
+  Cluster 2:
+  Q 150 -> T 92 - -58
+  Q 153 -> T 95 - -58
+  Q 156 -> T 98 - -58
+  Q 159 -> T 101 - -58
+  Cluster 3:
+  Q 201 -> T 123 - -78
+  Q 204 -> T 126 - -78
+  Q 207 -> T 129 - -78
+  Q 216 -> T 139 - -77
+  Q 219 -> T 142 - -77
+  Q 231 -> T 153 - -78
+  Q 234 -> T 156 - -78
+  Q 237 -> T 159 - -78
+  Cluster 4:
+  Q 249 -> T 181 - -68
+  Q 252 -> T 184 - -68
+  Q 255 -> T 187 - -68
+  Q 258 -> T 190 - -68
+  Q 261 -> T 193 - -68
+  Q 262 -> T 194 - -68
+
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 21.537 s - in com.milaboratory.core.alignment.kaligner2.KMapper2Test
+[INFO] Running com.milaboratory.core.alignment.kaligner2.KAlignerParameters2Test
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 s - in com.milaboratory.core.alignment.kaligner2.KAlignerParameters2Test
+[INFO] Running com.milaboratory.core.alignment.kaligner2.OffsetPacksAccumulatorTest
+[WARNING] Tests run: 14, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.001 s - in com.milaboratory.core.alignment.kaligner2.OffsetPacksAccumulatorTest
+[INFO] Running com.milaboratory.core.alignment.AlignmentHelperTest
+    0 GAGGTGCAGCTGGTGGAGTCTGGGGGAGGC 29
+      ||||||||||||||||||||||||||||||
+    0 GAGGTGCAGCTGGTGGAGTCTGGGGGAGGC 29
+
+   30 TTGGT-ACAGCCTGGGGGGTCCCTGAGACT 58
+       |||| | |||||||||||||| |||||| 
+   30 CTGGTCA-AGCCTGGGGGGTCCATGAGACA 58
+
+   59 CTCCTGTGCAGCCTCTGGATTCACCTTCAG 88
+      |||||||||||||||||||||| |||||||
+   59 CTCCTGTGCAGCCTCTGGATTCCCCTTCAG 88
+
+   89 TAGC-TATAGCATGAACTGGGTCCGCCAGG 117
+      || | |||||||||||||||||||||||||
+   89 TA-CTTATAGCATGAACTGGGTCCGCCAGG 117
+
+  118 CTCCAGGGAAGGGGCTGGAGTGGGTTTCAT 147
+      ||||||||||||||||||||||||| ||||
+  118 CTCCAGGGAAGGGGCTGGAGTGGGTCTCAT 147
+
+  148 ACATTAGTAGTAGTAGTAG-TACCATATAC 176
+       |||||||||| ||||||| || |||||| 
+  148 CCATTAGTAGTGGTAGTAGTTA-CATATAT 176
+
+  177 TACGCAGACTCTGTGAAGGGCCGATTCACC 206
+      ||||||||||| ||||||||||||||||||
+  177 TACGCAGACTCCGTGAAGGGCCGATTCACC 206
+
+  207 ATCTCCAGAGACAATGCCAAGAACTCACTG 236
+      |||||||||||||| |||||||||||||||
+  207 ATCTCCAGAGACAACGCCAAGAACTCACTG 236
+
+  237 TATCTGCAAATGAACAGCCTGAGAGACGAG 266
+      ||||||||||||||||||||||||| ||||
+  237 TATCTGCAAATGAACAGCCTGAGAGCCGAG 266
+
+  267 GACACGGCTGTGTATTACTGTGC 289
+      |||||||||||||||||||||||
+  267 GACACGGCTGTGTATTACTGTGC 289
+
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in com.milaboratory.core.alignment.AlignmentHelperTest
+[INFO] Running com.milaboratory.core.alignment.kaligner1.KAlignerTest
+##teamcity[buildStatisticValue key='kmFound' value='0.9449']
+##teamcity[buildStatisticValue key='kmWrong' value='1.0E-4']
+##teamcity[buildStatisticValue key='kmFalse' value='0.0058']
+C=1176;I=0;M=0;ScE=0;R=0.0 AlignmentTime = 115.84us
+C=1642;I=1;M=0;ScE=0;R=0.0 AlignmentTime = 228.64us
+C=2046;I=0;M=0;ScE=0;R=0.0 AlignmentTime = 99.73us
+C=2142;I=0;M=0;ScE=0;R=8.333333333333333E-7 AlignmentTime = 171.42us
+C=2999;I=0;M=0;ScE=0;R=0.0 AlignmentTime = 146.69us
+C=3000;I=0;M=0;ScE=2;R=0.0 AlignmentTime = 127.31us
+C=2999;I=0;M=0;ScE=0;R=0.0 AlignmentTime = 178.28us
+C=2995;I=0;M=1;ScE=0;R=0.0 AlignmentTime = 243.22us
+8 AGACACAGATACA 20
+  ||||||| |||||
+0 AGACACATATACA 12
+0 AGACACATATACA 12
+  ||||||| |||||
+8 AGACACAGATACA 20
+
+0 GATACATTAGACACAGATACA--- 20
+          ||||||| |||||   
+0 --------AGACACATATACACAG 15
+0 --------AGACACATATACACAG 15
+          ||||||| |||||   
+0 GATACATTAGACACAGATACA--- 20
+
+0 GATACATTAGA---CACAGATACA 20
+  |||||||||||   ||||||||||
+5 GATACATTAGAGACCACAGATACA 28
+5 GATACATTAGAGACCACAGATACA 28
+  |||||||||||   ||||||||||
+0 GATACATTAGA---CACAGATACA 20
+
+0 GATAC-----ATTAGA---CACAGATACA 20
+  |||||     ||||||   ||||||||||
+0 GATACGATACATTAGAGACCACAGATACA 28
+0 GATACGATACATTAGAGACCACAGATACA 28
+  |||||     ||||||   ||||||||||
+0 GATAC-----ATTAGA---CACAGATACA 20
+
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.6 s - in com.milaboratory.core.alignment.kaligner1.KAlignerTest
+[INFO] Running com.milaboratory.core.alignment.kaligner1.KMapperTest
+-205
+8 AGACACAGATACA 20
+  ||||||| |||||
+0 AGACACATATACA 12
+0 AGACACATATACA 12
+  ||||||| |||||
+8 AGACACAGATACA 20
+
+0 GATACATTAGACACAGATACA--- 20
+          ||||||| |||||   
+0 --------AGACACATATACACAG 15
+0 --------AGACACATATACACAG 15
+          ||||||| |||||   
+0 GATACATTAGACACAGATACA--- 20
+
+0 GATACATTAGA---CACAGATACA 20
+  |||||||||||   ||||||||||
+5 GATACATTAGAGACCACAGATACA 28
+5 GATACATTAGAGACCACAGATACA 28
+  |||||||||||   ||||||||||
+0 GATACATTAGA---CACAGATACA 20
+
+0 GATAC-----ATTAGA---CACAGATACA 20
+  |||||     ||||||   ||||||||||
+0 GATACGATACATTAGAGACCACAGATACA 28
+0 GATACGATACATTAGAGACCACAGATACA 28
+  |||||     ||||||   ||||||||||
+0 GATAC-----ATTAGA---CACAGATACA 20
+
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.106 s - in com.milaboratory.core.alignment.kaligner1.KMapperTest
+[INFO] Running com.milaboratory.core.alignment.kaligner1.KAlignerParametersTest
+8 AGACACAGATACA 20
+  ||||||| |||||
+0 AGACACATATACA 12
+0 AGACACATATACA 12
+  ||||||| |||||
+8 AGACACAGATACA 20
+
+0 GATACATTAGACACAGATACA--- 20
+          ||||||| |||||   
+0 --------AGACACATATACACAG 15
+0 --------AGACACATATACACAG 15
+          ||||||| |||||   
+0 GATACATTAGACACAGATACA--- 20
+
+0 GATACATTAGA---CACAGATACA 20
+  |||||||||||   ||||||||||
+5 GATACATTAGAGACCACAGATACA 28
+5 GATACATTAGAGACCACAGATACA 28
+  |||||||||||   ||||||||||
+0 GATACATTAGA---CACAGATACA 20
+
+0 GATAC-----ATTAGA---CACAGATACA 20
+  |||||     ||||||   ||||||||||
+0 GATACGATACATTAGAGACCACAGATACA 28
+0 GATACGATACATTAGAGACCACAGATACA 28
+  |||||     ||||||   ||||||||||
+0 GATAC-----ATTAGA---CACAGATACA 20
+
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.059 s - in com.milaboratory.core.alignment.kaligner1.KAlignerParametersTest
+[INFO] Running com.milaboratory.core.alignment.AlignerCustomTest
+29.0
+2 c----cccTTgaa---tgTtaGTa-----taacta--tct 27
+0 cAGTTccc--gaaACCtgCta--aGCTCTtaactaCTtct 35
+29.0
+2 c----cccTTgaa---tgTtaGTa-----taacta--tct 27
+0 cAGTTccc--gaaACCtgCta--aGCTCTtaactaCTtct 35
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.854 s - in com.milaboratory.core.alignment.AlignerCustomTest
+[INFO] Running com.milaboratory.core.alignment.BandedLinearAlignerTest
+[INFO] Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.075 s - in com.milaboratory.core.alignment.BandedLinearAlignerTest
+[INFO] Running com.milaboratory.core.alignment.MultiAlignmentHelperTest
+8 AGACACAGATACA 20
+  ||||||| |||||
+0 AGACACATATACA 12
+
+0 GATACATTAGACACAGATACA--- 20
+          ||||||| |||||   
+0 --------AGACACATATACACAG 15
+
+0 GATACATTAGA---CACAGATACA 20
+  |||||||||||   ||||||||||
+5 GATACATTAGAGACCACAGATACA 28
+
+0 GATAC-----ATTAGA---CACAGATACA 20
+  |||||     ||||||   ||||||||||
+0 GATACGATACATTAGAGACCACAGATACA 28
+
+Quality   78778     878777   7778887878      
+Subject 0 GATAC-----ATTAGA---CACAGATACA--- 20 
+ Query0 0              aga---cacaTataca    12
+ Query1 0 -------------aga---cacaTatacaCAG 15
+ Query2 5 gatac-----attagaGACcacagataca    28
+ Query3 0 gatacGATACattagaGACcacagataca    28
+
+Quality   78778  
+Subject 0 GATAC 4 
+ Query1 0 ----- 0
+ Query2 5 gatac 9
+ Query3 0 gatac 4
+
+Quality            
+Subject  5 ----- 5  
+ Query1  0 ----- 0 
+ Query2 10 ----- 10
+ Query3  5 GATAC 9 
+
+Quality    87877   
+Subject  5 ATTAG 9  
+ Query0  0    ag 1 
+ Query1  0 ---ag 1 
+ Query2 10 attag 14
+ Query3 10 attag 14
+
+Quality    7   7   
+Subject 10 A---C 11 
+ Query0  2 a---c 3 
+ Query1  2 a---c 3 
+ Query2 15 aGACc 19
+ Query3 15 aGACc 19
+
+Quality    77888   
+Subject 12 ACAGA 16 
+ Query0  4 acaTa 8 
+ Query1  4 acaTa 8 
+ Query2 20 acaga 24
+ Query3 20 acaga 24
+
+Quality    7878    
+Subject 17 TACA- 20 
+ Query0  9 taca  12
+ Query1  9 tacaC 13
+ Query2 25 taca  28
+ Query3 25 taca  28
+
+Quality         
+Subject 21 -- 21 
+ Query1 14 AG 15
+
+ 0 GATAC-----ATTAGA---CACAGATACA--- 20 
+ 0              ...---....T.....    12
+ 0 -------------...---....T.....CAG 15
+ 5 .....-----......GAC..........    28
+ 0 .....GATAC......GAC..........    28
+
+   787788787777778887878   
+ 0 GATACATTAGACACAGATACA 20 
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in com.milaboratory.core.alignment.MultiAlignmentHelperTest
+[INFO] Running com.milaboratory.core.alignment.AlignmentIteratorTest
+0 -ATT-AGACA-- 7
+   |||  || |  
+0 AATTGGGA-ATT 10
+I0AI3GSA3GDC6I8TI8T
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.milaboratory.core.alignment.AlignmentIteratorTest
+[INFO] Running com.milaboratory.core.mutations.MutationsCounterTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.385 s - in com.milaboratory.core.mutations.MutationsCounterTest
+[INFO] Running com.milaboratory.core.mutations.MutationsUtilTest
+S([\QAGCTNRYSWKMBDHV\E])(\d+)([\QAGCTNRYSWKMBDHV\E])|D([\QAGCTNRYSWKMBDHV\E])(\d+)|I(\d+)([\QAGCTNRYSWKMBDHV\E])
+S([\Q*ACDEFGHIKLMNPQRSTVWY_XBJZ\E])(\d+)([\Q*ACDEFGHIKLMNPQRSTVWY_XBJZ\E])|D([\Q*ACDEFGHIKLMNPQRSTVWY_XBJZ\E])(\d+)|I(\d+)([\Q*ACDEFGHIKLMNPQRSTVWY_XBJZ\E])
+[I2C::SM0I, I2G::I1A, I2C::I1A, SG2C:SM0I:I1A]
+[S0:T->N,D13:V,S14:S->Y,S15:P->R,S16:W->P,S17:Y->G,S18:D->T,S19:P->I,S20:G->P,S21:D->A,S22:K->T,S23:A->K,S24:F->R,S25:G->S,S26:P->D,I27:S]
+[-1, -1, 9, 15]
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.867 s - in com.milaboratory.core.mutations.MutationsUtilTest
+[INFO] Running com.milaboratory.core.mutations.MutationsTest
+TCAGAGGCGATGCTTTCACGACTGCAGACATGGCGTATACCACCAAGTGCGACATGTAAGCCCAATAGTTAGAACTCCGAATATTAAGTAGAATCCTTTAGGAGCTTACGGGGACGAGAAGACGAGTAAGCCCGTTTTTATATTATTCGATTATCTGATTATTGTGTAACATCCTAGTAAAGTGCAAGACTTCGTTGATTTGACGAACATAAAAAGTAGCGATCCGGGTCAGTTCCCTGCTCGAAGCTATAAATGAGTCGTGGCTTCAAAGGTGGACACACGAGTATAAAGACAGGTACGGTGACCATCAGCCGACACATACTGTCCCAGCCGAACCGTCGATGAGAACAACACAGGGAGCAGTTGTGGTCTTGAATCATGCCATAGGTGGTCTAAATATTATGGAGCCATTTGCCGAATCAGGTTTGTGTTAACCGACCGACGTTTCTAAAGAATGCGCCTCTTCTCCTACGTCTGAGGCCGCGTTCTCTGCCTGGGGAAATGAACCTCACTACCTTTAGGGGATAAATGGGGGGGTAAGTCAGTACCGATCCCGCGAAATTAACGCCTTGGTCTCAACACACGCCGTTAAGTTATGCAGAC
+TCAGAGGCGATGCTTTCACGACTGCGAGACATGGCGTATACCACCAAGTGCGACATGTAAGCCCCCAATAGAGAACTCCGATATTAAGTAGAATCCTTTTGGGCTACGGGACGAGTAGACGATGGTAAGCCGTTTTTATATATTCGATTATCCGATTATTGTGTAACATCTAGTAAAGTGCAAGGCTTCGTTGATTTGACGTAAATAGTGCGATCCGGGTCAGTTCCCTGTCGAAGCTATAAATGAGTCGTGGCTTCATAAGGTGGACACGGAGATATAAAGACAGTACGGTGACATCCACCGGCAACATACTGTCCCAGCCGACCGATCGATGAGAACAACACAGGGAGCAGTTGTGGTCTTGAATCTATGCCATAGGTGGTCTAAATATTATGGATGCCATTTGCCGGATCAGGTTTGTGTTAACCGACCACGTTTCTAAAGAATGCGCCTCTTCTCCTATCGTGCTGAGGCCGGCGTTTCTCTGCCTGGGGAAATGAACTTCACTACCTTTGGGGATAAATGGGGGGGGTAAGTCAGTACGATCCGGGAAATTAACCCTTGGCTCAACACACGCGTTAAGTTTGCAGC
+TCGAGGCGATGCTTTCAGCCTGGCGAGAGTGTGCGTACTACCGCAATGCGACATGTAAGCCCCCCAAATAGTTAACTCCGCATATAAGTAAATCCTTTTGGGTTACGTGACGAGTAGACATGGTAAGCGTTTTATGTATTCGATTATCCGATTATTCGTGTAATATCTAGTAAAGTGCAAAGCTCGTTGATTTGTGCGTAAATAGTATGCGATCCGGGTCAGTTCCCTGTCGAAGCTAATAAATAGTCGTGGCTTCGTAAGGTGGACACAGAGATATAAAACAAGTACGGTGACATCCACCGGCAAATATACTGATCCCACCGACCATCGAGAGAAACAAACAAGAGGAGCAGTTGTGGCTCGAATCTATGCCATAGGTGGATCTAAATATTATGGATGCCATTTGCTGGATCAGGTTGTGCTAACCGACCACGTTTCTAAAGATGCGTCCTCTTCTCCTATCGTGCTGAGGCAGGTTTCTCCTGCCTGGGGAAAAAGTTCCTACCTTTGGGATAAATGGACGGGTGTAAGTCAGTCGATCCGGAAGTTAACCCTTGGCTCAACACACGCGTTGAGTTTGCAGC
+0 TC-GAGGCGATGCTTTCA-GCCTGGCGAGA-GTGTGCGTACTACC-GCAA-TGCGACATGTAAGCCCCCCAAATAGTT--AACTCCGCATA-TAAGTA-AATCCTTTTGG-G-TTAC-GTGACGAGTAGAC-ATGGTAAG--CG-TTTTAT-GTATTCGATTATCCGATTATTCGTGTAATAT-CTAGTAAAGTGCAA-AGC-TCGTTGATTTG-TG--CGTAAATAGTATGCGATCCGGGTCAGTTCCCTG-TCGAAGCTAATAAAT-AGTCGTGGCTTCGTAAGGTGGACACA-GAGATATAAA-ACAAGTACGGTGA-CATCCA-CCGGCAAATATACTGATCCCA-CCG-ACCATCGA-GAGAAACAA-ACAAGAGGAGCAGTTGTGG-CTCGAATCTATGCCATAGGTGGATCTAAATATTATGGATGCCATTTGCTGGATCAGG-TTGTGCTAACCGACC-ACGTTTCTAAAG-ATGCGTCCTCTTCTCCTATCGTGCTGAGGCAG-GTTTCTCCTGCCTGGGGAAA--AAGTTC-CTACCTTT--GGGATAAATGGACGGGTGTAAGTCAGT--CGAT-CCG-GAAGTTAAC-CCTTGG-CTCAACACACG-CGTTGAGTT-TGCAG-C 583
+  || ||||||||||||||| | || || |||  || ||||| ||||  ||| |||||||||||||   ||| |||||||  ||||||| ||| |||||| |||||||| || | |||| | |||||| |||| |  |||||  || ||||||  |||||||||||| ||||||| |||||| || |||||||||||||| | | |||||||||||  |  | |||| |||| ||||||||||||||||||||| |||||||| |||||| ||||||||||||  |||||||||||| ||| |||||| ||| ||||||||| ||| || || | | | |||||| ||||| ||| ||| |||| ||| ||||| || || ||||||||||||| || ||||| ||||||||||||| ||||||||||||||| ||||||||| | |||||| ||||| ||||||||| |||||||||||| ||||| |||||||||||| ||| ||||||| | | |||| |||||||||||||  ||  || ||||||||  |||||||||||  ||| ||||||||||  |||| ||| ||| ||||| |||||| ||||||||||| |||| |||| ||||| |
+0 TCAGAGGCGATGCTTTCACGACT-GC-AGACATG-GCGTA-TACCACCAAGTGCGACATGTAAG---CCC-AATAGTTAGAACTCCGAATATTAAGTAGAATCCTTTAGGAGCTTACGGGGACGAGAAGACGA--GTAAGCCCGTTTTTATATTATTCGATTATCTGATTATT-GTGTAACATCCTAGTAAAGTGCAAGA-CTTCGTTGATTTGACGAACATAAAAAGTA-GCGATCCGGGTCAGTTCCCTGCTCGAAGCT-ATAAATGAGTCGTGGCTTC-AAAGGTGGACACACGAG-TATAAAGACAGGTACGGTGACCAT-CAGCC-G-ACACATACTG-TCCCAGCCGAACCGTCGATGAG-AACAACAC-AG-GGAGCAGTTGTGGTCTTGAATC-ATGCCATAGGTGG-TCTAAATATTATGGA-GCCATTTGCCGAATCAGGTTTGTGTTAACCGACCGACGTTTCTAAAGAATGCG-CCTCTTCTCCTA-CGT-CTGAGGCCGCG-TTCT-CTGCCTGGGGAAATGAACCTCACTACCTTTAGGGGATAAATGG--GGGGGTAAGTCAGTACCGATCCCGCGAAATTAACGCCTTGGTCTCAACACACGCCGTTAAGTTATGCAGAC 602
+[I41:A,S41:A->C,D43:C,D60:C,I62:C,D68:T,D69:T,S70:A->T,S71:G->T,I72:A,I72:G,I104:C,S104:C->T,D106:T,I130:C,D132:C,I134:T,D136:T,I141:A,S141:A->T,D143:T,I187:G,S187:G->A,D188:A,I202:A,S202:A->C,I203:G,I203:A,I203:A,S204:G->A,D205:A,S206:A->T,D207:C,D209:T,D212:A,I216:T,S216:T->A,D217:A,I293:A,S293:A->G,D295:G,I304:C,D305:C,D313:G,S314:A->G,S315:C->A,I316:C,I333:A,D334:A,I350:A,I350:C,D352:A,D353:C,I453:A,D454:A,I502:T,S502:T->G,D503:G,I519:A,S519:A->G,D523:G,I546:A,S546:A->C,D548:C,I552:C,D554:C,D555:G,S556:C->G,I557:C]
+0 TCAGAGGCGATGCTTTCACGACTGCAGACATGGCGTATACC-ACCAAGTGCGACATGTAAGCC-CAATAGTTAG--AACTCCGAATATTAAGTAGAATCCTTTAGGAG-CTTACGGGGACGAGAAGACGAGTAAG-CCCG-TTTTTAT-ATTATTCGATTATCTGATTATTGTGTAACATCCTAGTAAAGTGCAA-GACTTCGTTGATTTG-A---CGAACATAAAAAG-TAGCGATCCGGGTCAGTTCCCTGCTCGAAGCTATAAATGAGTCGTGGCTTCAAAGGTGGACACACGAGTATAAAGAC-AGGTACGGTGA-CCATCAGCCGAC-ACATACTGTCCCAGCCG-AACCGTCGATGAGAACA--ACACAGGGAGCAGTTGTGGTCTTGAATCATGCCATAGGTGGTCTAAATATTATGGAGCCATTTGCCGAATCAGGTTTGTGTTAACCGACCGACGTTTCTAAAG-AATGCGCCTCTTCTCCTACGTCTGAGGCCGCGTTCTCTGCCTGGGGAAA-TGAACCTCACTACCTTT-AGGGGATAAATGGGGGGGTAAGTCAGT-ACCGAT-CCCGC-GAAATTAACGCCTTGGTCTCAACACACGCCGTTAAGTTATGCAGAC 602
+  |||||||||||||||||||||||||||||||||||||||||  | |||||||||||||||| | ||||||      ||||||||||||||||||||||||||||||||  | ||||||||||||||||||||||| || | || ||||  | |||||||||||||||||||||||||||||||||||||||||||   |||||||||||||     |    | || |||   |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||  | |||||||| | |||||||    ||||||||||||||||| | |||||||||||||||  ||  ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| | |||||||||||||||||||||||||||||||||||||||||||||||   |||||||||||||||  ||| ||||||||||||||||||||||  | ||| ||    ||||||||||||||||||||||||||||||||||||||||||||||
+0 TCAGAGGCGATGCTTTCACGACTGCAGACATGGCGTATACCACC-AAGTGCGACATGTAAG-CCCAATAG--TTAGAACTCCGAATATTAAGTAGAATCCTTTAGGAGCTT-ACGGGGACGAGAAGACGAGTAAGCCC-GTTT-TTATATT-ATTCGATTATCTGATTATTGTGTAACATCCTAGTAAAGTGCAAGA-CTTCGTTGATTTGACGAACA-T-A-AA-AAGTA-GCGATCCGGGTCAGTTCCCTGCTCGAAGCTATAAATGAGTCGTGGCTTCAAAGGTGGACACACGAGTATAAAGACAGG-TACGGTGACC-ATCAGCC-GACACATACTGTCCCAGCCGAA-CCGTCGATGAGAACAACAC--AGGGAGCAGTTGTGGTCTTGAATCATGCCATAGGTGGTCTAAATATTATGGAGCCATTTGCCGAATCAGGTTTGTGTTAACCGACCGACGTTTCTAAAGAA-TGCGCCTCTTCTCCTACGTCTGAGGCCGCGTTCTCTGCCTGGGGAAATG-AACCTCACTACCTTTAGGGG-ATAAATGGGGGGGTAAGTCAGTACC-GATCCC--GCGAAATTAACGCCTTGGTCTCAACACACGCCGTTAAGTTATGCAGAC 602
+[INFO] Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.045 s - in com.milaboratory.core.mutations.MutationsTest
+[INFO] Running com.milaboratory.core.mutations.MutationTest
+S([\QAGCTNRYSWKMBDHV\E])(\d+)([\QAGCTNRYSWKMBDHV\E])|D([\QAGCTNRYSWKMBDHV\E])(\d+)|I(\d+)([\QAGCTNRYSWKMBDHV\E])
+S([\Q*ACDEFGHIKLMNPQRSTVWY_XBJZ\E])(\d+)([\Q*ACDEFGHIKLMNPQRSTVWY_XBJZ\E])|D([\Q*ACDEFGHIKLMNPQRSTVWY_XBJZ\E])(\d+)|I(\d+)([\Q*ACDEFGHIKLMNPQRSTVWY_XBJZ\E])
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.milaboratory.core.mutations.MutationTest
+[INFO] Running com.milaboratory.core.mutations.MutationsEnumeratorTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.187 s - in com.milaboratory.core.mutations.MutationsEnumeratorTest
+[INFO] Running com.milaboratory.core.mutations.generator.UniformMutationsGeneratorTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.061 s - in com.milaboratory.core.mutations.generator.UniformMutationsGeneratorTest
+[INFO] Running com.milaboratory.core.mutations.generator.GenericNucleotideMutationModelTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.89 s - in com.milaboratory.core.mutations.generator.GenericNucleotideMutationModelTest
+[INFO] Running com.milaboratory.core.mutations.generator.SubstitutionModelTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.028 s - in com.milaboratory.core.mutations.generator.SubstitutionModelTest
+[INFO] Running com.milaboratory.core.mutations.generator.MutationsGeneratorTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.8 s - in com.milaboratory.core.mutations.generator.MutationsGeneratorTest
+[INFO] Running com.milaboratory.core.sequence.AlphabetSerializerTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in com.milaboratory.core.sequence.AlphabetSerializerTest
+[INFO] Running com.milaboratory.core.sequence.AminoAcidAlphabetTest
+[WARNING] Tests run: 2, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.001 s - in com.milaboratory.core.sequence.AminoAcidAlphabetTest
+[INFO] Running com.milaboratory.core.sequence.SequencesUtilsTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 s - in com.milaboratory.core.sequence.SequencesUtilsTest
+[INFO] Running com.milaboratory.core.sequence.SequenceQualityTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.milaboratory.core.sequence.SequenceQualityTest
+[INFO] Running com.milaboratory.core.sequence.TranslationParametersTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.milaboratory.core.sequence.TranslationParametersTest
+[INFO] Running com.milaboratory.core.sequence.AminoAcidSequenceTest
+FromCenter
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+FromLeftWithoutIncompleteCodon
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+FromLeftWithIncompleteCodon
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+FromRightWithoutIncompleteCodon
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+FromRightWithIncompleteCodon
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+3
+[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.031 s - in com.milaboratory.core.sequence.AminoAcidSequenceTest
+[INFO] Running com.milaboratory.core.sequence.quality.QualityAggregatorTest
+36
+659
+2466
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.856 s - in com.milaboratory.core.sequence.quality.QualityAggregatorTest
+[INFO] Running com.milaboratory.core.sequence.quality.QualityTrimmerTest
+{
+  "averageQualityThreshold": 7.0,
+  "windowSize": 6
+}
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 s - in com.milaboratory.core.sequence.quality.QualityTrimmerTest
+[INFO] Running com.milaboratory.core.sequence.SequenceQualityBuilderTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.milaboratory.core.sequence.SequenceQualityBuilderTest
+[INFO] Running com.milaboratory.core.sequence.NucleotideAlphabetTest
+[WARNING] Tests run: 4, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.001 s - in com.milaboratory.core.sequence.NucleotideAlphabetTest
+[INFO] Running com.milaboratory.core.sequence.provider.SequenceProviderUtilsTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in com.milaboratory.core.sequence.provider.SequenceProviderUtilsTest
+[INFO] Running com.milaboratory.core.sequence.provider.CachedSequenceProviderTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.503 s - in com.milaboratory.core.sequence.provider.CachedSequenceProviderTest
+[INFO] Running com.milaboratory.core.sequence.WildcardTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in com.milaboratory.core.sequence.WildcardTest
+[INFO] Running com.milaboratory.core.sequence.NucleotideSequencesTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in com.milaboratory.core.sequence.NucleotideSequencesTest
+[INFO] Running com.milaboratory.core.sequence.NSequenceWithQualityTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in com.milaboratory.core.sequence.NSequenceWithQualityTest
+[INFO] Running com.milaboratory.core.sequence.NucleotideSequenceSerializerTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in com.milaboratory.core.sequence.NucleotideSequenceSerializerTest
+[INFO] Running com.milaboratory.core.tree.TreeSearchParametersTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 s - in com.milaboratory.core.tree.TreeSearchParametersTest
+[INFO] Running com.milaboratory.core.tree.SequenceTreeMapTest
+--NW  alignments--
+CASSLAPGATN-KLFF
+CASS-APGATNEKLFF
+
+CASSLAPGATN-KLFF
+CASSLAPG-TNEKLFF
+
+CASSLAPGATN-KLfF
+CASSLAPG-TNEKLyF
+
+--STM alignments--
+CASSLAPGATN-KLFF
+CASS-APGATNEKLFF
+
+CASSLAPGATN-KLFF
+CASSLAPG-TNEKLFF
+
+CASSlAPGATN-KLFF
+CASSa-PGATNEKLFF
+
+CASSLAPGaTN-KLFF
+CASSLAPGt-NEKLFF
+
+CASSlAPGATN-KLFF
+CA-SsAPGATNEKLFF
+
+CASSlAPGATN-KLFF
+CAS-sAPGATNEKLFF
+
+CASSLAPGATNk-LFF
+CASS-APGATNeKLFF
+
+CASSLAPGaTN-KLFF
+CASSLAP-gTNEKLFF
+
+CASSLAPGATNk-LFF
+CASSLAPG-TNeKLFF
+
+CASSLAPGATN-KLfF
+CASSLAPG-TNEKLyF
+
+------------------
+[INFO] Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.989 s - in com.milaboratory.core.tree.SequenceTreeMapTest
+[INFO] Running com.milaboratory.core.tree.PenaltyUtilsTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.milaboratory.core.tree.PenaltyUtilsTest
+[INFO] Running com.milaboratory.core.clustering.ClusteringTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.166 s - in com.milaboratory.core.clustering.ClusteringTest
+[INFO] Running com.milaboratory.core.merger.MismatchOnlyPairedReadMergerTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 s - in com.milaboratory.core.merger.MismatchOnlyPairedReadMergerTest
+[INFO] Running com.milaboratory.core.merger.PairedReadMergingResultTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 s - in com.milaboratory.core.merger.PairedReadMergingResultTest
+[INFO] Running com.milaboratory.core.merger.MergerParametersTest
+{
+  "qualityMergingAlgorithm": "SumSubtraction",
+  "partsLayout": "Collinear",
+  "minimalOverlap": 15,
+  "maxQuality": 50,
+  "minimalIdentity": 0.8,
+  "identityType": "Unweighted"
+}
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 s - in com.milaboratory.core.merger.MergerParametersTest
+[INFO] Running com.milaboratory.core.PairedEndReadsLayoutTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.milaboratory.core.PairedEndReadsLayoutTest
+[INFO] Running com.milaboratory.core.io.sequence.fasta.RandomAccessFastaIndexTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 s - in com.milaboratory.core.io.sequence.fasta.RandomAccessFastaIndexTest
+[INFO] Running com.milaboratory.core.io.sequence.fasta.FastaWriterTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.069 s - in com.milaboratory.core.io.sequence.fasta.FastaWriterTest
+[INFO] Running com.milaboratory.core.io.sequence.fasta.RandomAccessFastaReaderTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.054 s - in com.milaboratory.core.io.sequence.fasta.RandomAccessFastaReaderTest
+[INFO] Running com.milaboratory.core.io.sequence.fastq.RandomAccessFastqReaderTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.17 s - in com.milaboratory.core.io.sequence.fastq.RandomAccessFastqReaderTest
+[INFO] Running com.milaboratory.core.io.sequence.fastq.SingleFastqReaderTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.751 s - in com.milaboratory.core.io.sequence.fastq.SingleFastqReaderTest
+[INFO] Running com.milaboratory.core.io.sequence.fastq.SingleFastqWriterTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in com.milaboratory.core.io.sequence.fastq.SingleFastqWriterTest
+[INFO] Running com.milaboratory.core.io.sequence.IOTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 s - in com.milaboratory.core.io.sequence.IOTest
+[INFO] Running com.milaboratory.core.io.util.IOUtilTest
+3
+3
+-2147483648
+-9223372036854775808
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.061 s - in com.milaboratory.core.io.util.IOUtilTest
+[INFO] Running com.milaboratory.core.io.util.AbstractRandomAccessReaderTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.932 s - in com.milaboratory.core.io.util.AbstractRandomAccessReaderTest
+[INFO] Running com.milaboratory.core.io.util.FileIndexTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.213 s - in com.milaboratory.core.io.util.FileIndexTest
+[INFO] Running com.milaboratory.core.RangeTest
+1000001
+1010100
+1000111
+1000011
+
+1000010
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in com.milaboratory.core.RangeTest
+[INFO] Running com.milaboratory.core.motif.MotifUtilsTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 s - in com.milaboratory.core.motif.MotifUtilsTest
+[INFO] Running com.milaboratory.core.motif.MotifTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in com.milaboratory.core.motif.MotifTest
+[INFO] Running com.milaboratory.core.motif.BitapPatternTest
+ 0 ATTWCCGACA 9
+   |||   ||||
+20 ATTT--GACA 27
+[S3:W->T,D4:C,D5:C]
+24
+-26
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.19 s - in com.milaboratory.core.motif.BitapPatternTest
+[INFO] Running com.milaboratory.util.NSequenceWithQualityPrintHelperTest
+[WARNING] Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0 s - in com.milaboratory.util.NSequenceWithQualityPrintHelperTest
+[INFO] Running com.milaboratory.util.VersionInfoTest
+VersionInfo{version='1.9-SNAPSHOT', revision='1b5501f', name='MiLib', branch='UNKNOWN', host='spirals-bears', timestamp=Tue Oct 23 02:13:12 CEST 2018}
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in com.milaboratory.util.VersionInfoTest
+[INFO] Running com.milaboratory.util.RemoveActionTest
+/tmp/milib_42dd4d816b59f4556ce6f02db1850c45264cd8095403553517169185647
+/tmp/milib_dee2af36cb72e7929c1d340b9eb88df8a6059f9b6394201562418101221.tmp
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 s - in com.milaboratory.util.RemoveActionTest
+[INFO] Running com.milaboratory.util.AtomicHistogramTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in com.milaboratory.util.AtomicHistogramTest
+[INFO] Running com.milaboratory.util.IntArrayListTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.176 s - in com.milaboratory.util.IntArrayListTest
+[INFO] Running com.milaboratory.util.Bit2ArrayTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 s - in com.milaboratory.util.Bit2ArrayTest
+[INFO] Running com.milaboratory.util.LightFileDescriptorTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 s - in com.milaboratory.util.LightFileDescriptorTest
+[INFO] Running com.milaboratory.util.SorterTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.049 s - in com.milaboratory.util.SorterTest
+[INFO] Running com.milaboratory.util.ParseUtilTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in com.milaboratory.util.ParseUtilTest
+[INFO] Running com.milaboratory.util.IntCombinationsTest
+[0, 1]
+[0, 2]
+[1, 2]
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.milaboratory.util.IntCombinationsTest
+[INFO] Running com.milaboratory.util.RangeMapTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.milaboratory.util.RangeMapTest
+[INFO] Running com.milaboratory.util.ArraysUtilsTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.milaboratory.util.ArraysUtilsTest
+[INFO] Running com.milaboratory.util.ByteArrayDataOutputTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.548 s - in com.milaboratory.util.ByteArrayDataOutputTest
+[INFO] Running com.milaboratory.util.AtomicEnumHistogramTest
+{"labels":["A","B","C","null"],"hist":[1,2,0,1]}
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in com.milaboratory.util.AtomicEnumHistogramTest
+[INFO] Running com.milaboratory.util.RandomizerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.776 s - in com.milaboratory.util.RandomizerTest
+[INFO] Running com.milaboratory.test.TestUtil
+Short tests.
+No system env properties.
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.milaboratory.test.TestUtil
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Errors: 
+[ERROR]   KAligner2Test.caseJ1:451 » IllegalArgument Class com.milaboratory.core.alignme...
+[INFO] 
+[ERROR] Tests run: 438, Failures: 0, Errors: 1, Skipped: 12
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 02:07 min
+[INFO] Finished at: 2018-10-23T02:15:16+02:00
+[INFO] Final Memory: 29M/597M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.22.0:test (default-test) on project milib: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/milaboratory/milib/444855015/target/surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
