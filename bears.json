@@ -1,0 +1,152 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 24, 
+      "numberRunning": 25, 
+      "numberFailing": 0, 
+      "numberErroring": 1, 
+      "failures": [
+        {
+          "failureName": "java.lang.ArithmeticException", 
+          "isError": true, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 0
+    }, 
+    "failingModule": "/root/workspace/HubSpot/Baragon/444834347/BaragonAgentService", 
+    "failureDetails": [
+      {
+        "failureName": "java.lang.ArithmeticException", 
+        "detail": "/ by zero", 
+        "isError": true, 
+        "testMethod": "test1d_null", 
+        "testClass": "com.hubspot.baragon.agent.PreferSameRackWeightingBalancedTest"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 10, 
+        "numberRunning": 11, 
+        "testClass": "com.hubspot.baragon.agent.PreferSameRackWeightingBalancedTest", 
+        "numberFailing": 0, 
+        "numberErroring": 1, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/HubSpot/Baragon/builds/445744181", 
+      "date": "Oct 24, 2018 6:10:40 PM", 
+      "id": 445744181
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/HubSpot/Baragon/builds/444834347", 
+      "date": "Oct 23, 2018 12:33:53 AM", 
+      "id": 444834347
+    }
+  }, 
+  "repository": {
+    "name": "HubSpot/Baragon", 
+    "url": "https://github.com/HubSpot/Baragon", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 14145875
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/HubSpot/Baragon/commit/a4a9387af8b9f5ffa93c922b6865bb789cc07b1d", 
+      "sha": "a4a9387af8b9f5ffa93c922b6865bb789cc07b1d", 
+      "branchName": "staging", 
+      "date": "Oct 24, 2018 6:02:05 PM", 
+      "repoName": "HubSpot/Baragon"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/HubSpot/Baragon/commit/e4e4e0e6b0c78cdf3c9c0815805df542a991fa8e", 
+      "sha": "e4e4e0e6b0c78cdf3c9c0815805df542a991fa8e", 
+      "branchName": "staging", 
+      "date": "Oct 23, 2018 12:23:28 AM", 
+      "repoName": "HubSpot/Baragon"
+    }
+  }, 
+  "bugName": "HubSpot-Baragon-444834347-445744181", 
+  "version": "latest", 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 0, 
+      "numberDeleted": 3
+    }
+  }, 
+  "type": "passing_passing", 
+  "bugId": "Bears-214", 
+  "projectMetrics": {
+    "numberSourceFiles": 192, 
+    "numberLibrariesFailingModule": 118, 
+    "numberTestFiles": 10, 
+    "numberModules": 8
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 231297224, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 386924544, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Oct 24, 2018 6:19:10 PM", 
+    "projectRootPomPath": "./workspace/HubSpot/Baragon/444834347/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          0, 
+          1, 
+          0, 
+          0, 
+          219
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 220
+      }, 
+      "testing": {
+        "stepDurations": [
+          61
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 61
+      }, 
+      "cloning": {
+        "stepDurations": [
+          5
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 5
+      }
+    }, 
+    "reproductionDateBeginning": "Oct 24, 2018 6:10:54 PM", 
+    "totalDuration": 490
+  }
+}
