@@ -1,0 +1,376 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Jackson dataformats: Text
+[INFO] Jackson-dataformat-CSV
+[INFO] Jackson-dataformat-Properties
+[INFO] Jackson-dataformat-YAML
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Jackson dataformats: Text 2.9.8-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-java) @ jackson-dataformats-text ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.7:add-source (add-generated-sources) @ jackson-dataformats-text ---
+[INFO] Source directory: /root/workspace/FasterXML/jackson-dataformats-text/430357777/target/generated-sources added.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Jackson-dataformat-CSV 2.9.8-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-java) @ jackson-dataformat-csv ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.7:add-source (add-generated-sources) @ jackson-dataformat-csv ---
+[INFO] Source directory: /root/workspace/FasterXML/jackson-dataformats-text/430357777/csv/target/generated-sources added.
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (process-packageVersion) @ jackson-dataformat-csv ---
+[INFO] Replacement run on 1 file.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ jackson-dataformat-csv ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ jackson-dataformat-csv ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 18 source files to /root/workspace/FasterXML/jackson-dataformats-text/430357777/csv/target/classes
+[WARNING] bootstrap class path not set in conjunction with -source 1.7
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ jackson-dataformat-csv ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/FasterXML/jackson-dataformats-text/430357777/csv/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ jackson-dataformat-csv ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ jackson-dataformat-csv ---
+[INFO] Surefire report directory: /root/workspace/FasterXML/jackson-dataformats-text/430357777/csv/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.pom (3 KB at 4.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.17/surefire-providers-2.17.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.17/surefire-providers-2.17.pom (3 KB at 56.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.jar (63 KB at 848.8 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.fasterxml.jackson.dataformat.csv.ser.UnwrappedWriteTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.405 sec - in com.fasterxml.jackson.dataformat.csv.ser.UnwrappedWriteTest
+Running com.fasterxml.jackson.dataformat.csv.ser.GeneratorIgnoreUnknownTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.084 sec - in com.fasterxml.jackson.dataformat.csv.ser.GeneratorIgnoreUnknownTest
+Running com.fasterxml.jackson.dataformat.csv.ser.ArrayWriteTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 sec - in com.fasterxml.jackson.dataformat.csv.ser.ArrayWriteTest
+Running com.fasterxml.jackson.dataformat.csv.ser.UnicodeWritingTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.039 sec - in com.fasterxml.jackson.dataformat.csv.ser.UnicodeWritingTest
+Running com.fasterxml.jackson.dataformat.csv.ser.TestGenerator
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.115 sec - in com.fasterxml.jackson.dataformat.csv.ser.TestGenerator
+Running com.fasterxml.jackson.dataformat.csv.ser.TestGeneratorWithCustomSeparators
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in com.fasterxml.jackson.dataformat.csv.ser.TestGeneratorWithCustomSeparators
+Running com.fasterxml.jackson.dataformat.csv.ser.TestGeneratorNoSchema
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in com.fasterxml.jackson.dataformat.csv.ser.TestGeneratorNoSchema
+Running com.fasterxml.jackson.dataformat.csv.ser.NullWritingTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec - in com.fasterxml.jackson.dataformat.csv.ser.NullWritingTest
+Running com.fasterxml.jackson.dataformat.csv.ser.GeneratorIgnoreUnknown51Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in com.fasterxml.jackson.dataformat.csv.ser.GeneratorIgnoreUnknown51Test
+Running com.fasterxml.jackson.dataformat.csv.ser.JDKSerializationTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.403 sec - in com.fasterxml.jackson.dataformat.csv.ser.JDKSerializationTest
+Running com.fasterxml.jackson.dataformat.csv.ser.FilteringTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in com.fasterxml.jackson.dataformat.csv.ser.FilteringTest
+Running com.fasterxml.jackson.dataformat.csv.ser.TestGeneratorWithSequences
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in com.fasterxml.jackson.dataformat.csv.ser.TestGeneratorWithSequences
+Running com.fasterxml.jackson.dataformat.csv.ser.TestWriterWithSomeMoreMissingValues
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.092 sec - in com.fasterxml.jackson.dataformat.csv.ser.TestWriterWithSomeMoreMissingValues
+Running com.fasterxml.jackson.dataformat.csv.ser.TestWriterWithMissingValues
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec - in com.fasterxml.jackson.dataformat.csv.ser.TestWriterWithMissingValues
+Running com.fasterxml.jackson.dataformat.csv.ser.HeaderWriteTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in com.fasterxml.jackson.dataformat.csv.ser.HeaderWriteTest
+Running com.fasterxml.jackson.dataformat.csv.ser.SchemaReorderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in com.fasterxml.jackson.dataformat.csv.ser.SchemaReorderTest
+Running com.fasterxml.jackson.dataformat.csv.ser.MultipleWritesTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in com.fasterxml.jackson.dataformat.csv.ser.MultipleWritesTest
+Running com.fasterxml.jackson.dataformat.csv.schema.SchemaTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec - in com.fasterxml.jackson.dataformat.csv.schema.SchemaTest
+Running com.fasterxml.jackson.dataformat.csv.schema.PropertyOrder74Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.fasterxml.jackson.dataformat.csv.schema.PropertyOrder74Test
+Running com.fasterxml.jackson.dataformat.csv.FeaturesTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.fasterxml.jackson.dataformat.csv.FeaturesTest
+Running com.fasterxml.jackson.dataformat.csv.TestVersions
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in com.fasterxml.jackson.dataformat.csv.TestVersions
+Running com.fasterxml.jackson.dataformat.csv.deser.TestParserNoSchema
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec - in com.fasterxml.jackson.dataformat.csv.deser.TestParserNoSchema
+Running com.fasterxml.jackson.dataformat.csv.deser.TestParserStrictQuoting
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.fasterxml.jackson.dataformat.csv.deser.TestParserStrictQuoting
+Running com.fasterxml.jackson.dataformat.csv.deser.CommentsTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in com.fasterxml.jackson.dataformat.csv.deser.CommentsTest
+Running com.fasterxml.jackson.dataformat.csv.deser.TestParserQuotes
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in com.fasterxml.jackson.dataformat.csv.deser.TestParserQuotes
+Running com.fasterxml.jackson.dataformat.csv.deser.ReadSequencesTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.218 sec - in com.fasterxml.jackson.dataformat.csv.deser.ReadSequencesTest
+Running com.fasterxml.jackson.dataformat.csv.deser.BasicParserTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.074 sec - in com.fasterxml.jackson.dataformat.csv.deser.BasicParserTest
+Running com.fasterxml.jackson.dataformat.csv.deser.TrailingCommaTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in com.fasterxml.jackson.dataformat.csv.deser.TrailingCommaTest
+Running com.fasterxml.jackson.dataformat.csv.deser.ParserTrimSpacesTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in com.fasterxml.jackson.dataformat.csv.deser.ParserTrimSpacesTest
+Running com.fasterxml.jackson.dataformat.csv.deser.FormatDetectionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in com.fasterxml.jackson.dataformat.csv.deser.FormatDetectionTest
+Running com.fasterxml.jackson.dataformat.csv.deser.BrokenEncodingTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in com.fasterxml.jackson.dataformat.csv.deser.BrokenEncodingTest
+Running com.fasterxml.jackson.dataformat.csv.deser.NullReadTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec - in com.fasterxml.jackson.dataformat.csv.deser.NullReadTest
+Running com.fasterxml.jackson.dataformat.csv.deser.StreamingReadTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec - in com.fasterxml.jackson.dataformat.csv.deser.StreamingReadTest
+Running com.fasterxml.jackson.dataformat.csv.deser.TestParserEscapes
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in com.fasterxml.jackson.dataformat.csv.deser.TestParserEscapes
+Running com.fasterxml.jackson.dataformat.csv.deser.TestParserWithHeader
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec - in com.fasterxml.jackson.dataformat.csv.deser.TestParserWithHeader
+Running com.fasterxml.jackson.dataformat.csv.deser.SequenceRecoveryTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec - in com.fasterxml.jackson.dataformat.csv.deser.SequenceRecoveryTest
+Running com.fasterxml.jackson.dataformat.csv.deser.TestParserWorkarounds
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in com.fasterxml.jackson.dataformat.csv.deser.TestParserWorkarounds
+Running com.fasterxml.jackson.dataformat.csv.deser.AnySetterTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 sec - in com.fasterxml.jackson.dataformat.csv.deser.AnySetterTest
+Running com.fasterxml.jackson.dataformat.csv.deser.MissingColumnsTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in com.fasterxml.jackson.dataformat.csv.deser.MissingColumnsTest
+Running com.fasterxml.jackson.dataformat.csv.deser.UnwrappingWithCSVTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec - in com.fasterxml.jackson.dataformat.csv.deser.UnwrappingWithCSVTest
+Running com.fasterxml.jackson.dataformat.csv.deser.ArrayReadTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.065 sec - in com.fasterxml.jackson.dataformat.csv.deser.ArrayReadTest
+Running com.fasterxml.jackson.dataformat.csv.deser.IgnoreUnmappableTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in com.fasterxml.jackson.dataformat.csv.deser.IgnoreUnmappableTest
+Running com.fasterxml.jackson.dataformat.csv.deser.TestFiltering
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec - in com.fasterxml.jackson.dataformat.csv.deser.TestFiltering
+
+Results :
+
+Tests run: 150, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Jackson-dataformat-Properties 2.9.8-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-java) @ jackson-dataformat-properties ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.7:add-source (add-generated-sources) @ jackson-dataformat-properties ---
+[INFO] Source directory: /root/workspace/FasterXML/jackson-dataformats-text/430357777/properties/target/generated-sources added.
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (process-packageVersion) @ jackson-dataformat-properties ---
+[INFO] Replacement run on 1 file.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ jackson-dataformat-properties ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ jackson-dataformat-properties ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 19 source files to /root/workspace/FasterXML/jackson-dataformats-text/430357777/properties/target/classes
+[WARNING] bootstrap class path not set in conjunction with -source 1.7
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ jackson-dataformat-properties ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/FasterXML/jackson-dataformats-text/430357777/properties/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ jackson-dataformat-properties ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ jackson-dataformat-properties ---
+[INFO] Surefire report directory: /root/workspace/FasterXML/jackson-dataformats-text/430357777/properties/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.fasterxml.jackson.dataformat.javaprop.SimpleParsingTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.813 sec - in com.fasterxml.jackson.dataformat.javaprop.SimpleParsingTest
+Running com.fasterxml.jackson.dataformat.javaprop.DefaultConfigsTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec - in com.fasterxml.jackson.dataformat.javaprop.DefaultConfigsTest
+Running com.fasterxml.jackson.dataformat.javaprop.ArrayGenerationTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.042 sec - in com.fasterxml.jackson.dataformat.javaprop.ArrayGenerationTest
+Running com.fasterxml.jackson.dataformat.javaprop.GenerationEscapingTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in com.fasterxml.jackson.dataformat.javaprop.GenerationEscapingTest
+Running com.fasterxml.jackson.dataformat.javaprop.ArrayParsingTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.059 sec - in com.fasterxml.jackson.dataformat.javaprop.ArrayParsingTest
+Running com.fasterxml.jackson.dataformat.javaprop.PropertiesSupportTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in com.fasterxml.jackson.dataformat.javaprop.PropertiesSupportTest
+Running com.fasterxml.jackson.dataformat.javaprop.SimpleGenerationTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.031 sec - in com.fasterxml.jackson.dataformat.javaprop.SimpleGenerationTest
+Running com.fasterxml.jackson.dataformat.javaprop.util.JPropPathSplitterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.fasterxml.jackson.dataformat.javaprop.util.JPropPathSplitterTest
+Running com.fasterxml.jackson.dataformat.javaprop.TestVersions
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.fasterxml.jackson.dataformat.javaprop.TestVersions
+Running com.fasterxml.jackson.dataformat.javaprop.BinaryParsingTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec - in com.fasterxml.jackson.dataformat.javaprop.BinaryParsingTest
+Running com.fasterxml.jackson.dataformat.javaprop.SchemaConstructionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.fasterxml.jackson.dataformat.javaprop.SchemaConstructionTest
+Running com.fasterxml.jackson.dataformat.javaprop.SimpleStreamingTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec - in com.fasterxml.jackson.dataformat.javaprop.SimpleStreamingTest
+Running com.fasterxml.jackson.dataformat.javaprop.MapParsingTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in com.fasterxml.jackson.dataformat.javaprop.MapParsingTest
+Running com.fasterxml.jackson.dataformat.javaprop.CustomSeparatorsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in com.fasterxml.jackson.dataformat.javaprop.CustomSeparatorsTest
+
+Results :
+
+Tests run: 34, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Jackson-dataformat-YAML 2.9.8-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-java) @ jackson-dataformat-yaml ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.7:add-source (add-generated-sources) @ jackson-dataformat-yaml ---
+[INFO] Source directory: /root/workspace/FasterXML/jackson-dataformats-text/430357777/yaml/target/generated-sources added.
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (process-packageVersion) @ jackson-dataformat-yaml ---
+[INFO] Replacement run on 1 file.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ jackson-dataformat-yaml ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ jackson-dataformat-yaml ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 12 source files to /root/workspace/FasterXML/jackson-dataformats-text/430357777/yaml/target/classes
+[WARNING] bootstrap class path not set in conjunction with -source 1.7
+[WARNING] /root/workspace/FasterXML/jackson-dataformats-text/430357777/yaml/src/main/java/com/fasterxml/jackson/dataformat/yaml/YAMLGenerator.java:[476,23] SequenceStartEvent(java.lang.String,java.lang.String,boolean,org.yaml.snakeyaml.error.Mark,org.yaml.snakeyaml.error.Mark,java.lang.Boolean) in org.yaml.snakeyaml.events.SequenceStartEvent has been deprecated
+[WARNING] /root/workspace/FasterXML/jackson-dataformats-text/430357777/yaml/src/main/java/com/fasterxml/jackson/dataformat/yaml/YAMLGenerator.java:[504,23] MappingStartEvent(java.lang.String,java.lang.String,boolean,org.yaml.snakeyaml.error.Mark,org.yaml.snakeyaml.error.Mark,java.lang.Boolean) in org.yaml.snakeyaml.events.MappingStartEvent has been deprecated
+[WARNING] /root/workspace/FasterXML/jackson-dataformats-text/430357777/yaml/src/main/java/com/fasterxml/jackson/dataformat/yaml/YAMLGenerator.java:[823,23] ScalarEvent(java.lang.String,java.lang.String,org.yaml.snakeyaml.events.ImplicitTuple,java.lang.String,org.yaml.snakeyaml.error.Mark,org.yaml.snakeyaml.error.Mark,java.lang.Character) in org.yaml.snakeyaml.events.ScalarEvent has been deprecated
+[WARNING] /root/workspace/FasterXML/jackson-dataformats-text/430357777/yaml/src/main/java/com/fasterxml/jackson/dataformat/yaml/YAMLGenerator.java:[839,16] ScalarEvent(java.lang.String,java.lang.String,org.yaml.snakeyaml.events.ImplicitTuple,java.lang.String,org.yaml.snakeyaml.error.Mark,org.yaml.snakeyaml.error.Mark,java.lang.Character) in org.yaml.snakeyaml.events.ScalarEvent has been deprecated
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ jackson-dataformat-yaml ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ jackson-dataformat-yaml ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ jackson-dataformat-yaml ---
+[INFO] Surefire report directory: /root/workspace/FasterXML/jackson-dataformats-text/430357777/yaml/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.fasterxml.jackson.dataformat.yaml.ser.GeneratorFeatureTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.707 sec - in com.fasterxml.jackson.dataformat.yaml.ser.GeneratorFeatureTest
+Running com.fasterxml.jackson.dataformat.yaml.ser.BinaryWriteTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.067 sec - in com.fasterxml.jackson.dataformat.yaml.ser.BinaryWriteTest
+Running com.fasterxml.jackson.dataformat.yaml.ser.GeneratorFeature34Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.069 sec - in com.fasterxml.jackson.dataformat.yaml.ser.GeneratorFeature34Test
+Running com.fasterxml.jackson.dataformat.yaml.ser.GeneratorWithSplitLinesTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in com.fasterxml.jackson.dataformat.yaml.ser.GeneratorWithSplitLinesTest
+Running com.fasterxml.jackson.dataformat.yaml.ser.GeneratorAutoCloseTest
+Tests run: 5, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 0.025 sec <<< FAILURE! - in com.fasterxml.jackson.dataformat.yaml.ser.GeneratorAutoCloseTest
+testGenerateOutputStreamWithoutAutoCloseTarget(com.fasterxml.jackson.dataformat.yaml.ser.GeneratorAutoCloseTest)  Time elapsed: 0.012 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<false> but was:<true>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at com.fasterxml.jackson.dataformat.yaml.ser.GeneratorAutoCloseTest.testGenerateOutputStreamWithoutAutoCloseTarget(GeneratorAutoCloseTest.java:45)
+
+testGenerateOutputStreamWithoutAutoCloseTargetOnFactory(com.fasterxml.jackson.dataformat.yaml.ser.GeneratorAutoCloseTest)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<false> but was:<true>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at com.fasterxml.jackson.dataformat.yaml.ser.GeneratorAutoCloseTest.testGenerateOutputStreamWithoutAutoCloseTargetOnFactory(GeneratorAutoCloseTest.java:55)
+
+testGenerateWriterWithoutAutoCloseTarget(com.fasterxml.jackson.dataformat.yaml.ser.GeneratorAutoCloseTest)  Time elapsed: 0.003 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<false> but was:<true>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at com.fasterxml.jackson.dataformat.yaml.ser.GeneratorAutoCloseTest.testGenerateWriterWithoutAutoCloseTarget(GeneratorAutoCloseTest.java:37)
+
+Running com.fasterxml.jackson.dataformat.yaml.ser.SimpleGenerationTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec - in com.fasterxml.jackson.dataformat.yaml.ser.SimpleGenerationTest
+Running com.fasterxml.jackson.dataformat.yaml.ser.GeneratorWithMinimizeTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 sec - in com.fasterxml.jackson.dataformat.yaml.ser.GeneratorWithMinimizeTest
+Running com.fasterxml.jackson.dataformat.yaml.ser.DatabindWriteTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.059 sec - in com.fasterxml.jackson.dataformat.yaml.ser.DatabindWriteTest
+Running com.fasterxml.jackson.dataformat.yaml.TypeIdTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.107 sec - in com.fasterxml.jackson.dataformat.yaml.TypeIdTest
+Running com.fasterxml.jackson.dataformat.yaml.ExceptionConversionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in com.fasterxml.jackson.dataformat.yaml.ExceptionConversionTest
+Running com.fasterxml.jackson.dataformat.yaml.FormatDetectionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec - in com.fasterxml.jackson.dataformat.yaml.FormatDetectionTest
+Running com.fasterxml.jackson.dataformat.yaml.ObjectIdTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 sec - in com.fasterxml.jackson.dataformat.yaml.ObjectIdTest
+Running com.fasterxml.jackson.dataformat.yaml.MultipleRootValuesTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec - in com.fasterxml.jackson.dataformat.yaml.MultipleRootValuesTest
+Running com.fasterxml.jackson.dataformat.yaml.TestVersions
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in com.fasterxml.jackson.dataformat.yaml.TestVersions
+Running com.fasterxml.jackson.dataformat.yaml.UTF8WriterTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 sec - in com.fasterxml.jackson.dataformat.yaml.UTF8WriterTest
+Running com.fasterxml.jackson.dataformat.yaml.deser.ParserDupHandlingTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in com.fasterxml.jackson.dataformat.yaml.deser.ParserDupHandlingTest
+Running com.fasterxml.jackson.dataformat.yaml.deser.DatabindAdvancedTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.047 sec - in com.fasterxml.jackson.dataformat.yaml.deser.DatabindAdvancedTest
+Running com.fasterxml.jackson.dataformat.yaml.deser.ParserAutoCloseTest
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec <<< FAILURE! - in com.fasterxml.jackson.dataformat.yaml.deser.ParserAutoCloseTest
+testParseReaderWithoutAutoClose(com.fasterxml.jackson.dataformat.yaml.deser.ParserAutoCloseTest)  Time elapsed: 0.002 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<false> but was:<true>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at com.fasterxml.jackson.dataformat.yaml.deser.ParserAutoCloseTest.testParseReaderWithoutAutoClose(ParserAutoCloseTest.java:40)
+
+Running com.fasterxml.jackson.dataformat.yaml.deser.DatabindReadTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.05 sec - in com.fasterxml.jackson.dataformat.yaml.deser.DatabindReadTest
+Running com.fasterxml.jackson.dataformat.yaml.deser.StreamingParseTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 sec - in com.fasterxml.jackson.dataformat.yaml.deser.StreamingParseTest
+Running com.fasterxml.jackson.dataformat.yaml.deser.BinaryReadTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in com.fasterxml.jackson.dataformat.yaml.deser.BinaryReadTest
+Running com.fasterxml.jackson.dataformat.yaml.deser.UTF8ReaderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.fasterxml.jackson.dataformat.yaml.deser.UTF8ReaderTest
+Running com.fasterxml.jackson.dataformat.yaml.PolymorphicIdTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec - in com.fasterxml.jackson.dataformat.yaml.PolymorphicIdTest
+
+Results :
+
+Failed tests: 
+  GeneratorAutoCloseTest.testGenerateOutputStreamWithoutAutoCloseTarget:45 expected:<false> but was:<true>
+  GeneratorAutoCloseTest.testGenerateOutputStreamWithoutAutoCloseTargetOnFactory:55 expected:<false> but was:<true>
+  GeneratorAutoCloseTest.testGenerateWriterWithoutAutoCloseTarget:37 expected:<false> but was:<true>
+  ParserAutoCloseTest.testParseReaderWithoutAutoClose:40 expected:<false> but was:<true>
+
+Tests run: 69, Failures: 4, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] Jackson dataformats: Text .......................... SUCCESS [  0.473 s]
+[INFO] Jackson-dataformat-CSV ............................. SUCCESS [  6.982 s]
+[INFO] Jackson-dataformat-Properties ...................... SUCCESS [  2.172 s]
+[INFO] Jackson-dataformat-YAML ............................ FAILURE [  2.394 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 14.236 s
+[INFO] Finished at: 2018-10-24T04:07:57+02:00
+[INFO] Final Memory: 33M/626M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.17:test (default-test) on project jackson-dataformat-yaml: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/FasterXML/jackson-dataformats-text/430357777/yaml/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :jackson-dataformat-yaml
