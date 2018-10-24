@@ -1,0 +1,181 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 249, 
+      "numberRunning": 253, 
+      "numberFailing": 4, 
+      "numberErroring": 0, 
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError", 
+          "isError": false, 
+          "occurrences": 4
+        }
+      ], 
+      "numberSkipping": 0
+    }, 
+    "failingModule": "/root/workspace/FasterXML/jackson-dataformats-text/430357777/yaml", 
+    "failureDetails": [
+      {
+        "failureName": "java.lang.AssertionError", 
+        "detail": "expected:<false> but was:<true>", 
+        "isError": false, 
+        "testMethod": "testParseReaderWithoutAutoClose", 
+        "testClass": "com.fasterxml.jackson.dataformat.yaml.deser.ParserAutoCloseTest"
+      }, 
+      {
+        "failureName": "java.lang.AssertionError", 
+        "detail": "expected:<false> but was:<true>", 
+        "isError": false, 
+        "testMethod": "testGenerateOutputStreamWithoutAutoCloseTarget", 
+        "testClass": "com.fasterxml.jackson.dataformat.yaml.ser.GeneratorAutoCloseTest"
+      }, 
+      {
+        "failureName": "java.lang.AssertionError", 
+        "detail": "expected:<false> but was:<true>", 
+        "isError": false, 
+        "testMethod": "testGenerateOutputStreamWithoutAutoCloseTargetOnFactory", 
+        "testClass": "com.fasterxml.jackson.dataformat.yaml.ser.GeneratorAutoCloseTest"
+      }, 
+      {
+        "failureName": "java.lang.AssertionError", 
+        "detail": "expected:<false> but was:<true>", 
+        "isError": false, 
+        "testMethod": "testGenerateWriterWithoutAutoCloseTarget", 
+        "testClass": "com.fasterxml.jackson.dataformat.yaml.ser.GeneratorAutoCloseTest"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 2, 
+        "numberRunning": 5, 
+        "testClass": "com.fasterxml.jackson.dataformat.yaml.ser.GeneratorAutoCloseTest", 
+        "numberFailing": 3, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }, 
+      {
+        "numberPassing": 3, 
+        "numberRunning": 4, 
+        "testClass": "com.fasterxml.jackson.dataformat.yaml.deser.ParserAutoCloseTest", 
+        "numberFailing": 1, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/FasterXML/jackson-dataformats-text/builds/445435582", 
+      "date": "Oct 24, 2018 4:06:40 AM", 
+      "id": 445435582
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/FasterXML/jackson-dataformats-text/builds/430357777", 
+      "date": "Sep 19, 2018 5:18:46 AM", 
+      "id": 430357777
+    }
+  }, 
+  "repository": {
+    "name": "FasterXML/jackson-dataformats-text", 
+    "url": "https://github.com/FasterXML/jackson-dataformats-text", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 85504501
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/FasterXML/jackson-dataformats-text/commit/9666f9b83aa41d9e47f6590cbbb3822ee399c218", 
+      "sha": "9666f9b83aa41d9e47f6590cbbb3822ee399c218", 
+      "branchName": "2.9", 
+      "date": "Oct 24, 2018 4:05:04 AM", 
+      "repoName": "FasterXML/jackson-dataformats-text"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/FasterXML/jackson-dataformats-text/commit/220203d4e6d65e3640f759c9c48d156775ac5ffd", 
+      "sha": "220203d4e6d65e3640f759c9c48d156775ac5ffd", 
+      "branchName": "2.9", 
+      "date": "Sep 19, 2018 5:16:54 AM", 
+      "repoName": "FasterXML/jackson-dataformats-text"
+    }
+  }, 
+  "bugName": "FasterXML-jackson-dataformats-text-430357777-445435582", 
+  "version": "latest", 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 2, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 25, 
+      "numberDeleted": 2
+    }
+  }, 
+  "type": "passing_passing", 
+  "bugId": "Bears-212", 
+  "projectMetrics": {
+    "numberSourceFiles": 46, 
+    "numberLibrariesFailingModule": 6, 
+    "numberTestFiles": 98, 
+    "numberModules": 3
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 349864912, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 402128896, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Oct 24, 2018 4:08:43 AM", 
+    "projectRootPomPath": "./workspace/FasterXML/jackson-dataformats-text/430357777/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          0, 
+          1, 
+          0, 
+          0, 
+          40
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 41
+      }, 
+      "testing": {
+        "stepDurations": [
+          18
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 18
+      }, 
+      "cloning": {
+        "stepDurations": [
+          3
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 3
+      }
+    }, 
+    "reproductionDateBeginning": "Oct 24, 2018 4:06:55 AM", 
+    "totalDuration": 103
+  }
+}
