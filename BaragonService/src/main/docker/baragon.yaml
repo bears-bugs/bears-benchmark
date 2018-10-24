@@ -1,0 +1,35 @@
+server:
+  type: simple
+  applicationContextPath: /baragon/v2
+  connector:
+    type: http
+    port: 8080
+
+history:
+  enabled: true
+  workerInitialDelayHours: 0
+  purgeOldRequests: true
+  purgeOldRequestsAfterDays: 1
+  purgeWhenDateNotFound: true
+  purgeEveryHours: 1
+  maxRequestsPerService: 5
+
+zookeeper:
+  quorum: localhost:2181
+  zkNamespace: baragon
+  sessionTimeoutMillis: 60000
+  connectTimeoutMillis: 5000
+  retryBaseSleepTimeMilliseconds: 1000
+  retryMaxTries: 3
+
+ui:
+  title: Baragon (docker)
+  baseUrl: http://localhost:8080/baragon/v2/ui
+
+auth:
+  key: test-key
+  enabled: false
+
+masterAuthKey: test-master-key
+
+enableCorsFilter: true
