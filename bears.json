@@ -1,0 +1,174 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 130, 
+      "numberRunning": 131, 
+      "numberFailing": 0, 
+      "numberErroring": 1, 
+      "failures": [
+        {
+          "failureName": "ro.pippo.core.PippoRuntimeException", 
+          "isError": true, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 0
+    }, 
+    "failingModule": "/root/workspace/pippo-java/pippo/446336779/pippo-session-parent/pippo-session", 
+    "failureDetails": [
+      {
+        "failureName": "ro.pippo.core.PippoRuntimeException", 
+        "detail": "ro.pippo.core.PippoRuntimeException: Cannot deserialize session. A new one will be created.", 
+        "isError": true, 
+        "testMethod": "test", 
+        "testClass": "ro.pippo.session.EncryptedSessionDataTranscoderTest"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 0, 
+        "numberRunning": 1, 
+        "testClass": "ro.pippo.session.EncryptedSessionDataTranscoderTest", 
+        "numberFailing": 0, 
+        "numberErroring": 1, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/pippo-java/pippo/builds/446341967", 
+      "date": "Oct 25, 2018 9:54:38 PM", 
+      "id": 446341967
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/pippo-java/pippo/builds/446336779", 
+      "date": "Oct 25, 2018 9:38:02 PM", 
+      "id": 446336779
+    }
+  }, 
+  "repository": {
+    "name": "pippo-java/pippo", 
+    "url": "https://github.com/pippo-java/pippo", 
+    "isFork": false, 
+    "pullRequestId": 470, 
+    "isPullRequest": true, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 25979437
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/pippo-java/pippo/commit/6348e76f954cfc25a27e7aaf40dd1707d0313212", 
+      "sha": "6348e76f954cfc25a27e7aaf40dd1707d0313212", 
+      "branchName": "master", 
+      "date": "Oct 25, 2018 9:47:53 PM", 
+      "repoName": "pippo-java/pippo"
+    }, 
+    "fixerBuildBaseRepo": {
+      "url": "https://github.com/pippo-java/pippo/commit/aff3d736775a247f6c54876e8a50d0789ac8a7b1", 
+      "sha": "aff3d736775a247f6c54876e8a50d0789ac8a7b1", 
+      "branchName": "master", 
+      "date": "Oct 25, 2018 9:34:40 PM", 
+      "repoName": "pippo-java/pippo"
+    }, 
+    "fixerBuildForkRepo": {
+      "url": "https://github.com/rygel/pippo/commit/3e676728a435e8b3368e179e869c15610624dfc0", 
+      "sha": "3e676728a435e8b3368e179e869c15610624dfc0", 
+      "branchName": "fix_458", 
+      "date": "Oct 25, 2018 9:47:53 PM", 
+      "repoName": "rygel/pippo"
+    }, 
+    "buggyBuildForkRepo": {
+      "url": "https://github.com/rygel/pippo/commit/3e676728a435e8b3368e179e869c15610624dfc0", 
+      "sha": "3e676728a435e8b3368e179e869c15610624dfc0", 
+      "branchName": "fix_458", 
+      "date": "Oct 25, 2018 9:47:53 PM", 
+      "repoName": "rygel/pippo"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/pippo-java/pippo/commit/7fd0f9828a4b0e7f64c193ce82565cc9b294ad8f", 
+      "sha": "7fd0f9828a4b0e7f64c193ce82565cc9b294ad8f", 
+      "branchName": "master", 
+      "date": "Oct 25, 2018 9:36:02 PM", 
+      "repoName": "pippo-java/pippo"
+    }, 
+    "buggyBuildBaseRepo": {
+      "url": "https://github.com/pippo-java/pippo/commit/aff3d736775a247f6c54876e8a50d0789ac8a7b1", 
+      "sha": "aff3d736775a247f6c54876e8a50d0789ac8a7b1", 
+      "branchName": "master", 
+      "date": "Oct 25, 2018 9:34:40 PM", 
+      "repoName": "pippo-java/pippo"
+    }
+  }, 
+  "bugName": "pippo-java-pippo-446336779-446341967", 
+  "version": "latest", 
+  "projectMetrics": {
+    "numberSourceFiles": 282, 
+    "numberLibrariesFailingModule": 5, 
+    "numberTestFiles": 33, 
+    "numberModules": 53
+  }, 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 1, 
+      "numberDeleted": 1
+    }
+  }, 
+  "bugId": "Bears-233", 
+  "type": "failing_passing", 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 328426080, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 500695040, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Oct 25, 2018 10:02:00 PM", 
+    "projectRootPomPath": "./workspace/pippo-java/pippo/446336779/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          5, 
+          183
+        ], 
+        "stepNames": [
+          "CheckoutBuggyBuildCandidate", 
+          "BuildProjectBuggyBuildCandidate"
+        ], 
+        "nbSteps": 2, 
+        "totalDuration": 188
+      }, 
+      "testing": {
+        "stepDurations": [
+          12
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidate"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 12
+      }, 
+      "cloning": {
+        "stepDurations": [
+          5
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 5
+      }
+    }, 
+    "reproductionDateBeginning": "Oct 25, 2018 9:54:56 PM", 
+    "totalDuration": 419
+  }
+}
