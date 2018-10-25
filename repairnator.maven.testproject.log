@@ -1,0 +1,448 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Pippo Parent
+[INFO] Pippo Core
+[INFO] Pippo Server Parent
+[INFO] Pippo Jetty
+[INFO] Pippo Template Parent
+[INFO] Pippo Freemarker
+[INFO] Pippo Content Type Parent
+[INFO] Pippo Gson
+[INFO] Pippo
+[INFO] Pippo Quickstart Archetype
+[INFO] Pippo Test
+[INFO] Pippo Session Parent
+[INFO] Pippo Session
+[INFO] Pippo Session Cookie
+[INFO] Pippo Session Ehcache2
+[INFO] Pippo Session Ehcache3
+[INFO] Pippo Session Hazelcast
+[INFO] Pippo Session Infinispan
+[INFO] Pippo Session JCache
+[INFO] Pippo Session JDBC
+[INFO] Pippo Session Jedis
+[INFO] Pippo Session MongoDB
+[INFO] Pippo Session Spymemcached
+[INFO] Pippo Session Xmemcached
+[INFO] Pippo Metrics Parent
+[INFO] Pippo Metrics
+[INFO] Pippo Metrics Graphite
+[INFO] Pippo Metrics InfluxDB
+[INFO] Pippo Metrics Librato
+[INFO] Pippo Metrics Prometheus
+[INFO] Pippo Groovy
+[INFO] Pippo Jade
+[INFO] Pippo Pebble
+[INFO] Pippo Trimou
+[INFO] Pippo Velocity
+[INFO] Pippo CSV
+[INFO] Pippo Fastjson
+[INFO] Pippo Jackson
+[INFO] Pippo JAXB
+[INFO] Pippo SnakeYAML
+[INFO] Pippo XStream
+[INFO] Pippo Tjws
+[INFO] Pippo Tomcat
+[INFO] Pippo Undertow
+[INFO] Pippo Controller Parent
+[INFO] Pippo Controller
+[INFO] Pippo Guice
+[INFO] Pippo Spring
+[INFO] Pippo Weld
+[INFO] Pippo Css Parent
+[INFO] Pippo Less4j
+[INFO] Pippo Sass
+[INFO] Pippo Security Parent
+[INFO] Pippo Pac4j
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Pippo Parent 1.12.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ pippo-parent ---
+[INFO] Skipping Rule Enforcement.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Pippo Core 1.12.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ pippo-core ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ pippo-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 10 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ pippo-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ pippo-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ pippo-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ pippo-core ---
+[INFO] Surefire report directory: /root/workspace/pippo-java/pippo/446336779/pippo-core/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.pom (3 KB at 2.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom (3 KB at 57.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.jar (37 KB at 507.8 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running ro.pippo.core.DefaultUriMatcherTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.101 sec
+Running ro.pippo.core.route.PathTraversalResourceHandlerTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running ro.pippo.core.route.DefaultRouterTest
+Tests run: 44, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.149 sec
+Running ro.pippo.core.RequestTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.083 sec
+Running ro.pippo.core.PathRegexBuilderTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running ro.pippo.core.ParameterValueTest
+Tests run: 45, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.124 sec
+Running ro.pippo.core.AbstractTemplateEngineTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.048 sec
+Running ro.pippo.core.ResponseTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.114 sec
+Running ro.pippo.core.PippoSettingsTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec
+Running ro.pippo.core.DefaultErrorHandlerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec
+
+Results :
+
+Tests run: 130, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Pippo Server Parent 1.12.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ pippo-server-parent ---
+[INFO] Skipping Rule Enforcement.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Pippo Jetty 1.12.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ pippo-jetty ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ pippo-jetty ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/pippo-java/pippo/446336779/pippo-server-parent/pippo-jetty/src/main/resources
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ pippo-jetty ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ pippo-jetty ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/pippo-java/pippo/446336779/pippo-server-parent/pippo-jetty/src/test/resources
+[INFO] skip non existing resourceDirectory /root/workspace/pippo-java/pippo/446336779/pippo-server-parent/pippo-jetty/src/test/java
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ pippo-jetty ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ pippo-jetty ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Pippo Template Parent 1.12.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ pippo-template-parent ---
+[INFO] Skipping Rule Enforcement.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Pippo Freemarker 1.12.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ pippo-freemarker ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ pippo-freemarker ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 13 resources
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ pippo-freemarker ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ pippo-freemarker ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/pippo-java/pippo/446336779/pippo-template-parent/pippo-freemarker/src/test/resources
+[INFO] skip non existing resourceDirectory /root/workspace/pippo-java/pippo/446336779/pippo-template-parent/pippo-freemarker/src/test/java
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ pippo-freemarker ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ pippo-freemarker ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Pippo Content Type Parent 1.12.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ pippo-content-type-parent ---
+[INFO] Skipping Rule Enforcement.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Pippo Gson 1.12.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ pippo-gson ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ pippo-gson ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/pippo-java/pippo/446336779/pippo-content-type-parent/pippo-gson/src/main/resources
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ pippo-gson ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ pippo-gson ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/pippo-java/pippo/446336779/pippo-content-type-parent/pippo-gson/src/test/resources
+[INFO] skip non existing resourceDirectory /root/workspace/pippo-java/pippo/446336779/pippo-content-type-parent/pippo-gson/src/test/java
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ pippo-gson ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ pippo-gson ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Pippo 1.12.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ pippo ---
+[INFO] Skipping Rule Enforcement.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Pippo Quickstart Archetype 1.12.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ pippo-quickstart ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ pippo-quickstart ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 13 resources
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ pippo-quickstart ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/pippo-java/pippo/446336779/maven-archetypes/quickstart/src/test/resources
+[INFO] skip non existing resourceDirectory /root/workspace/pippo-java/pippo/446336779/maven-archetypes/quickstart/src/test/java
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Pippo Test 1.12.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ pippo-test ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ pippo-test ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/pippo-java/pippo/446336779/pippo-test/src/main/resources
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ pippo-test ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ pippo-test ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/pippo-java/pippo/446336779/pippo-test/src/test/resources
+[INFO] skip non existing resourceDirectory /root/workspace/pippo-java/pippo/446336779/pippo-test/src/test/java
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ pippo-test ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ pippo-test ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Pippo Session Parent 1.12.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ pippo-session-parent ---
+[INFO] Skipping Rule Enforcement.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Pippo Session 1.12.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ pippo-session ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ pippo-session ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/pippo-java/pippo/446336779/pippo-session-parent/pippo-session/src/main/resources
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ pippo-session ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ pippo-session ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/pippo-java/pippo/446336779/pippo-session-parent/pippo-session/src/test/resources
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ pippo-session ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ pippo-session ---
+[INFO] Surefire report directory: /root/workspace/pippo-java/pippo/446336779/pippo-session-parent/pippo-session/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running ro.pippo.session.EncryptedSessionDataTranscoderTest
+encode
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.431 sec <<< FAILURE!
+test(ro.pippo.session.EncryptedSessionDataTranscoderTest)  Time elapsed: 0.299 sec  <<< ERROR!
+ro.pippo.core.PippoRuntimeException: ro.pippo.core.PippoRuntimeException: Cannot deserialize session. A new one will be created.
+	at ro.pippo.session.EncryptedSessionDataTranscoder.decode(EncryptedSessionDataTranscoder.java:61)
+	at ro.pippo.session.EncryptedSessionDataTranscoderTest.test(EncryptedSessionDataTranscoderTest.java:37)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: ro.pippo.core.PippoRuntimeException: Cannot deserialize session. A new one will be created.
+	at ro.pippo.session.SerializationSessionDataTranscoder.decode(SerializationSessionDataTranscoder.java:54)
+	at ro.pippo.session.EncryptedSessionDataTranscoder.decode(EncryptedSessionDataTranscoder.java:57)
+	... 30 more
+Caused by: java.io.InvalidClassException: Unauthorized deserialization attempt; ro.pippo.session.DefaultSessionData
+	at ro.pippo.session.FilteringObjectInputStream.resolveClass(FilteringObjectInputStream.java:20)
+	at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1819)
+	at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1713)
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1986)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1535)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:422)
+	at ro.pippo.session.SerializationSessionDataTranscoder.decode(SerializationSessionDataTranscoder.java:52)
+	... 31 more
+
+
+Results :
+
+Tests in error: 
+  test(ro.pippo.session.EncryptedSessionDataTranscoderTest): ro.pippo.core.PippoRuntimeException: Cannot deserialize session. A new one will be created.
+
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] Pippo Parent ....................................... SUCCESS [  0.609 s]
+[INFO] Pippo Core ......................................... SUCCESS [  5.547 s]
+[INFO] Pippo Server Parent ................................ SUCCESS [  0.008 s]
+[INFO] Pippo Jetty ........................................ SUCCESS [  0.233 s]
+[INFO] Pippo Template Parent .............................. SUCCESS [  0.003 s]
+[INFO] Pippo Freemarker ................................... SUCCESS [  0.044 s]
+[INFO] Pippo Content Type Parent .......................... SUCCESS [  0.003 s]
+[INFO] Pippo Gson ......................................... SUCCESS [  0.031 s]
+[INFO] Pippo .............................................. SUCCESS [  0.021 s]
+[INFO] Pippo Quickstart Archetype ......................... SUCCESS [  0.324 s]
+[INFO] Pippo Test ......................................... SUCCESS [  0.109 s]
+[INFO] Pippo Session Parent ............................... SUCCESS [  0.004 s]
+[INFO] Pippo Session ...................................... FAILURE [  0.889 s]
+[INFO] Pippo Session Cookie ............................... SKIPPED
+[INFO] Pippo Session Ehcache2 ............................. SKIPPED
+[INFO] Pippo Session Ehcache3 ............................. SKIPPED
+[INFO] Pippo Session Hazelcast ............................ SKIPPED
+[INFO] Pippo Session Infinispan ........................... SKIPPED
+[INFO] Pippo Session JCache ............................... SKIPPED
+[INFO] Pippo Session JDBC ................................. SKIPPED
+[INFO] Pippo Session Jedis ................................ SKIPPED
+[INFO] Pippo Session MongoDB .............................. SKIPPED
+[INFO] Pippo Session Spymemcached ......................... SKIPPED
+[INFO] Pippo Session Xmemcached ........................... SKIPPED
+[INFO] Pippo Metrics Parent ............................... SKIPPED
+[INFO] Pippo Metrics ...................................... SKIPPED
+[INFO] Pippo Metrics Graphite ............................. SKIPPED
+[INFO] Pippo Metrics InfluxDB ............................. SKIPPED
+[INFO] Pippo Metrics Librato .............................. SKIPPED
+[INFO] Pippo Metrics Prometheus ........................... SKIPPED
+[INFO] Pippo Groovy ....................................... SKIPPED
+[INFO] Pippo Jade ......................................... SKIPPED
+[INFO] Pippo Pebble ....................................... SKIPPED
+[INFO] Pippo Trimou ....................................... SKIPPED
+[INFO] Pippo Velocity ..................................... SKIPPED
+[INFO] Pippo CSV .......................................... SKIPPED
+[INFO] Pippo Fastjson ..................................... SKIPPED
+[INFO] Pippo Jackson ...................................... SKIPPED
+[INFO] Pippo JAXB ......................................... SKIPPED
+[INFO] Pippo SnakeYAML .................................... SKIPPED
+[INFO] Pippo XStream ...................................... SKIPPED
+[INFO] Pippo Tjws ......................................... SKIPPED
+[INFO] Pippo Tomcat ....................................... SKIPPED
+[INFO] Pippo Undertow ..................................... SKIPPED
+[INFO] Pippo Controller Parent ............................ SKIPPED
+[INFO] Pippo Controller ................................... SKIPPED
+[INFO] Pippo Guice ........................................ SKIPPED
+[INFO] Pippo Spring ....................................... SKIPPED
+[INFO] Pippo Weld ......................................... SKIPPED
+[INFO] Pippo Css Parent ................................... SKIPPED
+[INFO] Pippo Less4j ....................................... SKIPPED
+[INFO] Pippo Sass ......................................... SKIPPED
+[INFO] Pippo Security Parent .............................. SKIPPED
+[INFO] Pippo Pac4j ........................................ SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 8.893 s
+[INFO] Finished at: 2018-10-25T21:58:23+02:00
+[INFO] Final Memory: 27M/627M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (default-test) on project pippo-session: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/pippo-java/pippo/446336779/pippo-session-parent/pippo-session/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :pippo-session
