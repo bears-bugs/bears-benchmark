@@ -1,0 +1,153 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 104, 
+      "numberRunning": 106, 
+      "numberFailing": 2, 
+      "numberErroring": 0, 
+      "failures": [
+        {
+          "failureName": "org.spockframework.runtime.WrongExceptionThrownError", 
+          "isError": false, 
+          "occurrences": 2
+        }
+      ], 
+      "numberSkipping": 0
+    }, 
+    "failingModule": "/root/workspace/DmitriiSerikov/money-transfer-service/446104441", 
+    "failureDetails": [
+      {
+        "failureName": "org.spockframework.runtime.WrongExceptionThrownError", 
+        "detail": "Expected exception of type 'java.lang.IllegalArgumentException', but got 'java.lang.NullPointerException'", 
+        "isError": false, 
+        "testMethod": "should throw exception when try acquire lock by null instead of id", 
+        "testClass": "com.github.example.holder.impl.LockHolderSpec"
+      }, 
+      {
+        "failureName": "org.spockframework.runtime.WrongExceptionThrownError", 
+        "detail": "Expected exception of type 'java.lang.IllegalArgumentException', but got 'java.lang.NullPointerException'", 
+        "isError": false, 
+        "testMethod": "should throw exception when try release lock by null instead of id", 
+        "testClass": "com.github.example.holder.impl.LockHolderSpec"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 2, 
+        "numberRunning": 4, 
+        "testClass": "com.github.example.holder.impl.LockHolderSpec", 
+        "numberFailing": 2, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/DmitriiSerikov/money-transfer-service/builds/446106577", 
+      "date": "Oct 25, 2018 12:34:58 PM", 
+      "id": 446106577
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/DmitriiSerikov/money-transfer-service/builds/446104441", 
+      "date": "Oct 25, 2018 12:26:22 PM", 
+      "id": 446104441
+    }
+  }, 
+  "repository": {
+    "name": "DmitriiSerikov/money-transfer-service", 
+    "url": "https://github.com/DmitriiSerikov/money-transfer-service", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 153101102
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/DmitriiSerikov/money-transfer-service/commit/e5d2df4a4d4a99932d8e2c2dbdc7a0f2ac02e685", 
+      "sha": "e5d2df4a4d4a99932d8e2c2dbdc7a0f2ac02e685", 
+      "branchName": "master", 
+      "date": "Oct 25, 2018 12:29:40 PM", 
+      "repoName": "DmitriiSerikov/money-transfer-service"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/DmitriiSerikov/money-transfer-service/commit/953154b15baf0ff4fd15d17ddcf6c9b40d943ee2", 
+      "sha": "953154b15baf0ff4fd15d17ddcf6c9b40d943ee2", 
+      "branchName": "master", 
+      "date": "Oct 25, 2018 12:23:58 PM", 
+      "repoName": "DmitriiSerikov/money-transfer-service"
+    }
+  }, 
+  "bugName": "DmitriiSerikov-money-transfer-service-446104441-446106577", 
+  "version": "latest", 
+  "projectMetrics": {
+    "numberSourceFiles": 31, 
+    "numberLibrariesFailingModule": 52, 
+    "numberTestFiles": 0, 
+    "numberModules": 1
+  }, 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 2, 
+      "numberDeleted": 7
+    }
+  }, 
+  "bugId": "Bears-209", 
+  "type": "failing_passing", 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 262127528, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 396886016, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Oct 25, 2018 12:38:17 PM", 
+    "projectRootPomPath": "./workspace/DmitriiSerikov/money-transfer-service/446104441/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          0, 
+          100
+        ], 
+        "stepNames": [
+          "CheckoutBuggyBuildCandidate", 
+          "BuildProjectBuggyBuildCandidate"
+        ], 
+        "nbSteps": 2, 
+        "totalDuration": 100
+      }, 
+      "testing": {
+        "stepDurations": [
+          19
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidate"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 19
+      }, 
+      "cloning": {
+        "stepDurations": [
+          2
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 2
+      }
+    }, 
+    "reproductionDateBeginning": "Oct 25, 2018 12:35:19 PM", 
+    "totalDuration": 174
+  }
+}
