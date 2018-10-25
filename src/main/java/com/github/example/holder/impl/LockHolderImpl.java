@@ -3,6 +3,7 @@ package com.github.example.holder.impl;
 import com.github.example.exception.CouldNotAcquireLockException;
 import com.github.example.holder.LockHolder;
 import io.micronaut.context.annotation.Value;
+import org.modelmapper.internal.util.Assert;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -25,16 +26,21 @@ public class LockHolderImpl implements LockHolder {
 
     @Override
     public void acquire(final String lockId) {
+        Assert.notNull(lockId);
+
         final ReentrantLock lock = locks.computeIfAbsent(lockId, key -> new ReentrantLock(true));
         acquireLock(lockId, lock);
     }
 
     @Override
     public void release(final String lockId) {
+        Assert.notNull(lockId);
+
         Optional.ofNullable(locks.get(lockId))
                 .ifPresent(lock -> releaseLock(lockId, lock));
     }
 
+    @SuppressWarnings("squid:S2222")
     private void acquireLock(final String lockId, final ReentrantLock lock) {
         try {
             if (!lock.tryLock(timeout, TimeUnit.MILLISECONDS)) {
@@ -44,7 +50,6 @@ public class LockHolderImpl implements LockHolder {
         } catch (InterruptedException ex) {
             final Thread currentThread = Thread.currentThread();
             LOGGER.error("Thread {} where interrupted when acquire lock for id:{}", currentThread.getName(), lockId);
-            currentThread.interrupt();
             throw new CouldNotAcquireLockException("Lock not acquired due to interruption of thread, id:" + lockId, ex);
         }
     }
@@ -57,7 +62,7 @@ public class LockHolderImpl implements LockHolder {
                     lock.unlock();
                     LOGGER.debug("Lock released for id:{}", lockId);
                 }
-                return holdCount == 1 ? null : lock;
+                return holdCount == 1 && !lock.hasQueuedThreads() ? null : lock;
             });
             lock.unlock();
         }
