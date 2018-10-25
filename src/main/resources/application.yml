@@ -1,0 +1,15 @@
+micronaut:
+    application:
+        name: money-transfer-service
+
+jackson:
+    serialization:
+        writeDatesAsTimestamps: false
+
+processing:
+    transactions:
+          enabled: true
+          cron: 0 * * ? * *
+          limit: 500
+    lockHolder:
+          timeout: 5000

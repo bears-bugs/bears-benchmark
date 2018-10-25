@@ -1,0 +1,1 @@
+web java ${JAVA_OPTS} -jar target/money-transfer-service-0.1.jar
