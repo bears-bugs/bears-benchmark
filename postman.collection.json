@@ -1,0 +1,119 @@
+{
+  "variables": [],
+  "info": {
+    "name": "money-transfer-service-api",
+    "_postman_id": "c40aab4d-5b59-ec47-8877-0fe92d346d83",
+    "description": "",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Accounts",
+      "description": "",
+      "item": [
+        {
+          "name": "Get all accounts",
+          "request": {
+            "url": "{{url}}/api/{{api_version}}/accounts",
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t    \"initialBalance\": 30\n}"
+            },
+            "description": ""
+          },
+          "response": []
+        },
+        {
+          "name": "Get account by unique identificator",
+          "request": {
+            "url": "{{url}}/api/{{api_version}}/accounts/980f7b4c-7a92-4cc7-a1e2-a137cbe1add9",
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t    \"initialBalance\": 30\n}"
+            },
+            "description": ""
+          },
+          "response": []
+        },
+        {
+          "name": "Create new account",
+          "request": {
+            "url": "{{url}}/api/{{api_version}}/accounts",
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "description": ""
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\"initialBalance\": 30\n}"
+            },
+            "description": ""
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Transactions",
+      "description": "",
+      "item": [
+        {
+          "name": "Get all transcations",
+          "request": {
+            "url": "{{url}}/api/{{api_version}}/transactions",
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t    \"sourceAccountId\": 1,\n\t    \"targetAccountId\": 3,\n\t    \"amount\": 10\n}"
+            },
+            "description": ""
+          },
+          "response": []
+        },
+        {
+          "name": "Get transcation by unique identificator",
+          "request": {
+            "url": "{{url}}/api/{{api_version}}/transactions/031e6659-200e-404b-bdc7-b0200faf856f",
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t    \"sourceAccountId\": 1,\n\t    \"targetAccountId\": 3,\n\t    \"amount\": 10\n}"
+            },
+            "description": ""
+          },
+          "response": []
+        },
+        {
+          "name": "Create new transaction",
+          "request": {
+            "url": "{{url}}/api/{{api_version}}/transactions",
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "description": ""
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\"sourceAccountId\": \"980f7b4c-7a92-4cc7-a1e2-a137cbe1add9\",\n\t\"targetAccountId\": \"54560954-d242-497f-806a-c68486e68d70\",\n\t\"amount\": 10\n}"
+            },
+            "description": ""
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
