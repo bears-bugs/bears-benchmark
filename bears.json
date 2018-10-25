@@ -1,0 +1,145 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 144, 
+      "numberRunning": 145, 
+      "numberFailing": 0, 
+      "numberErroring": 1, 
+      "failures": [
+        {
+          "failureName": "java.lang.AbstractMethodError", 
+          "isError": true, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 0
+    }, 
+    "failingModule": "/root/workspace/brettwooldridge/HikariCP/446097106", 
+    "failureDetails": [
+      {
+        "failureName": "java.lang.AbstractMethodError", 
+        "testClass": "com.zaxxer.hikari.pool.TestConnections", 
+        "testMethod": "testOldDriver", 
+        "isError": true
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 17, 
+        "numberRunning": 18, 
+        "testClass": "com.zaxxer.hikari.pool.TestConnections", 
+        "numberFailing": 0, 
+        "numberErroring": 1, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/brettwooldridge/HikariCP/builds/446106182", 
+      "date": "Oct 25, 2018 12:35:59 PM", 
+      "id": 446106182
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/brettwooldridge/HikariCP/builds/446097106", 
+      "date": "Oct 25, 2018 12:10:53 PM", 
+      "id": 446097106
+    }
+  }, 
+  "repository": {
+    "name": "brettwooldridge/HikariCP", 
+    "url": "https://github.com/brettwooldridge/HikariCP", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 13404515
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/brettwooldridge/HikariCP/commit/45912ebb570ff9d54c010da61d1f2c26cc5cd39b", 
+      "sha": "45912ebb570ff9d54c010da61d1f2c26cc5cd39b", 
+      "branchName": "dev", 
+      "date": "Oct 25, 2018 12:28:59 PM", 
+      "repoName": "brettwooldridge/HikariCP"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/brettwooldridge/HikariCP/commit/239919c33deb814aa6e3d9747059410133200e07", 
+      "sha": "239919c33deb814aa6e3d9747059410133200e07", 
+      "branchName": "dev", 
+      "date": "Oct 25, 2018 12:05:30 PM", 
+      "repoName": "brettwooldridge/HikariCP"
+    }
+  }, 
+  "bugName": "brettwooldridge-HikariCP-446097106-446106182", 
+  "version": "latest", 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 1, 
+      "numberDeleted": 1
+    }
+  }, 
+  "type": "failing_passing", 
+  "bugId": "Bears-201", 
+  "projectMetrics": {
+    "numberSourceFiles": 38, 
+    "numberLibrariesFailingModule": 62, 
+    "numberTestFiles": 51, 
+    "numberModules": 1
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 378380592, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 407896064, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Oct 25, 2018 12:45:39 PM", 
+    "projectRootPomPath": "./workspace/brettwooldridge/HikariCP/446097106/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          0, 
+          39
+        ], 
+        "stepNames": [
+          "CheckoutBuggyBuildCandidate", 
+          "BuildProjectBuggyBuildCandidate"
+        ], 
+        "nbSteps": 2, 
+        "totalDuration": 39
+      }, 
+      "testing": {
+        "stepDurations": [
+          242
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidate"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 242
+      }, 
+      "cloning": {
+        "stepDurations": [
+          6
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 6
+      }
+    }, 
+    "reproductionDateBeginning": "Oct 25, 2018 12:36:21 PM", 
+    "totalDuration": 553
+  }
+}
