@@ -1,0 +1,151 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 102, 
+      "numberRunning": 103, 
+      "numberFailing": 1, 
+      "numberErroring": 0, 
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError", 
+          "isError": false, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 8
+    }, 
+    "failingModule": "/root/workspace/danfickle/openhtmltopdf/445988164/openhtmltopdf-examples", 
+    "failureDetails": [
+      {
+        "failureName": "java.lang.AssertionError", 
+        "testClass": "com.openhtmltopdf.visualregressiontests.VisualRegressionTest", 
+        "testMethod": "testRtlPageOverflowTransform", 
+        "isError": false
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 58, 
+        "numberRunning": 59, 
+        "testClass": "com.openhtmltopdf.visualregressiontests.VisualRegressionTest", 
+        "numberFailing": 1, 
+        "numberErroring": 0, 
+        "numberSkipping": 6
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/danfickle/openhtmltopdf/builds/446994292", 
+      "date": "Oct 27, 2018 7:42:36 AM", 
+      "id": 446994292
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/danfickle/openhtmltopdf/builds/445988164", 
+      "date": "Oct 25, 2018 5:42:50 AM", 
+      "id": 445988164
+    }
+  }, 
+  "repository": {
+    "name": "danfickle/openhtmltopdf", 
+    "url": "https://github.com/danfickle/openhtmltopdf", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 45526710
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/danfickle/openhtmltopdf/commit/586693546977cbda9fcc2d611388b4d0b6800fdc", 
+      "sha": "586693546977cbda9fcc2d611388b4d0b6800fdc", 
+      "branchName": "open-dev-v1", 
+      "date": "Oct 27, 2018 7:36:21 AM", 
+      "repoName": "danfickle/openhtmltopdf"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/danfickle/openhtmltopdf/commit/289be205ec3de706538ce48f4fcac547ed111250", 
+      "sha": "289be205ec3de706538ce48f4fcac547ed111250", 
+      "branchName": "open-dev-v1", 
+      "date": "Oct 25, 2018 5:38:30 AM", 
+      "repoName": "danfickle/openhtmltopdf"
+    }
+  }, 
+  "bugName": "danfickle-openhtmltopdf-445988164-446994292", 
+  "version": "latest", 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 3, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 17, 
+      "numberDeleted": 7
+    }
+  }, 
+  "type": "passing_passing", 
+  "bugId": "Bears-206", 
+  "projectMetrics": {
+    "numberSourceFiles": 395, 
+    "numberLibrariesFailingModule": 52, 
+    "numberTestFiles": 11, 
+    "numberModules": 12
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 230150424, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 458752000, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Oct 27, 2018 8:29:02 AM", 
+    "projectRootPomPath": "./workspace/danfickle/openhtmltopdf/445988164/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          0, 
+          0, 
+          0, 
+          0, 
+          91
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 91
+      }, 
+      "testing": {
+        "stepDurations": [
+          55
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 55
+      }, 
+      "cloning": {
+        "stepDurations": [
+          14
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 14
+      }
+    }, 
+    "reproductionDateBeginning": "Oct 27, 2018 8:23:59 AM", 
+    "totalDuration": 297
+  }
+}
