@@ -1,0 +1,204 @@
+//build hack for first-letter
+//right: for absolute layout
+//first-line pseudo
+//email guy about calendar text
+//right floats
+//paragraph extending floats
+//resize inlines with padding and borders
+//fix gap in splash page
+//small caps
+//move text up to baseline
+//match up baselines of text w/ baseline vertical alignment
+//justified text
+//build calendar demo
+//boolean to turn off layout threading
+//fix list items
+//fix list item vertical positioning
+//build table demo
+//implement rendering context and xhtmlpanel
+//comment out all extra stuff
+//hook rendering context into context
+//easier headless interface
+//implement defineFontMapping
+//test hover again and make a hard coded hack
+//finish up hover support
+//move more of context into rendering context
+//fix fixed background clipping error (set clip rect to whole viewport?)
+//fixed pos support
+//support getMinimumSize() on headless interface
+//build hover demo
+//build browser test of custom font from 1001fonts.com
+//copy text via mouse selection
+//fix crash on width = 0
+//fix threading/loop issue with hamlet
+
+//redesign layout factory
+    //should support display property
+    //should support layout generation by element name or other code
+    //tell if something is a break
+    //should the factory itself be replaceable?
+    //make layoutfactory use display for generating layouts
+    //subclassing is okay
+    //turn into singleton on the renderingcontext, but make it replaceable
+    //addElementLayout(String name, Layout)
+    //addDisplayLayout(String name, Layout)
+
+//redesign font rendering interface
+    
+//make sure nested content inside of a float or abs block works
+//    (new block formatting context?)
+//add font scaling
+//add dpi awareness
+//fix line breaking bugs
+//initial printing (no media or paging support)
+//    if something is floated or absolute it should be turned into a block
+//    floated divs work, but not floated spans. span should turn into a
+//    block when floated
+//I think the floating problems are solved now.
+//    abs pos w/ bottom align
+//move actions out into their own code
+    //collapse fontresolver and fontresolvertest
+    //move defaultlayout into boxlayout and get it all to compile
+    //make layoututil w/ util functions from defaultlayout
+    //create preloadbox in layout interface
+
+//table crashes on tbody. skip tbody? 
+//table crashes on empty tr
+//reimplement whitespace handling
+//post about dpi to units issue
+//fix n test vertical align
+//fix n test horizontal align
+//fix n test line wrapping w/ floats
+//fix n test preformatted lines
+//test first line pseudo
+//test first char pseudo
+
+//remove isPrinting(). check the graphics instanceof printablegraphics
+//show current resources in browser
+
+//can we separate inline and box more? maybe do that later?    
+//cache linemetrics and ascend/dscend more
+//take out redundant functions in font stuff
+//check for multiple calls to fontutil stuff 
+//get a performance testing tool.
+
+//javadoc xhtmlpanel
+//javadoc graphic2drenderer
+//test docs uploaded
+//fix float bugs w/ more than one float on a line
+//fix bugs in unit tests and get them all to run properly
+//make inlineblockbox and make floats use it
+//fix more bugs w/ multi floats on one line
+
+//photo gallery that uses all floats
+//realtime resize panel (on photo gallery?)
+//codify the demo filebrowser
+//codify the photo gallery demo
+
+//AA the bullets
+//fix new NPEs
+//fix explict height bug (in photo gallery)
+
+
+//some issues with hover when the cursor is in the padding of an inline and //only hits part of the hovered styles
+
+//text inside a list-item pick up borders even if they are not inline //elements
+
+//anonymous text inlines get hover instead of real box
+
+//inlines inside of a hovered block don't get restyled when the block does
+
+//inlines are picking up parent block's background when they shouldn't
+
+//build game screen demo
+
+===========
+
+unit test space collapsing w/ images
+implement tab alignment for pres
+unit test tab alignment
+implement media support for printing and test it
+    make financial table demo print differently
+make graphic2drenderer not use basicpanel
+spruce up photo background
+build demo w/ fixed pos menu, hovers, and scrolling
+make all demos webstartable
+codify the demo html editor
+jtable -> report -> printed doc demo
+
+form elements are still broken
+if width set on body abs still goes relative to viewport width, not
+body width.  the default block formatting context should be at the top most block's size, not at the viewport size.
+
+line-height isn't working for Alice dropcap
+
+============
+notes of the changes that tobe has made
+
+fixed:Whitespace only inlines are not being dropped. they produce anonymous inlines that take up some screen space.
+
+fixed: Anonymous Inlines are picking up border, padding, and margins from their parent. Only element inlines should inherit those.
+
+fixed: the document box width is too big, making everything on screen too wide.
+
+floats are broken
+the extra space at the top of the splash page collapses
+tables are broken
+hovers are broken
+abs pos list items on game screen are missing
+fixed bg images are broken
+
+============
+thoughts on an fs game
+
+tetris game with fleets of ships falling down
+there is a skyline of buildings that you must fill up.
+when you clear a line there is a big ID4esque explosion
+alien bombs can blow large areas
+if you match the same color ship to a building it blows up the building?
+humans build up new levels of buildings below in the subways and underground tunnels. eventually you get to the core of the earth and blow up the planet.
+little animated people build stuff below
+alien virus can poison the humans and slow them down
+go from city to city
+cities evolve over time. start w/ pyramids, move to cooler stuff over time.
+spaceships are drones.
+kamakazi ship w/ alien in it
+aliens watch from mother ship at top which drops drone ships
+
+pro version would have level packs.
+purchase levels individually from an itunes like store
+purchase w/ free gift copies to give to others
+target at non-traditional gamers.
+
+"Invading the earth, 5 minutes a day!"
+
+create a head to head version.
+
+humans invade alien planet version
+
+humans and aliens team up version
+============
+thoughts on another game.
+instead of a game that blows things down, what about building things up?
+if you had to construct buildings to reach certain goals?
+reach a light bulb?
+rescue dog from a burning building?
+============
+
+
+rachel in town arrive 20th @ 7, leave 5th @ 7
+
+
+rachel ccard: mc 5291 4922 9515 2504 exp. 03/05
+
+--crash w/ width = 50%
+--% width for absolute layout
+--styles on each border side
+--font family resolution
+--bottom border resolution
+
+
+
+
+    
+

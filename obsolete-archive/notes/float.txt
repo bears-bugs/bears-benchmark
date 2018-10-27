@@ -1,0 +1,126 @@
+new ideas
+
+the float will go to the inner edge of it's containing block or the previous float
+a float must establish a new block formatting context
+top of box is at top of current line box
+if not enough room on the current line and there is previous float that it's next to, then shift down until there is room or no previous float.
+block boxes don't shrink. line boxes do.
+
+
+context.getBlockFormattingContext()
+context.getContainingBlock()
+context.setBlockFormattingContext()
+
+blockformattingcontext.addFloat(block,direction)
+blockformattingcontext.translate(x,y)
+bfc.isFloatPresent(current line block)
+bfc.getLeftFloatDistance(current line block)
+bfc.getRightFloatDistance(current line block)
+bfc.getFloatBottom(current line block)
+
+tests:
+1    span that does nothing
+2    span that becomes a left float in a single paragraph with 5 lines
+3    span that becomes a left float in a para w/ 1 lines
+4    span, float left, 2 para, float extends to second para
+5    three paras. middle one floats to the left
+
+*    span float left in big para with long word that must shove down
+*    span float left with next span w/ clear to shove down
+*    two span floats left, in one big para
+*    two spans float left and not enough room so wrap to next line, in one big para
+*    5 spans float left w/ different heights in one big para w/ float wrapping
+*    5 spans float left w/ long words and images and wrap to next para    
+    span float right in a single para
+
+
+
+------------------
+plan for abs
+create new bfc if none there (put in block layout())
+
+//abs dif in upper left
+//abs div in upper right
+//abs div 10px from left
+//abs div 10px from right
+//abs div down 10 px
+//abs pos centered w/ both sides auto?
+//abs div with 50% width
+
+abs pos centered vert w/ both sides auto?
+abs with height 50%;
+abs div 10px above bottom
+abs span (turns into block?)
+nested blocks and inline content inside abs div
+abs div left inside abs div right
+
+need to figure out how to handle repaint optimization on absolute positioned blocks where it's way outside of it's
+parent block
+
+------------------
+
+plan for floating
+
+when looping through text to create inline
+boxes, if we come across a replaced element
+that is set to float, first try to place the
+element on the line. if it can go on the line
+then float it. if it has to go on the next line
+then move it to the next line and float it.
+
+to float an element, set it's x to the current
+float tab for the correct float side.
+move the current linebox to the left or right.
+add it to the float tab, where appropriate.
+
+for each line box, reduce it's available width
+to account for the current vertical float tab.
+
+subtract from the vertical float tab if tab > 0
+
+
+--------
+
+floating block level elements.
+the element will have to become a new box and then
+floated as if it was an image. it needs an intrinsic
+w/h. i don't know what the w/h will be if it doesn't
+have them set via css. probably expand the width to the
+width of the containing block.
+
+the plan.
+
+
+modify the routine which figures out if we are doing a block or inline context
+    to skip floated blocks when searching for blocks.
+
+for the inline calculation
+    after the isReplaced add a isFloatedBlock() which does basically
+    the same thing.
+    
+    though it's really a block we will create an inlineblockbox which
+    is a subclass of inline and contains a reference to the real blockbox
+    inside of it.
+    
+    modify the paint routine to look for isFloatedBlock() and do the same
+    thing as isReplaced()
+
+---------
+
+* floating block level elements in a block context :
+
+the element must have an w/h set explicitly or set to the minimum size
+modify the test for block context routine to skip floated blocks
+modify the layout children in block mode to move floated block to the side
+add storage of tabs
+add shortening of block via tabs
+add decrement tab y for each time through
+store a block box for each child in the list of children (already there?)
+
+-----------
+
+floating elements and having the float continue down to the next enclosing
+block.
+
+first, we need to store the float tabs in the context
+then, when doing translations, the floats need to be translated as well

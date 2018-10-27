@@ -1,0 +1,114 @@
+The Flying Saucer Project
+
+
+<a id="fs_logo" href="faq.html#acid2">&nbsp;</a>
+
+
+h3(fs_heading){ clear: none }. An XML/XHTML/CSS 2.1 Renderer
+
+_(in 100% Java)_
+
+h2(fs_heading){ clear: both }. Download Now!
+
+table(properties){width: 100% }.
+| *Status* | *Type* | *URL* | *Description* | *MD5 Sum* 
+| *STABLE* | Binary Zip | "flyingsaucer-R8.zip":http://pigeonholdings.com/projects/flyingsaucer/R8/downloads/flyingsaucer-R8.zip | For using Flying Saucer in your own programs (3.0M) | "MD5 Checksum":sig/flyingsaucer-R8.zip.md5.txt "SHA Checksum":sig/flyingsaucer-R8.zip.asc.txt
+| *STABLE* | Source Bundle Zip | "flyingsaucer-R8-src.zip":http://pigeonholdings.com/projects/flyingsaucer/R8/downloads/flyingsaucer-R8-src.zip | Includes source, demo programs, sample code, etc.  (7.5M) | "MD5 Checksum":sig/flyingsaucer-R8-src.zip.md5.txt "SHA Checksum":sig/flyingsaucer-R8-src.zip.asc.txt
+
+If you'd like to access _everything_, please use our source code repository (CVS); see the link to CVS on the left side of this page.
+
+h2(fs_heading){ clear: left }. Quick News
+
+p{font-size: 14pt}. Release 7 No Longer Available
+
+*July 1, 2009*: The release files for Release 7 (R7) are no longer available. While we recommend that you work with the current R8 release, if for some reason you need to stick with the R7 release you can check out that version of the source code from our CVS repository. The R7 release is tagged in the repository as R7_FINAL.
+
+p{font-size: 14pt}. Release 8 - Final (R8)
+
+*April 18, 2009*: We are proud to present our R8 release. This release includes no changes since R8 release candidate 2.
+
+Our R8 release includes a number of improvements over R7, as well as bug fixes. You can read the complete list of changes on our "news":./news.html page; here are some
+highlights about what you'll find in R8:
+
+* PDF
+** Upgrade to use iText 2.0.8
+** Support adding custom header properties on PDF output
+** Add ability to set PDF version programmatically
+** Add ability to manipulate PDF output document before it's closed
+** Add ability to have different starting page number for first document in multiple documents
+** Add API to retrieve PDF page and coordinates for boxes with an ID attribute
+** Implement CMYK color support for PDF output
+** Support encryption of PDF output
+* Swing
+** Basic support for selection, highlighting and copying
+* General
+** Expose copy of parsed entities from catalog.
+** Preliminary support for data URLs
+** Support True Type Collection (.ttc) files
+** Preliminary support for Type 1 fonts
+** Support logging via Log4J as an alternative to JDK logging (requires recompile)
+** Handle hidden form elements
+** Rudimentary support for JavaScript links (from Dan Kaplan)
+** Support for callback on form submission
+* CSS
+** Prelimary support for @font-face rules
+** Implement partial support for leader and target-counter (patch from Karl Tauber)
+** Table pagination.  When turned on (by setting the @-fs-table-pagination@ property to @paginate@ vs. a default of @auto@ ), tables and table cells will be closed (with appropriate borders and padding) when a page ends and reopened when a page starts. Additionally, a table's @thead@ and @tfoot@ will be repeated on each page.
+** "CSS3 margin boxes":http://www.w3.org/TR/css3-page/#margin-boxes
+** "Named pages":http://www.w3.org/TR/css3-page/#using-named-pages
+** "Running elements":http://www.w3.org/TR/2007/WD-css3-gcpm-20070504/#running1
+** "Namespace-aware CSS matching":http://www.w3.org/TR/css3-selectors/#attrnmsp, for example, with attributes [although this also applies to elements]
+** "Pseudo-elements":http://www.w3.org/TR/css3-selectors/#pseudo-elements may now be specified with a double colon
+** "Substring selectors":http://www.w3.org/TR/css3-selectors/#attribute-substrings
+** The background property can now be used in a @page context - "CSS 3 spec":http://www.w3.org/TR/css3-page/#page-properties
+** Custom property to limit the scope of the page and pages counters to a portion of the document
+** Custom property that instructs FS to try to avoid breaking a box so that only borders and padding appear on a page
+
+
+"More news...":./news.html
+
+
+h2(fs_heading){ clear: left }. Project Statistics
+
+Thanks to the "Ohloh website":http://www.ohloh.net/p/xhtmlrenderer.
+
+==<script type="text/javascript" src="http://www.ohloh.net/p/659/widgets/project_basic_stats.js"></script>==
+
+h2(fs_heading){ clear: left }. New Around Here?
+
+If you're new to the project, you may want to read two *great* articles about using Flying Saucer for practical purposes:
+
+* "Generating PDFs for Fun and Profit with Flying Saucer and iText":http://today.java.net/pub/a/today/2007/06/26/generating-pdfs-with-flying-saucer-and-itext.html, by Josh Marinacci from June 2007.  Josh covers using Flying Saucer to generate PDF documents; the article is available on "http://java.net":http://java.net.
+* "Combine JSF Facelets and the Flying Saucer XHTML Renderer":http://today.java.net/pub/a/today/2006/10/31/combine-facelets-and-flying-saucer-renderer.html by Jacobus Steenkamp from October 2006. Jacobus covers using Flying Saucer to generate PDF, image and SVG output, with a focus on on-the-fly generation. The article is on "http://java.net":http://java.net.
+
+There's also a blog entry by Dieter Wimberger "Customizable IM frontend with XHTML+CSS rendering using Flying Saucer":http://wimpi.coalevo.net/2007/05/customizable-im-frontend-with-xhtmlcss.html
+
+h2(fs_heading). Demos
+
+Check out our spiffy "demo apps":demos.html. 
+
+
+h2(fs_heading). Helping Out
+
+We need help!
+
+If you want to contribute or just see what's going on then please join the dev ${mailing-list}! We need developers, beta testers, doc writers, evangelists, and users. 
+
+Keep up with new releases: !https://java-net.dev.java.net/branding/images/xml.gif!:http://xhtmlrenderer.dev.java.net/servlets/ProjectNewsRSS
+
+h2(fs_heading). Special thanks to
+
+<img src="./images/xiLogo64.png" style="float: left; margin-right: 10px;" />
+
+This project website and our User's Guide are produced using the "Xilize":http://xilize.sourceforge.net/ (http://xilize.sourceforge.net/) syntax and rendering engine. The content is written in Xilize text markup, then converted to XHTML using the Xilize converter. We'd like to thank the Xilize team at CenteredWork for sharing this library. Try it out! It's a great way to write websites quickly, without losing control over formatting. Check it out!
+
+<img src="./images/made-with-jedit-9.png" style="float: left; margin-right: 10px;" />
+
+Editing took place using the legendary "jEdit editor":http://www.jedit.org/ (http://www.jedit.org/) editor. Xilize produces a plugin for jEdit, where you get syntax highlighting for the Xilize markup, quick markup controls, and a XIL converter all built-in to the editor.
+
+"JetBrains":http://www.jetbrains.com, the makers of "IntelliJ IDEA":http://www.jetbrains.com/idea, has generously sponsored a license letting us use IDEA on this project under their Open Source Program. We are grateful for their support!
+
+p{clear:both}. Links:
+
+* "Xilize":http://xilize.sourceforge.net/ http://xilize.sourceforge.net/
+* "jEdit":http://www.jedit.org http://www.jedit.org

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Test : Selectors : Pseudo : first-letter</title>
+        <style type="text/css">
+           p { border: 1px solid black;}
+           @media print {
+               p.printify { 
+                font-size: 200%;
+                }
+               b { color: red; }
+            }
+        </style>
+    </head>
+    
+    <body>
+        <p>This is a paragraph <b>bold</b></p>
+        <p class="printify">This paragraph is big and the 'bold' above will be red only when printed</p>
+    </body>
+
+</html>
