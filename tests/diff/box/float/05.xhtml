@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+    <head>
+        <title>Test : Borders : none</title>
+        <style type="text/css">
+            p { border: 1px solid blue; }
+            .floater { border: 1px solid red; float:left; 
+            /* the paragraph should collapse on it's own.
+            i shouldn't need to set the width */
+            width: 100px;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <p>a paragraph</p>
+        <div class="floater">a floated paragraph</div>
+        <p>text text text text text
+        text text text text text
+        text text text text text
+        text text text text text
+        text text text text text</p>
+    </body>
+
+</html>
