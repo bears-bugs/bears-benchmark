@@ -1,0 +1,143 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 4731, 
+      "numberRunning": 4732, 
+      "numberFailing": 1, 
+      "numberErroring": 0, 
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError", 
+          "isError": false, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 2
+    }, 
+    "failingModule": "/root/workspace/prompto/prompto-java/447139216/Core", 
+    "failureDetails": [
+      {
+        "failureName": "java.lang.AssertionError", 
+        "detail": "ReferenceError: \"List\" is not defined in <eval> at line number 224", 
+        "isError": false, 
+        "testClass": "prompto.runtime.e.TestBuiltins", 
+        "testMethod": "testTranspiledCursorToList"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 161, 
+        "numberRunning": 162, 
+        "testClass": "prompto.runtime.e.TestBuiltins", 
+        "numberFailing": 1, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/prompto/prompto-java/builds/447291256", 
+      "date": "Oct 28, 2018 5:21:31 AM", 
+      "id": 447291256
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/prompto/prompto-java/builds/447139216", 
+      "date": "Oct 27, 2018 6:55:32 PM", 
+      "id": 447139216
+    }
+  }, 
+  "repository": {
+    "name": "prompto/prompto-java", 
+    "url": "https://github.com/prompto/prompto-java", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 32623616
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/prompto/prompto-java/commit/af1f7fb7c966fc3d45d8e7afba3b0e729803a135", 
+      "sha": "af1f7fb7c966fc3d45d8e7afba3b0e729803a135", 
+      "branchName": "master", 
+      "date": "Oct 28, 2018 5:17:55 AM", 
+      "repoName": "prompto/prompto-java"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/prompto/prompto-java/commit/6ba73db7eb433ab07893cf113eb573be41fff8b0", 
+      "sha": "6ba73db7eb433ab07893cf113eb573be41fff8b0", 
+      "branchName": "master", 
+      "date": "Oct 27, 2018 6:52:11 PM", 
+      "repoName": "prompto/prompto-java"
+    }
+  }, 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 0, 
+      "numberDeleted": 4
+    }
+  }, 
+  "type": "failing_passing", 
+  "projectMetrics": {
+    "numberSourceFiles": 692, 
+    "numberLibrariesFailingModule": 16, 
+    "numberTestFiles": 368, 
+    "numberModules": 4
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 317309168, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 412090368, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Oct 28, 2018 5:28:20 AM", 
+    "projectRootPomPath": "./workspace/prompto/prompto-java/447139216/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          0, 
+          61
+        ], 
+        "stepNames": [
+          "CheckoutBuggyBuildCandidate", 
+          "BuildProjectBuggyBuildCandidate"
+        ], 
+        "nbSteps": 2, 
+        "totalDuration": 61
+      }, 
+      "testing": {
+        "stepDurations": [
+          125
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidate"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 125
+      }, 
+      "cloning": {
+        "stepDurations": [
+          14
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 14
+      }
+    }, 
+    "reproductionDateBeginning": "Oct 28, 2018 5:21:43 AM", 
+    "totalDuration": 392
+  }
+}
