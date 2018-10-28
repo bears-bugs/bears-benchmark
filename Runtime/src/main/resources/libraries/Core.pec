@@ -1,0 +1,160 @@
+define Any as native category with attributes id and text, and bindings:
+
+	define category bindings as:
+		Java: prompto.value.Any
+		C#: prompto.value.Any
+		Python2: Any from module: prompto.value.Any
+		Python3: Any from module: prompto.value.Any
+		JavaScript: AnyValue from module: prompto/value/AnyValue.js
+
+and methods: 
+
+	define id as getter doing:
+		Java: return System.identityHashCode(self);
+		C#: return System.Runtime.CompilerServices.RuntimeHelpers.GetHashCode(self);
+		Python2: return id(self)
+		Python3: return id(self)
+		JavaScript: return self.id;
+	
+	define text as getter doing:
+		Java: return self.toString();
+		C#: return self.ToString();
+		Python2: return str(self)
+		Python3: return str(self)
+		JavaScript: return self.toString();
+
+define Attribute as native category with attribute name, and bindings:
+
+	define category bindings as:
+		Java: prompto.declaration.AttributeDeclaration
+		C#: prompto.declaration.AttributeDeclaration
+		Python2: AttributeDeclaration from module: prompto.declaration.AttributeDeclaration
+		Python3: AttributeDeclaration from module: prompto.declaration.AttributeDeclaration
+		JavaScript: AttributeDeclaration from module: prompto/declaration/AttributeDeclaration.js
+
+define findAttribute as native method receiving name returning Attribute doing:
+	Java: return $context.findAttribute(name);
+	C#: return $context.findAttribute(name);
+	Python2: return $context.findAttribute(name)
+	Python3: return $context.findAttribute(name)
+	JavaScript: return $context.findAttribute(name);
+
+define getAllAttributes as native method returning Attribute[] doing:
+	Java: return $context.getAllAttributes();
+	C#: return $context.getAllAttributes();
+	Python2: return $context.getAllAttributes()
+	Python3: return $context.getAllAttributes()
+	JavaScript: return $context.getAllAttributes();
+
+define "findAttribute id" as test method doing:
+	a = findAttribute "id"
+and verifying: 
+	a is an Attribute
+	a.name = "id"
+
+define "findAttribute name" as test method doing:
+	a = findAttribute "name"
+and verifying: 
+	a is an Attribute
+	a.name = "name" 
+
+define "findAttribute text" as test method doing: 
+	a = findAttribute "text"
+and verifying: 
+	a is an Attribute
+	a.name = "text"
+
+define "at least 3 items getAllAttributes" as test method doing:
+	l = getAllAttributes 
+and verifying: 
+	l is an Attribute[]
+	l.count >= 3
+// runtime reference of any object
+define id as Any attribute
+// database reference of stored object
+define dbId as Any attribute
+// any object has a text attribute, used for display 
+define text as storable Text attribute with value and words index
+// many objects have a name, it is not unique 
+define name as storable Text attribute with key and value index
+// many objects have a description, it is not unique 
+define description as storable Text attribute with words index
+// many objects have an image, it is not unique 
+define image as storable Image attribute
+// many events have a timeStamp
+define timeStamp as storable DateTime attribute
+// urls, files and fragments have a path
+define path as storable Text attribute
+// external text sources have an encoding such as "UTF-8"
+define encoding as storable Text attribute
+// many systems require a login
+define login as storable Text attribute with key and value index
+// many systems require a password
+define password as Text attribute
+// users typically have an email  
+define email as storable Text attribute with value index
+define Error as enumerated category with attributes name and text, and symbols:
+	DIVIDE_BY_ZERO with "Divide by zero!" as text
+	INDEX_OUT_OF_RANGE with "Index out of range!" as text
+	NULL_REFERENCE with "Null reference!" as text
+	NOT_MUTABLE with "Not a mutable object!" as text
+	NOT_STORABLE with "Not a storable object!" as text
+	READ_WRITE with "Read/write failed!" as text
+define DecimalConstant as enumerated Decimal with symbols:
+	PI with 3.14159265358979323846 as value
+	E with 2.7182818284590452354 as value
+define parseInteger as native method receiving Text text returning Integer doing:
+	Java: return Long.parseLong(text);
+	C#: return System.Int64.Parse(text);
+	Python2: return int(text)
+	Python3: return int(text)
+	JavaScript: return parseInt(text);
+
+
+define parseDecimal as native method receiving Text text returning Decimal doing:
+	Java: return Double.parseDouble(text);
+	C#: return System.Double.Parse(text, System.Globalization.CultureInfo.InvariantCulture);
+	Python2: return float(text)
+	Python3: return float(text)
+	JavaScript: return parseFloat(text);
+
+
+define "parse Integer" as test method doing:
+	i = parseInteger "123"
+and verifying:
+	i = 123
+
+define "parse Integer with leading 0" as test method doing:
+	i = parseInteger "0123"
+and verifying:
+	i = 123
+
+define "parse Decimal" as test method doing:
+	i = parseDecimal "123.45"
+and verifying:
+	i = 123.45
+
+define now as native method returning DateTime doing:
+	Java: return prompto.intrinsic.PromptoDateTime.now();
+	C#: return System.DateTimeOffset.Now;
+	Python2: return datetime.utcnow() from module: datetime
+	Python3: return datetime.utcnow() from module: datetime
+	JavaScript: return new Date();
+
+define "now is a DateTime" as test method doing: 
+	a = now
+and verifying: 
+	a is a DateTime 
+// returns a random UUID as defined by http://www.ietf.org/rfc/rfc4122.txt
+define randomUuid as native method returning Uuid doing:
+	Java: return java.util.UUID.randomUUID();
+	C#: return System.Guid.NewGuid();
+	Python2: return uuid4() from module: uuid
+	Python3: return uuid4() from module: uuid
+	JavaScript: return UUID.create(); from module: prompto/intrinsic/UUID.js
+
+
+define "randomUuid is not null" as test method doing:
+	uuid = randomUuid
+and verifying: 
+	uuid is not Nothing

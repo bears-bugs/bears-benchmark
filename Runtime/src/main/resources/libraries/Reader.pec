@@ -1,0 +1,91 @@
+define readJson as native method receiving text returning Any doing:
+	Java: return prompto.reader.JSONReader.read(text);
+	C#: return prompto.reader.JSONReader.read(text); 
+	Python2: return jsonRead(text) from module: prompto.reader.JSONReader
+	Python3: return jsonRead(text) from module: prompto.reader.JSONReader
+	JavaScript: return jsonRead(text); from module: prompto/reader/JSONReader.js
+
+
+define "test that readJson returns a boolean" as test method doing:
+	o = readJson "true"
+and verifying:
+	o is a Boolean
+	o is true
+
+define "test that readJson returns an Integer" as test method doing:
+	o = readJson "237"
+and verifying:
+	o is an Integer
+	o = 237
+
+define "test that readJson returns a Decimal" as test method doing:
+	o = readJson "123.02"
+and verifying:
+	o is a Decimal
+	o = 123.02
+
+define "test that readJson returns a Text" as test method doing:
+	o = readJson "\"some text\""
+and verifying:
+	o is a Text
+	o = "some text"
+
+define "test that readJson returns a Document" as test method doing:
+	o = (readJson "{\"field\":122}") as Document
+and verifying:
+	o is a Document
+	o.field = 122
+
+define "test that readJson returns a List" as test method doing:
+	o = (readJson "[{\"field\":122}]") as Document[]
+and verifying:
+	o is a Document[]
+	o[1].field = 122
+
+define iterateCsv as native method receiving text, Text<:> columnNames = nothing, Character separator = ',', Character quote = '"' returning Iterator<Document> doing:
+	Java: return prompto.reader.CSVReader.iterator(text, columnNames, separator, quote);
+	C#: return prompto.reader.CSVReader.iterator(text, columnNames, separator, quote); 
+	Python2: return csvIterate(text, columnNames, separator, quote) from module: prompto.reader.CSVReader
+	Python3: return csvIterate(text, columnNames, separator, quote) from module: prompto.reader.CSVReader
+	JavaScript: return csvIterate(text, columnNames, separator, quote); from module: prompto/reader/CSVReader.js
+
+
+define readCsv as native method receiving text, Text<:> columnNames = nothing, Character separator = ',', Character quote = '"' returning Document[] doing:
+	Java: return prompto.reader.CSVReader.read(text, columnNames, separator, quote);
+	C#: return prompto.reader.CSVReader.read(text, columnNames, separator, quote); 
+	Python2: return csvRead(text, columnNames, separator, quote) from module: prompto.reader.CSVReader
+	Python3: return csvRead(text, columnNames, separator, quote) from module: prompto.reader.CSVReader
+	JavaScript: return csvRead(text, columnNames, separator, quote); from module: prompto/reader/CSVReader.js
+
+
+define "reads from csv text" as test method doing:
+	docs = readCsv with "id,name\n1,John\n2,Riou\\, Sylvie\n" as text
+and verifying: 
+	docs.count = 2
+	docs[1].id = "1"
+	docs[1].name = "John"
+	docs[2].id = "2"
+	docs[2].name = "Riou, Sylvie"
+
+define "iterates from csv text" as test method doing:
+	iterCsv = iterateCsv with "id,name\n1,John\n2,Riou\\, Sylvie\n" as text
+	docs = [] as Document[] 
+	for each doc in iterCsv:
+		docs = docs + [doc]
+and verifying: 
+	docs.count = 2
+	docs[1].id = "1"
+	docs[1].name = "John"
+	docs[2].id = "2"
+	docs[2].name = "Riou, Sylvie"
+	
+define "maps csv headers" as test method doing:
+	names = < "Code" : "id", "Name" : "name" >
+	docs = readCsv with "Code,Name\n1,John\n2,Riou\\, Sylvie\n" as text and names as columnNames
+and verifying: 
+	docs.count = 2
+	docs[1].id = "1"
+	docs[1].name = "John"
+	docs[2].id = "2"
+	docs[2].name = "Riou, Sylvie"
+ 

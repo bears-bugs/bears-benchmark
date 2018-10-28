@@ -1,0 +1,17 @@
+@Inlined
+define TextEvent as native category with bindings:
+
+	define category bindings as:
+		JavaScript: Event
+
+and methods:
+		
+	define getCurrentText as method returning Text doing:
+		JavaScript: return this.target.defaultValue;
+	
+	define preventDefault as method doing:
+		JavaScript: this.preventDefault;
+
+
+define eventHandler as method receiving TextEvent event doing:
+	return event.getCurrentText

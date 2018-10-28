@@ -1,0 +1,27 @@
+boolean: true
+string: some string
+integer: 23456
+array: 
+  - abc
+  - def
+objectsArray:
+  - key: abc
+    value: def
+  - key: ghi
+    value: klm
+      
+simple: &simple
+  string: some string
+  integer: 23456
+  array: 
+    - abc
+    - def
+    
+imported: 
+  <<: *simple   
+  more: more
+  
+codeStore:
+  stuff: stuff
+  
+  

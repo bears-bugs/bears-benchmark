@@ -1,0 +1,50 @@
+define htmlEncode as native method receiving Text value returning Text doing:
+	Java: return prompto.internet.Html.encode(value);
+	C#: return System.Net.WebUtility.HtmlEncode(value);
+	Python2: return escape(value) from module: cgi
+	Python3: return escape(value) from module: html
+	JavaScript: return htmlEncode(value); from module: prompto/internet/Html.js
+
+define htmlDecode as native method receiving Text value returning Text doing:
+	Java: return prompto.internet.Html.decode(value);
+	C#: return System.Net.WebUtility.HtmlDecode(value);
+	Python2: return HTMLParser().unescape(value) from module: HTMLParser
+	Python3: return unescape(value) from module: html.parser
+	JavaScript: return htmlDecode(value); from module: prompto/internet/Html.js
+
+
+define "encode Html entity" as test method doing:
+	encoded = htmlEncode "<ab>"
+and verifying:
+	encoded = "&lt;ab&gt;"
+
+
+define "decode Html entity" as test method doing:
+	encoded = htmlDecode "&lt;ab&gt;"
+and verifying:
+	encoded = "<ab>"
+
+
+define "decode Html charcode" as test method doing:
+	encoded = htmlDecode "a&#39;b"
+and verifying:
+	encoded = "a'b"
+
+define Url as storable native resource with attributes path and encoding, and bindings:
+	
+	define category bindings as:
+		Java: prompto.internet.Url
+		C#: prompto.internet.Url
+		Python2: Url from module: prompto.internet.Url
+		Python3: Url from module: prompto.internet.Url
+		JavaScript: Url from module: prompto/internet/Url.js
+
+// many objects have an Url  
+define url as storable Url attribute
+
+define "reads from www.google.com" as test method doing:
+	// need a cross-domain enabled page for browser testing
+	content = read all from Url with "https://www.google.com/" as path
+and verifying: 
+	content contains "doctype"
+

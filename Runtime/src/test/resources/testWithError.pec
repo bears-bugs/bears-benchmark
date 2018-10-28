@@ -1,0 +1,13 @@
+define isRunningOnEC2 as method doing:
+	switch on error doing:
+		path = "file:/sys/devices/virtual/dmi/id/bios_version"
+		data = read all from Url with path as path
+		return "amazon" in data
+	when READ_WRITE:
+		return false
+
+
+define "is not running on EC2" as test method doing:
+	isEC2 = invoke: isRunningOnEC2
+and verifying:
+	isEC2 is false

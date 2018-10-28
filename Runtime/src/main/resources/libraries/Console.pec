@@ -1,0 +1,118 @@
+define Buffer as native resource with attribute text, and bindings:
+	
+	define category bindings as:
+		Java: prompto.io.Buffer
+		C#: prompto.io.Buffer
+		Python2: Buffer from module: prompto.io.Buffer
+		Python3: Buffer from module: prompto.io.Buffer
+		JavaScript: Buffer from module: prompto/io/Buffer.js
+
+define "writes to Buffer" as test method doing:
+	content = ""
+	with buffer = Buffer, do:
+		write "some content" to buffer
+		write "other content" to buffer
+		content = buffer.text	
+and verifying: 
+	"some content" in content
+	"other content" in content
+
+// a wrapper around native console printing
+define printNative as native method receiving any value and NativeWriter writer doing:
+	Java: writer.print(value);
+	C#: writer.Write(value);
+	Python2: print(objects=str(value), end="", file=writer)
+	Python3: print(objects=str(value), end="", file=writer)
+	JavaScript: writer.write(value.toString());
+
+// a wrapper around heterogeneous native console io
+define NativeWriter as native category with bindings:
+
+	define category bindings as:
+		Java: java.io.PrintStream
+		C#: System.IO.TextWriter
+		Python2: StringIO from module: StringIO 
+		Python3: StringIO from module: io
+		JavaScript: writer from module: prompto/io/io.js
+
+// a wrapper around heterogeneous native stdout
+define stdout as native method returning NativeWriter doing:
+	Java: return System.out;
+	C#: return System.Console.Out;
+	Python2: return stdout from module: sys
+	Python3: return stdout from module: sys
+	JavaScript: return stdout; from module: prompto/io/io.js
+
+// a wrapper around heterogeneous native stdin
+define stderr as native method returning NativeWriter doing:
+	Java: return System.err;
+	C#: return System.Console.Error;
+	Python2: return stderr from module: sys
+	Python3: return stderr from module: sys
+	JavaScript: return stderr; from module: prompto/io/io.js
+
+// an abstract Writer which can be derived (unlike NativeWriter) 
+define Writer as category with methods:
+	
+	define print as abstract method receiving any value
+
+// the native Writer implementation 
+define nativeWriter as NativeWriter attribute
+define ConsoleWriter as Writer with attribute nativeWriter, and methods:
+	
+	define print as method receiving any value doing:
+		printNative value with nativeWriter as writer
+
+// the buffered Writer implementation (useful for testing) 
+define TextWriter as Writer with attribute text, and methods: 
+	
+	define print as method receiving any value doing:
+		if text is nothing:
+			text = "" + value
+		else:
+			text = text + value
+
+// now the interesting methods  
+define print as method receiving any value doing:
+	out = invoke: stdout
+	printNative value with out as writer
+	
+define printLine as method receiving any value doing:
+	out = invoke: stdout
+	value = "" + value + "\n" 
+	printNative value with out as writer
+
+
+define print as method receiving any value and Writer writer doing:
+	writer.print with value as value
+
+define printLine as method receiving any value and Writer writer doing:
+	print value with writer as writer
+	print '\n' with writer as writer
+
+// and the corresponding tests  
+define "print a text" as test method doing:
+	w = mutable TextWriter
+	print "Hello" with w as writer
+	print " John" with w as writer
+and verifying: 
+	w.text = "Hello John"
+
+define "print an integer" as test method doing:
+	w = mutable TextWriter
+	print 12345 with w as writer
+and verifying: 
+	w.text = "12345" 
+
+define "printLine a text" as test method doing:
+	w = mutable TextWriter
+	print "Hello" with w as writer
+	printLine " John" with w as writer
+and verifying: 
+	w.text = "Hello John\n"
+
+define "printLine an integer" as test method doing:
+	w = mutable TextWriter
+	printLine 12345 with w as writer
+and verifying: 
+	w.text = "12345\n" 

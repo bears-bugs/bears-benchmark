@@ -1,0 +1,76 @@
+define ClickEvent as native category with bindings:
+	
+	define category bindings as:
+		JavaScript: Event
+
+@Inlined
+define RadioChangedEvent as native category with bindings:
+
+	define category bindings as:
+		JavaScript: Event
+
+and methods:
+		
+	define getSelectedRadio as method returning Text doing:
+		JavaScript: return this.target.id;
+	
+
+@Inlined
+define InputChangedEvent as native category with bindings:
+
+	define category bindings as:
+		JavaScript: Event
+
+and methods:
+		
+	define getCurrentText as method returning Text doing:
+		JavaScript: return this.target.defaultValue;
+	
+	define getProposedText as method returning Text doing:
+		JavaScript: return this.target.value;
+
+
+define getReactWidgetProps as native method receiving Any w returning Document doing:
+	JavaScript: return w.props;
+
+
+define getReactWidgetState as native method receiving Any w returning Document doing:
+	JavaScript: return w.state;
+
+
+define setReactWidgetState as native method receiving Any w and Document state doing:
+	JavaScript: w.setState(state);
+
+
+define ReactWidget as widget with methods:
+	
+	@Callback
+	define getInitialState as method doing:
+		return {}
+	
+	@Static
+	@Callback
+	define getDerivedStateFromProps as method receiving Document props and Document state doing:
+		return Nothing
+		
+	@Callback
+	define componentDidMount as method doing:
+		// nothing to do		
+
+	@Callback
+	define componentWillUnmount as method doing:
+		// nothing to do		
+
+	define getProperties as method doing:
+		return getReactWidgetProps self
+
+	define getState as method doing:
+		return getReactWidgetState self
+	
+	define setState as method receiving Document state doing:
+		setReactWidgetState self with state
+
+	
+define alert as native method receiving Text text doing:
+	JavaScript: alert(text);
+
