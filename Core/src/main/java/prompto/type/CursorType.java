@@ -125,6 +125,10 @@ public class CursorType extends IterableType {
 
 		}
 		
+		public void declareCall(Transpiler transpiler) {
+			transpiler.require("List");
+		};
+		
 		public void transpileCall(Transpiler transpiler, prompto.grammar.ArgumentAssignmentList assignments) {
 			transpiler.append("toList()");
 		}
