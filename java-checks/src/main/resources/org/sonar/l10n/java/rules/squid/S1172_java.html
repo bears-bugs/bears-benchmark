@@ -1,0 +1,58 @@
+<p>Unused parameters are misleading. Whatever the values passed to such parameters, the behavior will be the same.</p>
+<h2>Noncompliant Code Example</h2>
+<pre>
+void doSomething(int a, int b) {     // "b" is unused
+  compute(a);
+}
+</pre>
+<h2>Compliant Solution</h2>
+<pre>
+void doSomething(int a) {
+  compute(a);
+}
+</pre>
+<h2>Exceptions</h2>
+<p>The rule will not raise issues for unused parameters:</p>
+<ul>
+  <li> that are annotated with <code>@javax.enterprise.event.Observes</code> </li>
+  <li> in overrides and implementation methods </li>
+  <li> in interface <code>default</code> methods </li>
+  <li> in non-private methods that only <code>throw</code> or that have empty bodies </li>
+  <li> in annotated methods, unless the annotation is <code>@SuppressWarning("unchecked")</code> or <code>@SuppressWarning("rawtypes")</code>, in
+  which case the annotation will be ignored </li>
+  <li> in overridable methods (non-final, or not member of a final class, non-static, non-private), if the parameter is documented with a proper
+  javadoc. </li>
+</ul>
+<pre>
+@Override
+void doSomething(int a, int b) {     // no issue reported on b
+  compute(a);
+}
+
+public void foo(String s) {
+  // designed to be extended but noop in standard case
+}
+
+protected void bar(String s) {
+  //open-closed principle
+}
+
+public void qix(String s) {
+  throw new UnsupportedOperationException("This method should be implemented in subclasses");
+}
+
+/**
+ * @param s This string may be use for further computation in overriding classes
+ */
+protected void foobar(int a, String s) { // no issue, method is overridable and unused parameter has proper javadoc
+  compute(a);
+}
+</pre>
+<h2>See</h2>
+<ul>
+  <li> MISRA C++:2008, 0-1-11 - There shall be no unused parameters (named or unnamed) in nonvirtual functions. </li>
+  <li> MISRA C:2012, 2.7 - There should be no unused parameters in functions </li>
+  <li> <a href="https://www.securecoding.cert.org/confluence/x/NYA5">CERT, MSC12-C.</a> - Detect and remove code that has no effect or is never
+  executed </li>
+</ul>
+

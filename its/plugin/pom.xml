@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>org.sonarsource.java</groupId>
+    <artifactId>java-its</artifactId>
+    <version>5.9.0-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>it-java-plugin</artifactId>
+  <packaging>pom</packaging>
+
+  <name>SonarQube Java :: ITs :: Plugin</name>
+  <inceptionYear>2013</inceptionYear>
+
+  <organization>
+    <name>SonarSource</name>
+    <url>http://www.sonarsource.com</url>
+  </organization>
+
+  <modules>
+    <module>plugins</module>
+    <module>tests</module>
+  </modules>
+
+  <properties>
+    <maven.test.redirectTestOutputToFile>false</maven.test.redirectTestOutputToFile>
+  </properties>
+
+  <profiles>
+    <profile>
+      <id>it-plugin</id>
+      <properties>
+        <skipTests>false</skipTests>
+      </properties>
+    </profile>
+  </profiles>
+
+</project>

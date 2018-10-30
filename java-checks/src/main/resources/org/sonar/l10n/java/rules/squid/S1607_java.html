@@ -1,0 +1,20 @@
+<p>When a test fails due, for example, to infrastructure issues, you might want to ignore it temporarily. But without some kind of notation about why
+the test is being ignored, it may never be reactivated. Such tests are difficult to address without comprehensive knowledge of the project, and end up
+polluting their projects.</p>
+<p>This rule raises an issue for each ignored test that does not have a notation about why it is being skipped.</p>
+<h2>Noncompliant Code Example</h2>
+<pre>
+@Ignore  // Noncompliant
+@Test
+public void testDoTheThing() {
+  // ...
+</pre>
+<h2>Compliant Solution</h2>
+<pre>
+@Test
+public void testDoTheThing() {
+  // ...
+</pre>
+<h2>Exceptions</h2>
+<p>The rule doesn't raise an issue if there is a comment in the @Ignore annotation</p>
+

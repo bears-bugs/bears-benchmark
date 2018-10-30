@@ -1,0 +1,21 @@
+<p>Shared naming conventions allow teams to collaborate effectively. This rule raises an issue when an open curly brace is not placed at the end of a
+line of code.</p>
+<h2>Noncompliant Code Example</h2>
+<pre>
+if(condition)
+{
+  doSomething();
+}
+</pre>
+<h2>Compliant Solution</h2>
+<pre>
+if(condition) {
+  doSomething();
+}
+</pre>
+<h2>Exceptions</h2>
+<p>When blocks are inlined (left and right curly braces on the same line), no issue is triggered. </p>
+<pre>
+if(condition) {doSomething();}
+</pre>
+
