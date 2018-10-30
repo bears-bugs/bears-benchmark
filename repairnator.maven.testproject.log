@@ -1,0 +1,1939 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.glassfish.jersey.bundles:jaxrs-ri:bundle:2.28-SNAPSHOT
+[WARNING] The expression ${artifactId} is deprecated. Please use ${project.artifactId} instead.
+[WARNING] The expression ${artifactId} is deprecated. Please use ${project.artifactId} instead.
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] jersey
+[INFO] jersey-archetypes
+[INFO] jersey-archetype-heroku-webapp
+[INFO] jersey-archetype-grizzly2
+[INFO] jersey-archetype-webapp
+[INFO] jersey-example-java8-webapp
+[INFO] jersey-bom
+[INFO] jersey-core-common
+[INFO] jersey-inject
+[INFO] jersey-inject-hk2
+[INFO] jersey-core-client
+[INFO] jersey-media
+[INFO] jersey-media-jaxb
+[INFO] jersey-core-server
+[INFO] jersey-containers
+[INFO] jersey-container-grizzly2-http
+[INFO] jersey-container-servlet-core
+[INFO] jersey-test-framework
+[INFO] jersey-test-framework-core
+[INFO] jersey-container-servlet
+[INFO] jersey-container-grizzly2-servlet
+[INFO] jersey-test-framework-providers
+[INFO] jersey-test-framework-provider-grizzly2
+[INFO] jersey-connectors
+[INFO] jersey-connectors-apache
+[INFO] jersey-test-framework-provider-inmemory
+[INFO] jersey-test-framework-provider-external
+[INFO] jersey-container-jdk-http
+[INFO] jersey-test-framework-provider-jdk-http
+[INFO] jersey-container-simple-http
+[INFO] jersey-test-framework-provider-simple
+[INFO] jersey-container-jetty-http
+[INFO] jersey-test-framework-provider-jetty
+[INFO] jersey-connectors-netty
+[INFO] jersey-container-netty-http
+[INFO] jersey-test-framework-provider-netty
+[INFO] jersey-test-framework-provider-bundle
+[INFO] jersey-connectors-grizzly
+[INFO] jersey-connectors-jdk
+[INFO] jersey-extensions
+[INFO] jersey-ext-entity-filtering
+[INFO] jersey-media-json-jackson
+[INFO] jersey-connectors-jetty
+[INFO] jersey-cdi-support
+[INFO] jersey-ext-cdi1x
+[INFO] jersey-glassfish-support
+[INFO] jersey-gf-ejb
+[INFO] jersey-container-jetty-servlet
+[INFO] jersey-ext-bean-validation
+[INFO] jersey-ext-cdi1x-ban-custom-hk2-binding
+[INFO] jersey-ext-cdi1x-servlet
+[INFO] jersey-ext-cdi1x-transaction
+[INFO] jersey-ext-cdi1x-validation
+[INFO] jersey-ext-weld2-se
+[INFO] jersey-ext-metainf-services
+[INFO] jersey-ext-mvc
+[INFO] jersey-ext-mvc-bean-validation
+[INFO] jersey-ext-mvc-freemarker
+[INFO] jersey-ext-mvc-jsp
+[INFO] jersey-ext-mvc-mustache
+[INFO] jersey-ext-proxy-client
+[INFO] jersey-ext-rx
+[INFO] jersey-ext-rx-client-guava
+[INFO] jersey-ext-rx-client-rxjava
+[INFO] jersey-ext-rx-client-rxjava2
+[INFO] jersey-ext-servlet-portability
+[INFO] jersey-spring4
+[INFO] jersey-wadl-doclet
+[INFO] jersey-incubator
+[INFO] jersey-declarative-linking
+[INFO] jersey-ext-gae-integration
+[INFO] jersey-media-kryo
+[INFO] jersey-open-tracing
+[INFO] jersey-inject-cdi2-se
+[INFO] jersey-media-json-binding
+[INFO] jersey-media-json-jackson1
+[INFO] jersey-media-json-jettison
+[INFO] jersey-media-json-processing
+[INFO] jersey-media-moxy
+[INFO] jersey-media-multipart
+[INFO] jersey-media-sse
+[INFO] jersey-security
+[INFO] oauth1-signature
+[INFO] jersey-security
+[INFO] oauth1-server
+[INFO] oauth2-client
+[INFO] jersey-test-framework-util
+[INFO] jersey-tests
+[INFO] jersey-tests-e2e
+[INFO] jersey-tests-e2e-client
+[INFO] jersey-tests-e2e-core-common
+[INFO] jersey-tests-e2e-entity
+[INFO] jersey-tests-e2e-inject
+[INFO] jersey-tests-e2e-inject-cdi-se
+[INFO] jersey-tests-e2e-server
+[INFO] jersey-tests-e2e-testng
+[INFO] jersey-tests-integration
+[INFO] jersey-tests-integration-jersey-async-filter
+[INFO] jersey-tests-cdi-beanvalidation-webapp
+[INFO] jersey-tests-cdi-ejb-webapp
+[INFO] jersey-tests-cdi-iface-with-non-jaxrs-impl-test-webapp
+[INFO] jersey-tests-integration-cdi-multimodule-lib
+[INFO] jersey-tests-integration-cdi-multimodule-war
+[INFO] jersey-tests-integration-cdi-multimodule-war2
+[INFO] jersey-tests-integration-cdi-multimodule-ear
+[INFO] jersey-tests-integration-cdi-multimodule
+[INFO] jersey-tests-integration-ejb-multimodule-reload-lib
+[INFO] jersey-tests-integration-ejb-multimodule-reload-war1
+[INFO] jersey-tests-integration-ejb-multimodule-reload-war2
+[INFO] jersey-tests-integration-ejb-multimodule-reload-ear
+[INFO] jersey-tests-integration-ejb-multimodule-reload
+[INFO] jersey-tests-cdi-multipart-webapp
+[INFO] jersey-tests-cdi-webapp
+[INFO] jersey-tests-cdi-with-jersey-injection-custom-cfg-webapp
+[INFO] jersey-tests-cdi-with-jersey-injection-custom-hk2-banned-webapp
+[INFO] jersey-tests-cdi-with-jersey-injection-webapp
+[INFO] client-connector-provider
+[INFO] jersey-tests-integration-ejb-multimodule-lib
+[INFO] jersey-tests-integration-ejb-multimodule-war
+[INFO] jersey-tests-integration-ejb-multimodule-ear
+[INFO] jersey-tests-integration-ejb-multimodule
+[INFO] jersey-tests-ejb-webapp
+[INFO] j-376-reproducer
+[INFO] jersey-tests-integration-j-441-war1
+[INFO] jersey-tests-integration-j-441-war2
+[INFO] jersey-tests-integration-j-441-ear
+[INFO] jersey-tests-integration-j-441
+[INFO] jersey-tests-integration-j-59-ejb-lib
+[INFO] jersey-tests-integration-j-59-cdi-war
+[INFO] jersey-tests-integration-j-59-ear
+[INFO] jersey-tests-integration-j-59
+[INFO] jersey-tests-component-inject
+[INFO] jersey-tests-integration-jersey-1107
+[INFO] jersey-tests-integration-jersey-1223
+[INFO] jersey-tests-integration-jersey-1604
+[INFO] jersey-tests-integration-jersey-1667
+[INFO] jersey-tests-integration-jersey-1829
+[INFO] jersey-tests-integration-jersey-1883
+[INFO] jersey-tests-integration-jersey-1928
+[INFO] jersey-tests-integration-jersey-1960
+[INFO] jersey-tests-integration-jersey-1964
+[INFO] jersey-tests-integration-jersey-2031
+[INFO] jersey-tests-integration-jersey-2136
+[INFO] jersey-tests-integration-jersey-2137
+[INFO] jersey-tests-integration-jersey-2154
+[INFO] jersey-tests-integration-jersey-2160
+[INFO] jersey-tests-integration-jersey-2164
+[INFO] jersey-tests-integration-jersey-2167
+[INFO] jersey-tests-integration-jersey-2176
+[INFO] jersey-tests-integration-jersey-2184
+[INFO] jersey-tests-integration-jersey-2255
+[INFO] jersey-tests-integration-jersey-2322
+[INFO] jersey-tests-integration-jersey-2335
+[INFO] jersey-tests-integration-jersey-2421
+[INFO] jersey-tests-integration-jersey-2551
+[INFO] jersey-tests-integration-jersey-2612
+[INFO] jersey-tests-integration-jersey-2637
+[INFO] jersey-tests-integration-jersey-2654
+[INFO] jersey-tests-integration-jersey-2673
+[INFO] jersey-tests-integration-jersey-2689
+[INFO] jersey-tests-integration-jersey-2704
+[INFO] jersey-tests-integration-jersey-2776
+[INFO] jersey-tests-integration-jersey-2794
+[INFO] jersey-tests-integration-jersey-2846
+[INFO] jersey-tests-integration-jersey-2878
+[INFO] jersey-tests-integration-jersey-2892
+[INFO] jersey-tests-integration-jersey-780
+[INFO] jersey-tests-integration-portability-jersey-1
+[INFO] jersey-tests-integration-portability-jersey-2
+[INFO] jersey-tests-integration-property-check
+[INFO] jersey-tests-integration-jersey-security-digest
+[INFO] jersey-tests-integration-servlet-2.5-autodiscovery-1
+[INFO] jersey-bundles
+[INFO] jersey-bundles-jaxrs-ri
+[INFO] jersey-tests-integration-servlet-2.5-autodiscovery-2
+[INFO] jersey-tests-integration-servlet-2.5-filter
+[INFO] jersey-tests-integration-servlet-2.5-inflector-1
+[INFO] jersey-tests-integration-servlet-2.5-init-1
+[INFO] jersey-tests-integration-servlet-2.5-init-2
+[INFO] jersey-tests-integration-servlet-2.5-init-3
+[INFO] jersey-tests-integration-servlet-2.5-init-4
+[INFO] jersey-tests-integration-servlet-2.5-init-5
+[INFO] jersey-tests-integration-servlet-2.5-init-6
+[INFO] jersey-tests-integration-servlet-2.5-init-7
+[INFO] jersey-tests-integration-servlet-2.5-init-8
+[INFO] jersey-tests-integration-servlet-2.5-mvc-1
+[INFO] jersey-tests-integration-servlet-2.5-mvc-2
+[INFO] jersey-tests-integration-servlet-2.5-mvc-3
+[INFO] jersey-tests-integration-servlet-2.5-reload
+[INFO] jersey-tests-integration-servlet-3-async
+[INFO] jersey-tests-integration-servlet-3-chunked-io
+[INFO] jersey-tests-integration-servlet-3-filter
+[INFO] jersey-tests-integration-servlet-3-gf-async
+[INFO] jersey-tests-integration-servlet-3-inflector-1
+[INFO] jersey-tests-integration-servlet-3-init-1
+[INFO] jersey-tests-integration-servlet-3-init-2
+[INFO] jersey-tests-integration-servlet-3-init-3
+[INFO] jersey-tests-integration-servlet-3-init-4
+[INFO] jersey-tests-integration-servlet-3-init-5
+[INFO] jersey-tests-integration-servlet-3-init-6
+[INFO] jersey-tests-integration-servlet-3-init-7
+[INFO] jersey-tests-integration-servlet-3-init-8
+[INFO] jersey-tests-integration-servlet-3-init-provider
+[INFO] jersey-tests-integration-servlet-3-params
+[INFO] jersey-tests-integration-servlet-3-sse-1
+[INFO] jersey-tests-integration-servlet-request-wrapper-binding-2
+[INFO] jersey-tests-integration-servlet-request-wrapper-binding
+[INFO] jersey-tests-integration-servlet-tests
+[INFO] jersey-tests-integration-sonar-test
+[INFO] jersey-tests-integration-tracing-support
+[INFO] jersey-test-framework-memleak-test-common
+[INFO] jersey-tests-memleak
+[INFO] jersey-tests-memleak-redeployment
+[INFO] jersey-tests-memleak-redeployment-leaking-test-app
+[INFO] jersey-examples
+[INFO] jersey-examples-webapp-parent-pom
+[INFO] jersey-examples-helloworld-webapp
+[INFO] jersey-test-framework-maven
+[INFO] jersey-test-framework-maven-container-runner-plugin
+[INFO] jersey-tests-memleak-redeployment-hello-world-app-ref
+[INFO] jersey-tests-memleak-redeployment-no-jersey-app
+[INFO] jersey-tests-memleak-redeployment-threadlocals-app
+[INFO] jersey-tests-memleak-testcase
+[INFO] jersey-tests-memleak-testcase-bean-param-leak
+[INFO] jersey-tests-memleak-testcase-shutdown-hook-leak
+[INFO] jersey-tests-memleak-testcase-shutdown-hook-leak-client
+[INFO] jersey-tests-memleak-testcase-leaking-test-app
+[INFO] jersey-tests-osgi
+[INFO] jersey-tests-osgi-functional
+[INFO] jersey-tests-stress
+[INFO] jersey-tests-performance
+[INFO] performance-test-benchmarks
+[INFO] jersey-tests-performance-runners
+[INFO] jersey-grizzly-runner
+[INFO] jersey-tests-performance-testcase
+[INFO] jersey-tests-performance-assemblies
+[INFO] jersey-tests-performance-filter-dynamic-test
+[INFO] jersey-tests-performance-filter-global-test
+[INFO] jersey-tests-performance-filter-name-test
+[INFO] jersey-tests-performance-interceptor-dynamic-test
+[INFO] jersey-tests-performance-interceptor-global-test
+[INFO] jersey-tests-performance-interceptor-name-test
+[INFO] jersey-tests-performance-custom-provider-test
+[INFO] jersey-tests-performance-json-jackson-test
+[INFO] jersey-tests-performance-json-moxy-test
+[INFO] jersey-tests-performance-mbw-kryo-test
+[INFO] jersey-tests-performance-text-plain-test
+[INFO] jersey-tests-performance-xml-jaxb-test
+[INFO] jersey-tests-performance-xml-moxy-test
+[INFO] jersey-tests-performance-param-srl
+[INFO] jersey-tests-performance-proxy-injection-test
+[INFO] performance-test-tools
+[INFO] jersey-examples-assemblies
+[INFO] jersey-examples-bookmark
+[INFO] jersey-examples-bookmark-em
+[INFO] jersey-examples-bookstore-webapp
+[INFO] jersey-examples-cdi-webapp
+[INFO] jersey-examples-clipboard
+[INFO] jersey-examples-clipboard-programmatic
+[INFO] jersey-examples-declarative-linking
+[INFO] jersey-examples-entity-filtering
+[INFO] jersey-examples-entity-filtering-selectable
+[INFO] jersey-examples-entity-filtering-security
+[INFO] jersey-examples-extended-wadl-webapp
+[INFO] jersey-examples-exception-mapping
+[INFO] jersey-examples-freemarker-webapp
+[INFO] jersey-examples-groovy
+[INFO] jersey-examples-helloworld
+[INFO] jersey-examples-helloworld-benchmark
+[INFO] jersey-examples-helloworld-cdi2-se
+[INFO] jersey-examples-helloworld-netty
+[INFO] jersey-examples-helloworld-programmatic
+[INFO] jersey-examples-helloworld-pure-jax-rs
+[INFO] jersey-examples-helloworld-weld
+[INFO] jersey-examples-helloworld-spring-webapp
+[INFO] helloworld-spring-annotations
+[INFO] jersey-examples-http-patch
+[INFO] jersey-examples-http-trace
+[INFO] jersey-examples-https-clientserver-grizzly
+[INFO] jersey-examples-https-server-glassfish
+[INFO] jersey-examples-java8-webapp
+[INFO] jersey-examples-jaxb
+[INFO] jersey-examples-jaxrs-types-injection
+[INFO] jersey-examples-ejb
+[INFO] jersey-examples-json-binding-webapp
+[INFO] jersey-examples-json-jackson
+[INFO] jersey-examples-json-jackson1
+[INFO] jersey-examples-json-jettison
+[INFO] jersey-examples-json-moxy
+[INFO] jersey-examples-json-processing-webapp
+[INFO] jersey-examples-json-with-padding
+[INFO] jersey-examples-managed-beans-webapp
+[INFO] jersey-examples-managed-client
+[INFO] jersey-examples-managed-client-webapp
+[INFO] jersey-examples-managed-client-simple-webapp
+[INFO] jersey-examples-multipart-webapp
+[INFO] jersey-examples-open-tracing
+[INFO] jersey-examples-osgi-helloworld-webapp
+[INFO] jersey-examples-osgi-helloworld-webapp-lib
+[INFO] jersey-examples-osgi-helloworld-webapp-additional
+[INFO] jersey-examples-osgi-helloworld-webapp-alternate-version
+[INFO] jersey-examples-osgi-helloworld-webapp-wab
+[INFO] jersey-examples-osgi-helloworld-webapp-test
+[INFO] jersey-examples-osgi-http-service
+[INFO] jersey-examples-osgi-http-service-bundle
+[INFO] jersey-examples-osgi-http-service-test
+[INFO] oauth-client-twitter
+[INFO] jersey-examples-reload
+[INFO] jersey-examples-rx-client-webapp
+[INFO] jersey-examples-server-async
+[INFO] jersey-examples-server-async-managed
+[INFO] jersey-examples-server-async-standalone
+[INFO] jersey-examples-server-async-standalone-client
+[INFO] jersey-examples-server-async-standalone-webapp
+[INFO] jersey-examples-server-sent-events-jersey
+[INFO] jersey-examples-server-sent-events-jaxrs
+[INFO] jersey-examples-servlet3-webapp
+[INFO] jersey-examples-simple-console
+[INFO] jersey-examples-sse-item-store-jersey-webapp
+[INFO] jersey-examples-sse-item-store-jaxrs-webapp
+[INFO] jersey-examples-sse-twitter-aggregator
+[INFO] jersey-examples-system-properties
+[INFO] jersey-examples-moxy
+[INFO] jersey-test-framework-maven-custom-enforcer-rules
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building jersey 2.28-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-versions) @ project ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.16:check (verify) @ project ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building jersey-archetypes 2.28-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-versions) @ project ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.16:check (verify) @ project ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building jersey-archetype-heroku-webapp 2.28-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-versions) @ jersey-heroku-webapp ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.16:check (verify) @ jersey-heroku-webapp ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ jersey-heroku-webapp ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 8 resources
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ jersey-heroku-webapp ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/eclipse-ee4j/jersey/446011039/archetypes/jersey-heroku-webapp/src/test/resources
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building jersey-archetype-grizzly2 2.28-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-versions) @ jersey-quickstart-grizzly2 ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.16:check (verify) @ jersey-quickstart-grizzly2 ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ jersey-quickstart-grizzly2 ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 5 resources
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ jersey-quickstart-grizzly2 ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/eclipse-ee4j/jersey/446011039/archetypes/jersey-quickstart-grizzly2/src/test/resources
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building jersey-archetype-webapp 2.28-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-versions) @ jersey-quickstart-webapp ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.16:check (verify) @ jersey-quickstart-webapp ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ jersey-quickstart-webapp ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 5 resources
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ jersey-quickstart-webapp ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/eclipse-ee4j/jersey/446011039/archetypes/jersey-quickstart-webapp/src/test/resources
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building jersey-example-java8-webapp 2.28-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-versions) @ jersey-example-java8-webapp ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.16:check (verify) @ jersey-example-java8-webapp ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ jersey-example-java8-webapp ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 5 resources
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ jersey-example-java8-webapp ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/eclipse-ee4j/jersey/446011039/archetypes/jersey-example-java8-webapp/src/test/resources
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building jersey-bom 2.28-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building jersey-core-common 2.28-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-versions) @ jersey-common ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.16:check (verify) @ jersey-common ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.1:create (default) @ jersey-common ---
+[INFO] Storing buildNumber: 2018-10-30 17:41:45 at timestamp: 1540917705978
+[INFO] Executing: /bin/sh -c cd /root/workspace/eclipse-ee4j/jersey/446011039/core-common && git rev-parse --verify HEAD
+[INFO] Working directory: /root/workspace/eclipse-ee4j/jersey/446011039/core-common
+[INFO] Storing buildScmBranch: UNKNOWN
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.7:parse-version (parse-version) @ jersey-common ---
+[INFO] 
+[INFO] --- maven-istack-commons-plugin:2.6.1:rs-gen (default) @ jersey-common ---
+Resources:
+org/glassfish/jersey/internal/localization.properties
+Skipping /root/workspace/eclipse-ee4j/jersey/446011039/core-common/src/main/resources/org/glassfish/jersey/internal/localization.properties
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.7:add-source (default) @ jersey-common ---
+[INFO] Source directory: /root/workspace/eclipse-ee4j/jersey/446011039/core-common/target/generated-sources/rsrc-gen added.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ jersey-common ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ jersey-common ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 342 source files to /root/workspace/eclipse-ee4j/jersey/446011039/core-common/target/classes
+[WARNING] /root/workspace/eclipse-ee4j/jersey/446011039/core-common/src/main/java/org/glassfish/jersey/internal/jsr166/UnsafeAccessor.java:[19,16] sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+[WARNING] /root/workspace/eclipse-ee4j/jersey/446011039/core-common/src/main/java/org/glassfish/jersey/internal/util/collection/LinkedTransferQueue.java:[527,38] sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+[WARNING] /root/workspace/eclipse-ee4j/jersey/446011039/core-common/src/main/java/org/glassfish/jersey/internal/util/collection/LinkedTransferQueue.java:[1320,34] sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+[WARNING] /root/workspace/eclipse-ee4j/jersey/446011039/core-common/src/main/java/org/glassfish/jersey/internal/util/collection/LinkedTransferQueue.java:[1347,20] sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+[WARNING] /root/workspace/eclipse-ee4j/jersey/446011039/core-common/src/main/java/org/glassfish/jersey/internal/util/collection/LinkedTransferQueue.java:[1349,28] sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+[WARNING] /root/workspace/eclipse-ee4j/jersey/446011039/core-common/src/main/java/org/glassfish/jersey/internal/util/collection/LinkedTransferQueue.java:[1354,74] sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+[WARNING] /root/workspace/eclipse-ee4j/jersey/446011039/core-common/src/main/java/org/glassfish/jersey/internal/util/collection/LinkedTransferQueue.java:[1355,40] sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+[WARNING] /root/workspace/eclipse-ee4j/jersey/446011039/core-common/src/main/java/org/glassfish/jersey/internal/util/collection/LinkedTransferQueue.java:[1356,43] sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+[WARNING] /root/workspace/eclipse-ee4j/jersey/446011039/core-common/src/main/java/org/glassfish/jersey/internal/util/collection/LinkedTransferQueue.java:[1356,64] sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+[WARNING] /root/workspace/eclipse-ee4j/jersey/446011039/core-common/src/main/java/org/glassfish/jersey/internal/util/collection/ConcurrentHashMapV8.java:[2671,38] sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+[WARNING] /root/workspace/eclipse-ee4j/jersey/446011039/core-common/src/main/java/org/glassfish/jersey/internal/util/collection/ConcurrentHashMapV8.java:[3472,34] sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+[WARNING] /root/workspace/eclipse-ee4j/jersey/446011039/core-common/src/main/java/org/glassfish/jersey/internal/util/collection/ConcurrentHashMapV8.java:[3517,28] sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+[WARNING] /root/workspace/eclipse-ee4j/jersey/446011039/core-common/src/main/java/org/glassfish/jersey/internal/util/collection/ConcurrentHashMapV8.java:[3519,28] sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+[WARNING] /root/workspace/eclipse-ee4j/jersey/446011039/core-common/src/main/java/org/glassfish/jersey/internal/util/collection/ConcurrentHashMapV8.java:[3524,74] sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+[WARNING] /root/workspace/eclipse-ee4j/jersey/446011039/core-common/src/main/java/org/glassfish/jersey/internal/util/collection/ConcurrentHashMapV8.java:[3525,40] sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+[WARNING] /root/workspace/eclipse-ee4j/jersey/446011039/core-common/src/main/java/org/glassfish/jersey/internal/util/collection/ConcurrentHashMapV8.java:[3526,49] sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+[WARNING] /root/workspace/eclipse-ee4j/jersey/446011039/core-common/src/main/java/org/glassfish/jersey/internal/util/collection/ConcurrentHashMapV8.java:[3526,70] sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+[WARNING] /root/workspace/eclipse-ee4j/jersey/446011039/core-common/src/main/java/org/glassfish/jersey/internal/jsr166/UnsafeAccessor.java:[30,20] sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+[WARNING] /root/workspace/eclipse-ee4j/jersey/446011039/core-common/src/main/java/org/glassfish/jersey/internal/jsr166/UnsafeAccessor.java:[32,28] sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+[WARNING] /root/workspace/eclipse-ee4j/jersey/446011039/core-common/src/main/java/org/glassfish/jersey/internal/jsr166/UnsafeAccessor.java:[36,91] sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+[WARNING] /root/workspace/eclipse-ee4j/jersey/446011039/core-common/src/main/java/org/glassfish/jersey/internal/jsr166/UnsafeAccessor.java:[37,23] sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+[WARNING] /root/workspace/eclipse-ee4j/jersey/446011039/core-common/src/main/java/org/glassfish/jersey/internal/jsr166/UnsafeAccessor.java:[37,35] sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+[WARNING] /root/workspace/eclipse-ee4j/jersey/446011039/core-common/src/main/java/org/glassfish/jersey/internal/jsr166/SubmissionPublisher.java:[1013,14] sun.misc.Contended is internal proprietary API and may be removed in a future release
+[WARNING] /root/workspace/eclipse-ee4j/jersey/446011039/core-common/src/main/java/org/glassfish/jersey/internal/jsr166/SubmissionPublisher.java:[1596,38] sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+[WARNING] /root/workspace/eclipse-ee4j/jersey/446011039/core-common/src/main/java/org/glassfish/jersey/internal/guava/LocalCache.java: Some input files use or override a deprecated API.
+[WARNING] /root/workspace/eclipse-ee4j/jersey/446011039/core-common/src/main/java/org/glassfish/jersey/internal/guava/LocalCache.java: Recompile with -Xlint:deprecation for details.
+[WARNING] /root/workspace/eclipse-ee4j/jersey/446011039/core-common/src/main/java/org/glassfish/jersey/logging/LoggingFeature.java: Some input files use unchecked or unsafe operations.
+[WARNING] /root/workspace/eclipse-ee4j/jersey/446011039/core-common/src/main/java/org/glassfish/jersey/logging/LoggingFeature.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ jersey-common ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ jersey-common ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ jersey-common ---
+[INFO] Surefire report directory: /root/workspace/eclipse-ee4j/jersey/446011039/core-common/target/surefire-reports
+[INFO] parallel='classesAndMethods', perCoreThreadCount=true, threadCount=1, useUnlimitedThreads=false, threadCountSuites=0, threadCountClasses=0, threadCountMethods=0, parallelOptimized=true
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit47/2.18.1/surefire-junit47-2.18.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit47/2.18.1/surefire-junit47-2.18.1.pom (5 KB at 11.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.18.1/surefire-providers-2.18.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.18.1/surefire-providers-2.18.1.pom (3 KB at 71.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/com/github/stephenc/jcip/jcip-annotations/1.0-1/jcip-annotations-1.0-1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/com/github/stephenc/jcip/jcip-annotations/1.0-1/jcip-annotations-1.0-1.pom (6 KB at 132.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit48/2.18.1/common-junit48-2.18.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit48/2.18.1/common-junit48-2.18.1.pom (4 KB at 88.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit4/2.18.1/common-junit4-2.18.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit4/2.18.1/common-junit4-2.18.1.pom (2 KB at 48.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit3/2.18.1/common-junit3-2.18.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit3/2.18.1/common-junit3-2.18.1.pom (2 KB at 37.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.18.1/common-java5-2.18.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.18.1/common-java5-2.18.1.pom (2 KB at 45.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.18.1/surefire-grouper-2.18.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.18.1/surefire-grouper-2.18.1.pom (3 KB at 56.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit48/2.18.1/common-junit48-2.18.1.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit47/2.18.1/surefire-junit47-2.18.1.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/com/github/stephenc/jcip/jcip-annotations/1.0-1/jcip-annotations-1.0-1.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit3/2.18.1/common-junit3-2.18.1.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit4/2.18.1/common-junit4-2.18.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/com/github/stephenc/jcip/jcip-annotations/1.0-1/jcip-annotations-1.0-1.jar (5 KB at 48.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.18.1/common-java5-2.18.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit3/2.18.1/common-junit3-2.18.1.jar (12 KB at 78.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.18.1/surefire-grouper-2.18.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit47/2.18.1/surefire-junit47-2.18.1.jar (131 KB at 607.7 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit4/2.18.1/common-junit4-2.18.1.jar (19 KB at 86.7 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit48/2.18.1/common-junit48-2.18.1.jar (19 KB at 84.1 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.18.1/common-java5-2.18.1.jar (37 KB at 278.1 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.18.1/surefire-grouper-2.18.1.jar (38 KB at 543.7 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.glassfish.jersey.uri.PathPatternTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.095 sec - in org.glassfish.jersey.uri.PathPatternTest
+Running org.glassfish.jersey.SecurityManagerConfiguredTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in org.glassfish.jersey.SecurityManagerConfiguredTest
+Running org.glassfish.jersey.uri.internal.PathTemplateTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.glassfish.jersey.uri.internal.PathTemplateTest
+Running org.glassfish.jersey.uri.UriComponentTest
+Tests run: 27, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.223 sec - in org.glassfish.jersey.uri.UriComponentTest
+Running org.glassfish.jersey.internal.sonar.SonarJerseyCommonTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.039 sec - in org.glassfish.jersey.internal.sonar.SonarJerseyCommonTest
+Running org.glassfish.jersey.internal.util.Base64Test
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.102 sec - in org.glassfish.jersey.internal.util.Base64Test
+Running org.glassfish.jersey.internal.inject.ProvidersTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.113 sec - in org.glassfish.jersey.internal.inject.ProvidersTest
+Running org.glassfish.jersey.internal.util.PropertiesHelperTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.411 sec - in org.glassfish.jersey.internal.util.PropertiesHelperTest
+Running org.glassfish.jersey.internal.util.OsgiRegistryTest
+Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.147 sec - in org.glassfish.jersey.internal.util.OsgiRegistryTest
+Running org.glassfish.jersey.internal.util.ReflectionHelperTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.074 sec - in org.glassfish.jersey.internal.util.ReflectionHelperTest
+Running org.glassfish.jersey.internal.util.TokenizerTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.076 sec - in org.glassfish.jersey.internal.util.TokenizerTest
+Running org.glassfish.jersey.internal.util.collection.KeyComparatorHashMapTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec - in org.glassfish.jersey.internal.util.collection.KeyComparatorHashMapTest
+Running org.glassfish.jersey.internal.util.collection.KeyComparatorLinkedHashMapTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec - in org.glassfish.jersey.internal.util.collection.KeyComparatorLinkedHashMapTest
+Running org.glassfish.jersey.message.GZipEncodingTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.044 sec - in org.glassfish.jersey.message.GZipEncodingTest
+Running org.glassfish.jersey.message.internal.StringBuilderUtilsTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.glassfish.jersey.message.internal.StringBuilderUtilsTest
+Running org.glassfish.jersey.process.internal.RankedComparatorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 sec - in org.glassfish.jersey.process.internal.RankedComparatorTest
+Running org.glassfish.jersey.message.internal.VariantListBuilderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in org.glassfish.jersey.message.internal.VariantListBuilderTest
+Running org.glassfish.jersey.internal.util.collection.ViewsTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.93 sec - in org.glassfish.jersey.internal.util.collection.ViewsTest
+Running org.glassfish.jersey.message.internal.FormMultivaluedMapProviderTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.097 sec - in org.glassfish.jersey.message.internal.FormMultivaluedMapProviderTest
+Running org.glassfish.jersey.message.internal.LanguageTagTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 sec - in org.glassfish.jersey.message.internal.LanguageTagTest
+Running org.glassfish.jersey.message.internal.MessageBodyFactoryTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.142 sec - in org.glassfish.jersey.message.internal.MessageBodyFactoryTest
+Running org.glassfish.jersey.message.internal.FormProviderTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in org.glassfish.jersey.message.internal.FormProviderTest
+Running org.glassfish.jersey.message.internal.DateProviderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.111 sec - in org.glassfish.jersey.message.internal.DateProviderTest
+Running org.glassfish.jersey.message.internal.ResponseTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.275 sec - in org.glassfish.jersey.message.internal.ResponseTest
+Running org.glassfish.jersey.message.internal.QualityTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.172 sec - in org.glassfish.jersey.message.internal.QualityTest
+Running org.glassfish.jersey.message.DeflateEncodingTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.203 sec - in org.glassfish.jersey.message.DeflateEncodingTest
+Running org.glassfish.jersey.logging.LoggingInterceptorTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.05 sec - in org.glassfish.jersey.logging.LoggingInterceptorTest
+Running org.glassfish.jersey.uri.UriTemplateTest
+Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.334 sec - in org.glassfish.jersey.uri.UriTemplateTest
+Running org.glassfish.jersey.internal.util.collection.ByteBufferInputStreamTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.89 sec - in org.glassfish.jersey.internal.util.collection.ByteBufferInputStreamTest
+Running org.glassfish.jersey.internal.util.JerseyPublisherTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.608 sec - in org.glassfish.jersey.internal.util.JerseyPublisherTest
+
+Results :
+
+Tests run: 195, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building jersey-inject 2.28-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-versions) @ project ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.16:check (verify) @ project ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building jersey-inject-hk2 2.28-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-versions) @ jersey-hk2 ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.16:check (verify) @ jersey-hk2 ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.7:parse-version (parse-version) @ jersey-hk2 ---
+[INFO] 
+[INFO] --- maven-istack-commons-plugin:2.6.1:rs-gen (default) @ jersey-hk2 ---
+Resources:
+org/glassfish/jersey/inject/hk2/localization.properties
+Skipping /root/workspace/eclipse-ee4j/jersey/446011039/inject/hk2/src/main/resources/org/glassfish/jersey/inject/hk2/localization.properties
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.7:add-source (default) @ jersey-hk2 ---
+[INFO] Source directory: /root/workspace/eclipse-ee4j/jersey/446011039/inject/hk2/target/generated-sources/rsrc-gen added.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ jersey-hk2 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ jersey-hk2 ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 16 source files to /root/workspace/eclipse-ee4j/jersey/446011039/inject/hk2/target/classes
+[WARNING] /root/workspace/eclipse-ee4j/jersey/446011039/inject/hk2/src/main/java/org/glassfish/jersey/inject/hk2/RequestContext.java: /root/workspace/eclipse-ee4j/jersey/446011039/inject/hk2/src/main/java/org/glassfish/jersey/inject/hk2/RequestContext.java uses unchecked or unsafe operations.
+[WARNING] /root/workspace/eclipse-ee4j/jersey/446011039/inject/hk2/src/main/java/org/glassfish/jersey/inject/hk2/RequestContext.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ jersey-hk2 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/eclipse-ee4j/jersey/446011039/inject/hk2/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ jersey-hk2 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ jersey-hk2 ---
+[INFO] Surefire report directory: /root/workspace/eclipse-ee4j/jersey/446011039/inject/hk2/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.18.1/surefire-junit4-2.18.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.18.1/surefire-junit4-2.18.1.pom (3 KB at 67.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.18.1/surefire-junit4-2.18.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.18.1/surefire-junit4-2.18.1.jar (67 KB at 1207.2 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.glassfish.jersey.inject.hk2.SupplierInstanceBindingTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.596 sec - in org.glassfish.jersey.inject.hk2.SupplierInstanceBindingTest
+Running org.glassfish.jersey.inject.hk2.SupplierContractsTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.198 sec - in org.glassfish.jersey.inject.hk2.SupplierContractsTest
+Running org.glassfish.jersey.inject.hk2.DisposableSupplierTest
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.153 sec - in org.glassfish.jersey.inject.hk2.DisposableSupplierTest
+Running org.glassfish.jersey.inject.hk2.SupplierClassBindingTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.057 sec - in org.glassfish.jersey.inject.hk2.SupplierClassBindingTest
+Running org.glassfish.jersey.inject.hk2.SupplierProxyTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.044 sec - in org.glassfish.jersey.inject.hk2.SupplierProxyTest
+Running org.glassfish.jersey.inject.hk2.InjectionManagerTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 sec - in org.glassfish.jersey.inject.hk2.InjectionManagerTest
+
+Results :
+
+Tests run: 50, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building jersey-core-client 2.28-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-versions) @ jersey-client ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.16:check (verify) @ jersey-client ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.7:parse-version (parse-version) @ jersey-client ---
+[INFO] 
+[INFO] --- maven-istack-commons-plugin:2.6.1:rs-gen (default) @ jersey-client ---
+Resources:
+org/glassfish/jersey/client/internal/jdkconnector/localization.properties
+org/glassfish/jersey/client/internal/localization.properties
+Skipping /root/workspace/eclipse-ee4j/jersey/446011039/core-client/src/main/resources/org/glassfish/jersey/client/internal/jdkconnector/localization.properties
+Skipping /root/workspace/eclipse-ee4j/jersey/446011039/core-client/src/main/resources/org/glassfish/jersey/client/internal/localization.properties
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.7:add-source (default) @ jersey-client ---
+[INFO] Source directory: /root/workspace/eclipse-ee4j/jersey/446011039/core-client/target/generated-sources/rsrc-gen added.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ jersey-client ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ jersey-client ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 56 source files to /root/workspace/eclipse-ee4j/jersey/446011039/core-client/target/classes
+[WARNING] /root/workspace/eclipse-ee4j/jersey/446011039/core-client/src/main/java/org/glassfish/jersey/client/JerseyInvocation.java: Some input files use unchecked or unsafe operations.
+[WARNING] /root/workspace/eclipse-ee4j/jersey/446011039/core-client/src/main/java/org/glassfish/jersey/client/JerseyInvocation.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ jersey-client ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ jersey-client ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ jersey-client ---
+[INFO] Surefire report directory: /root/workspace/eclipse-ee4j/jersey/446011039/core-client/target/surefire-reports
+[INFO] parallel='classesAndMethods', perCoreThreadCount=true, threadCount=1, useUnlimitedThreads=false, threadCountSuites=0, threadCountClasses=0, threadCountMethods=0, parallelOptimized=true
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.glassfish.jersey.client.filter.HttpBasicAuthFilterTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.769 sec - in org.glassfish.jersey.client.filter.HttpBasicAuthFilterTest
+Running org.glassfish.jersey.client.filter.EncodingFilterTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.868 sec - in org.glassfish.jersey.client.filter.EncodingFilterTest
+Running org.glassfish.jersey.client.FixedMultiBoundaryParserTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in org.glassfish.jersey.client.FixedMultiBoundaryParserTest
+Running org.glassfish.jersey.client.CustomConnectorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.151 sec - in org.glassfish.jersey.client.CustomConnectorTest
+Running org.glassfish.jersey.client.WebTargetPropertiesTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 sec - in org.glassfish.jersey.client.WebTargetPropertiesTest
+Running org.glassfish.jersey.client.filter.ClientProviderInstanceInjectionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.168 sec - in org.glassfish.jersey.client.filter.ClientProviderInstanceInjectionTest
+Running org.glassfish.jersey.client.spi.CachingConnectorProviderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.302 sec - in org.glassfish.jersey.client.spi.CachingConnectorProviderTest
+Running org.glassfish.jersey.client.JerseyCompletionStageRxInvokerTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.962 sec - in org.glassfish.jersey.client.JerseyCompletionStageRxInvokerTest
+Running org.glassfish.jersey.client.JerseyWebTargetTest
+Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.154 sec - in org.glassfish.jersey.client.JerseyWebTargetTest
+Running org.glassfish.jersey.client.LinkTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.061 sec - in org.glassfish.jersey.client.LinkTest
+Running org.glassfish.jersey.client.authentication.HttpDigestAuthFilterTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in org.glassfish.jersey.client.authentication.HttpDigestAuthFilterTest
+Running org.glassfish.jersey.client.JerseyInvocationTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.315 sec - in org.glassfish.jersey.client.JerseyInvocationTest
+Running org.glassfish.jersey.client.ClientRxTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.118 sec - in org.glassfish.jersey.client.ClientRxTest
+Running org.glassfish.jersey.client.AutoDiscoverableClientTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.407 sec - in org.glassfish.jersey.client.AutoDiscoverableClientTest
+Running org.glassfish.jersey.client.FixedBoundaryParserTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in org.glassfish.jersey.client.FixedBoundaryParserTest
+Running org.glassfish.jersey.client.DefaultSslContextProviderTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.948 sec - in org.glassfish.jersey.client.DefaultSslContextProviderTest
+Running org.glassfish.jersey.client.ClientRequestTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.847 sec - in org.glassfish.jersey.client.ClientRequestTest
+Running org.glassfish.jersey.client.ClientConfigTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.339 sec - in org.glassfish.jersey.client.ClientConfigTest
+Running org.glassfish.jersey.client.filter.CsrfProtectionFilterTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.704 sec - in org.glassfish.jersey.client.filter.CsrfProtectionFilterTest
+Running org.glassfish.jersey.client.JerseyClientTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.189 sec - in org.glassfish.jersey.client.JerseyClientTest
+Running org.glassfish.jersey.client.ShutdownHookLeakTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 24.039 sec - in org.glassfish.jersey.client.ShutdownHookLeakTest
+Running org.glassfish.jersey.client.HttpUrlConnectorTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 1.166 sec - in org.glassfish.jersey.client.HttpUrlConnectorTest
+Running org.glassfish.jersey.client.JerseyClientBuilderTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.838 sec - in org.glassfish.jersey.client.JerseyClientBuilderTest
+
+Results :
+
+Tests run: 132, Failures: 0, Errors: 0, Skipped: 5
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building jersey-media 2.28-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-versions) @ project ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.16:check (verify) @ project ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building jersey-media-jaxb 2.28-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-versions) @ jersey-media-jaxb ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.16:check (verify) @ jersey-media-jaxb ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.7:parse-version (parse-version) @ jersey-media-jaxb ---
+[INFO] 
+[INFO] --- maven-istack-commons-plugin:2.6.1:rs-gen (default) @ jersey-media-jaxb ---
+Resources:
+org/glassfish/jersey/jaxb/internal/localization.properties
+Skipping /root/workspace/eclipse-ee4j/jersey/446011039/media/jaxb/src/main/resources/org/glassfish/jersey/jaxb/internal/localization.properties
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.7:add-source (default) @ jersey-media-jaxb ---
+[INFO] Source directory: /root/workspace/eclipse-ee4j/jersey/446011039/media/jaxb/target/generated-sources/rsrc-gen added.
+[INFO] 
+[INFO] --- maven-jflex-plugin:1.4.3:generate (default) @ jersey-media-jaxb ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ jersey-media-jaxb ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ jersey-media-jaxb ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 21 source files to /root/workspace/eclipse-ee4j/jersey/446011039/media/jaxb/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ jersey-media-jaxb ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/eclipse-ee4j/jersey/446011039/media/jaxb/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ jersey-media-jaxb ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ jersey-media-jaxb ---
+[INFO] Surefire report directory: /root/workspace/eclipse-ee4j/jersey/446011039/media/jaxb/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.glassfish.jersey.jaxb.internal.AbstractJaxbProviderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.632 sec - in org.glassfish.jersey.jaxb.internal.AbstractJaxbProviderTest
+Running org.glassfish.jersey.jaxb.internal.JaxbStringReaderProviderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.073 sec - in org.glassfish.jersey.jaxb.internal.JaxbStringReaderProviderTest
+Running org.glassfish.jersey.jaxb.internal.SourceProviderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.041 sec - in org.glassfish.jersey.jaxb.internal.SourceProviderTest
+Running org.glassfish.jersey.jaxb.internal.SaxParserFactoryInjectionProviderTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.057 sec - in org.glassfish.jersey.jaxb.internal.SaxParserFactoryInjectionProviderTest
+
+Results :
+
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building jersey-core-server 2.28-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-versions) @ jersey-server ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.16:check (verify) @ jersey-server ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.7:parse-version (parse-version) @ jersey-server ---
+[INFO] 
+[INFO] --- maven-istack-commons-plugin:2.6.1:rs-gen (default) @ jersey-server ---
+Resources:
+org/glassfish/jersey/server/internal/localization.properties
+Skipping /root/workspace/eclipse-ee4j/jersey/446011039/core-server/src/main/resources/org/glassfish/jersey/server/internal/localization.properties
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.7:add-source (default) @ jersey-server ---
+[INFO] Source directory: /root/workspace/eclipse-ee4j/jersey/446011039/core-server/target/generated-sources/rsrc-gen added.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ jersey-server ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 5 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ jersey-server ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 361 source files to /root/workspace/eclipse-ee4j/jersey/446011039/core-server/target/classes
+[WARNING] /root/workspace/eclipse-ee4j/jersey/446011039/core-server/src/main/java/org/glassfish/jersey/server/internal/monitoring/ExceptionMapperStatisticsImpl.java: Some input files use or override a deprecated API.
+[WARNING] /root/workspace/eclipse-ee4j/jersey/446011039/core-server/src/main/java/org/glassfish/jersey/server/internal/monitoring/ExceptionMapperStatisticsImpl.java: Recompile with -Xlint:deprecation for details.
+[WARNING] /root/workspace/eclipse-ee4j/jersey/446011039/core-server/src/main/java/org/glassfish/jersey/server/wadl/config/WadlGeneratorConfig.java: Some input files use unchecked or unsafe operations.
+[WARNING] /root/workspace/eclipse-ee4j/jersey/446011039/core-server/src/main/java/org/glassfish/jersey/server/wadl/config/WadlGeneratorConfig.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ jersey-server ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ jersey-server ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ jersey-server ---
+[INFO] Surefire report directory: /root/workspace/eclipse-ee4j/jersey/446011039/core-server/target/surefire-reports
+[INFO] parallel='classes', perCoreThreadCount=true, threadCount=1, useUnlimitedThreads=false, threadCountSuites=0, threadCountClasses=0, threadCountMethods=0, parallelOptimized=true
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.glassfish.jersey.server.wadl.generators.resourcedoc.WadlGeneratorResourceDocSupportTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.828 sec - in org.glassfish.jersey.server.wadl.generators.resourcedoc.WadlGeneratorResourceDocSupportTest
+Running org.glassfish.jersey.server.SecurityManagerConfiguredTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.glassfish.jersey.server.SecurityManagerConfiguredTest
+Running org.glassfish.jersey.server.wadl.config.WadlGeneratorConfigurationLoaderTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.02 sec - in org.glassfish.jersey.server.wadl.config.WadlGeneratorConfigurationLoaderTest
+Running org.glassfish.jersey.server.wadl.config.WadlGeneratorConfigTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.783 sec - in org.glassfish.jersey.server.wadl.config.WadlGeneratorConfigTest
+Running org.glassfish.jersey.server.wadl.config.WadlGeneratorLoaderTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.934 sec - in org.glassfish.jersey.server.wadl.config.WadlGeneratorLoaderTest
+Running org.glassfish.jersey.server.filter.EntityTypeFilterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.132 sec - in org.glassfish.jersey.server.filter.EntityTypeFilterTest
+Running org.glassfish.jersey.server.modelapi.annotation.IntrospectionModellerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.172 sec - in org.glassfish.jersey.server.modelapi.annotation.IntrospectionModellerTest
+Running org.glassfish.jersey.server.ContainerRequestTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.142 sec - in org.glassfish.jersey.server.ContainerRequestTest
+Running org.glassfish.jersey.server.filter.UriModificationFilterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.584 sec - in org.glassfish.jersey.server.filter.UriModificationFilterTest
+Running org.glassfish.jersey.server.filter.UriConnegFilterTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.053 sec - in org.glassfish.jersey.server.filter.UriConnegFilterTest
+Running org.glassfish.jersey.server.filter.ContainerResponseFilterOrderingTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.068 sec - in org.glassfish.jersey.server.filter.ContainerResponseFilterOrderingTest
+Running org.glassfish.jersey.server.UriInfoMatchedResourcesTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.731 sec - in org.glassfish.jersey.server.UriInfoMatchedResourcesTest
+Running org.glassfish.jersey.server.filter.HttpMethodOverrideFilterTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.535 sec - in org.glassfish.jersey.server.filter.HttpMethodOverrideFilterTest
+Running org.glassfish.jersey.server.filter.CsrfProtectionFilterTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.666 sec - in org.glassfish.jersey.server.filter.CsrfProtectionFilterTest
+Running org.glassfish.jersey.server.filter.LayeredFiltersTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 4, Time elapsed: 5.674 sec - in org.glassfish.jersey.server.filter.LayeredFiltersTest
+Running org.glassfish.jersey.server.internal.scanning.BundleSchemeScannerTest
+Running org.glassfish.jersey.server.internal.scanning.CompositeResourceFinderTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.073 sec - in org.glassfish.jersey.server.internal.scanning.BundleSchemeScannerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec - in org.glassfish.jersey.server.internal.scanning.CompositeResourceFinderTest
+Running org.glassfish.jersey.server.internal.scanning.VFSSchemeResourceFinderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.49 sec - in org.glassfish.jersey.server.internal.scanning.VFSSchemeResourceFinderTest
+Running org.glassfish.jersey.server.internal.RuntimeDelegateImplTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec - in org.glassfish.jersey.server.internal.RuntimeDelegateImplTest
+Running org.glassfish.jersey.server.internal.monitoring.MonitoringUtilsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec - in org.glassfish.jersey.server.internal.monitoring.MonitoringUtilsTest
+Running org.glassfish.jersey.server.ResourceConfigBuilderTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.193 sec - in org.glassfish.jersey.server.ResourceConfigBuilderTest
+Running org.glassfish.jersey.server.AsyncCallbackServerTest
+Running org.glassfish.jersey.server.UriInfoMatchedUrisTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.153 sec - in org.glassfish.jersey.server.UriInfoMatchedUrisTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.252 sec - in org.glassfish.jersey.server.AsyncCallbackServerTest
+Running org.glassfish.jersey.server.AsyncApplicationBuildingTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.226 sec - in org.glassfish.jersey.server.AsyncApplicationBuildingTest
+Running org.glassfish.jersey.server.ApplicationTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.613 sec - in org.glassfish.jersey.server.ApplicationTest
+Running org.glassfish.jersey.server.internal.monitoring.ResponseStatisticsImplTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.153 sec - in org.glassfish.jersey.server.internal.monitoring.ResponseStatisticsImplTest
+Running org.glassfish.jersey.server.internal.ResourceContextTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.538 sec - in org.glassfish.jersey.server.internal.ResourceContextTest
+Running org.glassfish.jersey.server.internal.scanning.JarFileScannerTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.499 sec - in org.glassfish.jersey.server.internal.scanning.JarFileScannerTest
+Running org.glassfish.jersey.server.AnnotatedEntityTest
+Running org.glassfish.jersey.server.internal.monitoring.SlidingWindowTimeReservoirAggregatingTrimmerTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.23 sec - in org.glassfish.jersey.server.AnnotatedEntityTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.638 sec - in org.glassfish.jersey.server.internal.monitoring.SlidingWindowTimeReservoirAggregatingTrimmerTest
+Running org.glassfish.jersey.server.internal.monitoring.SlidingWindowTimeReservoirTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.419 sec - in org.glassfish.jersey.server.internal.monitoring.SlidingWindowTimeReservoirTest
+Running org.glassfish.jersey.server.SecurityContextTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.385 sec - in org.glassfish.jersey.server.SecurityContextTest
+Running org.glassfish.jersey.server.internal.monitoring.TimeWindowStatisticsImplTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.367 sec - in org.glassfish.jersey.server.internal.monitoring.TimeWindowStatisticsImplTest
+Running org.glassfish.jersey.server.internal.routing.UriRoutingContextTest
+Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec - in org.glassfish.jersey.server.internal.routing.UriRoutingContextTest
+Running org.glassfish.jersey.server.internal.BackgroundSchedulerProviderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.398 sec - in org.glassfish.jersey.server.internal.BackgroundSchedulerProviderTest
+Running org.glassfish.jersey.server.internal.monitoring.MonitoringStatisticsTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.552 sec - in org.glassfish.jersey.server.internal.monitoring.MonitoringStatisticsTest
+Running org.glassfish.jersey.server.internal.routing.CombinedMediaTypeTest
+Running org.glassfish.jersey.server.filter.ApplicationFilterTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.185 sec - in org.glassfish.jersey.server.internal.routing.CombinedMediaTypeTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.726 sec - in org.glassfish.jersey.server.filter.ApplicationFilterTest
+Running org.glassfish.jersey.server.internal.routing.ResponseMediaTypeFromProvidersTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.455 sec - in org.glassfish.jersey.server.internal.routing.ResponseMediaTypeFromProvidersTest
+Running org.glassfish.jersey.server.internal.routing.SubResourceValidationTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.678 sec - in org.glassfish.jersey.server.internal.routing.SubResourceValidationTest
+Running org.glassfish.jersey.server.monitoring.MonitoringFeatureTest
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.236 sec - in org.glassfish.jersey.server.monitoring.MonitoringFeatureTest
+Running org.glassfish.jersey.server.filter.EncodingFilterTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.678 sec - in org.glassfish.jersey.server.filter.EncodingFilterTest
+Running org.glassfish.jersey.server.internal.inject.ConstructorParameterInjectionTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.789 sec - in org.glassfish.jersey.server.internal.inject.ConstructorParameterInjectionTest
+Running org.glassfish.jersey.server.internal.inject.BeanParamMemoryLeakTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.883 sec - in org.glassfish.jersey.server.internal.inject.BeanParamMemoryLeakTest
+Running org.glassfish.jersey.server.internal.scanning.PackageNamesScannerTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.646 sec - in org.glassfish.jersey.server.internal.scanning.PackageNamesScannerTest
+Running org.glassfish.jersey.server.internal.inject.QueryParamFromStringTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.192 sec - in org.glassfish.jersey.server.internal.inject.QueryParamFromStringTest
+Running org.glassfish.jersey.server.internal.inject.PathParamStringConstructorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.037 sec - in org.glassfish.jersey.server.internal.inject.PathParamStringConstructorTest
+Running org.glassfish.jersey.server.filter.FilterSetMethodTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.481 sec - in org.glassfish.jersey.server.filter.FilterSetMethodTest
+Running org.glassfish.jersey.server.internal.monitoring.AggregatingTrimmerTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.996 sec - in org.glassfish.jersey.server.internal.monitoring.AggregatingTrimmerTest
+Running org.glassfish.jersey.server.internal.monitoring.AggregatingTrimmerZeroTimeTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.969 sec - in org.glassfish.jersey.server.internal.monitoring.AggregatingTrimmerZeroTimeTest
+Running org.glassfish.jersey.server.internal.inject.PathParamAsStringTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.659 sec - in org.glassfish.jersey.server.internal.inject.PathParamAsStringTest
+Running org.glassfish.jersey.server.internal.inject.ActiveBindingBindingTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0 sec - in org.glassfish.jersey.server.internal.inject.ActiveBindingBindingTest
+Running org.glassfish.jersey.server.internal.inject.QueryParamEnumTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.509 sec - in org.glassfish.jersey.server.internal.inject.QueryParamEnumTest
+Running org.glassfish.jersey.server.internal.inject.ParamExceptionMappingTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.648 sec - in org.glassfish.jersey.server.internal.inject.ParamExceptionMappingTest
+Running org.glassfish.jersey.server.internal.routing.ExtendedUriInfoTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.135 sec - in org.glassfish.jersey.server.internal.routing.ExtendedUriInfoTest
+Running org.glassfish.jersey.server.internal.inject.UriTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.945 sec - in org.glassfish.jersey.server.internal.inject.UriTest
+Running org.glassfish.jersey.server.internal.inject.QueryParamSortedSetStringConstructorTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.269 sec - in org.glassfish.jersey.server.internal.inject.QueryParamSortedSetStringConstructorTest
+Running org.glassfish.jersey.server.internal.inject.HeaderParamStringConstructorTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.233 sec - in org.glassfish.jersey.server.internal.inject.HeaderParamStringConstructorTest
+Running org.glassfish.jersey.server.internal.inject.PathParamAsPrimitiveTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.225 sec - in org.glassfish.jersey.server.internal.inject.PathParamAsPrimitiveTest
+Running org.glassfish.jersey.server.internal.inject.InvalidParamsTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.938 sec - in org.glassfish.jersey.server.internal.inject.InvalidParamsTest
+Running org.glassfish.jersey.server.internal.inject.EncodedParamsTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.947 sec - in org.glassfish.jersey.server.internal.inject.EncodedParamsTest
+Running org.glassfish.jersey.server.internal.inject.PathParamAsPathSegmentTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.43 sec - in org.glassfish.jersey.server.internal.inject.PathParamAsPathSegmentTest
+Running org.glassfish.jersey.server.internal.inject.QueryParamAsSetPrimitiveTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.496 sec - in org.glassfish.jersey.server.internal.inject.QueryParamAsSetPrimitiveTest
+Running org.glassfish.jersey.server.internal.inject.QueryParamAsSortedSetStringTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.88 sec - in org.glassfish.jersey.server.internal.inject.QueryParamAsSortedSetStringTest
+Running org.glassfish.jersey.server.internal.inject.ParamConverterInternalTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.355 sec - in org.glassfish.jersey.server.internal.inject.ParamConverterInternalTest
+Running org.glassfish.jersey.server.internal.inject.QueryParamStringConstructorTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.736 sec - in org.glassfish.jersey.server.internal.inject.QueryParamStringConstructorTest
+Running org.glassfish.jersey.server.internal.inject.MatrixParamStringConstructorTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.224 sec - in org.glassfish.jersey.server.internal.inject.MatrixParamStringConstructorTest
+Running org.glassfish.jersey.server.internal.inject.ContextBasedInjectionTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.108 sec - in org.glassfish.jersey.server.internal.inject.ContextBasedInjectionTest
+Running org.glassfish.jersey.server.internal.inject.CookieParamAsCookieTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.223 sec - in org.glassfish.jersey.server.internal.inject.CookieParamAsCookieTest
+Running org.glassfish.jersey.server.internal.inject.QueryParamAsSetStringTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.078 sec - in org.glassfish.jersey.server.internal.inject.QueryParamAsSetStringTest
+Running org.glassfish.jersey.server.internal.inject.QueryParamSetStringConstructorTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.007 sec - in org.glassfish.jersey.server.internal.inject.QueryParamSetStringConstructorTest
+Running org.glassfish.jersey.server.internal.inject.CookieParamStringConstructorTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.449 sec - in org.glassfish.jersey.server.internal.inject.CookieParamStringConstructorTest
+Running org.glassfish.jersey.server.internal.sonar.SonarJerseyServerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.051 sec - in org.glassfish.jersey.server.internal.sonar.SonarJerseyServerTest
+Running org.glassfish.jersey.server.internal.ContainerUtilsTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec - in org.glassfish.jersey.server.internal.ContainerUtilsTest
+Running org.glassfish.jersey.server.internal.inject.JaxRsInjectablesTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.733 sec - in org.glassfish.jersey.server.internal.inject.JaxRsInjectablesTest
+Running org.glassfish.jersey.server.internal.ServiceFinderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.337 sec - in org.glassfish.jersey.server.internal.ServiceFinderTest
+Running org.glassfish.jersey.server.internal.process.ProxyInjectablesTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.147 sec - in org.glassfish.jersey.server.internal.process.ProxyInjectablesTest
+Running org.glassfish.jersey.server.internal.inject.CookieParamAsStringTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.683 sec - in org.glassfish.jersey.server.internal.inject.CookieParamAsStringTest
+Running org.glassfish.jersey.server.AutoDiscoverableServerTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.091 sec - in org.glassfish.jersey.server.AutoDiscoverableServerTest
+Running org.glassfish.jersey.server.ResourceMergeTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.06 sec - in org.glassfish.jersey.server.ResourceMergeTest
+Running org.glassfish.jersey.server.internal.inject.PathParamDefaultValueTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.981 sec - in org.glassfish.jersey.server.internal.inject.PathParamDefaultValueTest
+Running org.glassfish.jersey.server.ExtendedResourceContextTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.468 sec - in org.glassfish.jersey.server.ExtendedResourceContextTest
+Running org.glassfish.jersey.server.model.AsyncContentAndEntityTypeTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.451 sec - in org.glassfish.jersey.server.model.AsyncContentAndEntityTypeTest
+Running org.glassfish.jersey.server.model.SubResourceDynamicWithDuplicateTemplateNamesTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.89 sec - in org.glassfish.jersey.server.model.SubResourceDynamicWithDuplicateTemplateNamesTest
+Running org.glassfish.jersey.server.internal.inject.FormParamTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.085 sec - in org.glassfish.jersey.server.internal.inject.FormParamTest
+Running org.glassfish.jersey.server.internal.routing.SubResourceLocatorCachingTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.568 sec - in org.glassfish.jersey.server.internal.routing.SubResourceLocatorCachingTest
+Running org.glassfish.jersey.server.model.InnerClassWithGenericTypeTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.337 sec - in org.glassfish.jersey.server.model.InnerClassWithGenericTypeTest
+Running org.glassfish.jersey.server.model.RMBuilderTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.506 sec - in org.glassfish.jersey.server.model.RMBuilderTest
+Running org.glassfish.jersey.server.ModelProcessorScopeTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.781 sec - in org.glassfish.jersey.server.ModelProcessorScopeTest
+Running org.glassfish.jersey.server.internal.inject.QueryParamAsStringTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.257 sec - in org.glassfish.jersey.server.internal.inject.QueryParamAsStringTest
+Running org.glassfish.jersey.server.internal.inject.HeaderParamAsStringTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.746 sec - in org.glassfish.jersey.server.internal.inject.HeaderParamAsStringTest
+Running org.glassfish.jersey.server.model.GenericMethodListTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.glassfish.jersey.server.model.GenericMethodListTest
+Running org.glassfish.jersey.server.model.ConsumeProduceWildcardTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.621 sec - in org.glassfish.jersey.server.model.ConsumeProduceWildcardTest
+Running org.glassfish.jersey.server.model.SubResourceNullTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.652 sec - in org.glassfish.jersey.server.model.SubResourceNullTest
+Running org.glassfish.jersey.server.internal.inject.QueryParamAsSortedSetPrimitiveTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.4 sec - in org.glassfish.jersey.server.internal.inject.QueryParamAsSortedSetPrimitiveTest
+Running org.glassfish.jersey.server.model.SubResourceDynamicTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.922 sec - in org.glassfish.jersey.server.model.SubResourceDynamicTest
+Running org.glassfish.jersey.server.model.PathAndResourceMethodErrorsTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 4, Time elapsed: 1.342 sec - in org.glassfish.jersey.server.model.PathAndResourceMethodErrorsTest
+Running org.glassfish.jersey.server.internal.inject.MatrixParamAsStringTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.815 sec - in org.glassfish.jersey.server.internal.inject.MatrixParamAsStringTest
+Running org.glassfish.jersey.server.model.ParameterWithMultipleAnnotationsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in org.glassfish.jersey.server.model.ParameterWithMultipleAnnotationsTest
+Running org.glassfish.jersey.server.ApplicationHandlerTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.502 sec - in org.glassfish.jersey.server.ApplicationHandlerTest
+Running org.glassfish.jersey.server.model.ResourceModelTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.174 sec - in org.glassfish.jersey.server.model.ResourceModelTest
+Running org.glassfish.jersey.server.model.SubResourceDynamicWithParametersTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.82 sec - in org.glassfish.jersey.server.model.SubResourceDynamicWithParametersTest
+Running org.glassfish.jersey.server.model.ProgrammaticResourceMethodsTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.945 sec - in org.glassfish.jersey.server.model.ProgrammaticResourceMethodsTest
+Running org.glassfish.jersey.server.ResourceConfigTest
+[]Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.583 sec - in org.glassfish.jersey.server.ResourceConfigTest
+Running org.glassfish.jersey.server.model.SubResourceProgrammaticTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.021 sec - in org.glassfish.jersey.server.model.SubResourceProgrammaticTest
+Running org.glassfish.jersey.server.model.HeadTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.673 sec - in org.glassfish.jersey.server.model.HeadTest
+Running org.glassfish.jersey.server.model.ParameterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.044 sec - in org.glassfish.jersey.server.model.ParameterTest
+Running org.glassfish.jersey.server.model.ResourceNotFoundTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.314 sec - in org.glassfish.jersey.server.model.ResourceNotFoundTest
+Running org.glassfish.jersey.server.model.internal.ModelHelperTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in org.glassfish.jersey.server.model.internal.ModelHelperTest
+Running org.glassfish.jersey.server.model.internal.ResourceMethodDispatcherFactoryTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.271 sec - in org.glassfish.jersey.server.model.internal.ResourceMethodDispatcherFactoryTest
+Running org.glassfish.jersey.server.model.ResourceInfoTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.303 sec - in org.glassfish.jersey.server.model.ResourceInfoTest
+Running org.glassfish.jersey.server.model.AcceptAnnotatedReaderWriterTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.683 sec - in org.glassfish.jersey.server.model.AcceptAnnotatedReaderWriterTest
+Running org.glassfish.jersey.server.model.HeadSubResourceMethodTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.765 sec - in org.glassfish.jersey.server.model.HeadSubResourceMethodTest
+Running org.glassfish.jersey.server.model.internal.ChildResourceTest
+template: /http\://localhost/([^/]+)/aa/f
+pattern: /http\://localhost/([^/]+)/aa/f(/.*)?
+template: /http\://localhost/([^/]+)/aa/f
+pattern: /http\://localhost/([^/]+)/aa/f(/.*)?
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.74 sec - in org.glassfish.jersey.server.model.internal.ChildResourceTest
+Running org.glassfish.jersey.server.model.MixedResourceConfigurationTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.279 sec - in org.glassfish.jersey.server.model.MixedResourceConfigurationTest
+Running org.glassfish.jersey.server.model.MethodListTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.039 sec - in org.glassfish.jersey.server.model.MethodListTest
+Running org.glassfish.jersey.server.model.SubResourceClassDynamicTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.643 sec - in org.glassfish.jersey.server.model.SubResourceClassDynamicTest
+Running org.glassfish.jersey.server.model.AncestorsTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.242 sec - in org.glassfish.jersey.server.model.AncestorsTest
+Running org.glassfish.jersey.server.model.ResourcePathOverrideTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.695 sec - in org.glassfish.jersey.server.model.ResourcePathOverrideTest
+Running org.glassfish.jersey.server.model.AcceptWriterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.23 sec - in org.glassfish.jersey.server.model.AcceptWriterTest
+Running org.glassfish.jersey.server.model.AcceptTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.031 sec - in org.glassfish.jersey.server.model.AcceptTest
+Running org.glassfish.jersey.server.model.DynamicFeatureTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.271 sec - in org.glassfish.jersey.server.model.DynamicFeatureTest
+Running org.glassfish.jersey.server.model.ConstrainedToServerTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.583 sec - in org.glassfish.jersey.server.model.ConstrainedToServerTest
+Running org.glassfish.jersey.server.model.ConsumeProduceSimpleTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.253 sec - in org.glassfish.jersey.server.model.ConsumeProduceSimpleTest
+Running org.glassfish.jersey.server.model.SubResourceHttpMethodsTest
+one
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.797 sec - in org.glassfish.jersey.server.model.SubResourceHttpMethodsTest
+Running org.glassfish.jersey.server.model.ValidatorTest
+Tests run: 44, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 3.242 sec - in org.glassfish.jersey.server.model.ValidatorTest
+Running org.glassfish.jersey.server.model.AmbiguousTemplateTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.383 sec - in org.glassfish.jersey.server.model.AmbiguousTemplateTest
+Running org.glassfish.jersey.server.model.AcceptQsTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.37 sec - in org.glassfish.jersey.server.model.AcceptQsTest
+Running org.glassfish.jersey.server.internal.inject.CookieParamAsPrimitiveTest
+Tests run: 31, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.934 sec - in org.glassfish.jersey.server.internal.inject.CookieParamAsPrimitiveTest
+Running org.glassfish.jersey.server.internal.inject.MatrixParamAsPrimitiveTest
+Tests run: 35, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.02 sec - in org.glassfish.jersey.server.internal.inject.MatrixParamAsPrimitiveTest
+Running org.glassfish.jersey.server.internal.inject.HeaderParamAsPrimitiveTest
+Tests run: 35, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.105 sec - in org.glassfish.jersey.server.internal.inject.HeaderParamAsPrimitiveTest
+Running org.glassfish.jersey.server.model.OptionsSubResourceMethodTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.663 sec - in org.glassfish.jersey.server.model.OptionsSubResourceMethodTest
+Running org.glassfish.jersey.server.model.OptionsTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.724 sec - in org.glassfish.jersey.server.model.OptionsTest
+Running org.glassfish.jersey.server.internal.inject.QueryParamAsPrimitiveTest
+### 200
+### 200
+### 200
+### 200
+### 200
+### 200
+### 200
+### 200
+### 200
+### 200
+### 200
+### 200
+### 200
+### 200
+### 200
+### 200
+### 200
+### 200
+### 200
+### 200
+### 200
+### 200
+### 200
+### 200
+Tests run: 35, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.833 sec - in org.glassfish.jersey.server.internal.inject.QueryParamAsPrimitiveTest
+
+Results :
+
+Tests run: 927, Failures: 0, Errors: 0, Skipped: 12
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building jersey-containers 2.28-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-versions) @ project ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.16:check (verify) @ project ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building jersey-container-grizzly2-http 2.28-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-versions) @ jersey-container-grizzly2-http ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.16:check (verify) @ jersey-container-grizzly2-http ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.7:parse-version (parse-version) @ jersey-container-grizzly2-http ---
+[INFO] 
+[INFO] --- maven-istack-commons-plugin:2.6.1:rs-gen (default) @ jersey-container-grizzly2-http ---
+Resources:
+org/glassfish/jersey/grizzly2/httpserver/internal/localization.properties
+Skipping /root/workspace/eclipse-ee4j/jersey/446011039/containers/grizzly2-http/src/main/resources/org/glassfish/jersey/grizzly2/httpserver/internal/localization.properties
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.7:add-source (default) @ jersey-container-grizzly2-http ---
+[INFO] Source directory: /root/workspace/eclipse-ee4j/jersey/446011039/containers/grizzly2-http/target/generated-sources/rsrc-gen added.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ jersey-container-grizzly2-http ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ jersey-container-grizzly2-http ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 6 source files to /root/workspace/eclipse-ee4j/jersey/446011039/containers/grizzly2-http/target/classes
+[WARNING] /root/workspace/eclipse-ee4j/jersey/446011039/containers/grizzly2-http/src/main/java/org/glassfish/jersey/grizzly2/httpserver/GrizzlyHttpServerFactory.java: /root/workspace/eclipse-ee4j/jersey/446011039/containers/grizzly2-http/src/main/java/org/glassfish/jersey/grizzly2/httpserver/GrizzlyHttpServerFactory.java uses or overrides a deprecated API.
+[WARNING] /root/workspace/eclipse-ee4j/jersey/446011039/containers/grizzly2-http/src/main/java/org/glassfish/jersey/grizzly2/httpserver/GrizzlyHttpServerFactory.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ jersey-container-grizzly2-http ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/eclipse-ee4j/jersey/446011039/containers/grizzly2-http/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ jersey-container-grizzly2-http ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ jersey-container-grizzly2-http ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building jersey-container-servlet-core 2.28-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-versions) @ jersey-container-servlet-core ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.16:check (verify) @ jersey-container-servlet-core ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.7:parse-version (parse-version) @ jersey-container-servlet-core ---
+[INFO] 
+[INFO] --- maven-istack-commons-plugin:2.6.1:rs-gen (default) @ jersey-container-servlet-core ---
+Resources:
+org/glassfish/jersey/servlet/internal/localization.properties
+Skipping /root/workspace/eclipse-ee4j/jersey/446011039/containers/jersey-servlet-core/src/main/resources/org/glassfish/jersey/servlet/internal/localization.properties
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.7:add-source (default) @ jersey-container-servlet-core ---
+[INFO] Source directory: /root/workspace/eclipse-ee4j/jersey/446011039/containers/jersey-servlet-core/target/generated-sources/rsrc-gen added.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ jersey-container-servlet-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ jersey-container-servlet-core ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 27 source files to /root/workspace/eclipse-ee4j/jersey/446011039/containers/jersey-servlet-core/target/classes
+[WARNING] /root/workspace/eclipse-ee4j/jersey/446011039/containers/jersey-servlet-core/src/main/java/org/glassfish/jersey/servlet/WebComponent.java: Some input files use or override a deprecated API.
+[WARNING] /root/workspace/eclipse-ee4j/jersey/446011039/containers/jersey-servlet-core/src/main/java/org/glassfish/jersey/servlet/WebComponent.java: Recompile with -Xlint:deprecation for details.
+[WARNING] /root/workspace/eclipse-ee4j/jersey/446011039/containers/jersey-servlet-core/src/main/java/org/glassfish/jersey/servlet/internal/ThreadLocalNamedInvoker.java: Some input files use unchecked or unsafe operations.
+[WARNING] /root/workspace/eclipse-ee4j/jersey/446011039/containers/jersey-servlet-core/src/main/java/org/glassfish/jersey/servlet/internal/ThreadLocalNamedInvoker.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ jersey-container-servlet-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/eclipse-ee4j/jersey/446011039/containers/jersey-servlet-core/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ jersey-container-servlet-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ jersey-container-servlet-core ---
+[INFO] Surefire report directory: /root/workspace/eclipse-ee4j/jersey/446011039/containers/jersey-servlet-core/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.glassfish.jersey.servlet.internal.ThreadLocalInvokerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec - in org.glassfish.jersey.servlet.internal.ThreadLocalInvokerTest
+
+Results :
+
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building jersey-test-framework 2.28-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-versions) @ project ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.16:check (verify) @ project ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building jersey-test-framework-core 2.28-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-versions) @ jersey-test-framework-core ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.16:check (verify) @ jersey-test-framework-core ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ jersey-test-framework-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/eclipse-ee4j/jersey/446011039/test-framework/core/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ jersey-test-framework-core ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 16 source files to /root/workspace/eclipse-ee4j/jersey/446011039/test-framework/core/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ jersey-test-framework-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/eclipse-ee4j/jersey/446011039/test-framework/core/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ jersey-test-framework-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ jersey-test-framework-core ---
+[INFO] Surefire report directory: /root/workspace/eclipse-ee4j/jersey/446011039/test-framework/core/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng/2.18.1/surefire-testng-2.18.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng/2.18.1/surefire-testng-2.18.1.pom (4 KB at 92.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng-utils/2.18.1/surefire-testng-utils-2.18.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng-utils/2.18.1/surefire-testng-utils-2.18.1.pom (3 KB at 80.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng/2.18.1/surefire-testng-2.18.1.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng-utils/2.18.1/surefire-testng-utils-2.18.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng-utils/2.18.1/surefire-testng-utils-2.18.1.jar (29 KB at 761.7 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng/2.18.1/surefire-testng-2.18.1.jar (36 KB at 689.7 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.glassfish.jersey.test.JerseyTestTest
+Configuring TestNG with: TestNG652Configurator
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.566 sec - in org.glassfish.jersey.test.JerseyTestTest
+
+Results :
+
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building jersey-container-servlet 2.28-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-versions) @ jersey-container-servlet ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.16:check (verify) @ jersey-container-servlet ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.7:parse-version (parse-version) @ jersey-container-servlet ---
+[INFO] 
+[INFO] --- maven-istack-commons-plugin:2.6.1:rs-gen (default) @ jersey-container-servlet ---
+Resources:
+org/glassfish/jersey/servlet/init/internal/localization.properties
+Skipping /root/workspace/eclipse-ee4j/jersey/446011039/containers/jersey-servlet/src/main/resources/org/glassfish/jersey/servlet/init/internal/localization.properties
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.7:add-source (default) @ jersey-container-servlet ---
+[INFO] Source directory: /root/workspace/eclipse-ee4j/jersey/446011039/containers/jersey-servlet/target/generated-sources/rsrc-gen added.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ jersey-container-servlet ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ jersey-container-servlet ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 6 source files to /root/workspace/eclipse-ee4j/jersey/446011039/containers/jersey-servlet/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ jersey-container-servlet ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/eclipse-ee4j/jersey/446011039/containers/jersey-servlet/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ jersey-container-servlet ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ jersey-container-servlet ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building jersey-container-grizzly2-servlet 2.28-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-versions) @ jersey-container-grizzly2-servlet ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.16:check (verify) @ jersey-container-grizzly2-servlet ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ jersey-container-grizzly2-servlet ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] skip non existing resourceDirectory /root/workspace/eclipse-ee4j/jersey/446011039/containers/grizzly2-servlet/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ jersey-container-grizzly2-servlet ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to /root/workspace/eclipse-ee4j/jersey/446011039/containers/grizzly2-servlet/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ jersey-container-grizzly2-servlet ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/eclipse-ee4j/jersey/446011039/containers/grizzly2-servlet/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ jersey-container-grizzly2-servlet ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ jersey-container-grizzly2-servlet ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building jersey-test-framework-providers 2.28-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-versions) @ project ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.16:check (verify) @ project ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building jersey-test-framework-provider-grizzly2 2.28-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-versions) @ jersey-test-framework-provider-grizzly2 ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.16:check (verify) @ jersey-test-framework-provider-grizzly2 ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ jersey-test-framework-provider-grizzly2 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ jersey-test-framework-provider-grizzly2 ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 3 source files to /root/workspace/eclipse-ee4j/jersey/446011039/test-framework/providers/grizzly2/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ jersey-test-framework-provider-grizzly2 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/eclipse-ee4j/jersey/446011039/test-framework/providers/grizzly2/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ jersey-test-framework-provider-grizzly2 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ jersey-test-framework-provider-grizzly2 ---
+[INFO] Surefire report directory: /root/workspace/eclipse-ee4j/jersey/446011039/test-framework/providers/grizzly2/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.glassfish.jersey.test.grizzly.AvailablePortGrizzlyTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.201 sec - in org.glassfish.jersey.test.grizzly.AvailablePortGrizzlyTest
+Running org.glassfish.jersey.test.grizzly.web.GrizzlyRequestDispatchFilterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.683 sec - in org.glassfish.jersey.test.grizzly.web.GrizzlyRequestDispatchFilterTest
+Running org.glassfish.jersey.test.grizzly.web.AvailablePortGrizzlyWebTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.349 sec - in org.glassfish.jersey.test.grizzly.web.AvailablePortGrizzlyWebTest
+Running org.glassfish.jersey.test.grizzly.web.context.GrizzlyWebContextPathTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.684 sec - in org.glassfish.jersey.test.grizzly.web.context.GrizzlyWebContextPathTest
+Running org.glassfish.jersey.test.grizzly.web.GrizzlyWebTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.451 sec - in org.glassfish.jersey.test.grizzly.web.GrizzlyWebTest
+Running org.glassfish.jersey.test.grizzly.web.GrizzlyWebServletAndFilterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.235 sec - in org.glassfish.jersey.test.grizzly.web.GrizzlyWebServletAndFilterTest
+Running org.glassfish.jersey.test.grizzly.web.GrizzlyWebFixedRequestSizeTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.189 sec - in org.glassfish.jersey.test.grizzly.web.GrizzlyWebFixedRequestSizeTest
+Running org.glassfish.jersey.test.grizzly.web.GrizzlyWebInjectionTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.691 sec - in org.glassfish.jersey.test.grizzly.web.GrizzlyWebInjectionTest
+Running org.glassfish.jersey.test.grizzly.BaseUriTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.234 sec - in org.glassfish.jersey.test.grizzly.BaseUriTest
+Running org.glassfish.jersey.test.grizzly.pckg.GrizzlyPackageTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.328 sec - in org.glassfish.jersey.test.grizzly.pckg.GrizzlyPackageTest
+
+Results :
+
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building jersey-connectors 2.28-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-versions) @ project ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.16:check (verify) @ project ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building jersey-connectors-apache 2.28-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-versions) @ jersey-apache-connector ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.16:check (verify) @ jersey-apache-connector ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.7:parse-version (parse-version) @ jersey-apache-connector ---
+[INFO] 
+[INFO] --- maven-istack-commons-plugin:2.6.1:rs-gen (default) @ jersey-apache-connector ---
+Resources:
+org/glassfish/jersey/apache/connector/localization.properties
+Skipping /root/workspace/eclipse-ee4j/jersey/446011039/connectors/apache-connector/src/main/resources/org/glassfish/jersey/apache/connector/localization.properties
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.7:add-source (default) @ jersey-apache-connector ---
+[INFO] Source directory: /root/workspace/eclipse-ee4j/jersey/446011039/connectors/apache-connector/target/generated-sources/rsrc-gen added.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ jersey-apache-connector ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ jersey-apache-connector ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 5 source files to /root/workspace/eclipse-ee4j/jersey/446011039/connectors/apache-connector/target/classes
+[WARNING] /root/workspace/eclipse-ee4j/jersey/446011039/connectors/apache-connector/src/main/java/org/glassfish/jersey/apache/connector/ApacheConnector.java: /root/workspace/eclipse-ee4j/jersey/446011039/connectors/apache-connector/src/main/java/org/glassfish/jersey/apache/connector/ApacheConnector.java uses or overrides a deprecated API.
+[WARNING] /root/workspace/eclipse-ee4j/jersey/446011039/connectors/apache-connector/src/main/java/org/glassfish/jersey/apache/connector/ApacheConnector.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ jersey-apache-connector ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/eclipse-ee4j/jersey/446011039/connectors/apache-connector/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ jersey-apache-connector ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ jersey-apache-connector ---
+[INFO] Surefire report directory: /root/workspace/eclipse-ee4j/jersey/446011039/connectors/apache-connector/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.glassfish.jersey.apache.connector.DisableContentEncodingTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.059 sec - in org.glassfish.jersey.apache.connector.DisableContentEncodingTest
+Running org.glassfish.jersey.apache.connector.RetryHandlerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.716 sec - in org.glassfish.jersey.apache.connector.RetryHandlerTest
+Running org.glassfish.jersey.apache.connector.HttpHeadersTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.541 sec - in org.glassfish.jersey.apache.connector.HttpHeadersTest
+Running org.glassfish.jersey.apache.connector.GZIPContentEncodingTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.389 sec - in org.glassfish.jersey.apache.connector.GZIPContentEncodingTest
+Running org.glassfish.jersey.apache.connector.HttpMethodWithClientFilterTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.509 sec - in org.glassfish.jersey.apache.connector.HttpMethodWithClientFilterTest
+Running org.glassfish.jersey.apache.connector.UnderlyingCookieStoreAccessTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec - in org.glassfish.jersey.apache.connector.UnderlyingCookieStoreAccessTest
+Running org.glassfish.jersey.apache.connector.HttpMethodTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.314 sec - in org.glassfish.jersey.apache.connector.HttpMethodTest
+Running org.glassfish.jersey.apache.connector.AuthTest
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 1.876 sec - in org.glassfish.jersey.apache.connector.AuthTest
+Running org.glassfish.jersey.apache.connector.FollowRedirectsTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.131 sec - in org.glassfish.jersey.apache.connector.FollowRedirectsTest
+Running org.glassfish.jersey.apache.connector.SpecialHeaderTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.11 sec - in org.glassfish.jersey.apache.connector.SpecialHeaderTest
+Running org.glassfish.jersey.apache.connector.ManagedClientTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.21 sec - in org.glassfish.jersey.apache.connector.ManagedClientTest
+Running org.glassfish.jersey.apache.connector.NoEntityTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.316 sec - in org.glassfish.jersey.apache.connector.NoEntityTest
+Running org.glassfish.jersey.apache.connector.LargeDataTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.738 sec - in org.glassfish.jersey.apache.connector.LargeDataTest
+Running org.glassfish.jersey.apache.connector.TimeoutTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.201 sec - in org.glassfish.jersey.apache.connector.TimeoutTest
+Running org.glassfish.jersey.apache.connector.UnderlyingHttpClientAccessTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 sec - in org.glassfish.jersey.apache.connector.UnderlyingHttpClientAccessTest
+Running org.glassfish.jersey.apache.connector.AsyncTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.212 sec - in org.glassfish.jersey.apache.connector.AsyncTest
+Running org.glassfish.jersey.apache.connector.StreamingTest
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.283 sec <<< FAILURE! - in org.glassfish.jersey.apache.connector.StreamingTest
+reuseConnectionTest(org.glassfish.jersey.apache.connector.StreamingTest)  Time elapsed: 0.118 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<1> but was:<0>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:645)
+	at org.junit.Assert.assertEquals(Assert.java:631)
+	at org.glassfish.jersey.apache.connector.StreamingTest.reuseConnectionTest(StreamingTest.java:81)
+
+Running org.glassfish.jersey.apache.connector.TraceSupportTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.404 sec - in org.glassfish.jersey.apache.connector.TraceSupportTest
+Running org.glassfish.jersey.apache.connector.CookieTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.212 sec - in org.glassfish.jersey.apache.connector.CookieTest
+Running org.glassfish.jersey.apache.connector.HelloWorldTest
+CustomLoggingFilter.preFilter called
+CustomLoggingFilter.postFilter called
+CustomLoggingFilter.preFilter called
+CustomLoggingFilter.postFilter called
+CustomLoggingFilter.preFilter called
+CustomLoggingFilter.postFilter called
+CustomLoggingFilter.preFilter called
+CustomLoggingFilter.postFilter called
+CustomLoggingFilter.preFilter called
+CustomLoggingFilter.postFilter called
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.152 sec - in org.glassfish.jersey.apache.connector.HelloWorldTest
+
+Results :
+
+Failed tests: 
+  StreamingTest.reuseConnectionTest:81 expected:<1> but was:<0>
+
+Tests run: 100, Failures: 1, Errors: 0, Skipped: 3
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] jersey ............................................. SUCCESS [  0.678 s]
+[INFO] jersey-archetypes .................................. SUCCESS [  0.341 s]
+[INFO] jersey-archetype-heroku-webapp ..................... SUCCESS [  0.132 s]
+[INFO] jersey-archetype-grizzly2 .......................... SUCCESS [  0.013 s]
+[INFO] jersey-archetype-webapp ............................ SUCCESS [  0.010 s]
+[INFO] jersey-example-java8-webapp ........................ SUCCESS [  0.111 s]
+[INFO] jersey-bom ......................................... SUCCESS [  0.000 s]
+[INFO] jersey-core-common ................................. SUCCESS [ 16.672 s]
+[INFO] jersey-inject ...................................... SUCCESS [  0.013 s]
+[INFO] jersey-inject-hk2 .................................. SUCCESS [  2.178 s]
+[INFO] jersey-core-client ................................. SUCCESS [ 26.581 s]
+[INFO] jersey-media ....................................... SUCCESS [  0.009 s]
+[INFO] jersey-media-jaxb .................................. SUCCESS [  1.589 s]
+[INFO] jersey-core-server ................................. SUCCESS [ 31.132 s]
+[INFO] jersey-containers .................................. SUCCESS [  0.010 s]
+[INFO] jersey-container-grizzly2-http ..................... SUCCESS [  0.160 s]
+[INFO] jersey-container-servlet-core ...................... SUCCESS [  0.712 s]
+[INFO] jersey-test-framework .............................. SUCCESS [  0.009 s]
+[INFO] jersey-test-framework-core ......................... SUCCESS [  1.528 s]
+[INFO] jersey-container-servlet ........................... SUCCESS [  0.202 s]
+[INFO] jersey-container-grizzly2-servlet .................. SUCCESS [  0.159 s]
+[INFO] jersey-test-framework-providers .................... SUCCESS [  0.009 s]
+[INFO] jersey-test-framework-provider-grizzly2 ............ SUCCESS [  6.978 s]
+[INFO] jersey-connectors .................................. SUCCESS [  0.011 s]
+[INFO] jersey-connectors-apache ........................... FAILURE [ 26.680 s]
+[INFO] jersey-test-framework-provider-inmemory ............ SKIPPED
+[INFO] jersey-test-framework-provider-external ............ SKIPPED
+[INFO] jersey-container-jdk-http .......................... SKIPPED
+[INFO] jersey-test-framework-provider-jdk-http ............ SKIPPED
+[INFO] jersey-container-simple-http ....................... SKIPPED
+[INFO] jersey-test-framework-provider-simple .............. SKIPPED
+[INFO] jersey-container-jetty-http ........................ SKIPPED
+[INFO] jersey-test-framework-provider-jetty ............... SKIPPED
+[INFO] jersey-connectors-netty ............................ SKIPPED
+[INFO] jersey-container-netty-http ........................ SKIPPED
+[INFO] jersey-test-framework-provider-netty ............... SKIPPED
+[INFO] jersey-test-framework-provider-bundle .............. SKIPPED
+[INFO] jersey-connectors-grizzly .......................... SKIPPED
+[INFO] jersey-connectors-jdk .............................. SKIPPED
+[INFO] jersey-extensions .................................. SKIPPED
+[INFO] jersey-ext-entity-filtering ........................ SKIPPED
+[INFO] jersey-media-json-jackson .......................... SKIPPED
+[INFO] jersey-connectors-jetty ............................ SKIPPED
+[INFO] jersey-cdi-support ................................. SKIPPED
+[INFO] jersey-ext-cdi1x ................................... SKIPPED
+[INFO] jersey-glassfish-support ........................... SKIPPED
+[INFO] jersey-gf-ejb ...................................... SKIPPED
+[INFO] jersey-container-jetty-servlet ..................... SKIPPED
+[INFO] jersey-ext-bean-validation ......................... SKIPPED
+[INFO] jersey-ext-cdi1x-ban-custom-hk2-binding ............ SKIPPED
+[INFO] jersey-ext-cdi1x-servlet ........................... SKIPPED
+[INFO] jersey-ext-cdi1x-transaction ....................... SKIPPED
+[INFO] jersey-ext-cdi1x-validation ........................ SKIPPED
+[INFO] jersey-ext-weld2-se ................................ SKIPPED
+[INFO] jersey-ext-metainf-services ........................ SKIPPED
+[INFO] jersey-ext-mvc ..................................... SKIPPED
+[INFO] jersey-ext-mvc-bean-validation ..................... SKIPPED
+[INFO] jersey-ext-mvc-freemarker .......................... SKIPPED
+[INFO] jersey-ext-mvc-jsp ................................. SKIPPED
+[INFO] jersey-ext-mvc-mustache ............................ SKIPPED
+[INFO] jersey-ext-proxy-client ............................ SKIPPED
+[INFO] jersey-ext-rx ...................................... SKIPPED
+[INFO] jersey-ext-rx-client-guava ......................... SKIPPED
+[INFO] jersey-ext-rx-client-rxjava ........................ SKIPPED
+[INFO] jersey-ext-rx-client-rxjava2 ....................... SKIPPED
+[INFO] jersey-ext-servlet-portability ..................... SKIPPED
+[INFO] jersey-spring4 ..................................... SKIPPED
+[INFO] jersey-wadl-doclet ................................. SKIPPED
+[INFO] jersey-incubator ................................... SKIPPED
+[INFO] jersey-declarative-linking ......................... SKIPPED
+[INFO] jersey-ext-gae-integration ......................... SKIPPED
+[INFO] jersey-media-kryo .................................. SKIPPED
+[INFO] jersey-open-tracing ................................ SKIPPED
+[INFO] jersey-inject-cdi2-se .............................. SKIPPED
+[INFO] jersey-media-json-binding .......................... SKIPPED
+[INFO] jersey-media-json-jackson1 ......................... SKIPPED
+[INFO] jersey-media-json-jettison ......................... SKIPPED
+[INFO] jersey-media-json-processing ....................... SKIPPED
+[INFO] jersey-media-moxy .................................. SKIPPED
+[INFO] jersey-media-multipart ............................. SKIPPED
+[INFO] jersey-media-sse ................................... SKIPPED
+[INFO] jersey-security .................................... SKIPPED
+[INFO] oauth1-signature ................................... SKIPPED
+[INFO] jersey-security .................................... SKIPPED
+[INFO] oauth1-server ...................................... SKIPPED
+[INFO] oauth2-client ...................................... SKIPPED
+[INFO] jersey-test-framework-util ......................... SKIPPED
+[INFO] jersey-tests ....................................... SKIPPED
+[INFO] jersey-tests-e2e ................................... SKIPPED
+[INFO] jersey-tests-e2e-client ............................ SKIPPED
+[INFO] jersey-tests-e2e-core-common ....................... SKIPPED
+[INFO] jersey-tests-e2e-entity ............................ SKIPPED
+[INFO] jersey-tests-e2e-inject ............................ SKIPPED
+[INFO] jersey-tests-e2e-inject-cdi-se ..................... SKIPPED
+[INFO] jersey-tests-e2e-server ............................ SKIPPED
+[INFO] jersey-tests-e2e-testng ............................ SKIPPED
+[INFO] jersey-tests-integration ........................... SKIPPED
+[INFO] jersey-tests-integration-jersey-async-filter ....... SKIPPED
+[INFO] jersey-tests-cdi-beanvalidation-webapp ............. SKIPPED
+[INFO] jersey-tests-cdi-ejb-webapp ........................ SKIPPED
+[INFO] jersey-tests-cdi-iface-with-non-jaxrs-impl-test-webapp SKIPPED
+[INFO] jersey-tests-integration-cdi-multimodule-lib ....... SKIPPED
+[INFO] jersey-tests-integration-cdi-multimodule-war ....... SKIPPED
+[INFO] jersey-tests-integration-cdi-multimodule-war2 ...... SKIPPED
+[INFO] jersey-tests-integration-cdi-multimodule-ear ....... SKIPPED
+[INFO] jersey-tests-integration-cdi-multimodule ........... SKIPPED
+[INFO] jersey-tests-integration-ejb-multimodule-reload-lib  SKIPPED
+[INFO] jersey-tests-integration-ejb-multimodule-reload-war1 SKIPPED
+[INFO] jersey-tests-integration-ejb-multimodule-reload-war2 SKIPPED
+[INFO] jersey-tests-integration-ejb-multimodule-reload-ear  SKIPPED
+[INFO] jersey-tests-integration-ejb-multimodule-reload .... SKIPPED
+[INFO] jersey-tests-cdi-multipart-webapp .................. SKIPPED
+[INFO] jersey-tests-cdi-webapp ............................ SKIPPED
+[INFO] jersey-tests-cdi-with-jersey-injection-custom-cfg-webapp SKIPPED
+[INFO] jersey-tests-cdi-with-jersey-injection-custom-hk2-banned-webapp SKIPPED
+[INFO] jersey-tests-cdi-with-jersey-injection-webapp ...... SKIPPED
+[INFO] client-connector-provider .......................... SKIPPED
+[INFO] jersey-tests-integration-ejb-multimodule-lib ....... SKIPPED
+[INFO] jersey-tests-integration-ejb-multimodule-war ....... SKIPPED
+[INFO] jersey-tests-integration-ejb-multimodule-ear ....... SKIPPED
+[INFO] jersey-tests-integration-ejb-multimodule ........... SKIPPED
+[INFO] jersey-tests-ejb-webapp ............................ SKIPPED
+[INFO] j-376-reproducer ................................... SKIPPED
+[INFO] jersey-tests-integration-j-441-war1 ................ SKIPPED
+[INFO] jersey-tests-integration-j-441-war2 ................ SKIPPED
+[INFO] jersey-tests-integration-j-441-ear ................. SKIPPED
+[INFO] jersey-tests-integration-j-441 ..................... SKIPPED
+[INFO] jersey-tests-integration-j-59-ejb-lib .............. SKIPPED
+[INFO] jersey-tests-integration-j-59-cdi-war .............. SKIPPED
+[INFO] jersey-tests-integration-j-59-ear .................. SKIPPED
+[INFO] jersey-tests-integration-j-59 ...................... SKIPPED
+[INFO] jersey-tests-component-inject ...................... SKIPPED
+[INFO] jersey-tests-integration-jersey-1107 ............... SKIPPED
+[INFO] jersey-tests-integration-jersey-1223 ............... SKIPPED
+[INFO] jersey-tests-integration-jersey-1604 ............... SKIPPED
+[INFO] jersey-tests-integration-jersey-1667 ............... SKIPPED
+[INFO] jersey-tests-integration-jersey-1829 ............... SKIPPED
+[INFO] jersey-tests-integration-jersey-1883 ............... SKIPPED
+[INFO] jersey-tests-integration-jersey-1928 ............... SKIPPED
+[INFO] jersey-tests-integration-jersey-1960 ............... SKIPPED
+[INFO] jersey-tests-integration-jersey-1964 ............... SKIPPED
+[INFO] jersey-tests-integration-jersey-2031 ............... SKIPPED
+[INFO] jersey-tests-integration-jersey-2136 ............... SKIPPED
+[INFO] jersey-tests-integration-jersey-2137 ............... SKIPPED
+[INFO] jersey-tests-integration-jersey-2154 ............... SKIPPED
+[INFO] jersey-tests-integration-jersey-2160 ............... SKIPPED
+[INFO] jersey-tests-integration-jersey-2164 ............... SKIPPED
+[INFO] jersey-tests-integration-jersey-2167 ............... SKIPPED
+[INFO] jersey-tests-integration-jersey-2176 ............... SKIPPED
+[INFO] jersey-tests-integration-jersey-2184 ............... SKIPPED
+[INFO] jersey-tests-integration-jersey-2255 ............... SKIPPED
+[INFO] jersey-tests-integration-jersey-2322 ............... SKIPPED
+[INFO] jersey-tests-integration-jersey-2335 ............... SKIPPED
+[INFO] jersey-tests-integration-jersey-2421 ............... SKIPPED
+[INFO] jersey-tests-integration-jersey-2551 ............... SKIPPED
+[INFO] jersey-tests-integration-jersey-2612 ............... SKIPPED
+[INFO] jersey-tests-integration-jersey-2637 ............... SKIPPED
+[INFO] jersey-tests-integration-jersey-2654 ............... SKIPPED
+[INFO] jersey-tests-integration-jersey-2673 ............... SKIPPED
+[INFO] jersey-tests-integration-jersey-2689 ............... SKIPPED
+[INFO] jersey-tests-integration-jersey-2704 ............... SKIPPED
+[INFO] jersey-tests-integration-jersey-2776 ............... SKIPPED
+[INFO] jersey-tests-integration-jersey-2794 ............... SKIPPED
+[INFO] jersey-tests-integration-jersey-2846 ............... SKIPPED
+[INFO] jersey-tests-integration-jersey-2878 ............... SKIPPED
+[INFO] jersey-tests-integration-jersey-2892 ............... SKIPPED
+[INFO] jersey-tests-integration-jersey-780 ................ SKIPPED
+[INFO] jersey-tests-integration-portability-jersey-1 ...... SKIPPED
+[INFO] jersey-tests-integration-portability-jersey-2 ...... SKIPPED
+[INFO] jersey-tests-integration-property-check ............ SKIPPED
+[INFO] jersey-tests-integration-jersey-security-digest .... SKIPPED
+[INFO] jersey-tests-integration-servlet-2.5-autodiscovery-1 SKIPPED
+[INFO] jersey-bundles ..................................... SKIPPED
+[INFO] jersey-bundles-jaxrs-ri ............................ SKIPPED
+[INFO] jersey-tests-integration-servlet-2.5-autodiscovery-2 SKIPPED
+[INFO] jersey-tests-integration-servlet-2.5-filter ........ SKIPPED
+[INFO] jersey-tests-integration-servlet-2.5-inflector-1 ... SKIPPED
+[INFO] jersey-tests-integration-servlet-2.5-init-1 ........ SKIPPED
+[INFO] jersey-tests-integration-servlet-2.5-init-2 ........ SKIPPED
+[INFO] jersey-tests-integration-servlet-2.5-init-3 ........ SKIPPED
+[INFO] jersey-tests-integration-servlet-2.5-init-4 ........ SKIPPED
+[INFO] jersey-tests-integration-servlet-2.5-init-5 ........ SKIPPED
+[INFO] jersey-tests-integration-servlet-2.5-init-6 ........ SKIPPED
+[INFO] jersey-tests-integration-servlet-2.5-init-7 ........ SKIPPED
+[INFO] jersey-tests-integration-servlet-2.5-init-8 ........ SKIPPED
+[INFO] jersey-tests-integration-servlet-2.5-mvc-1 ......... SKIPPED
+[INFO] jersey-tests-integration-servlet-2.5-mvc-2 ......... SKIPPED
+[INFO] jersey-tests-integration-servlet-2.5-mvc-3 ......... SKIPPED
+[INFO] jersey-tests-integration-servlet-2.5-reload ........ SKIPPED
+[INFO] jersey-tests-integration-servlet-3-async ........... SKIPPED
+[INFO] jersey-tests-integration-servlet-3-chunked-io ...... SKIPPED
+[INFO] jersey-tests-integration-servlet-3-filter .......... SKIPPED
+[INFO] jersey-tests-integration-servlet-3-gf-async ........ SKIPPED
+[INFO] jersey-tests-integration-servlet-3-inflector-1 ..... SKIPPED
+[INFO] jersey-tests-integration-servlet-3-init-1 .......... SKIPPED
+[INFO] jersey-tests-integration-servlet-3-init-2 .......... SKIPPED
+[INFO] jersey-tests-integration-servlet-3-init-3 .......... SKIPPED
+[INFO] jersey-tests-integration-servlet-3-init-4 .......... SKIPPED
+[INFO] jersey-tests-integration-servlet-3-init-5 .......... SKIPPED
+[INFO] jersey-tests-integration-servlet-3-init-6 .......... SKIPPED
+[INFO] jersey-tests-integration-servlet-3-init-7 .......... SKIPPED
+[INFO] jersey-tests-integration-servlet-3-init-8 .......... SKIPPED
+[INFO] jersey-tests-integration-servlet-3-init-provider ... SKIPPED
+[INFO] jersey-tests-integration-servlet-3-params .......... SKIPPED
+[INFO] jersey-tests-integration-servlet-3-sse-1 ........... SKIPPED
+[INFO] jersey-tests-integration-servlet-request-wrapper-binding-2 SKIPPED
+[INFO] jersey-tests-integration-servlet-request-wrapper-binding SKIPPED
+[INFO] jersey-tests-integration-servlet-tests ............. SKIPPED
+[INFO] jersey-tests-integration-sonar-test ................ SKIPPED
+[INFO] jersey-tests-integration-tracing-support ........... SKIPPED
+[INFO] jersey-test-framework-memleak-test-common .......... SKIPPED
+[INFO] jersey-tests-memleak ............................... SKIPPED
+[INFO] jersey-tests-memleak-redeployment .................. SKIPPED
+[INFO] jersey-tests-memleak-redeployment-leaking-test-app . SKIPPED
+[INFO] jersey-examples .................................... SKIPPED
+[INFO] jersey-examples-webapp-parent-pom .................. SKIPPED
+[INFO] jersey-examples-helloworld-webapp .................. SKIPPED
+[INFO] jersey-test-framework-maven ........................ SKIPPED
+[INFO] jersey-test-framework-maven-container-runner-plugin  SKIPPED
+[INFO] jersey-tests-memleak-redeployment-hello-world-app-ref SKIPPED
+[INFO] jersey-tests-memleak-redeployment-no-jersey-app .... SKIPPED
+[INFO] jersey-tests-memleak-redeployment-threadlocals-app . SKIPPED
+[INFO] jersey-tests-memleak-testcase ...................... SKIPPED
+[INFO] jersey-tests-memleak-testcase-bean-param-leak ...... SKIPPED
+[INFO] jersey-tests-memleak-testcase-shutdown-hook-leak ... SKIPPED
+[INFO] jersey-tests-memleak-testcase-shutdown-hook-leak-client SKIPPED
+[INFO] jersey-tests-memleak-testcase-leaking-test-app ..... SKIPPED
+[INFO] jersey-tests-osgi .................................. SKIPPED
+[INFO] jersey-tests-osgi-functional ....................... SKIPPED
+[INFO] jersey-tests-stress ................................ SKIPPED
+[INFO] jersey-tests-performance ........................... SKIPPED
+[INFO] performance-test-benchmarks ........................ SKIPPED
+[INFO] jersey-tests-performance-runners ................... SKIPPED
+[INFO] jersey-grizzly-runner .............................. SKIPPED
+[INFO] jersey-tests-performance-testcase .................. SKIPPED
+[INFO] jersey-tests-performance-assemblies ................ SKIPPED
+[INFO] jersey-tests-performance-filter-dynamic-test ....... SKIPPED
+[INFO] jersey-tests-performance-filter-global-test ........ SKIPPED
+[INFO] jersey-tests-performance-filter-name-test .......... SKIPPED
+[INFO] jersey-tests-performance-interceptor-dynamic-test .. SKIPPED
+[INFO] jersey-tests-performance-interceptor-global-test ... SKIPPED
+[INFO] jersey-tests-performance-interceptor-name-test ..... SKIPPED
+[INFO] jersey-tests-performance-custom-provider-test ...... SKIPPED
+[INFO] jersey-tests-performance-json-jackson-test ......... SKIPPED
+[INFO] jersey-tests-performance-json-moxy-test ............ SKIPPED
+[INFO] jersey-tests-performance-mbw-kryo-test ............. SKIPPED
+[INFO] jersey-tests-performance-text-plain-test ........... SKIPPED
+[INFO] jersey-tests-performance-xml-jaxb-test ............. SKIPPED
+[INFO] jersey-tests-performance-xml-moxy-test ............. SKIPPED
+[INFO] jersey-tests-performance-param-srl ................. SKIPPED
+[INFO] jersey-tests-performance-proxy-injection-test ...... SKIPPED
+[INFO] performance-test-tools ............................. SKIPPED
+[INFO] jersey-examples-assemblies ......................... SKIPPED
+[INFO] jersey-examples-bookmark ........................... SKIPPED
+[INFO] jersey-examples-bookmark-em ........................ SKIPPED
+[INFO] jersey-examples-bookstore-webapp ................... SKIPPED
+[INFO] jersey-examples-cdi-webapp ......................... SKIPPED
+[INFO] jersey-examples-clipboard .......................... SKIPPED
+[INFO] jersey-examples-clipboard-programmatic ............. SKIPPED
+[INFO] jersey-examples-declarative-linking ................ SKIPPED
+[INFO] jersey-examples-entity-filtering ................... SKIPPED
+[INFO] jersey-examples-entity-filtering-selectable ........ SKIPPED
+[INFO] jersey-examples-entity-filtering-security .......... SKIPPED
+[INFO] jersey-examples-extended-wadl-webapp ............... SKIPPED
+[INFO] jersey-examples-exception-mapping .................. SKIPPED
+[INFO] jersey-examples-freemarker-webapp .................. SKIPPED
+[INFO] jersey-examples-groovy ............................. SKIPPED
+[INFO] jersey-examples-helloworld ......................... SKIPPED
+[INFO] jersey-examples-helloworld-benchmark ............... SKIPPED
+[INFO] jersey-examples-helloworld-cdi2-se ................. SKIPPED
+[INFO] jersey-examples-helloworld-netty ................... SKIPPED
+[INFO] jersey-examples-helloworld-programmatic ............ SKIPPED
+[INFO] jersey-examples-helloworld-pure-jax-rs ............. SKIPPED
+[INFO] jersey-examples-helloworld-weld .................... SKIPPED
+[INFO] jersey-examples-helloworld-spring-webapp ........... SKIPPED
+[INFO] helloworld-spring-annotations ...................... SKIPPED
+[INFO] jersey-examples-http-patch ......................... SKIPPED
+[INFO] jersey-examples-http-trace ......................... SKIPPED
+[INFO] jersey-examples-https-clientserver-grizzly ......... SKIPPED
+[INFO] jersey-examples-https-server-glassfish ............. SKIPPED
+[INFO] jersey-examples-java8-webapp ....................... SKIPPED
+[INFO] jersey-examples-jaxb ............................... SKIPPED
+[INFO] jersey-examples-jaxrs-types-injection .............. SKIPPED
+[INFO] jersey-examples-ejb ................................ SKIPPED
+[INFO] jersey-examples-json-binding-webapp ................ SKIPPED
+[INFO] jersey-examples-json-jackson ....................... SKIPPED
+[INFO] jersey-examples-json-jackson1 ...................... SKIPPED
+[INFO] jersey-examples-json-jettison ...................... SKIPPED
+[INFO] jersey-examples-json-moxy .......................... SKIPPED
+[INFO] jersey-examples-json-processing-webapp ............. SKIPPED
+[INFO] jersey-examples-json-with-padding .................. SKIPPED
+[INFO] jersey-examples-managed-beans-webapp ............... SKIPPED
+[INFO] jersey-examples-managed-client ..................... SKIPPED
+[INFO] jersey-examples-managed-client-webapp .............. SKIPPED
+[INFO] jersey-examples-managed-client-simple-webapp ....... SKIPPED
+[INFO] jersey-examples-multipart-webapp ................... SKIPPED
+[INFO] jersey-examples-open-tracing ....................... SKIPPED
+[INFO] jersey-examples-osgi-helloworld-webapp ............. SKIPPED
+[INFO] jersey-examples-osgi-helloworld-webapp-lib ......... SKIPPED
+[INFO] jersey-examples-osgi-helloworld-webapp-additional .. SKIPPED
+[INFO] jersey-examples-osgi-helloworld-webapp-alternate-version SKIPPED
+[INFO] jersey-examples-osgi-helloworld-webapp-wab ......... SKIPPED
+[INFO] jersey-examples-osgi-helloworld-webapp-test ........ SKIPPED
+[INFO] jersey-examples-osgi-http-service .................. SKIPPED
+[INFO] jersey-examples-osgi-http-service-bundle ........... SKIPPED
+[INFO] jersey-examples-osgi-http-service-test ............. SKIPPED
+[INFO] oauth-client-twitter ............................... SKIPPED
+[INFO] jersey-examples-reload ............................. SKIPPED
+[INFO] jersey-examples-rx-client-webapp ................... SKIPPED
+[INFO] jersey-examples-server-async ....................... SKIPPED
+[INFO] jersey-examples-server-async-managed ............... SKIPPED
+[INFO] jersey-examples-server-async-standalone ............ SKIPPED
+[INFO] jersey-examples-server-async-standalone-client ..... SKIPPED
+[INFO] jersey-examples-server-async-standalone-webapp ..... SKIPPED
+[INFO] jersey-examples-server-sent-events-jersey .......... SKIPPED
+[INFO] jersey-examples-server-sent-events-jaxrs ........... SKIPPED
+[INFO] jersey-examples-servlet3-webapp .................... SKIPPED
+[INFO] jersey-examples-simple-console ..................... SKIPPED
+[INFO] jersey-examples-sse-item-store-jersey-webapp ....... SKIPPED
+[INFO] jersey-examples-sse-item-store-jaxrs-webapp ........ SKIPPED
+[INFO] jersey-examples-sse-twitter-aggregator ............. SKIPPED
+[INFO] jersey-examples-system-properties .................. SKIPPED
+[INFO] jersey-examples-moxy ............................... SKIPPED
+[INFO] jersey-test-framework-maven-custom-enforcer-rules .. SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 02:04 min
+[INFO] Finished at: 2018-10-30T17:43:40+01:00
+[INFO] Final Memory: 210M/1727M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.18.1:test (default-test) on project jersey-apache-connector: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/eclipse-ee4j/jersey/446011039/connectors/apache-connector/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :jersey-apache-connector
