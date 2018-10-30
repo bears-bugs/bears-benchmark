@@ -1,0 +1,149 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 1410, 
+      "numberRunning": 1411, 
+      "numberFailing": 1, 
+      "numberErroring": 0, 
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError", 
+          "isError": false, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 20
+    }, 
+    "failingModule": "/root/workspace/eclipse-ee4j/jersey/446011039/connectors/apache-connector", 
+    "failureDetails": [
+      {
+        "failureName": "java.lang.AssertionError", 
+        "detail": "expected:<1> but was:<0>", 
+        "isError": false, 
+        "testClass": "org.glassfish.jersey.apache.connector.StreamingTest", 
+        "testMethod": "reuseConnectionTest"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 2, 
+        "numberRunning": 3, 
+        "testClass": "org.glassfish.jersey.apache.connector.StreamingTest", 
+        "numberFailing": 1, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/eclipse-ee4j/jersey/builds/448342307", 
+      "date": "Oct 30, 2018 3:16:26 PM", 
+      "id": 448342307
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/eclipse-ee4j/jersey/builds/446011039", 
+      "date": "Oct 25, 2018 8:11:02 AM", 
+      "id": 446011039
+    }
+  }, 
+  "repository": {
+    "name": "eclipse-ee4j/jersey", 
+    "url": "https://github.com/eclipse-ee4j/jersey", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 129954828
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/eclipse-ee4j/jersey/commit/0cfff66c55e31d44cc02b615e274ed9fb3a3593c", 
+      "sha": "0cfff66c55e31d44cc02b615e274ed9fb3a3593c", 
+      "branchName": "master", 
+      "date": "Oct 30, 2018 2:48:37 PM", 
+      "repoName": "eclipse-ee4j/jersey"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/eclipse-ee4j/jersey/commit/e0d0c7cbecdb99697234406fbfee896dd0f58f54", 
+      "sha": "e0d0c7cbecdb99697234406fbfee896dd0f58f54", 
+      "branchName": "master", 
+      "date": "Oct 25, 2018 7:42:35 AM", 
+      "repoName": "eclipse-ee4j/jersey"
+    }
+  }, 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 20, 
+      "numberDeleted": 3
+    }
+  }, 
+  "type": "passing_passing", 
+  "projectMetrics": {
+    "numberSourceFiles": 1309, 
+    "numberLibrariesFailingModule": 35, 
+    "numberTestFiles": 453, 
+    "numberModules": 74
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 252553696, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 446693376, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Oct 30, 2018 6:34:36 PM", 
+    "projectRootPomPath": "./workspace/eclipse-ee4j/jersey/446011039/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          1, 
+          2, 
+          0, 
+          1, 
+          419
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 423
+      }, 
+      "testing": {
+        "stepDurations": [
+          128
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 128
+      }, 
+      "cloning": {
+        "stepDurations": [
+          7
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 7
+      }
+    }, 
+    "reproductionDateBeginning": "Oct 30, 2018 5:34:20 PM", 
+    "totalDuration": 3607
+  }
+}
