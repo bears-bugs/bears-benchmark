@@ -1,0 +1,149 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 2550, 
+      "numberRunning": 2551, 
+      "numberFailing": 1, 
+      "numberErroring": 0, 
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError", 
+          "isError": false, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 0
+    }, 
+    "failingModule": "/root/workspace/SonarSource/sonar-java/448345377/java-checks", 
+    "failureDetails": [
+      {
+        "failureName": "java.lang.AssertionError", 
+        "detail": "Expected {82=[{}]}", 
+        "isError": false, 
+        "testClass": "org.sonar.java.checks.EmptyBlockCheckTest", 
+        "testMethod": "test"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 0, 
+        "numberRunning": 1, 
+        "testClass": "org.sonar.java.checks.EmptyBlockCheckTest", 
+        "numberFailing": 1, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/SonarSource/sonar-java/builds/448348025", 
+      "date": "Oct 30, 2018 4:13:09 PM", 
+      "id": 448348025
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/SonarSource/sonar-java/builds/448345377", 
+      "date": "Oct 30, 2018 3:36:51 PM", 
+      "id": 448345377
+    }
+  }, 
+  "repository": {
+    "name": "SonarSource/sonar-java", 
+    "url": "https://github.com/SonarSource/sonar-java", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 5674787
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/SonarSource/sonar-java/commit/55138f698948f600cb5e3609a52d7412f8b9eb51", 
+      "sha": "55138f698948f600cb5e3609a52d7412f8b9eb51", 
+      "branchName": "master", 
+      "date": "Oct 30, 2018 2:59:30 PM", 
+      "repoName": "SonarSource/sonar-java"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/SonarSource/sonar-java/commit/436c55b523e2b5dfd2e71fc0378a0bee5d3863e5", 
+      "sha": "436c55b523e2b5dfd2e71fc0378a0bee5d3863e5", 
+      "branchName": "master", 
+      "date": "Oct 30, 2018 2:53:55 PM", 
+      "repoName": "SonarSource/sonar-java"
+    }
+  }, 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 2, 
+      "numberDeleted": 5
+    }
+  }, 
+  "type": "passing_passing", 
+  "projectMetrics": {
+    "numberSourceFiles": 1009, 
+    "numberLibrariesFailingModule": 64, 
+    "numberTestFiles": 889, 
+    "numberModules": 19
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 424732080, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 779091968, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Oct 30, 2018 6:44:02 PM", 
+    "projectRootPomPath": "./workspace/SonarSource/sonar-java/448345377/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          0, 
+          1, 
+          0, 
+          1, 
+          102
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 104
+      }, 
+      "testing": {
+        "stepDurations": [
+          133
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 133
+      }, 
+      "cloning": {
+        "stepDurations": [
+          44
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 44
+      }
+    }, 
+    "reproductionDateBeginning": "Oct 30, 2018 6:35:14 PM", 
+    "totalDuration": 520
+  }
+}
