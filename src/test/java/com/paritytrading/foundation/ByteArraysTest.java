@@ -111,4 +111,25 @@ public class ByteArraysTest {
         assertArrayEquals(new byte[] { 0x01, 0x02, 0x03, 0x00, 0x00, 0x00, 0x00, 0x00 }, a);
     }
 
+    @Test
+    public void shortRoundtrip() {
+        short s = 0x01FF;
+
+        assertEquals(s, ByteArrays.packShort(ByteArrays.unpackShort(s), (byte)0x00));
+    }
+
+    @Test
+    public void intRoundtrip() {
+        int i = 0x017F81FF;
+
+        assertEquals(i, ByteArrays.packInt(ByteArrays.unpackInt(i), (byte)0x00));
+    }
+
+    @Test
+    public void longRoundtrip() {
+        long l = 0x01407F81C0FFL;
+
+        assertEquals(l, ByteArrays.packLong(ByteArrays.unpackLong(l), (byte)0x00));
+    }
+
 }
