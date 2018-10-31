@@ -1,0 +1,166 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 77, 
+      "numberRunning": 80, 
+      "numberFailing": 3, 
+      "numberErroring": 0, 
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError", 
+          "isError": false, 
+          "occurrences": 3
+        }
+      ], 
+      "numberSkipping": 0
+    }, 
+    "failingModule": "/root/workspace/paritytrading/foundation/364820616", 
+    "failureDetails": [
+      {
+        "failureName": "java.lang.AssertionError", 
+        "detail": "expected:<511> but was:<-1>", 
+        "isError": false, 
+        "testMethod": "shortRoundtrip", 
+        "testClass": "com.paritytrading.foundation.ByteArraysTest"
+      }, 
+      {
+        "failureName": "java.lang.AssertionError", 
+        "detail": "expected:<1376528744703> but was:<-1>", 
+        "isError": false, 
+        "testMethod": "longRoundtrip", 
+        "testClass": "com.paritytrading.foundation.ByteArraysTest"
+      }, 
+      {
+        "failureName": "java.lang.AssertionError", 
+        "detail": "expected:<25133567> but was:<-1>", 
+        "isError": false, 
+        "testMethod": "intRoundtrip", 
+        "testClass": "com.paritytrading.foundation.ByteArraysTest"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 13, 
+        "numberRunning": 16, 
+        "testClass": "com.paritytrading.foundation.ByteArraysTest", 
+        "numberFailing": 3, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/paritytrading/foundation/builds/448899327", 
+      "date": "Oct 31, 2018 4:03:20 PM", 
+      "id": 448899327
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/paritytrading/foundation/builds/364820616", 
+      "date": "Apr 10, 2018 11:10:56 PM", 
+      "id": 364820616
+    }
+  }, 
+  "repository": {
+    "name": "paritytrading/foundation", 
+    "url": "https://github.com/paritytrading/foundation", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 55721706
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/paritytrading/foundation/commit/fa92de0233a116cdf14764657651c6158dd97004", 
+      "sha": "fa92de0233a116cdf14764657651c6158dd97004", 
+      "branchName": "master", 
+      "date": "Oct 31, 2018 4:02:00 PM", 
+      "repoName": "paritytrading/foundation"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/paritytrading/foundation/commit/334b11fcbe2aa44f9c29db2043cddf60930541c0", 
+      "sha": "334b11fcbe2aa44f9c29db2043cddf60930541c0", 
+      "branchName": "master", 
+      "date": "Apr 10, 2018 11:08:55 PM", 
+      "repoName": "paritytrading/foundation"
+    }
+  }, 
+  "bugName": "paritytrading-foundation-364820616-448899327", 
+  "version": "latest", 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 1, 
+      "numberDeleted": 1
+    }
+  }, 
+  "type": "passing_passing", 
+  "bugId": "Bears-232", 
+  "projectMetrics": {
+    "numberSourceFiles": 5, 
+    "numberLibrariesFailingModule": 2, 
+    "numberTestFiles": 3, 
+    "numberModules": 1
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 287827424, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 390070272, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Oct 31, 2018 4:04:46 PM", 
+    "projectRootPomPath": "./workspace/paritytrading/foundation/364820616/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          0, 
+          0, 
+          0, 
+          0, 
+          20
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 20
+      }, 
+      "testing": {
+        "stepDurations": [
+          9
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 9
+      }, 
+      "cloning": {
+        "stepDurations": [
+          1
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 1
+      }
+    }, 
+    "reproductionDateBeginning": "Oct 31, 2018 4:03:41 PM", 
+    "totalDuration": 60
+  }
+}
