@@ -90,7 +90,7 @@ public class ByteArrays {
         int  i = 0;
 
         for (; i < Math.min(a.length, size); i++)
-            l = (l << 8) | a[i];
+            l = (l << 8) | a[i] & 0xFF;
 
         for (; i < size; i++)
             l = (l << 8) | pad;
