@@ -1,0 +1,152 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 115, 
+      "numberRunning": 116, 
+      "numberFailing": 0, 
+      "numberErroring": 1, 
+      "failures": [
+        {
+          "failureName": "java.lang.IllegalArgumentException", 
+          "isError": true, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 0
+    }, 
+    "failingModule": "/root/workspace/classgraph/classgraph/448207270", 
+    "failureDetails": [
+      {
+        "failureName": "java.lang.IllegalArgumentException", 
+        "detail": "Can only blacklist jars by leafname: /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar", 
+        "isError": true, 
+        "testMethod": "testNoArgsBlacklistLibOrExtJars", 
+        "testClass": "io.github.classgraph.issues.issue277.Issue227Test"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 1, 
+        "numberRunning": 2, 
+        "testClass": "io.github.classgraph.issues.issue277.Issue227Test", 
+        "numberFailing": 0, 
+        "numberErroring": 1, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/classgraph/classgraph/builds/449613955", 
+      "date": "Nov 2, 2018 12:52:54 AM", 
+      "id": 449613955
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/classgraph/classgraph/builds/448207270", 
+      "date": "Oct 30, 2018 9:25:29 AM", 
+      "id": 448207270
+    }
+  }, 
+  "repository": {
+    "name": "classgraph/classgraph", 
+    "url": "https://github.com/classgraph/classgraph", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 23050110
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/classgraph/classgraph/commit/554fbfd61125b7bc56f3287005952199a9f19609", 
+      "sha": "554fbfd61125b7bc56f3287005952199a9f19609", 
+      "branchName": "master", 
+      "date": "Nov 2, 2018 12:50:42 AM", 
+      "repoName": "classgraph/classgraph"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/classgraph/classgraph/commit/6307200cbe000f4e8860a65b2b2c64de53a21750", 
+      "sha": "6307200cbe000f4e8860a65b2b2c64de53a21750", 
+      "branchName": "master", 
+      "date": "Oct 30, 2018 9:19:22 AM", 
+      "repoName": "classgraph/classgraph"
+    }
+  }, 
+  "bugName": "classgraph-classgraph-448207270-449613955", 
+  "version": "latest", 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 1, 
+      "numberDeleted": 1
+    }
+  }, 
+  "type": "passing_passing", 
+  "bugId": "Bears-202", 
+  "projectMetrics": {
+    "numberSourceFiles": 106, 
+    "numberLibrariesFailingModule": 21, 
+    "numberTestFiles": 135, 
+    "numberModules": 1
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 371026416, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 486014976, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Nov 2, 2018 12:55:48 AM", 
+    "projectRootPomPath": "./workspace/classgraph/classgraph/448207270/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          0, 
+          0, 
+          0, 
+          0, 
+          56
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 56
+      }, 
+      "testing": {
+        "stepDurations": [
+          26
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 26
+      }, 
+      "cloning": {
+        "stepDurations": [
+          9
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 9
+      }
+    }, 
+    "reproductionDateBeginning": "Nov 2, 2018 12:53:10 AM", 
+    "totalDuration": 152
+  }
+}
