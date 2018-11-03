@@ -1,0 +1,152 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 8605, 
+      "numberRunning": 8606, 
+      "numberFailing": 0, 
+      "numberErroring": 1, 
+      "failures": [
+        {
+          "failureName": "java.lang.IllegalStateException", 
+          "isError": true, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 24
+    }, 
+    "failingModule": "/root/workspace/raphw/byte-buddy/449069943/byte-buddy-dep", 
+    "failureDetails": [
+      {
+        "failureName": "java.lang.IllegalStateException", 
+        "detail": "public static final java.lang.String net.bytebuddy.implementation.FieldAccessorOtherTest$StaticFieldHolder.FOO is not declared by class net.bytebuddy.renamed.java.util.concurrent.Callable$ByteBuddy$QG8psM5c", 
+        "isError": true, 
+        "testMethod": "testStaticFieldOfOtherClass", 
+        "testClass": "net.bytebuddy.implementation.FieldAccessorOtherTest"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 18, 
+        "numberRunning": 19, 
+        "testClass": "net.bytebuddy.implementation.FieldAccessorOtherTest", 
+        "numberFailing": 0, 
+        "numberErroring": 1, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/raphw/byte-buddy/builds/450332514", 
+      "date": "Nov 3, 2018 11:06:24 PM", 
+      "id": 450332514
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/raphw/byte-buddy/builds/449069943", 
+      "date": "Oct 31, 2018 10:20:58 PM", 
+      "id": 449069943
+    }
+  }, 
+  "repository": {
+    "name": "raphw/byte-buddy", 
+    "url": "https://github.com/raphw/byte-buddy", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 14696091
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/raphw/byte-buddy/commit/84b475284384fe388c0c5f9553265c695f93d1ee", 
+      "sha": "84b475284384fe388c0c5f9553265c695f93d1ee", 
+      "branchName": "master", 
+      "date": "Nov 3, 2018 11:01:18 PM", 
+      "repoName": "raphw/byte-buddy"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/raphw/byte-buddy/commit/5c76c3a53c42948c9ef191c9c3300f1dc6682559", 
+      "sha": "5c76c3a53c42948c9ef191c9c3300f1dc6682559", 
+      "branchName": "master", 
+      "date": "Oct 31, 2018 10:14:57 PM", 
+      "repoName": "raphw/byte-buddy"
+    }
+  }, 
+  "bugName": "raphw-byte-buddy-449069943-450332514", 
+  "version": "latest", 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 6, 
+      "numberDeleted": 2
+    }
+  }, 
+  "type": "passing_passing", 
+  "bugId": "Bears-237", 
+  "projectMetrics": {
+    "numberSourceFiles": 311, 
+    "numberLibrariesFailingModule": 11, 
+    "numberTestFiles": 725, 
+    "numberModules": 7
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 869923568, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 2165309440, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Nov 3, 2018 11:19:48 PM", 
+    "projectRootPomPath": "./workspace/raphw/byte-buddy/449069943/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          0, 
+          2, 
+          0, 
+          1, 
+          142
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 145
+      }, 
+      "testing": {
+        "stepDurations": [
+          67
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 67
+      }, 
+      "cloning": {
+        "stepDurations": [
+          263
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 263
+      }
+    }, 
+    "reproductionDateBeginning": "Nov 3, 2018 11:08:09 PM", 
+    "totalDuration": 693
+  }
+}
