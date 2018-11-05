@@ -1,0 +1,174 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 1611, 
+      "numberRunning": 1612, 
+      "numberFailing": 0, 
+      "numberErroring": 1, 
+      "failures": [
+        {
+          "failureName": "java.lang.Exception", 
+          "isError": true, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 10
+    }, 
+    "failingModule": "/root/workspace/apache/incubator-dubbo/450828157/dubbo-config/dubbo-config-api", 
+    "failureDetails": [
+      {
+        "failureName": "java.lang.Exception", 
+        "detail": "Unexpected exception, expected<java.lang.IllegalStateException> but was<java.lang.IllegalArgumentException>", 
+        "isError": true, 
+        "testMethod": "checkStubAndMock8", 
+        "testClass": "com.alibaba.dubbo.config.AbstractInterfaceConfigTest"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 37, 
+        "numberRunning": 38, 
+        "testClass": "com.alibaba.dubbo.config.AbstractInterfaceConfigTest", 
+        "numberFailing": 0, 
+        "numberErroring": 1, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/apache/incubator-dubbo/builds/450884276", 
+      "date": "Nov 5, 2018 3:39:54 PM", 
+      "id": 450884276
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/apache/incubator-dubbo/builds/450828157", 
+      "date": "Nov 5, 2018 1:22:32 PM", 
+      "id": 450828157
+    }
+  }, 
+  "repository": {
+    "name": "apache/incubator-dubbo", 
+    "url": "https://github.com/apache/incubator-dubbo", 
+    "isFork": false, 
+    "pullRequestId": 2739, 
+    "isPullRequest": true, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 4710920
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/apache/incubator-dubbo/commit/c4dfc3acfde53e35a95279848002bb8ccfe7a2a6", 
+      "sha": "c4dfc3acfde53e35a95279848002bb8ccfe7a2a6", 
+      "branchName": "2.6.x", 
+      "date": "Nov 5, 2018 3:18:05 PM", 
+      "repoName": "apache/incubator-dubbo"
+    }, 
+    "fixerBuildBaseRepo": {
+      "url": "https://github.com/apache/incubator-dubbo/commit/f2d73f7914c03cc95b884b69b3e660ee0a7ae033", 
+      "sha": "f2d73f7914c03cc95b884b69b3e660ee0a7ae033", 
+      "branchName": "2.6.x", 
+      "date": "Nov 5, 2018 8:24:29 AM", 
+      "repoName": "apache/incubator-dubbo"
+    }, 
+    "fixerBuildForkRepo": {
+      "url": "https://github.com/beiwei30/incubator-dubbo/commit/9a855c7082bd2b6152faa16dbf4df40acc7453c3", 
+      "sha": "9a855c7082bd2b6152faa16dbf4df40acc7453c3", 
+      "branchName": "mock", 
+      "date": "Nov 5, 2018 3:18:05 PM", 
+      "repoName": "beiwei30/incubator-dubbo"
+    }, 
+    "buggyBuildForkRepo": {
+      "url": "https://github.com/beiwei30/incubator-dubbo/commit/9a855c7082bd2b6152faa16dbf4df40acc7453c3", 
+      "sha": "9a855c7082bd2b6152faa16dbf4df40acc7453c3", 
+      "branchName": "mock", 
+      "date": "Nov 5, 2018 3:18:05 PM", 
+      "repoName": "beiwei30/incubator-dubbo"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/apache/incubator-dubbo/commit/f3e23a7a40867bc96d485af38cc2a70ad0acafaa", 
+      "sha": "f3e23a7a40867bc96d485af38cc2a70ad0acafaa", 
+      "branchName": "2.6.x", 
+      "date": "Nov 5, 2018 1:06:27 PM", 
+      "repoName": "apache/incubator-dubbo"
+    }, 
+    "buggyBuildBaseRepo": {
+      "url": "https://github.com/apache/incubator-dubbo/commit/f2d73f7914c03cc95b884b69b3e660ee0a7ae033", 
+      "sha": "f2d73f7914c03cc95b884b69b3e660ee0a7ae033", 
+      "branchName": "2.6.x", 
+      "date": "Nov 5, 2018 8:24:29 AM", 
+      "repoName": "apache/incubator-dubbo"
+    }
+  }, 
+  "bugName": "apache-incubator-dubbo-450828157-450884276", 
+  "version": "latest", 
+  "projectMetrics": {
+    "numberSourceFiles": 642, 
+    "numberLibrariesFailingModule": 53, 
+    "numberTestFiles": 556, 
+    "numberModules": 60
+  }, 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 6, 
+      "numberDeleted": 7
+    }
+  }, 
+  "bugId": "Bears-195", 
+  "type": "failing_passing", 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 338597776, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 592969728, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Nov 5, 2018 4:05:56 PM", 
+    "projectRootPomPath": "./workspace/apache/incubator-dubbo/450828157/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          4, 
+          273
+        ], 
+        "stepNames": [
+          "CheckoutBuggyBuildCandidate", 
+          "BuildProjectBuggyBuildCandidate"
+        ], 
+        "nbSteps": 2, 
+        "totalDuration": 277
+      }, 
+      "testing": {
+        "stepDurations": [
+          455
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidate"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 455
+      }, 
+      "cloning": {
+        "stepDurations": [
+          10
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 10
+      }
+    }, 
+    "reproductionDateBeginning": "Nov 5, 2018 3:40:12 PM", 
+    "totalDuration": 1537
+  }
+}
