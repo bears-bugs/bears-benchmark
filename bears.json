@@ -1,0 +1,152 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 47, 
+      "numberRunning": 48, 
+      "numberFailing": 0, 
+      "numberErroring": 1, 
+      "failures": [
+        {
+          "failureName": "java.lang.IllegalArgumentException", 
+          "isError": true, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 0
+    }, 
+    "failingModule": "/root/workspace/hexagonframework/spring-data-ebean/375829425", 
+    "failureDetails": [
+      {
+        "failureName": "java.lang.IllegalArgumentException", 
+        "detail": "query not supported!", 
+        "isError": true, 
+        "testMethod": "findUserByEmailAddressEqualsOql_pageable", 
+        "testClass": "org.springframework.data.ebean.repository.UserRepositoryIntegrationTest"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 40, 
+        "numberRunning": 41, 
+        "testClass": "org.springframework.data.ebean.repository.UserRepositoryIntegrationTest", 
+        "numberFailing": 0, 
+        "numberErroring": 1, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/hexagonframework/spring-data-ebean/builds/451220180", 
+      "date": "Nov 6, 2018 6:43:25 AM", 
+      "id": 451220180
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/hexagonframework/spring-data-ebean/builds/375829425", 
+      "date": "May 7, 2018 12:40:42 PM", 
+      "id": 375829425
+    }
+  }, 
+  "repository": {
+    "name": "hexagonframework/spring-data-ebean", 
+    "url": "https://github.com/hexagonframework/spring-data-ebean", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 93129711
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/hexagonframework/spring-data-ebean/commit/827079b74c6eb27d2fba17f4ecf44ae62b97bae5", 
+      "sha": "827079b74c6eb27d2fba17f4ecf44ae62b97bae5", 
+      "branchName": "dev", 
+      "date": "Oct 8, 2018 2:12:58 AM", 
+      "repoName": "hexagonframework/spring-data-ebean"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/hexagonframework/spring-data-ebean/commit/ac2d555c8c1a8604e85a4ee61250bfa0677381a1", 
+      "sha": "ac2d555c8c1a8604e85a4ee61250bfa0677381a1", 
+      "branchName": "dev", 
+      "date": "May 7, 2018 12:39:19 PM", 
+      "repoName": "hexagonframework/spring-data-ebean"
+    }
+  }, 
+  "bugName": "hexagonframework-spring-data-ebean-375829425-451220180", 
+  "version": "latest", 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 0, 
+      "numberDeleted": 2
+    }
+  }, 
+  "type": "passing_passing", 
+  "bugId": "Bears-213", 
+  "projectMetrics": {
+    "numberSourceFiles": 50, 
+    "numberLibrariesFailingModule": 31, 
+    "numberTestFiles": 13, 
+    "numberModules": 1
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 254699016, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 401604608, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Nov 6, 2018 6:47:26 AM", 
+    "projectRootPomPath": "./workspace/hexagonframework/spring-data-ebean/375829425/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          0, 
+          0, 
+          0, 
+          0, 
+          115
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 115
+      }, 
+      "testing": {
+        "stepDurations": [
+          20
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 20
+      }, 
+      "cloning": {
+        "stepDurations": [
+          2
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 2
+      }
+    }, 
+    "reproductionDateBeginning": "Nov 6, 2018 6:43:44 AM", 
+    "totalDuration": 217
+  }
+}
