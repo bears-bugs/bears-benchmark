@@ -1,0 +1,152 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 381, 
+      "numberRunning": 382, 
+      "numberFailing": 1, 
+      "numberErroring": 0, 
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure", 
+          "isError": false, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 0
+    }, 
+    "failingModule": "/root/workspace/org-tigris-jsapar/jsapar/451004011", 
+    "failureDetails": [
+      {
+        "failureName": "org.junit.ComparisonFailure", 
+        "detail": "expected:<[Nobody]> but was:<[]>", 
+        "isError": false, 
+        "testMethod": "assign_empty", 
+        "testClass": "org.jsapar.parse.bean.Bean2CellTest"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 4, 
+        "numberRunning": 5, 
+        "testClass": "org.jsapar.parse.bean.Bean2CellTest", 
+        "numberFailing": 1, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/org-tigris-jsapar/jsapar/builds/451741055", 
+      "date": "Nov 7, 2018 7:38:48 AM", 
+      "id": 451741055
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/org-tigris-jsapar/jsapar/builds/451004011", 
+      "date": "Nov 5, 2018 7:31:17 PM", 
+      "id": 451004011
+    }
+  }, 
+  "repository": {
+    "name": "org-tigris-jsapar/jsapar", 
+    "url": "https://github.com/org-tigris-jsapar/jsapar", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 102112317
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/org-tigris-jsapar/jsapar/commit/97bde7f2f5051e8a408133c75e38691e96ea7a97", 
+      "sha": "97bde7f2f5051e8a408133c75e38691e96ea7a97", 
+      "branchName": "master", 
+      "date": "Nov 7, 2018 7:37:00 AM", 
+      "repoName": "org-tigris-jsapar/jsapar"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/org-tigris-jsapar/jsapar/commit/906fc12328517e7dbf8070768f83db893f258674", 
+      "sha": "906fc12328517e7dbf8070768f83db893f258674", 
+      "branchName": "master", 
+      "date": "Nov 5, 2018 7:27:07 PM", 
+      "repoName": "org-tigris-jsapar/jsapar"
+    }
+  }, 
+  "bugName": "org-tigris-jsapar-jsapar-451004011-451741055", 
+  "version": "latest", 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 2, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 1, 
+      "numberDeleted": 4
+    }
+  }, 
+  "type": "passing_passing", 
+  "bugId": "Bears-231", 
+  "projectMetrics": {
+    "numberSourceFiles": 196, 
+    "numberLibrariesFailingModule": 2, 
+    "numberTestFiles": 82, 
+    "numberModules": 1
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 214654096, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 396886016, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Nov 7, 2018 7:40:39 AM", 
+    "projectRootPomPath": "./workspace/org-tigris-jsapar/jsapar/451004011/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          0, 
+          0, 
+          0, 
+          0, 
+          43
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 43
+      }, 
+      "testing": {
+        "stepDurations": [
+          9
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 9
+      }, 
+      "cloning": {
+        "stepDurations": [
+          4
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 4
+      }
+    }, 
+    "reproductionDateBeginning": "Nov 7, 2018 7:38:57 AM", 
+    "totalDuration": 98
+  }
+}
