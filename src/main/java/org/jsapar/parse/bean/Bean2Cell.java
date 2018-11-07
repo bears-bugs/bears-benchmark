@@ -228,6 +228,9 @@ public class Bean2Cell {
 
     public void assign(Object bean, Cell cell)
             throws BeanComposeException, InvocationTargetException, IllegalAccessException, InstantiationException {
+        if(cell.isEmpty()) {
+            return;
+        }
         if (isLeaf()) {
             assignProperty(bean, cell);
             return;

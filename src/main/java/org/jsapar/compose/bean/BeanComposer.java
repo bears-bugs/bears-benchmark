@@ -136,7 +136,7 @@ public class BeanComposer<T> implements Composer, BeanEventListener<T>, ErrorEve
 
         for (Cell cell : line) {
             String sName = cell.getName();
-            if (sName == null || sName.isEmpty())
+            if (sName == null || sName.isEmpty() || cell.isEmpty())
                 continue;
 
             try {
