@@ -1,0 +1,151 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 1343, 
+      "numberRunning": 1344, 
+      "numberFailing": 0, 
+      "numberErroring": 1, 
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException", 
+          "isError": true, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 1
+    }, 
+    "failingModule": "/root/workspace/AxonFramework/AxonFramework/451926440/axon-server-connector", 
+    "failureDetails": [
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "org.axonframework.axonserver.connector.event.axon.ErrorCodeTest", 
+        "testMethod": "testConvertWithoutSource", 
+        "isError": true
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 2, 
+        "numberRunning": 3, 
+        "testClass": "org.axonframework.axonserver.connector.event.axon.ErrorCodeTest", 
+        "numberFailing": 0, 
+        "numberErroring": 1, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/AxonFramework/AxonFramework/builds/451937647", 
+      "date": "Nov 7, 2018 4:28:40 PM", 
+      "id": 451937647
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/AxonFramework/AxonFramework/builds/451926440", 
+      "date": "Nov 7, 2018 4:04:47 PM", 
+      "id": 451926440
+    }
+  }, 
+  "repository": {
+    "name": "AxonFramework/AxonFramework", 
+    "url": "https://github.com/AxonFramework/AxonFramework", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 2899580
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/AxonFramework/AxonFramework/commit/b11e59f00b804128759940a7d8b49c04ed30944e", 
+      "sha": "b11e59f00b804128759940a7d8b49c04ed30944e", 
+      "branchName": "axon-4.0.x", 
+      "date": "Nov 7, 2018 4:20:50 PM", 
+      "repoName": "AxonFramework/AxonFramework"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/AxonFramework/AxonFramework/commit/ecc0087c6e10e8fd8903edf18af612d9ccb70a0d", 
+      "sha": "ecc0087c6e10e8fd8903edf18af612d9ccb70a0d", 
+      "branchName": "axon-4.0.x", 
+      "date": "Nov 7, 2018 3:49:07 PM", 
+      "repoName": "AxonFramework/AxonFramework"
+    }
+  }, 
+  "bugName": "AxonFramework-AxonFramework-451926440-451937647", 
+  "version": "latest", 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 1, 
+      "numberDeleted": 1
+    }
+  }, 
+  "type": "passing_passing", 
+  "bugId": "Bears-200", 
+  "projectMetrics": {
+    "numberSourceFiles": 778, 
+    "numberLibrariesFailingModule": 100, 
+    "numberTestFiles": 429, 
+    "numberModules": 13
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 245570384, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 482344960, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Nov 7, 2018 6:06:16 PM", 
+    "projectRootPomPath": "./workspace/AxonFramework/AxonFramework/451926440/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          1, 
+          3, 
+          0, 
+          0, 
+          185
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 189
+      }, 
+      "testing": {
+        "stepDurations": [
+          156
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 156
+      }, 
+      "cloning": {
+        "stepDurations": [
+          14
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 14
+      }
+    }, 
+    "reproductionDateBeginning": "Nov 7, 2018 5:54:46 PM", 
+    "totalDuration": 683
+  }
+}
