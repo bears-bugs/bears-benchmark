@@ -1,0 +1,29 @@
+<html>
+<head>
+ <title>JSaParSchema 1.0</title>
+</head>
+<body>
+
+<p>JSaParSchema is the xsd schema that describes how a xml based JSaParSchema should be written
+</p>
+
+The actual schema file can be found at the address
+<a href="http://jsapar.tigris.org/JSaParSchema/1.0/JSaParSchema.xsd">http://jsapar.tigris.org/JSaParSchema/1.0/JSaParSchema.xsd</a>.<br/><br/>
+Use that address in your xml header if you have an xml editor that supports auto-completion.<br/>
+Example xml file:
+<table style="font-family: monospace" border="1" >
+    <tr>
+        <td><code>
+&lt;?xml version="1.0" encoding="utf-8"?&gt;<br/>
+&lt;schema xmlns="http://jsapar.tigris.org/JSaParSchema/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"<br/>
+&nbsp;&nbsp;&nbsp;xsi:schemaLocation="http://jsapar.tigris.org/JSaParSchema/1.0&nbsp;http://jsapar.tigris.org/JSaParSchema/1.0/JSaParSchema.xsd"&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;csvschema&nbsp;lineseparator="&#10;"&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;locale language="en" country="GB"/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;line linetype="Person" occurs="*" cellseparator=";"&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...
+        </code></td>
+    </tr>
+</table>
+
+</body>
+</html>

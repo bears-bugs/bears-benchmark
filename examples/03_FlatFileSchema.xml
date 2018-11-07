@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jsp:schema xmlns:jsp="http://jsapar.tigris.org/JSaParSchema/2.0"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:schemaLocation="http://jsapar.tigris.org/JSaParSchema/2.0 http://jsapar.tigris.org/JSaParSchema/2.0/JSaParSchema.xsd">
+  <jsp:fixedwidthschema lineseparator="">
+    <jsp:locale country="US" language="en"/><!-- Specifies how numbers are parsed/composed. Default is US_en-->
+    <jsp:line occurs="*" >
+      <jsp:cell name="First name" length="8"/>
+      <jsp:cell name="Middle name" length="9" ignoreread="true"/>
+      <jsp:cell name="Last name" length="9"/>
+      <jsp:cell name="Age" length="3" default="17"><jsp:format type="integer"/></jsp:cell>
+    </jsp:line>
+  </jsp:fixedwidthschema>
+</jsp:schema>

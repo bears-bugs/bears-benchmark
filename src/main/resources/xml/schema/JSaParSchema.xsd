@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xsd:schema elementFormDefault="qualified" targetNamespace="http://jsapar.tigris.org/JSaParSchema/2.0"
+            xmlns="http://jsapar.tigris.org/JSaParSchema/2.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:element name="schema">
+        <xsd:complexType>
+            <xsd:choice>
+                <xsd:element name="csvschema" type="CsvSchema"/>
+                <xsd:element name="fixedwidthschema" type="FixedWidthSchema"/>
+            </xsd:choice>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:complexType name="Schema">
+    <xsd:sequence>
+    	<xsd:element minOccurs="0" name="locale"
+                     type="Locale">
+    		<xsd:annotation>
+    			<xsd:documentation>
+    				The locale specifies how numbers and dates should be
+    				parsed. The default is to use the en_US	locale.
+    			</xsd:documentation>
+    		</xsd:annotation>
+    	</xsd:element>
+    </xsd:sequence>
+    <xsd:attribute name="lineseparator" type="xsd:string" >
+      <xsd:annotation>
+        <xsd:documentation>A sequence of characters that separates each line. Default is the system default line
+            separator characters. To specify control characters, use either xml syntax e.g. &amp;#13; for LF and &amp;#10; for CR or
+            java notation such as '\n' for LF or '\r' for CR.
+            When parsing, if one of either '\r\n' or '\n' is specified as line separator, both both will be regarded as
+            line separator anyway. When composing, the specified sequence will be used.
+        </xsd:documentation>
+      </xsd:annotation>
+    </xsd:attribute>
+  </xsd:complexType>
+  <xsd:complexType name="SchemaLine">
+    <xsd:attribute name="occurs">
+      <xsd:annotation>
+        <xsd:documentation>
+          Denotes how many times this type of line occurs. A '*'
+          character denotes that it occurs infinitely amount of times
+          until the end of input buffer is reached.
+        </xsd:documentation>
+      </xsd:annotation>
+      <xsd:simpleType>
+        <xsd:restriction base="xsd:string">
+          <xsd:pattern value="[0-9]*|\*" />
+        </xsd:restriction>
+      </xsd:simpleType>
+    </xsd:attribute>
+    <xsd:attribute name="linetype" type="xsd:string" >
+      <xsd:annotation>
+        <xsd:documentation>
+          Specifies the type of the line. If there are more than one type of line or if linecondition cells are used, then
+          this field is mandatory. Otherwise this field can be supplied
+          as information. Line-type can be regarded as the class of the
+          line if there are many different type of lines. The line types
+          can be denoted by either the occurs attribute at each schema
+          line or by the value of a linecondition control cell.
+        </xsd:documentation>
+      </xsd:annotation>
+    </xsd:attribute>
+    <xsd:attribute name="ignoreread" type="xsd:boolean">
+      <xsd:annotation>
+          <xsd:documentation>
+              Default is false. true = Ignore this line when parsing. This means that the line may
+              exist in the input but it will not generate any event. false = Parse and generate event.
+          </xsd:documentation>
+      </xsd:annotation>
+    </xsd:attribute>
+    <xsd:attribute name="ignorewrite" type="xsd:boolean">
+      <xsd:annotation>
+          <xsd:documentation>
+              Default is false. true = Ignore this line while composing. This means that the whole line will be ignored
+              as if it did not exist. false = Compose the line to the output.
+          </xsd:documentation>
+      </xsd:annotation>
+    </xsd:attribute>
+  </xsd:complexType>
+  <xsd:complexType name="SchemaCell">
+    <xsd:sequence>
+    	<xsd:element minOccurs="0" name="format"
+                     type="CellFormat" />
+    	<xsd:element minOccurs="0" name="range"
+                     type="CellValueRange">
+    		<xsd:annotation>
+    			<xsd:documentation>
+    				Specifies a valid range for the cell value.
+    			</xsd:documentation>
+    		</xsd:annotation>
+    	</xsd:element>
+    	<xsd:element minOccurs="0" name="locale"
+                     type="Locale">
+    		<xsd:annotation>
+    			<xsd:documentation>
+    				The locale of this cell. It affects how decimal separators etc. are formatted/parsed. Overrides the locale
+    				setting for the whole schema.
+    			</xsd:documentation>
+    		</xsd:annotation>
+    	</xsd:element>
+    	<xsd:element name="linecondition" type="CellValueCondition"
+                     minOccurs="0">
+                <xsd:annotation>
+                	<xsd:documentation>A line condition is a condition that needs to be fulfilled in order for the parser to use this line type. You can add line condition on one or multiple cells and all line conditions needs to be fulfilled for a line type to be used.</xsd:documentation>
+                </xsd:annotation>
+    	</xsd:element>
+        <xsd:element name="emptycondition" type="CellValueCondition" minOccurs="0"/>
+    </xsd:sequence>
+    <xsd:attribute name="name" type="xsd:string" use="required">
+      <xsd:annotation>
+        <xsd:documentation>
+          The name of the cell. All Cell objects created with this SchemaCell will have this name. When writing output,
+          the name of the Cell object have to match this name if the cell is to be written.
+        </xsd:documentation>
+      </xsd:annotation>
+    </xsd:attribute>
+    <xsd:attribute name="ignoreread" type="xsd:boolean">
+      <xsd:annotation>
+        <xsd:documentation>
+          Default is false. true = Ignore this cell when reading. Proceed to next cell. This means that the cell have to
+          exist in the input file but it will not be stored in the resulting Document. false = Read and store this cell.
+        </xsd:documentation>
+      </xsd:annotation>
+    </xsd:attribute>
+    <xsd:attribute name="ignorewrite" type="xsd:boolean">
+      <xsd:annotation>
+        <xsd:documentation>
+          Default is false. true = Ignore this cell when writing. This means that the value of the cell will be ignored
+          and instead a value as if the cell was empty will be written. false = Write the cell value to the output.
+        </xsd:documentation>
+      </xsd:annotation>
+    </xsd:attribute>
+    <xsd:attribute default="false" name="mandatory" type="xsd:boolean">
+      <xsd:annotation>
+        <xsd:documentation>
+          States if this cell have to contain a value or if it is optional. If this attribute is false, an empty value is accepted as
+          long as the parsing mechanism can handle it for the given format. If this attribute is true, a parsing error
+          is reported back. Default is false.
+        </xsd:documentation>
+      </xsd:annotation>
+    </xsd:attribute>
+    <xsd:attribute name="default" type="xsd:string">
+      <xsd:annotation>
+        <xsd:documentation>
+          The default value of this cell. This value is used if the cell does not conatain any value. The value should be
+          formatted according to the rules of the schema cell itself.
+        </xsd:documentation>
+      </xsd:annotation>
+    </xsd:attribute>
+  </xsd:complexType>
+
+  <xsd:complexType name="CellFormat">
+    <xsd:attribute name="type" use="required">
+      <xsd:annotation>
+        <xsd:documentation>The type of the cell. Default is "string".
+            Have to be one of the following:
+               string
+               date
+               local_date
+               local_time
+               local_date_time
+               zoned_date_time
+               decimal
+               integer
+               float
+               boolean
+               character
+            Note that the number formats are parsed according to the specified locale.</xsd:documentation>
+      </xsd:annotation>
+      <xsd:simpleType>
+      	<xsd:restriction base="xsd:string">
+      		<xsd:enumeration value="string" />
+      		<xsd:enumeration value="date" />
+      		<xsd:enumeration value="local_date" />
+      		<xsd:enumeration value="local_time" />
+      		<xsd:enumeration value="local_date_time" />
+      		<xsd:enumeration value="zoned_date_time" />
+      		<xsd:enumeration value="decimal" />
+      		<xsd:enumeration value="integer" />
+      		<xsd:enumeration value="float" />
+      		<xsd:enumeration value="boolean" />
+            <xsd:enumeration value="character"/>
+      	</xsd:restriction>
+      </xsd:simpleType>
+    </xsd:attribute>
+    <xsd:attribute name="pattern" type="xsd:string">
+      <xsd:annotation>
+         <xsd:documentation>* If the type is string then the pattern should contain a regular expression to which the value is validated against. This only works while parsing.
+* If the type is any of the numerical types, then the pattern should be described according to the java.text.DecimalFormat (http://java.sun.com/javase/6/docs/api/java/text/DecimalFormat.html).
+* If the type is date, then the pattern should be described according to java.text.SimpleDateFormat (http://java.sun.com/javase/6/docs/api/java/text/SimpleDateFormat.html).
+* If the type is boolean, the pattern should contain the true and false values separated with a ; character. Example: pattern="Y;N" will imply that Y represents true and N to represents false. Comparison while parsing is not case sensitive. Multiple true or false values can be specified, separated with the | character but the first value is always the one used while composing. Example: pattern="Y|YES;N|NO"</xsd:documentation>
+      </xsd:annotation>
+    </xsd:attribute>
+  </xsd:complexType>
+  <xsd:complexType name="FixedWidthSchema">
+    <xsd:complexContent mixed="false">
+      <xsd:extension base="Schema">
+        <xsd:sequence maxOccurs="unbounded">
+          <xsd:element maxOccurs="unbounded" name="line" type="FixedWidthSchemaLine" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+
+  <xsd:complexType name="FixedWidthSchemaLine">
+    <xsd:complexContent mixed="false">
+      <xsd:extension base="SchemaLine">
+        <xsd:sequence maxOccurs="unbounded">
+          <xsd:element name="cell" type="FixedWidthSchemaCell" />
+        </xsd:sequence>
+        <xsd:attribute name="padcharacter">
+          <xsd:annotation>
+          	<xsd:documentation>Specifices the pad character to use to pad lines that are not reaching the minimum length. Also used as default pad character for cells of this line. Default is space character (ASCII 20). 
+            </xsd:documentation>
+          </xsd:annotation>
+          <xsd:simpleType>
+            <xsd:restriction base="xsd:string">
+              <xsd:maxLength value="1" />
+              <xsd:minLength value="1" />
+            </xsd:restriction>
+          </xsd:simpleType>
+        </xsd:attribute>
+        <xsd:attribute name="minlength" type="xsd:int">
+          <xsd:annotation>
+            <xsd:documentation>The minimal length of a fixed with line when writing output.
+If the sum of the length of the cells is less than this minlength then the line is filled with the fillcharacter so that the output will be at least of length minlength.</xsd:documentation>
+          </xsd:annotation></xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+
+  <xsd:complexType name="FixedWidthSchemaCell">
+  	<xsd:complexContent mixed="false">
+  		<xsd:extension base="SchemaCell">
+  			<xsd:attribute name="length" type="xsd:int"
+  				use="required">
+  				<xsd:annotation>
+  					<xsd:documentation>
+  						The length of the cell, i.e. the number of
+  						characters it occupies.
+  					</xsd:documentation>
+  				</xsd:annotation>
+  			</xsd:attribute>
+  			<xsd:attribute name="alignment">
+  				<xsd:annotation>
+  					<xsd:documentation>Defines the cell alignment. The remaining space is filled with the pad character. Have to be one of the following: left right center
+  					</xsd:documentation>
+  				</xsd:annotation>
+  				<xsd:simpleType>
+  					<xsd:restriction base="xsd:string">
+  						<xsd:enumeration value="left" />
+  						<xsd:enumeration value="right" />
+  						<xsd:enumeration value="center" />
+  					</xsd:restriction>
+  				</xsd:simpleType>
+  			</xsd:attribute>
+  			<xsd:attribute name="padcharacter">
+                    <xsd:annotation>
+                    	<xsd:documentation>Specifies the pad character to use to pad cells that are not reaching the minimum length. The alignment attribute specifies if padding should be done to the right, to the left or both. Default is the pad character specified on line level. </xsd:documentation>
+                    </xsd:annotation>
+                    <xsd:simpleType>
+  					<xsd:restriction base="xsd:string">
+                        <xsd:length value="1"/>
+  					</xsd:restriction>
+  				</xsd:simpleType>
+  			</xsd:attribute>
+  		</xsd:extension>
+  	</xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="CsvSchema">
+    <xsd:complexContent mixed="false">
+      <xsd:extension base="Schema">
+        <xsd:sequence minOccurs="0" maxOccurs="unbounded">
+          <xsd:element name="line" type="CsvSchemaLine" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+
+  <xsd:complexType name="CsvSchemaLine">
+  	<xsd:complexContent mixed="false">
+  		<xsd:extension base="SchemaLine">
+  			<xsd:sequence minOccurs="0" maxOccurs="unbounded">
+  				<xsd:element name="cell" type="CsvSchemaCell" />
+  			</xsd:sequence>
+  			<xsd:attribute name="cellseparator" type="xsd:string">
+  				<xsd:annotation>
+  					<xsd:documentation>
+  						A sequence of characters that are used to
+  						delimit each cell of this line.
+  					</xsd:documentation>
+  				</xsd:annotation>
+  			</xsd:attribute>
+  			<xsd:attribute name="firstlineasschema"
+  				type="xsd:boolean">
+  				<xsd:annotation>
+                    <xsd:documentation>
+                        Specifies if the first line of this type contains a header line that should be used as schema.
+                        If set to true:
+                        While parsing, the order of the cells and what cells to expect are denoted by the first line within the input.
+                        Default values and other formatting information is defined in the schema as usual. Cell names
+                        that exist in the input header line but not within the schema are considered to be of type string.
+
+                        While composing, the schema is used as usual but an additional header line with the name of each
+                        cell, is written first.
+
+                    </xsd:documentation>
+                </xsd:annotation>
+  			</xsd:attribute>
+  			<xsd:attribute name="quotechar">
+  				<xsd:annotation>
+  					<xsd:documentation>
+  						Specifies if there is a quote character used
+  						to encapsulate cells. Between the quotes, also the cell
+  						separator and line separator will be regarded as content of the cell.
+  						A cell is considered to be quoted if and only
+  						if the first and the last character within the
+  						cell is the quote character. Any other quote
+  						characters are considered to be normal
+  						characters and thus becomes part of the cell.
+  					</xsd:documentation>
+  				</xsd:annotation>
+  				<xsd:simpleType>
+  					<xsd:restriction base="xsd:string">
+  						<xsd:maxLength value="1" />
+  						<xsd:minLength value="1" />
+  					</xsd:restriction>
+  				</xsd:simpleType>
+  			</xsd:attribute>
+  			<xsd:attribute name="quotebehavior" type="QuoteBehaviorType" default="AUTOMATIC">
+  				<xsd:annotation>
+  					<xsd:documentation>Default quote behavior for the line type. Override this setting on cell level if needed. Should have one of the values:
+                        AUTOMATIC, NEVER, REPLACE or ALWAYS.
+                    </xsd:documentation>
+  				</xsd:annotation></xsd:attribute>
+  		</xsd:extension>
+  	</xsd:complexContent>
+  </xsd:complexType>
+
+  <xsd:complexType name="Locale">
+    <xsd:attribute name="language" use="required">
+      <xsd:annotation>
+        <xsd:documentation>A valid ISO Language Code.  These codes are the lower-case, two-letter codes as defined by ISO-639. You can find a full list of these codes at a number of sites, such as:
+http://www.loc.gov/standards/iso639-2/englangn.html</xsd:documentation>
+      </xsd:annotation>
+      <xsd:simpleType>
+        <xsd:restriction base="xsd:string">
+          <xsd:pattern value="[a-z]{2,3}" />
+        </xsd:restriction>
+      </xsd:simpleType>
+    </xsd:attribute>
+    <xsd:attribute name="country">
+      <xsd:annotation>
+        <xsd:documentation>A valid ISO Country Code. These codes are the upper-case, two-letter codes as defined by ISO-3166. You can find a full list of these codes at a number of sites, such as:
+http://www.iso.ch/iso/en/prods-services/iso3166ma/02iso-3166-code-lists/list-en1.html</xsd:documentation>
+      </xsd:annotation>
+      <xsd:simpleType>
+        <xsd:restriction base="xsd:string">
+          <xsd:pattern value="[A-Z]{2}" />
+        </xsd:restriction>
+      </xsd:simpleType>
+    </xsd:attribute>
+  </xsd:complexType>
+
+  <xsd:complexType name="CellValueRange">
+    <xsd:annotation>
+      <xsd:documentation>Contains a range for a cell value. The format of the min and max attribute are the same as for the parsing of the cell values.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:attribute name="min" type="xsd:string">
+      <xsd:annotation>
+        <xsd:documentation>The smallest value allowed for this cell.</xsd:documentation>
+      </xsd:annotation>
+    </xsd:attribute>
+    <xsd:attribute name="max" type="xsd:string">
+      <xsd:annotation>
+        <xsd:documentation>The largest value allowed for this cell.</xsd:documentation>
+      </xsd:annotation>
+    </xsd:attribute>
+  </xsd:complexType>
+
+  <xsd:complexType name="CsvSchemaCell">
+  	<xsd:complexContent>
+  		<xsd:extension base="SchemaCell">
+  			<xsd:attribute name="maxlength" type="xsd:int">
+  				<xsd:annotation>
+  					<xsd:documentation>
+                        The maximum number of characters that are read or written to/from the cell. Input and output
+                        value will be silently truncated to this length. If you want to get an error when field is to
+                        long, use the format regexp pattern instead.
+                    </xsd:documentation>
+  				</xsd:annotation>
+  			</xsd:attribute>
+  			<xsd:attribute name="quotebehavior" type="QuoteBehaviorType" >
+  				<xsd:annotation>
+  					<xsd:documentation>Quote behavior on cell level. Overrides line behavior.
+Available since 2.0</xsd:documentation>
+  				</xsd:annotation></xsd:attribute>
+  		</xsd:extension>
+  	</xsd:complexContent>
+  </xsd:complexType>
+
+  <xsd:complexType name="CellValueCondition">
+  	<xsd:choice>
+        <xsd:element name="match" type="CellRegex"/>
+  	</xsd:choice>
+  </xsd:complexType>
+
+  <xsd:complexType name="CellRegex">
+      <xsd:attribute name="pattern" type="xsd:string">
+      	<xsd:annotation>
+      		<xsd:documentation>Regular expression pattern that needs to match the content of the cell.</xsd:documentation>
+      	</xsd:annotation></xsd:attribute>
+  </xsd:complexType>
+
+  <xsd:simpleType name="QuoteBehaviorType">
+        <xsd:annotation>
+        	<xsd:documentation>AUTOMATIC = (default) If quote character is specified: Quote only when needed. If quote
+                character is not specified, replace illegal characters with non-breaking space. Atomic cells,
+                e.g. integer cells, will not be quoted.
+                NEVER = Never quote
+                REPLACE = Don't quote but replace illegal characters with non-breaking space.
+                ALWAYS = Always quote</xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="AUTOMATIC"/>
+            <xsd:enumeration value="NEVER"/>
+            <xsd:enumeration value="REPLACE"/>
+            <xsd:enumeration value="ALWAYS"/>
+  	</xsd:restriction>
+  </xsd:simpleType>
+</xsd:schema>

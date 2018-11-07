@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assembly xmlns="http://maven.apache.org/ASSEMBLY/2.0.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/ASSEMBLY/2.0.0 http://maven.apache.org/xsd/assembly-2.0.0.xsd">
+  <id>binaries</id>
+  <formats>
+    <format>tar.gz</format>
+    <format>zip</format>
+   </formats>
+   
+  <dependencySets>
+    <dependencySet>
+      <unpack>false</unpack>
+      <scope>runtime</scope>
+      <outputDirectory>lib</outputDirectory>
+    </dependencySet>
+
+  </dependencySets>
+  <fileSets>
+    <fileSet>
+      <directory>src/main/resources/xml</directory>
+      <outputDirectory>xml</outputDirectory>
+      <includes>
+        <include>**</include>
+      </includes>
+    </fileSet>
+    <fileSet>
+      <directory>src/test/java/org/jsapar</directory>
+      <outputDirectory>examples</outputDirectory>
+      <includes>
+        <include>JSaParExamplesTest.java</include>
+      </includes>
+    </fileSet>
+    <fileSet>
+      <directory>examples</directory>
+      <outputDirectory>examples</outputDirectory>
+      <includes>
+        <include>**</include>
+      </includes>
+    </fileSet>
+    <fileSet>
+      <directory>target/apidocs</directory>
+      <outputDirectory>docs/api</outputDirectory>
+      <includes>
+        <include>**</include>
+      </includes>
+    </fileSet>
+    <fileSet>
+      <directory>.</directory>
+      <outputDirectory>.</outputDirectory>
+      <includes>
+        <include>LICENSE</include>
+        <include>NOTICE</include>
+        <include>*.txt</include>
+      </includes>
+    </fileSet>
+  </fileSets>
+</assembly>
