@@ -1,0 +1,28 @@
+language: java
+
+sudo: required
+
+services:
+  - docker
+  - mysql
+
+jdk:
+  - oraclejdk8
+
+before_install:
+  - docker run -d --shm-size=1g -p 1521:1521 -p 8080:8080 alexeiled/docker-oracle-xe-11g
+  - docker ps
+  - mysql -e 'CREATE DATABASE axon;'
+
+install: true
+
+cache:
+  directories:
+  - $HOME/.m2
+
+script:
+  - mvn clean verify -B
+
+notifications:
+  slack:
+    secure: d1HN9GBeH0e6EsHjNkPVXgBaFCYqbvjkZv9GUkpWnyjNYP5V1snSk6sO4X6ONttydgzfbElZTOfrgDzRTgWJ76iDMxAPccFPY7dmGcpw8/2TOjwP6H6yEitiiZcWR9fssTM2Li2WQtuGkwaVBhw15JNABzEsexxqXC+Cu48yUfA=
