@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema targetNamespace="http://jsapar.tigris.org/XMLDocumentFormat/1.0" elementFormDefault="qualified" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jsp="http://jsapar.tigris.org/XMLDocumentFormat/1.0">
+
+    <xsd:complexType name="Document">
+    	<xsd:sequence>
+    		<xsd:element name="line" type="jsp:Line" minOccurs="0" maxOccurs="unbounded"></xsd:element>
+    	</xsd:sequence>
+    </xsd:complexType>
+    
+    <xsd:complexType name="Line">
+    	<xsd:sequence>
+    		<xsd:element name="cell" type="jsp:Cell" minOccurs="0" maxOccurs="unbounded">
+    		</xsd:element>
+    	</xsd:sequence>
+    	<xsd:attribute name="linetype" type="xsd:string"></xsd:attribute>
+    </xsd:complexType>
+
+    <xsd:complexType name="Cell">
+    	<xsd:simpleContent>
+    		<xsd:extension base="xsd:string">
+    			<xsd:attribute name="name" type="xsd:string"></xsd:attribute>
+    			<xsd:attribute name="type">
+    				<xsd:simpleType>
+    					<xsd:restriction base="xsd:string">
+    						<xsd:enumeration value="string"></xsd:enumeration>
+							<xsd:enumeration value="date"></xsd:enumeration>
+							<xsd:enumeration value="decimal"></xsd:enumeration>
+							<xsd:enumeration value="integer"></xsd:enumeration>
+    						<xsd:enumeration value="float"></xsd:enumeration>
+    						<xsd:enumeration value="boolean"></xsd:enumeration>
+    					</xsd:restriction>
+    				</xsd:simpleType>
+    			</xsd:attribute>
+    		</xsd:extension>
+    	</xsd:simpleContent>
+    </xsd:complexType>
+
+    <xsd:element name="document" type="jsp:Document"></xsd:element>
+</xsd:schema>

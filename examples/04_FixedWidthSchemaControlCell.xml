@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://jsapar.tigris.org/JSaParSchema/2.0"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://jsapar.tigris.org/JSaParSchema/2.0 http://jsapar.tigris.org/JSaParSchema/2.0/JSaParSchema.xsd">
+  <fixedwidthschema lineseparator="\n">
+    <line linetype="Header" >
+      <cell name="Type" length="1" default="H"><linecondition><match pattern="H"/></linecondition></cell>
+      <cell name="FileName" length="15"/>
+      <cell name="Created date" length="10"/>
+    </line>
+    <line linetype="Person" >
+      <cell name="Type" length="1" default="P"><linecondition><match pattern="B|P"/></linecondition></cell>
+      <cell name="First name" length="8"/>
+      <cell name="Middle name" length="9" ignoreread="true"/>
+      <cell name="Last name" length="8"/>
+    </line>
+    <line linetype="Pet" ignoreread="true" ignorewrite="true">
+      <cell name="Type" length="1" default="E"><linecondition><match pattern="E"/></linecondition></cell>
+      <cell name="Name" length="12"/>
+    </line>
+    <line linetype="Footer" >
+      <cell name="Type" length="1" default="F"><linecondition><match pattern="F"/></linecondition></cell>
+      <cell name="Rowcount" length="7" alignment="right"/>
+      <cell name="Filler" length="18" ignoreread="true"/>
+    </line>
+  </fixedwidthschema>
+</schema>

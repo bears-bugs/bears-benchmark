@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://jsapar.tigris.org/JSaParSchema/2.0"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://jsapar.tigris.org/JSaParSchema/2.0 http://jsapar.tigris.org/JSaParSchema/2.0/JSaParSchema.xsd">
+  <csvschema lineseparator="&#10;">
+    <line occurs="*" linetype="org.jsapar.TstPerson" cellseparator=";">
+      <cell name="firstName" />
+      <cell name="middleName" ignoreread="true"/>
+      <cell name="lastName" />
+      <cell name="shoeSize" ><format type="integer"/></cell>
+      <cell name="luckyNumber" default="17" ><format type="integer"/></cell>
+      <cell name="birthTime" > <format type="date" pattern="yyyy-MM-dd HH:mm"/></cell>
+      <cell name="door" > <format type="character"/></cell>
+      <cell name="address.street" />
+      <cell name="address.town" />
+    </line>
+  </csvschema>
+</schema>

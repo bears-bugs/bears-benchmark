@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://jsapar.tigris.org/JSaParSchema/2.0"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://jsapar.tigris.org/JSaParSchema/2.0 http://jsapar.tigris.org/JSaParSchema/2.0/JSaParSchema.xsd">
+  <csvschema lineseparator="\n">
+    <!--When firstlineasschema is true:
+    While parsing, the order of the cells and what cells to expect are denoted by the first line within the input.
+    Default values and other formatting information is defined in the schema below.
+
+    While composing, the schema is used as usual but an additional header line with the name of each cell, is written first.-->
+    <line occurs="*" linetype="Person" cellseparator=";" quotechar="&quot;" firstlineasschema="true">
+      <cell name="Middle name" ignoreread="true"/>
+      <cell name="Has dog" default="no"><format type="boolean" pattern="yes;no"/></cell>
+      <cell name="First name" />
+    </line>
+  </csvschema>
+</schema>

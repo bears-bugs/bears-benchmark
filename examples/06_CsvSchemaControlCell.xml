@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://jsapar.tigris.org/JSaParSchema/2.0"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://jsapar.tigris.org/JSaParSchema/2.0 http://jsapar.tigris.org/JSaParSchema/2.0/JSaParSchema.xsd">
+  <csvschema lineseparator="\n">
+    <line linetype="Header" cellseparator=";">
+      <cell name="Type" default="H"><linecondition><match pattern="H"/></linecondition></cell>
+      <cell name="FileName"/>
+      <cell name="Created date"/>
+    </line>
+    <line occurs="*" linetype="Person" cellseparator=";" quotechar="&quot;">
+      <cell name="Type" default="B" ><linecondition><match pattern="B"/></linecondition></cell>
+      <cell name="First name" quotebehavior="ALWAYS"/>
+      <cell name="Middle name" ignoreread="true"/>
+      <cell name="Last name" />
+      <cell name="gender" ><format type="string" pattern="M|F"/> </cell>
+    </line>
+    <line linetype="Footer" cellseparator=";">
+      <cell name="Type" default="F"><linecondition><match pattern="F"/></linecondition></cell>
+      <cell name="Rowcount"/>
+    </line>
+  </csvschema>
+</schema>
