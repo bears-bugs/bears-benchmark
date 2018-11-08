@@ -1,0 +1,159 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 533, 
+      "numberRunning": 535, 
+      "numberFailing": 2, 
+      "numberErroring": 0, 
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError", 
+          "isError": false, 
+          "occurrences": 2
+        }
+      ], 
+      "numberSkipping": 4
+    }, 
+    "failingModule": "/root/workspace/openmrs/openmrs-module-htmlformentry/452596787/api-tests", 
+    "failureDetails": [
+      {
+        "failureName": "java.lang.AssertionError", 
+        "detail": "expected:<Thu Nov 08 23:49:11 CET 2018> but was:<Thu Nov 08 00:00:00 CET 2018>", 
+        "isError": false, 
+        "testMethod": "testEditShouldNotClearTimeComponentForm", 
+        "testClass": "org.openmrs.module.htmlformentry.RegressionTest"
+      }, 
+      {
+        "failureName": "java.lang.AssertionError", 
+        "detail": "expected:<Thu Nov 08 23:48:50 CET 2018> but was:<Thu Nov 08 00:00:00 CET 2018>", 
+        "isError": false, 
+        "testMethod": "testEditShouldEditDate", 
+        "testClass": "org.openmrs.module.htmlformentry.RegressionTest"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 59, 
+        "numberRunning": 61, 
+        "testClass": "org.openmrs.module.htmlformentry.RegressionTest", 
+        "numberFailing": 2, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/openmrs/openmrs-module-htmlformentry/builds/452623087", 
+      "date": "Nov 8, 2018 11:36:37 PM", 
+      "id": 452623087
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/openmrs/openmrs-module-htmlformentry/builds/452596787", 
+      "date": "Nov 8, 2018 10:29:32 PM", 
+      "id": 452596787
+    }
+  }, 
+  "repository": {
+    "name": "openmrs/openmrs-module-htmlformentry", 
+    "url": "https://github.com/openmrs/openmrs-module-htmlformentry", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 2680621
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/openmrs/openmrs-module-htmlformentry/commit/32a82bcb8a331185018ed8cf9efbad31336952bd", 
+      "sha": "32a82bcb8a331185018ed8cf9efbad31336952bd", 
+      "branchName": "master", 
+      "date": "Nov 8, 2018 11:28:31 PM", 
+      "repoName": "openmrs/openmrs-module-htmlformentry"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/openmrs/openmrs-module-htmlformentry/commit/fe7d4eb6c8ad124f33d96b4aec9b92e7fb01379f", 
+      "sha": "fe7d4eb6c8ad124f33d96b4aec9b92e7fb01379f", 
+      "branchName": "master", 
+      "date": "Nov 8, 2018 10:21:16 PM", 
+      "repoName": "openmrs/openmrs-module-htmlformentry"
+    }
+  }, 
+  "bugName": "openmrs-openmrs-module-htmlformentry-452596787-452623087", 
+  "version": "latest", 
+  "projectMetrics": {
+    "numberSourceFiles": 197, 
+    "numberLibrariesFailingModule": 130, 
+    "numberTestFiles": 69, 
+    "numberModules": 6
+  }, 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 14, 
+      "numberDeleted": 14
+    }
+  }, 
+  "bugId": "Bears-228", 
+  "type": "passing_passing", 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 366771616, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 465567744, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Nov 8, 2018 11:56:35 PM", 
+    "projectRootPomPath": "./workspace/openmrs/openmrs-module-htmlformentry/452596787/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          0, 
+          0, 
+          0, 
+          0, 
+          389
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 389
+      }, 
+      "testing": {
+        "stepDurations": [
+          359
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 359
+      }, 
+      "cloning": {
+        "stepDurations": [
+          7
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 7
+      }
+    }, 
+    "reproductionDateBeginning": "Nov 8, 2018 11:36:57 PM", 
+    "totalDuration": 1172
+  }
+}
