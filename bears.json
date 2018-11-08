@@ -1,0 +1,152 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 228, 
+      "numberRunning": 229, 
+      "numberFailing": 0, 
+      "numberErroring": 1, 
+      "failures": [
+        {
+          "failureName": "java.lang.Exception", 
+          "isError": true, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 7
+    }, 
+    "failingModule": "/root/workspace/awslabs/amazon-kinesis-client/446289265/amazon-kinesis-client", 
+    "failureDetails": [
+      {
+        "failureName": "java.lang.Exception", 
+        "detail": "test timed out after 1000 milliseconds", 
+        "isError": true, 
+        "testMethod": "testNoDeadlockOnFullQueue", 
+        "testClass": "software.amazon.kinesis.retrieval.polling.PrefetchRecordsPublisherTest"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 6, 
+        "numberRunning": 7, 
+        "testClass": "software.amazon.kinesis.retrieval.polling.PrefetchRecordsPublisherTest", 
+        "numberFailing": 0, 
+        "numberErroring": 1, 
+        "numberSkipping": 2
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/awslabs/amazon-kinesis-client/builds/452166805", 
+      "date": "Nov 8, 2018 1:45:40 AM", 
+      "id": 452166805
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/awslabs/amazon-kinesis-client/builds/446289265", 
+      "date": "Oct 25, 2018 8:39:04 PM", 
+      "id": 446289265
+    }
+  }, 
+  "repository": {
+    "name": "awslabs/amazon-kinesis-client", 
+    "url": "https://github.com/awslabs/amazon-kinesis-client", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 14212940
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/awslabs/amazon-kinesis-client/commit/f52f2559edd2ccd86f819be45ad650dbeb246540", 
+      "sha": "f52f2559edd2ccd86f819be45ad650dbeb246540", 
+      "branchName": "master", 
+      "date": "Nov 8, 2018 1:33:49 AM", 
+      "repoName": "awslabs/amazon-kinesis-client"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/awslabs/amazon-kinesis-client/commit/b83a32b49257060db9d549cc46d3b410152f2715", 
+      "sha": "b83a32b49257060db9d549cc46d3b410152f2715", 
+      "branchName": "master", 
+      "date": "Oct 25, 2018 7:40:35 PM", 
+      "repoName": "awslabs/amazon-kinesis-client"
+    }
+  }, 
+  "bugName": "awslabs-amazon-kinesis-client-446289265-452166805", 
+  "version": "latest", 
+  "projectMetrics": {
+    "numberSourceFiles": 186, 
+    "numberLibrariesFailingModule": 54, 
+    "numberTestFiles": 68, 
+    "numberModules": 2
+  }, 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 1, 
+      "numberDeleted": 1
+    }
+  }, 
+  "bugId": "Bears-199", 
+  "type": "passing_passing", 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 305571032, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 401080320, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Nov 8, 2018 1:48:46 AM", 
+    "projectRootPomPath": "./workspace/awslabs/amazon-kinesis-client/446289265/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          0, 
+          0, 
+          0, 
+          0, 
+          60
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 60
+      }, 
+      "testing": {
+        "stepDurations": [
+          24
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 24
+      }, 
+      "cloning": {
+        "stepDurations": [
+          4
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 4
+      }
+    }, 
+    "reproductionDateBeginning": "Nov 8, 2018 1:46:01 AM", 
+    "totalDuration": 159
+  }
+}
