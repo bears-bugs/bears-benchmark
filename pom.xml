@@ -1,0 +1,124 @@
+<!--
+  ~  Copyright 2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+  ~
+  ~  Licensed under the Amazon Software License (the "License").
+  ~  You may not use this file except in compliance with the License.
+  ~  A copy of the License is located at
+  ~
+  ~  http://aws.amazon.com/asl/
+  ~
+  ~  or in the "license" file accompanying this file. This file is distributed
+  ~  on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either
+  ~  express or implied. See the License for the specific language governing
+  ~  permissions and limitations under the License.
+  -->
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>software.amazon.kinesis</groupId>
+  <artifactId>amazon-kinesis-client-pom</artifactId>
+  <packaging>pom</packaging>
+  <name>Amazon Kinesis Client Library</name>
+  <version>2.0.5-SNAPSHOT</version>
+  <description>The Amazon Kinesis Client Library for Java enables Java developers to easily consume and process data
+    from Amazon Kinesis.
+  </description>
+  <url>https://aws.amazon.com/kinesis</url>
+
+  <scm>
+    <url>https://github.com/awslabs/amazon-kinesis-client.git</url>
+  </scm>
+
+  <properties>
+    <aws-java-sdk.version>1.11.272</aws-java-sdk.version>
+  </properties>
+
+  <licenses>
+    <license>
+      <name>Amazon Software License</name>
+      <url>https://aws.amazon.com/asl</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+
+  <modules>
+    <module>amazon-kinesis-client</module>
+    <module>amazon-kinesis-client-multilang</module>
+  </modules>
+
+  <developers>
+    <developer>
+      <id>amazonwebservices</id>
+      <organization>Amazon Web Services</organization>
+      <organizationUrl>https://aws.amazon.com</organizationUrl>
+      <roles>
+        <role>developer</role>
+      </roles>
+    </developer>
+  </developers>
+
+  <distributionManagement>
+    <snapshotRepository>
+      <id>ossrh</id>
+      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+    </snapshotRepository>
+    <repository>
+      <id>ossrh</id>
+      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+    </repository>
+  </distributionManagement>
+
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>3.2</version>
+          <configuration>
+            <source>1.8</source>
+            <target>1.8</target>
+            <encoding>UTF-8</encoding>
+          </configuration>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+
+  <profiles>
+    <profile>
+      <id>publishing</id>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-gpg-plugin</artifactId>
+            <version>1.6</version>
+            <executions>
+              <execution>
+                <id>sign-artifacts</id>
+                <phase>verify</phase>
+                <goals>
+                  <goal>sign</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
+          <plugin>
+            <groupId>org.sonatype.plugins</groupId>
+            <artifactId>nexus-staging-maven-plugin</artifactId>
+            <version>1.6.8</version>
+            <extensions>true</extensions>
+            <configuration>
+              <serverId>sonatype-nexus-staging</serverId>
+              <nexusUrl>https://oss.sonatype.org</nexusUrl>
+              <autoReleaseAfterClose>false</autoReleaseAfterClose>
+            </configuration>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+  </profiles>
+
+</project>
