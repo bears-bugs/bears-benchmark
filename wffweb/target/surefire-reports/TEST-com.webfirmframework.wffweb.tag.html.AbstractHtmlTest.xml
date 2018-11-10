@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="36" failures="2" name="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" time="2.283" errors="0" skipped="0">
+<testsuite tests="36" failures="0" name="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" time="1.828" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
@@ -71,110 +71,40 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testPerformanceByArrayDeque" time="0.788"/>
-  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testResetHierarchyInvalidTagException" time="0.014"/>
-  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testSetGetSharedData" time="0.003"/>
+  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testPerformanceByArrayDeque" time="0.768"/>
+  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testResetHierarchyInvalidTagException" time="0.009"/>
+  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testSetGetSharedData" time="0.002"/>
   <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testToWffBMBytesNoTagWithParentInvalidTagException" time="0"/>
-  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testToBigOutputStream" time="0.012"/>
-  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testPerformanceAsNonInnerClassFormat" time="0.329"/>
-  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testPerformanceAsInnerClassFormat" time="0.248"/>
-  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testHierarchy" time="0.004"/>
-  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testDiv" time="0"/>
-  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testToBigOutputStreamNoStackoverflowError" time="0.008"/>
-  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testToOutputStreamReturnedLength" time="0.397"/>
+  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testToBigOutputStream" time="0.007"/>
+  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testPerformanceAsNonInnerClassFormat" time="0.189"/>
+  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testPerformanceAsInnerClassFormat" time="0.164"/>
+  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testHierarchy" time="0.002"/>
+  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testDiv" time="0.001"/>
+  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testToBigOutputStreamNoStackoverflowError" time="0.01"/>
+  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testToOutputStreamReturnedLength" time="0.24"/>
   <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testChildAtWithExp" time="0.001"/>
   <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testInsertAfter" time="0"/>
-  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testToOutputStream1" time="0.005"/>
-  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testToOutputStream2" time="0.019">
-    <failure message="expected:&lt;&lt;div id=&quot;one&quot;&gt;&lt;span [id=&quot;5&quot; class=&quot;cls-five]&quot;&gt;Title changed&lt;/spa...&gt; but was:&lt;&lt;div id=&quot;one&quot;&gt;&lt;span [class=&quot;cls-five&quot; id=&quot;5]&quot;&gt;Title changed&lt;/spa...&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: expected:&lt;&lt;div id=&quot;one&quot;&gt;&lt;span [id=&quot;5&quot; class=&quot;cls-five]&quot;&gt;Title changed&lt;/spa...&gt; but was:&lt;&lt;div id=&quot;one&quot;&gt;&lt;span [class=&quot;cls-five&quot; id=&quot;5]&quot;&gt;Title changed&lt;/spa...&gt;
-	at org.junit.Assert.assertEquals(Assert.java:115)
-	at org.junit.Assert.assertEquals(Assert.java:144)
-	at com.webfirmframework.wffweb.tag.html.AbstractHtmlTest.testToOutputStream2(AbstractHtmlTest.java:746)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-</failure>
-  </testcase>
+  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testToOutputStream1" time="0.003"/>
+  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testToOutputStream2" time="0.001"/>
   <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testInsertBeforeWithNoParentException" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testInsertAfterWithNoParentException" time="0"/>
-  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testToWffBMBytesAndGetTagFromWffBMBytes" time="0"/>
-  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="test2PrependChildren" time="0"/>
+  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testToWffBMBytesAndGetTagFromWffBMBytes" time="0.003"/>
+  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="test2PrependChildren" time="0.007"/>
   <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testToBigHtmlString" time="0.007"/>
-  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testResetHierarchy" time="0.009"/>
+  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testResetHierarchy" time="0.008"/>
   <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testChildAtAndGetChildrenSize" time="0"/>
-  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="test1PrependChildren" time="0.001"/>
-  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testAddRemoveAttributesAttributes" time="0.003"/>
+  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="test1PrependChildren" time="0.002"/>
+  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testAddRemoveAttributesAttributes" time="0.002"/>
   <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testGetFirstChildClassCastException" time="0.001"/>
-  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testInsertAfter2" time="0"/>
-  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testInsertBefore" time="0.001"/>
-  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testGetFirstChild" time="0.002"/>
-  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testToString1" time="0.004"/>
-  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testToString2" time="0.003">
-    <failure message="expected:&lt;&lt;div id=&quot;one&quot;&gt;&lt;span [id=&quot;5&quot; class=&quot;cls-five]&quot;&gt;Title changed&lt;/spa...&gt; but was:&lt;&lt;div id=&quot;one&quot;&gt;&lt;span [class=&quot;cls-five&quot; id=&quot;5]&quot;&gt;Title changed&lt;/spa...&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: expected:&lt;&lt;div id=&quot;one&quot;&gt;&lt;span [id=&quot;5&quot; class=&quot;cls-five]&quot;&gt;Title changed&lt;/spa...&gt; but was:&lt;&lt;div id=&quot;one&quot;&gt;&lt;span [class=&quot;cls-five&quot; id=&quot;5]&quot;&gt;Title changed&lt;/spa...&gt;
-	at org.junit.Assert.assertEquals(Assert.java:115)
-	at org.junit.Assert.assertEquals(Assert.java:144)
-	at com.webfirmframework.wffweb.tag.html.AbstractHtmlTest.testToString2(AbstractHtmlTest.java:570)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-</failure>
-  </testcase>
+  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testInsertAfter2" time="0.002"/>
+  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testInsertBefore" time="0"/>
+  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testGetFirstChild" time="0"/>
+  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testToString1" time="0.003"/>
+  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testToString2" time="0"/>
   <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testChildAtTypeCastedWithClassCastException" time="0"/>
-  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testToBigHtmlStringNoStackoverflowError" time="0.007"/>
+  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testToBigHtmlStringNoStackoverflowError" time="0.004"/>
   <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testGetRootTag" time="0"/>
-  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testThreadSafetyOfGetFirstChild1" time="0.217"/>
-  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testThreadSafetyOfGetFirstChild2" time="0.2"/>
+  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testThreadSafetyOfGetFirstChild1" time="0.19"/>
+  <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testThreadSafetyOfGetFirstChild2" time="0.202"/>
   <testcase classname="com.webfirmframework.wffweb.tag.html.AbstractHtmlTest" name="testToWffBMBytesNoTagWithoutParentInvalidTagException" time="0"/>
 </testsuite>
