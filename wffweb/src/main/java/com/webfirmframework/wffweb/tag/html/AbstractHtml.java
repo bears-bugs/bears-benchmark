@@ -1113,7 +1113,7 @@ public abstract class AbstractHtml extends AbstractJsObject {
             return;
         }
 
-        attributesMap = new ConcurrentHashMap<>(attributes.length);
+        attributesMap = new ConcurrentHashMap<>();
 
         for (final AbstractAttribute attribute : attributes) {
             attributesMap.put(attribute.getAttributeName(), attribute);
