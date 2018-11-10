@@ -1,0 +1,153 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 1922, 
+      "numberRunning": 1924, 
+      "numberFailing": 2, 
+      "numberErroring": 0, 
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure", 
+          "isError": false, 
+          "occurrences": 2
+        }
+      ], 
+      "numberSkipping": 0
+    }, 
+    "failingModule": "/root/workspace/webfirmframework/wff/453188520/wffweb", 
+    "failureDetails": [
+      {
+        "failureName": "org.junit.ComparisonFailure", 
+        "detail": "expected:<<div id=\"one\"><span [id=\"5\" class=\"cls-five]\">Title changed</spa...> but was:<<div id=\"one\"><span [class=\"cls-five\" id=\"5]\">Title changed</spa...>", 
+        "isError": false, 
+        "testMethod": "testToOutputStream2", 
+        "testClass": "com.webfirmframework.wffweb.tag.html.AbstractHtmlTest"
+      }, 
+      {
+        "failureName": "org.junit.ComparisonFailure", 
+        "detail": "expected:<<div id=\"one\"><span [id=\"5\" class=\"cls-five]\">Title changed</spa...> but was:<<div id=\"one\"><span [class=\"cls-five\" id=\"5]\">Title changed</spa...>", 
+        "isError": false, 
+        "testMethod": "testToString2", 
+        "testClass": "com.webfirmframework.wffweb.tag.html.AbstractHtmlTest"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 34, 
+        "numberRunning": 36, 
+        "testClass": "com.webfirmframework.wffweb.tag.html.AbstractHtmlTest", 
+        "numberFailing": 2, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/webfirmframework/wff/builds/453188718", 
+      "date": "Nov 10, 2018 7:11:39 AM", 
+      "id": 453188718
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/webfirmframework/wff/builds/453188520", 
+      "date": "Nov 10, 2018 7:09:08 AM", 
+      "id": 453188520
+    }
+  }, 
+  "repository": {
+    "name": "webfirmframework/wff", 
+    "url": "https://github.com/webfirmframework/wff", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 46187719
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/webfirmframework/wff/commit/75520f56bba7a0561a037cb728812c15d8b498ea", 
+      "sha": "75520f56bba7a0561a037cb728812c15d8b498ea", 
+      "branchName": "develop", 
+      "date": "Nov 10, 2018 7:09:06 AM", 
+      "repoName": "webfirmframework/wff"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/webfirmframework/wff/commit/34c9f8a312131bd56d934f44d10c0630238f94e8", 
+      "sha": "34c9f8a312131bd56d934f44d10c0630238f94e8", 
+      "branchName": "develop", 
+      "date": "Nov 10, 2018 7:07:06 AM", 
+      "repoName": "webfirmframework/wff"
+    }
+  }, 
+  "bugName": "webfirmframework-wff-453188520-453188718", 
+  "version": "latest", 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 1, 
+      "numberDeleted": 1
+    }
+  }, 
+  "type": "failing_passing", 
+  "bugId": "Bears-251", 
+  "projectMetrics": {
+    "numberSourceFiles": 775, 
+    "numberLibrariesFailingModule": 6, 
+    "numberTestFiles": 151, 
+    "numberModules": 1
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 438912656, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 483393536, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Nov 10, 2018 7:13:43 AM", 
+    "projectRootPomPath": "./workspace/webfirmframework/wff/453188520/wffweb/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          0, 
+          27
+        ], 
+        "stepNames": [
+          "CheckoutBuggyBuildCandidate", 
+          "BuildProjectBuggyBuildCandidate"
+        ], 
+        "nbSteps": 2, 
+        "totalDuration": 27
+      }, 
+      "testing": {
+        "stepDurations": [
+          21
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidate"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 21
+      }, 
+      "cloning": {
+        "stepDurations": [
+          6
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 6
+      }
+    }, 
+    "reproductionDateBeginning": "Nov 10, 2018 7:11:52 AM", 
+    "totalDuration": 106
+  }
+}
