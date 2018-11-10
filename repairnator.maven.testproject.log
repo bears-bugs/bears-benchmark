@@ -1,0 +1,1313 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building wffweb 3.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ wffweb ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 13 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ wffweb ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 775 source files to /root/workspace/webfirmframework/wff/453188520/wffweb/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ wffweb ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/webfirmframework/wff/453188520/wffweb/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ wffweb ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ wffweb ---
+[INFO] Surefire report directory: /root/workspace/webfirmframework/wff/453188520/wffweb/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.pom (3 KB at 3.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom (3 KB at 58.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.jar (37 KB at 487.3 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.webfirmframework.wffweb.server.page.BrowserPageTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.565 sec
+Running com.webfirmframework.wffweb.common.performance.test.CodePerformanceTest
+time taken for asList: 3647 ns
+time taken for Collectors.toList: 1766331 ns
+performance of java 7 Arrays.asList > java8 stream's Collectors.toList, gain: 1762684 ns
+performance of LinkedList: 72738205
+performance of ArrayDeque: 33888628
+Additional ns taken by LinkedList than ArrayDeque: 38849577
+time taken for firstBySteam: 3922451 ns
+time taken for firstByLoop: 22980 ns
+time taken for firstByIterator: 2102 ns
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.164 sec
+Running com.webfirmframework.wffweb.common.test.TagPrintTest
+beforeTimeMillis 1541830362824
+afterTimeMillis 1541830362827
+3
+beforeTimeMillis 1541830362829
+afterTimeMillis 1541830362829
+0
+beforeTimeMillis 1541830362830
+afterTimeMillis 1541830362956
+126
+beforeTimeMillis 1541830362957
+afterTimeMillis 1541830362958
+1
+beforeTimeMillis 1541830362959
+afterTimeMillis 1541830362961
+2
+beforeTimeMillis 1541830362961
+afterTimeMillis 1541830362964
+3
+beforeTimeMillis 1541830362964
+afterTimeMillis 1541830362970
+6
+beforeTimeMillis 1541830362970
+afterTimeMillis 1541830362971
+1
+beforeTimeMillis 1541830362972
+afterTimeMillis 1541830362976
+4
+beforeTimeMillis 1541830362977
+afterTimeMillis 1541830362977
+0
+beforeTimeMillis 1541830362978
+afterTimeMillis 1541830362979
+1
+beforeTimeMillis 1541830362980
+afterTimeMillis 1541830363083
+103
+beforeTimeMillis 1541830363083
+afterTimeMillis 1541830363084
+1
+beforeTimeMillis 1541830363085
+afterTimeMillis 1541830363085
+0
+beforeTimeMillis 1541830363086
+afterTimeMillis 1541830363086
+0
+beforeTimeMillis 1541830363088
+afterTimeMillis 1541830363089
+1
+beforeTimeMillis 1541830363090
+afterTimeMillis 1541830363090
+0
+beforeTimeMillis 1541830363091
+afterTimeMillis 1541830363091
+0
+beforeTimeMillis 1541830363092
+afterTimeMillis 1541830363092
+0
+beforeTimeMillis 1541830363092
+afterTimeMillis 1541830363093
+1
+beforeTimeMillis 1541830363093
+afterTimeMillis 1541830363094
+1
+Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.272 sec
+Running com.webfirmframework.wffweb.wffbm.data.WffBMObjectArrayTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running com.webfirmframework.wffweb.streamer.WffBinaryMessageOutputStreamerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running com.webfirmframework.wffweb.js.JsUtilTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running com.webfirmframework.wffweb.tag.htmlwff.BlankTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
+Running com.webfirmframework.wffweb.tag.htmlwff.NoTagTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running com.webfirmframework.wffweb.tag.html.images.ImgTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running com.webfirmframework.wffweb.tag.html.html5.attribute.AutoCompleteTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec
+Running com.webfirmframework.wffweb.tag.html.HtmlTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec
+Running com.webfirmframework.wffweb.tag.html.core.TagRegistryTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.127 sec
+Running com.webfirmframework.wffweb.tag.html.attribute.global.ClassAttributeTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running com.webfirmframework.wffweb.tag.html.attribute.global.StyleTest
+style="cursor:url("Test.gif"), url("TestImage.png"), auto;"
+testAddStyle success
+testAddSupportForNewCustomCssClass succes
+testRemoveSupportOfCssClass success
+testAddStylesBooleanCssPropertyArray is success
+testAddStylesBooleanCssPropertyArray is success
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.054 sec
+Running com.webfirmframework.wffweb.tag.html.attribute.core.AbstractAttributeTest
+class=cl1 cl2 cl3 cl-col-4
+class=cl1 cl2 cl3 cl-col-4
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running com.webfirmframework.wffweb.tag.html.attribute.core.AttributeUtilTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.119 sec
+Running com.webfirmframework.wffweb.tag.html.attribute.core.AttributeRegistryTest
+Accept
+AccessKey
+Align
+Alt
+AutoComplete
+AutoFocus
+AutoPlay
+Charset
+Checked
+ClassAttribute
+ColorAttribute
+Content
+ContentEditable
+ContextMenu
+Controls
+CoOrds
+DataAttribute
+Dir
+Disabled
+Download
+Draggable
+Dropzone
+Face
+FormAttribute
+FormAction
+FormEncType
+FormMethod
+FormNoValidate
+FormTarget
+Height
+Hidden
+Href
+HrefLang
+HttpEquiv
+Id
+Lang
+List
+Loop
+Max
+MaxLength
+Media
+Method
+Min
+MinLength
+Multiple
+Muted
+Name
+NoHref
+Pattern
+Placeholder
+Preload
+ReadOnly
+Rel
+Required
+Rev
+Shape
+Size
+SpellCheck
+Src
+Step
+Style
+TabIndex
+Target
+Title
+Translate
+Type
+Value
+Width
+ColSpan
+RowSpan
+Headers
+Scope
+Sorted
+EncType
+Action
+CellPadding
+CellSpacing
+Border
+OnClick
+OnContextMenu
+OnDblClick
+OnMouseDown
+OnMouseEnter
+OnMouseLeave
+OnMouseMove
+OnMouseOut
+OnMouseUp
+OnKeyDown
+OnKeyPress
+OnKeyUp
+OnAbort
+OnBeforeUnload
+OnError
+OnHashChange
+OnLoad
+OnPageShow
+OnPageHide
+OnScroll
+OnUnload
+OnBlur
+OnChange
+OnFocus
+OnFocusIn
+OnFocusOut
+OnInput
+OnInvalid
+OnReset
+OnSearch
+OnSelect
+OnSubmit
+OnDrag
+OnDragEnd
+OnDragEnter
+OnDragLeave
+OnDragOver
+OnDragStart
+OnDrop
+OnCopy
+OnCut
+OnPaste
+OnAfterPrint
+OnBeforePrint
+OnCanPlay
+OnCanPlayThrough
+OnDurationChange
+OnEmptied
+OnEnded
+OnLoadedData
+OnLoadedMetaData
+OnLoadStart
+OnPause
+OnPlay
+OnPlaying
+OnProgress
+OnRateChange
+OnSeeked
+OnSeeking
+OnStalled
+OnSuspend
+OnTimeUpdate
+OnVolumeChange
+OnWaiting
+AnimationEnd
+AnimationIteration
+AnimationStart
+TransitionEnd
+OnOnline
+OnOffline
+OnPopState
+OnShow
+OnStorage
+OnToggle
+OnWheel
+OnTouchCancel
+OnTouchEnd
+OnTouchMove
+OnTouchStart
+Role
+SrcSet
+Sizes
+Cols
+Rows
+For
+Selected
+AcceptCharset
+Async
+DateTime
+OnMouseOver
+OnResize
+Open
+Optimum
+Defer
+Default
+DirName
+High
+Low
+Reversed
+Poster
+IsMap
+Sandbox
+Wrap
+UseMap
+Nonce
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.048 sec
+Running com.webfirmframework.wffweb.tag.html.attribute.RelTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running com.webfirmframework.wffweb.tag.html.attribute.SelectedTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running com.webfirmframework.wffweb.tag.html.attribute.CheckedTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running com.webfirmframework.wffweb.tag.html.AbstractHtmlRepositoryTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 sec
+Running com.webfirmframework.wffweb.tag.html.AbstractHtmlTest
+htmlString.length() : 1100011 wffBytes.length 1000008
+htmlString.length() - wffBytes.length : 100003
+testPerformanceByArrayDeque 1000008 tag bytes generation took 583 ms
+testPerformanceAsNonInnerClassFormat 1100011 tag bytes generation took 330 ms
+testPerformanceAsInnerClassFormat 1100011 tag bytes generation took 249 ms
+total time taken toOutputStream: 0
+total time taken for toBigOutputStream: 5
+<div id="parentDivId"><div id="child1"></div><div id="inserted1BeforeChild1"></div><div id="inserted2BeforeChild1"></div></div>
+<div id="one"><span></span><p></p><br/></div>
+<div id="one"><span></span><p></p><br/><div id="child1"></div></div>
+<div id="parentDivId"><div id="child1"></div><div id="inserted1BeforeChild1"></div><div id="inserted2BeforeChild1"></div><div id="child2"></div></div>
+<div id="parentDivId"><div id="inserted1BeforeChild1"></div><div id="inserted2BeforeChild1"></div><div id="child1"></div></div>
+total time taken toHtmlString: 0
+total time taken for toBigHtmlString: 1
+threadTwo started
+firstChild: <h1></h1>
+threadOne started
+inserted a tag before
+firstChild: <tag0></tag0>
+firstChild: <tag0></tag0>
+inserted a tag before
+inserted a tag before
+inserted a tag before
+inserted a tag before
+inserted a tag before
+inserted a tag before
+firstChild: <tag0></tag0>
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+inserted a tag before
+inserted a tag before
+inserted a tag before
+inserted a tag before
+inserted a tag before
+inserted a tag before
+inserted a tag before
+inserted a tag before
+inserted a tag before
+threadTwo started
+firstChild: <h1></h1>
+threadOne started
+inserted a tag before
+firstChild: <tag0></tag0>
+inserted a tag before
+firstChild: <tag1></tag1>
+inserted a tag before
+firstChild: <tag2></tag2>
+inserted a tag before
+firstChild: <tag3></tag3>
+inserted a tag before
+firstChild: <tag4></tag4>
+inserted a tag before
+firstChild: <tag5></tag5>
+firstChild: <tag5></tag5>
+inserted a tag before
+firstChild: <tag6></tag6>
+inserted a tag before
+inserted a tag before
+firstChild: <tag7></tag7>
+firstChild: <tag8></tag8>
+inserted a tag before
+firstChild: <tag9></tag9>
+inserted a tag before
+firstChild: <tag10></tag10>
+inserted a tag before
+firstChild: <tag11></tag11>
+inserted a tag before
+firstChild: <tag12></tag12>
+inserted a tag before
+firstChild: <tag13></tag13>
+inserted a tag before
+firstChild: <tag14></tag14>
+inserted a tag before
+firstChild: <tag15></tag15>
+inserted a tag before
+firstChild: <tag16></tag16>
+inserted a tag before
+firstChild: <tag17></tag17>
+inserted a tag before
+firstChild: <tag18></tag18>
+inserted a tag before
+firstChild: <tag19></tag19>
+inserted a tag before
+firstChild: <tag20></tag20>
+inserted a tag before
+firstChild: <tag21></tag21>
+inserted a tag before
+firstChild: <tag22></tag22>
+inserted a tag before
+firstChild: <tag23></tag23>
+inserted a tag before
+firstChild: <tag24></tag24>
+inserted a tag before
+firstChild: <tag25></tag25>
+firstChild: <tag25></tag25>
+inserted a tag before
+firstChild: <tag26></tag26>
+inserted a tag before
+firstChild: <tag27></tag27>
+inserted a tag before
+firstChild: <tag28></tag28>
+inserted a tag before
+firstChild: <tag29></tag29>
+inserted a tag before
+firstChild: <tag30></tag30>
+inserted a tag before
+firstChild: <tag31></tag31>
+inserted a tag before
+firstChild: <tag32></tag32>
+inserted a tag before
+firstChild: <tag33></tag33>
+inserted a tag before
+firstChild: <tag34></tag34>
+inserted a tag before
+firstChild: <tag35></tag35>
+inserted a tag before
+firstChild: <tag36></tag36>
+inserted a tag before
+firstChild: <tag37></tag37>
+inserted a tag before
+firstChild: <tag38></tag38>
+inserted a tag before
+firstChild: <tag39></tag39>
+inserted a tag before
+firstChild: <tag40></tag40>
+inserted a tag before
+firstChild: <tag41></tag41>
+inserted a tag before
+firstChild: <tag42></tag42>
+inserted a tag before
+firstChild: <tag43></tag43>
+inserted a tag before
+firstChild: <tag44></tag44>
+inserted a tag before
+firstChild: <tag45></tag45>
+inserted a tag before
+firstChild: <tag46></tag46>
+inserted a tag before
+firstChild: <tag47></tag47>
+inserted a tag before
+firstChild: <tag48></tag48>
+inserted a tag before
+firstChild: <tag49></tag49>
+inserted a tag before
+firstChild: <tag50></tag50>
+inserted a tag before
+firstChild: <tag51></tag51>
+inserted a tag before
+firstChild: <tag52></tag52>
+inserted a tag before
+firstChild: <tag53></tag53>
+inserted a tag before
+firstChild: <tag54></tag54>
+inserted a tag before
+firstChild: <tag55></tag55>
+inserted a tag before
+firstChild: <tag56></tag56>
+inserted a tag before
+firstChild: <tag57></tag57>
+inserted a tag before
+firstChild: <tag58></tag58>
+inserted a tag before
+firstChild: <tag59></tag59>
+inserted a tag before
+firstChild: <tag60></tag60>
+inserted a tag before
+firstChild: <tag61></tag61>
+inserted a tag before
+firstChild: <tag62></tag62>
+inserted a tag before
+firstChild: <tag63></tag63>
+inserted a tag before
+firstChild: <tag64></tag64>
+inserted a tag before
+firstChild: <tag65></tag65>
+inserted a tag before
+firstChild: <tag66></tag66>
+inserted a tag before
+firstChild: <tag67></tag67>
+inserted a tag before
+firstChild: <tag68></tag68>
+inserted a tag before
+firstChild: <tag69></tag69>
+inserted a tag before
+firstChild: <tag70></tag70>
+inserted a tag before
+inserted a tag before
+firstChild: <tag72></tag72>
+inserted a tag before
+firstChild: <tag73></tag73>
+inserted a tag before
+firstChild: <tag74></tag74>
+inserted a tag before
+firstChild: <tag75></tag75>
+inserted a tag before
+firstChild: <tag76></tag76>
+inserted a tag before
+firstChild: <tag77></tag77>
+inserted a tag before
+firstChild: <tag78></tag78>
+inserted a tag before
+firstChild: <tag79></tag79>
+inserted a tag before
+firstChild: <tag80></tag80>
+inserted a tag before
+firstChild: <tag81></tag81>
+inserted a tag before
+firstChild: <tag82></tag82>
+inserted a tag before
+firstChild: <tag83></tag83>
+inserted a tag before
+firstChild: <tag84></tag84>
+inserted a tag before
+firstChild: <tag85></tag85>
+inserted a tag before
+firstChild: <tag86></tag86>
+inserted a tag before
+firstChild: <tag87></tag87>
+inserted a tag before
+firstChild: <tag88></tag88>
+inserted a tag before
+firstChild: <tag89></tag89>
+inserted a tag before
+firstChild: <tag90></tag90>
+inserted a tag before
+firstChild: <tag91></tag91>
+inserted a tag before
+firstChild: <tag92></tag92>
+inserted a tag before
+firstChild: <tag93></tag93>
+inserted a tag before
+firstChild: <tag94></tag94>
+inserted a tag before
+firstChild: <tag95></tag95>
+inserted a tag before
+firstChild: <tag96></tag96>
+inserted a tag before
+firstChild: <tag97></tag97>
+inserted a tag before
+firstChild: <tag98></tag98>
+inserted a tag before
+firstChild: <tag99></tag99>
+inserted a tag before
+firstChild: <tag100></tag100>
+inserted a tag before
+firstChild: <tag101></tag101>
+inserted a tag before
+firstChild: <tag102></tag102>
+inserted a tag before
+firstChild: <tag103></tag103>
+inserted a tag before
+firstChild: <tag104></tag104>
+inserted a tag before
+firstChild: <tag105></tag105>
+inserted a tag before
+firstChild: <tag106></tag106>
+inserted a tag before
+firstChild: <tag107></tag107>
+inserted a tag before
+firstChild: <tag108></tag108>
+inserted a tag before
+firstChild: <tag109></tag109>
+inserted a tag before
+firstChild: <tag110></tag110>
+inserted a tag before
+firstChild: <tag111></tag111>
+inserted a tag before
+firstChild: <tag112></tag112>
+inserted a tag before
+firstChild: <tag113></tag113>
+inserted a tag before
+firstChild: <tag114></tag114>
+inserted a tag before
+firstChild: <tag115></tag115>
+inserted a tag before
+firstChild: <tag116></tag116>
+inserted a tag before
+firstChild: <tag117></tag117>
+inserted a tag before
+firstChild: <tag118></tag118>
+inserted a tag before
+firstChild: <tag119></tag119>
+inserted a tag before
+firstChild: <tag120></tag120>
+inserted a tag before
+firstChild: <tag121></tag121>
+firstChild: <tag121></tag121>
+inserted a tag before
+firstChild: <tag122></tag122>
+firstChild: <tag122></tag122>
+inserted a tag before
+firstChild: <tag123></tag123>
+inserted a tag before
+firstChild: <tag124></tag124>
+inserted a tag before
+firstChild: <tag125></tag125>
+inserted a tag before
+firstChild: <tag126></tag126>
+firstChild: <tag126></tag126>
+inserted a tag before
+firstChild: <tag127></tag127>
+inserted a tag before
+firstChild: <tag128></tag128>
+inserted a tag before
+firstChild: <tag129></tag129>
+inserted a tag before
+firstChild: <tag130></tag130>
+inserted a tag before
+firstChild: <tag131></tag131>
+inserted a tag before
+firstChild: <tag132></tag132>
+inserted a tag before
+firstChild: <tag133></tag133>
+inserted a tag before
+firstChild: <tag134></tag134>
+inserted a tag before
+firstChild: <tag135></tag135>
+inserted a tag before
+firstChild: <tag136></tag136>
+inserted a tag before
+firstChild: <tag137></tag137>
+firstChild: <tag137></tag137>
+firstChild: <tag137></tag137>
+firstChild: <tag137></tag137>
+firstChild: <tag137></tag137>
+firstChild: <tag137></tag137>
+firstChild: <tag137></tag137>
+firstChild: <tag137></tag137>
+inserted a tag before
+inserted a tag before
+inserted a tag before
+inserted a tag before
+inserted a tag before
+inserted a tag before
+inserted a tag before
+inserted a tag before
+inserted a tag before
+inserted a tag before
+inserted a tag before
+inserted a tag before
+Tests run: 36, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 2.297 sec <<< FAILURE!
+testToOutputStream2(com.webfirmframework.wffweb.tag.html.AbstractHtmlTest)  Time elapsed: 0.019 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<<div id="one"><span [id="5" class="cls-five]">Title changed</spa...> but was:<<div id="one"><span [class="cls-five" id="5]">Title changed</spa...>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at com.webfirmframework.wffweb.tag.html.AbstractHtmlTest.testToOutputStream2(AbstractHtmlTest.java:746)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+testToString2(com.webfirmframework.wffweb.tag.html.AbstractHtmlTest)  Time elapsed: 0.003 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<<div id="one"><span [id="5" class="cls-five]">Title changed</spa...> but was:<<div id="one"><span [class="cls-five" id="5]">Title changed</spa...>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at com.webfirmframework.wffweb.tag.html.AbstractHtmlTest.testToString2(AbstractHtmlTest.java:570)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+Running com.webfirmframework.wffweb.tag.html.HrTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running com.webfirmframework.wffweb.tag.html.formsandinputs.TextAreaTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running com.webfirmframework.wffweb.tag.html.formsandinputs.InputTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running com.webfirmframework.wffweb.tag.html.formsandinputs.FormTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 sec
+Running com.webfirmframework.wffweb.tag.html.model.AbstractHtml5SharedObjectTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec
+Running com.webfirmframework.wffweb.tag.repository.TagRepositoryTest
+Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.12 sec
+Running com.webfirmframework.wffweb.css.BorderBottomTest
+Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec
+Running com.webfirmframework.wffweb.css.RgbaCssValueTest
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec
+Running com.webfirmframework.wffweb.css.ListStyleTest
+Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec
+Running com.webfirmframework.wffweb.css.BorderTest
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec
+Running com.webfirmframework.wffweb.css.WidthCssTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec
+Running com.webfirmframework.wffweb.css.BorderSpacingTest
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec
+Running com.webfirmframework.wffweb.css.HslCssValueTest
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec
+Running com.webfirmframework.wffweb.css.BorderLeftColorTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec
+Running com.webfirmframework.wffweb.css.file.CssFileTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec
+Running com.webfirmframework.wffweb.css.SrcCssPropertyTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running com.webfirmframework.wffweb.css.MarginBottomTest
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Running com.webfirmframework.wffweb.css.OutlineTest
+Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 sec
+Running com.webfirmframework.wffweb.css.CssColorNameTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running com.webfirmframework.wffweb.css.OutlineOffsetTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Running com.webfirmframework.wffweb.css.BorderLeftTest
+Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 sec
+Running com.webfirmframework.wffweb.css.FontSizeTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec
+Running com.webfirmframework.wffweb.css.MarginTest
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 sec
+Running com.webfirmframework.wffweb.css.PaddingTest
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec
+Running com.webfirmframework.wffweb.css.BorderColorCssValuesTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec
+Running com.webfirmframework.wffweb.css.BorderColorTest
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec
+Running com.webfirmframework.wffweb.css.TopTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running com.webfirmframework.wffweb.css.LeftTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Running com.webfirmframework.wffweb.css.BorderRightWidthTest
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Running com.webfirmframework.wffweb.css.BorderRightTest
+Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec
+Running com.webfirmframework.wffweb.css.BackgroundColorTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec
+Running com.webfirmframework.wffweb.css.LineHeightTest
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
+Running com.webfirmframework.wffweb.css.BorderTopTest
+Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec
+Running com.webfirmframework.wffweb.css.BorderBottomColorTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Running com.webfirmframework.wffweb.css.BorderWidthTest
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec
+Running com.webfirmframework.wffweb.css.BorderLeftWidthTest
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running com.webfirmframework.wffweb.css.MarginTopTest
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Running com.webfirmframework.wffweb.css.MarginLeftTest
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Running com.webfirmframework.wffweb.css.MarginRightTest
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running com.webfirmframework.wffweb.css.css3.IconTest
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Running com.webfirmframework.wffweb.css.css3.PerspectiveOriginTest
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Running com.webfirmframework.wffweb.css.css3.ColumnsTest
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec
+Running com.webfirmframework.wffweb.css.css3.BackgroundSizeTest
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 sec
+Running com.webfirmframework.wffweb.css.css3.WebkitFlexBasisTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running com.webfirmframework.wffweb.css.css3.MozColumnRuleWidthTest
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running com.webfirmframework.wffweb.css.css3.FlexShrinkTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running com.webfirmframework.wffweb.css.css3.ColumnRuleTest
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec
+Running com.webfirmframework.wffweb.css.css3.FlexTest
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec
+Running com.webfirmframework.wffweb.css.css3.WebkitColumnRuleTest
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec
+Running com.webfirmframework.wffweb.css.css3.MozColumnCountTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running com.webfirmframework.wffweb.css.css3.OpacityTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running com.webfirmframework.wffweb.css.css3.BorderImageSourceTest
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Running com.webfirmframework.wffweb.css.css3.ColumnSpanTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running com.webfirmframework.wffweb.css.css3.MozFlexBasisTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Running com.webfirmframework.wffweb.css.css3.WebkitColumnRuleWidthTest
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Running com.webfirmframework.wffweb.css.css3.ColumnGapTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running com.webfirmframework.wffweb.css.css3.FlexGrowTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec
+Running com.webfirmframework.wffweb.css.css3.MozFlexShrinkTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running com.webfirmframework.wffweb.css.css3.WebkitColumnRuleColorTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running com.webfirmframework.wffweb.css.css3.WebkitColumnWidthTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running com.webfirmframework.wffweb.css.css3.FlexBasisTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running com.webfirmframework.wffweb.css.css3.OBackgroundSizeTest
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Running com.webfirmframework.wffweb.css.css3.WebkitFlexGrowTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running com.webfirmframework.wffweb.css.css3.MozColumnWidthTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running com.webfirmframework.wffweb.css.css3.ColumnWidthTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running com.webfirmframework.wffweb.css.css3.MozFlexGrowTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running com.webfirmframework.wffweb.css.css3.WebkitColumnCountTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running com.webfirmframework.wffweb.css.css3.ColumnRuleWidthTest
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running com.webfirmframework.wffweb.css.css3.WebkitColumnGapTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running com.webfirmframework.wffweb.css.css3.BorderImageRepeatTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running com.webfirmframework.wffweb.css.css3.MsFlexTest
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec
+Running com.webfirmframework.wffweb.css.css3.WebkitFlexTest
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec
+Running com.webfirmframework.wffweb.css.css3.BorderImageWidthTest
+Tests run: 30, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec
+Running com.webfirmframework.wffweb.css.css3.WebkitFlexShrinkTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running com.webfirmframework.wffweb.css.css3.MozFlexTest
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec
+Running com.webfirmframework.wffweb.css.css3.AnimationIterationCountTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running com.webfirmframework.wffweb.css.css3.FontSizeAdjustTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running com.webfirmframework.wffweb.css.css3.MozColumnRuleColorTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running com.webfirmframework.wffweb.css.css3.MozBackgroundSizeTest
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Running com.webfirmframework.wffweb.css.css3.WebkitBackgroundSizeTest
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Running com.webfirmframework.wffweb.css.css3.MozColumnRuleTest
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
+Running com.webfirmframework.wffweb.css.css3.ColumnCountTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running com.webfirmframework.wffweb.css.css3.PerspectiveTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running com.webfirmframework.wffweb.css.css3.ColumnRuleColorTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running com.webfirmframework.wffweb.css.css3.BorderImageSliceTest
+Tests run: 30, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec
+Running com.webfirmframework.wffweb.css.css3.WebkitColumnSpanTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running com.webfirmframework.wffweb.css.css3.MozColumnGapTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Running com.webfirmframework.wffweb.css.css3.BorderImageOutsetTest
+Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec
+Running com.webfirmframework.wffweb.css.css3.AlignContentTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running com.webfirmframework.wffweb.css.FontTest
+Tests run: 27, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec
+Running com.webfirmframework.wffweb.css.RightTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Running com.webfirmframework.wffweb.css.BorderBottomWidthTest
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running com.webfirmframework.wffweb.css.RgbCssValueTest
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running com.webfirmframework.wffweb.css.CursorTest
+cursor: url("/cursors/One.png") 120 550, url("/cursors/Two.png"), url("/cursors/Three.svg") 175 50, copy
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec
+Running com.webfirmframework.wffweb.css.ColorTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running com.webfirmframework.wffweb.css.PaddingLeftTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running com.webfirmframework.wffweb.css.HeightCssTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running com.webfirmframework.wffweb.css.LetterSpacingTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running com.webfirmframework.wffweb.css.BottomTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running com.webfirmframework.wffweb.css.OutlineColorTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec
+Running com.webfirmframework.wffweb.css.PaddingRightTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running com.webfirmframework.wffweb.css.BackgroundImageTest
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Running com.webfirmframework.wffweb.css.UrlCss3ValueTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running com.webfirmframework.wffweb.css.ListStyleImageTest
+list-style-image: url("http://project.com/images/TestImage.png")
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running com.webfirmframework.wffweb.css.BorderTopWidthTest
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running com.webfirmframework.wffweb.css.OutlineWidthTest
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running com.webfirmframework.wffweb.css.WordSpacingTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running com.webfirmframework.wffweb.css.FontFamilyTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running com.webfirmframework.wffweb.css.PaddingBottomTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running com.webfirmframework.wffweb.css.BorderTopColorTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
+Running com.webfirmframework.wffweb.css.BorderRightColorTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
+Running com.webfirmframework.wffweb.css.PaddingTopTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 sec
+Running com.webfirmframework.wffweb.css.HslaCssValueTest
+Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Running com.webfirmframework.wffweb.util.CssLengthUtilTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running com.webfirmframework.wffweb.util.WffBinaryMessageUtilTest
+the length of wff binary message is lower than bson bytes, the ratio wff binary message:bson = 127892:202895, gain is 75003 bytes
+testWffBinaryMessageBytesLengthIsLowerThanBson took 520 ms
+time taken for getOptimizedBytesFromInt 14
+time taken for getLengthOfOptimizedBytesFromInt 5
+testGetLengthOfOptimizedBytesFromInt took 19 ms
+testPerformanceOfWffBinaryMessageToNameValuesAndWiseVersa took just 9 ms for building and parsing 1000 name-value pairs.
+totalMillisTaken for jackson faster xml buiding and parsing 175
+wff binary message building and parsing is 19 times faster than jackson fasterxml parsing and bulding of json.
+testGetOptimizedBytesFromIntAndGetIntFromOptimizedBytes took 1 ms
+testGetWffBinaryMessageBytesEncodingDecodeing took 1 ms
+testGetWffBinaryMessageBytes1 took 0 ms
+testGetWffBinaryMessageBytes2 took 0 ms
+testParse1 took 0 ms
+testParse2 took 0 ms
+testParse3 took 1 ms
+testParse4 took 0 ms
+testParse5 took 1 ms
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.766 sec
+Running com.webfirmframework.wffweb.util.StringBuilderUtilTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Running com.webfirmframework.wffweb.util.StringUtilTest
+Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Running com.webfirmframework.wffweb.util.CssValueUtilTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec
+Running com.webfirmframework.wffweb.util.HashUtilTest
+44
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec
+Running com.webfirmframework.wffweb.util.ObjectUtilTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+
+Results :
+
+Failed tests:   testToOutputStream2(com.webfirmframework.wffweb.tag.html.AbstractHtmlTest): expected:<<div id="one"><span [id="5" class="cls-five]">Title changed</spa...> but was:<<div id="one"><span [class="cls-five" id="5]">Title changed</spa...>
+  testToString2(com.webfirmframework.wffweb.tag.html.AbstractHtmlTest): expected:<<div id="one"><span [id="5" class="cls-five]">Title changed</spa...> but was:<<div id="one"><span [class="cls-five" id="5]">Title changed</spa...>
+
+Tests run: 1924, Failures: 2, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 17.956 s
+[INFO] Finished at: 2018-11-10T07:12:48+01:00
+[INFO] Final Memory: 24M/624M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (default-test) on project wffweb: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/webfirmframework/wff/453188520/wffweb/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
