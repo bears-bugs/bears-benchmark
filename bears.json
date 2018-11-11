@@ -1,0 +1,1447 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 1473, 
+      "numberRunning": 1605, 
+      "numberFailing": 1, 
+      "numberErroring": 131, 
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError", 
+          "isError": false, 
+          "occurrences": 1
+        }, 
+        {
+          "failureName": "java.lang.NullPointerException", 
+          "isError": true, 
+          "occurrences": 75
+        }, 
+        {
+          "failureName": "java.lang.IndexOutOfBoundsException", 
+          "isError": true, 
+          "occurrences": 2
+        }, 
+        {
+          "failureName": "spoon.compiler.ModelBuildingException", 
+          "isError": true, 
+          "occurrences": 54
+        }
+      ], 
+      "numberSkipping": 5
+    }, 
+    "failingModule": "/root/workspace/INRIA/spoon/453383968", 
+    "failureDetails": [
+      {
+        "failureName": "java.lang.IndexOutOfBoundsException", 
+        "detail": "Index: 0, Size: 0", 
+        "isError": true, 
+        "testMethod": "testNullSignatureInUnboundVariable", 
+        "testClass": "spoon.test.signature.SignatureTest"
+      }, 
+      {
+        "failureName": "spoon.compiler.ModelBuildingException", 
+        "detail": "snippet compilation error while compiling: class Wrapper {\n    static void wrap() throws java.lang.Throwable {\n        class X {public void foo() { String x=(String) new Object();}};;\n    }\n}", 
+        "isError": true, 
+        "testMethod": "testCast1", 
+        "testClass": "spoon.test.casts.CastTest"
+      }, 
+      {
+        "failureName": "spoon.compiler.ModelBuildingException", 
+        "detail": "snippet compilation error while compiling: class Wrapper {\n    static void wrap() throws java.lang.Throwable {\n        String hello =\"t1\"; System.out.println(hello);\n    }\n}", 
+        "isError": true, 
+        "testMethod": "testSerialCtStatement", 
+        "testClass": "spoon.test.serializable.SerializableTest"
+      }, 
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "spoon.test.signature.SignatureTest", 
+        "testMethod": "testMethodInvocationSignatureWithVariableAccess", 
+        "isError": true
+      }, 
+      {
+        "failureName": "spoon.compiler.ModelBuildingException", 
+        "detail": "snippet compilation error while compiling: class Wrapper {\n    static void wrap() throws java.lang.Throwable {\n        class X {public void foo() { int x=0;}};;\n    }\n}", 
+        "isError": true, 
+        "testMethod": "testSnippetFullClass", 
+        "testClass": "spoon.test.snippets.SnippetTest"
+      }, 
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "spoon.test.reference.VariableAccessTest", 
+        "testMethod": "testMultipleDeclarationsOfLocalVariable", 
+        "isError": true
+      }, 
+      {
+        "failureName": "java.lang.AssertionError", 
+        "detail": "Unable create model", 
+        "isError": false, 
+        "testMethod": "testEqualsEmptyException", 
+        "testClass": "spoon.test.comparison.EqualTest"
+      }, 
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "spoon.test.reference.TypeReferenceTest", 
+        "testMethod": "testArgumentOfAInvocationIsNotATypeAccess", 
+        "isError": true
+      }, 
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "spoon.test.parent.ParentTest", 
+        "testMethod": "testHasParent", 
+        "isError": true
+      }, 
+      {
+        "failureName": "spoon.compiler.ModelBuildingException", 
+        "detail": "snippet compilation error while compiling: class Wrapper {\n    static void wrap() throws java.lang.Throwable {\n        class X {public void foo() { int x=0;switch(x) {case 0: x=x+1;break;case 1: x=0;default: x=-1;}}};;\n    }\n}", 
+        "isError": true, 
+        "testMethod": "testIterationStatements", 
+        "testClass": "spoon.test.model.SwitchCaseTest"
+      }, 
+      {
+        "failureName": "spoon.compiler.ModelBuildingException", 
+        "detail": "snippet compilation error while compiling: class Wrapper {\n    static void wrap() throws java.lang.Throwable {\n        class Diamond {\n         java.util.List<String> f = new java.util.ArrayList<>();\n        };\n    }\n}", 
+        "isError": true, 
+        "testMethod": "testDiamond1", 
+        "testClass": "spoon.test.generics.GenericsTest"
+      }, 
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "spoon.test.jar.JarTest", 
+        "testMethod": "testFile", 
+        "isError": true
+      }, 
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "spoon.test.serializable.SourcePositionTest", 
+        "testMethod": "testSourcePosition", 
+        "isError": true
+      }, 
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "spoon.test.reference.TypeReferenceTest", 
+        "testMethod": "testConstructorCallInNoClasspath", 
+        "isError": true
+      }, 
+      {
+        "failureName": "spoon.compiler.ModelBuildingException", 
+        "detail": "snippet compilation error while compiling: class Wrapper {\n    static void wrap() throws java.lang.Throwable {\n        int i=0;\n    }\n}", 
+        "isError": true, 
+        "testMethod": "testEqualsComment", 
+        "testClass": "spoon.test.comparison.EqualTest"
+      }, 
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "spoon.test.module.TestModule", 
+        "testMethod": "testModuleInfoWithComments", 
+        "isError": true
+      }, 
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "spoon.test.targeted.TargetedExpressionTest", 
+        "testMethod": "testStaticTargetsOfFieldAccessNoClasspath", 
+        "isError": true
+      }, 
+      {
+        "failureName": "spoon.compiler.ModelBuildingException", 
+        "detail": "snippet compilation error while compiling: class Wrapper {\n    static void wrap() throws java.lang.Throwable {\n        class Pozole {\n            public void m() {\n                class Cook {\n                    public Cook() {\n                    }\n\n                    public void m() {\n                        final java.lang.Class<Cook> cookClass = Cook.class;\n                    }\n                }\n                new Cook();\n            }\n        };\n    }\n}", 
+        "isError": true, 
+        "testMethod": "testAllTypeReferencesToALocalTypeShouldNotStartWithNumber", 
+        "testClass": "spoon.test.ctClass.CtClassTest"
+      }, 
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "spoon.test.methodreference.MethodReferenceTest", 
+        "testMethod": "testNoClasspathExecutableReferenceExpression", 
+        "isError": true
+      }, 
+      {
+        "failureName": "spoon.compiler.ModelBuildingException", 
+        "detail": "snippet compilation error while compiling: class Wrapper {\n    static void wrap() throws java.lang.Throwable {\n        class X {public void foo() { int x=0; String foo=\"toto\";}};;\n    }\n}", 
+        "isError": true, 
+        "testMethod": "testInsertEnd", 
+        "testClass": "spoon.test.intercession.IntercessionTest"
+      }, 
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "spoon.test.parent.ParentTest", 
+        "testMethod": "testParentOfCtPackageReference", 
+        "isError": true
+      }, 
+      {
+        "failureName": "spoon.compiler.ModelBuildingException", 
+        "detail": "snippet compilation error while compiling: class Wrapper {\n    static void wrap() throws java.lang.Throwable {\n        class X {public void foo() {  int x=0;  int y=0;  int z=x+y; }};;\n    }\n}", 
+        "isError": true, 
+        "testMethod": "testInsertAfterSwitchCase", 
+        "testClass": "spoon.test.intercession.insertBefore.InsertMethodsTest"
+      }, 
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "spoon.test.reference.TypeReferenceTest", 
+        "testMethod": "testPackageInNoClasspath", 
+        "isError": true
+      }, 
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "spoon.test.api.APITest", 
+        "testMethod": "testBasicAPIUsage", 
+        "isError": true
+      }, 
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "spoon.test.reference.VariableAccessTest", 
+        "testMethod": "testGetDeclarationAfterClone", 
+        "isError": true
+      }, 
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "spoon.test.jar.JarTest", 
+        "testMethod": "testResource", 
+        "isError": true
+      }, 
+      {
+        "failureName": "spoon.compiler.ModelBuildingException", 
+        "detail": "snippet compilation error while compiling: class Wrapper {\n    static void wrap() throws java.lang.Throwable {\n        if (false) {System.out.println(\"foo\");} else {System.out.println(\"bar\");} ;\n    }\n}", 
+        "isError": true, 
+        "testMethod": "testVisitorPartialEvaluator_if", 
+        "testClass": "spoon.test.eval.EvalTest"
+      }, 
+      {
+        "failureName": "spoon.compiler.ModelBuildingException", 
+        "detail": "snippet compilation error while compiling: class Wrapper {\n    static void wrap() throws java.lang.Throwable {\n        class X {public void foo() { try{}catch(RuntimeException e){System.exit(0);}}};;\n    }\n}", 
+        "isError": true, 
+        "testMethod": "testTryCatchVariableGetType", 
+        "testClass": "spoon.test.trycatch.TryCatchTest"
+      }, 
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "spoon.test.imports.ImportTest", 
+        "testMethod": "testNullable", 
+        "isError": true
+      }, 
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "spoon.test.compilation.CompilationTest", 
+        "testMethod": "testExoticClassLoader", 
+        "isError": true
+      }, 
+      {
+        "failureName": "spoon.compiler.ModelBuildingException", 
+        "detail": "snippet compilation error while compiling: class Wrapper {\n    static void wrap() throws java.lang.Throwable {\n        class X {public void foo() {  int x=0;  int y=0;  int z=x+y; }};;\n    }\n}", 
+        "isError": true, 
+        "testMethod": "insertBeforeAndUpdateParent", 
+        "testClass": "spoon.test.intercession.insertBefore.InsertMethodsTest"
+      }, 
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "spoon.test.field.FieldTest", 
+        "testMethod": "getFQNofFieldReference", 
+        "isError": true
+      }, 
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "spoon.test.model.IncrementalLauncherTest", 
+        "testMethod": "testIncremental3", 
+        "isError": true
+      }, 
+      {
+        "failureName": "spoon.compiler.ModelBuildingException", 
+        "detail": "snippet compilation error while compiling: class Wrapper {\n    static void wrap() throws java.lang.Throwable {\n        class X {public void foo() {  int x=0;  int y=0;  int z=x+y; }};;\n    }\n}", 
+        "isError": true, 
+        "testMethod": "testInsertBeforeWithBrace", 
+        "testClass": "spoon.test.intercession.insertBefore.InsertMethodsTest"
+      }, 
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "spoon.test.module.TestModule", 
+        "testMethod": "testDirectiveOrders", 
+        "isError": true
+      }, 
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "spoon.test.annotation.AnnotationTest", 
+        "testMethod": "testGetAnnotationFromParameter", 
+        "isError": true
+      }, 
+      {
+        "failureName": "spoon.compiler.ModelBuildingException", 
+        "detail": "snippet compilation error while compiling: class Wrapper {\n    static void wrap() throws java.lang.Throwable {\n        class X {public void foo() { try{}catch(java.lang.RuntimeException e){}}};;\n    }\n}", 
+        "isError": true, 
+        "testMethod": "testFullyQualifiedException", 
+        "testClass": "spoon.test.trycatch.TryCatchTest"
+      }, 
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "spoon.test.reference.TypeReferenceTest", 
+        "testMethod": "testTypeReferenceSpecifiedInClassDeclarationInNoClasspath", 
+        "isError": true
+      }, 
+      {
+        "failureName": "spoon.compiler.ModelBuildingException", 
+        "detail": "snippet compilation error while compiling: class Wrapper {\n    static void wrap() throws java.lang.Throwable {\n        java.util.List<?> l = null;\n    }\n}", 
+        "isError": true, 
+        "testMethod": "testTypeDeclarationWildcard", 
+        "testClass": "spoon.test.reference.TypeReferenceTest"
+      }, 
+      {
+        "failureName": "spoon.compiler.ModelBuildingException", 
+        "detail": "snippet compilation error while compiling: class Wrapper {\n    static void wrap() throws java.lang.Throwable {\n        class X {public void foo() { Class klass=null;  boolean x= (klass == short.class);}};;\n    }\n}", 
+        "isError": true, 
+        "testMethod": "testTypeAccessOnPrimitive", 
+        "testClass": "spoon.test.type.TypeTest"
+      }, 
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "spoon.test.imports.ImportTest", 
+        "testMethod": "testSuperInheritanceHierarchyFunctionNoClasspath", 
+        "isError": true
+      }, 
+      {
+        "failureName": "spoon.compiler.ModelBuildingException", 
+        "detail": "snippet compilation error while compiling: class Wrapper {\n    static void wrap() throws java.lang.Throwable {\n\n            int[] array = new int[10];\n            System.out.println(\n            array[0] // <-- array read\n            );\n        ;\n    }\n}", 
+        "isError": true, 
+        "testMethod": "testDocumentationContract", 
+        "testClass": "spoon.test.comment.CommentTest"
+      }, 
+      {
+        "failureName": "spoon.compiler.ModelBuildingException", 
+        "detail": "snippet compilation error while compiling: class Wrapper {\n    static void wrap() throws java.lang.Throwable {\n        class X {public Object foo() { return null;}};;\n    }\n}", 
+        "isError": true, 
+        "testMethod": "testNullSignature", 
+        "testClass": "spoon.test.signature.SignatureTest"
+      }, 
+      {
+        "failureName": "spoon.compiler.ModelBuildingException", 
+        "detail": "snippet compilation error while compiling: class Wrapper {\n    static java.lang.Object wrap() throws java.lang.Throwable {\n        return 1 > 2;\n    }\n}", 
+        "isError": true, 
+        "testMethod": "testCompileSnippetSeveralTimes", 
+        "testClass": "spoon.test.snippets.SnippetTest"
+      }, 
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "spoon.test.compilation.CompilationTest", 
+        "testMethod": "compileTest", 
+        "isError": true
+      }, 
+      {
+        "failureName": "spoon.compiler.ModelBuildingException", 
+        "detail": "snippet compilation error while compiling: class Wrapper {\n    static void wrap() throws java.lang.Throwable {\n        final int foo = (new Object() instanceof Object ? new Object().equals(null) : new Object().equals(new Object())) ? 0 : new Object().hashCode();;\n    }\n}", 
+        "isError": true, 
+        "testMethod": "testTernaryParenthesesOnLocalVariable", 
+        "testClass": "spoon.test.prettyprinter.DefaultPrettyPrinterTest"
+      }, 
+      {
+        "failureName": "spoon.compiler.ModelBuildingException", 
+        "detail": "snippet compilation error while compiling: class Wrapper {\n    static void wrap() throws java.lang.Throwable {\n        class X {public int bar() {if (1 == 0)\n            return 1;\n        else\n            return 0;\n        }};;\n    }\n}", 
+        "isError": true, 
+        "testMethod": "testInsertIfIntercession", 
+        "testClass": "spoon.test.intercession.IntercessionTest"
+      }, 
+      {
+        "failureName": "spoon.compiler.ModelBuildingException", 
+        "detail": "snippet compilation error while compiling: class Wrapper {\n    static void wrap() throws java.lang.Throwable {\n        class X { public void foo() {} };\n    }\n}", 
+        "isError": true, 
+        "testMethod": "testHasMethodOnNull", 
+        "testClass": "spoon.test.ctType.CtTypeTest"
+      }, 
+      {
+        "failureName": "spoon.compiler.ModelBuildingException", 
+        "detail": "snippet compilation error while compiling: class Wrapper {\n    static void wrap() throws java.lang.Throwable {\n        class X { X x; };\n    }\n}", 
+        "isError": true, 
+        "testMethod": "testGetUsedTypesForTypeInRootPackage", 
+        "testClass": "spoon.test.model.TypeTest"
+      }, 
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "spoon.test.imports.ImportTest", 
+        "testMethod": "testStaticImportForInvocationInNoClasspath", 
+        "isError": true
+      }, 
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "spoon.test.reference.TypeReferenceTest", 
+        "testMethod": "testAnnotationOnMethodWithPrimitiveReturnTypeInNoClasspath", 
+        "isError": true
+      }, 
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "spoon.JarLauncherTest", 
+        "testMethod": "testJarLauncherNoPom", 
+        "isError": true
+      }, 
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "spoon.test.compilation.CompilationTest", 
+        "testMethod": "compileCommandLineTest", 
+        "isError": true
+      }, 
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "spoon.test.imports.ImportAndExtendWithPackageNameTest", 
+        "testMethod": "testBuildModel", 
+        "isError": true
+      }, 
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "spoon.test.module.TestModule", 
+        "testMethod": "testCompleteModuleInfoContentNoClasspath", 
+        "isError": true
+      }, 
+      {
+        "failureName": "spoon.compiler.ModelBuildingException", 
+        "detail": "snippet compilation error while compiling: class Wrapper {\n    static void wrap() throws java.lang.Throwable {\n        class X { public X() {} };;\n    }\n}", 
+        "isError": true, 
+        "testMethod": "testEqualConstructor", 
+        "testClass": "spoon.test.intercession.IntercessionTest"
+      }, 
+      {
+        "failureName": "spoon.compiler.ModelBuildingException", 
+        "detail": "snippet compilation error while compiling: class Wrapper {\n    static void wrap() throws java.lang.Throwable {\n        class X {public void foo() { }};;\n    }\n}", 
+        "isError": true, 
+        "testMethod": "testAddEmptyBlock", 
+        "testClass": "spoon.test.model.BlockTest"
+      }, 
+      {
+        "failureName": "spoon.compiler.ModelBuildingException", 
+        "detail": "snippet compilation error while compiling: class Wrapper {\n    static void wrap() throws java.lang.Throwable {\n        class X {public void foo() {  int x=0;  int y=0;  int z=x+y; }};;\n    }\n}", 
+        "isError": true, 
+        "testMethod": "testInsertBefore", 
+        "testClass": "spoon.test.intercession.insertBefore.InsertMethodsTest"
+      }, 
+      {
+        "failureName": "spoon.compiler.ModelBuildingException", 
+        "detail": "snippet compilation error while compiling: class Wrapper {\n    static void wrap() throws java.lang.Throwable {\n        class X<A> {void addConsumedAnnotationType(Class<? extends A> annotationType) {}\n        public void foo() { Class<?> x = null; addConsumedAnnotationType((Class<A>) x);}};;\n    }\n}", 
+        "isError": true, 
+        "testMethod": "testCast3", 
+        "testClass": "spoon.test.casts.CastTest"
+      }, 
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "spoon.test.module.TestModule", 
+        "testMethod": "testModuleInfoShouldBeCorrectlyPrettyPrinted", 
+        "isError": true
+      }, 
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "spoon.test.reference.TypeReferenceTest", 
+        "testMethod": "testAnonymousClassesHaveAnEmptyStringForItsNameInNoClasspath", 
+        "isError": true
+      }, 
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "spoon.test.api.APITest", 
+        "testMethod": "testGetOneLinerMainClassFromCU", 
+        "isError": true
+      }, 
+      {
+        "failureName": "spoon.compiler.ModelBuildingException", 
+        "detail": "snippet compilation error while compiling: class Wrapper {\n    static void wrap() throws java.lang.Throwable {\n        class X {public void foo() { Integer i = 1; (i++).toString(); int k = 0; k++;}};;\n    }\n}", 
+        "isError": true, 
+        "testMethod": "testAccessToStringOnPostIncrement", 
+        "testClass": "spoon.test.variable.AccessTest"
+      }, 
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "spoon.test.trycatch.TryCatchTest", 
+        "testMethod": "testCatchWithUnknownExceptions", 
+        "isError": true
+      }, 
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "spoon.test.enums.EnumsTypeTest", 
+        "testMethod": "testEnumsFromInterface", 
+        "isError": true
+      }, 
+      {
+        "failureName": "spoon.compiler.ModelBuildingException", 
+        "detail": "snippet compilation error while compiling: class Wrapper {\n    static void wrap() throws java.lang.Throwable {\n        try{}catch(RuntimeException | AssertionError e){};\n    }\n}", 
+        "isError": true, 
+        "testMethod": "testEqualsMultitype", 
+        "testClass": "spoon.test.comparison.EqualTest"
+      }, 
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "spoon.test.fieldaccesses.FieldAccessTest", 
+        "testMethod": "testFieldAccessOnUnknownType", 
+        "isError": true
+      }, 
+      {
+        "failureName": "spoon.compiler.ModelBuildingException", 
+        "detail": "snippet compilation error while compiling: class Wrapper {\n    static void wrap() throws java.lang.Throwable {\n        class X {public void foo() { try{}catch(RuntimeException e){java.lang.System.exit(0);}      catch(Exception e){}}};;\n    }\n}", 
+        "isError": true, 
+        "testMethod": "testCatchOrder", 
+        "testClass": "spoon.test.trycatch.TryCatchTest"
+      }, 
+      {
+        "failureName": "spoon.compiler.ModelBuildingException", 
+        "detail": "snippet compilation error while compiling: class Wrapper {\n    static void wrap() throws java.lang.Throwable {\n        class X {public void foo() {  int x=0;  int y=0;  int z=x+y; }};;\n    }\n}", 
+        "isError": true, 
+        "testMethod": "testInsertAfterWithBrace", 
+        "testClass": "spoon.test.intercession.insertBefore.InsertMethodsTest"
+      }, 
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "spoon.test.reference.CloneReferenceTest", 
+        "testMethod": "testGetDeclarationOfFieldAfterClone", 
+        "isError": true
+      }, 
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "spoon.test.constructorcallnewclass.NewClassTest", 
+        "testMethod": "testCtNewClassInNoClasspath", 
+        "isError": true
+      }, 
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "spoon.test.replace.ReplaceTest", 
+        "testMethod": "testReplaceAPackageReferenceByAnotherOne", 
+        "isError": true
+      }, 
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "spoon.test.api.APITest", 
+        "testMethod": "testDuplicateFolder", 
+        "isError": true
+      }, 
+      {
+        "failureName": "spoon.compiler.ModelBuildingException", 
+        "detail": "snippet compilation error while compiling: class Wrapper {\n    static void wrap() throws java.lang.Throwable {\n        class X {public void foo() { int x=0;int y=0;}};;\n    }\n}", 
+        "isError": true, 
+        "testMethod": "testRemoveAllStatements", 
+        "testClass": "spoon.test.intercession.RemoveTest"
+      }, 
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "spoon.JarLauncherTest", 
+        "testMethod": "testJarLauncher", 
+        "isError": true
+      }, 
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "spoon.test.api.APITest", 
+        "testMethod": "testOverrideOutputWriter", 
+        "isError": true
+      }, 
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "spoon.test.api.APITest", 
+        "testMethod": "testDuplicateEntry", 
+        "isError": true
+      }, 
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "spoon.test.model.IncrementalLauncherTest", 
+        "testMethod": "testIncremental2", 
+        "isError": true
+      }, 
+      {
+        "failureName": "spoon.compiler.ModelBuildingException", 
+        "detail": "snippet compilation error while compiling: class Wrapper {\n    static void wrap() throws java.lang.Throwable {\n        class X { public void foo() {} };\n    }\n}", 
+        "isError": true, 
+        "testMethod": "testHasMethodNotHasMethod", 
+        "testClass": "spoon.test.ctType.CtTypeTest"
+      }, 
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "spoon.test.api.APITest", 
+        "testMethod": "testDuplicateFilePlusFolder", 
+        "isError": true
+      }, 
+      {
+        "failureName": "spoon.compiler.ModelBuildingException", 
+        "detail": "snippet compilation error while compiling: class Wrapper {\n    static java.lang.Integer wrap() throws java.lang.Throwable {\n        return 3;\n    }\n}", 
+        "isError": true, 
+        "testMethod": "testCompileStatementWithReturn", 
+        "testClass": "spoon.test.snippets.SnippetTest"
+      }, 
+      {
+        "failureName": "spoon.compiler.ModelBuildingException", 
+        "detail": "snippet compilation error while compiling: class Wrapper {\n    static void wrap() throws java.lang.Throwable {\n        class X implements spoon.test.compilation.testclasses.Ifoo { public int foo() {int i=0; return i;} };\n    }\n}", 
+        "isError": true, 
+        "testMethod": "testNewInstance", 
+        "testClass": "spoon.test.compilation.CompilationTest"
+      }, 
+      {
+        "failureName": "spoon.compiler.ModelBuildingException", 
+        "detail": "snippet compilation error while compiling: class Wrapper {\n    static void wrap() throws java.lang.Throwable {\n        int j = 0;;\n    }\n}", 
+        "isError": true, 
+        "testMethod": "testReplaceBlockTry", 
+        "testClass": "spoon.test.replace.ReplaceTest"
+      }, 
+      {
+        "failureName": "spoon.compiler.ModelBuildingException", 
+        "detail": "snippet compilation error while compiling: class Wrapper {\n    static void wrap() throws java.lang.Throwable {\n        int age = 1;\n    }\n}", 
+        "isError": true, 
+        "testMethod": "testFieldAccessAutoExplicit", 
+        "testClass": "spoon.test.fieldaccesses.FieldAccessTest"
+      }, 
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "spoon.reflect.declaration.UnknownDeclarationTest", 
+        "testMethod": "testUnknownCalls", 
+        "isError": true
+      }, 
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "spoon.test.methodreference.MethodReferenceTest", 
+        "testMethod": "testNoClasspathSuperExecutable", 
+        "isError": true
+      }, 
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "spoon.test.reference.VariableAccessTest", 
+        "testMethod": "testDeclaringTypeOfALambdaReferencedByParameterReference", 
+        "isError": true
+      }, 
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "spoon.test.reference.CloneReferenceTest", 
+        "testMethod": "testGetDeclarationAfterClone", 
+        "isError": true
+      }, 
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "spoon.test.reference.TypeReferenceTest", 
+        "testMethod": "testInvocationWithFieldAccessInNoClasspath", 
+        "isError": true
+      }, 
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "spoon.test.targeted.TargetedExpressionTest", 
+        "testMethod": "testStaticTargetsOfInvNoClasspath", 
+        "isError": true
+      }, 
+      {
+        "failureName": "spoon.compiler.ModelBuildingException", 
+        "detail": "snippet compilation error while compiling: class Wrapper {\n    static void wrap() throws java.lang.Throwable {\n        class X {public void foo() { int x=0;int y=0;}};;\n    }\n}", 
+        "isError": true, 
+        "testMethod": "testIterationStatements", 
+        "testClass": "spoon.test.model.BlockTest"
+      }, 
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "spoon.test.fieldaccesses.FieldAccessTest", 
+        "testMethod": "testFieldAccessNoClasspath", 
+        "isError": true
+      }, 
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "spoon.test.parameters.ParameterTest", 
+        "testMethod": "testMultiParameterLambdaTypeReference", 
+        "isError": true
+      }, 
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "spoon.test.method.MethodTest", 
+        "testMethod": "testGetAllMethods", 
+        "isError": true
+      }, 
+      {
+        "failureName": "spoon.compiler.ModelBuildingException", 
+        "detail": "snippet compilation error while compiling: class Wrapper {\n    static void wrap() throws java.lang.Throwable {\n        class X {public void foo() {  int x=0;  int y=0;  int z=x+y; }};;\n    }\n}", 
+        "isError": true, 
+        "testMethod": "testInsertAfterWithoutBrace", 
+        "testClass": "spoon.test.intercession.insertBefore.InsertMethodsTest"
+      }, 
+      {
+        "failureName": "spoon.compiler.ModelBuildingException", 
+        "detail": "snippet compilation error while compiling: class Wrapper {\n    static void wrap() throws java.lang.Throwable {\n        int i = 1;;\n    }\n}", 
+        "isError": true, 
+        "testMethod": "testCompileSnippetWithContext", 
+        "testClass": "spoon.test.snippets.SnippetTest"
+      }, 
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "spoon.test.api.NoClasspathTest", 
+        "testMethod": "test", 
+        "isError": true
+      }, 
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "spoon.reflect.ast.CloneTest", 
+        "testMethod": "testCloneCastConditional", 
+        "isError": true
+      }, 
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "spoon.test.targeted.TargetedExpressionTest", 
+        "testMethod": "testInitializeFieldAccessInNoclasspathMode", 
+        "isError": true
+      }, 
+      {
+        "failureName": "spoon.compiler.ModelBuildingException", 
+        "detail": "snippet compilation error while compiling: class Wrapper {\n    static void wrap() throws java.lang.Throwable {\n        System.out.println(\"hello\");\n    }\n}", 
+        "isError": true, 
+        "testMethod": "testLiteralSignature", 
+        "testClass": "spoon.test.signature.SignatureTest"
+      }, 
+      {
+        "failureName": "spoon.compiler.ModelBuildingException", 
+        "detail": "snippet compilation error while compiling: class Wrapper {\n    static void wrap() throws java.lang.Throwable {\n        class X {public void foo() {  int x=0;  int y=0;  int z=x+y; }};;\n    }\n}", 
+        "isError": true, 
+        "testMethod": "testInsertAfter", 
+        "testClass": "spoon.test.intercession.insertBefore.InsertMethodsTest"
+      }, 
+      {
+        "failureName": "spoon.compiler.ModelBuildingException", 
+        "detail": "snippet compilation error while compiling: class Wrapper {\n    static void wrap() throws java.lang.Throwable {\n        class X { public void foo() {} };\n    }\n}", 
+        "isError": true, 
+        "testMethod": "testHasMethodInDirectMethod", 
+        "testClass": "spoon.test.ctType.CtTypeTest"
+      }, 
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "spoon.test.visitor.AssignmentsEqualsTest", 
+        "testMethod": "testEquals", 
+        "isError": true
+      }, 
+      {
+        "failureName": "spoon.compiler.ModelBuildingException", 
+        "detail": "snippet compilation error while compiling: class Wrapper {\n    static void wrap() throws java.lang.Throwable {\n        java.util.List<String> l ;\n    }\n}", 
+        "isError": true, 
+        "testMethod": "testEqualsActualTypeRef", 
+        "testClass": "spoon.test.comparison.EqualTest"
+      }, 
+      {
+        "failureName": "spoon.compiler.ModelBuildingException", 
+        "detail": "snippet compilation error while compiling: class Wrapper {\n    static void wrap() throws java.lang.Throwable {\n        try{}catch(RuntimeException | AssertionError e){};\n    }\n}", 
+        "isError": true, 
+        "testMethod": "testEqualsDetails", 
+        "testClass": "spoon.test.comparison.EqualTest"
+      }, 
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "spoon.test.enums.EnumsTypeTest", 
+        "testMethod": "testEnumsType", 
+        "isError": true
+      }, 
+      {
+        "failureName": "spoon.compiler.ModelBuildingException", 
+        "detail": "snippet compilation error while compiling: class Wrapper {\n    static java.lang.Object wrap() throws java.lang.Throwable {\n        return 0+1;\n    }\n}", 
+        "isError": true, 
+        "testMethod": "testVisitorPartialEvaluator_binary", 
+        "testClass": "spoon.test.eval.EvalTest"
+      }, 
+      {
+        "failureName": "spoon.compiler.ModelBuildingException", 
+        "detail": "snippet compilation error while compiling: class Wrapper {\n    static void wrap() throws java.lang.Throwable {\n        Integer.toBinaryString(Integer.MAX_VALUE);\n    }\n}", 
+        "isError": true, 
+        "testMethod": "testMethodInvocationSignatureStaticFieldsVariables", 
+        "testClass": "spoon.test.signature.SignatureTest"
+      }, 
+      {
+        "failureName": "spoon.compiler.ModelBuildingException", 
+        "detail": "snippet compilation error while compiling: class Wrapper {\n    static void wrap() throws java.lang.Throwable {\n        class X {public void foo() { int x=0; int y=0; int z=x+y;}};;\n    }\n}", 
+        "isError": true, 
+        "testMethod": "testInsertAfter", 
+        "testClass": "spoon.test.intercession.IntercessionTest"
+      }, 
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "spoon.reflect.ast.CloneTest", 
+        "testMethod": "testCopyMethod", 
+        "isError": true
+      }, 
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "spoon.test.model.IncrementalLauncherTest", 
+        "testMethod": "testCache", 
+        "isError": true
+      }, 
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "spoon.test.parameters.ParameterTest", 
+        "testMethod": "testGetParameterReferenceInLambdaNoClasspath", 
+        "isError": true
+      }, 
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "spoon.JarLauncherTest", 
+        "testMethod": "testJarLauncherFernflower", 
+        "isError": true
+      }, 
+      {
+        "failureName": "spoon.compiler.ModelBuildingException", 
+        "detail": "snippet compilation error while compiling: class Wrapper {\n    static void wrap() throws java.lang.Throwable {\n        class StringValueUTF {\n         String f0 = \"toto\";\n         String f1 = \"\\n\";\n         char c1 = '\\n';\n         String f2 = \"\\u20ac\";\n         char c2 = '\\u20ac';\n         String f3 = \"\u20ac\";\n         char c3 = '\u20ac';\n         String f4 = \"\\t\";\n         char c4 = '\\t';\n         String f5 = \" \";\n         char c5 = ' ';\n         String f6 = \"\u20ac\\u20ac\";\n        };\n    }\n}", 
+        "isError": true, 
+        "testMethod": "testSnippetFullClass", 
+        "testClass": "spoon.test.strings.StringLiteralTest"
+      }, 
+      {
+        "failureName": "spoon.compiler.ModelBuildingException", 
+        "detail": "snippet compilation error while compiling: class Wrapper {\n    static void wrap() throws java.lang.Throwable {\n        class X {public void foo() { Class<String> x=(Class<String>) new Object();}};;\n    }\n}", 
+        "isError": true, 
+        "testMethod": "testCast2", 
+        "testClass": "spoon.test.casts.CastTest"
+      }, 
+      {
+        "failureName": "spoon.compiler.ModelBuildingException", 
+        "detail": "snippet compilation error while compiling: class Wrapper {\n    static void wrap() throws java.lang.Throwable {\n        class X {public void foo() { try{}catch(RuntimeException | Error e){System.exit(0);}}};;\n    }\n}", 
+        "isError": true, 
+        "testMethod": "testExceptionJava7", 
+        "testClass": "spoon.test.trycatch.TryCatchTest"
+      }, 
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "spoon.test.reference.TypeReferenceTest", 
+        "testMethod": "testTypeReferenceSpecifiedInClassDeclarationInNoClasspathWithGenerics", 
+        "isError": true
+      }, 
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "spoon.test.reference.ExecutableReferenceTest", 
+        "testMethod": "testCreateReferenceForAnonymousExecutable", 
+        "isError": true
+      }, 
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "spoon.test.reference.VariableAccessTest", 
+        "testMethod": "testDeclarationOfVariableReference", 
+        "isError": true
+      }, 
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "spoon.test.reference.ExecutableReferenceTest", 
+        "testMethod": "testCallMethodOfClassNotPresent", 
+        "isError": true
+      }, 
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "spoon.test.lambda.LambdaTest", 
+        "testMethod": "testFieldAccessInLambdaNoClassPath", 
+        "isError": true
+      }, 
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "spoon.test.comment.CommentTest", 
+        "testMethod": "testSnippedWithComments", 
+        "isError": true
+      }, 
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "spoon.test.api.APITest", 
+        "testMethod": "testOneLinerIntro", 
+        "isError": true
+      }, 
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "spoon.support.visitor.java.JavaReflectionTreeBuilderTest", 
+        "testMethod": "testInnerClassWithConstructorParameterAnnotated", 
+        "isError": true
+      }, 
+      {
+        "failureName": "spoon.compiler.ModelBuildingException", 
+        "detail": "snippet compilation error while compiling: class Wrapper {\n    static void wrap() throws java.lang.Throwable {\n        class X {public void foo() {  int x=0;  int y=0;  int z=x+y; }};;\n    }\n}", 
+        "isError": true, 
+        "testMethod": "testInsertBeforeSwitchCase", 
+        "testClass": "spoon.test.intercession.insertBefore.InsertMethodsTest"
+      }, 
+      {
+        "failureName": "spoon.compiler.ModelBuildingException", 
+        "detail": "snippet compilation error while compiling: class Wrapper {\n    static void wrap() throws java.lang.Throwable {\n        class X {public void foo() {  int x=0;  int y=0;  int z=x+y; }};;\n    }\n}", 
+        "isError": true, 
+        "testMethod": "testInsertBeforeWithoutBrace", 
+        "testClass": "spoon.test.intercession.insertBefore.InsertMethodsTest"
+      }, 
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "spoon.test.model.IncrementalLauncherTest", 
+        "testMethod": "testIncremental1", 
+        "isError": true
+      }, 
+      {
+        "failureName": "java.lang.IndexOutOfBoundsException", 
+        "detail": "Index: 0, Size: 0", 
+        "isError": true, 
+        "testMethod": "testUnboundFieldSignature", 
+        "testClass": "spoon.test.signature.SignatureTest"
+      }, 
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "spoon.LauncherTest", 
+        "testMethod": "testLLauncherBuildModelReturnAModel", 
+        "isError": true
+      }, 
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "spoon.test.lambda.LambdaTest", 
+        "testMethod": "testTypeAccessInLambdaNoClassPath", 
+        "isError": true
+      }, 
+      {
+        "failureName": "spoon.compiler.ModelBuildingException", 
+        "detail": "snippet compilation error while compiling: class Wrapper {\n    static void wrap() throws java.lang.Throwable {\n        class X {public void foo() { int x=0;}};;\n    }\n}", 
+        "isError": true, 
+        "testMethod": "testInsertBegin", 
+        "testClass": "spoon.test.intercession.IntercessionTest"
+      }, 
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "spoon.test.factory.TypeFactoryTest", 
+        "testMethod": "testGetClassWithDollarAndNestedClass", 
+        "isError": true
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 2, 
+        "numberRunning": 4, 
+        "testClass": "spoon.test.jar.JarTest", 
+        "numberFailing": 0, 
+        "numberErroring": 2, 
+        "numberSkipping": 0
+      }, 
+      {
+        "numberPassing": 15, 
+        "numberRunning": 17, 
+        "testClass": "spoon.test.replace.ReplaceTest", 
+        "numberFailing": 0, 
+        "numberErroring": 2, 
+        "numberSkipping": 0
+      }, 
+      {
+        "numberPassing": 45, 
+        "numberRunning": 48, 
+        "testClass": "spoon.test.imports.ImportTest", 
+        "numberFailing": 0, 
+        "numberErroring": 3, 
+        "numberSkipping": 0
+      }, 
+      {
+        "numberPassing": 2, 
+        "numberRunning": 5, 
+        "testClass": "spoon.test.casts.CastTest", 
+        "numberFailing": 0, 
+        "numberErroring": 3, 
+        "numberSkipping": 0
+      }, 
+      {
+        "numberPassing": 0, 
+        "numberRunning": 9, 
+        "testClass": "spoon.test.intercession.insertBefore.InsertMethodsTest", 
+        "numberFailing": 0, 
+        "numberErroring": 9, 
+        "numberSkipping": 0
+      }, 
+      {
+        "numberPassing": 6, 
+        "numberRunning": 8, 
+        "testClass": "spoon.test.reference.ExecutableReferenceTest", 
+        "numberFailing": 0, 
+        "numberErroring": 2, 
+        "numberSkipping": 0
+      }, 
+      {
+        "numberPassing": 2, 
+        "numberRunning": 8, 
+        "testClass": "spoon.test.signature.SignatureTest", 
+        "numberFailing": 0, 
+        "numberErroring": 6, 
+        "numberSkipping": 0
+      }, 
+      {
+        "numberPassing": 0, 
+        "numberRunning": 4, 
+        "testClass": "spoon.test.model.IncrementalLauncherTest", 
+        "numberFailing": 0, 
+        "numberErroring": 4, 
+        "numberSkipping": 0
+      }, 
+      {
+        "numberPassing": 0, 
+        "numberRunning": 3, 
+        "testClass": "spoon.JarLauncherTest", 
+        "numberFailing": 0, 
+        "numberErroring": 3, 
+        "numberSkipping": 0
+      }, 
+      {
+        "numberPassing": 5, 
+        "numberRunning": 8, 
+        "testClass": "spoon.test.ctType.CtTypeTest", 
+        "numberFailing": 0, 
+        "numberErroring": 3, 
+        "numberSkipping": 0
+      }, 
+      {
+        "numberPassing": 14, 
+        "numberRunning": 17, 
+        "testClass": "spoon.test.targeted.TargetedExpressionTest", 
+        "numberFailing": 0, 
+        "numberErroring": 3, 
+        "numberSkipping": 0
+      }, 
+      {
+        "numberPassing": 0, 
+        "numberRunning": 2, 
+        "testClass": "spoon.test.model.BlockTest", 
+        "numberFailing": 0, 
+        "numberErroring": 2, 
+        "numberSkipping": 0
+      }, 
+      {
+        "numberPassing": 3, 
+        "numberRunning": 5, 
+        "testClass": "spoon.reflect.ast.CloneTest", 
+        "numberFailing": 0, 
+        "numberErroring": 2, 
+        "numberSkipping": 0
+      }, 
+      {
+        "numberPassing": 21, 
+        "numberRunning": 23, 
+        "testClass": "spoon.test.lambda.LambdaTest", 
+        "numberFailing": 0, 
+        "numberErroring": 2, 
+        "numberSkipping": 0
+      }, 
+      {
+        "numberPassing": 0, 
+        "numberRunning": 1, 
+        "testClass": "spoon.test.strings.StringLiteralTest", 
+        "numberFailing": 0, 
+        "numberErroring": 1, 
+        "numberSkipping": 0
+      }, 
+      {
+        "numberPassing": 7, 
+        "numberRunning": 11, 
+        "testClass": "spoon.test.reference.VariableAccessTest", 
+        "numberFailing": 0, 
+        "numberErroring": 4, 
+        "numberSkipping": 0
+      }, 
+      {
+        "numberPassing": 4, 
+        "numberRunning": 5, 
+        "testClass": "spoon.test.api.NoClasspathTest", 
+        "numberFailing": 0, 
+        "numberErroring": 1, 
+        "numberSkipping": 0
+      }, 
+      {
+        "numberPassing": 7, 
+        "numberRunning": 8, 
+        "testClass": "spoon.test.ctClass.CtClassTest", 
+        "numberFailing": 0, 
+        "numberErroring": 1, 
+        "numberSkipping": 0
+      }, 
+      {
+        "numberPassing": 13, 
+        "numberRunning": 16, 
+        "testClass": "spoon.test.fieldaccesses.FieldAccessTest", 
+        "numberFailing": 0, 
+        "numberErroring": 3, 
+        "numberSkipping": 0
+      }, 
+      {
+        "numberPassing": 9, 
+        "numberRunning": 13, 
+        "testClass": "spoon.test.compilation.CompilationTest", 
+        "numberFailing": 0, 
+        "numberErroring": 4, 
+        "numberSkipping": 0
+      }, 
+      {
+        "numberPassing": 18, 
+        "numberRunning": 19, 
+        "testClass": "spoon.support.visitor.java.JavaReflectionTreeBuilderTest", 
+        "numberFailing": 0, 
+        "numberErroring": 1, 
+        "numberSkipping": 0
+      }, 
+      {
+        "numberPassing": 47, 
+        "numberRunning": 48, 
+        "testClass": "spoon.test.generics.GenericsTest", 
+        "numberFailing": 0, 
+        "numberErroring": 1, 
+        "numberSkipping": 0
+      }, 
+      {
+        "numberPassing": 2, 
+        "numberRunning": 7, 
+        "testClass": "spoon.test.intercession.IntercessionTest", 
+        "numberFailing": 0, 
+        "numberErroring": 5, 
+        "numberSkipping": 1
+      }, 
+      {
+        "numberPassing": 12, 
+        "numberRunning": 13, 
+        "testClass": "spoon.test.type.TypeTest", 
+        "numberFailing": 0, 
+        "numberErroring": 1, 
+        "numberSkipping": 0
+      }, 
+      {
+        "numberPassing": 3, 
+        "numberRunning": 7, 
+        "testClass": "spoon.test.snippets.SnippetTest", 
+        "numberFailing": 0, 
+        "numberErroring": 4, 
+        "numberSkipping": 0
+      }, 
+      {
+        "numberPassing": 0, 
+        "numberRunning": 2, 
+        "testClass": "spoon.test.enums.EnumsTypeTest", 
+        "numberFailing": 0, 
+        "numberErroring": 2, 
+        "numberSkipping": 0
+      }, 
+      {
+        "numberPassing": 5, 
+        "numberRunning": 6, 
+        "testClass": "spoon.test.method.MethodTest", 
+        "numberFailing": 0, 
+        "numberErroring": 1, 
+        "numberSkipping": 0
+      }, 
+      {
+        "numberPassing": 4, 
+        "numberRunning": 5, 
+        "testClass": "spoon.test.factory.TypeFactoryTest", 
+        "numberFailing": 0, 
+        "numberErroring": 1, 
+        "numberSkipping": 0
+      }, 
+      {
+        "numberPassing": 0, 
+        "numberRunning": 1, 
+        "testClass": "spoon.reflect.declaration.UnknownDeclarationTest", 
+        "numberFailing": 0, 
+        "numberErroring": 1, 
+        "numberSkipping": 0
+      }, 
+      {
+        "numberPassing": 7, 
+        "numberRunning": 8, 
+        "testClass": "spoon.test.model.TypeTest", 
+        "numberFailing": 0, 
+        "numberErroring": 1, 
+        "numberSkipping": 0
+      }, 
+      {
+        "numberPassing": 19, 
+        "numberRunning": 28, 
+        "testClass": "spoon.test.reference.TypeReferenceTest", 
+        "numberFailing": 0, 
+        "numberErroring": 9, 
+        "numberSkipping": 0
+      }, 
+      {
+        "numberPassing": 8, 
+        "numberRunning": 10, 
+        "testClass": "spoon.test.parent.ParentTest", 
+        "numberFailing": 0, 
+        "numberErroring": 2, 
+        "numberSkipping": 1
+      }, 
+      {
+        "numberPassing": 16, 
+        "numberRunning": 23, 
+        "testClass": "spoon.test.api.APITest", 
+        "numberFailing": 0, 
+        "numberErroring": 7, 
+        "numberSkipping": 0
+      }, 
+      {
+        "numberPassing": 51, 
+        "numberRunning": 52, 
+        "testClass": "spoon.test.annotation.AnnotationTest", 
+        "numberFailing": 0, 
+        "numberErroring": 1, 
+        "numberSkipping": 0
+      }, 
+      {
+        "numberPassing": 13, 
+        "numberRunning": 14, 
+        "testClass": "spoon.test.prettyprinter.DefaultPrettyPrinterTest", 
+        "numberFailing": 0, 
+        "numberErroring": 1, 
+        "numberSkipping": 0
+      }, 
+      {
+        "numberPassing": 0, 
+        "numberRunning": 1, 
+        "testClass": "spoon.test.intercession.RemoveTest", 
+        "numberFailing": 0, 
+        "numberErroring": 1, 
+        "numberSkipping": 0
+      }, 
+      {
+        "numberPassing": 2, 
+        "numberRunning": 6, 
+        "testClass": "spoon.test.module.TestModule", 
+        "numberFailing": 0, 
+        "numberErroring": 4, 
+        "numberSkipping": 2
+      }, 
+      {
+        "numberPassing": 3, 
+        "numberRunning": 4, 
+        "testClass": "spoon.LauncherTest", 
+        "numberFailing": 0, 
+        "numberErroring": 1, 
+        "numberSkipping": 0
+      }, 
+      {
+        "numberPassing": 0, 
+        "numberRunning": 1, 
+        "testClass": "spoon.test.visitor.AssignmentsEqualsTest", 
+        "numberFailing": 0, 
+        "numberErroring": 1, 
+        "numberSkipping": 0
+      }, 
+      {
+        "numberPassing": 7, 
+        "numberRunning": 12, 
+        "testClass": "spoon.test.trycatch.TryCatchTest", 
+        "numberFailing": 0, 
+        "numberErroring": 5, 
+        "numberSkipping": 0
+      }, 
+      {
+        "numberPassing": 1, 
+        "numberRunning": 3, 
+        "testClass": "spoon.test.parameters.ParameterTest", 
+        "numberFailing": 0, 
+        "numberErroring": 2, 
+        "numberSkipping": 0
+      }, 
+      {
+        "numberPassing": 7, 
+        "numberRunning": 8, 
+        "testClass": "spoon.test.variable.AccessTest", 
+        "numberFailing": 0, 
+        "numberErroring": 1, 
+        "numberSkipping": 0
+      }, 
+      {
+        "numberPassing": 0, 
+        "numberRunning": 1, 
+        "testClass": "spoon.test.imports.ImportAndExtendWithPackageNameTest", 
+        "numberFailing": 0, 
+        "numberErroring": 1, 
+        "numberSkipping": 0
+      }, 
+      {
+        "numberPassing": 5, 
+        "numberRunning": 6, 
+        "testClass": "spoon.test.field.FieldTest", 
+        "numberFailing": 0, 
+        "numberErroring": 1, 
+        "numberSkipping": 0
+      }, 
+      {
+        "numberPassing": 2, 
+        "numberRunning": 3, 
+        "testClass": "spoon.test.serializable.SerializableTest", 
+        "numberFailing": 0, 
+        "numberErroring": 1, 
+        "numberSkipping": 0
+      }, 
+      {
+        "numberPassing": 1, 
+        "numberRunning": 2, 
+        "testClass": "spoon.test.model.SwitchCaseTest", 
+        "numberFailing": 0, 
+        "numberErroring": 1, 
+        "numberSkipping": 0
+      }, 
+      {
+        "numberPassing": 11, 
+        "numberRunning": 13, 
+        "testClass": "spoon.test.methodreference.MethodReferenceTest", 
+        "numberFailing": 0, 
+        "numberErroring": 2, 
+        "numberSkipping": 0
+      }, 
+      {
+        "numberPassing": 22, 
+        "numberRunning": 24, 
+        "testClass": "spoon.test.comment.CommentTest", 
+        "numberFailing": 0, 
+        "numberErroring": 2, 
+        "numberSkipping": 0
+      }, 
+      {
+        "numberPassing": 0, 
+        "numberRunning": 1, 
+        "testClass": "spoon.test.serializable.SourcePositionTest", 
+        "numberFailing": 0, 
+        "numberErroring": 1, 
+        "numberSkipping": 0
+      }, 
+      {
+        "numberPassing": 0, 
+        "numberRunning": 5, 
+        "testClass": "spoon.test.comparison.EqualTest", 
+        "numberFailing": 1, 
+        "numberErroring": 4, 
+        "numberSkipping": 0
+      }, 
+      {
+        "numberPassing": 6, 
+        "numberRunning": 7, 
+        "testClass": "spoon.test.constructorcallnewclass.NewClassTest", 
+        "numberFailing": 0, 
+        "numberErroring": 1, 
+        "numberSkipping": 0
+      }, 
+      {
+        "numberPassing": 0, 
+        "numberRunning": 2, 
+        "testClass": "spoon.test.reference.CloneReferenceTest", 
+        "numberFailing": 0, 
+        "numberErroring": 2, 
+        "numberSkipping": 0
+      }, 
+      {
+        "numberPassing": 8, 
+        "numberRunning": 10, 
+        "testClass": "spoon.test.eval.EvalTest", 
+        "numberFailing": 0, 
+        "numberErroring": 2, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/INRIA/spoon/builds/453477713", 
+      "date": "Nov 11, 2018 7:20:08 AM", 
+      "id": 453477713
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/INRIA/spoon/builds/453383968", 
+      "date": "Nov 10, 2018 10:28:11 PM", 
+      "id": 453383968
+    }
+  }, 
+  "repository": {
+    "name": "INRIA/spoon", 
+    "url": "https://github.com/INRIA/spoon", 
+    "isFork": false, 
+    "pullRequestId": 2760, 
+    "isPullRequest": true, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 14176513
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/INRIA/spoon/commit/186dea8b5267f6d0e93c95d742752cf5a1b8246b", 
+      "sha": "186dea8b5267f6d0e93c95d742752cf5a1b8246b", 
+      "branchName": "master", 
+      "date": "Nov 11, 2018 7:03:49 AM", 
+      "repoName": "INRIA/spoon"
+    }, 
+    "fixerBuildBaseRepo": {
+      "url": "https://github.com/INRIA/spoon/commit/51e64eb8924b7a33d4d87608d0e83f374e82c0ef", 
+      "sha": "51e64eb8924b7a33d4d87608d0e83f374e82c0ef", 
+      "branchName": "master", 
+      "date": "Nov 8, 2018 8:19:26 PM", 
+      "repoName": "INRIA/spoon"
+    }, 
+    "fixerBuildForkRepo": {
+      "url": "https://github.com/pvojtechovsky/spoon/commit/aa1b0121e34ba490729b07019fc5188c25fb3102", 
+      "sha": "aa1b0121e34ba490729b07019fc5188c25fb3102", 
+      "branchName": "feaPackDeclHasPos", 
+      "date": "Nov 11, 2018 7:03:49 AM", 
+      "repoName": "pvojtechovsky/spoon"
+    }, 
+    "buggyBuildForkRepo": {
+      "url": "https://github.com/pvojtechovsky/spoon/commit/aa1b0121e34ba490729b07019fc5188c25fb3102", 
+      "sha": "aa1b0121e34ba490729b07019fc5188c25fb3102", 
+      "branchName": "feaPackDeclHasPos", 
+      "date": "Nov 11, 2018 7:03:49 AM", 
+      "repoName": "pvojtechovsky/spoon"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/INRIA/spoon/commit/157de1f975b0beebe4906af1eaf3fda1e6ae776e", 
+      "sha": "157de1f975b0beebe4906af1eaf3fda1e6ae776e", 
+      "branchName": "master", 
+      "date": "Nov 10, 2018 10:13:29 PM", 
+      "repoName": "INRIA/spoon"
+    }, 
+    "buggyBuildBaseRepo": {
+      "url": "https://github.com/INRIA/spoon/commit/51e64eb8924b7a33d4d87608d0e83f374e82c0ef", 
+      "sha": "51e64eb8924b7a33d4d87608d0e83f374e82c0ef", 
+      "branchName": "master", 
+      "date": "Nov 8, 2018 8:19:26 PM", 
+      "repoName": "INRIA/spoon"
+    }
+  }, 
+  "bugName": "INRIA-spoon-453383968-453477713", 
+  "version": "latest", 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 4, 
+      "numberDeleted": 2
+    }
+  }, 
+  "type": "failing_passing", 
+  "bugId": "Bears-217", 
+  "projectMetrics": {
+    "numberSourceFiles": 656, 
+    "numberLibrariesFailingModule": 37, 
+    "numberTestFiles": 712, 
+    "numberModules": 1
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 278903064, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 524812288, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Nov 11, 2018 8:30:00 AM", 
+    "projectRootPomPath": "./workspace/INRIA/spoon/453383968/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          3, 
+          91
+        ], 
+        "stepNames": [
+          "CheckoutBuggyBuildCandidate", 
+          "BuildProjectBuggyBuildCandidate"
+        ], 
+        "nbSteps": 2, 
+        "totalDuration": 94
+      }, 
+      "testing": {
+        "stepDurations": [
+          489
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidate"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 489
+      }, 
+      "cloning": {
+        "stepDurations": [
+          12
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 12
+      }
+    }, 
+    "reproductionDateBeginning": "Nov 11, 2018 8:12:37 AM", 
+    "totalDuration": 1038
+  }
+}
