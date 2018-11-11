@@ -1,0 +1,1534 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for fr.inria.gforge.spoon:spoon-core:jar:7.2.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.pitest:pitest-maven is missing. @ line 564, column 15
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] Inspecting build with total of 1 modules...
+[INFO] Installing Nexus Staging features:
+[INFO]   ... total of 1 executions of maven-deploy-plugin replaced with nexus-staging-maven-plugin
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Spoon Core 7.2.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ spoon-core ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.1:prepare-agent (default) @ spoon-core ---
+[INFO] argLine set to -javaagent:/root/./workspace/INRIA/spoon/453383968/.m2/org/jacoco/org.jacoco.agent/0.8.1/org.jacoco.agent-0.8.1-runtime.jar=destfile=/root/workspace/INRIA/spoon/453383968/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ spoon-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ spoon-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ spoon-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 188 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ spoon-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.21.0:test (default-test) @ spoon-core ---
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.21.0/surefire-junit4-2.21.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.21.0/surefire-junit4-2.21.0.pom (4 KB at 5.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.21.0/surefire-providers-2.21.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.21.0/surefire-providers-2.21.0.pom (3 KB at 61.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.21.0/surefire-junit4-2.21.0.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.21.0/surefire-junit4-2.21.0.jar (83 KB at 995.9 KB/sec)
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running spoon.testing.CtPackageAssertTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.353 s - in spoon.testing.CtPackageAssertTest
+[INFO] Running spoon.testing.CtElementAssertTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.18 s - in spoon.testing.CtElementAssertTest
+[INFO] Running spoon.testing.AbstractAssertTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.734 s - in spoon.testing.AbstractAssertTest
+[INFO] Running spoon.testing.FileAssertTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.337 s - in spoon.testing.FileAssertTest
+[INFO] Running spoon.MavenLauncherTest
+[WARNING] Tests run: 8, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 120.142 s - in spoon.MavenLauncherTest
+[INFO] Running spoon.reflect.visitor.CtIteratorTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.21 s - in spoon.reflect.visitor.CtIteratorTest
+[INFO] Running spoon.reflect.visitor.CtScannerTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 16.455 s - in spoon.reflect.visitor.CtScannerTest
+[INFO] Running spoon.reflect.visitor.CtVisitorTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.887 s - in spoon.reflect.visitor.CtVisitorTest
+[INFO] Running spoon.reflect.visitor.CtInheritanceScannerTest
+[INFO] Tests run: 83, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.757 s - in spoon.reflect.visitor.CtInheritanceScannerTest
+[INFO] Running spoon.reflect.visitor.CtInheritanceScannerMethodsTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.848 s - in spoon.reflect.visitor.CtInheritanceScannerMethodsTest
+[INFO] Running spoon.reflect.declaration.CtTypeInformationTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.667 s - in spoon.reflect.declaration.CtTypeInformationTest
+[INFO] Running spoon.reflect.declaration.UnknownDeclarationTest
+[ERROR] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.117 s <<< FAILURE! - in spoon.reflect.declaration.UnknownDeclarationTest
+[ERROR] testUnknownCalls(spoon.reflect.declaration.UnknownDeclarationTest)  Time elapsed: 0.116 s  <<< ERROR!
+java.lang.NullPointerException
+	at spoon.reflect.declaration.UnknownDeclarationTest.testUnknownCalls(UnknownDeclarationTest.java:50)
+
+[INFO] Running spoon.reflect.ast.CloneTest
+[ERROR] Tests run: 5, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 11.048 s <<< FAILURE! - in spoon.reflect.ast.CloneTest
+[ERROR] testCopyMethod(spoon.reflect.ast.CloneTest)  Time elapsed: 0.066 s  <<< ERROR!
+java.lang.NullPointerException
+	at spoon.reflect.ast.CloneTest.testCopyMethod(CloneTest.java:181)
+
+[ERROR] testCloneCastConditional(spoon.reflect.ast.CloneTest)  Time elapsed: 0.095 s  <<< ERROR!
+java.lang.NullPointerException
+	at spoon.reflect.ast.CloneTest.testCloneCastConditional(CloneTest.java:134)
+
+[INFO] Running spoon.reflect.ast.AstCheckerTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.517 s - in spoon.reflect.ast.AstCheckerTest
+[INFO] Running spoon.test.invocations.InvocationTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.243 s - in spoon.test.invocations.InvocationTest
+[INFO] Running spoon.test.secondaryclasses.ClassesTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.535 s - in spoon.test.secondaryclasses.ClassesTest
+[INFO] Running spoon.test.replace.ReplaceParametrizedTest
+[INFO] Tests run: 83, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.38 s - in spoon.test.replace.ReplaceParametrizedTest
+[INFO] Running spoon.test.replace.ReplaceTest
+[ERROR] Tests run: 17, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 1.503 s <<< FAILURE! - in spoon.test.replace.ReplaceTest
+[ERROR] testReplaceAPackageReferenceByAnotherOne(spoon.test.replace.ReplaceTest)  Time elapsed: 0.163 s  <<< ERROR!
+java.lang.NullPointerException
+	at spoon.test.replace.ReplaceTest.testReplaceAPackageReferenceByAnotherOne(ReplaceTest.java:363)
+
+[ERROR] testReplaceBlockTry(spoon.test.replace.ReplaceTest)  Time elapsed: 0.162 s  <<< ERROR!
+spoon.compiler.ModelBuildingException: 
+snippet compilation error while compiling: class Wrapper {
+    static void wrap() throws java.lang.Throwable {
+        int j = 0;;
+    }
+}
+	at spoon.test.replace.ReplaceTest.testReplaceBlockTry(ReplaceTest.java:433)
+Caused by: java.lang.NullPointerException
+	at spoon.test.replace.ReplaceTest.testReplaceBlockTry(ReplaceTest.java:433)
+
+[INFO] Running spoon.test.compilationunit.TestCompilationUnit
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.417 s - in spoon.test.compilationunit.TestCompilationUnit
+[INFO] Running spoon.test.compilationunit.GetBinaryFilesTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.818 s - in spoon.test.compilationunit.GetBinaryFilesTest
+[INFO] Running spoon.test.visibility.VisibilityTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.823 s - in spoon.test.visibility.VisibilityTest
+[INFO] Running spoon.test.role.TestCtRole
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 s - in spoon.test.role.TestCtRole
+[INFO] Running spoon.test.compilation.CompilationTest
+>> Hello: Bar <<
+>> Hello: FooEx <<
+>> Hello: IBar <<
+>> Hello: SimpleProcessor <<
+[ERROR] Tests run: 13, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 2.601 s <<< FAILURE! - in spoon.test.compilation.CompilationTest
+[ERROR] compileTest(spoon.test.compilation.CompilationTest)  Time elapsed: 0.095 s  <<< ERROR!
+java.lang.NullPointerException
+	at spoon.test.compilation.CompilationTest.compileTest(CompilationTest.java:103)
+
+[ERROR] compileCommandLineTest(spoon.test.compilation.CompilationTest)  Time elapsed: 0.095 s  <<< ERROR!
+java.lang.NullPointerException
+	at spoon.test.compilation.CompilationTest.compileCommandLineTest(CompilationTest.java:79)
+
+[ERROR] testNewInstance(spoon.test.compilation.CompilationTest)  Time elapsed: 0.055 s  <<< ERROR!
+spoon.compiler.ModelBuildingException: 
+snippet compilation error while compiling: class Wrapper {
+    static void wrap() throws java.lang.Throwable {
+        class X implements spoon.test.compilation.testclasses.Ifoo { public int foo() {int i=0; return i;} };
+    }
+}
+	at spoon.test.compilation.CompilationTest.testNewInstance(CompilationTest.java:170)
+Caused by: java.lang.NullPointerException
+	at spoon.test.compilation.CompilationTest.testNewInstance(CompilationTest.java:170)
+
+[ERROR] testExoticClassLoader(spoon.test.compilation.CompilationTest)  Time elapsed: 0.048 s  <<< ERROR!
+java.lang.NullPointerException
+	at spoon.test.compilation.CompilationTest.testExoticClassLoader(CompilationTest.java:388)
+
+[INFO] Running spoon.test.variable.AccessFullyQualifiedFieldTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.667 s - in spoon.test.variable.AccessFullyQualifiedFieldTest
+[INFO] Running spoon.test.variable.InferredVariableTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.167 s - in spoon.test.variable.InferredVariableTest
+[INFO] Running spoon.test.variable.AccessTest
+[ERROR] Tests run: 8, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.573 s <<< FAILURE! - in spoon.test.variable.AccessTest
+[ERROR] testAccessToStringOnPostIncrement(spoon.test.variable.AccessTest)  Time elapsed: 0.094 s  <<< ERROR!
+spoon.compiler.ModelBuildingException: 
+snippet compilation error while compiling: class Wrapper {
+    static void wrap() throws java.lang.Throwable {
+        class X {public void foo() { Integer i = 1; (i++).toString(); int k = 0; k++;}};;
+    }
+}
+	at spoon.test.variable.AccessTest.testAccessToStringOnPostIncrement(AccessTest.java:230)
+Caused by: java.lang.NullPointerException
+	at spoon.test.variable.AccessTest.testAccessToStringOnPostIncrement(AccessTest.java:230)
+
+[INFO] Running spoon.test.snippets.SnippetTest
+[ERROR] Tests run: 7, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 0.542 s <<< FAILURE! - in spoon.test.snippets.SnippetTest
+[ERROR] testSnippetFullClass(spoon.test.snippets.SnippetTest)  Time elapsed: 0.089 s  <<< ERROR!
+spoon.compiler.ModelBuildingException: 
+snippet compilation error while compiling: class Wrapper {
+    static void wrap() throws java.lang.Throwable {
+        class X {public void foo() { int x=0;}};;
+    }
+}
+	at spoon.test.snippets.SnippetTest.testSnippetFullClass(SnippetTest.java:54)
+Caused by: java.lang.NullPointerException
+	at spoon.test.snippets.SnippetTest.testSnippetFullClass(SnippetTest.java:54)
+
+[ERROR] testCompileSnippetSeveralTimes(spoon.test.snippets.SnippetTest)  Time elapsed: 0.051 s  <<< ERROR!
+spoon.compiler.ModelBuildingException: 
+snippet compilation error while compiling: class Wrapper {
+    static java.lang.Object wrap() throws java.lang.Throwable {
+        return 1 > 2;
+    }
+}
+	at spoon.test.snippets.SnippetTest.testCompileSnippetSeveralTimes(SnippetTest.java:81)
+Caused by: java.lang.NullPointerException
+	at spoon.test.snippets.SnippetTest.testCompileSnippetSeveralTimes(SnippetTest.java:81)
+
+[ERROR] testCompileSnippetWithContext(spoon.test.snippets.SnippetTest)  Time elapsed: 0.048 s  <<< ERROR!
+spoon.compiler.ModelBuildingException: 
+snippet compilation error while compiling: class Wrapper {
+    static void wrap() throws java.lang.Throwable {
+        int i = 1;;
+    }
+}
+	at spoon.test.snippets.SnippetTest.testCompileSnippetWithContext(SnippetTest.java:107)
+Caused by: java.lang.NullPointerException
+	at spoon.test.snippets.SnippetTest.testCompileSnippetWithContext(SnippetTest.java:107)
+
+[ERROR] testCompileStatementWithReturn(spoon.test.snippets.SnippetTest)  Time elapsed: 0.051 s  <<< ERROR!
+spoon.compiler.ModelBuildingException: 
+snippet compilation error while compiling: class Wrapper {
+    static java.lang.Integer wrap() throws java.lang.Throwable {
+        return 3;
+    }
+}
+	at spoon.test.snippets.SnippetTest.testCompileStatementWithReturn(SnippetTest.java:116)
+Caused by: java.lang.NullPointerException
+	at spoon.test.snippets.SnippetTest.testCompileStatementWithReturn(SnippetTest.java:116)
+
+[INFO] Running spoon.test.initializers.InitializerTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.162 s - in spoon.test.initializers.InitializerTest
+[INFO] Running spoon.test.factory.TypeFactoryTest
+[ERROR] Tests run: 5, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.351 s <<< FAILURE! - in spoon.test.factory.TypeFactoryTest
+[ERROR] testGetClassWithDollarAndNestedClass(spoon.test.factory.TypeFactoryTest)  Time elapsed: 0.086 s  <<< ERROR!
+java.lang.NullPointerException
+	at spoon.test.factory.TypeFactoryTest.testGetClassWithDollarAndNestedClass(TypeFactoryTest.java:98)
+
+[INFO] Running spoon.test.factory.CodeFactoryTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in spoon.test.factory.CodeFactoryTest
+[INFO] Running spoon.test.factory.AnnotationFactoryTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.091 s - in spoon.test.factory.AnnotationFactoryTest
+[INFO] Running spoon.test.factory.FactoryTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.355 s - in spoon.test.factory.FactoryTest
+[INFO] Running spoon.test.factory.ClassFactoryTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in spoon.test.factory.ClassFactoryTest
+[INFO] Running spoon.test.factory.FieldFactoryTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.298 s - in spoon.test.factory.FieldFactoryTest
+[INFO] Running spoon.test.factory.ConstructorFactoryTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.097 s - in spoon.test.factory.ConstructorFactoryTest
+[INFO] Running spoon.test.factory.ExecutableFactoryTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in spoon.test.factory.ExecutableFactoryTest
+[INFO] Running spoon.test.properties.PropertiesTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.095 s - in spoon.test.properties.PropertiesTest
+[INFO] Running spoon.test.methodreference.MethodReferenceTest
+[ERROR] Tests run: 13, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 2.138 s <<< FAILURE! - in spoon.test.methodreference.MethodReferenceTest
+[ERROR] testNoClasspathExecutableReferenceExpression(spoon.test.methodreference.MethodReferenceTest)  Time elapsed: 0.16 s  <<< ERROR!
+java.lang.NullPointerException
+	at spoon.test.methodreference.MethodReferenceTest.testNoClasspathExecutableReferenceExpression(MethodReferenceTest.java:180)
+
+[ERROR] testNoClasspathSuperExecutable(spoon.test.methodreference.MethodReferenceTest)  Time elapsed: 0.233 s  <<< ERROR!
+java.lang.NullPointerException
+	at spoon.test.methodreference.MethodReferenceTest.testNoClasspathSuperExecutable(MethodReferenceTest.java:197)
+
+[INFO] Running spoon.test.eval.EvalTest
+[ERROR] Tests run: 10, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.815 s <<< FAILURE! - in spoon.test.eval.EvalTest
+[ERROR] testVisitorPartialEvaluator_binary(spoon.test.eval.EvalTest)  Time elapsed: 0.09 s  <<< ERROR!
+spoon.compiler.ModelBuildingException: 
+snippet compilation error while compiling: class Wrapper {
+    static java.lang.Object wrap() throws java.lang.Throwable {
+        return 0+1;
+    }
+}
+	at spoon.test.eval.EvalTest.testVisitorPartialEvaluator_binary(EvalTest.java:133)
+Caused by: java.lang.NullPointerException
+	at spoon.test.eval.EvalTest.testVisitorPartialEvaluator_binary(EvalTest.java:133)
+
+[ERROR] testVisitorPartialEvaluator_if(spoon.test.eval.EvalTest)  Time elapsed: 0.093 s  <<< ERROR!
+spoon.compiler.ModelBuildingException: 
+snippet compilation error while compiling: class Wrapper {
+    static void wrap() throws java.lang.Throwable {
+        if (false) {System.out.println("foo");} else {System.out.println("bar");} ;
+    }
+}
+	at spoon.test.eval.EvalTest.testVisitorPartialEvaluator_if(EvalTest.java:165)
+Caused by: java.lang.NullPointerException
+	at spoon.test.eval.EvalTest.testVisitorPartialEvaluator_if(EvalTest.java:165)
+
+[INFO] Running spoon.test.api.APITest
+./target/nooutput_a841f254-4c42-48ca-8c0e-1394f174300a
+[ERROR] Tests run: 23, Failures: 0, Errors: 7, Skipped: 0, Time elapsed: 15.927 s <<< FAILURE! - in spoon.test.api.APITest
+[ERROR] testOneLinerIntro(spoon.test.api.APITest)  Time elapsed: 0.048 s  <<< ERROR!
+java.lang.NullPointerException
+	at spoon.test.api.APITest.testOneLinerIntro(APITest.java:438)
+
+[ERROR] testDuplicateEntry(spoon.test.api.APITest)  Time elapsed: 0.067 s  <<< ERROR!
+java.lang.NullPointerException
+	at spoon.test.api.APITest.testDuplicateEntry(APITest.java:136)
+
+[ERROR] testGetOneLinerMainClassFromCU(spoon.test.api.APITest)  Time elapsed: 0.087 s  <<< ERROR!
+java.lang.NullPointerException
+	at spoon.test.api.APITest.testGetOneLinerMainClassFromCU(APITest.java:588)
+
+[ERROR] testOverrideOutputWriter(spoon.test.api.APITest)  Time elapsed: 0.09 s  <<< ERROR!
+java.lang.NullPointerException
+	at spoon.test.api.APITest.testOverrideOutputWriter(APITest.java:118)
+
+[ERROR] testDuplicateFolder(spoon.test.api.APITest)  Time elapsed: 0.084 s  <<< ERROR!
+java.lang.NullPointerException
+	at spoon.test.api.APITest.testDuplicateFolder(APITest.java:152)
+
+[ERROR] testDuplicateFilePlusFolder(spoon.test.api.APITest)  Time elapsed: 0.071 s  <<< ERROR!
+java.lang.NullPointerException
+	at spoon.test.api.APITest.testDuplicateFilePlusFolder(APITest.java:165)
+
+[ERROR] testBasicAPIUsage(spoon.test.api.APITest)  Time elapsed: 0.069 s  <<< ERROR!
+java.lang.NullPointerException
+	at spoon.test.api.APITest.testBasicAPIUsage(APITest.java:87)
+
+[INFO] Running spoon.test.api.FileSystemFolderTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in spoon.test.api.FileSystemFolderTest
+[INFO] Running spoon.test.api.MetamodelTest
+[INFO] Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.379 s - in spoon.test.api.MetamodelTest
+[INFO] Running spoon.test.api.NoClasspathTest
+[ERROR] Tests run: 5, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.356 s <<< FAILURE! - in spoon.test.api.NoClasspathTest
+[ERROR] test(spoon.test.api.NoClasspathTest)  Time elapsed: 0.061 s  <<< ERROR!
+java.lang.NullPointerException
+	at spoon.test.api.NoClasspathTest.test(NoClasspathTest.java:58)
+
+[INFO] Running spoon.test.template.TemplateArrayAccessTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.296 s - in spoon.test.template.TemplateArrayAccessTest
+[INFO] Running spoon.test.template.TemplateClassAccessTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.144 s - in spoon.test.template.TemplateClassAccessTest
+[INFO] Running spoon.test.template.TemplateReplaceReturnTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.257 s - in spoon.test.template.TemplateReplaceReturnTest
+[INFO] Running spoon.test.template.TemplateEnumAccessTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.126 s - in spoon.test.template.TemplateEnumAccessTest
+[INFO] Running spoon.test.template.core.ParameterInfoTest
+[INFO] Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 s - in spoon.test.template.core.ParameterInfoTest
+[INFO] Running spoon.test.template.TemplateTest
+0
+[INFO] Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.37 s - in spoon.test.template.TemplateTest
+[INFO] Running spoon.test.template.TemplateInvocationSubstitutionTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.203 s - in spoon.test.template.TemplateInvocationSubstitutionTest
+[INFO] Running spoon.test.template.PatternTest
+[INFO] Tests run: 34, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.353 s - in spoon.test.template.PatternTest
+[INFO] Running spoon.test.parent.ContractOnSettersParametrizedTest
+[INFO] Tests run: 69, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.1 s - in spoon.test.parent.ContractOnSettersParametrizedTest
+[INFO] Running spoon.test.parent.NullParentTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.651 s - in spoon.test.parent.NullParentTest
+[INFO] Running spoon.test.parent.ParentTest
+[ERROR] Tests run: 11, Failures: 0, Errors: 2, Skipped: 1, Time elapsed: 1.029 s <<< FAILURE! - in spoon.test.parent.ParentTest
+[ERROR] testParentOfCtPackageReference(spoon.test.parent.ParentTest)  Time elapsed: 0.098 s  <<< ERROR!
+java.lang.NullPointerException
+	at spoon.test.parent.ParentTest.testParentOfCtPackageReference(ParentTest.java:148)
+
+[ERROR] testHasParent(spoon.test.parent.ParentTest)  Time elapsed: 0.096 s  <<< ERROR!
+java.lang.NullPointerException
+	at spoon.test.parent.ParentTest.testHasParent(ParentTest.java:292)
+
+[INFO] Running spoon.test.parent.TopLevelTypeTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.041 s - in spoon.test.parent.TopLevelTypeTest
+[INFO] Running spoon.test.parent.SetParentTest
+[INFO] Tests run: 69, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.127 s - in spoon.test.parent.SetParentTest
+[INFO] Running spoon.test.executable.ExecutableTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.2 s - in spoon.test.executable.ExecutableTest
+[INFO] Running spoon.test.executable.ExecutableRefTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.422 s - in spoon.test.executable.ExecutableRefTest
+[INFO] Running spoon.test.varargs.VarArgsTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.047 s - in spoon.test.varargs.VarArgsTest
+[INFO] Running spoon.test.pkg.PackageTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.926 s - in spoon.test.pkg.PackageTest
+[INFO] Running spoon.test.comment.CommentTest
+[ERROR] Tests run: 24, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 6.223 s <<< FAILURE! - in spoon.test.comment.CommentTest
+[ERROR] testSnippedWithComments(spoon.test.comment.CommentTest)  Time elapsed: 0.048 s  <<< ERROR!
+java.lang.NullPointerException
+	at spoon.test.comment.CommentTest.testSnippedWithComments(CommentTest.java:725)
+
+[ERROR] testDocumentationContract(spoon.test.comment.CommentTest)  Time elapsed: 3.929 s  <<< ERROR!
+spoon.compiler.ModelBuildingException: 
+snippet compilation error while compiling: class Wrapper {
+    static void wrap() throws java.lang.Throwable {
+
+            int[] array = new int[10];
+            System.out.println(
+            array[0] // <-- array read
+            );
+        ;
+    }
+}
+	at spoon.test.comment.CommentTest.lambda$testDocumentationContract$0(CommentTest.java:852)
+	at spoon.test.comment.CommentTest.testDocumentationContract(CommentTest.java:787)
+Caused by: java.lang.NullPointerException
+	at spoon.test.comment.CommentTest.lambda$testDocumentationContract$0(CommentTest.java:852)
+	at spoon.test.comment.CommentTest.testDocumentationContract(CommentTest.java:787)
+
+[INFO] Running spoon.test.constructor.ConstructorTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.606 s - in spoon.test.constructor.ConstructorTest
+[INFO] Running spoon.test.loop.LoopTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.122 s - in spoon.test.loop.LoopTest
+[INFO] Running spoon.test.exceptions.ExceptionTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.382 s - in spoon.test.exceptions.ExceptionTest
+[INFO] Running spoon.test.enums.EnumsTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.471 s - in spoon.test.enums.EnumsTest
+[INFO] Running spoon.test.enums.EnumsTypeTest
+[ERROR] Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.061 s <<< FAILURE! - in spoon.test.enums.EnumsTypeTest
+[ERROR] testEnumsType(spoon.test.enums.EnumsTypeTest)  Time elapsed: 0.027 s  <<< ERROR!
+java.lang.NullPointerException
+	at spoon.test.enums.EnumsTypeTest.testEnumsType(EnumsTypeTest.java:51)
+
+[ERROR] testEnumsFromInterface(spoon.test.enums.EnumsTypeTest)  Time elapsed: 0.032 s  <<< ERROR!
+java.lang.NullPointerException
+	at spoon.test.enums.EnumsTypeTest.testEnumsFromInterface(EnumsTypeTest.java:81)
+
+[INFO] Running spoon.test.intercession.insertBefore.InsertMethodsTest
+[ERROR] Tests run: 9, Failures: 0, Errors: 9, Skipped: 0, Time elapsed: 0.854 s <<< FAILURE! - in spoon.test.intercession.insertBefore.InsertMethodsTest
+[ERROR] testInsertBeforeWithoutBrace(spoon.test.intercession.insertBefore.InsertMethodsTest)  Time elapsed: 0.092 s  <<< ERROR!
+spoon.compiler.ModelBuildingException: 
+snippet compilation error while compiling: class Wrapper {
+    static void wrap() throws java.lang.Throwable {
+        class X {public void foo() {  int x=0;  int y=0;  int z=x+y; }};;
+    }
+}
+	at spoon.test.intercession.insertBefore.InsertMethodsTest.setup(InsertMethodsTest.java:65)
+Caused by: java.lang.NullPointerException
+	at spoon.test.intercession.insertBefore.InsertMethodsTest.setup(InsertMethodsTest.java:65)
+
+[ERROR] insertBeforeAndUpdateParent(spoon.test.intercession.insertBefore.InsertMethodsTest)  Time elapsed: 0.094 s  <<< ERROR!
+spoon.compiler.ModelBuildingException: 
+snippet compilation error while compiling: class Wrapper {
+    static void wrap() throws java.lang.Throwable {
+        class X {public void foo() {  int x=0;  int y=0;  int z=x+y; }};;
+    }
+}
+	at spoon.test.intercession.insertBefore.InsertMethodsTest.setup(InsertMethodsTest.java:65)
+Caused by: java.lang.NullPointerException
+	at spoon.test.intercession.insertBefore.InsertMethodsTest.setup(InsertMethodsTest.java:65)
+
+[ERROR] testInsertBeforeWithBrace(spoon.test.intercession.insertBefore.InsertMethodsTest)  Time elapsed: 0.106 s  <<< ERROR!
+spoon.compiler.ModelBuildingException: 
+snippet compilation error while compiling: class Wrapper {
+    static void wrap() throws java.lang.Throwable {
+        class X {public void foo() {  int x=0;  int y=0;  int z=x+y; }};;
+    }
+}
+	at spoon.test.intercession.insertBefore.InsertMethodsTest.setup(InsertMethodsTest.java:65)
+Caused by: java.lang.NullPointerException
+	at spoon.test.intercession.insertBefore.InsertMethodsTest.setup(InsertMethodsTest.java:65)
+
+[ERROR] testInsertAfter(spoon.test.intercession.insertBefore.InsertMethodsTest)  Time elapsed: 0.083 s  <<< ERROR!
+spoon.compiler.ModelBuildingException: 
+snippet compilation error while compiling: class Wrapper {
+    static void wrap() throws java.lang.Throwable {
+        class X {public void foo() {  int x=0;  int y=0;  int z=x+y; }};;
+    }
+}
+	at spoon.test.intercession.insertBefore.InsertMethodsTest.setup(InsertMethodsTest.java:65)
+Caused by: java.lang.NullPointerException
+	at spoon.test.intercession.insertBefore.InsertMethodsTest.setup(InsertMethodsTest.java:65)
+
+[ERROR] testInsertAfterWithoutBrace(spoon.test.intercession.insertBefore.InsertMethodsTest)  Time elapsed: 0.097 s  <<< ERROR!
+spoon.compiler.ModelBuildingException: 
+snippet compilation error while compiling: class Wrapper {
+    static void wrap() throws java.lang.Throwable {
+        class X {public void foo() {  int x=0;  int y=0;  int z=x+y; }};;
+    }
+}
+	at spoon.test.intercession.insertBefore.InsertMethodsTest.setup(InsertMethodsTest.java:65)
+Caused by: java.lang.NullPointerException
+	at spoon.test.intercession.insertBefore.InsertMethodsTest.setup(InsertMethodsTest.java:65)
+
+[ERROR] testInsertBefore(spoon.test.intercession.insertBefore.InsertMethodsTest)  Time elapsed: 0.095 s  <<< ERROR!
+spoon.compiler.ModelBuildingException: 
+snippet compilation error while compiling: class Wrapper {
+    static void wrap() throws java.lang.Throwable {
+        class X {public void foo() {  int x=0;  int y=0;  int z=x+y; }};;
+    }
+}
+	at spoon.test.intercession.insertBefore.InsertMethodsTest.setup(InsertMethodsTest.java:65)
+Caused by: java.lang.NullPointerException
+	at spoon.test.intercession.insertBefore.InsertMethodsTest.setup(InsertMethodsTest.java:65)
+
+[ERROR] testInsertAfterWithBrace(spoon.test.intercession.insertBefore.InsertMethodsTest)  Time elapsed: 0.095 s  <<< ERROR!
+spoon.compiler.ModelBuildingException: 
+snippet compilation error while compiling: class Wrapper {
+    static void wrap() throws java.lang.Throwable {
+        class X {public void foo() {  int x=0;  int y=0;  int z=x+y; }};;
+    }
+}
+	at spoon.test.intercession.insertBefore.InsertMethodsTest.setup(InsertMethodsTest.java:65)
+Caused by: java.lang.NullPointerException
+	at spoon.test.intercession.insertBefore.InsertMethodsTest.setup(InsertMethodsTest.java:65)
+
+[ERROR] testInsertAfterSwitchCase(spoon.test.intercession.insertBefore.InsertMethodsTest)  Time elapsed: 0.095 s  <<< ERROR!
+spoon.compiler.ModelBuildingException: 
+snippet compilation error while compiling: class Wrapper {
+    static void wrap() throws java.lang.Throwable {
+        class X {public void foo() {  int x=0;  int y=0;  int z=x+y; }};;
+    }
+}
+	at spoon.test.intercession.insertBefore.InsertMethodsTest.setup(InsertMethodsTest.java:65)
+Caused by: java.lang.NullPointerException
+	at spoon.test.intercession.insertBefore.InsertMethodsTest.setup(InsertMethodsTest.java:65)
+
+[ERROR] testInsertBeforeSwitchCase(spoon.test.intercession.insertBefore.InsertMethodsTest)  Time elapsed: 0.097 s  <<< ERROR!
+spoon.compiler.ModelBuildingException: 
+snippet compilation error while compiling: class Wrapper {
+    static void wrap() throws java.lang.Throwable {
+        class X {public void foo() {  int x=0;  int y=0;  int z=x+y; }};;
+    }
+}
+	at spoon.test.intercession.insertBefore.InsertMethodsTest.setup(InsertMethodsTest.java:65)
+Caused by: java.lang.NullPointerException
+	at spoon.test.intercession.insertBefore.InsertMethodsTest.setup(InsertMethodsTest.java:65)
+
+[INFO] Running spoon.test.intercession.OneCanCallSetterWithNullParameterizedTest
+[INFO] Tests run: 126, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.607 s - in spoon.test.intercession.OneCanCallSetterWithNullParameterizedTest
+[INFO] Running spoon.test.intercession.RemoveTest
+[ERROR] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.076 s <<< FAILURE! - in spoon.test.intercession.RemoveTest
+[ERROR] testRemoveAllStatements(spoon.test.intercession.RemoveTest)  Time elapsed: 0.076 s  <<< ERROR!
+spoon.compiler.ModelBuildingException: 
+snippet compilation error while compiling: class Wrapper {
+    static void wrap() throws java.lang.Throwable {
+        class X {public void foo() { int x=0;int y=0;}};;
+    }
+}
+	at spoon.test.intercession.RemoveTest.testRemoveAllStatements(RemoveTest.java:42)
+Caused by: java.lang.NullPointerException
+	at spoon.test.intercession.RemoveTest.testRemoveAllStatements(RemoveTest.java:42)
+
+[INFO] Running spoon.test.intercession.IntercessionTest
+[ERROR] Tests run: 8, Failures: 0, Errors: 5, Skipped: 1, Time elapsed: 5.598 s <<< FAILURE! - in spoon.test.intercession.IntercessionTest
+[ERROR] testInsertIfIntercession(spoon.test.intercession.IntercessionTest)  Time elapsed: 0.089 s  <<< ERROR!
+spoon.compiler.ModelBuildingException: 
+snippet compilation error while compiling: class Wrapper {
+    static void wrap() throws java.lang.Throwable {
+        class X {public int bar() {if (1 == 0)
+            return 1;
+        else
+            return 0;
+        }};;
+    }
+}
+	at spoon.test.intercession.IntercessionTest.testInsertIfIntercession(IntercessionTest.java:148)
+Caused by: java.lang.NullPointerException
+	at spoon.test.intercession.IntercessionTest.testInsertIfIntercession(IntercessionTest.java:148)
+
+[ERROR] testInsertAfter(spoon.test.intercession.IntercessionTest)  Time elapsed: 0.086 s  <<< ERROR!
+spoon.compiler.ModelBuildingException: 
+snippet compilation error while compiling: class Wrapper {
+    static void wrap() throws java.lang.Throwable {
+        class X {public void foo() { int x=0; int y=0; int z=x+y;}};;
+    }
+}
+	at spoon.test.intercession.IntercessionTest.testInsertAfter(IntercessionTest.java:181)
+Caused by: java.lang.NullPointerException
+	at spoon.test.intercession.IntercessionTest.testInsertAfter(IntercessionTest.java:181)
+
+[ERROR] testInsertBegin(spoon.test.intercession.IntercessionTest)  Time elapsed: 0.05 s  <<< ERROR!
+spoon.compiler.ModelBuildingException: 
+snippet compilation error while compiling: class Wrapper {
+    static void wrap() throws java.lang.Throwable {
+        class X {public void foo() { int x=0;}};;
+    }
+}
+	at spoon.test.intercession.IntercessionTest.testInsertBegin(IntercessionTest.java:69)
+Caused by: java.lang.NullPointerException
+	at spoon.test.intercession.IntercessionTest.testInsertBegin(IntercessionTest.java:69)
+
+[ERROR] testInsertEnd(spoon.test.intercession.IntercessionTest)  Time elapsed: 0.05 s  <<< ERROR!
+spoon.compiler.ModelBuildingException: 
+snippet compilation error while compiling: class Wrapper {
+    static void wrap() throws java.lang.Throwable {
+        class X {public void foo() { int x=0; String foo="toto";}};;
+    }
+}
+	at spoon.test.intercession.IntercessionTest.testInsertEnd(IntercessionTest.java:89)
+Caused by: java.lang.NullPointerException
+	at spoon.test.intercession.IntercessionTest.testInsertEnd(IntercessionTest.java:89)
+
+[ERROR] testEqualConstructor(spoon.test.intercession.IntercessionTest)  Time elapsed: 0.048 s  <<< ERROR!
+spoon.compiler.ModelBuildingException: 
+snippet compilation error while compiling: class Wrapper {
+    static void wrap() throws java.lang.Throwable {
+        class X { public X() {} };;
+    }
+}
+	at spoon.test.intercession.IntercessionTest.testEqualConstructor(IntercessionTest.java:111)
+Caused by: java.lang.NullPointerException
+	at spoon.test.intercession.IntercessionTest.testEqualConstructor(IntercessionTest.java:111)
+
+[INFO] Running spoon.test.literal.LiteralTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.191 s - in spoon.test.literal.LiteralTest
+[INFO] Running spoon.test.module.TestModule
+[ERROR] Tests run: 8, Failures: 0, Errors: 4, Skipped: 2, Time elapsed: 0.105 s <<< FAILURE! - in spoon.test.module.TestModule
+[ERROR] testModuleInfoWithComments(spoon.test.module.TestModule)  Time elapsed: 0.038 s  <<< ERROR!
+java.lang.NullPointerException
+	at spoon.test.module.TestModule.testModuleInfoWithComments(TestModule.java:207)
+
+[ERROR] testModuleInfoShouldBeCorrectlyPrettyPrinted(spoon.test.module.TestModule)  Time elapsed: 0.016 s  <<< ERROR!
+java.lang.NullPointerException
+	at spoon.test.module.TestModule.testModuleInfoShouldBeCorrectlyPrettyPrinted(TestModule.java:180)
+
+[ERROR] testCompleteModuleInfoContentNoClasspath(spoon.test.module.TestModule)  Time elapsed: 0.016 s  <<< ERROR!
+java.lang.NullPointerException
+	at spoon.test.module.TestModule.testCompleteModuleInfoContentNoClasspath(TestModule.java:104)
+
+[ERROR] testDirectiveOrders(spoon.test.module.TestModule)  Time elapsed: 0.02 s  <<< ERROR!
+java.lang.NullPointerException
+	at spoon.test.module.TestModule.testDirectiveOrders(TestModule.java:257)
+
+[INFO] Running spoon.test.targeted.TargetedExpressionTest
+[ERROR] Tests run: 17, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 1.607 s <<< FAILURE! - in spoon.test.targeted.TargetedExpressionTest
+[ERROR] testInitializeFieldAccessInNoclasspathMode(spoon.test.targeted.TargetedExpressionTest)  Time elapsed: 0.092 s  <<< ERROR!
+java.lang.NullPointerException
+	at spoon.test.targeted.TargetedExpressionTest.testInitializeFieldAccessInNoclasspathMode(TargetedExpressionTest.java:439)
+
+[ERROR] testStaticTargetsOfFieldAccessNoClasspath(spoon.test.targeted.TargetedExpressionTest)  Time elapsed: 0.089 s  <<< ERROR!
+java.lang.NullPointerException
+	at spoon.test.targeted.TargetedExpressionTest.testStaticTargetsOfFieldAccessNoClasspath(TargetedExpressionTest.java:260)
+
+[ERROR] testStaticTargetsOfInvNoClasspath(spoon.test.targeted.TargetedExpressionTest)  Time elapsed: 0.066 s  <<< ERROR!
+java.lang.NullPointerException
+	at spoon.test.targeted.TargetedExpressionTest.testStaticTargetsOfInvNoClasspath(TargetedExpressionTest.java:411)
+
+[INFO] Running spoon.test.sourcePosition.SourcePositionTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.19 s - in spoon.test.sourcePosition.SourcePositionTest
+[INFO] Running spoon.test.type.TypeTest
+[ERROR] Tests run: 13, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.206 s <<< FAILURE! - in spoon.test.type.TypeTest
+[ERROR] testTypeAccessOnPrimitive(spoon.test.type.TypeTest)  Time elapsed: 0.055 s  <<< ERROR!
+spoon.compiler.ModelBuildingException: 
+snippet compilation error while compiling: class Wrapper {
+    static void wrap() throws java.lang.Throwable {
+        class X {public void foo() { Class klass=null;  boolean x= (klass == short.class);}};;
+    }
+}
+	at spoon.test.type.TypeTest.testTypeAccessOnPrimitive(TypeTest.java:99)
+Caused by: java.lang.NullPointerException
+	at spoon.test.type.TypeTest.testTypeAccessOnPrimitive(TypeTest.java:99)
+
+[INFO] Running spoon.test.architecture.SpoonArchitectureEnforcerTest
+2018-11-11 08:19:03,124 ERROR spoon.support.compiler.jdt.JDTCommentBuilder - "/* c2 */" cannot be added into the AST, with parent class spoon.support.reflect.code.CtLiteralImplplease report the bug by posting on https://github.com/INRIA/spoon/issues/2482
+2018-11-11 08:19:03,126 ERROR spoon.support.compiler.jdt.JDTCommentBuilder - "// c5" cannot be added into the AST, with parent class spoon.support.reflect.code.CtLiteralImplplease report the bug by posting on https://github.com/INRIA/spoon/issues/2482
+2018-11-11 08:19:03,127 ERROR spoon.support.compiler.jdt.JDTCommentBuilder - "/* c6 */" cannot be added into the AST, with parent class spoon.support.reflect.code.CtLiteralImplplease report the bug by posting on https://github.com/INRIA/spoon/issues/2482
+2018-11-11 08:19:03,127 ERROR spoon.support.compiler.jdt.JDTCommentBuilder - "// c7" cannot be added into the AST, with parent class spoon.support.reflect.code.CtLiteralImplplease report the bug by posting on https://github.com/INRIA/spoon/issues/2482
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 37.077 s - in spoon.test.architecture.SpoonArchitectureEnforcerTest
+[INFO] Running spoon.test.modifiers.TestModifiers
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.451 s - in spoon.test.modifiers.TestModifiers
+[INFO] Running spoon.test.signature.SignatureTest
+[ERROR] Tests run: 8, Failures: 0, Errors: 6, Skipped: 0, Time elapsed: 0.43 s <<< FAILURE! - in spoon.test.signature.SignatureTest
+[ERROR] testMethodInvocationSignatureStaticFieldsVariables(spoon.test.signature.SignatureTest)  Time elapsed: 0.044 s  <<< ERROR!
+spoon.compiler.ModelBuildingException: 
+snippet compilation error while compiling: class Wrapper {
+    static void wrap() throws java.lang.Throwable {
+        Integer.toBinaryString(Integer.MAX_VALUE);
+    }
+}
+	at spoon.test.signature.SignatureTest.testMethodInvocationSignatureStaticFieldsVariables(SignatureTest.java:154)
+Caused by: java.lang.NullPointerException
+
+[ERROR] testNullSignatureInUnboundVariable(spoon.test.signature.SignatureTest)  Time elapsed: 0.048 s  <<< ERROR!
+java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at spoon.test.signature.SignatureTest.testNullSignatureInUnboundVariable(SignatureTest.java:115)
+
+[ERROR] testUnboundFieldSignature(spoon.test.signature.SignatureTest)  Time elapsed: 0.045 s  <<< ERROR!
+java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at spoon.test.signature.SignatureTest.testUnboundFieldSignature(SignatureTest.java:285)
+
+[ERROR] testLiteralSignature(spoon.test.signature.SignatureTest)  Time elapsed: 0.048 s  <<< ERROR!
+spoon.compiler.ModelBuildingException: 
+snippet compilation error while compiling: class Wrapper {
+    static void wrap() throws java.lang.Throwable {
+        System.out.println("hello");
+    }
+}
+	at spoon.test.signature.SignatureTest.testLiteralSignature(SignatureTest.java:135)
+Caused by: java.lang.NullPointerException
+
+[ERROR] testMethodInvocationSignatureWithVariableAccess(spoon.test.signature.SignatureTest)  Time elapsed: 0.045 s  <<< ERROR!
+java.lang.NullPointerException
+
+[ERROR] testNullSignature(spoon.test.signature.SignatureTest)  Time elapsed: 0.049 s  <<< ERROR!
+spoon.compiler.ModelBuildingException: 
+snippet compilation error while compiling: class Wrapper {
+    static void wrap() throws java.lang.Throwable {
+        class X {public Object foo() { return null;}};;
+    }
+}
+	at spoon.test.signature.SignatureTest.testNullSignature(SignatureTest.java:73)
+Caused by: java.lang.NullPointerException
+
+[INFO] Running spoon.test.path.PathTest
+[INFO] Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.111 s - in spoon.test.path.PathTest
+[INFO] Running spoon.test.arrays.ArraysTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.544 s - in spoon.test.arrays.ArraysTest
+[INFO] Running spoon.test.staticFieldAccess.StaticAccessTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.164 s - in spoon.test.staticFieldAccess.StaticAccessTest
+[INFO] Running spoon.test.delete.DeleteTest
+[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.279 s - in spoon.test.delete.DeleteTest
+[INFO] Running spoon.test.staticFieldAccess2.ImplicitStaticFieldReferenceTest
+[INFO] Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.823 s - in spoon.test.staticFieldAccess2.ImplicitStaticFieldReferenceTest
+[INFO] Running spoon.test.imports.ImportTest
+[ERROR] Tests run: 48, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 6.874 s <<< FAILURE! - in spoon.test.imports.ImportTest
+[ERROR] testNullable(spoon.test.imports.ImportTest)  Time elapsed: 0.052 s  <<< ERROR!
+java.lang.NullPointerException
+
+[ERROR] testSuperInheritanceHierarchyFunctionNoClasspath(spoon.test.imports.ImportTest)  Time elapsed: 0.046 s  <<< ERROR!
+java.lang.NullPointerException
+
+[ERROR] testStaticImportForInvocationInNoClasspath(spoon.test.imports.ImportTest)  Time elapsed: 0.05 s  <<< ERROR!
+java.lang.NullPointerException
+
+[INFO] Running spoon.test.imports.ImportAndExtendWithPackageNameTest
+[ERROR] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.042 s <<< FAILURE! - in spoon.test.imports.ImportAndExtendWithPackageNameTest
+[ERROR] testBuildModel(spoon.test.imports.ImportAndExtendWithPackageNameTest)  Time elapsed: 0.042 s  <<< ERROR!
+java.lang.NullPointerException
+
+[INFO] Running spoon.test.imports.ImportScannerTest
+2018-11-11 08:19:49,407 WARN spoon.Launcher - ImportScannerTest: Import scanner imports 606 unused imports and misses 0 imports
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 23.709 s - in spoon.test.imports.ImportScannerTest
+[INFO] Running spoon.test.generics.GenericsTest
+[ERROR] Tests run: 48, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 4.041 s <<< FAILURE! - in spoon.test.generics.GenericsTest
+[ERROR] testDiamond1(spoon.test.generics.GenericsTest)  Time elapsed: 0.051 s  <<< ERROR!
+spoon.compiler.ModelBuildingException: 
+snippet compilation error while compiling: class Wrapper {
+    static void wrap() throws java.lang.Throwable {
+        class Diamond {
+        	java.util.List<String> f = new java.util.ArrayList<>();
+        };
+    }
+}
+	at spoon.test.generics.GenericsTest.testDiamond1(GenericsTest.java:172)
+Caused by: java.lang.NullPointerException
+
+[INFO] Running spoon.test.reflect.visitor.ReferenceQueryTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.049 s - in spoon.test.reflect.visitor.ReferenceQueryTest
+[INFO] Running spoon.test.interfaces.InterfaceTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.531 s - in spoon.test.interfaces.InterfaceTest
+[INFO] Running spoon.test.interfaces.TestInterfaceWithoutSetup
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.339 s - in spoon.test.interfaces.TestInterfaceWithoutSetup
+[INFO] Running spoon.test.ctClass.CtClassTest
+[ERROR] Tests run: 8, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 4.647 s <<< FAILURE! - in spoon.test.ctClass.CtClassTest
+[ERROR] testAllTypeReferencesToALocalTypeShouldNotStartWithNumber(spoon.test.ctClass.CtClassTest)  Time elapsed: 0.098 s  <<< ERROR!
+spoon.compiler.ModelBuildingException: 
+snippet compilation error while compiling: class Wrapper {
+    static void wrap() throws java.lang.Throwable {
+        class Pozole {
+            public void m() {
+                class Cook {
+                    public Cook() {
+                    }
+
+                    public void m() {
+                        final java.lang.Class<Cook> cookClass = Cook.class;
+                    }
+                }
+                new Cook();
+            }
+        };
+    }
+}
+	at spoon.test.ctClass.CtClassTest.testAllTypeReferencesToALocalTypeShouldNotStartWithNumber(CtClassTest.java:165)
+Caused by: java.lang.NullPointerException
+
+[INFO] Running spoon.test.ctCase.SwitchCaseTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.135 s - in spoon.test.ctCase.SwitchCaseTest
+[INFO] Running spoon.test.fieldaccesses.FieldAccessTest
+[ERROR] Tests run: 16, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 1.222 s <<< FAILURE! - in spoon.test.fieldaccesses.FieldAccessTest
+[ERROR] testFieldAccessOnUnknownType(spoon.test.fieldaccesses.FieldAccessTest)  Time elapsed: 0.083 s  <<< ERROR!
+java.lang.NullPointerException
+
+[ERROR] testFieldAccessNoClasspath(spoon.test.fieldaccesses.FieldAccessTest)  Time elapsed: 0.089 s  <<< ERROR!
+java.lang.NullPointerException
+
+[ERROR] testFieldAccessAutoExplicit(spoon.test.fieldaccesses.FieldAccessTest)  Time elapsed: 0.154 s  <<< ERROR!
+spoon.compiler.ModelBuildingException: 
+snippet compilation error while compiling: class Wrapper {
+    static void wrap() throws java.lang.Throwable {
+        int age = 1;
+    }
+}
+	at spoon.test.fieldaccesses.FieldAccessTest.testFieldAccessAutoExplicit(FieldAccessTest.java:426)
+Caused by: java.lang.NullPointerException
+
+[INFO] Running spoon.test.labels.TestLabels
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.046 s - in spoon.test.labels.TestLabels
+[INFO] Running spoon.test.visitor.AssignmentsEqualsTest
+[ERROR] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.047 s <<< FAILURE! - in spoon.test.visitor.AssignmentsEqualsTest
+[ERROR] testEquals(spoon.test.visitor.AssignmentsEqualsTest)  Time elapsed: 0.047 s  <<< ERROR!
+java.lang.NullPointerException
+
+[INFO] Running spoon.test.visitor.VisitorTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.054 s - in spoon.test.visitor.VisitorTest
+[INFO] Running spoon.test.parameters.ParameterTest
+[ERROR] Tests run: 3, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.339 s <<< FAILURE! - in spoon.test.parameters.ParameterTest
+[ERROR] testMultiParameterLambdaTypeReference(spoon.test.parameters.ParameterTest)  Time elapsed: 0.097 s  <<< ERROR!
+java.lang.NullPointerException
+
+[ERROR] testGetParameterReferenceInLambdaNoClasspath(spoon.test.parameters.ParameterTest)  Time elapsed: 0.086 s  <<< ERROR!
+java.lang.NullPointerException
+
+[INFO] Running spoon.test.annotation.AnnotationLoopTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.091 s - in spoon.test.annotation.AnnotationLoopTest
+[INFO] Running spoon.test.annotation.AnnotationValuesTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.307 s - in spoon.test.annotation.AnnotationValuesTest
+[INFO] Running spoon.test.annotation.AnnotationTest
+[ERROR] Tests run: 52, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 3.926 s <<< FAILURE! - in spoon.test.annotation.AnnotationTest
+[ERROR] testGetAnnotationFromParameter(spoon.test.annotation.AnnotationTest)  Time elapsed: 0.093 s  <<< ERROR!
+java.lang.NullPointerException
+
+[INFO] Running spoon.test.javadoc.JavaDocTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.103 s - in spoon.test.javadoc.JavaDocTest
+[INFO] Running spoon.test.condition.ConditionalTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.286 s - in spoon.test.condition.ConditionalTest
+[INFO] Running spoon.test.change.ChangeCollectorTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.044 s - in spoon.test.change.ChangeCollectorTest
+[INFO] Running spoon.test.method_overriding.MethodOverriddingTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.17 s - in spoon.test.method_overriding.MethodOverriddingTest
+[INFO] Running spoon.test.trycatch.TryCatchTest
+[ERROR] Tests run: 12, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 0.789 s <<< FAILURE! - in spoon.test.trycatch.TryCatchTest
+[ERROR] testFullyQualifiedException(spoon.test.trycatch.TryCatchTest)  Time elapsed: 0.044 s  <<< ERROR!
+spoon.compiler.ModelBuildingException: 
+snippet compilation error while compiling: class Wrapper {
+    static void wrap() throws java.lang.Throwable {
+        class X {public void foo() { try{}catch(java.lang.RuntimeException e){}}};;
+    }
+}
+	at spoon.test.trycatch.TryCatchTest.testFullyQualifiedException(TryCatchTest.java:83)
+Caused by: java.lang.NullPointerException
+
+[ERROR] testCatchWithUnknownExceptions(spoon.test.trycatch.TryCatchTest)  Time elapsed: 0.049 s  <<< ERROR!
+java.lang.NullPointerException
+
+[ERROR] testExceptionJava7(spoon.test.trycatch.TryCatchTest)  Time elapsed: 0.049 s  <<< ERROR!
+spoon.compiler.ModelBuildingException: 
+snippet compilation error while compiling: class Wrapper {
+    static void wrap() throws java.lang.Throwable {
+        class X {public void foo() { try{}catch(RuntimeException | Error e){System.exit(0);}}};;
+    }
+}
+	at spoon.test.trycatch.TryCatchTest.testExceptionJava7(TryCatchTest.java:120)
+Caused by: java.lang.NullPointerException
+
+[ERROR] testCatchOrder(spoon.test.trycatch.TryCatchTest)  Time elapsed: 0.049 s  <<< ERROR!
+spoon.compiler.ModelBuildingException: 
+snippet compilation error while compiling: class Wrapper {
+    static void wrap() throws java.lang.Throwable {
+        class X {public void foo() { try{}catch(RuntimeException e){java.lang.System.exit(0);}      catch(Exception e){}}};;
+    }
+}
+	at spoon.test.trycatch.TryCatchTest.testCatchOrder(TryCatchTest.java:98)
+Caused by: java.lang.NullPointerException
+
+[ERROR] testTryCatchVariableGetType(spoon.test.trycatch.TryCatchTest)  Time elapsed: 0.049 s  <<< ERROR!
+spoon.compiler.ModelBuildingException: 
+snippet compilation error while compiling: class Wrapper {
+    static void wrap() throws java.lang.Throwable {
+        class X {public void foo() { try{}catch(RuntimeException e){System.exit(0);}}};;
+    }
+}
+	at spoon.test.trycatch.TryCatchTest.testTryCatchVariableGetType(TryCatchTest.java:233)
+Caused by: java.lang.NullPointerException
+
+[INFO] Running spoon.test.ctBodyHolder.CtBodyHolderTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.383 s - in spoon.test.ctBodyHolder.CtBodyHolderTest
+[INFO] Running spoon.test.reference.AnnotationFieldReferenceTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.096 s - in spoon.test.reference.AnnotationFieldReferenceTest
+[INFO] Running spoon.test.reference.CloneReferenceTest
+[ERROR] Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.175 s <<< FAILURE! - in spoon.test.reference.CloneReferenceTest
+[ERROR] testGetDeclarationOfFieldAfterClone(spoon.test.reference.CloneReferenceTest)  Time elapsed: 0.087 s  <<< ERROR!
+java.lang.NullPointerException
+
+[ERROR] testGetDeclarationAfterClone(spoon.test.reference.CloneReferenceTest)  Time elapsed: 0.087 s  <<< ERROR!
+java.lang.NullPointerException
+
+[INFO] Running spoon.test.reference.ExecutableReferenceGenericTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.748 s - in spoon.test.reference.ExecutableReferenceGenericTest
+[INFO] Running spoon.test.reference.ExecutableReferenceTest
+[ERROR] Tests run: 8, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.528 s <<< FAILURE! - in spoon.test.reference.ExecutableReferenceTest
+[ERROR] testCallMethodOfClassNotPresent(spoon.test.reference.ExecutableReferenceTest)  Time elapsed: 0.053 s  <<< ERROR!
+java.lang.NullPointerException
+
+[ERROR] testCreateReferenceForAnonymousExecutable(spoon.test.reference.ExecutableReferenceTest)  Time elapsed: 0.046 s  <<< ERROR!
+java.lang.NullPointerException
+
+[INFO] Running spoon.test.reference.TypeReferenceTest
+[ERROR] Tests run: 28, Failures: 0, Errors: 9, Skipped: 0, Time elapsed: 1.064 s <<< FAILURE! - in spoon.test.reference.TypeReferenceTest
+[ERROR] testTypeDeclarationWildcard(spoon.test.reference.TypeReferenceTest)  Time elapsed: 0.047 s  <<< ERROR!
+spoon.compiler.ModelBuildingException: 
+snippet compilation error while compiling: class Wrapper {
+    static void wrap() throws java.lang.Throwable {
+        java.util.List<?> l = null;
+    }
+}
+	at spoon.test.reference.TypeReferenceTest.testTypeDeclarationWildcard(TypeReferenceTest.java:618)
+Caused by: java.lang.NullPointerException
+
+[ERROR] testAnonymousClassesHaveAnEmptyStringForItsNameInNoClasspath(spoon.test.reference.TypeReferenceTest)  Time elapsed: 0.046 s  <<< ERROR!
+java.lang.NullPointerException
+
+[ERROR] testTypeReferenceSpecifiedInClassDeclarationInNoClasspath(spoon.test.reference.TypeReferenceTest)  Time elapsed: 0.047 s  <<< ERROR!
+java.lang.NullPointerException
+
+[ERROR] testConstructorCallInNoClasspath(spoon.test.reference.TypeReferenceTest)  Time elapsed: 0.047 s  <<< ERROR!
+java.lang.NullPointerException
+
+[ERROR] testArgumentOfAInvocationIsNotATypeAccess(spoon.test.reference.TypeReferenceTest)  Time elapsed: 0.045 s  <<< ERROR!
+java.lang.NullPointerException
+
+[ERROR] testAnnotationOnMethodWithPrimitiveReturnTypeInNoClasspath(spoon.test.reference.TypeReferenceTest)  Time elapsed: 0.045 s  <<< ERROR!
+java.lang.NullPointerException
+
+[ERROR] testTypeReferenceSpecifiedInClassDeclarationInNoClasspathWithGenerics(spoon.test.reference.TypeReferenceTest)  Time elapsed: 0.045 s  <<< ERROR!
+java.lang.NullPointerException
+
+[ERROR] testPackageInNoClasspath(spoon.test.reference.TypeReferenceTest)  Time elapsed: 0.046 s  <<< ERROR!
+java.lang.NullPointerException
+
+[ERROR] testInvocationWithFieldAccessInNoClasspath(spoon.test.reference.TypeReferenceTest)  Time elapsed: 0.046 s  <<< ERROR!
+java.lang.NullPointerException
+
+[INFO] Running spoon.test.reference.ElasticsearchStackoverflowTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.07 s - in spoon.test.reference.ElasticsearchStackoverflowTest
+[INFO] Running spoon.test.reference.VariableAccessTest
+[ERROR] Tests run: 11, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 0.569 s <<< FAILURE! - in spoon.test.reference.VariableAccessTest
+[ERROR] testMultipleDeclarationsOfLocalVariable(spoon.test.reference.VariableAccessTest)  Time elapsed: 0.046 s  <<< ERROR!
+java.lang.NullPointerException
+
+[ERROR] testDeclaringTypeOfALambdaReferencedByParameterReference(spoon.test.reference.VariableAccessTest)  Time elapsed: 0.051 s  <<< ERROR!
+java.lang.NullPointerException
+
+[ERROR] testGetDeclarationAfterClone(spoon.test.reference.VariableAccessTest)  Time elapsed: 0.046 s  <<< ERROR!
+java.lang.NullPointerException
+
+[ERROR] testDeclarationOfVariableReference(spoon.test.reference.VariableAccessTest)  Time elapsed: 0.049 s  <<< ERROR!
+java.lang.NullPointerException
+
+[INFO] Running spoon.test.comparison.EqualTest
+[ERROR] Tests run: 5, Failures: 1, Errors: 4, Skipped: 0, Time elapsed: 0.248 s <<< FAILURE! - in spoon.test.comparison.EqualTest
+[ERROR] testEqualsDetails(spoon.test.comparison.EqualTest)  Time elapsed: 0.043 s  <<< ERROR!
+spoon.compiler.ModelBuildingException: 
+snippet compilation error while compiling: class Wrapper {
+    static void wrap() throws java.lang.Throwable {
+        try{}catch(RuntimeException | AssertionError e){};
+    }
+}
+	at spoon.test.comparison.EqualTest.testEqualsDetails(EqualTest.java:119)
+Caused by: java.lang.NullPointerException
+
+[ERROR] testEqualsMultitype(spoon.test.comparison.EqualTest)  Time elapsed: 0.052 s  <<< ERROR!
+spoon.compiler.ModelBuildingException: 
+snippet compilation error while compiling: class Wrapper {
+    static void wrap() throws java.lang.Throwable {
+        try{}catch(RuntimeException | AssertionError e){};
+    }
+}
+	at spoon.test.comparison.EqualTest.testEqualsMultitype(EqualTest.java:98)
+Caused by: java.lang.NullPointerException
+
+[ERROR] testEqualsActualTypeRef(spoon.test.comparison.EqualTest)  Time elapsed: 0.052 s  <<< ERROR!
+spoon.compiler.ModelBuildingException: 
+snippet compilation error while compiling: class Wrapper {
+    static void wrap() throws java.lang.Throwable {
+        java.util.List<String> l ;
+    }
+}
+	at spoon.test.comparison.EqualTest.testEqualsActualTypeRef(EqualTest.java:111)
+Caused by: java.lang.NullPointerException
+
+[ERROR] testEqualsEmptyException(spoon.test.comparison.EqualTest)  Time elapsed: 0.05 s  <<< FAILURE!
+java.lang.AssertionError: Unable create model
+	at spoon.test.comparison.EqualTest.testEqualsEmptyException(EqualTest.java:59)
+
+[ERROR] testEqualsComment(spoon.test.comparison.EqualTest)  Time elapsed: 0.05 s  <<< ERROR!
+spoon.compiler.ModelBuildingException: 
+snippet compilation error while compiling: class Wrapper {
+    static void wrap() throws java.lang.Throwable {
+        int i=0;
+    }
+}
+	at spoon.test.comparison.EqualTest.testEqualsComment(EqualTest.java:88)
+Caused by: java.lang.NullPointerException
+
+[INFO] Running spoon.test.position.PositionTest
+2018-11-11 08:20:11,160 ERROR spoon.support.compiler.jdt.JDTCommentBuilder - "/* c2 */" cannot be added into the AST, with parent class spoon.support.reflect.code.CtLiteralImplplease report the bug by posting on https://github.com/INRIA/spoon/issues/2482
+2018-11-11 08:20:11,161 ERROR spoon.support.compiler.jdt.JDTCommentBuilder - "// c5" cannot be added into the AST, with parent class spoon.support.reflect.code.CtLiteralImplplease report the bug by posting on https://github.com/INRIA/spoon/issues/2482
+2018-11-11 08:20:11,161 ERROR spoon.support.compiler.jdt.JDTCommentBuilder - "/* c6 */" cannot be added into the AST, with parent class spoon.support.reflect.code.CtLiteralImplplease report the bug by posting on https://github.com/INRIA/spoon/issues/2482
+2018-11-11 08:20:11,161 ERROR spoon.support.compiler.jdt.JDTCommentBuilder - "// c7" cannot be added into the AST, with parent class spoon.support.reflect.code.CtLiteralImplplease report the bug by posting on https://github.com/INRIA/spoon/issues/2482
+2018-11-11 08:20:11,587 ERROR spoon.support.compiler.jdt.JDTCommentBuilder - "/* c2 */" cannot be added into the AST, with parent class spoon.support.reflect.code.CtLiteralImplplease report the bug by posting on https://github.com/INRIA/spoon/issues/2482
+2018-11-11 08:20:11,587 ERROR spoon.support.compiler.jdt.JDTCommentBuilder - "// c5" cannot be added into the AST, with parent class spoon.support.reflect.code.CtLiteralImplplease report the bug by posting on https://github.com/INRIA/spoon/issues/2482
+2018-11-11 08:20:11,588 ERROR spoon.support.compiler.jdt.JDTCommentBuilder - "/* c6 */" cannot be added into the AST, with parent class spoon.support.reflect.code.CtLiteralImplplease report the bug by posting on https://github.com/INRIA/spoon/issues/2482
+2018-11-11 08:20:11,588 ERROR spoon.support.compiler.jdt.JDTCommentBuilder - "// c7" cannot be added into the AST, with parent class spoon.support.reflect.code.CtLiteralImplplease report the bug by posting on https://github.com/INRIA/spoon/issues/2482
+2018-11-11 08:20:11,859 ERROR spoon.support.compiler.jdt.JDTCommentBuilder - "/* c2 */" cannot be added into the AST, with parent class spoon.support.reflect.code.CtLiteralImplplease report the bug by posting on https://github.com/INRIA/spoon/issues/2482
+2018-11-11 08:20:11,859 ERROR spoon.support.compiler.jdt.JDTCommentBuilder - "// c5" cannot be added into the AST, with parent class spoon.support.reflect.code.CtLiteralImplplease report the bug by posting on https://github.com/INRIA/spoon/issues/2482
+2018-11-11 08:20:11,860 ERROR spoon.support.compiler.jdt.JDTCommentBuilder - "/* c6 */" cannot be added into the AST, with parent class spoon.support.reflect.code.CtLiteralImplplease report the bug by posting on https://github.com/INRIA/spoon/issues/2482
+2018-11-11 08:20:11,860 ERROR spoon.support.compiler.jdt.JDTCommentBuilder - "// c7" cannot be added into the AST, with parent class spoon.support.reflect.code.CtLiteralImplplease report the bug by posting on https://github.com/INRIA/spoon/issues/2482
+2018-11-11 08:20:12,568 ERROR spoon.support.compiler.jdt.JDTCommentBuilder - "/* c2 */" cannot be added into the AST, with parent class spoon.support.reflect.code.CtLiteralImplplease report the bug by posting on https://github.com/INRIA/spoon/issues/2482
+2018-11-11 08:20:12,568 ERROR spoon.support.compiler.jdt.JDTCommentBuilder - "// c5" cannot be added into the AST, with parent class spoon.support.reflect.code.CtLiteralImplplease report the bug by posting on https://github.com/INRIA/spoon/issues/2482
+2018-11-11 08:20:12,570 ERROR spoon.support.compiler.jdt.JDTCommentBuilder - "/* c6 */" cannot be added into the AST, with parent class spoon.support.reflect.code.CtLiteralImplplease report the bug by posting on https://github.com/INRIA/spoon/issues/2482
+2018-11-11 08:20:12,570 ERROR spoon.support.compiler.jdt.JDTCommentBuilder - "// c7" cannot be added into the AST, with parent class spoon.support.reflect.code.CtLiteralImplplease report the bug by posting on https://github.com/INRIA/spoon/issues/2482
+[INFO] Tests run: 31, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.902 s - in spoon.test.position.PositionTest
+[INFO] Running spoon.test.position.TestSourceFragment
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.073 s - in spoon.test.position.TestSourceFragment
+[INFO] Running spoon.test.control.ControlTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.092 s - in spoon.test.control.ControlTest
+[INFO] Running spoon.test.processing.ProcessingTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.661 s - in spoon.test.processing.ProcessingTest
+[INFO] Running spoon.test.ctElement.MetadataTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.08 s - in spoon.test.ctElement.MetadataTest
+[INFO] Running spoon.test.ctElement.ElementTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in spoon.test.ctElement.ElementTest
+[INFO] Running spoon.test.main.MainTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 39.07 s - in spoon.test.main.MainTest
+[INFO] Running spoon.test.field.FieldTest
+[ERROR] Tests run: 6, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.221 s <<< FAILURE! - in spoon.test.field.FieldTest
+[ERROR] getFQNofFieldReference(spoon.test.field.FieldTest)  Time elapsed: 0.046 s  <<< ERROR!
+java.lang.NullPointerException
+
+[INFO] Running spoon.test.OutputTypeTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in spoon.test.OutputTypeTest
+[INFO] Running spoon.test.method.MethodTest
+[ERROR] Tests run: 6, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.265 s <<< FAILURE! - in spoon.test.method.MethodTest
+[ERROR] testGetAllMethods(spoon.test.method.MethodTest)  Time elapsed: 0.045 s  <<< ERROR!
+java.lang.NullPointerException
+
+[INFO] Running spoon.test.logging.LogTest
+2018-11-11 08:20:53,344 WARN spoon.Launcher - Spoon is now using the 'no classpath mode' by default. If you want to ensure using Spoon in full classpath mode, please use the new flag: --cpmode fullclasspath.
+2018-11-11 08:20:53,344 WARN spoon.Launcher - Spoon now parse by default the comments. Consider using the option --disable-comments if you want the old behaviour.
+2018-11-11 08:20:53,345 DEBUG spoon.Launcher - destination: /root/workspace/INRIA/spoon/453383968/spooned-classes
+2018-11-11 08:20:53,345 DEBUG spoon.Launcher - source classpath: null
+2018-11-11 08:20:53,345 DEBUG spoon.Launcher - template classpath: []
+2018-11-11 08:20:53,346 INFO spoon.Launcher - Log info
+2018-11-11 08:20:53,346 WARN spoon.Launcher - Log warn
+2018-11-11 08:20:53,347 ERROR spoon.Launcher - Log error
+2018-11-11 08:20:53,347 DEBUG spoon.Launcher - Log debug
+2018-11-11 08:20:53,348 WARN spoon.Launcher - Spoon is now using the 'no classpath mode' by default. If you want to ensure using Spoon in full classpath mode, please use the new flag: --cpmode fullclasspath.
+2018-11-11 08:20:53,348 WARN spoon.Launcher - Spoon now parse by default the comments. Consider using the option --disable-comments if you want the old behaviour.
+2018-11-11 08:20:53,348 DEBUG spoon.Launcher - destination: /root/workspace/INRIA/spoon/453383968/spooned-classes
+2018-11-11 08:20:53,349 DEBUG spoon.Launcher - source classpath: null
+2018-11-11 08:20:53,349 DEBUG spoon.Launcher - template classpath: []
+2018-11-11 08:20:53,350 INFO spoon.Launcher - Log info
+2018-11-11 08:20:53,350 WARN spoon.Launcher - Log warn
+2018-11-11 08:20:53,350 ERROR spoon.Launcher - Log error
+2018-11-11 08:20:53,350 DEBUG spoon.Launcher - Log debug
+2018-11-11 08:20:53,351 WARN spoon.Launcher - Spoon is now using the 'no classpath mode' by default. If you want to ensure using Spoon in full classpath mode, please use the new flag: --cpmode fullclasspath.
+2018-11-11 08:20:53,351 WARN spoon.Launcher - Spoon now parse by default the comments. Consider using the option --disable-comments if you want the old behaviour.
+2018-11-11 08:20:53,352 INFO spoon.Launcher - Log info
+2018-11-11 08:20:53,352 WARN spoon.Launcher - Log warn
+2018-11-11 08:20:53,352 ERROR spoon.Launcher - Log error
+2018-11-11 08:20:53,353 WARN spoon.Launcher - Spoon is now using the 'no classpath mode' by default. If you want to ensure using Spoon in full classpath mode, please use the new flag: --cpmode fullclasspath.
+2018-11-11 08:20:53,354 WARN spoon.Launcher - Spoon now parse by default the comments. Consider using the option --disable-comments if you want the old behaviour.
+2018-11-11 08:20:53,354 WARN spoon.Launcher - Log warn
+2018-11-11 08:20:53,355 ERROR spoon.Launcher - Log error
+2018-11-11 08:20:53,356 ERROR spoon.Launcher - Log error
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 s - in spoon.test.logging.LogTest
+[INFO] Running spoon.test.limits.utils.InternalTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.101 s - in spoon.test.limits.utils.InternalTest
+[INFO] Running spoon.test.ctType.CtTypeParameterTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.116 s - in spoon.test.ctType.CtTypeParameterTest
+[INFO] Running spoon.test.ctType.CtTypeTest
+[ERROR] Tests run: 8, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 0.408 s <<< FAILURE! - in spoon.test.ctType.CtTypeTest
+[ERROR] testHasMethodNotHasMethod(spoon.test.ctType.CtTypeTest)  Time elapsed: 0.048 s  <<< ERROR!
+spoon.compiler.ModelBuildingException: 
+snippet compilation error while compiling: class Wrapper {
+    static void wrap() throws java.lang.Throwable {
+        class X { public void foo() {} };
+    }
+}
+	at spoon.test.ctType.CtTypeTest.testHasMethodNotHasMethod(CtTypeTest.java:61)
+Caused by: java.lang.NullPointerException
+
+[ERROR] testHasMethodInDirectMethod(spoon.test.ctType.CtTypeTest)  Time elapsed: 0.047 s  <<< ERROR!
+spoon.compiler.ModelBuildingException: 
+snippet compilation error while compiling: class Wrapper {
+    static void wrap() throws java.lang.Throwable {
+        class X { public void foo() {} };
+    }
+}
+	at spoon.test.ctType.CtTypeTest.testHasMethodInDirectMethod(CtTypeTest.java:53)
+Caused by: java.lang.NullPointerException
+
+[ERROR] testHasMethodOnNull(spoon.test.ctType.CtTypeTest)  Time elapsed: 0.048 s  <<< ERROR!
+spoon.compiler.ModelBuildingException: 
+snippet compilation error while compiling: class Wrapper {
+    static void wrap() throws java.lang.Throwable {
+        class X { public void foo() {} };
+    }
+}
+	at spoon.test.ctType.CtTypeTest.testHasMethodOnNull(CtTypeTest.java:70)
+Caused by: java.lang.NullPointerException
+
+[INFO] Running spoon.test.query_function.testclasses.VariableReferencesModelTest
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in spoon.test.query_function.testclasses.VariableReferencesModelTest
+[INFO] Running spoon.test.query_function.VariableReferencesTest
+2018-11-11 08:20:54,004 WARN spoon.Launcher - Spoon is now using the 'no classpath mode' by default. If you want to ensure using Spoon in full classpath mode, please use the new flag: --cpmode fullclasspath.
+2018-11-11 08:20:54,004 WARN spoon.Launcher - Spoon now parse by default the comments. Consider using the option --disable-comments if you want the old behaviour.
+2018-11-11 08:20:54,005 INFO spoon.Launcher - Spoon version 7.2.0-SNAPSHOT
+2018-11-11 08:20:54,005 INFO spoon.Launcher - running Spoon...
+2018-11-11 08:20:54,005 INFO spoon.Launcher - start processing...
+2018-11-11 08:20:54,066 INFO spoon.Launcher - end of processing: 
+2018-11-11 08:20:54,067 INFO spoon.Launcher - no errors, no warnings
+2018-11-11 08:20:54,100 WARN spoon.Launcher - Spoon is now using the 'no classpath mode' by default. If you want to ensure using Spoon in full classpath mode, please use the new flag: --cpmode fullclasspath.
+2018-11-11 08:20:54,100 WARN spoon.Launcher - Spoon now parse by default the comments. Consider using the option --disable-comments if you want the old behaviour.
+2018-11-11 08:20:54,101 INFO spoon.Launcher - Spoon version 7.2.0-SNAPSHOT
+2018-11-11 08:20:54,101 INFO spoon.Launcher - running Spoon...
+2018-11-11 08:20:54,101 INFO spoon.Launcher - start processing...
+2018-11-11 08:20:54,183 INFO spoon.Launcher - end of processing: 
+2018-11-11 08:20:54,183 INFO spoon.Launcher - no errors, no warnings
+2018-11-11 08:20:54,207 WARN spoon.Launcher - Spoon is now using the 'no classpath mode' by default. If you want to ensure using Spoon in full classpath mode, please use the new flag: --cpmode fullclasspath.
+2018-11-11 08:20:54,207 WARN spoon.Launcher - Spoon now parse by default the comments. Consider using the option --disable-comments if you want the old behaviour.
+2018-11-11 08:20:54,208 INFO spoon.Launcher - Spoon version 7.2.0-SNAPSHOT
+2018-11-11 08:20:54,208 INFO spoon.Launcher - running Spoon...
+2018-11-11 08:20:54,208 INFO spoon.Launcher - start processing...
+2018-11-11 08:20:54,271 INFO spoon.Launcher - end of processing: 
+2018-11-11 08:20:54,271 INFO spoon.Launcher - no errors, no warnings
+2018-11-11 08:20:54,275 WARN spoon.Launcher - Spoon is now using the 'no classpath mode' by default. If you want to ensure using Spoon in full classpath mode, please use the new flag: --cpmode fullclasspath.
+2018-11-11 08:20:54,275 WARN spoon.Launcher - Spoon now parse by default the comments. Consider using the option --disable-comments if you want the old behaviour.
+2018-11-11 08:20:54,276 INFO spoon.Launcher - Spoon version 7.2.0-SNAPSHOT
+2018-11-11 08:20:54,276 INFO spoon.Launcher - running Spoon...
+2018-11-11 08:20:54,276 INFO spoon.Launcher - start processing...
+2018-11-11 08:20:54,341 INFO spoon.Launcher - end of processing: 
+2018-11-11 08:20:54,342 INFO spoon.Launcher - no errors, no warnings
+2018-11-11 08:20:54,365 WARN spoon.Launcher - Spoon is now using the 'no classpath mode' by default. If you want to ensure using Spoon in full classpath mode, please use the new flag: --cpmode fullclasspath.
+2018-11-11 08:20:54,365 WARN spoon.Launcher - Spoon now parse by default the comments. Consider using the option --disable-comments if you want the old behaviour.
+2018-11-11 08:20:54,366 INFO spoon.Launcher - Spoon version 7.2.0-SNAPSHOT
+2018-11-11 08:20:54,366 INFO spoon.Launcher - running Spoon...
+2018-11-11 08:20:54,366 INFO spoon.Launcher - start processing...
+2018-11-11 08:20:54,468 INFO spoon.Launcher - end of processing: 
+2018-11-11 08:20:54,469 INFO spoon.Launcher - no errors, no warnings
+2018-11-11 08:20:54,480 WARN spoon.Launcher - Spoon is now using the 'no classpath mode' by default. If you want to ensure using Spoon in full classpath mode, please use the new flag: --cpmode fullclasspath.
+2018-11-11 08:20:54,480 WARN spoon.Launcher - Spoon now parse by default the comments. Consider using the option --disable-comments if you want the old behaviour.
+2018-11-11 08:20:54,482 INFO spoon.Launcher - Spoon version 7.2.0-SNAPSHOT
+2018-11-11 08:20:54,482 INFO spoon.Launcher - running Spoon...
+2018-11-11 08:20:54,482 INFO spoon.Launcher - start processing...
+2018-11-11 08:20:54,595 INFO spoon.Launcher - end of processing: 
+2018-11-11 08:20:54,595 INFO spoon.Launcher - no errors, no warnings
+2018-11-11 08:20:54,607 WARN spoon.Launcher - Spoon is now using the 'no classpath mode' by default. If you want to ensure using Spoon in full classpath mode, please use the new flag: --cpmode fullclasspath.
+2018-11-11 08:20:54,608 WARN spoon.Launcher - Spoon now parse by default the comments. Consider using the option --disable-comments if you want the old behaviour.
+2018-11-11 08:20:54,609 INFO spoon.Launcher - Spoon version 7.2.0-SNAPSHOT
+2018-11-11 08:20:54,610 INFO spoon.Launcher - running Spoon...
+2018-11-11 08:20:54,610 INFO spoon.Launcher - start processing...
+2018-11-11 08:20:54,722 INFO spoon.Launcher - end of processing: 
+2018-11-11 08:20:54,723 INFO spoon.Launcher - no errors, no warnings
+2018-11-11 08:20:54,818 WARN spoon.Launcher - Spoon is now using the 'no classpath mode' by default. If you want to ensure using Spoon in full classpath mode, please use the new flag: --cpmode fullclasspath.
+2018-11-11 08:20:54,819 WARN spoon.Launcher - Spoon now parse by default the comments. Consider using the option --disable-comments if you want the old behaviour.
+2018-11-11 08:20:54,820 INFO spoon.Launcher - Spoon version 7.2.0-SNAPSHOT
+2018-11-11 08:20:54,820 INFO spoon.Launcher - running Spoon...
+2018-11-11 08:20:54,821 INFO spoon.Launcher - start processing...
+2018-11-11 08:20:54,935 INFO spoon.Launcher - end of processing: 
+2018-11-11 08:20:54,936 INFO spoon.Launcher - no errors, no warnings
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.028 s - in spoon.test.query_function.VariableReferencesTest
+[INFO] Running spoon.test.ctBlock.TestCtBlock
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.268 s - in spoon.test.ctBlock.TestCtBlock
+[INFO] Running spoon.test.constructorcallnewclass.ConstructorCallTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.576 s - in spoon.test.constructorcallnewclass.ConstructorCallTest
+[INFO] Running spoon.test.constructorcallnewclass.NewClassTest
+[ERROR] Tests run: 7, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.938 s <<< FAILURE! - in spoon.test.constructorcallnewclass.NewClassTest
+[ERROR] testCtNewClassInNoClasspath(spoon.test.constructorcallnewclass.NewClassTest)  Time elapsed: 0.193 s  <<< ERROR!
+java.lang.NullPointerException
+
+[INFO] Running spoon.test.strings.StringTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.076 s - in spoon.test.strings.StringTest
+[INFO] Running spoon.test.strings.StringLiteralTest
+[ERROR] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.048 s <<< FAILURE! - in spoon.test.strings.StringLiteralTest
+[ERROR] testSnippetFullClass(spoon.test.strings.StringLiteralTest)  Time elapsed: 0.048 s  <<< ERROR!
+spoon.compiler.ModelBuildingException: 
+snippet compilation error while compiling: class Wrapper {
+    static void wrap() throws java.lang.Throwable {
+        class StringValueUTF {
+        	String f0 = "toto";
+        	String f1 = "\n";
+        	char c1 = '\n';
+        	String f2 = "\u20ac";
+        	char c2 = '\u20ac';
+        	String f3 = "€";
+        	char c3 = '€';
+        	String f4 = "\t";
+        	char c4 = '\t';
+        	String f5 = "	";
+        	char c5 = '	';
+        	String f6 = "€\u20ac";
+        };
+    }
+}
+	at spoon.test.strings.StringLiteralTest.testSnippetFullClass(StringLiteralTest.java:47)
+Caused by: java.lang.NullPointerException
+
+[INFO] Running spoon.test.lambda.LambdaTest
+[ERROR] Tests run: 23, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 2.481 s <<< FAILURE! - in spoon.test.lambda.LambdaTest
+[ERROR] testFieldAccessInLambdaNoClassPath(spoon.test.lambda.LambdaTest)  Time elapsed: 0.124 s  <<< ERROR!
+java.lang.NullPointerException
+
+[ERROR] testTypeAccessInLambdaNoClassPath(spoon.test.lambda.LambdaTest)  Time elapsed: 0.139 s  <<< ERROR!
+java.lang.NullPointerException
+
+[INFO] Running spoon.test.refactoring.CtRenameLocalVariableRefactoringTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.319 s - in spoon.test.refactoring.CtRenameLocalVariableRefactoringTest
+[INFO] Running spoon.test.refactoring.MethodsRefactoringTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.591 s - in spoon.test.refactoring.MethodsRefactoringTest
+[INFO] Running spoon.test.refactoring.RefactoringTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.47 s - in spoon.test.refactoring.RefactoringTest
+[INFO] Running spoon.test.support.ResourceTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.297 s - in spoon.test.support.ResourceTest
+[INFO] Running spoon.test.prettyprinter.QualifiedThisRefTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.359 s - in spoon.test.prettyprinter.QualifiedThisRefTest
+[INFO] Running spoon.test.prettyprinter.TestSniperPrinter
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.384 s - in spoon.test.prettyprinter.TestSniperPrinter
+[INFO] Running spoon.test.prettyprinter.LinesTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.429 s - in spoon.test.prettyprinter.LinesTest
+[INFO] Running spoon.test.prettyprinter.PrinterTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.788 s - in spoon.test.prettyprinter.PrinterTest
+[INFO] Running spoon.test.prettyprinter.DefaultPrettyPrinterTest
+[ERROR] Tests run: 14, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.269 s <<< FAILURE! - in spoon.test.prettyprinter.DefaultPrettyPrinterTest
+[ERROR] testTernaryParenthesesOnLocalVariable(spoon.test.prettyprinter.DefaultPrettyPrinterTest)  Time elapsed: 0.09 s  <<< ERROR!
+spoon.compiler.ModelBuildingException: 
+snippet compilation error while compiling: class Wrapper {
+    static void wrap() throws java.lang.Throwable {
+        final int foo = (new Object() instanceof Object ? new Object().equals(null) : new Object().equals(new Object())) ? 0 : new Object().hashCode();;
+    }
+}
+	at spoon.test.prettyprinter.DefaultPrettyPrinterTest.testTernaryParenthesesOnLocalVariable(DefaultPrettyPrinterTest.java:312)
+Caused by: java.lang.NullPointerException
+
+[INFO] Running spoon.test.jdtimportbuilder.ImportBuilderTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.756 s - in spoon.test.jdtimportbuilder.ImportBuilderTest
+[INFO] Running spoon.test.serializable.SourcePositionTest
+[ERROR] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.044 s <<< FAILURE! - in spoon.test.serializable.SourcePositionTest
+[ERROR] testSourcePosition(spoon.test.serializable.SourcePositionTest)  Time elapsed: 0.044 s  <<< ERROR!
+java.lang.NullPointerException
+
+[INFO] Running spoon.test.serializable.ModelStreamerTest
+Testing factory serialization with different compressors with source folder: ./src/main/java/spoon/reflect/declaration
+110012 bytes for default
+584318 bytes for NONE
+72098 bytes for LZMA
+111983 bytes for GZIP
+80363 bytes for BZIP2
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.738 s - in spoon.test.serializable.ModelStreamerTest
+[INFO] Running spoon.test.serializable.SerializableTest
+[ERROR] Tests run: 3, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.146 s <<< FAILURE! - in spoon.test.serializable.SerializableTest
+[ERROR] testSerialCtStatement(spoon.test.serializable.SerializableTest)  Time elapsed: 0.046 s  <<< ERROR!
+spoon.compiler.ModelBuildingException: 
+snippet compilation error while compiling: class Wrapper {
+    static void wrap() throws java.lang.Throwable {
+        String hello ="t1"; System.out.println(hello);
+    }
+}
+	at spoon.test.serializable.SerializableTest.testSerialCtStatement(SerializableTest.java:45)
+Caused by: java.lang.NullPointerException
+
+[INFO] Running spoon.test.casts.CastTest
+[ERROR] Tests run: 5, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 0.253 s <<< FAILURE! - in spoon.test.casts.CastTest
+[ERROR] testCast1(spoon.test.casts.CastTest)  Time elapsed: 0.048 s  <<< ERROR!
+spoon.compiler.ModelBuildingException: 
+snippet compilation error while compiling: class Wrapper {
+    static void wrap() throws java.lang.Throwable {
+        class X {public void foo() { String x=(String) new Object();}};;
+    }
+}
+	at spoon.test.casts.CastTest.testCast1(CastTest.java:47)
+Caused by: java.lang.NullPointerException
+
+[ERROR] testCast2(spoon.test.casts.CastTest)  Time elapsed: 0.049 s  <<< ERROR!
+spoon.compiler.ModelBuildingException: 
+snippet compilation error while compiling: class Wrapper {
+    static void wrap() throws java.lang.Throwable {
+        class X {public void foo() { Class<String> x=(Class<String>) new Object();}};;
+    }
+}
+	at spoon.test.casts.CastTest.testCast2(CastTest.java:64)
+Caused by: java.lang.NullPointerException
+
+[ERROR] testCast3(spoon.test.casts.CastTest)  Time elapsed: 0.052 s  <<< ERROR!
+spoon.compiler.ModelBuildingException: 
+snippet compilation error while compiling: class Wrapper {
+    static void wrap() throws java.lang.Throwable {
+        class X<A> {void addConsumedAnnotationType(Class<? extends A> annotationType) {}
+        public void foo() { Class<?> x = null; addConsumedAnnotationType((Class<A>) x);}};;
+    }
+}
+	at spoon.test.casts.CastTest.testCast3(CastTest.java:81)
+Caused by: java.lang.NullPointerException
+
+[INFO] Running spoon.test.jar.JarTest
+[ERROR] Tests run: 4, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.148 s <<< FAILURE! - in spoon.test.jar.JarTest
+[ERROR] testFile(spoon.test.jar.JarTest)  Time elapsed: 0.049 s  <<< ERROR!
+java.lang.NullPointerException
+
+[ERROR] testResource(spoon.test.jar.JarTest)  Time elapsed: 0.045 s  <<< ERROR!
+java.lang.NullPointerException
+
+[INFO] Running spoon.test.model.IncrementalLauncherTest
+[ERROR] Tests run: 4, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 0.204 s <<< FAILURE! - in spoon.test.model.IncrementalLauncherTest
+[ERROR] testCache(spoon.test.model.IncrementalLauncherTest)  Time elapsed: 0.055 s  <<< ERROR!
+java.lang.NullPointerException
+
+[ERROR] testIncremental1(spoon.test.model.IncrementalLauncherTest)  Time elapsed: 0.049 s  <<< ERROR!
+java.lang.NullPointerException
+
+[ERROR] testIncremental2(spoon.test.model.IncrementalLauncherTest)  Time elapsed: 0.049 s  <<< ERROR!
+java.lang.NullPointerException
+
+[ERROR] testIncremental3(spoon.test.model.IncrementalLauncherTest)  Time elapsed: 0.048 s  <<< ERROR!
+java.lang.NullPointerException
+
+[INFO] Running spoon.test.model.TypeTest
+[ERROR] Tests run: 8, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.431 s <<< FAILURE! - in spoon.test.model.TypeTest
+[ERROR] testGetUsedTypesForTypeInRootPackage(spoon.test.model.TypeTest)  Time elapsed: 0.044 s  <<< ERROR!
+spoon.compiler.ModelBuildingException: 
+snippet compilation error while compiling: class Wrapper {
+    static void wrap() throws java.lang.Throwable {
+        class X { X x; };
+    }
+}
+	at spoon.test.model.TypeTest.testGetUsedTypesForTypeInRootPackage(TypeTest.java:82)
+Caused by: java.lang.NullPointerException
+
+[INFO] Running spoon.test.model.SwitchCaseTest
+[ERROR] Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.097 s <<< FAILURE! - in spoon.test.model.SwitchCaseTest
+[ERROR] testIterationStatements(spoon.test.model.SwitchCaseTest)  Time elapsed: 0.049 s  <<< ERROR!
+spoon.compiler.ModelBuildingException: 
+snippet compilation error while compiling: class Wrapper {
+    static void wrap() throws java.lang.Throwable {
+        class X {public void foo() { int x=0;switch(x) {case 0: x=x+1;break;case 1: x=0;default: x=-1;}}};;
+    }
+}
+	at spoon.test.model.SwitchCaseTest.testIterationStatements(SwitchCaseTest.java:53)
+Caused by: java.lang.NullPointerException
+
+[INFO] Running spoon.test.model.AnonymousExecutableTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.087 s - in spoon.test.model.AnonymousExecutableTest
+[INFO] Running spoon.test.model.BlockTest
+[ERROR] Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.118 s <<< FAILURE! - in spoon.test.model.BlockTest
+[ERROR] testAddEmptyBlock(spoon.test.model.BlockTest)  Time elapsed: 0.046 s  <<< ERROR!
+spoon.compiler.ModelBuildingException: 
+snippet compilation error while compiling: class Wrapper {
+    static void wrap() throws java.lang.Throwable {
+        class X {public void foo() { }};;
+    }
+}
+	at spoon.test.model.BlockTest.testAddEmptyBlock(BlockTest.java:72)
+Caused by: java.lang.NullPointerException
+
+[ERROR] testIterationStatements(spoon.test.model.BlockTest)  Time elapsed: 0.071 s  <<< ERROR!
+spoon.compiler.ModelBuildingException: 
+snippet compilation error while compiling: class Wrapper {
+    static void wrap() throws java.lang.Throwable {
+        class X {public void foo() { int x=0;int y=0;}};;
+    }
+}
+	at spoon.test.model.BlockTest.testIterationStatements(BlockTest.java:46)
+Caused by: java.lang.NullPointerException
+
+[INFO] Running spoon.test.filters.CUFilterTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.251 s - in spoon.test.filters.CUFilterTest
+[INFO] Running spoon.test.filters.FilterTest
+[INFO] Tests run: 43, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.801 s - in spoon.test.filters.FilterTest
+[INFO] Running spoon.decompiler.SpoonClassFileTransformerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.775 s - in spoon.decompiler.SpoonClassFileTransformerTest
+[INFO] Running spoon.processing.CtGenerationTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 44.483 s - in spoon.processing.CtGenerationTest
+[INFO] Running spoon.processing.ProcessingTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.079 s - in spoon.processing.ProcessingTest
+[INFO] Running spoon.JarLauncherTest
+[ERROR] Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 6.338 s <<< FAILURE! - in spoon.JarLauncherTest
+[ERROR] testJarLauncherNoPom(spoon.JarLauncherTest)  Time elapsed: 0.464 s  <<< ERROR!
+java.lang.NullPointerException
+
+[ERROR] testJarLauncher(spoon.JarLauncherTest)  Time elapsed: 5.463 s  <<< ERROR!
+java.lang.NullPointerException
+
+[ERROR] testJarLauncherFernflower(spoon.JarLauncherTest)  Time elapsed: 0.411 s  <<< ERROR!
+java.lang.NullPointerException
+
+[INFO] Running spoon.LauncherTest
+[ERROR] Tests run: 4, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.333 s <<< FAILURE! - in spoon.LauncherTest
+[ERROR] testLLauncherBuildModelReturnAModel(spoon.LauncherTest)  Time elapsed: 0.086 s  <<< ERROR!
+java.lang.NullPointerException
+
+[INFO] Running spoon.support.compiler.classpath.ComputeClasspathTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in spoon.support.compiler.classpath.ComputeClasspathTest
+[INFO] Running spoon.support.compiler.jdt.JDTBatchCompilerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.166 s - in spoon.support.compiler.jdt.JDTBatchCompilerTest
+[INFO] Running spoon.support.compiler.jdt.JDTBasedSpoonCompilerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.13 s - in spoon.support.compiler.jdt.JDTBasedSpoonCompilerTest
+[INFO] Running spoon.support.compiler.jdt.JDTBuilderTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in spoon.support.compiler.jdt.JDTBuilderTest
+[INFO] Running spoon.support.compiler.jdt.ExtendedStringLiteralTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.051 s - in spoon.support.compiler.jdt.ExtendedStringLiteralTest
+[INFO] Running spoon.support.visitor.java.JavaReflectionTreeBuilderTest
+[ERROR] Tests run: 19, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 3.32 s <<< FAILURE! - in spoon.support.visitor.java.JavaReflectionTreeBuilderTest
+[ERROR] testInnerClassWithConstructorParameterAnnotated(spoon.support.visitor.java.JavaReflectionTreeBuilderTest)  Time elapsed: 0.046 s  <<< ERROR!
+java.lang.NullPointerException
+
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   EqualTest.testEqualsEmptyException:59 Unable create model
+[ERROR] Errors: 
+[ERROR]   JarLauncherTest.testJarLauncher » NullPointer
+[ERROR]   JarLauncherTest.testJarLauncherFernflower » NullPointer
+[ERROR]   JarLauncherTest.testJarLauncherNoPom » NullPointer
+[ERROR]   LauncherTest.testLLauncherBuildModelReturnAModel » NullPointer
+[ERROR]   CloneTest.testCloneCastConditional:134 » NullPointer
+[ERROR]   CloneTest.testCopyMethod:181 » NullPointer
+[ERROR]   UnknownDeclarationTest.testUnknownCalls:50 » NullPointer
+[ERROR]   JavaReflectionTreeBuilderTest.testInnerClassWithConstructorParameterAnnotated » NullPointer
+[ERROR]   AnnotationTest.testGetAnnotationFromParameter » NullPointer
+[ERROR]   APITest.testBasicAPIUsage:87 » NullPointer
+[ERROR]   APITest.testDuplicateEntry:136 » NullPointer
+[ERROR]   APITest.testDuplicateFilePlusFolder:165 » NullPointer
+[ERROR]   APITest.testDuplicateFolder:152 » NullPointer
+[ERROR]   APITest.testGetOneLinerMainClassFromCU:588 » NullPointer
+[ERROR]   APITest.testOneLinerIntro:438 » NullPointer
+[ERROR]   APITest.testOverrideOutputWriter:118 » NullPointer
+[ERROR]   NoClasspathTest.test:58 » NullPointer
+[ERROR]   CastTest.testCast1:47 » ModelBuilding snippet compilation error while compilin...
+[ERROR]   CastTest.testCast2:64 » ModelBuilding snippet compilation error while compilin...
+[ERROR]   CastTest.testCast3:81 » ModelBuilding snippet compilation error while compilin...
+[ERROR]   CommentTest.testDocumentationContract:787->lambda$testDocumentationContract$0:852 » ModelBuilding
+[ERROR]   CommentTest.testSnippedWithComments:725 » NullPointer
+[ERROR]   EqualTest.testEqualsActualTypeRef:111 » ModelBuilding snippet compilation erro...
+[ERROR]   EqualTest.testEqualsComment:88 » ModelBuilding snippet compilation error while...
+[ERROR]   EqualTest.testEqualsDetails:119 » ModelBuilding snippet compilation error whil...
+[ERROR]   EqualTest.testEqualsMultitype:98 » ModelBuilding snippet compilation error whi...
+[ERROR]   CompilationTest.compileCommandLineTest:79 » NullPointer
+[ERROR]   CompilationTest.compileTest:103 » NullPointer
+[ERROR]   CompilationTest.testExoticClassLoader:388 » NullPointer
+[ERROR]   CompilationTest.testNewInstance:170 » ModelBuilding snippet compilation error ...
+[ERROR]   NewClassTest.testCtNewClassInNoClasspath » NullPointer
+[ERROR]   CtClassTest.testAllTypeReferencesToALocalTypeShouldNotStartWithNumber:165 » ModelBuilding
+[ERROR]   CtTypeTest.testHasMethodInDirectMethod:53 » ModelBuilding snippet compilation ...
+[ERROR]   CtTypeTest.testHasMethodNotHasMethod:61 » ModelBuilding snippet compilation er...
+[ERROR]   CtTypeTest.testHasMethodOnNull:70 » ModelBuilding snippet compilation error wh...
+[ERROR]   EnumsTypeTest.testEnumsFromInterface:81 » NullPointer
+[ERROR]   EnumsTypeTest.testEnumsType:51 » NullPointer
+[ERROR]   EvalTest.testVisitorPartialEvaluator_binary:133 » ModelBuilding snippet compil...
+[ERROR]   EvalTest.testVisitorPartialEvaluator_if:165 » ModelBuilding snippet compilatio...
+[ERROR]   TypeFactoryTest.testGetClassWithDollarAndNestedClass:98 » NullPointer
+[ERROR]   FieldTest.getFQNofFieldReference » NullPointer
+[ERROR]   FieldAccessTest.testFieldAccessAutoExplicit:426 » ModelBuilding snippet compil...
+[ERROR]   FieldAccessTest.testFieldAccessNoClasspath » NullPointer
+[ERROR]   FieldAccessTest.testFieldAccessOnUnknownType » NullPointer
+[ERROR]   GenericsTest.testDiamond1:172 » ModelBuilding snippet compilation error while ...
+[ERROR]   ImportAndExtendWithPackageNameTest.testBuildModel » NullPointer
+[ERROR]   ImportTest.testNullable » NullPointer
+[ERROR]   ImportTest.testStaticImportForInvocationInNoClasspath » NullPointer
+[ERROR]   ImportTest.testSuperInheritanceHierarchyFunctionNoClasspath » NullPointer
+[ERROR]   IntercessionTest.testEqualConstructor:111 » ModelBuilding snippet compilation ...
+[ERROR]   IntercessionTest.testInsertAfter:181 » ModelBuilding snippet compilation error...
+[ERROR]   IntercessionTest.testInsertBegin:69 » ModelBuilding snippet compilation error ...
+[ERROR]   IntercessionTest.testInsertEnd:89 » ModelBuilding snippet compilation error wh...
+[ERROR]   IntercessionTest.testInsertIfIntercession:148 » ModelBuilding snippet compilat...
+[ERROR]   RemoveTest.testRemoveAllStatements:42 » ModelBuilding snippet compilation erro...
+[ERROR]   InsertMethodsTest.setup:65 » ModelBuilding snippet compilation error while com...
+[ERROR]   InsertMethodsTest.setup:65 » ModelBuilding snippet compilation error while com...
+[ERROR]   InsertMethodsTest.setup:65 » ModelBuilding snippet compilation error while com...
+[ERROR]   InsertMethodsTest.setup:65 » ModelBuilding snippet compilation error while com...
+[ERROR]   InsertMethodsTest.setup:65 » ModelBuilding snippet compilation error while com...
+[ERROR]   InsertMethodsTest.setup:65 » ModelBuilding snippet compilation error while com...
+[ERROR]   InsertMethodsTest.setup:65 » ModelBuilding snippet compilation error while com...
+[ERROR]   InsertMethodsTest.setup:65 » ModelBuilding snippet compilation error while com...
+[ERROR]   InsertMethodsTest.setup:65 » ModelBuilding snippet compilation error while com...
+[ERROR]   JarTest.testFile » NullPointer
+[ERROR]   JarTest.testResource » NullPointer
+[ERROR]   LambdaTest.testFieldAccessInLambdaNoClassPath » NullPointer
+[ERROR]   LambdaTest.testTypeAccessInLambdaNoClassPath » NullPointer
+[ERROR]   MethodTest.testGetAllMethods » NullPointer
+[ERROR]   MethodReferenceTest.testNoClasspathExecutableReferenceExpression:180 » NullPointer
+[ERROR]   MethodReferenceTest.testNoClasspathSuperExecutable:197 » NullPointer
+[ERROR]   BlockTest.testAddEmptyBlock:72 » ModelBuilding snippet compilation error while...
+[ERROR]   BlockTest.testIterationStatements:46 » ModelBuilding snippet compilation error...
+[ERROR]   IncrementalLauncherTest.testCache » NullPointer
+[ERROR]   IncrementalLauncherTest.testIncremental1 » NullPointer
+[ERROR]   IncrementalLauncherTest.testIncremental2 » NullPointer
+[ERROR]   IncrementalLauncherTest.testIncremental3 » NullPointer
+[ERROR]   SwitchCaseTest.testIterationStatements:53 » ModelBuilding snippet compilation ...
+[ERROR]   TypeTest.testGetUsedTypesForTypeInRootPackage:82 » ModelBuilding snippet compi...
+[ERROR]   TestModule.testCompleteModuleInfoContentNoClasspath:104 » NullPointer
+[ERROR]   TestModule.testDirectiveOrders:257 » NullPointer
+[ERROR]   TestModule.testModuleInfoShouldBeCorrectlyPrettyPrinted:180 » NullPointer
+[ERROR]   TestModule.testModuleInfoWithComments:207 » NullPointer
+[ERROR]   ParameterTest.testGetParameterReferenceInLambdaNoClasspath » NullPointer
+[ERROR]   ParameterTest.testMultiParameterLambdaTypeReference » NullPointer
+[ERROR]   ParentTest.testHasParent:292 » NullPointer
+[ERROR]   ParentTest.testParentOfCtPackageReference:148 » NullPointer
+[ERROR]   DefaultPrettyPrinterTest.testTernaryParenthesesOnLocalVariable:312 » ModelBuilding
+[ERROR]   CloneReferenceTest.testGetDeclarationAfterClone » NullPointer
+[ERROR]   CloneReferenceTest.testGetDeclarationOfFieldAfterClone » NullPointer
+[ERROR]   ExecutableReferenceTest.testCallMethodOfClassNotPresent » NullPointer
+[ERROR]   ExecutableReferenceTest.testCreateReferenceForAnonymousExecutable » NullPointer
+[ERROR]   TypeReferenceTest.testAnnotationOnMethodWithPrimitiveReturnTypeInNoClasspath » NullPointer
+[ERROR]   TypeReferenceTest.testAnonymousClassesHaveAnEmptyStringForItsNameInNoClasspath » NullPointer
+[ERROR]   TypeReferenceTest.testArgumentOfAInvocationIsNotATypeAccess » NullPointer
+[ERROR]   TypeReferenceTest.testConstructorCallInNoClasspath » NullPointer
+[ERROR]   TypeReferenceTest.testInvocationWithFieldAccessInNoClasspath » NullPointer
+[ERROR]   TypeReferenceTest.testPackageInNoClasspath » NullPointer
+[ERROR]   TypeReferenceTest.testTypeDeclarationWildcard:618 » ModelBuilding snippet comp...
+[ERROR]   TypeReferenceTest.testTypeReferenceSpecifiedInClassDeclarationInNoClasspath » NullPointer
+[ERROR]   TypeReferenceTest.testTypeReferenceSpecifiedInClassDeclarationInNoClasspathWithGenerics » NullPointer
+[ERROR]   VariableAccessTest.testDeclarationOfVariableReference » NullPointer
+[ERROR]   VariableAccessTest.testDeclaringTypeOfALambdaReferencedByParameterReference » NullPointer
+[ERROR]   VariableAccessTest.testGetDeclarationAfterClone » NullPointer
+[ERROR]   VariableAccessTest.testMultipleDeclarationsOfLocalVariable » NullPointer
+[ERROR]   ReplaceTest.testReplaceAPackageReferenceByAnotherOne:363 » NullPointer
+[ERROR]   ReplaceTest.testReplaceBlockTry:433 » ModelBuilding snippet compilation error ...
+[ERROR]   SerializableTest.testSerialCtStatement:45 » ModelBuilding snippet compilation ...
+[ERROR]   SourcePositionTest.testSourcePosition » NullPointer
+[ERROR]   SignatureTest.testLiteralSignature:135 » ModelBuilding snippet compilation err...
+[ERROR]   SignatureTest.testMethodInvocationSignatureStaticFieldsVariables:154 » ModelBuilding
+[ERROR]   SignatureTest.testMethodInvocationSignatureWithVariableAccess » NullPointer
+[ERROR]   SignatureTest.testNullSignature:73 » ModelBuilding snippet compilation error w...
+[ERROR]   SignatureTest.testNullSignatureInUnboundVariable:115 » IndexOutOfBounds Index:...
+[ERROR]   SignatureTest.testUnboundFieldSignature:285 » IndexOutOfBounds Index: 0, Size:...
+[ERROR]   SnippetTest.testCompileSnippetSeveralTimes:81 » ModelBuilding snippet compilat...
+[ERROR]   SnippetTest.testCompileSnippetWithContext:107 » ModelBuilding snippet compilat...
+[ERROR]   SnippetTest.testCompileStatementWithReturn:116 » ModelBuilding snippet compila...
+[ERROR]   SnippetTest.testSnippetFullClass:54 » ModelBuilding snippet compilation error ...
+[ERROR]   StringLiteralTest.testSnippetFullClass:47 » ModelBuilding snippet compilation ...
+[ERROR]   TargetedExpressionTest.testInitializeFieldAccessInNoclasspathMode:439 » NullPointer
+[ERROR]   TargetedExpressionTest.testStaticTargetsOfFieldAccessNoClasspath:260 » NullPointer
+[ERROR]   TargetedExpressionTest.testStaticTargetsOfInvNoClasspath:411 » NullPointer
+[ERROR]   TryCatchTest.testCatchOrder:98 » ModelBuilding snippet compilation error while...
+[ERROR]   TryCatchTest.testCatchWithUnknownExceptions » NullPointer
+[ERROR]   TryCatchTest.testExceptionJava7:120 » ModelBuilding snippet compilation error ...
+[ERROR]   TryCatchTest.testFullyQualifiedException:83 » ModelBuilding snippet compilatio...
+[ERROR]   TryCatchTest.testTryCatchVariableGetType:233 » ModelBuilding snippet compilati...
+[ERROR]   TypeTest.testTypeAccessOnPrimitive:99 » ModelBuilding snippet compilation erro...
+[ERROR]   AccessTest.testAccessToStringOnPostIncrement:230 » ModelBuilding snippet compi...
+[ERROR]   AssignmentsEqualsTest.testEquals » NullPointer
+[INFO] 
+[ERROR] Tests run: 1610, Failures: 1, Errors: 131, Skipped: 5
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 08:05 min
+[INFO] Finished at: 2018-11-11T08:22:33+01:00
+[INFO] Final Memory: 23M/579M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.21.0:test (default-test) on project spoon-core: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/INRIA/spoon/453383968/target/surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
