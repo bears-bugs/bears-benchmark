@@ -9,17 +9,17 @@ import javax.ws.rs.core.Response;
 
 public class SwaggerResourceTest {
 
-    SwaggerResource swaggerResource;
+    private SwaggerResource swaggerResource;
 
     @Before
-    public void setUp() throws Exception {
+    public void setUp() {
         swaggerResource = new SwaggerResource();
     }
 
     @Test
     public void testIndex() {
         Response response = swaggerResource.content("index.html");
-        checkStatusAndHeader(response, Response.Status.OK, MediaType.TEXT_HTML);
+        checkStatusAndHeader(response, MediaType.TEXT_HTML);
         String content = response.getEntity().toString().trim();
         Assert.assertTrue(content.startsWith("<!DOCTYPE html>"));
         Assert.assertTrue(content.endsWith("</html>"));
@@ -28,7 +28,7 @@ public class SwaggerResourceTest {
     @Test
     public void testStyle() {
         Response response = swaggerResource.content("css/style.css");
-        checkStatusAndHeader(response, Response.Status.OK, "text/css");
+        checkStatusAndHeader(response, "text/css");
         String content = response.getEntity().toString().trim();
         Assert.assertTrue(content.startsWith(".swagger-section"));
     }
@@ -36,14 +36,31 @@ public class SwaggerResourceTest {
     @Test
     public void testJavascript() {
         Response response = swaggerResource.content("lib/marked.js");
-        checkStatusAndHeader(response, Response.Status.OK, "application/js");
+        checkStatusAndHeader(response, "application/js");
         String content = response.getEntity().toString().trim();
         Assert.assertTrue(content.startsWith("(function()"));
     }
 
+    @Test
+    public void testPng() {
+        Response response = swaggerResource.content("images/explorer_icons.png");
+        checkStatusAndHeader(response, "image/png");
+    }
 
-    private void checkStatusAndHeader(Response response, Response.Status status, String header) {
-        Assert.assertTrue(response.getStatus() == status.getStatusCode());
+    @Test
+    public void testGif() {
+        Response response = swaggerResource.content("images/expand.gif");
+        checkStatusAndHeader(response, "image/gif");
+    }
+
+    @Test
+    public void testNotFound() {
+        Response response = swaggerResource.content("foo/bar.txt");
+        Assert.assertEquals(response.getStatus(), Response.Status.NOT_FOUND.getStatusCode());
+    }
+
+    private void checkStatusAndHeader(Response response, String header) {
+        Assert.assertEquals(response.getStatus(), Response.Status.OK.getStatusCode());
         Object headerObject = response.getHeaders().get("Content-type");
         Assert.assertTrue(headerObject.toString().contains(header));
     }
