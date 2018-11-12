@@ -257,134 +257,111 @@
 [INFO] Nothing to compile - all classes are up to date
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ consent-ontology ---
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.pom (4 KB at 8.1 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom (3 KB at 71.5 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar (74 KB at 944.2 KB/sec)
 
 -------------------------------------------------------
  T E S T S
 -------------------------------------------------------
 Running org.broadinstitute.dsde.consent.ontology.actor.MatchWorkerActorTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 24.42 sec - in org.broadinstitute.dsde.consent.ontology.actor.MatchWorkerActorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 23.579 sec - in org.broadinstitute.dsde.consent.ontology.actor.MatchWorkerActorTest
 Running org.broadinstitute.dsde.consent.ontology.DataUseOwlTest
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.445 sec - in org.broadinstitute.dsde.consent.ontology.DataUseOwlTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.144 sec - in org.broadinstitute.dsde.consent.ontology.DataUseOwlTest
 Running org.broadinstitute.dsde.consent.ontology.resources.SwaggerResourceTest
-Tests run: 6, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.333 sec <<< FAILURE! - in org.broadinstitute.dsde.consent.ontology.resources.SwaggerResourceTest
-testNotFound(org.broadinstitute.dsde.consent.ontology.resources.SwaggerResourceTest)  Time elapsed: 0.324 sec  <<< FAILURE!
-java.lang.AssertionError: expected:<200> but was:<404>
-	at org.broadinstitute.dsde.consent.ontology.resources.SwaggerResourceTest.testNotFound(SwaggerResourceTest.java:59)
-
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.234 sec - in org.broadinstitute.dsde.consent.ontology.resources.SwaggerResourceTest
 Running org.broadinstitute.dsde.consent.ontology.resources.ValidationResourceTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.201 sec - in org.broadinstitute.dsde.consent.ontology.resources.ValidationResourceTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.22 sec - in org.broadinstitute.dsde.consent.ontology.resources.ValidationResourceTest
 Running org.broadinstitute.dsde.consent.ontology.resources.AllTermsResourceTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 sec - in org.broadinstitute.dsde.consent.ontology.resources.AllTermsResourceTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec - in org.broadinstitute.dsde.consent.ontology.resources.AllTermsResourceTest
 Running org.broadinstitute.dsde.consent.ontology.resources.OntologySearchParentTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in org.broadinstitute.dsde.consent.ontology.resources.OntologySearchParentTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.broadinstitute.dsde.consent.ontology.resources.OntologySearchParentTest
 Running org.broadinstitute.dsde.consent.ontology.resources.OntologySearchResourceTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in org.broadinstitute.dsde.consent.ontology.resources.OntologySearchResourceTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in org.broadinstitute.dsde.consent.ontology.resources.OntologySearchResourceTest
 Running org.broadinstitute.dsde.consent.ontology.resources.DataUseResourceTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.156 sec - in org.broadinstitute.dsde.consent.ontology.resources.DataUseResourceTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.103 sec - in org.broadinstitute.dsde.consent.ontology.resources.DataUseResourceTest
 Running org.broadinstitute.dsde.consent.ontology.resources.model.DataUseTest
-INFO  [2018-11-12 14:13:50,756] org.eclipse.jetty.util.log: Logging initialized @29949ms
-INFO  [2018-11-12 14:13:50,859] io.dropwizard.server.DefaultServerFactory: Registering jersey handler with root path prefix: /
-INFO  [2018-11-12 14:13:50,859] io.dropwizard.server.DefaultServerFactory: Registering admin handler with root path prefix: /
-INFO  [2018-11-12 14:13:50,866] io.dropwizard.server.SimpleServerFactory: Registering jersey handler with root path prefix: /application
-INFO  [2018-11-12 14:13:50,867] io.dropwizard.server.SimpleServerFactory: Registering admin handler with root path prefix: /admin
-INFO  [2018-11-12 14:13:50,867] io.dropwizard.server.ServerFactory: Starting FakeApplication
-INFO  [2018-11-12 14:13:51,006] org.eclipse.jetty.setuid.SetUIDListener: Opened FakeApplication@3b4a1a75{HTTP/1.1,[http/1.1]}{0.0.0.0:35443}
-INFO  [2018-11-12 14:13:51,008] org.eclipse.jetty.server.Server: jetty-9.3.9.v20160517
-INFO  [2018-11-12 14:13:52,298] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+INFO  [2018-11-12 14:22:12,903] org.eclipse.jetty.util.log: Logging initialized @27993ms
+INFO  [2018-11-12 14:22:13,000] io.dropwizard.server.DefaultServerFactory: Registering jersey handler with root path prefix: /
+INFO  [2018-11-12 14:22:13,001] io.dropwizard.server.DefaultServerFactory: Registering admin handler with root path prefix: /
+INFO  [2018-11-12 14:22:13,008] io.dropwizard.server.SimpleServerFactory: Registering jersey handler with root path prefix: /application
+INFO  [2018-11-12 14:22:13,008] io.dropwizard.server.SimpleServerFactory: Registering admin handler with root path prefix: /admin
+INFO  [2018-11-12 14:22:13,009] io.dropwizard.server.ServerFactory: Starting FakeApplication
+INFO  [2018-11-12 14:22:13,147] org.eclipse.jetty.setuid.SetUIDListener: Opened FakeApplication@4130955c{HTTP/1.1,[http/1.1]}{0.0.0.0:35791}
+INFO  [2018-11-12 14:22:13,150] org.eclipse.jetty.server.Server: jetty-9.3.9.v20160517
+INFO  [2018-11-12 14:22:14,092] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
 
     GET     /schemas/data-use (org.broadinstitute.dsde.consent.ontology.resources.DataUseResource)
     POST    /schemas/data-use/consent/translate (org.broadinstitute.dsde.consent.ontology.resources.DataUseResource)
     POST    /schemas/data-use/dar/translate (org.broadinstitute.dsde.consent.ontology.resources.DataUseResource)
 
-INFO  [2018-11-12 14:13:52,303] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@668cc9a2{/application,null,AVAILABLE}
-INFO  [2018-11-12 14:13:52,311] io.dropwizard.setup.AdminEnvironment: tasks = 
+INFO  [2018-11-12 14:22:14,095] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@1e98b788{/application,null,AVAILABLE}
+INFO  [2018-11-12 14:22:14,099] io.dropwizard.setup.AdminEnvironment: tasks = 
 
     POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
     POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
 
-INFO  [2018-11-12 14:13:52,326] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@7197b07f{/admin,null,AVAILABLE}
-INFO  [2018-11-12 14:13:52,346] org.eclipse.jetty.server.AbstractConnector: Started FakeApplication@3b4a1a75{HTTP/1.1,[http/1.1]}{0.0.0.0:35443}
-INFO  [2018-11-12 14:13:52,347] org.eclipse.jetty.server.Server: Started @31543ms
-INFO  [2018-11-12 14:13:52,782] org.eclipse.jetty.server.AbstractConnector: Stopped FakeApplication@3b4a1a75{HTTP/1.1,[http/1.1]}{0.0.0.0:0}
-INFO  [2018-11-12 14:13:52,784] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@7197b07f{/admin,null,UNAVAILABLE}
-INFO  [2018-11-12 14:13:52,794] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@668cc9a2{/application,null,UNAVAILABLE}
-Tests run: 30, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.535 sec - in org.broadinstitute.dsde.consent.ontology.resources.model.DataUseTest
+INFO  [2018-11-12 14:22:14,108] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@421d54b3{/admin,null,AVAILABLE}
+INFO  [2018-11-12 14:22:14,119] org.eclipse.jetty.server.AbstractConnector: Started FakeApplication@4130955c{HTTP/1.1,[http/1.1]}{0.0.0.0:35791}
+INFO  [2018-11-12 14:22:14,119] org.eclipse.jetty.server.Server: Started @29213ms
+INFO  [2018-11-12 14:22:14,517] org.eclipse.jetty.server.AbstractConnector: Stopped FakeApplication@4130955c{HTTP/1.1,[http/1.1]}{0.0.0.0:0}
+INFO  [2018-11-12 14:22:14,519] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@421d54b3{/admin,null,UNAVAILABLE}
+INFO  [2018-11-12 14:22:14,530] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@1e98b788{/application,null,UNAVAILABLE}
+Tests run: 30, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.61 sec - in org.broadinstitute.dsde.consent.ontology.resources.model.DataUseTest
 Running org.broadinstitute.dsde.consent.ontology.resources.model.DataUseValidatorTest
 Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in org.broadinstitute.dsde.consent.ontology.resources.model.DataUseValidatorTest
 Running org.broadinstitute.dsde.consent.ontology.TranslateTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.533 sec - in org.broadinstitute.dsde.consent.ontology.TranslateTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.611 sec - in org.broadinstitute.dsde.consent.ontology.TranslateTest
 Running org.broadinstitute.dsde.consent.ontology.truthtable.ControlSetMatchTest
-Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 29.774 sec - in org.broadinstitute.dsde.consent.ontology.truthtable.ControlSetMatchTest
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 32.41 sec - in org.broadinstitute.dsde.consent.ontology.truthtable.ControlSetMatchTest
 Running org.broadinstitute.dsde.consent.ontology.truthtable.MethodsResearchMatchTest
-Tests run: 30, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 34.69 sec - in org.broadinstitute.dsde.consent.ontology.truthtable.MethodsResearchMatchTest
+Tests run: 30, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 34.055 sec - in org.broadinstitute.dsde.consent.ontology.truthtable.MethodsResearchMatchTest
 Running org.broadinstitute.dsde.consent.ontology.datause.services.HtmlTranslatorTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.953 sec - in org.broadinstitute.dsde.consent.ontology.datause.services.HtmlTranslatorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.495 sec - in org.broadinstitute.dsde.consent.ontology.datause.services.HtmlTranslatorTest
 Running org.broadinstitute.dsde.consent.ontology.datause.services.TextTranslationServiceImplTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 15.958 sec - in org.broadinstitute.dsde.consent.ontology.datause.services.TextTranslationServiceImplTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 16.272 sec - in org.broadinstitute.dsde.consent.ontology.datause.services.TextTranslationServiceImplTest
 Running org.broadinstitute.dsde.consent.ontology.datause.builder.DARRestrictionBuilderTest
-Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 sec - in org.broadinstitute.dsde.consent.ontology.datause.builder.DARRestrictionBuilderTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 sec - in org.broadinstitute.dsde.consent.ontology.datause.builder.DARRestrictionBuilderTest
 Running org.broadinstitute.dsde.consent.ontology.datause.builder.ConsentRestrictionBuilderTest
-Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec - in org.broadinstitute.dsde.consent.ontology.datause.builder.ConsentRestrictionBuilderTest
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec - in org.broadinstitute.dsde.consent.ontology.datause.builder.ConsentRestrictionBuilderTest
 Running org.broadinstitute.dsde.consent.ontology.datause.models.OrTest
 Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in org.broadinstitute.dsde.consent.ontology.datause.models.OrTest
 Running org.broadinstitute.dsde.consent.ontology.datause.models.ConsentTest
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.broadinstitute.dsde.consent.ontology.datause.models.ConsentTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.broadinstitute.dsde.consent.ontology.datause.models.ConsentTest
 Running org.broadinstitute.dsde.consent.ontology.datause.models.AndTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.broadinstitute.dsde.consent.ontology.datause.models.AndTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.broadinstitute.dsde.consent.ontology.datause.models.AndTest
 Running org.broadinstitute.dsde.consent.ontology.datause.models.visitor.NamedVisitorTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.broadinstitute.dsde.consent.ontology.datause.models.visitor.NamedVisitorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.broadinstitute.dsde.consent.ontology.datause.models.visitor.NamedVisitorTest
 Running org.broadinstitute.dsde.consent.ontology.datause.models.OnlyTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.broadinstitute.dsde.consent.ontology.datause.models.OnlyTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.broadinstitute.dsde.consent.ontology.datause.models.OnlyTest
 Running org.broadinstitute.dsde.consent.ontology.datause.models.ResearchPurposeTest
 Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.broadinstitute.dsde.consent.ontology.datause.models.ResearchPurposeTest
 Running org.broadinstitute.dsde.consent.ontology.datause.models.SomeTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.broadinstitute.dsde.consent.ontology.datause.models.SomeTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.broadinstitute.dsde.consent.ontology.datause.models.SomeTest
 Running org.broadinstitute.dsde.consent.ontology.match.CSMatchTest
-Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.517 sec - in org.broadinstitute.dsde.consent.ontology.match.CSMatchTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 16.451 sec - in org.broadinstitute.dsde.consent.ontology.match.CSMatchTest
 Running org.broadinstitute.dsde.consent.ontology.match.MRPMatchTest
-Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 46.455 sec - in org.broadinstitute.dsde.consent.ontology.match.MRPMatchTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 44.105 sec - in org.broadinstitute.dsde.consent.ontology.match.MRPMatchTest
 Running org.broadinstitute.dsde.consent.ontology.match.HMBMatchTest
-Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 235.548 sec - in org.broadinstitute.dsde.consent.ontology.match.HMBMatchTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 235.809 sec - in org.broadinstitute.dsde.consent.ontology.match.HMBMatchTest
 Running org.broadinstitute.dsde.consent.ontology.service.StoreOntologyServiceTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.093 sec - in org.broadinstitute.dsde.consent.ontology.service.StoreOntologyServiceTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.133 sec - in org.broadinstitute.dsde.consent.ontology.service.StoreOntologyServiceTest
 Running org.broadinstitute.dsde.consent.ontology.service.ElasticSearchHealthCheckTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.077 sec - in org.broadinstitute.dsde.consent.ontology.service.ElasticSearchHealthCheckTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.335 sec - in org.broadinstitute.dsde.consent.ontology.service.ElasticSearchHealthCheckTest
 Running org.broadinstitute.dsde.consent.ontology.service.ElasticSearchSupportTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec - in org.broadinstitute.dsde.consent.ontology.service.ElasticSearchSupportTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec - in org.broadinstitute.dsde.consent.ontology.service.ElasticSearchSupportTest
 Running org.broadinstitute.dsde.consent.ontology.service.validate.UseRestrictionValidateImplTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.598 sec - in org.broadinstitute.dsde.consent.ontology.service.validate.UseRestrictionValidateImplTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.538 sec - in org.broadinstitute.dsde.consent.ontology.service.validate.UseRestrictionValidateImplTest
 Running org.broadinstitute.dsde.consent.ontology.service.ElasticSearchAutocompleteAPITest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.74 sec - in org.broadinstitute.dsde.consent.ontology.service.ElasticSearchAutocompleteAPITest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.672 sec - in org.broadinstitute.dsde.consent.ontology.service.ElasticSearchAutocompleteAPITest
 Running org.broadinstitute.dsde.consent.ontology.cloudstore.GCSHealthCheckTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.042 sec - in org.broadinstitute.dsde.consent.ontology.cloudstore.GCSHealthCheckTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 sec - in org.broadinstitute.dsde.consent.ontology.cloudstore.GCSHealthCheckTest
 
 Results :
 
-Failed tests: 
-  SwaggerResourceTest.testNotFound:59 expected:<200> but was:<404>
-
-Tests run: 222, Failures: 1, Errors: 0, Skipped: 0
+Tests run: 222, Failures: 0, Errors: 0, Skipped: 0
 
 [INFO] ------------------------------------------------------------------------
-[INFO] BUILD FAILURE
+[INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 07:25 min
-[INFO] Finished at: 2018-11-12T15:20:37+01:00
-[INFO] Final Memory: 46M/1050M
+[INFO] Total time: 07:23 min
+[INFO] Finished at: 2018-11-12T15:29:01+01:00
+[INFO] Final Memory: 42M/1045M
 [INFO] ------------------------------------------------------------------------
-[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-test) on project consent-ontology: There are test failures.
-[ERROR] 
-[ERROR] Please refer to /root/workspace/DataBiosphere/consent-ontology/453433108/target/surefire-reports for the individual test results.
-[ERROR] -> [Help 1]
-[ERROR] 
-[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
-[ERROR] Re-run Maven using the -X switch to enable full debug logging.
-[ERROR] 
-[ERROR] For more information about the errors and possible solutions, please read the following articles:
-[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
