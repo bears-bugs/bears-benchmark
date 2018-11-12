@@ -1,0 +1,245 @@
+swagger: '2.0'
+info:
+  title: Ontology Services
+  description: A set of web-services related to ontology information.
+  version: 0.0.1
+  license:
+    name: BSD
+    url: 'http://opensource.org/licenses/BSD-3-Clause'
+  termsOfService: 'https://github.com/broadinstitute/consent'
+schemes:
+  - https
+  
+paths:
+
+  /schemas/data-use:
+    get:
+      summary: Data Use Questions and Answers
+      description: JSON representation of data use questions + answers for use in defining structured data use restrictions and data access requests.
+      tags:
+        - Data Use
+      responses:
+        200:
+          description: The json representation for all data use questions + answers
+        default:
+          description: Unexpected error
+
+  /schemas/data-use/consent/translate:
+    post:
+      summary: Translate Data Use JSON into a 'Consent' Use Restriction
+      description: Translate a Data Use JSON to a 'Consent' Use Restriction
+      tags:
+        - Data Use
+      parameters:
+        - name: jsonString
+          in: body
+          description: JSON formatted Data Use object
+          required: true
+          schema:
+            $ref: '#/definitions/DataUse'
+      responses:
+        200:
+          description: The use restriction in consent format
+        400:
+          description: invalid data use schema format
+        default:
+          description: Unexpected error
+
+  /schemas/data-use/dar/translate:
+    post:
+      summary: Translate Data Use JSON into a 'Data Access Request' Use Restriction
+      description: Translate a Data Use JSON to a 'Data Access Request' Use Restriction
+      tags:
+        - Data Use
+      parameters:
+        - name: jsonString
+          in: body
+          description: JSON formatted Data Use object
+          required: true
+          schema:
+            $ref: '#/definitions/DataUse'
+      responses:
+        200:
+          description: The use restriction in data access request format
+        400:
+          description: invalid data use schema format
+        default:
+          description: Unexpected error
+
+  /translate:
+    post:
+      summary: translate
+      description: The Translate service will render an English-language version of a consent or research purpose.
+      produces: 
+        - text/plain
+      parameters:
+        - name: for
+          in: query
+          description: Translates a research purpose or a consent. (purpose or sampleset)
+          required: true
+          type: string
+        - name: body
+          in: body
+          description: Restriction
+          required: true
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Restriction'
+      tags:
+        - Translate
+      responses:
+        '200':
+          description: Successful translation.
+        default:
+          description: Unexpected error
+
+  /match:
+    post:
+      summary: match
+      description: The Match service will render a response of true or false between a Consent and a Research Purpose.
+      parameters:
+        - name: body
+          in: body
+          description: Consent and Purpose Use Restrictions.
+          required: true
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/matchRestrictions'
+      tags:
+        - Match
+      responses:
+        '200':
+          description: Successful matching.
+        default:
+          description: Unexpected error
+          
+            
+  /validate/userestriction:
+      post:
+        summary: validate
+        description: The Validate service will check If the posted Use Restriction has the correct format and content.
+        parameters:
+          - name: body
+            in: body
+            description: Restriction
+            required: true
+            schema:
+              type: array
+              items:
+                $ref: '#/definitions/Restriction'
+        tags:
+          - Validate
+        responses:
+          '200':
+            description: Successful validation. True for valid restriction and False for invalid.
+          default:
+            description: Unexpected error
+
+  /autocomplete:
+    get:
+      summary: autocomplete
+      description: Ontologies can be queried based on term; type and count. This provides an easy filtering mechanism that allows users to select ontology terms that are applicable to consents or research purposes.
+      parameters:
+        - name: q
+          in: query
+          description: The query term (word fragment) which the service should try and complete.
+          required: true
+          type: string
+        - name: types
+          in: query
+          description: An optional list (comma-separated) of term types; if specified only those types will be searched for autocomplete suggestions. If left unspecified all available types will be searched. Available values for this service will initially be disease and organization.
+          required: false
+          type: string
+        - name: count
+          in: query
+          description: An optional limit on the number of autosuggested results that are returned. Default value is 20.
+          required: false
+          type: number
+      tags:
+        - Autocomplete
+      responses:
+        '200':
+          description: Array of results.
+        default:
+          description: Unexpected error
+
+  /search:
+    get:
+      summary: search
+      description: Find ontologies based on the id.
+      parameters:
+        - name: id
+          in: query
+          description: The ontology id which the service us to find it (e.g. DOID_4).
+          required: true
+          type: string
+      tags:
+        - Search
+      responses:
+        '200':
+          description: The given id was found. Json result with ontology information.
+        default:
+          description: Unexpected error
+
+  /status:
+    get:
+      summary: System Health Status
+      description: A detailed description of the various subsystem statuses that Ontology relies upon.
+      tags:
+        - Status
+      responses:
+        200: All systems are OK
+        500: Some number of subsystems are not OK.
+
+definitions:
+  Restriction:
+    type: object
+    properties:
+      type:
+        type: string
+        description: 'Conector (and, or)'
+      operands:
+        type: array
+        items:
+          type: string
+        description: Array of ontologies.
+
+  matchRestrictions:
+    type: object
+    properties:
+      purpose:
+        type: object
+        properties:
+          type: 
+            type: string
+          operands:
+            type: array
+            items:
+              type: string
+              description: Array of ontologies.
+      consent:
+        type: object
+        properties:
+          type: 
+            type: string
+          operands:
+            type: array
+            items:
+              type: string
+              description: Array of ontologies.
+  DataUse:
+    type: object
+    description: JSON model of a set of data use questions and answers
+    example: |
+      {
+        "generalUse": false,
+        "hmbResearch": true,
+        "diseaseRestrictions": ["http://purl.obolibrary.org/obo/DOID_602", "http://purl.obolibrary.org/obo/DOID_162"],
+        "gender": "Male",
+        ...
+        additional JSON-standard fields as
+        defined by the Data Use schema
+        ...
+      }
