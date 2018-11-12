@@ -29,10 +29,18 @@ public class SwaggerResource {
             mediaType = getMediaTypeFromPath(path);
             if (path.endsWith("png") || path.endsWith("gif")) {
                 byte[] content = FileUtils.readAllBytesFromResource(swaggerResource + path);
-                response = Response.ok().entity(content).type(mediaType).build();
+                if (content != null) {
+                    response = Response.ok().entity(content).type(mediaType).build();
+                } else {
+                    response = Response.status(Response.Status.NOT_FOUND).build();
+                }
             } else {
                 String content = FileUtils.readAllTextFromResource(swaggerResource + path);
-                response = Response.ok().entity(content).type(mediaType).build();
+                if (content != null) {
+                    response = Response.ok().entity(content).type(mediaType).build();
+                } else {
+                    response = Response.status(Response.Status.NOT_FOUND).build();
+                }
             }
         }
         return response;
