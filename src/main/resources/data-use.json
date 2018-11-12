@@ -1,0 +1,125 @@
+{
+  "id": "https://consent-ontology.dsde-prod.broadinstitute.org/schemas/data-use",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Data Use Schema",
+  "version": 1,
+  "type": "object",
+  "dependencies": {
+    "recontactingDataSubjects": {
+      "oneOf": [
+        {"required": ["recontactMay"]},
+        {"required": ["recontactMust"]}
+      ]
+    },
+    "otherRestrictions": {
+      "anyOf": [
+        {"required": ["cloudStorage"]},
+        {"required": ["ethicsApprovalRequired"]},
+        {"required": ["geographicalRestrictions"]},
+        {"required": ["other"]}
+      ]
+    }
+  },
+  "properties": {
+    "generalUse": {
+      "type": "boolean"
+    },
+    "hmbResearch": {
+      "type": "boolean"
+    },
+    "diseaseRestrictions": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "uniqueItems": true
+      }
+    },
+    "populationOriginsAncestry": {
+      "type": "boolean"
+    },
+    "populationStructure": {
+      "type": "boolean"
+    },
+    "commercialUse": {
+      "type": "boolean"
+    },
+    "methodsResearch": {
+      "type": "boolean"
+    },
+    "aggregateResearch": {
+      "type": "string",
+      "enum": ["Yes", "No", "Unspecified"]
+    },
+    "controlSetOption": {
+      "type": "string",
+      "enum": ["Yes", "No", "Unknown"]
+    },
+    "gender": {
+      "type": "string",
+      "enum": ["Female", "Male"]
+    },
+    "pediatric": {
+      "type": "boolean"
+    },
+    "populationRestrictions": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "uniqueItems": true
+      }
+    },
+    "dateRestriction": {
+      "type": "string"
+    },
+    "recontactingDataSubjects": {
+      "type": "boolean"
+    },
+    "recontactMay": {
+      "type": "string"
+    },
+    "recontactMust": {
+      "type": "string"
+    },
+    "genomicPhenotypicData": {
+      "type": "string",
+      "enum": ["Yes", "No", "Unspecified"]
+    },
+    "otherRestrictions": {
+      "type": "boolean"
+    },
+    "other": {
+      "type": "string"
+    },
+    "cloudStorage": {
+      "type": "string",
+      "enum": ["Yes", "No", "Unspecified"]
+    },
+    "ethicsApprovalRequired": {
+      "type": "boolean"
+    },
+    "geographicalRestrictions": {
+      "type": "string"
+    },
+    "illegalBehavior": {
+      "type": "boolean"
+    },
+    "addiction": {
+      "type": "boolean"
+    },
+    "sexualDiseases": {
+      "type": "boolean"
+    },
+    "stigmatizeDiseases": {
+      "type": "boolean"
+    },
+    "vulnerablePopulations": {
+      "type": "boolean"
+    },
+    "psychologicalTraits": {
+      "type": "boolean"
+    },
+    "nonBiomedical": {
+      "type": "boolean"
+    }
+  }
+}

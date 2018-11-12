@@ -1,0 +1,22 @@
+server:
+  type: simple
+  applicationContextPath: /
+  adminContextPath: /admin
+  connector:
+    type: http
+    port: 8180
+logging:
+  level: INFO
+  loggers:
+    "org.semanticweb": ERROR
+elasticSearch:
+  servers:
+    - localhost
+  index: ontology
+googleStore:
+  password:
+  endpoint:
+  bucket:
+storeOntology:
+  bucketSubdirectory:
+  configurationFileName:
