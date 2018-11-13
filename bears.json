@@ -1,0 +1,159 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 286, 
+      "numberRunning": 288, 
+      "numberFailing": 2, 
+      "numberErroring": 0, 
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError", 
+          "isError": false, 
+          "occurrences": 2
+        }
+      ], 
+      "numberSkipping": 0
+    }, 
+    "failingModule": "/root/workspace/OpenFeign/feign/454179734/core", 
+    "failureDetails": [
+      {
+        "failureName": "java.lang.AssertionError", 
+        "detail": "Non-empty map generated from null getter: {this$0=feign.querymap.FieldQueryMapEncoderTest@3d8bbcdc}", 
+        "isError": false, 
+        "testMethod": "testDefaultEncoder_normalClassWithOutValues", 
+        "testClass": "feign.querymap.FieldQueryMapEncoderTest"
+      }, 
+      {
+        "failureName": "java.lang.AssertionError", 
+        "detail": "Unexpected encoded query map expected:<{bar=barz, foo=fooz}> but was:<{bar=barz, foo=fooz, this$0=feign.querymap.FieldQueryMapEncoderTest@3e2943ab}>", 
+        "isError": false, 
+        "testMethod": "testDefaultEncoder_normalClassWithValues", 
+        "testClass": "feign.querymap.FieldQueryMapEncoderTest"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 0, 
+        "numberRunning": 2, 
+        "testClass": "feign.querymap.FieldQueryMapEncoderTest", 
+        "numberFailing": 2, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/OpenFeign/feign/builds/454278346", 
+      "date": "Nov 13, 2018 3:45:43 AM", 
+      "id": 454278346
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/OpenFeign/feign/builds/454179734", 
+      "date": "Nov 12, 2018 10:27:24 PM", 
+      "id": 454179734
+    }
+  }, 
+  "repository": {
+    "name": "OpenFeign/feign", 
+    "url": "https://github.com/OpenFeign/feign", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 10981994
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/OpenFeign/feign/commit/e15e9f0c982f7adfad72689885eaab03f3cbc396", 
+      "sha": "e15e9f0c982f7adfad72689885eaab03f3cbc396", 
+      "branchName": "master", 
+      "date": "Nov 13, 2018 3:41:19 AM", 
+      "repoName": "OpenFeign/feign"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/OpenFeign/feign/commit/1727283572145bd1b834f4f8bfd70ea5602eb168", 
+      "sha": "1727283572145bd1b834f4f8bfd70ea5602eb168", 
+      "branchName": "master", 
+      "date": "Nov 11, 2018 9:23:27 PM", 
+      "repoName": "OpenFeign/feign"
+    }
+  }, 
+  "bugName": "OpenFeign-feign-454179734-454278346", 
+  "version": "latest", 
+  "projectMetrics": {
+    "numberSourceFiles": 99, 
+    "numberLibrariesFailingModule": 19, 
+    "numberTestFiles": 76, 
+    "numberModules": 19
+  }, 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 8, 
+      "numberDeleted": 6
+    }
+  }, 
+  "bugId": "Bears-227", 
+  "type": "passing_passing", 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 355885952, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 432537600, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Nov 13, 2018 3:50:24 AM", 
+    "projectRootPomPath": "./workspace/OpenFeign/feign/454179734/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          0, 
+          0, 
+          0, 
+          0, 
+          89
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 89
+      }, 
+      "testing": {
+        "stepDurations": [
+          27
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 27
+      }, 
+      "cloning": {
+        "stepDurations": [
+          4
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 4
+      }
+    }, 
+    "reproductionDateBeginning": "Nov 13, 2018 3:46:04 AM", 
+    "totalDuration": 253
+  }
+}
