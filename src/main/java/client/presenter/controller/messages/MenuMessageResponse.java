@@ -2,6 +2,7 @@ package client.presenter.controller.messages;
 
 import client.presenter.controller.MenuMessageTypes;
 import client.presenter.controller.ViewMessageType;
+import java.util.Arrays;
 
 public class MenuMessageResponse extends ViewMessage {
 
@@ -24,5 +25,14 @@ public class MenuMessageResponse extends ViewMessage {
 
     this.menuType = menuType;
     this.information = information;
+  }
+
+  @Override
+  public boolean equals(Object o){
+    if (o == null || !(o instanceof MenuMessageResponse)) {
+      return false;
+    }
+    MenuMessageResponse other = (MenuMessageResponse) o;
+    return menuType.equals(other.menuType) && Arrays.equals(information, other.information);
   }
 }

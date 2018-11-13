@@ -1,6 +1,7 @@
 package client.presenter.controller.messages;
 
 import client.presenter.controller.ViewMessageType;
+import java.util.Arrays;
 
 public class UnregisterResponseMessage extends ViewMessage{
 
@@ -23,5 +24,14 @@ public class UnregisterResponseMessage extends ViewMessage{
 
     this.success = success;
     this.messages = messages;
+  }
+
+  @Override
+  public boolean equals(Object o){
+    if (o == null || !(o instanceof UnregisterResponseMessage)) {
+      return false;
+    }
+    UnregisterResponseMessage other = (UnregisterResponseMessage) o;
+    return success == other.success && Arrays.equals(messages, other.messages);
   }
 }

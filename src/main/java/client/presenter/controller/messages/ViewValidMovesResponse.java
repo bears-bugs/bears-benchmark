@@ -1,6 +1,7 @@
 package client.presenter.controller.messages;
 
 import client.presenter.controller.ViewMessageType;
+import java.util.Arrays;
 
 public class ViewValidMovesResponse extends ViewMessage {
 
@@ -16,5 +17,14 @@ public class ViewValidMovesResponse extends ViewMessage {
   public ViewValidMovesResponse(String[] locations) {
     super(ViewMessageType.SHOW_VALID_MOVES_RESPONSE);
     this.locations = locations;
+  }
+
+  @Override
+  public boolean equals(Object o){
+    if (o == null || !(o instanceof ViewValidMovesResponse)) {
+      return false;
+    }
+    ViewValidMovesResponse other = (ViewValidMovesResponse) o;
+    return Arrays.equals(locations, other.locations);
   }
 }
