@@ -1,0 +1,154 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 4897, 
+      "numberRunning": 4899, 
+      "numberFailing": 0, 
+      "numberErroring": 2, 
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException", 
+          "isError": true, 
+          "occurrences": 2
+        }
+      ], 
+      "numberSkipping": 116
+    }, 
+    "failingModule": "/root/workspace/apache/calcite/454697692/core", 
+    "failureDetails": [
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "isError": true, 
+        "testClass": "org.apache.calcite.test.RelMetadataTest", 
+        "testMethod": "testTableReferencesJoinUnknownNode"
+      }, 
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "isError": true, 
+        "testClass": "org.apache.calcite.test.RelMetadataTest", 
+        "testMethod": "testTableReferencesUnionUnknownNode"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 135, 
+        "numberRunning": 137, 
+        "testClass": "org.apache.calcite.test.RelMetadataTest", 
+        "numberFailing": 0, 
+        "numberErroring": 2, 
+        "numberSkipping": 7
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/apache/calcite/builds/454736746", 
+      "date": "Nov 14, 2018 12:52:23 AM", 
+      "id": 454736746
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/apache/calcite/builds/454697692", 
+      "date": "Nov 13, 2018 10:35:40 PM", 
+      "id": 454697692
+    }
+  }, 
+  "repository": {
+    "name": "apache/calcite", 
+    "url": "https://github.com/apache/calcite", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 21193524
+  }, 
+  "projectMetrics": {
+    "numberSourceFiles": 1549, 
+    "numberLibrariesFailingModule": 56, 
+    "numberTestFiles": 236, 
+    "numberModules": 19
+  }, 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 18, 
+      "numberDeleted": 3
+    }
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/apache/calcite/commit/fcc8bf7f44f92efb3c9a1e1f51ffc1a09cab27b9", 
+      "sha": "fcc8bf7f44f92efb3c9a1e1f51ffc1a09cab27b9", 
+      "branchName": "master", 
+      "date": "Nov 13, 2018 11:45:06 PM", 
+      "repoName": "apache/calcite"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/apache/calcite/commit/11ff061205604950d8fdfade62cb84236a3fc1e4", 
+      "sha": "11ff061205604950d8fdfade62cb84236a3fc1e4", 
+      "branchName": "master", 
+      "date": "Nov 13, 2018 10:15:10 PM", 
+      "repoName": "apache/calcite"
+    }
+  }, 
+  "type": "passing_passing", 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 223605784, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 599785472, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Nov 14, 2018 1:08:53 AM", 
+    "projectRootPomPath": "./workspace/apache/calcite/454697692/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          0, 
+          1, 
+          0, 
+          0, 
+          205
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 206
+      }, 
+      "testing": {
+        "stepDurations": [
+          221
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 221
+      }, 
+      "cloning": {
+        "stepDurations": [
+          23
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 23
+      }
+    }, 
+    "reproductionDateBeginning": "Nov 14, 2018 12:52:32 AM", 
+    "totalDuration": 972
+  }
+}
