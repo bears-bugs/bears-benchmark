@@ -1,0 +1,148 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 2376, 
+      "numberRunning": 2377, 
+      "numberFailing": 1, 
+      "numberErroring": 0, 
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure", 
+          "isError": false, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 32
+    }, 
+    "failingModule": "/root/workspace/square/okhttp/454291424/okhttp-tests", 
+    "failureDetails": [
+      {
+        "failureName": "org.junit.ComparisonFailure", 
+        "detail": "expected:<[B]> but was:<[]>", 
+        "isError": false, 
+        "testClass": "okhttp3.CacheTest", 
+        "testMethod": "immutableIsNotCachedBeyondFreshnessLifetime"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 133, 
+        "numberRunning": 134, 
+        "testClass": "okhttp3.CacheTest", 
+        "numberFailing": 1, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/square/okhttp/builds/454292075", 
+      "date": "Nov 13, 2018 5:02:29 AM", 
+      "id": 454292075
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/square/okhttp/builds/454291424", 
+      "date": "Nov 13, 2018 4:34:04 AM", 
+      "id": 454291424
+    }
+  }, 
+  "repository": {
+    "name": "square/okhttp", 
+    "url": "https://github.com/square/okhttp", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 5152285
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/square/okhttp/commit/764b31b3e2367dcadacc08b818739b065b1c4bef", 
+      "sha": "764b31b3e2367dcadacc08b818739b065b1c4bef", 
+      "branchName": "jwilson.1112.weaken_immutable", 
+      "date": "Nov 13, 2018 4:31:16 AM", 
+      "repoName": "square/okhttp"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/square/okhttp/commit/495b5f78a072b7812fe06f0b4c6565d5036f0587", 
+      "sha": "495b5f78a072b7812fe06f0b4c6565d5036f0587", 
+      "branchName": "jwilson.1112.weaken_immutable", 
+      "repoName": "square/okhttp"
+    }
+  }, 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 3, 
+      "numberDeleted": 0
+    }
+  }, 
+  "type": "passing_passing", 
+  "projectMetrics": {
+    "numberSourceFiles": 208, 
+    "numberLibrariesFailingModule": 12, 
+    "numberTestFiles": 112, 
+    "numberModules": 21
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 332363560, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 571473920, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Nov 13, 2018 5:14:28 AM", 
+    "projectRootPomPath": "./workspace/square/okhttp/454291424/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          0, 
+          1, 
+          0, 
+          0, 
+          96
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 97
+      }, 
+      "testing": {
+        "stepDurations": [
+          245
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 245
+      }, 
+      "cloning": {
+        "stepDurations": [
+          25
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 25
+      }
+    }, 
+    "reproductionDateBeginning": "Nov 13, 2018 5:02:43 AM", 
+    "totalDuration": 699
+  }
+}
