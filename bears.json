@@ -1,0 +1,152 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 1604, 
+      "numberRunning": 1605, 
+      "numberFailing": 0, 
+      "numberErroring": 1, 
+      "failures": [
+        {
+          "failureName": "java.lang.UnsupportedOperationException", 
+          "isError": true, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 5
+    }, 
+    "failingModule": "/root/workspace/INRIA/spoon/454678479", 
+    "failureDetails": [
+      {
+        "failureName": "java.lang.UnsupportedOperationException", 
+        "detail": "PartialSourcePosition only contains a CompilationUnit", 
+        "isError": true, 
+        "testMethod": "testPackageDeclaration", 
+        "testClass": "spoon.test.position.PositionTest"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 30, 
+        "numberRunning": 31, 
+        "testClass": "spoon.test.position.PositionTest", 
+        "numberFailing": 0, 
+        "numberErroring": 1, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/INRIA/spoon/builds/454678770", 
+      "date": "Nov 13, 2018 9:54:18 PM", 
+      "id": 454678770
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/INRIA/spoon/builds/454678479", 
+      "date": "Nov 13, 2018 9:43:41 PM", 
+      "id": 454678479
+    }
+  }, 
+  "repository": {
+    "name": "INRIA/spoon", 
+    "url": "https://github.com/INRIA/spoon", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 14176513
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/INRIA/spoon/commit/552fdd0c09cf701c9810ab88a2266b1d13f6f911", 
+      "sha": "552fdd0c09cf701c9810ab88a2266b1d13f6f911", 
+      "branchName": "master", 
+      "date": "Nov 13, 2018 9:29:18 PM", 
+      "repoName": "INRIA/spoon"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/INRIA/spoon/commit/bf15fd0aad9272b4fb95101350169354a5edc114", 
+      "sha": "bf15fd0aad9272b4fb95101350169354a5edc114", 
+      "branchName": "master", 
+      "date": "Nov 13, 2018 9:28:42 PM", 
+      "repoName": "INRIA/spoon"
+    }
+  }, 
+  "bugName": "INRIA-spoon-454678479-454678770", 
+  "version": "latest", 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 0, 
+      "numberDeleted": 10
+    }
+  }, 
+  "type": "passing_passing", 
+  "bugId": "Bears-218", 
+  "projectMetrics": {
+    "numberSourceFiles": 657, 
+    "numberLibrariesFailingModule": 37, 
+    "numberTestFiles": 712, 
+    "numberModules": 1
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 237529592, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 482869248, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Nov 13, 2018 10:13:06 PM", 
+    "projectRootPomPath": "./workspace/INRIA/spoon/454678479/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          0, 
+          0, 
+          0, 
+          0, 
+          100
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 100
+      }, 
+      "testing": {
+        "stepDurations": [
+          542
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 542
+      }, 
+      "cloning": {
+        "stepDurations": [
+          11
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 11
+      }
+    }, 
+    "reproductionDateBeginning": "Nov 13, 2018 9:54:28 PM", 
+    "totalDuration": 1111
+  }
+}
