@@ -1,0 +1,152 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 57, 
+      "numberRunning": 58, 
+      "numberFailing": 1, 
+      "numberErroring": 0, 
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError", 
+          "isError": false, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 1
+    }, 
+    "failingModule": "/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169", 
+    "failureDetails": [
+      {
+        "failureName": "java.lang.AssertionError", 
+        "detail": "expected:<0> but was:<1>", 
+        "isError": false, 
+        "testMethod": "testSanitizerParseInt", 
+        "testClass": "com.gdssecurity.pmd.SanitizersTest"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 3, 
+        "numberRunning": 4, 
+        "testClass": "com.gdssecurity.pmd.SanitizersTest", 
+        "numberFailing": 1, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/albfernandez/GDS-PMD-Security-Rules/builds/455669767", 
+      "date": "Nov 15, 2018 9:12:29 PM", 
+      "id": 455669767
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/albfernandez/GDS-PMD-Security-Rules/builds/451155169", 
+      "date": "Nov 6, 2018 1:53:32 AM", 
+      "id": 451155169
+    }
+  }, 
+  "repository": {
+    "name": "albfernandez/GDS-PMD-Security-Rules", 
+    "url": "https://github.com/albfernandez/GDS-PMD-Security-Rules", 
+    "isFork": true, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "https://github.com/GDSSecurity/GDS-PMD-Security-Rules", 
+      "name": "GDSSecurity/GDS-PMD-Security-Rules", 
+      "githubId": 4331487
+    }, 
+    "githubId": 27188212
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/albfernandez/GDS-PMD-Security-Rules/commit/d08d1b9f55598fca9b5a9b78b89998f81edeed7c", 
+      "sha": "d08d1b9f55598fca9b5a9b78b89998f81edeed7c", 
+      "branchName": "master", 
+      "date": "Nov 15, 2018 9:09:57 PM", 
+      "repoName": "albfernandez/GDS-PMD-Security-Rules"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/albfernandez/GDS-PMD-Security-Rules/commit/065482ffcb1a1a35a5a2a5e0e54aafc565e1be9a", 
+      "sha": "065482ffcb1a1a35a5a2a5e0e54aafc565e1be9a", 
+      "branchName": "master", 
+      "date": "Nov 6, 2018 1:44:54 AM", 
+      "repoName": "albfernandez/GDS-PMD-Security-Rules"
+    }
+  }, 
+  "bugName": "albfernandez-GDS-PMD-Security-Rules-451155169-455669767", 
+  "version": "latest", 
+  "projectMetrics": {
+    "numberSourceFiles": 13, 
+    "numberLibrariesFailingModule": 72, 
+    "numberTestFiles": 88, 
+    "numberModules": 1
+  }, 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 0, 
+      "numberDeleted": 24
+    }
+  }, 
+  "bugId": "Bears-194", 
+  "type": "passing_passing", 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 319652952, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 378535936, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Nov 15, 2018 9:14:51 PM", 
+    "projectRootPomPath": "./workspace/albfernandez/GDS-PMD-Security-Rules/451155169/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          0, 
+          0, 
+          0, 
+          0, 
+          57
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 57
+      }, 
+      "testing": {
+        "stepDurations": [
+          14
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 14
+      }, 
+      "cloning": {
+        "stepDurations": [
+          3
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 3
+      }
+    }, 
+    "reproductionDateBeginning": "Nov 15, 2018 9:12:47 PM", 
+    "totalDuration": 119
+  }
+}
