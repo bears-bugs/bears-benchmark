@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleset name="A1 - Injection" language="java"
+	xmlns="http://pmd.sf.net/ruleset/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://pmd.sf.net/ruleset_xml_schema.xsd"
+	xsi:schemaLocation="http://pmd.sf.net/ruleset/1.0.0 http://pmd.sf.net/ruleset_xml_schema.xsd">
+
+	<description>
+         This file is part of the GDS PMD Secure Coding Ruleset.
+                  
+         This ruleset contains rules that are intended to detect SQL Injection flaws (SQL injection, Hibernate Injection).
+         
+         https://cwe.mitre.org/data/definitions/89.html
+         
+         https://cwe.mitre.org/data/definitions/564.html
+   </description>
+
+	<rule class="com.gdssecurity.pmd.rules.dfa.DfaSecurityRule" name="SqlInjection"
+		message="Sql Injection" dfa="true" typeResolution="true"
+		externalInfoUrl="https://cwe.mitre.org/data/definitions/89.html">
+		<description>
+   This rule utilizes the PMD data flow analysis (DFA) layer to help trace input from source to sink. PMD is unable to track data flow from source to sink across files. 
+   Therefore, the scope of analysis is limited to a single file and even within that a single method (i.e. PMD DFA is intraprocedural).
+   
+   Specifically, it is configured with sinks that might suggest a potential SQL Injection vulnerability. Additional sinks should be added for increased coverage. 
+      </description>
+
+		<priority>1</priority>
+
+		<properties>
+			<property name="sinks">
+				<value>
+|java.sql.Statement.executeQuery
+|java.sql.Statement.executeUpdate
+|java.sql.Statement.execute
+|java.sql.Statement.addBatch
+|java.sql.Connection.nativeSQL
+|java.sql.Connection.prepareCall
+|java.sql.Connection.prepareStatement
+|javax.persistence.EntityQuery.createNamedQuery
+|javax.persistence.EntityQuery.createNativeQuery
+|javax.persistence.EntityQuery.createQuery
+|javax.persistence.EntityManager.createNativeQuery
+|javax.persistence.EntityManager.createQuery
+			</value>
+			</property>
+			<property name="safeTypes">
+				<value>
+         		|java.lang.Integer
+         		|java.lang.Long
+         		|java.lang.Byte
+         		|java.lang.Short
+         		|java.lang.Boolean
+         		|int
+         		|long
+         		|byte
+         		|short
+         		|boolean
+         	</value>
+			</property>
+		</properties>
+
+	</rule>
+
+</ruleset>
