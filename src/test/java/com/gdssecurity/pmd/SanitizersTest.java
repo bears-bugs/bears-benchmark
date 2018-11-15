@@ -38,4 +38,14 @@ public class SanitizersTest {
 		Assert.assertEquals(0, violations);
 	}
 	
+	@Test
+	public void testSanitizerParseInt() throws Exception {
+		int violations = 
+				PMDRunner.run(
+						"src/test/java/resources/cwe931xss/XSSSanitizersParseInt.java", 
+						PMDRunner.RULESET_XSS
+		);
+		Assert.assertEquals(0, violations);
+	}
+	
 }
