@@ -1,0 +1,288 @@
+[INFO] Scanning for projects...
+[INFO] Inspecting build with total of 1 modules...
+[INFO] Installing Nexus Staging features:
+[INFO]   ... total of 1 executions of maven-deploy-plugin replaced with nexus-staging-maven-plugin
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building PMD-Security-Rules 2.20.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ pmd-gds ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 8 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ pmd-gds ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ pmd-gds ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ pmd-gds ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ pmd-gds ---
+[INFO] Surefire report directory: /root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.pom (3 KB at 5.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom (3 KB at 55.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.jar (37 KB at 480.8 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.gdssecurity.pmd.PMDBug1393HangsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.221 sec
+Running com.gdssecurity.pmd.StringManipulationTest
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/others/StringManipulationExample.java:14:	Sql Injection
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/others/StringManipulationExample.java:20:	Sql Injection
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/others/StringManipulationExample.java:25:	Sql Injection
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.12 sec
+Running com.gdssecurity.pmd.CWE327BrokenCryptoTest
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/cwe327brokencrypto/CWE327UseBrokenCryptoBasic.java:18:	Insecure Cryptographic Algorithm
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.111 sec
+Running com.gdssecurity.pmd.AnnotationsGeneratorTest
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/annotations/generator/AnnotationsGeneratorBadExample.java:14:	Cross-Site Scripting (Reflected)
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/annotations/generator/AnnotationsGeneratorBadExample.java:18:	Cross-Site Scripting (Reflected)
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/annotations/generator/AnnotationsGeneratorStringBuilder.java:20:	Cross-Site Scripting (Reflected)
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/annotations/generator/AnnotationsGeneratorStringBuilder.java:34:	Cross-Site Scripting (Reflected)
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/annotations/generator/AnnotationsGeneratorStatic.java:12:	Cross-Site Scripting (Reflected)
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/annotations/generator/AnnotationsGeneratorPrivateCallBad.java:24:	Cross-Site Scripting (Reflected)
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/annotations/generator/AnnotationsGeneratorExample.java:15:	Cross-Site Scripting (Reflected)
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.585 sec
+Running com.gdssecurity.pmd.CWE328ReversibleHashTest
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/cwe328reversiblehash/CWE328ReversibleOneWayHashBasic.java:16:	Insecure Cryptographic Algorithm
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/cwe328reversiblehash/CWE328ReversibleOneWayHashBasic.java:32:	Insecure Cryptographic Algorithm
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.045 sec
+Running com.gdssecurity.pmd.GetterForConnectionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0 sec
+Running com.gdssecurity.pmd.NonASCIIJavaTest
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/noascii/NonASCIIJavaExample.java:17:	Sql Injection
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/noascii/NonASCIIJavaExample.java:23:	Sql Injection
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.055 sec
+Running com.gdssecurity.pmd.SinkFullPackageNameTest
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/others/SinkFullPackageExample.java:11:	Cross-Site Scripting
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.038 sec
+Running com.gdssecurity.pmd.DefaultConfigTest
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/annotations/AnnotationExample.java:13:	Cross-Site Scripting
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/annotations/AnnotationExampleSinkConcat.java:15:	Cross-Site Scripting
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/annotations/AnnotationExampleValidateParams.java:13:	Cross-Site Scripting
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/annotations/AnnotationExampleValidateParamsQualified.java:13:	Cross-Site Scripting
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/annotations/AnnotationExampleValidateParamsStatic.java:13:	Cross-Site Scripting
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/annotations/AnnotationExampleValidateParamsStaticQualified.java:13:	Cross-Site Scripting
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/annotations/generator/AnnotationsGeneratorBadExample.java:24:	Cross-Site Scripting
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/annotations/generator/AnnotationsGeneratorChainedCall.java:21:	Cross-Site Scripting
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/annotations/generator/AnnotationsGeneratorChainedCall.java:26:	Cross-Site Scripting
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/annotations/generator/AnnotationsGeneratorChainedCall.java:30:	Cross-Site Scripting
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/annotations/generator/AnnotationsGeneratorExample.java:15:	Cross-Site Scripting
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/annotations/generator/AnnotationsGeneratorOkExample.java:25:	Cross-Site Scripting
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/annotations/generator/AnnotationsGeneratorOkExample.java:26:	Cross-Site Scripting
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/annotations/generator/AnnotationsGeneratorPrivateCallBad.java:15:	Cross-Site Scripting
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/annotations/generator/AnnotationsGeneratorPrivateCallOk.java:17:	Cross-Site Scripting
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/annotations/generator/AnnotationsGeneratorStaticCaller.java:12:	Cross-Site Scripting
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/annotations/generator/AnnotationsGeneratorStringBuilder.java:38:	Cross-Site Scripting
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/annotations/generator/AnnotationsGeneratorStringBuilder.java:42:	Cross-Site Scripting
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/annotations/generator/AnnotationsGeneratorStringBuilder.java:48:	Cross-Site Scripting
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/annotations/generator/twocallsonefile/TwoCallsInOneFile.java:19:	Cross-Site Scripting
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/annotations/generator/twocallsonefile/TwoCallsInOneFile.java:23:	Cross-Site Scripting
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/annotations/generator/twocallstwofiles/TwoCallsInTwoFiles1.java:18:	Cross-Site Scripting
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/annotations/generator/twocallstwofiles/TwoCallsInTwoFiles2.java:9:	Cross-Site Scripting
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/cwe113responsesplitting/TestRedirectServlet.java:17:	HTTP Response Splitting
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/cwe113responsesplitting/TestRedirectServlet.java:17:	Unvalidated Redirect
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/cwe327brokencrypto/CWE327UseBrokenCryptoBasic.java:18:	Insecure Cryptographic Algorithm
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/cwe328reversiblehash/CWE328ReversibleOneWayHashBasic.java:16:	Insecure Cryptographic Algorithm
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/cwe328reversiblehash/CWE328ReversibleOneWayHashBasic.java:32:	Insecure Cryptographic Algorithm
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/cwe89sqlinjection/JPAInjection.java:13:	Sql Injection
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/cwe89sqlinjection/JPAInjection.java:16:	Sql Injection
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/cwe89sqlinjection/JPAInjection.java:19:	Sql Injection
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/cwe89sqlinjection/SqliAppendString.java:11:	Sql Injection
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/cwe89sqlinjection/SqliConditional.java:17:	Sql Injection
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/cwe89sqlinjection/SqliConditional.java:28:	Sql Injection
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/cwe89sqlinjection/SqliDontMissAFunction.java:15:	Sql Injection
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/cwe89sqlinjection/SqliDontMissAFunction.java:16:	Sql Injection
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/cwe89sqlinjection/SqliDontMissAFunction.java:17:	Sql Injection
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/cwe89sqlinjection/SqliDontMissAFunction.java:18:	Sql Injection
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/cwe89sqlinjection/SqliDontMissAFunction.java:19:	Sql Injection
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/cwe89sqlinjection/SqliDontMissAFunction.java:20:	Sql Injection
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/cwe89sqlinjection/SqliDontMissAFunction.java:21:	Sql Injection
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/cwe89sqlinjection/SqliDontMissAFunction.java:22:	Sql Injection
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/cwe89sqlinjection/SqliDontMissAFunction.java:23:	Sql Injection
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/cwe89sqlinjection/SqliDontMissAFunction.java:24:	Sql Injection
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/cwe89sqlinjection/SqliDontMissAFunction.java:25:	Sql Injection
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/cwe89sqlinjection/SqliDontMissAFunction.java:26:	Sql Injection
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/cwe89sqlinjection/SqliDontMissAFunction.java:27:	Sql Injection
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/cwe89sqlinjection/SqliDontMissAFunction.java:28:	Sql Injection
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/cwe89sqlinjection/SqliDontMissAFunction.java:29:	Sql Injection
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/cwe89sqlinjection/SqliDontMissAFunction.java:30:	Sql Injection
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/cwe89sqlinjection/SqliDontMissAFunction.java:31:	Sql Injection
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/cwe89sqlinjection/SqliDontMissAFunction.java:32:	Sql Injection
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/cwe89sqlinjection/SqliDontMissAFunction.java:33:	Sql Injection
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/cwe89sqlinjection/SqliDontMissAFunction.java:34:	Sql Injection
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/cwe89sqlinjection/SqliFieldsAreTainted.java:11:	Sql Injection
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/cwe89sqlinjection/SqliFieldsAreTainted.java:15:	Sql Injection
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/cwe89sqlinjection/SqliMethodParametersAreTainted.java:9:	Sql Injection
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/cwe89sqlinjection/SqliServletTest.java:47:	Sql Injection
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/cwe89sqlinjection/StringBuilderTest.java:17:	Sql Injection
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/cwe89sqlinjection/StringBuilderTest.java:26:	Sql Injection
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/cwe931xss/TestXSSServlet.java:31:	Cross-Site Scripting
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/cwe931xss/XSS1jsp.java:61:	Cross-Site Scripting
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/cwe931xss/XSS2jsp.java:65:	Cross-Site Scripting
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/cwe931xss/XSSSanitizers.java:15:	Cross-Site Scripting
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/cwe931xss/XSSSanitizersParseInt.java:15:	Cross-Site Scripting
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/inheritance/Children.java:15:	Sql Injection
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/inheritance/Children.java:19:	Sql Injection
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/noascii/NonASCIIJavaExample.java:17:	Sql Injection
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/noascii/NonASCIIJavaExample.java:23:	Sql Injection
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/others/CallInReturnExample.java:13:	Sql Injection
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/others/CallInReturnWithParenthesis.java:12:	Sql Injection
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/others/SinkFullPackageExample.java:11:	Cross-Site Scripting
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/others/StringManipulationExample.java:14:	Sql Injection
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/others/StringManipulationExample.java:20:	Sql Injection
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/others/StringManipulationExample.java:25:	Sql Injection
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/others/UsingThis.java:12:	Sql Injection
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/others/bug28/ViolationAfterCatch.java:38:	Cross-Site Scripting
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.75 sec
+Running com.gdssecurity.pmd.TernaryAsParameterTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.088 sec
+Running com.gdssecurity.pmd.CWE89SqlInjectionTest
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/cwe89sqlinjection/StringBuilderTest.java:17:	Sql Injection
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/cwe89sqlinjection/StringBuilderTest.java:26:	Sql Injection
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/cwe89sqlinjection/SqliServletTest.java:47:	Sql Injection
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/cwe89sqlinjection/SqliMethodParametersAreTainted.java:9:	Sql Injection
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/cwe89sqlinjection/SqliConditional.java:17:	Sql Injection
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/cwe89sqlinjection/SqliConditional.java:28:	Sql Injection
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/cwe89sqlinjection/SqliAppendString.java:11:	Sql Injection
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/cwe89sqlinjection/SqliFieldsAreTainted.java:11:	Sql Injection
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/cwe89sqlinjection/SqliFieldsAreTainted.java:15:	Sql Injection
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/cwe89sqlinjection/SqliDontMissAFunction.java:15:	Sql Injection
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/cwe89sqlinjection/SqliDontMissAFunction.java:16:	Sql Injection
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/cwe89sqlinjection/SqliDontMissAFunction.java:17:	Sql Injection
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/cwe89sqlinjection/SqliDontMissAFunction.java:18:	Sql Injection
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/cwe89sqlinjection/SqliDontMissAFunction.java:19:	Sql Injection
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/cwe89sqlinjection/SqliDontMissAFunction.java:20:	Sql Injection
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/cwe89sqlinjection/SqliDontMissAFunction.java:21:	Sql Injection
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/cwe89sqlinjection/SqliDontMissAFunction.java:22:	Sql Injection
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/cwe89sqlinjection/SqliDontMissAFunction.java:23:	Sql Injection
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/cwe89sqlinjection/SqliDontMissAFunction.java:24:	Sql Injection
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/cwe89sqlinjection/SqliDontMissAFunction.java:25:	Sql Injection
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/cwe89sqlinjection/SqliDontMissAFunction.java:26:	Sql Injection
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/cwe89sqlinjection/SqliDontMissAFunction.java:27:	Sql Injection
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/cwe89sqlinjection/SqliDontMissAFunction.java:28:	Sql Injection
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/cwe89sqlinjection/SqliDontMissAFunction.java:29:	Sql Injection
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/cwe89sqlinjection/SqliDontMissAFunction.java:30:	Sql Injection
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/cwe89sqlinjection/SqliDontMissAFunction.java:31:	Sql Injection
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/cwe89sqlinjection/SqliDontMissAFunction.java:32:	Sql Injection
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/cwe89sqlinjection/SqliDontMissAFunction.java:33:	Sql Injection
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/cwe89sqlinjection/SqliDontMissAFunction.java:34:	Sql Injection
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/cwe89sqlinjection/JPAInjection.java:13:	Sql Injection
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/cwe89sqlinjection/JPAInjection.java:16:	Sql Injection
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/cwe89sqlinjection/JPAInjection.java:19:	Sql Injection
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.255 sec
+Running com.gdssecurity.pmd.CallInReturnTest
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/others/CallInReturnExample.java:13:	Sql Injection
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/others/CallInReturnWithParenthesis.java:12:	Sql Injection
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.05 sec
+Running com.gdssecurity.pmd.SanitizerFullPackageNameTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec
+Running com.gdssecurity.pmd.UsingThisTest
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/others/UsingThis.java:12:	Sql Injection
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec
+Running com.gdssecurity.pmd.CWE935NoAccessControlTest
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/cwe935noaccesscontrol/TestRoleAuthZServlet.java:25:	Missing Or Incorrect Authorization
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/cwe935noaccesscontrol/TestRoleAuthZServlet.java:33:	Missing Or Incorrect Authorization
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec
+Running com.gdssecurity.pmd.PMDBug1024HangsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.363 sec
+Running com.gdssecurity.pmd.ViolationAfterCatchTest
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/others/bug28/ViolationAfterCatch.java:38:	Cross-Site Scripting
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec
+Running com.gdssecurity.pmd.CWE931XssTest
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/cwe931xss/TestXSSServlet.java:31:	Cross-Site Scripting
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/cwe931xss/XSS1jsp.java:61:	Cross-Site Scripting
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/cwe931xss/XSS2jsp.java:65:	Cross-Site Scripting
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.097 sec
+Running com.gdssecurity.pmd.AnnotationTest
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/annotations/AnnotationExampleValidateParamsStaticQualified.java:17:	Cross-Site Scripting (Reflected)
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/annotations/AnnotationExample2.java:11:	Cross-Site Scripting (Reflected)
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/annotations/AnnotationExampleValidateParams.java:17:	Cross-Site Scripting (Reflected)
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/annotations/AnnotationExampleValidateParamsStatic.java:17:	Cross-Site Scripting (Reflected)
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/annotations/AnnotationExampleValidateParamsStaticOtherClass.java:11:	Cross-Site Scripting (Reflected)
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/annotations/AnnotationExampleValidateParamsQualified.java:17:	Cross-Site Scripting (Reflected)
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.15 sec
+Running com.gdssecurity.pmd.SanitizerWildcardImportTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec
+Running com.gdssecurity.pmd.SanitizersTest
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/cwe931xss/XSSSanitizers.java:15:	Cross-Site Scripting
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/cwe931xss/XSSSanitizersParseInt.java:15:	Cross-Site Scripting
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.093 sec <<< FAILURE!
+testSanitizerParseInt(com.gdssecurity.pmd.SanitizersTest)  Time elapsed: 0.03 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<0> but was:<1>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:645)
+	at org.junit.Assert.assertEquals(Assert.java:631)
+	at com.gdssecurity.pmd.SanitizersTest.testSanitizerParseInt(SanitizersTest.java:48)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+Running com.gdssecurity.pmd.CWE113HttpResponseSplittingTest
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/cwe113responsesplitting/TestRedirectServlet.java:17:	HTTP Response Splitting
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/cwe113responsesplitting/TestRedirectServlet.java:17:	Unvalidated Redirect
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 sec
+Running com.gdssecurity.pmd.InheritanceTest
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/inheritance/Children.java:15:	Sql Injection
+/root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/src/test/java/resources/inheritance/Children.java:19:	Sql Injection
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.031 sec
+
+Results :
+
+Failed tests:   testSanitizerParseInt(com.gdssecurity.pmd.SanitizersTest): expected:<0> but was:<1>
+
+Tests run: 59, Failures: 1, Errors: 0, Skipped: 1
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 10.972 s
+[INFO] Finished at: 2018-11-15T21:14:02+01:00
+[INFO] Final Memory: 22M/399M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (default-test) on project pmd-gds: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/albfernandez/GDS-PMD-Security-Rules/451155169/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

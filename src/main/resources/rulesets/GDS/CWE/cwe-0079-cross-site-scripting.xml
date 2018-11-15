@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleset name="A2 - Cross-Site Scripting" language="java"
+	xmlns="http://pmd.sf.net/ruleset/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://pmd.sf.net/ruleset_xml_schema.xsd"
+	xsi:schemaLocation="http://pmd.sf.net/ruleset/1.0.0 http://pmd.sf.net/ruleset_xml_schema.xsd">
+
+	<description>
+   		This file is part of the GDS PMD Secure Coding Ruleset.
+   		
+   		This ruleset contains rules that are intended to detect Cross-Site Scripting.
+   </description>
+
+	<rule class="com.gdssecurity.pmd.rules.dfa.DfaSecurityRule" name="CrossSiteScripting"
+		message="Cross-Site Scripting" dfa="true" typeResolution="true"
+		externalInfoUrl="https://cwe.mitre.org/data/definitions/79.html">
+		<description>
+	This rule utilizes the PMD data flow analysis (DFA) layer to help trace input from source to sink. 
+	PMD is unable to track data flow from source to sink across files. 
+	Therefore, the scope of analysis is limited to a single file and even within that a single method (i.e. PMD DFA is intraprocedural).
+	
+	Specifically, it is configured with sinks that might suggest a potential Cross-Site Scripting vulnerability. Additional sinks should be added for increased coverage.	
+      </description>
+
+		<priority>1</priority>
+
+		<properties>
+			<property name="sinks">
+				<value>
+         		|javax.servlet.jsp.JspWriter.print
+         		|javax.servlet.jsp.JspWriter.println
+         		|javax.servlet.jsp.JspWriter.write
+         		|java.io.PrintWriter.print
+         		|java.io.PrintWriter.println
+         		|java.io.PrintWriter.write
+         		</value>
+			</property>
+			<property name="sanitizers">
+				<value>
+				|org.apache.commons.lang3.StringEscapeUtils.escapeHtml4
+         		|org.apache.commons.text.StringEscapeUtils.escapeHtml4
+         		|org.owasp.encoder.Encode.forHtml
+         		|org.owasp.encoder.Encode.forHtmlContent
+         		|org.owasp.encoder.Encode.forHtmlAttribute
+         		|org.owasp.encoder.Encode.forHtmlUnquotedAttribute
+         		|org.owasp.encoder.Encode.forXml
+         		|org.owasp.encoder.Encode.forXmlContent
+         		|org.owasp.encoder.Encode.forXmlAttribute
+         		|org.owasp.esapi.Encoder.encodeForHTML
+         		|org.owasp.esapi.Encoder.encodeForHTMLAttribute
+         		|org.owasp.esapi.Encoder.encodeForXML
+         		|org.owasp.esapi.Encoder.encodeForXMLAttribute
+         		|org.owasp.esapi.Encoder.
+         		|org.owasp.esapi.Encoder.
+         		|org.owasp.esapi.Encoder.
+         		|org.owasp.esapi.Encoder.
+         		|org.owasp.esapi.Encoder.
+         		|org.owasp.esapi.Encoder.		
+         		</value>
+			</property>
+		</properties>
+	</rule>
+</ruleset>
