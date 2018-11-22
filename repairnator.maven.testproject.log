@@ -1,0 +1,2650 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] GeoTools
+[INFO] Build tools for Geotools 2
+[INFO] Maven plugins for Geotools 2
+[INFO] JAR files collector
+[INFO] JJTree and JavaCC compilers plugin
+[INFO] Geotools modules
+[INFO] Geotools libraries
+[INFO] Open GIS Interfaces
+[INFO] Metadata
+[INFO] Sample data module
+[INFO] Referencing services
+[INFO] Geotools plugins
+[INFO] EPSG Authority Service using HSQL database
+[INFO] Main module
+[INFO] XML Parsing Support
+[INFO] Geotools extensions
+[INFO] XML Parsing
+[INFO] XML Parsing
+[INFO] Feature Based Graphs and Networks
+[INFO] XML Code Generation Support
+[INFO] Grid Coverage module
+[INFO] EPSG Authority Service using WKT file
+[INFO] OGC CQL to Filter parser
+[INFO] Property File DataStore
+[INFO] GeoTIFF grid coverage exchange module
+[INFO] JDBC DataStore Support
+[INFO] JDBC DataStore Plugins
+[INFO] H2 DataStore
+[INFO] Oracle DataStore
+[INFO] PostGIS DataStore
+[INFO] Shapefile module
+[INFO] Feature transforming feature source wrapper
+[INFO] WorldImage datasource module
+[INFO] imagemosaic datasource module
+[INFO] ArcGrid datasource module
+[INFO] GML2 XML Support
+[INFO] GML3 XML Support
+[INFO] Filter XML Support
+[INFO] SLD XML Support
+[INFO] Render
+[INFO] OGC Web Service Models
+[INFO] Xlink Model
+[INFO] Open Web Services Model
+[INFO] Filter Encoding Specification Model
+[INFO] Web Feature Service Model
+[INFO] Web Processing Service Model
+[INFO] Web Coverage Service Model
+[INFO] Catalog Services for the Web Model
+[INFO] Web Map Tile Service model
+[INFO] ArcSDE plugin
+[INFO] ArcSDE dummy api
+[INFO] ArcSDE support classes
+[INFO] ArcSDE DataStore plugin
+[INFO] Dynamic symbolizer module based on JFreeChart and Eastwood
+[INFO] Extensions to EPSG authority factory
+[INFO] EPSG Authority Service using PostgreSQL database
+[INFO] Feature-Pregeneralized
+[INFO] grass raster datasource module
+[INFO] ImageI/O-Ext based grid coverage readers
+[INFO] imagepyramid datasource module
+[INFO] imagemosaic-jdbc module
+[INFO] DB2 DataStore
+[INFO] MySQL DataStore
+[INFO] SQL Server DataStore
+[INFO] SpatiaLite DataStore
+[INFO] Teradata DataStore
+[INFO] JP2K based grid coverage readers
+[INFO] Dynamic symbolizers for SVG symbols
+[INFO] Coverage Multidimensional Module
+[INFO] API interfaces
+[INFO] NetCDF gridcoverage module
+[INFO] GRIB gridcoverage module
+[INFO] OWS XML Support
+[INFO] Filter Encoding Specification XML Support
+[INFO] GeoPackage Module
+[INFO] Application Schema Support
+[INFO] Application Schema Resolver
+[INFO] Complex Features Support
+[INFO] Application Schema DataAccess
+[INFO] MongoDB DataStore
+[INFO] Sample DataAccess
+[INFO] Brewer module
+[INFO] Vector grids
+[INFO] Validation Processor and Framework
+[INFO] Web Map Server client
+[INFO] Tile Client
+[INFO] WMTS XML Support
+[INFO] Geotools unsupported
+[INFO] Process
+[INFO] Swing widgets
+[INFO] Web Map Tile Service Client
+[INFO] KML XML Support
+[INFO] WFS XML Support
+[INFO] WCS XML Support
+[INFO] WPS XML Support
+[INFO] WMS XML Support
+[INFO] CSW XML Support
+[INFO] Process Feature
+[INFO] Process Raster
+[INFO] YSLD Parser/Encoder
+[INFO] GeoJSON Support
+[INFO] Process Geometry
+[INFO] MBTiles Module
+[INFO] WFS client module (NG)
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building GeoTools 21-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:regex-property (remove_gt_from_modulename) @ geotools ---
+[INFO] No match to regex 'gt-' found in 'org.geotools.geotools'. The initial value 'org.geotools.geotools' is left as-is...
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:regex-property (remove_dashes_from_modulename) @ geotools ---
+[INFO] No match to regex '-' found in 'org.geotools.geotools'. The initial value 'org.geotools.geotools' is left as-is...
+[INFO] 
+[INFO] --- directory-maven-plugin:0.3.1:highest-basedir (directories) @ geotools ---
+[INFO] Highest basedir set to: /root/workspace/geotools/geotools/457543343
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.2.5:revision (default) @ geotools ---
+[INFO] 
+[INFO] --- fmt-maven-plugin:2.4.0:format (default) @ geotools ---
+[warn] Source directory '/root/workspace/geotools/geotools/457543343/src/main/java' does not exist, ignoring.
+[warn] Test source directory '/root/workspace/geotools/geotools/457543343/src/test/java' does not exist, ignoring.
+[debug] Using AOSP style
+[INFO] Processed 0 files (0 reformatted).
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Build tools for Geotools 2 21-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:regex-property (remove_gt_from_modulename) @ build ---
+[INFO] No match to regex 'gt-' found in 'org.geotools.maven.build'. The initial value 'org.geotools.maven.build' is left as-is...
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:regex-property (remove_dashes_from_modulename) @ build ---
+[INFO] No match to regex '-' found in 'org.geotools.maven.build'. The initial value 'org.geotools.maven.build' is left as-is...
+[INFO] 
+[INFO] --- directory-maven-plugin:0.3.1:highest-basedir (directories) @ build ---
+[INFO] Highest basedir set to: /root/workspace/geotools/geotools/457543343
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.2.5:revision (default) @ build ---
+[INFO] 
+[INFO] --- fmt-maven-plugin:2.4.0:format (default) @ build ---
+[warn] Source directory '/root/workspace/geotools/geotools/457543343/build/src/main/java' does not exist, ignoring.
+[warn] Test source directory '/root/workspace/geotools/geotools/457543343/build/src/test/java' does not exist, ignoring.
+[debug] Using AOSP style
+[INFO] Processed 0 files (0 reformatted).
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Maven plugins for Geotools 2 21-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:regex-property (remove_gt_from_modulename) @ maven ---
+[INFO] No match to regex 'gt-' found in 'org.geotools.maven.maven'. The initial value 'org.geotools.maven.maven' is left as-is...
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:regex-property (remove_dashes_from_modulename) @ maven ---
+[INFO] No match to regex '-' found in 'org.geotools.maven.maven'. The initial value 'org.geotools.maven.maven' is left as-is...
+[INFO] 
+[INFO] --- directory-maven-plugin:0.3.1:highest-basedir (directories) @ maven ---
+[INFO] Highest basedir set to: /root/workspace/geotools/geotools/457543343
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.2.5:revision (default) @ maven ---
+[INFO] 
+[INFO] --- fmt-maven-plugin:2.4.0:format (default) @ maven ---
+[warn] Source directory '/root/workspace/geotools/geotools/457543343/build/maven/src/main/java' does not exist, ignoring.
+[warn] Test source directory '/root/workspace/geotools/geotools/457543343/build/maven/src/test/java' does not exist, ignoring.
+[debug] Using AOSP style
+[INFO] Processed 0 files (0 reformatted).
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building JAR files collector 21-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:regex-property (remove_gt_from_modulename) @ jar-collector ---
+[INFO] No match to regex 'gt-' found in 'org.geotools.maven.jar-collector'. The initial value 'org.geotools.maven.jar-collector' is left as-is...
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:regex-property (remove_dashes_from_modulename) @ jar-collector ---
+[INFO] 
+[INFO] --- directory-maven-plugin:0.3.1:highest-basedir (directories) @ jar-collector ---
+[INFO] Highest basedir set to: /root/workspace/geotools/geotools/457543343
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.2.5:revision (default) @ jar-collector ---
+[INFO] 
+[INFO] --- fmt-maven-plugin:2.4.0:format (default) @ jar-collector ---
+[warn] Test source directory '/root/workspace/geotools/geotools/457543343/build/maven/jar-collector/src/test/java' does not exist, ignoring.
+[debug] Using AOSP style
+[INFO] Processed 1 files (0 reformatted).
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ jar-collector ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/geotools/geotools/457543343/build/maven/jar-collector/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ jar-collector ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-plugin-plugin:3.4:descriptor (default-descriptor) @ jar-collector ---
+[INFO] Using 'UTF-8' encoding to read mojo metadata.
+[WARNING] org.geotools.maven.JarCollector#jarName:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] org.geotools.maven.JarCollector#outputDirectory:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] org.geotools.maven.JarCollector#project:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[INFO] Mojo extractor with id: java-javadoc found 1 mojo descriptors.
+[INFO] Mojo extractor with id: java-annotations found 0 mojo descriptors.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ jar-collector ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/geotools/geotools/457543343/build/maven/jar-collector/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ jar-collector ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.1:test (default-test) @ jar-collector ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building JJTree and JavaCC compilers plugin 21-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:regex-property (remove_gt_from_modulename) @ jjtree-javacc ---
+[INFO] No match to regex 'gt-' found in 'org.geotools.maven.jjtree-javacc'. The initial value 'org.geotools.maven.jjtree-javacc' is left as-is...
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:regex-property (remove_dashes_from_modulename) @ jjtree-javacc ---
+[INFO] 
+[INFO] --- directory-maven-plugin:0.3.1:highest-basedir (directories) @ jjtree-javacc ---
+[INFO] Highest basedir set to: /root/workspace/geotools/geotools/457543343
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.2.5:revision (default) @ jjtree-javacc ---
+[INFO] 
+[INFO] --- fmt-maven-plugin:2.4.0:format (default) @ jjtree-javacc ---
+[warn] Test source directory '/root/workspace/geotools/geotools/457543343/build/maven/jjtree-javacc/src/test/java' does not exist, ignoring.
+[debug] Using AOSP style
+[INFO] Processed 1 files (0 reformatted).
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ jjtree-javacc ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/geotools/geotools/457543343/build/maven/jjtree-javacc/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ jjtree-javacc ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-plugin-plugin:3.4:descriptor (default-descriptor) @ jjtree-javacc ---
+[INFO] Using 'UTF-8' encoding to read mojo metadata.
+[WARNING] org.geotools.maven.JJTreeJavaCC#nodeDirectory:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] org.geotools.maven.JJTreeJavaCC#outputDirectory:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] org.geotools.maven.JJTreeJavaCC#project:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] org.geotools.maven.JJTreeJavaCC#sourceDirectory:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] org.geotools.maven.JJTreeJavaCC#staleMillis:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] org.geotools.maven.JJTreeJavaCC#timestampDirectory:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[INFO] Mojo extractor with id: java-javadoc found 1 mojo descriptors.
+[INFO] Mojo extractor with id: java-annotations found 0 mojo descriptors.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ jjtree-javacc ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/geotools/geotools/457543343/build/maven/jjtree-javacc/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ jjtree-javacc ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.1:test (default-test) @ jjtree-javacc ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Geotools modules 21-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:regex-property (remove_gt_from_modulename) @ modules ---
+[INFO] No match to regex 'gt-' found in 'org.geotools.modules'. The initial value 'org.geotools.modules' is left as-is...
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:regex-property (remove_dashes_from_modulename) @ modules ---
+[INFO] No match to regex '-' found in 'org.geotools.modules'. The initial value 'org.geotools.modules' is left as-is...
+[INFO] 
+[INFO] --- directory-maven-plugin:0.3.1:highest-basedir (directories) @ modules ---
+[INFO] Highest basedir set to: /root/workspace/geotools/geotools/457543343
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.2.5:revision (default) @ modules ---
+[INFO] 
+[INFO] --- fmt-maven-plugin:2.4.0:format (default) @ modules ---
+[warn] Source directory '/root/workspace/geotools/geotools/457543343/modules/src/main/java' does not exist, ignoring.
+[warn] Test source directory '/root/workspace/geotools/geotools/457543343/modules/src/test/java' does not exist, ignoring.
+[debug] Using AOSP style
+[INFO] Processed 0 files (0 reformatted).
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Geotools libraries 21-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:regex-property (remove_gt_from_modulename) @ library ---
+[INFO] No match to regex 'gt-' found in 'org.geotools.library'. The initial value 'org.geotools.library' is left as-is...
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:regex-property (remove_dashes_from_modulename) @ library ---
+[INFO] No match to regex '-' found in 'org.geotools.library'. The initial value 'org.geotools.library' is left as-is...
+[INFO] 
+[INFO] --- directory-maven-plugin:0.3.1:highest-basedir (directories) @ library ---
+[INFO] Highest basedir set to: /root/workspace/geotools/geotools/457543343
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.2.5:revision (default) @ library ---
+[INFO] 
+[INFO] --- fmt-maven-plugin:2.4.0:format (default) @ library ---
+[warn] Source directory '/root/workspace/geotools/geotools/457543343/modules/library/src/main/java' does not exist, ignoring.
+[warn] Test source directory '/root/workspace/geotools/geotools/457543343/modules/library/src/test/java' does not exist, ignoring.
+[debug] Using AOSP style
+[INFO] Processed 0 files (0 reformatted).
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Open GIS Interfaces 21-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:regex-property (remove_gt_from_modulename) @ gt-opengis ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:regex-property (remove_dashes_from_modulename) @ gt-opengis ---
+[INFO] No match to regex '-' found in 'org.geotools.opengis'. The initial value 'org.geotools.opengis' is left as-is...
+[INFO] 
+[INFO] --- directory-maven-plugin:0.3.1:highest-basedir (directories) @ gt-opengis ---
+[INFO] Highest basedir set to: /root/workspace/geotools/geotools/457543343
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.2.5:revision (default) @ gt-opengis ---
+[INFO] 
+[INFO] --- fmt-maven-plugin:2.4.0:format (default) @ gt-opengis ---
+[debug] Using AOSP style
+[INFO] Processed 100 files (0 reformatted).
+[INFO] Processed 200 files (0 reformatted).
+[INFO] Processed 300 files (0 reformatted).
+[INFO] Processed 400 files (0 reformatted).
+[INFO] Processed 500 files (0 reformatted).
+[INFO] Processed 560 files (0 reformatted).
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ gt-opengis ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/geotools/geotools/457543343/modules/library/opengis/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ gt-opengis ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 556 source files to /root/workspace/geotools/geotools/457543343/modules/library/opengis/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ gt-opengis ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/geotools/geotools/457543343/modules/library/opengis/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ gt-opengis ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.1:test (default-test) @ gt-opengis ---
+[INFO] Downloading: http://download.osgeo.org/webdav/geotools/org/apache/maven/surefire/surefire-junit4/2.22.1/surefire-junit4-2.22.1.pom
+[INFO] Downloading: https://repo.boundlessgeo.com/snapshot/org/apache/maven/surefire/surefire-junit4/2.22.1/surefire-junit4-2.22.1.pom
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/org/apache/maven/surefire/surefire-junit4/2.22.1/surefire-junit4-2.22.1.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.22.1/surefire-junit4-2.22.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.22.1/surefire-junit4-2.22.1.pom (4 KB at 20.9 KB/sec)
+[INFO] Downloading: http://download.osgeo.org/webdav/geotools/org/apache/maven/surefire/surefire-providers/2.22.1/surefire-providers-2.22.1.pom
+[INFO] Downloading: https://repo.boundlessgeo.com/snapshot/org/apache/maven/surefire/surefire-providers/2.22.1/surefire-providers-2.22.1.pom
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/org/apache/maven/surefire/surefire-providers/2.22.1/surefire-providers-2.22.1.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.22.1/surefire-providers-2.22.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.22.1/surefire-providers-2.22.1.pom (3 KB at 57.8 KB/sec)
+[INFO] Downloading: http://download.osgeo.org/webdav/geotools/org/apache/maven/surefire/surefire-junit4/2.22.1/surefire-junit4-2.22.1.jar
+[INFO] Downloading: https://repo.boundlessgeo.com/snapshot/org/apache/maven/surefire/surefire-junit4/2.22.1/surefire-junit4-2.22.1.jar
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/snapshots/org/apache/maven/surefire/surefire-junit4/2.22.1/surefire-junit4-2.22.1.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.22.1/surefire-junit4-2.22.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.22.1/surefire-junit4-2.22.1.jar (83 KB at 1146.8 KB/sec)
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.opengis.filter.identity.VersionTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.081 s - in org.opengis.filter.identity.VersionTest
+[INFO] Running org.opengis.referencing.KeyConstantsTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.opengis.referencing.KeyConstantsTest
+[INFO] Running org.opengis.util.CodeListTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.399 s - in org.opengis.util.CodeListTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Metadata 21-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:regex-property (remove_gt_from_modulename) @ gt-metadata ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:regex-property (remove_dashes_from_modulename) @ gt-metadata ---
+[INFO] No match to regex '-' found in 'org.geotools.metadata'. The initial value 'org.geotools.metadata' is left as-is...
+[INFO] 
+[INFO] --- directory-maven-plugin:0.3.1:highest-basedir (directories) @ gt-metadata ---
+[INFO] Highest basedir set to: /root/workspace/geotools/geotools/457543343
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.2.5:revision (default) @ gt-metadata ---
+[INFO] 
+[INFO] --- fmt-maven-plugin:2.4.0:format (default) @ gt-metadata ---
+[debug] Using AOSP style
+[INFO] Processed 100 files (0 reformatted).
+[INFO] Processed 200 files (0 reformatted).
+[INFO] Processed 300 files (0 reformatted).
+[INFO] Processed 308 files (0 reformatted).
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ gt-metadata ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 16 resources
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ gt-metadata ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 265 source files to /root/workspace/geotools/geotools/457543343/modules/library/metadata/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ gt-metadata ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ gt-metadata ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.1:test (default-test) @ gt-metadata ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.geotools.metadata.CitationsTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.416 s - in org.geotools.metadata.CitationsTest
+[INFO] Running org.geotools.metadata.ISOTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.193 s - in org.geotools.metadata.ISOTest
+[INFO] Running org.geotools.metadata.MetadataStandardTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in org.geotools.metadata.MetadataStandardTest
+[INFO] Running org.geotools.metadata.PropertyAccessorTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in org.geotools.metadata.PropertyAccessorTest
+[INFO] Running org.geotools.metadata.math.FractionTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in org.geotools.metadata.math.FractionTest
+[INFO] Running org.geotools.metadata.math.GeometryTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in org.geotools.metadata.math.GeometryTest
+[INFO] Running org.geotools.metadata.math.XMathTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.067 s - in org.geotools.metadata.math.XMathTest
+[INFO] Running org.geotools.util.CanonicalSetTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.074 s - in org.geotools.util.CanonicalSetTest
+[INFO] Running org.geotools.util.ClassesTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in org.geotools.util.ClassesTest
+[INFO] Running org.geotools.util.DefaultObjectCacheTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.geotools.util.DefaultObjectCacheTest
+[INFO] Running org.geotools.util.DisjointSetTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.geotools.util.DisjointSetTest
+[INFO] Running org.geotools.util.GeoToolsUnitFormatRoundTripTest
+[INFO] Tests run: 40, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.154 s - in org.geotools.util.GeoToolsUnitFormatRoundTripTest
+[INFO] Running org.geotools.util.IntegerListTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in org.geotools.util.IntegerListTest
+[INFO] Running org.geotools.util.InternationalStringTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.035 s - in org.geotools.util.InternationalStringTest
+[INFO] Running org.geotools.util.KeySortedListTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 s - in org.geotools.util.KeySortedListTest
+[INFO] Running org.geotools.util.MeasurementRangeTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in org.geotools.util.MeasurementRangeTest
+[INFO] Running org.geotools.util.ObjectCacheEntryTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.geotools.util.ObjectCacheEntryTest
+[INFO] Running org.geotools.util.PartiallyOrderedSetTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in org.geotools.util.PartiallyOrderedSetTest
+[INFO] Running org.geotools.util.RangeSetTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.geotools.util.RangeSetTest
+[INFO] Running org.geotools.util.RangeTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in org.geotools.util.RangeTest
+[INFO] Running org.geotools.util.ResourceBundleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.geotools.util.ResourceBundleTest
+[INFO] Running org.geotools.util.SoftObjectCacheTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in org.geotools.util.SoftObjectCacheTest
+[INFO] Running org.geotools.util.SoftValueHashMapTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.361 s - in org.geotools.util.SoftValueHashMapTest
+[INFO] Running org.geotools.util.TableWriterTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 s - in org.geotools.util.TableWriterTest
+[INFO] Running org.geotools.util.URLsTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.037 s - in org.geotools.util.URLsTest
+[INFO] Running org.geotools.util.UtilitiesTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.geotools.util.UtilitiesTest
+[INFO] Running org.geotools.util.VersionTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.geotools.util.VersionTest
+[INFO] Running org.geotools.util.WeakObjectCacheTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.geotools.util.WeakObjectCacheTest
+[INFO] Running org.geotools.util.WeakValueHashMapTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.936 s - in org.geotools.util.WeakValueHashMapTest
+[INFO] Running org.geotools.util.decorate.AbstractDecoratorTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.geotools.util.decorate.AbstractDecoratorTest
+[INFO] Running org.geotools.util.factory.AbstractFactoryTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 s - in org.geotools.util.factory.AbstractFactoryTest
+[INFO] Running org.geotools.util.factory.FactoryIteratorProviderTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.061 s - in org.geotools.util.factory.FactoryIteratorProviderTest
+[INFO] Running org.geotools.util.factory.FactoryRegistryTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 s - in org.geotools.util.factory.FactoryRegistryTest
+[INFO] Running org.geotools.util.factory.GeoToolsTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 s - in org.geotools.util.factory.GeoToolsTest
+[INFO] Running org.geotools.util.logging.LoggingAdapterTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.geotools.util.logging.LoggingAdapterTest
+[INFO] Running org.geotools.util.logging.LoggingTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.048 s - in org.geotools.util.logging.LoggingTest
+[INFO] Running org.geotools.util.logging.MonolineFormatterTest
+[WARNING] Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0 s - in org.geotools.util.logging.MonolineFormatterTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[WARNING] Tests run: 162, Failures: 0, Errors: 0, Skipped: 1
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Sample data module 21-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:regex-property (remove_gt_from_modulename) @ gt-sample-data ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:regex-property (remove_dashes_from_modulename) @ gt-sample-data ---
+[INFO] 
+[INFO] --- directory-maven-plugin:0.3.1:highest-basedir (directories) @ gt-sample-data ---
+[INFO] Highest basedir set to: /root/workspace/geotools/geotools/457543343
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.2.5:revision (default) @ gt-sample-data ---
+[INFO] 
+[INFO] --- fmt-maven-plugin:2.4.0:format (default) @ gt-sample-data ---
+[warn] Test source directory '/root/workspace/geotools/geotools/457543343/modules/library/sample-data/src/test/java' does not exist, ignoring.
+[debug] Using AOSP style
+[INFO] Processed 6 files (0 reformatted).
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ gt-sample-data ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 138 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ gt-sample-data ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ gt-sample-data ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/geotools/geotools/457543343/modules/library/sample-data/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ gt-sample-data ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.1:test (default-test) @ gt-sample-data ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Referencing services 21-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:regex-property (remove_gt_from_modulename) @ gt-referencing ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:regex-property (remove_dashes_from_modulename) @ gt-referencing ---
+[INFO] No match to regex '-' found in 'org.geotools.referencing'. The initial value 'org.geotools.referencing' is left as-is...
+[INFO] 
+[INFO] --- directory-maven-plugin:0.3.1:highest-basedir (directories) @ gt-referencing ---
+[INFO] Highest basedir set to: /root/workspace/geotools/geotools/457543343
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.2.5:revision (default) @ gt-referencing ---
+[INFO] 
+[INFO] --- fmt-maven-plugin:2.4.0:format (default) @ gt-referencing ---
+[debug] Using AOSP style
+[INFO] Processed 100 files (0 reformatted).
+[INFO] Processed 200 files (0 reformatted).
+[INFO] Processed 300 files (0 reformatted).
+[INFO] Processed 390 files (0 reformatted).
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ gt-referencing ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 13 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ gt-referencing ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ gt-referencing ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 50 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ gt-referencing ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.1:test (default-test) @ gt-referencing ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.geotools.geometry.DirectPositionTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.523 s - in org.geotools.geometry.DirectPositionTest
+[INFO] Running org.geotools.geometry.Envelope2DTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.137 s - in org.geotools.geometry.Envelope2DTest
+[INFO] Running org.geotools.geometry.GeneralEnvelopeTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.geotools.geometry.GeneralEnvelopeTest
+[INFO] Running org.geotools.measure.FormatTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.046 s - in org.geotools.measure.FormatTest
+[INFO] Running org.geotools.measure.UnitsTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.124 s - in org.geotools.measure.UnitsTest
+[INFO] Running org.geotools.parameter.ImagingParametersTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 s - in org.geotools.parameter.ImagingParametersTest
+[INFO] Running org.geotools.parameter.ParametersTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.109 s - in org.geotools.parameter.ParametersTest
+[INFO] Running org.geotools.referencing.CrsTest
+[WARNING] Tests run: 15, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.189 s - in org.geotools.referencing.CrsTest
+[INFO] Running org.geotools.referencing.FactoriesTest
+
+Testing CRS creations
+---------------------
+
+create Coodinate Reference System....1: 
+
+create Coodinate Reference System....2: 
+SPHEROID["Airy1830", 6377563.396, 299.3249753150345]
+
+create Coodinate Reference System....3: 
+PRIMEM["Greenwich", 0.0]
+
+create Coodinate Reference System....4: 
+DATUM["Airy1830", 
+  SPHEROID["Airy1830", 6377563.396, 299.3249753150345]]
+
+create Coodinate Reference System....5: 
+EllipsoidalCS["Ellipsoidal", 
+  AXIS["Longitude", EAST], 
+  AXIS["Latitude", NORTH]]
+
+create Coodinate Reference System....6: 
+GEOGCS["Airy1830", 
+  DATUM["Airy1830", 
+    SPHEROID["Airy1830", 6377563.396, 299.3249753150345]], 
+  PRIMEM["Greenwich", 0.0], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Longitude", EAST], 
+  AXIS["Latitude", NORTH]]
+
+create Coodinate System....7: 
+Transverse_Mercator : semi_major         = 6377563.396
+                      semi_minor         = 6356256.91 
+                      central_meridian   = 49.0       
+                      latitude_of_origin = -2.0       
+                      scale_factor       = 1.0        
+                      false_easting      = 400000.0   
+                      false_northing     = -100000.0  
+
+
+create Coodinate Reference System....8: 
+CartesianCS["Cartesian", 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH]]
+
+create Coodinate System....9: 
+PROJCS["Great_Britian_National_Grid", 
+  GEOGCS["Airy1830", 
+    DATUM["Airy1830", 
+      SPHEROID["Airy1830", 6377563.396, 299.3249753150345]], 
+    PRIMEM["Greenwich", 0.0], 
+    UNIT["degree", 0.017453292519943295], 
+    AXIS["Longitude", EAST], 
+    AXIS["Latitude", NORTH]], 
+  PROJECTION["Transverse_Mercator"], 
+  PARAMETER["central_meridian", 48.99999999999999], 
+  PARAMETER["latitude_of_origin", -2.0], 
+  PARAMETER["scale_factor", 1.0], 
+  PARAMETER["false_easting", 400000.0], 
+  PARAMETER["false_northing", -100000.0], 
+  UNIT["m", 1.0], 
+  AXIS["Easting", EAST], 
+  AXIS["Northing", NORTH]]
+
+Testing classification names
+----------------------------
+Equidistant_Cylindrical
+Equidistant Cylindrical (Spherical)
+Mercator_1SP
+Mercator_2SP
+Popular Visualisation Pseudo Mercator
+Transverse_Mercator
+Transverse Mercator (South Orientated)
+Oblique_Mercator
+Hotine_Oblique_Mercator
+Lambert_Azimuthal_Equal_Area
+Orthographic
+Stereographic
+Oblique_Stereographic
+Polar_Stereographic
+Polar Stereographic (variant B)
+Stereographic_North_Pole
+Stereographic_South_Pole
+New_Zealand_Map_Grid
+Krovak
+Cassini_Soldner
+Polyconic
+Robinson
+Winkel_Tripel
+Aitoff
+Eckert_IV
+Mollweide
+Wagner_IV
+Wagner_V
+Gnomonic
+World_Van_der_Grinten_I
+Sinusoidal
+General_Oblique
+MeteosatSG
+GEOS
+Rotated_Pole
+Azimuthal_Equidistant
+Cylindrical_Equal_Area
+Behrmann
+Lambert Cylindrical Equal Area (Spherical)
+Equal Earth
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.074 s - in org.geotools.referencing.FactoriesTest
+[INFO] Running org.geotools.referencing.GeodeticCalculatorTest
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.213 s - in org.geotools.referencing.GeodeticCalculatorTest
+[INFO] Running org.geotools.referencing.IdentifiedObjectTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.geotools.referencing.IdentifiedObjectTest
+[INFO] Running org.geotools.referencing.PredefinedObjectsTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.047 s - in org.geotools.referencing.PredefinedObjectsTest
+[INFO] Running org.geotools.referencing.ScriptTest
+[WARNING] Tests run: 35, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 0.35 s - in org.geotools.referencing.ScriptTest
+[INFO] Running org.geotools.referencing.cs.AbstractCSTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.geotools.referencing.cs.AbstractCSTest
+[INFO] Running org.geotools.referencing.cs.ComparableAxisWrapperTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.geotools.referencing.cs.ComparableAxisWrapperTest
+[INFO] Running org.geotools.referencing.cs.DefaultCartesianCSTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.geotools.referencing.cs.DefaultCartesianCSTest
+[INFO] Running org.geotools.referencing.cs.DefaultCoordinateSystemAxisTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.geotools.referencing.cs.DefaultCoordinateSystemAxisTest
+[INFO] Running org.geotools.referencing.cs.DirectionAlongMeridianTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.geotools.referencing.cs.DirectionAlongMeridianTest
+[INFO] Running org.geotools.referencing.datum.DefaultTemporalDatumTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.geotools.referencing.datum.DefaultTemporalDatumTest
+[INFO] Running org.geotools.referencing.factory.AllAuthoritiesFactoryTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.04 s - in org.geotools.referencing.factory.AllAuthoritiesFactoryTest
+[INFO] Running org.geotools.referencing.factory.AuthorityFactoryProxyTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.geotools.referencing.factory.AuthorityFactoryProxyTest
+[INFO] Running org.geotools.referencing.factory.HTTP_AuthorityFactoryTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.geotools.referencing.factory.HTTP_AuthorityFactoryTest
+[INFO] Running org.geotools.referencing.factory.HTTP_URI_AuthorityFactoryTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 s - in org.geotools.referencing.factory.HTTP_URI_AuthorityFactoryTest
+[INFO] Running org.geotools.referencing.factory.HTTP_URI_ParserTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.geotools.referencing.factory.HTTP_URI_ParserTest
+[INFO] Running org.geotools.referencing.factory.URN_AuthorityFactoryTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 s - in org.geotools.referencing.factory.URN_AuthorityFactoryTest
+[INFO] Running org.geotools.referencing.factory.URN_ParserTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.geotools.referencing.factory.URN_ParserTest
+[INFO] Running org.geotools.referencing.factory.epsg.CartesianAuthorityFactoryTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in org.geotools.referencing.factory.epsg.CartesianAuthorityFactoryTest
+[INFO] Running org.geotools.referencing.factory.epsg.CoordinateOperationFactoryUsingWKTTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 s - in org.geotools.referencing.factory.epsg.CoordinateOperationFactoryUsingWKTTest
+[INFO] Running org.geotools.referencing.factory.epsg.FactoryUsingWktTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.geotools.referencing.factory.epsg.FactoryUsingWktTest
+[INFO] Running org.geotools.referencing.factory.epsg.FallbackAuthorityFactoryTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.085 s - in org.geotools.referencing.factory.epsg.FallbackAuthorityFactoryTest
+[INFO] Running org.geotools.referencing.factory.gridshift.NTv2GridShiftFactoryTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 s - in org.geotools.referencing.factory.gridshift.NTv2GridShiftFactoryTest
+[INFO] Running org.geotools.referencing.factory.wms.AUTOTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 s - in org.geotools.referencing.factory.wms.AUTOTest
+[INFO] Running org.geotools.referencing.factory.wms.CRSTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in org.geotools.referencing.factory.wms.CRSTest
+[INFO] Running org.geotools.referencing.operation.CoordinateOperationFactoryTest
+[INFO] Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.051 s - in org.geotools.referencing.operation.CoordinateOperationFactoryTest
+[INFO] Running org.geotools.referencing.operation.LinearConversionTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in org.geotools.referencing.operation.LinearConversionTest
+[INFO] Running org.geotools.referencing.operation.Transform3DTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.geotools.referencing.operation.Transform3DTest
+[INFO] Running org.geotools.referencing.operation.builder.BursaWolfTransformBuilderTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 s - in org.geotools.referencing.operation.builder.BursaWolfTransformBuilderTest
+[INFO] Running org.geotools.referencing.operation.builder.MathTransformBuilderTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.037 s - in org.geotools.referencing.operation.builder.MathTransformBuilderTest
+[INFO] Running org.geotools.referencing.operation.builder.TriangulationFactoryTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.geotools.referencing.operation.builder.TriangulationFactoryTest
+[INFO] Running org.geotools.referencing.operation.matrix.GeneralMatrixTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.geotools.referencing.operation.matrix.GeneralMatrixTest
+[INFO] Running org.geotools.referencing.operation.matrix.MatrixTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.geotools.referencing.operation.matrix.MatrixTest
+[INFO] Running org.geotools.referencing.operation.matrix.XAffineTransformTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.geotools.referencing.operation.matrix.XAffineTransformTest
+[INFO] Running org.geotools.referencing.operation.projection.AzimuthalEquidistantTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.geotools.referencing.operation.projection.AzimuthalEquidistantTest
+[INFO] Running org.geotools.referencing.operation.projection.CassiniSoldnerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.geotools.referencing.operation.projection.CassiniSoldnerTest
+[INFO] Running org.geotools.referencing.operation.projection.DirectCreationTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.geotools.referencing.operation.projection.DirectCreationTest
+[INFO] Running org.geotools.referencing.operation.projection.EsriNamedIdentifierAliasesTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in org.geotools.referencing.operation.projection.EsriNamedIdentifierAliasesTest
+[INFO] Running org.geotools.referencing.operation.projection.GeostationarySatelliteTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 s - in org.geotools.referencing.operation.projection.GeostationarySatelliteTest
+[INFO] Running org.geotools.referencing.operation.projection.MapProjectionTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.geotools.referencing.operation.projection.MapProjectionTest
+[INFO] Running org.geotools.referencing.operation.projection.MollweideProviderTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.geotools.referencing.operation.projection.MollweideProviderTest
+[INFO] Running org.geotools.referencing.operation.projection.NewZealandMapGridTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.geotools.referencing.operation.projection.NewZealandMapGridTest
+[INFO] Running org.geotools.referencing.operation.projection.SouthOrientedTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.geotools.referencing.operation.projection.SouthOrientedTest
+[INFO] Running org.geotools.referencing.operation.projection.TransverseMercatorTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.geotools.referencing.operation.projection.TransverseMercatorTest
+[INFO] Running org.geotools.referencing.operation.transform.EarthGravitationalModelTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.135 s - in org.geotools.referencing.operation.transform.EarthGravitationalModelTest
+[INFO] Running org.geotools.referencing.operation.transform.GeocentricTransformTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in org.geotools.referencing.operation.transform.GeocentricTransformTest
+[INFO] Running org.geotools.referencing.operation.transform.GeocentricTranslationTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.geotools.referencing.operation.transform.GeocentricTranslationTest
+[INFO] Running org.geotools.referencing.operation.transform.LocalizationGridTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.geotools.referencing.operation.transform.LocalizationGridTest
+[INFO] Running org.geotools.referencing.operation.transform.MathTransformTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.209 s - in org.geotools.referencing.operation.transform.MathTransformTest
+[INFO] Running org.geotools.referencing.operation.transform.MolodenskiTransformTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.geotools.referencing.operation.transform.MolodenskiTransformTest
+[INFO] Running org.geotools.referencing.operation.transform.NADCONGridShiftFactoryTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in org.geotools.referencing.operation.transform.NADCONGridShiftFactoryTest
+[INFO] Running org.geotools.referencing.operation.transform.NADCONTransformTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in org.geotools.referencing.operation.transform.NADCONTransformTest
+[INFO] Running org.geotools.referencing.operation.transform.NTv2TransformTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in org.geotools.referencing.operation.transform.NTv2TransformTest
+[INFO] Running org.geotools.referencing.operation.transform.PassthroughTransformTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.geotools.referencing.operation.transform.PassthroughTransformTest
+[INFO] Running org.geotools.referencing.operation.transform.ProjectiveTransform2DTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.geotools.referencing.operation.transform.ProjectiveTransform2DTest
+[INFO] Running org.geotools.referencing.operation.transform.SimilarityTransformProviderTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.geotools.referencing.operation.transform.SimilarityTransformProviderTest
+[INFO] Running org.geotools.referencing.operation.transform.WarpTransformTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.044 s - in org.geotools.referencing.operation.transform.WarpTransformTest
+[INFO] Running org.geotools.referencing.wkt.GeoToolsUnitFormatTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.geotools.referencing.wkt.GeoToolsUnitFormatTest
+[INFO] Running org.geotools.referencing.wkt.ParserTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.059 s - in org.geotools.referencing.wkt.ParserTest
+[INFO] Running org.geotools.referencing.wkt.SymbolsTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.geotools.referencing.wkt.SymbolsTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[WARNING] Tests run: 327, Failures: 0, Errors: 0, Skipped: 4
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Geotools plugins 21-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:regex-property (remove_gt_from_modulename) @ plugin ---
+[INFO] No match to regex 'gt-' found in 'org.geotools.plugin'. The initial value 'org.geotools.plugin' is left as-is...
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:regex-property (remove_dashes_from_modulename) @ plugin ---
+[INFO] No match to regex '-' found in 'org.geotools.plugin'. The initial value 'org.geotools.plugin' is left as-is...
+[INFO] 
+[INFO] --- directory-maven-plugin:0.3.1:highest-basedir (directories) @ plugin ---
+[INFO] Highest basedir set to: /root/workspace/geotools/geotools/457543343
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.2.5:revision (default) @ plugin ---
+[INFO] 
+[INFO] --- fmt-maven-plugin:2.4.0:format (default) @ plugin ---
+[warn] Source directory '/root/workspace/geotools/geotools/457543343/modules/plugin/src/main/java' does not exist, ignoring.
+[warn] Test source directory '/root/workspace/geotools/geotools/457543343/modules/plugin/src/test/java' does not exist, ignoring.
+[debug] Using AOSP style
+[INFO] Processed 0 files (0 reformatted).
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building EPSG Authority Service using HSQL database 21-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:regex-property (remove_gt_from_modulename) @ gt-epsg-hsql ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:regex-property (remove_dashes_from_modulename) @ gt-epsg-hsql ---
+[INFO] 
+[INFO] --- directory-maven-plugin:0.3.1:highest-basedir (directories) @ gt-epsg-hsql ---
+[INFO] Highest basedir set to: /root/workspace/geotools/geotools/457543343
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.2.5:revision (default) @ gt-epsg-hsql ---
+[INFO] 
+[INFO] --- fmt-maven-plugin:2.4.0:format (default) @ gt-epsg-hsql ---
+[debug] Using AOSP style
+[INFO] Processed 23 files (0 reformatted).
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ gt-epsg-hsql ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 8 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ gt-epsg-hsql ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ gt-epsg-hsql ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 5 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ gt-epsg-hsql ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.1:test (default-test) @ gt-epsg-hsql ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.geotools.referencing.CrsCreationDeadlockTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.536 s - in org.geotools.referencing.CrsCreationDeadlockTest
+[INFO] Running org.geotools.referencing.EsriLookupTest
+[INFO] Tests run: 36, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.84 s - in org.geotools.referencing.EsriLookupTest
+[INFO] Running org.geotools.referencing.HSQLCRSTest
+[INFO] Tests run: 39, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.325 s - in org.geotools.referencing.HSQLCRSTest
+[INFO] Running org.geotools.referencing.factory.OrderedAxisAuthorityFactoryTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.07 s - in org.geotools.referencing.factory.OrderedAxisAuthorityFactoryTest
+[INFO] Running org.geotools.referencing.factory.URN_EPSG_Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 s - in org.geotools.referencing.factory.URN_EPSG_Test
+[INFO] Running org.geotools.referencing.factory.epsg.hsql.DefaultFactoryTest
+[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 17.231 s - in org.geotools.referencing.factory.epsg.hsql.DefaultFactoryTest
+[INFO] Running org.geotools.referencing.factory.epsg.hsql.LongitudeFirstFactoryOverrideTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.084 s - in org.geotools.referencing.factory.epsg.hsql.LongitudeFirstFactoryOverrideTest
+[INFO] Running org.geotools.referencing.factory.epsg.hsql.OperationFactoryTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.225 s - in org.geotools.referencing.factory.epsg.hsql.OperationFactoryTest
+[INFO] Running org.geotools.referencing.factory.epsg.hsql.ThreadedHsqlEpsgFactoryTest
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.955 s - in org.geotools.referencing.factory.epsg.hsql.ThreadedHsqlEpsgFactoryTest
+[INFO] Running org.geotools.referencing.factory.epsg.hsql.ThreadedTransformTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.526 s - in org.geotools.referencing.factory.epsg.hsql.ThreadedTransformTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 122, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Main module 21-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:regex-property (remove_gt_from_modulename) @ gt-main ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:regex-property (remove_dashes_from_modulename) @ gt-main ---
+[INFO] No match to regex '-' found in 'org.geotools.main'. The initial value 'org.geotools.main' is left as-is...
+[INFO] 
+[INFO] --- directory-maven-plugin:0.3.1:highest-basedir (directories) @ gt-main ---
+[INFO] Highest basedir set to: /root/workspace/geotools/geotools/457543343
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.2.5:revision (default) @ gt-main ---
+[INFO] 
+[INFO] --- fmt-maven-plugin:2.4.0:format (default) @ gt-main ---
+[debug] Using AOSP style
+[INFO] Processed 100 files (0 reformatted).
+[INFO] Processed 200 files (0 reformatted).
+[INFO] Processed 300 files (0 reformatted).
+[INFO] Processed 400 files (0 reformatted).
+[INFO] Processed 500 files (0 reformatted).
+[INFO] Processed 600 files (0 reformatted).
+[INFO] Processed 700 files (0 reformatted).
+[INFO] Processed 800 files (0 reformatted).
+[INFO] Processed 900 files (0 reformatted).
+[INFO] Processed 1000 files (0 reformatted).
+[INFO] Processed 1100 files (0 reformatted).
+[INFO] Processed 1172 files (0 reformatted).
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ gt-main ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 13 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ gt-main ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 907 source files to /root/workspace/geotools/geotools/457543343/modules/library/main/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ gt-main ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 32 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ gt-main ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.1:test (default-test) @ gt-main ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.geotools.data.ArrayFeatureReaderTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.247 s - in org.geotools.data.ArrayFeatureReaderTest
+[INFO] Running org.geotools.data.DataAccessFinderTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 s - in org.geotools.data.DataAccessFinderTest
+[INFO] Running org.geotools.data.DataUtilitiesTest
+[INFO] Tests run: 40, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.722 s - in org.geotools.data.DataUtilitiesTest
+[INFO] Running org.geotools.data.DefaultFeatureResultsTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 s - in org.geotools.data.DefaultFeatureResultsTest
+[INFO] Running org.geotools.data.DiffWriterTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in org.geotools.data.DiffWriterTest
+[INFO] Running org.geotools.data.FeatureLockTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 s - in org.geotools.data.FeatureLockTest
+[INFO] Running org.geotools.data.FilteringFeatureReaderTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in org.geotools.data.FilteringFeatureReaderTest
+[INFO] Running org.geotools.data.MapInfoFileReaderTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 s - in org.geotools.data.MapInfoFileReaderTest
+[INFO] Running org.geotools.data.QueryTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.geotools.data.QueryTest
+[INFO] Running org.geotools.data.TransactionTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 s - in org.geotools.data.TransactionTest
+[INFO] Running org.geotools.data.WorldFileWriterTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in org.geotools.data.WorldFileWriterTest
+[INFO] Running org.geotools.data.collection.ListFeatureCollectionTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 s - in org.geotools.data.collection.ListFeatureCollectionTest
+[INFO] Running org.geotools.data.collection.SortedFeatureCollectionTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.047 s - in org.geotools.data.collection.SortedFeatureCollectionTest
+[INFO] Running org.geotools.data.collection.SpatialIndexFeatureCollectionTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.047 s - in org.geotools.data.collection.SpatialIndexFeatureCollectionTest
+[INFO] Running org.geotools.data.collection.TreeSetFeatureCollectionTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 s - in org.geotools.data.collection.TreeSetFeatureCollectionTest
+[INFO] Running org.geotools.data.crs.ForceCoordinateFeatureResultsTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 s - in org.geotools.data.crs.ForceCoordinateFeatureResultsTest
+[INFO] Running org.geotools.data.crs.ForceCoordinateSystemFeatureIteratorTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in org.geotools.data.crs.ForceCoordinateSystemFeatureIteratorTest
+[INFO] Running org.geotools.data.crs.ForceCoordinateSystemFeatureReaderTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in org.geotools.data.crs.ForceCoordinateSystemFeatureReaderTest
+[INFO] Running org.geotools.data.crs.ReprojectFeatureReaderTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.057 s - in org.geotools.data.crs.ReprojectFeatureReaderTest
+[INFO] Running org.geotools.data.crs.ReprojectFeatureResultsTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in org.geotools.data.crs.ReprojectFeatureResultsTest
+[INFO] Running org.geotools.data.memory.MemoryDataStoreBoundsTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.196 s - in org.geotools.data.memory.MemoryDataStoreBoundsTest
+[INFO] Running org.geotools.data.memory.MemoryDataStoreConcurrencyTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.geotools.data.memory.MemoryDataStoreConcurrencyTest
+[INFO] Running org.geotools.data.memory.MemoryDataStoreTest
+[INFO] Tests run: 50, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.765 s - in org.geotools.data.memory.MemoryDataStoreTest
+[INFO] Running org.geotools.data.memory.MemoryFeatureCollectionTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 s - in org.geotools.data.memory.MemoryFeatureCollectionTest
+[INFO] Running org.geotools.data.memory.MemoryFeatureReaderTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.geotools.data.memory.MemoryFeatureReaderTest
+[INFO] Running org.geotools.data.ows.ServiceExceptionParserTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.191 s - in org.geotools.data.ows.ServiceExceptionParserTest
+[INFO] Running org.geotools.data.ows.SimpleHttpClientTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.19 s - in org.geotools.data.ows.SimpleHttpClientTest
+[INFO] Running org.geotools.data.sort.SortedReaderTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.836 s - in org.geotools.data.sort.SortedReaderTest
+[INFO] Running org.geotools.data.store.ContentDataStoreTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.geotools.data.store.ContentDataStoreTest
+[INFO] Running org.geotools.data.store.ContentEntryTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.geotools.data.store.ContentEntryTest
+[INFO] Running org.geotools.data.store.ContentFeatureSourceEventsTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.geotools.data.store.ContentFeatureSourceEventsTest
+[INFO] Running org.geotools.data.store.ContentFeatureSourcePagingTest
+[INFO] Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in org.geotools.data.store.ContentFeatureSourcePagingTest
+[INFO] Running org.geotools.data.store.ContentFeatureSourceTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.geotools.data.store.ContentFeatureSourceTest
+[INFO] Running org.geotools.data.store.DecoratingDataStoreTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.geotools.data.store.DecoratingDataStoreTest
+[INFO] Running org.geotools.data.store.FilteringSimpleFeatureCollectionTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.geotools.data.store.FilteringSimpleFeatureCollectionTest
+[INFO] Running org.geotools.data.store.MaxFeaturesFeatureCollectionTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.geotools.data.store.MaxFeaturesFeatureCollectionTest
+[INFO] Running org.geotools.data.store.ReTypingFeatureCollectionTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 s - in org.geotools.data.store.ReTypingFeatureCollectionTest
+[INFO] Running org.geotools.data.store.ReprojectFeatureResultsTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 s - in org.geotools.data.store.ReprojectFeatureResultsTest
+[INFO] Running org.geotools.data.store.ReprojectingFeatureCollectionTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.171 s - in org.geotools.data.store.ReprojectingFeatureCollectionTest
+[INFO] Running org.geotools.data.util.BooleanConverterFactoryTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.geotools.data.util.BooleanConverterFactoryTest
+[INFO] Running org.geotools.data.util.CRSConverterFactoryTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.031 s - in org.geotools.data.util.CRSConverterFactoryTest
+[INFO] Running org.geotools.data.util.CharsetConverterFactoryTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in org.geotools.data.util.CharsetConverterFactoryTest
+[INFO] Running org.geotools.data.util.CollectionConverterFactoryTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.geotools.data.util.CollectionConverterFactoryTest
+[INFO] Running org.geotools.data.util.ColorConverterFactoryTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.geotools.data.util.ColorConverterFactoryTest
+[INFO] Running org.geotools.data.util.CommonsConverterFactoryTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.geotools.data.util.CommonsConverterFactoryTest
+[INFO] Running org.geotools.data.util.DataUrlHandlerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.geotools.data.util.DataUrlHandlerTest
+[INFO] Running org.geotools.data.util.EnumerationConverterTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.geotools.data.util.EnumerationConverterTest
+[INFO] Running org.geotools.data.util.GeometryConverterFactoryTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.geotools.data.util.GeometryConverterFactoryTest
+[INFO] Running org.geotools.data.util.GeometryTypeConverterTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 s - in org.geotools.data.util.GeometryTypeConverterTest
+[INFO] Running org.geotools.data.util.InterpolationConverterFactoryTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in org.geotools.data.util.InterpolationConverterFactoryTest
+[INFO] Running org.geotools.data.util.MeasureConverterTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.geotools.data.util.MeasureConverterTest
+[INFO] Running org.geotools.data.util.NameConverterTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.geotools.data.util.NameConverterTest
+[INFO] Running org.geotools.data.util.NumericConverterFactoryTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.geotools.data.util.NumericConverterFactoryTest
+[INFO] Running org.geotools.data.util.PercentageConverterFactoryTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.geotools.data.util.PercentageConverterFactoryTest
+[INFO] Running org.geotools.data.util.ScreenMapTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.geotools.data.util.ScreenMapTest
+[INFO] Running org.geotools.data.util.SubProgressListenerTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.geotools.data.util.SubProgressListenerTest
+[INFO] Running org.geotools.data.util.TemporalConverterFactoryTest
+[INFO] Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.21 s - in org.geotools.data.util.TemporalConverterFactoryTest
+[INFO] Running org.geotools.data.util.URConverterFactoryTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.111 s - in org.geotools.data.util.URConverterFactoryTest
+[INFO] Running org.geotools.data.view.DefaultViewTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in org.geotools.data.view.DefaultViewTest
+[INFO] Running org.geotools.factory.CommonFactoryFinderTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 s - in org.geotools.factory.CommonFactoryFinderTest
+[INFO] Running org.geotools.feature.AttributeBuilderTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 s - in org.geotools.feature.AttributeBuilderTest
+[INFO] Running org.geotools.feature.ComplexFeatureBuilderTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in org.geotools.feature.ComplexFeatureBuilderTest
+[INFO] Running org.geotools.feature.DateUtilTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.geotools.feature.DateUtilTest
+[INFO] Running org.geotools.feature.FeatureCollectionTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in org.geotools.feature.FeatureCollectionTest
+[INFO] Running org.geotools.feature.FeatureFlatTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.geotools.feature.FeatureFlatTest
+[INFO] Running org.geotools.feature.FeatureReaderIteratorTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.geotools.feature.FeatureReaderIteratorTest
+[INFO] Running org.geotools.feature.FeatureTypeTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in org.geotools.feature.FeatureTypeTest
+[INFO] Running org.geotools.feature.FeatureTypesTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 s - in org.geotools.feature.FeatureTypesTest
+[INFO] Running org.geotools.feature.NameImplTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.geotools.feature.NameImplTest
+[INFO] Running org.geotools.feature.collection.MaxSimpleFeatureCollectionTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.geotools.feature.collection.MaxSimpleFeatureCollectionTest
+[INFO] Running org.geotools.feature.collection.SubFeatureCollectionTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.geotools.feature.collection.SubFeatureCollectionTest
+[INFO] Running org.geotools.feature.simple.SimpleFeatureBuilderTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.geotools.feature.simple.SimpleFeatureBuilderTest
+[INFO] Running org.geotools.feature.simple.SimpleFeatureImplTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in org.geotools.feature.simple.SimpleFeatureImplTest
+[INFO] Running org.geotools.feature.simple.SimpleFeatureTypeImplTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 s - in org.geotools.feature.simple.SimpleFeatureTypeImplTest
+[INFO] Running org.geotools.feature.simple.SimpleTypeBuilderTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.geotools.feature.simple.SimpleTypeBuilderTest
+[INFO] Running org.geotools.feature.type.TypesTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.geotools.feature.type.TypesTest
+[INFO] Running org.geotools.feature.visitor.AverageVisitorTest
+[INFO] Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 s - in org.geotools.feature.visitor.AverageVisitorTest
+[INFO] Running org.geotools.feature.visitor.CalcResultTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.geotools.feature.visitor.CalcResultTest
+[INFO] Running org.geotools.feature.visitor.EqualAreaListVisitorTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.121 s - in org.geotools.feature.visitor.EqualAreaListVisitorTest
+[INFO] Running org.geotools.feature.visitor.EqualAreaListVisitorTest$ParametricBreaksTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.046 s - in org.geotools.feature.visitor.EqualAreaListVisitorTest$ParametricBreaksTest
+[INFO] Running org.geotools.feature.visitor.GroupByVisitorTest
+[INFO] Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 s - in org.geotools.feature.visitor.GroupByVisitorTest
+[INFO] Running org.geotools.feature.visitor.MedianVisitorTest
+[INFO] Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in org.geotools.feature.visitor.MedianVisitorTest
+[INFO] Running org.geotools.feature.visitor.SumAreaVisitorTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.geotools.feature.visitor.SumAreaVisitorTest
+[INFO] Running org.geotools.feature.visitor.SumVisitorTest
+[INFO] Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in org.geotools.feature.visitor.SumVisitorTest
+[INFO] Running org.geotools.feature.visitor.VisitorCalculationTest
+[INFO] Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.066 s - in org.geotools.feature.visitor.VisitorCalculationTest
+[INFO] Running org.geotools.filter.AreaFunctionTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.geotools.filter.AreaFunctionTest
+[INFO] Running org.geotools.filter.AttributeExpressionTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.geotools.filter.AttributeExpressionTest
+[INFO] Running org.geotools.filter.AttributeTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.geotools.filter.AttributeTest
+[INFO] Running org.geotools.filter.BetweenTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.geotools.filter.BetweenTest
+[INFO] Running org.geotools.filter.CapabilitiesTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 s - in org.geotools.filter.CapabilitiesTest
+[INFO] Running org.geotools.filter.ExpressionTest
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in org.geotools.filter.ExpressionTest
+[INFO] Running org.geotools.filter.FilterAttributeExtractorTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in org.geotools.filter.FilterAttributeExtractorTest
+[INFO] Running org.geotools.filter.FilterCapabilitiesTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in org.geotools.filter.FilterCapabilitiesTest
+[INFO] Running org.geotools.filter.FilterEqualsTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in org.geotools.filter.FilterEqualsTest
+[INFO] Running org.geotools.filter.FilterFactoryBeforeTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.geotools.filter.FilterFactoryBeforeTest
+[INFO] Running org.geotools.filter.FilterTest
+[INFO] Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.055 s - in org.geotools.filter.FilterTest
+[INFO] Running org.geotools.filter.FiltersTest
+[INFO] Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in org.geotools.filter.FiltersTest
+[INFO] Running org.geotools.filter.FunctionExpressionImplTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 s - in org.geotools.filter.FunctionExpressionImplTest
+[INFO] Running org.geotools.filter.FunctionFinderTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.geotools.filter.FunctionFinderTest
+[INFO] Running org.geotools.filter.FunctionImplTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.geotools.filter.FunctionImplTest
+[INFO] Running org.geotools.filter.FunctionToStringTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in org.geotools.filter.FunctionToStringTest
+[INFO] Running org.geotools.filter.GeometryFilterVisitorTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 s - in org.geotools.filter.GeometryFilterVisitorTest
+[INFO] Running org.geotools.filter.IsEqualsToImplTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.geotools.filter.IsEqualsToImplTest
+[INFO] Running org.geotools.filter.LiteralTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.geotools.filter.LiteralTest
+[INFO] Running org.geotools.filter.MathTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.geotools.filter.MathTest
+[INFO] Running org.geotools.filter.MultiFilterTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 s - in org.geotools.filter.MultiFilterTest
+[INFO] Running org.geotools.filter.expression.AddImplTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.geotools.filter.expression.AddImplTest
+[INFO] Running org.geotools.filter.expression.SimpleFeaturePropertyAccessorFactoryTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.geotools.filter.expression.SimpleFeaturePropertyAccessorFactoryTest
+[INFO] Running org.geotools.filter.expression.SimpleFeaturePropertyAccessorTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.geotools.filter.expression.SimpleFeaturePropertyAccessorTest
+[INFO] Running org.geotools.filter.function.CategorizeFunctionTest
+[WARNING] Tests run: 5, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.003 s - in org.geotools.filter.function.CategorizeFunctionTest
+[INFO] Running org.geotools.filter.function.ClassificationFunctionTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 s - in org.geotools.filter.function.ClassificationFunctionTest
+[INFO] Running org.geotools.filter.function.Collection_FunctionsTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.037 s - in org.geotools.filter.function.Collection_FunctionsTest
+[INFO] Running org.geotools.filter.function.DateDifferenceTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.geotools.filter.function.DateDifferenceTest
+[INFO] Running org.geotools.filter.function.DateFunctionTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.geotools.filter.function.DateFunctionTest
+[INFO] Running org.geotools.filter.function.EnvFunctionTest
+[INFO] Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.048 s - in org.geotools.filter.function.EnvFunctionTest
+[INFO] Running org.geotools.filter.function.EqualAreaFunctionTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.178 s - in org.geotools.filter.function.EqualAreaFunctionTest
+[INFO] Running org.geotools.filter.function.EqualAreaFunctionTest$ParametricBreaksTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.131 s - in org.geotools.filter.function.EqualAreaFunctionTest$ParametricBreaksTest
+[INFO] Running org.geotools.filter.function.EqualIntervalFunctionTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 s - in org.geotools.filter.function.EqualIntervalFunctionTest
+[INFO] Running org.geotools.filter.function.FilterFunctionPropertyTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.18 s - in org.geotools.filter.function.FilterFunctionPropertyTest
+[INFO] Running org.geotools.filter.function.FilterFunction_disjoint3DTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in org.geotools.filter.function.FilterFunction_disjoint3DTest
+[INFO] Running org.geotools.filter.function.FilterFunction_distance3DTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.geotools.filter.function.FilterFunction_distance3DTest
+[INFO] Running org.geotools.filter.function.FilterFunction_intersects3DTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.geotools.filter.function.FilterFunction_intersects3DTest
+[INFO] Running org.geotools.filter.function.FilterFunction_isWithinDistance3DTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.geotools.filter.function.FilterFunction_isWithinDistance3DTest
+[INFO] Running org.geotools.filter.function.FilterFunction_listMultiplyTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in org.geotools.filter.function.FilterFunction_listMultiplyTest
+[INFO] Running org.geotools.filter.function.FilterFunction_minimumCircleTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 s - in org.geotools.filter.function.FilterFunction_minimumCircleTest
+[INFO] Running org.geotools.filter.function.FilterFunction_minimumDiameterTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.geotools.filter.function.FilterFunction_minimumDiameterTest
+[INFO] Running org.geotools.filter.function.FilterFunction_minimumRectangleTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.geotools.filter.function.FilterFunction_minimumRectangleTest
+[INFO] Running org.geotools.filter.function.FilterFunction_octagonalEnvelopeTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in org.geotools.filter.function.FilterFunction_octagonalEnvelopeTest
+[INFO] Running org.geotools.filter.function.FilterFunction_offsetTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.geotools.filter.function.FilterFunction_offsetTest
+[INFO] Running org.geotools.filter.function.FilterFunction_setCRSTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.geotools.filter.function.FilterFunction_setCRSTest
+[INFO] Running org.geotools.filter.function.FunctionExpressionImplTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.geotools.filter.function.FunctionExpressionImplTest
+[INFO] Running org.geotools.filter.function.FunctionFactoryTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.045 s - in org.geotools.filter.function.FunctionFactoryTest
+[INFO] Running org.geotools.filter.function.GeometryFunctionFilterTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 s - in org.geotools.filter.function.GeometryFunctionFilterTest
+[INFO] Running org.geotools.filter.function.GeometryFunctionTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 s - in org.geotools.filter.function.GeometryFunctionTest
+[INFO] Running org.geotools.filter.function.IdFunctionTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.geotools.filter.function.IdFunctionTest
+[INFO] Running org.geotools.filter.function.InFunctionTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 s - in org.geotools.filter.function.InFunctionTest
+[INFO] Running org.geotools.filter.function.InterpolateFunctionTest
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 s - in org.geotools.filter.function.InterpolateFunctionTest
+[INFO] Running org.geotools.filter.function.JenksFunctionTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 s - in org.geotools.filter.function.JenksFunctionTest
+[INFO] Running org.geotools.filter.function.NumberFormatTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 s - in org.geotools.filter.function.NumberFormatTest
+[INFO] Running org.geotools.filter.function.PropertyExistsFunctionTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 s - in org.geotools.filter.function.PropertyExistsFunctionTest
+[INFO] Running org.geotools.filter.function.QuantileFunctionTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 s - in org.geotools.filter.function.QuantileFunctionTest
+[INFO] Running org.geotools.filter.function.RecodeFunctionTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.geotools.filter.function.RecodeFunctionTest
+[INFO] Running org.geotools.filter.function.StandardDeviationFunctionTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 s - in org.geotools.filter.function.StandardDeviationFunctionTest
+[INFO] Running org.geotools.filter.function.StaticGeometryTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.geotools.filter.function.StaticGeometryTest
+[INFO] Running org.geotools.filter.function.StringFunctionTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.geotools.filter.function.StringFunctionTest
+[INFO] Running org.geotools.filter.function.StringTemplateFunctionTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.geotools.filter.function.StringTemplateFunctionTest
+[INFO] Running org.geotools.filter.function.UniqueIntervalFunctionTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 s - in org.geotools.filter.function.UniqueIntervalFunctionTest
+[INFO] Running org.geotools.filter.function.color.ColorFunctionsTest
+[INFO] Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 s - in org.geotools.filter.function.color.ColorFunctionsTest
+[INFO] Running org.geotools.filter.function.color.HSLColorTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.geotools.filter.function.color.HSLColorTest
+[INFO] Running org.geotools.filter.function.math.FilterFunction_Test
+[INFO] Tests run: 34, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 s - in org.geotools.filter.function.math.FilterFunction_Test
+[INFO] Running org.geotools.filter.function.math.ModuloFunctionTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.geotools.filter.function.math.ModuloFunctionTest
+[INFO] Running org.geotools.filter.function.string.StringFunctionsTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.geotools.filter.function.string.StringFunctionsTest
+[INFO] Running org.geotools.filter.function.string.StringInFunctionTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.geotools.filter.function.string.StringInFunctionTest
+[INFO] Running org.geotools.filter.function.string.URLEncodeFunctionTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.geotools.filter.function.string.URLEncodeFunctionTest
+[INFO] Running org.geotools.filter.spatial.BBOX3DImplTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in org.geotools.filter.spatial.BBOX3DImplTest
+[INFO] Running org.geotools.filter.spatial.BBOXImplTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in org.geotools.filter.spatial.BBOXImplTest
+[INFO] Running org.geotools.filter.spatial.DefaultCRSFilterVisitorTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 s - in org.geotools.filter.spatial.DefaultCRSFilterVisitorTest
+[INFO] Running org.geotools.filter.spatial.ReprojectingFilterVisitorTest
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.084 s - in org.geotools.filter.spatial.ReprojectingFilterVisitorTest
+[INFO] Running org.geotools.filter.temporal.AfterImplTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.geotools.filter.temporal.AfterImplTest
+[INFO] Running org.geotools.filter.temporal.BeforeImplTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in org.geotools.filter.temporal.BeforeImplTest
+[INFO] Running org.geotools.filter.temporal.BeginsImplTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.geotools.filter.temporal.BeginsImplTest
+[INFO] Running org.geotools.filter.temporal.BegunByImplTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.geotools.filter.temporal.BegunByImplTest
+[INFO] Running org.geotools.filter.temporal.DuringImplTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.geotools.filter.temporal.DuringImplTest
+[INFO] Running org.geotools.filter.temporal.EndedByImplTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.geotools.filter.temporal.EndedByImplTest
+[INFO] Running org.geotools.filter.temporal.EndsImplTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.geotools.filter.temporal.EndsImplTest
+[INFO] Running org.geotools.filter.temporal.MeetsImplTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.geotools.filter.temporal.MeetsImplTest
+[INFO] Running org.geotools.filter.temporal.MetByImplTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.geotools.filter.temporal.MetByImplTest
+[INFO] Running org.geotools.filter.temporal.OverlappedByTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in org.geotools.filter.temporal.OverlappedByTest
+[INFO] Running org.geotools.filter.temporal.TContainsImplTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.geotools.filter.temporal.TContainsImplTest
+[INFO] Running org.geotools.filter.temporal.TEqualsImplTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.geotools.filter.temporal.TEqualsImplTest
+[INFO] Running org.geotools.filter.temporal.TOverlapsImplTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.geotools.filter.temporal.TOverlapsImplTest
+[INFO] Running org.geotools.filter.visitor.BindingFilterVisitorTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.geotools.filter.visitor.BindingFilterVisitorTest
+[INFO] Running org.geotools.filter.visitor.CapabilitiesFilterSplitterFunctionTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in org.geotools.filter.visitor.CapabilitiesFilterSplitterFunctionTest
+[INFO] Running org.geotools.filter.visitor.CapabilitiesFilterSplitterSpatialTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in org.geotools.filter.visitor.CapabilitiesFilterSplitterSpatialTest
+[INFO] Running org.geotools.filter.visitor.CapabilitiesFilterSplitterTest
+[INFO] Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.122 s - in org.geotools.filter.visitor.CapabilitiesFilterSplitterTest
+[INFO] Running org.geotools.filter.visitor.DuplicateFilterVisitorTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in org.geotools.filter.visitor.DuplicateFilterVisitorTest
+[INFO] Running org.geotools.filter.visitor.DuplicatorFilterVisitorTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.geotools.filter.visitor.DuplicatorFilterVisitorTest
+[INFO] Running org.geotools.filter.visitor.ExpressionTypeVisitorTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.geotools.filter.visitor.ExpressionTypeVisitorTest
+[INFO] Running org.geotools.filter.visitor.ExtractBoundsFilterVisitorTest
+[INFO] Tests run: 30, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 s - in org.geotools.filter.visitor.ExtractBoundsFilterVisitorTest
+[INFO] Running org.geotools.filter.visitor.FilterVisitorTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in org.geotools.filter.visitor.FilterVisitorTest
+[INFO] Running org.geotools.filter.visitor.LiteralDemultiplyingFilterVisitorTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 s - in org.geotools.filter.visitor.LiteralDemultiplyingFilterVisitorTest
+[INFO] Running org.geotools.filter.visitor.PostPreProcessFilterSplitterVisitorFunctionTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in org.geotools.filter.visitor.PostPreProcessFilterSplitterVisitorFunctionTest
+[INFO] Running org.geotools.filter.visitor.PostPreProcessFilterSplittingVisitorSpatialTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in org.geotools.filter.visitor.PostPreProcessFilterSplittingVisitorSpatialTest
+[INFO] Running org.geotools.filter.visitor.PostPreProcessFilterSplittingVisitorTest
+[INFO] Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.126 s - in org.geotools.filter.visitor.PostPreProcessFilterSplittingVisitorTest
+[INFO] Running org.geotools.filter.visitor.PropertyNameResolvingFilterVisitorTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.geotools.filter.visitor.PropertyNameResolvingFilterVisitorTest
+[INFO] Running org.geotools.filter.visitor.RangeCombinerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in org.geotools.filter.visitor.RangeCombinerTest
+[INFO] Running org.geotools.filter.visitor.SimplifyingFilterVisitorTest
+[INFO] Tests run: 48, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.047 s - in org.geotools.filter.visitor.SimplifyingFilterVisitorTest
+[INFO] Running org.geotools.filter.visitor.SpatialFilterVisitorTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.geotools.filter.visitor.SpatialFilterVisitorTest
+[INFO] Running org.geotools.geometry.iso.text.WKTParserTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 s - in org.geotools.geometry.iso.text.WKTParserTest
+[INFO] Running org.geotools.geometry.jts.CircularArcTest
+[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.293 s - in org.geotools.geometry.jts.CircularArcTest
+[INFO] Running org.geotools.geometry.jts.CoordinateSequenceTransformerTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 s - in org.geotools.geometry.jts.CoordinateSequenceTransformerTest
+[INFO] Running org.geotools.geometry.jts.CurvedGeometryTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 s - in org.geotools.geometry.jts.CurvedGeometryTest
+[INFO] Running org.geotools.geometry.jts.DecimatorTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in org.geotools.geometry.jts.DecimatorTest
+[INFO] Running org.geotools.geometry.jts.GeometriesTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.geotools.geometry.jts.GeometriesTest
+[INFO] Running org.geotools.geometry.jts.GeometryBuilderTest
+[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.geotools.geometry.jts.GeometryBuilderTest
+[INFO] Running org.geotools.geometry.jts.GeometryClipperTest
+[INFO] Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.045 s - in org.geotools.geometry.jts.GeometryClipperTest
+[INFO] Running org.geotools.geometry.jts.GeometryCollectorTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in org.geotools.geometry.jts.GeometryCollectorTest
+[INFO] Running org.geotools.geometry.jts.GeometryCoordinateSequenceTransformerTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 s - in org.geotools.geometry.jts.GeometryCoordinateSequenceTransformerTest
+[INFO] Running org.geotools.geometry.jts.JTSSmoothTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in org.geotools.geometry.jts.JTSSmoothTest
+[INFO] Running org.geotools.geometry.jts.JTSTest
+[INFO] Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 s - in org.geotools.geometry.jts.JTSTest
+[INFO] Running org.geotools.geometry.jts.LiteShapeTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in org.geotools.geometry.jts.LiteShapeTest
+[INFO] Running org.geotools.geometry.jts.OffsetCurveBuilderTest
+[INFO] Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.106 s - in org.geotools.geometry.jts.OffsetCurveBuilderTest
+[INFO] Running org.geotools.geometry.jts.PointIteratorTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.geotools.geometry.jts.PointIteratorTest
+[INFO] Running org.geotools.geometry.jts.ReferencedEnvelope3DTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.geotools.geometry.jts.ReferencedEnvelope3DTest
+[INFO] Running org.geotools.geometry.jts.ReferencedEnvelopeTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in org.geotools.geometry.jts.ReferencedEnvelopeTest
+[INFO] Running org.geotools.geometry.jts.TransformedShapeTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.geotools.geometry.jts.TransformedShapeTest
+[INFO] Running org.geotools.geometry.jts.WKTReader2Test
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in org.geotools.geometry.jts.WKTReader2Test
+[INFO] Running org.geotools.geometry.jts.WKTWriter2Test
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in org.geotools.geometry.jts.WKTWriter2Test
+[INFO] Running org.geotools.geometry.jts.coordinatesequence.CoordinateSequencesTest
+[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.geotools.geometry.jts.coordinatesequence.CoordinateSequencesTest
+[INFO] Running org.geotools.ows.ServiceExceptionTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.geotools.ows.ServiceExceptionTest
+[INFO] Running org.geotools.renderer.crs.ProjectionHandlerTest
+[INFO] Tests run: 47, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.33 s - in org.geotools.renderer.crs.ProjectionHandlerTest
+[INFO] Running org.geotools.styling.ContrastEnhancementImplTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.geotools.styling.ContrastEnhancementImplTest
+[INFO] Running org.geotools.styling.DefaultResourceLocatorTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.geotools.styling.DefaultResourceLocatorTest
+[INFO] Running org.geotools.styling.FeatureTypeStyleImplTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 s - in org.geotools.styling.FeatureTypeStyleImplTest
+[INFO] Running org.geotools.styling.GraphicImplTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.geotools.styling.GraphicImplTest
+[INFO] Running org.geotools.styling.SLDTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 s - in org.geotools.styling.SLDTest
+[INFO] Running org.geotools.styling.StyleObjectTest
+[INFO] Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 s - in org.geotools.styling.StyleObjectTest
+[INFO] Running org.geotools.styling.StyleTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.geotools.styling.StyleTest
+[INFO] Running org.geotools.styling.TextSymbolTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.geotools.styling.TextSymbolTest
+[INFO] Running org.geotools.styling.visitor.DpiRescaleStyleVisitorTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in org.geotools.styling.visitor.DpiRescaleStyleVisitorTest
+[INFO] Running org.geotools.styling.visitor.DuplicatingStyleVisitorTest
+[INFO] Tests run: 40, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 s - in org.geotools.styling.visitor.DuplicatingStyleVisitorTest
+[INFO] Running org.geotools.styling.visitor.RescaleStyleVisitorTest
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.geotools.styling.visitor.RescaleStyleVisitorTest
+[INFO] Running org.geotools.styling.visitor.UomRescaleStyleVisitorTest
+[INFO] Tests run: 36, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.128 s - in org.geotools.styling.visitor.UomRescaleStyleVisitorTest
+[INFO] Running org.geotools.temporal.object.DefaultCalendarDateTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.geotools.temporal.object.DefaultCalendarDateTest
+[INFO] Running org.geotools.temporal.object.DefaultClockTimeTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.geotools.temporal.object.DefaultClockTimeTest
+[INFO] Running org.geotools.temporal.object.DefaultDateAndTimeTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.geotools.temporal.object.DefaultDateAndTimeTest
+[INFO] Running org.geotools.temporal.object.DefaultInstantTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.geotools.temporal.object.DefaultInstantTest
+[INFO] Running org.geotools.temporal.object.DefaultIntervalLengthTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.geotools.temporal.object.DefaultIntervalLengthTest
+[INFO] Running org.geotools.temporal.object.DefaultOrdinalPositionTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.geotools.temporal.object.DefaultOrdinalPositionTest
+[INFO] Running org.geotools.temporal.object.DefaultPeriodDurationTest
+[INFO] Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.geotools.temporal.object.DefaultPeriodDurationTest
+[INFO] Running org.geotools.temporal.object.DefaultPeriodTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.geotools.temporal.object.DefaultPeriodTest
+[INFO] Running org.geotools.temporal.object.DefaultPositionTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.geotools.temporal.object.DefaultPositionTest
+[INFO] Running org.geotools.temporal.object.DefaultTemporalCoordinateTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.geotools.temporal.object.DefaultTemporalCoordinateTest
+[INFO] Running org.geotools.temporal.object.DefaultTemporalGeometricPrimitiveTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.geotools.temporal.object.DefaultTemporalGeometricPrimitiveTest
+[INFO] Running org.geotools.temporal.object.DefaultTemporalPositionTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.geotools.temporal.object.DefaultTemporalPositionTest
+[INFO] Running org.geotools.temporal.object.DefaultTemporalPrimitiveTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.geotools.temporal.object.DefaultTemporalPrimitiveTest
+[INFO] Running org.geotools.temporal.reference.DefaultCalendarEraTest
+[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.geotools.temporal.reference.DefaultCalendarEraTest
+[INFO] Running org.geotools.temporal.reference.DefaultCalendarTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.geotools.temporal.reference.DefaultCalendarTest
+[INFO] Running org.geotools.temporal.reference.DefaultClockTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.geotools.temporal.reference.DefaultClockTest
+[INFO] Running org.geotools.temporal.reference.DefaultOrdinalEraTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.geotools.temporal.reference.DefaultOrdinalEraTest
+[INFO] Running org.geotools.temporal.reference.DefaultOrdinalReferenceSystemTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.geotools.temporal.reference.DefaultOrdinalReferenceSystemTest
+[INFO] Running org.geotools.temporal.reference.DefaultTemporalCoordinateSystemTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.geotools.temporal.reference.DefaultTemporalCoordinateSystemTest
+[INFO] Running org.geotools.temporal.reference.DefaultTemporalReferenceSystemTest
+[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.geotools.temporal.reference.DefaultTemporalReferenceSystemTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[WARNING] Tests run: 1695, Failures: 0, Errors: 0, Skipped: 1
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building XML Parsing Support 21-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:regex-property (remove_gt_from_modulename) @ gt-xml ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:regex-property (remove_dashes_from_modulename) @ gt-xml ---
+[INFO] No match to regex '-' found in 'org.geotools.xml'. The initial value 'org.geotools.xml' is left as-is...
+[INFO] 
+[INFO] --- directory-maven-plugin:0.3.1:highest-basedir (directories) @ gt-xml ---
+[INFO] Highest basedir set to: /root/workspace/geotools/geotools/457543343
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.2.5:revision (default) @ gt-xml ---
+[INFO] 
+[INFO] --- fmt-maven-plugin:2.4.0:format (default) @ gt-xml ---
+[debug] Using AOSP style
+[INFO] Processed 100 files (0 reformatted).
+[INFO] Processed 184 files (0 reformatted).
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ gt-xml ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 5 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ gt-xml ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ gt-xml ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 142 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ gt-xml ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.1:test (default-test) @ gt-xml ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.geotools.gml.producer.CoordinateFormatterTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.051 s - in org.geotools.gml.producer.CoordinateFormatterTest
+[INFO] Running org.geotools.gml.producer.CoordinateWriterTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 s - in org.geotools.gml.producer.CoordinateWriterTest
+[INFO] Running org.geotools.gml.producer.FeatureTransformerTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.487 s - in org.geotools.gml.producer.FeatureTransformerTest
+[INFO] Running org.geotools.xml.DocumentFactoryTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.859 s - in org.geotools.xml.DocumentFactoryTest
+[INFO] Running org.geotools.xml.GMLInheritanceTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.156 s - in org.geotools.xml.GMLInheritanceTest
+[INFO] Running org.geotools.xml.GMLParser2Test
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.424 s - in org.geotools.xml.GMLParser2Test
+[INFO] Running org.geotools.xml.GMLParserTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.733 s - in org.geotools.xml.GMLParserTest
+[INFO] Running org.geotools.xml.SLDParserTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in org.geotools.xml.SLDParserTest
+[INFO] Running org.geotools.xml.SchemaFactoryResolveTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.79 s - in org.geotools.xml.SchemaFactoryResolveTest
+[INFO] Running org.geotools.xml.SchemaMergeTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in org.geotools.xml.SchemaMergeTest
+[INFO] Running org.geotools.xml.SchemaParser2Test
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in org.geotools.xml.SchemaParser2Test
+[INFO] Running org.geotools.xml.SchemaParserTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 s - in org.geotools.xml.SchemaParserTest
+[INFO] Running org.geotools.xml.TransformerBaseTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 s - in org.geotools.xml.TransformerBaseTest
+[INFO] Running org.geotools.xml.XMLParserTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.537 s - in org.geotools.xml.XMLParserTest
+[INFO] Running org.geotools.xml.filter.DOMParserTest
+[INFO] Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.78 s - in org.geotools.xml.filter.DOMParserTest
+[INFO] Running org.geotools.xml.filter.FilterCompliancePreProcessorTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in org.geotools.xml.filter.FilterCompliancePreProcessorTest
+[INFO] Running org.geotools.xml.filter.FilterEncodingPreProcessorTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in org.geotools.xml.filter.FilterEncodingPreProcessorTest
+[INFO] Running org.geotools.xml.filter.FilterFilterTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.066 s - in org.geotools.xml.filter.FilterFilterTest
+[INFO] Running org.geotools.xml.filter.FilterTransformerTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 s - in org.geotools.xml.filter.FilterTransformerTest
+[INFO] Running org.geotools.xml.filter.ParserTest
+[INFO] Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.056 s - in org.geotools.xml.filter.ParserTest
+[INFO] Running org.geotools.xml.gml.GMLComplexTypesTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.388 s - in org.geotools.xml.gml.GMLComplexTypesTest
+[INFO] Running org.geotools.xml.handlers.ElementHandlerFactoryTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.geotools.xml.handlers.ElementHandlerFactoryTest
+[INFO] Running org.geotools.xml.handlers.xsi.ElementTypeHandlerTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.geotools.xml.handlers.xsi.ElementTypeHandlerTest
+[INFO] Running org.geotools.xml.ogc.ExpresionEncodeTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.geotools.xml.ogc.ExpresionEncodeTest
+[INFO] Running org.geotools.xml.ogc.GeometryEncoderTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.geotools.xml.ogc.GeometryEncoderTest
+[INFO] Running org.geotools.xml.ogc.XMLEncoderTest
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 s - in org.geotools.xml.ogc.XMLEncoderTest
+[INFO] Running org.geotools.xml.resolver.SchemaCacheTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.geotools.xml.resolver.SchemaCacheTest
+[INFO] Running org.geotools.xml.resolver.SchemaResolverTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.geotools.xml.resolver.SchemaResolverTest
+[INFO] Running org.geotools.xml.styling.SLDParserNamespaceTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 s - in org.geotools.xml.styling.SLDParserNamespaceTest
+[INFO] Running org.geotools.xml.styling.SLDParserTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.041 s - in org.geotools.xml.styling.SLDParserTest
+[INFO] Running org.geotools.xml.styling.SLDStyleTest
+[INFO] Tests run: 36, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.178 s - in org.geotools.xml.styling.SLDStyleTest
+[INFO] Running org.geotools.xml.styling.SLDTransformerTest
+[INFO] Tests run: 57, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.253 s - in org.geotools.xml.styling.SLDTransformerTest
+[INFO] Running org.geotools.xml.styling.StyleFactoryImplTest
+[INFO] Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 s - in org.geotools.xml.styling.StyleFactoryImplTest
+[INFO] Running org.geotools.xml.styling.UserLayerTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.073 s - in org.geotools.xml.styling.UserLayerTest
+[INFO] Running org.geotools.xml.styling.XmlnsNamespaceTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in org.geotools.xml.styling.XmlnsNamespaceTest
+[INFO] Running org.geotools.xml.xsi.XSISimpleTypesTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 s - in org.geotools.xml.xsi.XSISimpleTypesTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 286, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Geotools extensions 21-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:regex-property (remove_gt_from_modulename) @ extension ---
+[INFO] No match to regex 'gt-' found in 'org.geotools.extension'. The initial value 'org.geotools.extension' is left as-is...
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:regex-property (remove_dashes_from_modulename) @ extension ---
+[INFO] No match to regex '-' found in 'org.geotools.extension'. The initial value 'org.geotools.extension' is left as-is...
+[INFO] 
+[INFO] --- directory-maven-plugin:0.3.1:highest-basedir (directories) @ extension ---
+[INFO] Highest basedir set to: /root/workspace/geotools/geotools/457543343
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.2.5:revision (default) @ extension ---
+[INFO] 
+[INFO] --- fmt-maven-plugin:2.4.0:format (default) @ extension ---
+[warn] Source directory '/root/workspace/geotools/geotools/457543343/modules/extension/src/main/java' does not exist, ignoring.
+[warn] Test source directory '/root/workspace/geotools/geotools/457543343/modules/extension/src/test/java' does not exist, ignoring.
+[debug] Using AOSP style
+[INFO] Processed 0 files (0 reformatted).
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building XML Parsing 21-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:regex-property (remove_gt_from_modulename) @ xsd ---
+[INFO] No match to regex 'gt-' found in 'org.geotools.xsd.xsd'. The initial value 'org.geotools.xsd.xsd' is left as-is...
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:regex-property (remove_dashes_from_modulename) @ xsd ---
+[INFO] No match to regex '-' found in 'org.geotools.xsd.xsd'. The initial value 'org.geotools.xsd.xsd' is left as-is...
+[INFO] 
+[INFO] --- directory-maven-plugin:0.3.1:highest-basedir (directories) @ xsd ---
+[INFO] Highest basedir set to: /root/workspace/geotools/geotools/457543343
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.2.5:revision (default) @ xsd ---
+[INFO] 
+[INFO] --- fmt-maven-plugin:2.4.0:format (default) @ xsd ---
+[warn] Source directory '/root/workspace/geotools/geotools/457543343/modules/extension/xsd/src/main/java' does not exist, ignoring.
+[warn] Test source directory '/root/workspace/geotools/geotools/457543343/modules/extension/xsd/src/test/java' does not exist, ignoring.
+[debug] Using AOSP style
+[INFO] Processed 0 files (0 reformatted).
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building XML Parsing 21-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:regex-property (remove_gt_from_modulename) @ gt-xsd-core ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:regex-property (remove_dashes_from_modulename) @ gt-xsd-core ---
+[INFO] 
+[INFO] --- directory-maven-plugin:0.3.1:highest-basedir (directories) @ gt-xsd-core ---
+[INFO] Highest basedir set to: /root/workspace/geotools/geotools/457543343
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.2.5:revision (default) @ gt-xsd-core ---
+[INFO] 
+[INFO] --- fmt-maven-plugin:2.4.0:format (default) @ gt-xsd-core ---
+[debug] Using AOSP style
+[INFO] Processed 100 files (0 reformatted).
+[INFO] Processed 200 files (0 reformatted).
+[INFO] Processed 224 files (0 reformatted).
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ gt-xsd-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ gt-xsd-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ gt-xsd-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 17 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ gt-xsd-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.1:test (default-test) @ gt-xsd-core ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.geotools.xs.TestSchemaTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.424 s - in org.geotools.xs.TestSchemaTest
+[INFO] Running org.geotools.xs.bindings.XSAnySimpleTypeStrategyTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in org.geotools.xs.bindings.XSAnySimpleTypeStrategyTest
+[INFO] Running org.geotools.xs.bindings.XSBooleanStrategyTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.geotools.xs.bindings.XSBooleanStrategyTest
+[INFO] Running org.geotools.xs.bindings.XSDateTimeStrategyTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.316 s - in org.geotools.xs.bindings.XSDateTimeStrategyTest
+[INFO] Running org.geotools.xs.bindings.XSDecimalStrategyTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.geotools.xs.bindings.XSDecimalStrategyTest
+[INFO] Running org.geotools.xs.bindings.XSDoubleStrategyTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.geotools.xs.bindings.XSDoubleStrategyTest
+[INFO] Running org.geotools.xs.bindings.XSFloatStrategyTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.geotools.xs.bindings.XSFloatStrategyTest
+[INFO] Running org.geotools.xs.bindings.XSIntegerStrategyTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.geotools.xs.bindings.XSIntegerStrategyTest
+[INFO] Running org.geotools.xs.bindings.XSLongStrategyTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.geotools.xs.bindings.XSLongStrategyTest
+[INFO] Running org.geotools.xs.bindings.XSNegativeIntegerStrategyTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.geotools.xs.bindings.XSNegativeIntegerStrategyTest
+[INFO] Running org.geotools.xs.bindings.XSNonNegativeIntegerStrategyTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.geotools.xs.bindings.XSNonNegativeIntegerStrategyTest
+[INFO] Running org.geotools.xs.bindings.XSNonPositiveIntegerStrategyTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.geotools.xs.bindings.XSNonPositiveIntegerStrategyTest
+[INFO] Running org.geotools.xs.bindings.XSQNameBindingTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.geotools.xs.bindings.XSQNameBindingTest
+[INFO] Running org.geotools.xs.bindings.XSUnsignedBindingsTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.086 s - in org.geotools.xs.bindings.XSUnsignedBindingsTest
+[INFO] Running org.geotools.xsd.DateConversionTimezoneTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in org.geotools.xsd.DateConversionTimezoneTest
+[INFO] Running org.geotools.xsd.EncoderTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 s - in org.geotools.xsd.EncoderTest
+[INFO] Running org.geotools.xsd.FacetTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 s - in org.geotools.xsd.FacetTest
+[INFO] Running org.geotools.xsd.ParserNamespaceSupportTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.geotools.xsd.ParserNamespaceSupportTest
+[INFO] Running org.geotools.xsd.ParserTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.219 s - in org.geotools.xsd.ParserTest
+[INFO] Running org.geotools.xsd.PullParserTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 s - in org.geotools.xsd.PullParserTest
+[INFO] Running org.geotools.xsd.SchemasTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.044 s - in org.geotools.xsd.SchemasTest
+[INFO] Running org.geotools.xsd.impl.BufferTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in org.geotools.xsd.impl.BufferTest
+[INFO] Running org.geotools.xsd.impl.HTTPURIHandlerTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.253 s - in org.geotools.xsd.impl.HTTPURIHandlerTest
+[INFO] Running org.geotools.xsd.impl.XsDateTimeFormatTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.133 s - in org.geotools.xsd.impl.XsDateTimeFormatTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 92, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Feature Based Graphs and Networks 21-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:regex-property (remove_gt_from_modulename) @ gt-graph ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:regex-property (remove_dashes_from_modulename) @ gt-graph ---
+[INFO] No match to regex '-' found in 'org.geotools.graph'. The initial value 'org.geotools.graph' is left as-is...
+[INFO] 
+[INFO] --- directory-maven-plugin:0.3.1:highest-basedir (directories) @ gt-graph ---
+[INFO] Highest basedir set to: /root/workspace/geotools/geotools/457543343
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.2.5:revision (default) @ gt-graph ---
+[INFO] 
+[INFO] --- fmt-maven-plugin:2.4.0:format (default) @ gt-graph ---
+[debug] Using AOSP style
+[INFO] Processed 100 files (0 reformatted).
+[INFO] Processed 158 files (0 reformatted).
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ gt-graph ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/geotools/geotools/457543343/modules/extension/graph/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ gt-graph ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ gt-graph ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/geotools/geotools/457543343/modules/extension/graph/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ gt-graph ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.1:test (default-test) @ gt-graph ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.geotools.graph.build.basic.BasicDirectedGraphBuilderTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.07 s - in org.geotools.graph.build.basic.BasicDirectedGraphBuilderTest
+[INFO] Running org.geotools.graph.build.basic.BasicGraphBuilderTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 s - in org.geotools.graph.build.basic.BasicGraphBuilderTest
+[INFO] Running org.geotools.graph.build.feature.FeatureGraphGeneratorTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.458 s - in org.geotools.graph.build.feature.FeatureGraphGeneratorTest
+[INFO] Running org.geotools.graph.build.line.LineStringGraphGeneratorTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 s - in org.geotools.graph.build.line.LineStringGraphGeneratorTest
+[INFO] Running org.geotools.graph.build.opt.OptDirectedGraphBuilderTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in org.geotools.graph.build.opt.OptDirectedGraphBuilderTest
+[INFO] Running org.geotools.graph.build.opt.OptGraphBuilderTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in org.geotools.graph.build.opt.OptGraphBuilderTest
+[INFO] Running org.geotools.graph.build.polygon.PolygonGraphGeneratorTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 s - in org.geotools.graph.build.polygon.PolygonGraphGeneratorTest
+[INFO] Running org.geotools.graph.io.standard.BasicGraphSerializerTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.088 s - in org.geotools.graph.io.standard.BasicGraphSerializerTest
+[INFO] Running org.geotools.graph.io.standard.DirectedGraphSerializerTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 s - in org.geotools.graph.io.standard.DirectedGraphSerializerTest
+[INFO] Running org.geotools.graph.io.standard.OptDirectedGraphSerializerTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 s - in org.geotools.graph.io.standard.OptDirectedGraphSerializerTest
+[INFO] Running org.geotools.graph.io.standard.OptGraphSerializerTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 s - in org.geotools.graph.io.standard.OptGraphSerializerTest
+[INFO] Running org.geotools.graph.linegraph.DirectedLineGraphGeneratorTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in org.geotools.graph.linegraph.DirectedLineGraphGeneratorTest
+[INFO] Running org.geotools.graph.linegraph.LineGraphGeneratorTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.geotools.graph.linegraph.LineGraphGeneratorTest
+[INFO] Running org.geotools.graph.linegraph.OptDirectedLineGraphGeneratorTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in org.geotools.graph.linegraph.OptDirectedLineGraphGeneratorTest
+[INFO] Running org.geotools.graph.linegraph.OptLineGraphGeneratorTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in org.geotools.graph.linegraph.OptLineGraphGeneratorTest
+[INFO] Running org.geotools.graph.path.WalkTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 s - in org.geotools.graph.path.WalkTest
+[INFO] Running org.geotools.graph.structure.basic.BasicDirectedEdgeTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in org.geotools.graph.structure.basic.BasicDirectedEdgeTest
+[INFO] Running org.geotools.graph.structure.basic.BasicDirectedNodeTest
+[INFO] Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 s - in org.geotools.graph.structure.basic.BasicDirectedNodeTest
+[INFO] Running org.geotools.graph.structure.basic.BasicEdgeTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.geotools.graph.structure.basic.BasicEdgeTest
+[INFO] Running org.geotools.graph.structure.basic.BasicGraphTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in org.geotools.graph.structure.basic.BasicGraphTest
+[INFO] Running org.geotools.graph.structure.basic.BasicGraphableTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.geotools.graph.structure.basic.BasicGraphableTest
+[INFO] Running org.geotools.graph.structure.basic.BasicNodeTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.geotools.graph.structure.basic.BasicNodeTest
+[INFO] Running org.geotools.graph.structure.opt.OptDirectedEdgeTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in org.geotools.graph.structure.opt.OptDirectedEdgeTest
+[INFO] Running org.geotools.graph.structure.opt.OptDirectedNodeTest
+[INFO] Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 s - in org.geotools.graph.structure.opt.OptDirectedNodeTest
+[INFO] Running org.geotools.graph.structure.opt.OptEdgeTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.geotools.graph.structure.opt.OptEdgeTest
+[INFO] Running org.geotools.graph.structure.opt.OptNodeTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.geotools.graph.structure.opt.OptNodeTest
+[INFO] Running org.geotools.graph.traverse.basic.SimpleGraphWalkerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.geotools.graph.traverse.basic.SimpleGraphWalkerTest
+[INFO] Running org.geotools.graph.traverse.standard.AStarIteratorTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 s - in org.geotools.graph.traverse.standard.AStarIteratorTest
+[INFO] Running org.geotools.graph.traverse.standard.BreadthFirstIteratorTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 s - in org.geotools.graph.traverse.standard.BreadthFirstIteratorTest
+[INFO] Running org.geotools.graph.traverse.standard.BreadthFirstTopologicalIteratorTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in org.geotools.graph.traverse.standard.BreadthFirstTopologicalIteratorTest
+[INFO] Running org.geotools.graph.traverse.standard.DepthFirstIteratorTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 s - in org.geotools.graph.traverse.standard.DepthFirstIteratorTest
+[INFO] Running org.geotools.graph.traverse.standard.DepthFirstTopologicalIteratorTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.geotools.graph.traverse.standard.DepthFirstTopologicalIteratorTest
+[INFO] Running org.geotools.graph.traverse.standard.DijkstraIteratorTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 s - in org.geotools.graph.traverse.standard.DijkstraIteratorTest
+[INFO] Running org.geotools.graph.traverse.standard.DirectedDepthFirstIteratorTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in org.geotools.graph.traverse.standard.DirectedDepthFirstIteratorTest
+[INFO] Running org.geotools.graph.traverse.standard.NoBifurcationIteratorTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in org.geotools.graph.traverse.standard.NoBifurcationIteratorTest
+[INFO] Running org.geotools.graph.util.CycleDetectorTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.geotools.graph.util.CycleDetectorTest
+[INFO] Running org.geotools.graph.util.DijkstraShortestPathFinderTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.geotools.graph.util.DijkstraShortestPathFinderTest
+[INFO] Running org.geotools.graph.util.DijkstraShortestPathFinderWithTurnCostsTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.geotools.graph.util.DijkstraShortestPathFinderWithTurnCostsTest
+[INFO] Running org.geotools.graph.util.GraphFuserTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 s - in org.geotools.graph.util.GraphFuserTest
+[INFO] Running org.geotools.graph.util.GraphPartitionerTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 s - in org.geotools.graph.util.GraphPartitionerTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 211, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building XML Code Generation Support 21-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:regex-property (remove_gt_from_modulename) @ xmlcodegen ---
+[INFO] No match to regex 'gt-' found in 'org.geotools.maven.xmlcodegen'. The initial value 'org.geotools.maven.xmlcodegen' is left as-is...
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:regex-property (remove_dashes_from_modulename) @ xmlcodegen ---
+[INFO] No match to regex '-' found in 'org.geotools.maven.xmlcodegen'. The initial value 'org.geotools.maven.xmlcodegen' is left as-is...
+[INFO] 
+[INFO] --- directory-maven-plugin:0.3.1:highest-basedir (directories) @ xmlcodegen ---
+[INFO] Highest basedir set to: /root/workspace/geotools/geotools/457543343
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.2.5:revision (default) @ xmlcodegen ---
+[INFO] 
+[INFO] --- fmt-maven-plugin:2.4.0:format (default) @ xmlcodegen ---
+[info] Skipping format check
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ xmlcodegen ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/geotools/geotools/457543343/build/maven/xmlcodegen/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ xmlcodegen ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-plugin-plugin:3.4:descriptor (default-descriptor) @ xmlcodegen ---
+[INFO] Using 'UTF-8' encoding to read mojo metadata.
+[WARNING] org.geotools.maven.xmlcodegen.BindingGeneratorMojo#classpathElements:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] org.geotools.maven.xmlcodegen.BindingGeneratorMojo#complexBindingBaseClass:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] org.geotools.maven.xmlcodegen.BindingGeneratorMojo#generateAttributeBindings:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] org.geotools.maven.xmlcodegen.BindingGeneratorMojo#generateConfiguration:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] org.geotools.maven.xmlcodegen.BindingGeneratorMojo#generateElementBindings:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] org.geotools.maven.xmlcodegen.BindingGeneratorMojo#generateTests:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] org.geotools.maven.xmlcodegen.BindingGeneratorMojo#generateTypeBindings:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] org.geotools.maven.xmlcodegen.BindingGeneratorMojo#generateXsd:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] org.geotools.maven.xmlcodegen.BindingGeneratorMojo#includeGML:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] org.geotools.maven.xmlcodegen.BindingGeneratorMojo#localRepository:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] org.geotools.maven.xmlcodegen.BindingGeneratorMojo#outputDirectory:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] org.geotools.maven.xmlcodegen.BindingGeneratorMojo#project:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] org.geotools.maven.xmlcodegen.BindingGeneratorMojo#relativeSchemaReference:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] org.geotools.maven.xmlcodegen.BindingGeneratorMojo#remoteRepositories:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] org.geotools.maven.xmlcodegen.BindingGeneratorMojo#schemaSourceDirectory:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] org.geotools.maven.xmlcodegen.BindingGeneratorMojo#simpleBindingBaseClass:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] org.geotools.maven.xmlcodegen.BindingGeneratorMojo#sourceOutputDirectory:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] org.geotools.maven.xmlcodegen.BindingGeneratorMojo#testOutputDirectory:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] org.geotools.maven.xmlcodegen.SchemaGeneratorMojo#classpathElements:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] org.geotools.maven.xmlcodegen.SchemaGeneratorMojo#cyclicTypeSupport:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] org.geotools.maven.xmlcodegen.SchemaGeneratorMojo#followComplexTypes:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] org.geotools.maven.xmlcodegen.SchemaGeneratorMojo#includeComplexTypes:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] org.geotools.maven.xmlcodegen.SchemaGeneratorMojo#includeGML:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] org.geotools.maven.xmlcodegen.SchemaGeneratorMojo#includeSimpleTypes:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] org.geotools.maven.xmlcodegen.SchemaGeneratorMojo#localRepository:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] org.geotools.maven.xmlcodegen.SchemaGeneratorMojo#outputDirectory:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] org.geotools.maven.xmlcodegen.SchemaGeneratorMojo#printRecursionPaths:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] org.geotools.maven.xmlcodegen.SchemaGeneratorMojo#project:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] org.geotools.maven.xmlcodegen.SchemaGeneratorMojo#relativeSchemaReference:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] org.geotools.maven.xmlcodegen.SchemaGeneratorMojo#remoteRepositories:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] org.geotools.maven.xmlcodegen.SchemaGeneratorMojo#schemaSourceDirectory:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] org.geotools.maven.xmlcodegen.SchemaGeneratorMojo#sourceOutputDirectory:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] org.geotools.maven.xmlcodegen.SchemaGeneratorMojo#testOutputDirectory:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[INFO] Mojo extractor with id: java-javadoc found 2 mojo descriptors.
+[INFO] Mojo extractor with id: java-annotations found 0 mojo descriptors.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ xmlcodegen ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/geotools/geotools/457543343/build/maven/xmlcodegen/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ xmlcodegen ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.1:test (default-test) @ xmlcodegen ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Grid Coverage module 21-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:regex-property (remove_gt_from_modulename) @ gt-coverage ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:regex-property (remove_dashes_from_modulename) @ gt-coverage ---
+[INFO] No match to regex '-' found in 'org.geotools.coverage'. The initial value 'org.geotools.coverage' is left as-is...
+[INFO] 
+[INFO] --- directory-maven-plugin:0.3.1:highest-basedir (directories) @ gt-coverage ---
+[INFO] Highest basedir set to: /root/workspace/geotools/geotools/457543343
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.2.5:revision (default) @ gt-coverage ---
+[INFO] 
+[INFO] --- fmt-maven-plugin:2.4.0:format (default) @ gt-coverage ---
+[debug] Using AOSP style
+[INFO] Processed 100 files (0 reformatted).
+[INFO] Processed 200 files (0 reformatted).
+[INFO] Processed 226 files (0 reformatted).
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ gt-coverage ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 5 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ gt-coverage ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ gt-coverage ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 10 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ gt-coverage ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.1:test (default-test) @ gt-coverage ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.geotools.coverage.CategoryListTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.814 s - in org.geotools.coverage.CategoryListTest
+[INFO] Running org.geotools.coverage.CategoryTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.geotools.coverage.CategoryTest
+[INFO] Running org.geotools.coverage.ColorModelFactoryTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 s - in org.geotools.coverage.ColorModelFactoryTest
+[INFO] Running org.geotools.coverage.SampleDimensionTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.geotools.coverage.SampleDimensionTest
+[INFO] Running org.geotools.coverage.ScaledColorSpaceTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.046 s - in org.geotools.coverage.ScaledColorSpaceTest
+[INFO] Running org.geotools.coverage.grid.FloatRasterTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.228 s - in org.geotools.coverage.grid.FloatRasterTest
+[INFO] Running org.geotools.coverage.grid.GridCoverageFactoryTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.223 s - in org.geotools.coverage.grid.GridCoverageFactoryTest
+[INFO] Running org.geotools.coverage.grid.GridCoverageTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.827 s - in org.geotools.coverage.grid.GridCoverageTest
+[INFO] Running org.geotools.coverage.grid.GridGeometryTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.116 s - in org.geotools.coverage.grid.GridGeometryTest
+[INFO] Running org.geotools.coverage.grid.InterpolatorTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.329 s - in org.geotools.coverage.grid.InterpolatorTest
+[INFO] Running org.geotools.coverage.grid.io.ReadResolutionCalculatorTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.318 s - in org.geotools.coverage.grid.io.ReadResolutionCalculatorTest
+[INFO] Running org.geotools.coverage.grid.io.footprint.FootprintBehaviorTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in org.geotools.coverage.grid.io.footprint.FootprintBehaviorTest
+[INFO] Running org.geotools.coverage.processing.AffineTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.056 s - in org.geotools.coverage.processing.AffineTest
+[INFO] Running org.geotools.coverage.processing.BandMergeTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.167 s - in org.geotools.coverage.processing.BandMergeTest
+[INFO] Running org.geotools.coverage.processing.BandSelectTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.035 s - in org.geotools.coverage.processing.BandSelectTest
+[INFO] Running org.geotools.coverage.processing.BinaryOpTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.304 s - in org.geotools.coverage.processing.BinaryOpTest
+[INFO] Running org.geotools.coverage.processing.CropTest
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.556 s - in org.geotools.coverage.processing.CropTest
+[INFO] Running org.geotools.coverage.processing.FilteredSubsampleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.5 s - in org.geotools.coverage.processing.FilteredSubsampleTest
+[INFO] Running org.geotools.coverage.processing.HistogramTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.107 s - in org.geotools.coverage.processing.HistogramTest
+[INFO] Running org.geotools.coverage.processing.MosaicTest
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.904 s - in org.geotools.coverage.processing.MosaicTest
+[INFO] Running org.geotools.coverage.processing.OperationsTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.057 s - in org.geotools.coverage.processing.OperationsTest
+[INFO] Running org.geotools.coverage.processing.ResampleTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.043 s - in org.geotools.coverage.processing.ResampleTest
+[INFO] Running org.geotools.coverage.processing.ScaleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.135 s - in org.geotools.coverage.processing.ScaleTest
+[INFO] Running org.geotools.coverage.processing.ShadedReliefTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.065 s - in org.geotools.coverage.processing.ShadedReliefTest
+[INFO] Running org.geotools.coverage.processing.StatisticsOperationsTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.053 s - in org.geotools.coverage.processing.StatisticsOperationsTest
+[INFO] Running org.geotools.coverage.processing.SubsampleAverageTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.086 s - in org.geotools.coverage.processing.SubsampleAverageTest
+[INFO] Running org.geotools.coverage.processing.WarpTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.166 s - in org.geotools.coverage.processing.WarpTest
+[INFO] Running org.geotools.coverage.processing.ZonalStasTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.288 s - in org.geotools.coverage.processing.ZonalStasTest
+[INFO] Running org.geotools.coverage.processing.ZonalStatisticsTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.178 s - in org.geotools.coverage.processing.ZonalStatisticsTest
+[INFO] Running org.geotools.coverage.util.CoverageUtilitiesTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.074 s - in org.geotools.coverage.util.CoverageUtilitiesTest
+[INFO] Running org.geotools.coverage.util.FeatureUtilitiesTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.geotools.coverage.util.FeatureUtilitiesTest
+[INFO] Running org.geotools.coverage.util.IsCoverageTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.323 s - in org.geotools.coverage.util.IsCoverageTest
+[INFO] Running org.geotools.image.ColorUtilitiesTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.geotools.image.ColorUtilitiesTest
+[INFO] Running org.geotools.image.CropImageTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in org.geotools.image.CropImageTest
+[INFO] Running org.geotools.image.DisposeStopperTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in org.geotools.image.DisposeStopperTest
+[INFO] Running org.geotools.image.DrawableBitSetTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in org.geotools.image.DrawableBitSetTest
+[INFO] Running org.geotools.image.GTAffinePropertyGeneratorTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.geotools.image.GTAffinePropertyGeneratorTest
+[INFO] Running org.geotools.image.ImageWorkerTest
+[INFO] Tests run: 61, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.013 s - in org.geotools.image.ImageWorkerTest
+[INFO] Running org.geotools.image.io.GridCoverageProgressAdapterTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.112 s - in org.geotools.image.io.GridCoverageProgressAdapterTest
+[INFO] Running org.geotools.image.io.ImageIOExtTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 s - in org.geotools.image.io.ImageIOExtTest
+[INFO] Running org.geotools.image.palette.ColorIndexerTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.091 s - in org.geotools.image.palette.ColorIndexerTest
+[INFO] Running org.geotools.image.palette.ColorMapTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.geotools.image.palette.ColorMapTest
+[INFO] Running org.geotools.image.palette.CustomPaletteBuilderTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.421 s - in org.geotools.image.palette.CustomPaletteBuilderTest
+[INFO] Running org.geotools.image.palette.QuantizerTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.89 s - in org.geotools.image.palette.QuantizerTest
+[INFO] Running org.geotools.image.test.ImageComparatorTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.133 s - in org.geotools.image.test.ImageComparatorTest
+[INFO] Running org.geotools.image.util.ImageUtilitiesTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.geotools.image.util.ImageUtilitiesTest
+[INFO] Running org.geotools.referencing.operation.builder.GridToEnvelopeMapperTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.geotools.referencing.operation.builder.GridToEnvelopeMapperTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 205, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building EPSG Authority Service using WKT file 21-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:regex-property (remove_gt_from_modulename) @ gt-epsg-wkt ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:regex-property (remove_dashes_from_modulename) @ gt-epsg-wkt ---
+[INFO] 
+[INFO] --- directory-maven-plugin:0.3.1:highest-basedir (directories) @ gt-epsg-wkt ---
+[INFO] Highest basedir set to: /root/workspace/geotools/geotools/457543343
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.2.5:revision (default) @ gt-epsg-wkt ---
+[INFO] 
+[INFO] --- fmt-maven-plugin:2.4.0:format (default) @ gt-epsg-wkt ---
+[debug] Using AOSP style
+[INFO] Processed 4 files (0 reformatted).
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ gt-epsg-wkt ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ gt-epsg-wkt ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ gt-epsg-wkt ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/geotools/geotools/457543343/modules/plugin/epsg-wkt/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ gt-epsg-wkt ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.1:test (default-test) @ gt-epsg-wkt ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.geotools.referencing.epsg.wkt.CRSTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.098 s - in org.geotools.referencing.epsg.wkt.CRSTest
+[INFO] Running org.geotools.referencing.epsg.wkt.EPSGTest
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.396 s - in org.geotools.referencing.epsg.wkt.EPSGTest
+[INFO] Running org.geotools.referencing.epsg.wkt.URNEPSGTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 s - in org.geotools.referencing.epsg.wkt.URNEPSGTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 25, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building OGC CQL to Filter parser 21-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:regex-property (remove_gt_from_modulename) @ gt-cql ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:regex-property (remove_dashes_from_modulename) @ gt-cql ---
+[INFO] No match to regex '-' found in 'org.geotools.cql'. The initial value 'org.geotools.cql' is left as-is...
+[INFO] 
+[INFO] --- directory-maven-plugin:0.3.1:highest-basedir (directories) @ gt-cql ---
+[INFO] Highest basedir set to: /root/workspace/geotools/geotools/457543343
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.2.5:revision (default) @ gt-cql ---
+[INFO] 
+[INFO] --- jjtree-javacc:21-SNAPSHOT:generate (default) @ gt-cql ---
+Java Compiler Compiler Version 4.0 (Parser Generator)
+(type "javacc" with no arguments for help)
+Reading from file /root/workspace/geotools/geotools/457543343/modules/library/cql/target/generated-sources/jjtree-javacc/org/geotools/filter/text/generated/parsers/ECQLGrammar.jj . . .
+Note: UNICODE_INPUT option is specified. Please make sure you create the parser/lexer using a Reader with the correct character encoding.
+Parser generated successfully.
+Java Compiler Compiler Version 4.0 (Parser Generator)
+(type "javacc" with no arguments for help)
+Reading from file /root/workspace/geotools/geotools/457543343/modules/library/cql/target/generated-sources/jjtree-javacc/org/geotools/filter/text/generated/parsers/CQLGrammar.jj . . .
+Note: UNICODE_INPUT option is specified. Please make sure you create the parser/lexer using a Reader with the correct character encoding.
+Parser generated successfully.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-source (add-source) @ gt-cql ---
+[INFO] Source directory: /root/workspace/geotools/geotools/457543343/modules/library/cql/target/generated-sources/jjtree-javacc added.
+[INFO] 
+[INFO] --- fmt-maven-plugin:2.4.0:format (default) @ gt-cql ---
+[debug] Using AOSP style
+[INFO] Processed 70 files (0 reformatted).
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ gt-cql ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/geotools/geotools/457543343/modules/library/cql/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ gt-cql ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 53 source files to /root/workspace/geotools/geotools/457543343/modules/library/cql/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ gt-cql ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/geotools/geotools/457543343/modules/library/cql/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ gt-cql ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.1:test (default-test) @ gt-cql ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.geotools.filter.text.cql2.CQLAttributeNameTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.519 s - in org.geotools.filter.text.cql2.CQLAttributeNameTest
+[INFO] Running org.geotools.filter.text.cql2.CQLBetweenPredicateTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.405 s - in org.geotools.filter.text.cql2.CQLBetweenPredicateTest
+[INFO] Running org.geotools.filter.text.cql2.CQLBooleanValueExpressionTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 s - in org.geotools.filter.text.cql2.CQLBooleanValueExpressionTest
+[INFO] Running org.geotools.filter.text.cql2.CQLComparisonPredicateTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 s - in org.geotools.filter.text.cql2.CQLComparisonPredicateTest
+[INFO] Running org.geotools.filter.text.cql2.CQLExistenceTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 s - in org.geotools.filter.text.cql2.CQLExistenceTest
+[INFO] Running org.geotools.filter.text.cql2.CQLExpressionTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in org.geotools.filter.text.cql2.CQLExpressionTest
+[INFO] Running org.geotools.filter.text.cql2.CQLExtensionTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.053 s - in org.geotools.filter.text.cql2.CQLExtensionTest
+[INFO] Running org.geotools.filter.text.cql2.CQLGeoOperationTest
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.651 s - in org.geotools.filter.text.cql2.CQLGeoOperationTest
+[INFO] Running org.geotools.filter.text.cql2.CQLLikePredicateTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.geotools.filter.text.cql2.CQLLikePredicateTest
+[INFO] Running org.geotools.filter.text.cql2.CQLLiteralTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 s - in org.geotools.filter.text.cql2.CQLLiteralTest
+[INFO] Running org.geotools.filter.text.cql2.CQLNullPredicateTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.geotools.filter.text.cql2.CQLNullPredicateTest
+[INFO] Running org.geotools.filter.text.cql2.CQLRelGeoOpTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in org.geotools.filter.text.cql2.CQLRelGeoOpTest
+[INFO] Running org.geotools.filter.text.cql2.CQLTemporalPredicateTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.035 s - in org.geotools.filter.text.cql2.CQLTemporalPredicateTest
+[INFO] Running org.geotools.filter.text.cql2.CQLTest
+[INFO] Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 s - in org.geotools.filter.text.cql2.CQLTest
+[INFO] Running org.geotools.filter.text.cql2.FilterToCQLTest
+[WARNING] Tests run: 36, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.045 s - in org.geotools.filter.text.cql2.FilterToCQLTest
+[INFO] Running org.geotools.filter.text.ecql.ECQLAttributeNameTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in org.geotools.filter.text.ecql.ECQLAttributeNameTest
+[INFO] Running org.geotools.filter.text.ecql.ECQLBetweenPredicateTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in org.geotools.filter.text.ecql.ECQLBetweenPredicateTest
+[INFO] Running org.geotools.filter.text.ecql.ECQLBooleanValueExpressionTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.geotools.filter.text.ecql.ECQLBooleanValueExpressionTest
+[INFO] Running org.geotools.filter.text.ecql.ECQLComparisonPredicateTest
+[INFO] Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 s - in org.geotools.filter.text.ecql.ECQLComparisonPredicateTest
+[INFO] Running org.geotools.filter.text.ecql.ECQLExistenceTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.geotools.filter.text.ecql.ECQLExistenceTest
+[INFO] Running org.geotools.filter.text.ecql.ECQLExpressionTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.geotools.filter.text.ecql.ECQLExpressionTest
+[INFO] Running org.geotools.filter.text.ecql.ECQLGeoOperationTest
+[INFO] Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.065 s - in org.geotools.filter.text.ecql.ECQLGeoOperationTest
+[INFO] Running org.geotools.filter.text.ecql.ECQLIDPredicateTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 s - in org.geotools.filter.text.ecql.ECQLIDPredicateTest
+[INFO] Running org.geotools.filter.text.ecql.ECQLINPredicateTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in org.geotools.filter.text.ecql.ECQLINPredicateTest
+[INFO] Running org.geotools.filter.text.ecql.ECQLLikePredicateTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in org.geotools.filter.text.ecql.ECQLLikePredicateTest
+[INFO] Running org.geotools.filter.text.ecql.ECQLLiteralTest
+[INFO] Tests run: 26, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.049 s - in org.geotools.filter.text.ecql.ECQLLiteralTest
+[INFO] Running org.geotools.filter.text.ecql.ECQLNullPredicateTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.geotools.filter.text.ecql.ECQLNullPredicateTest
+[INFO] Running org.geotools.filter.text.ecql.ECQLRelGeoOpTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in org.geotools.filter.text.ecql.ECQLRelGeoOpTest
+[INFO] Running org.geotools.filter.text.ecql.ECQLTemporalPredicateTest
+[INFO] Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 s - in org.geotools.filter.text.ecql.ECQLTemporalPredicateTest
+[INFO] Running org.geotools.filter.text.ecql.ECQLTest
+[INFO] Tests run: 29, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.126 s - in org.geotools.filter.text.ecql.ECQLTest
+[INFO] Running org.geotools.filter.text.ecql.FilterToECQLTest
+[WARNING] Tests run: 40, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.016 s - in org.geotools.filter.text.ecql.FilterToECQLTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[WARNING] Tests run: 351, Failures: 0, Errors: 0, Skipped: 4
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Property File DataStore 21-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:regex-property (remove_gt_from_modulename) @ gt-property ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:regex-property (remove_dashes_from_modulename) @ gt-property ---
+[INFO] No match to regex '-' found in 'org.geotools.property'. The initial value 'org.geotools.property' is left as-is...
+[INFO] 
+[INFO] --- directory-maven-plugin:0.3.1:highest-basedir (directories) @ gt-property ---
+[INFO] Highest basedir set to: /root/workspace/geotools/geotools/457543343
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.2.5:revision (default) @ gt-property ---
+[INFO] 
+[INFO] --- fmt-maven-plugin:2.4.0:format (default) @ gt-property ---
+[debug] Using AOSP style
+[INFO] Processed 11 files (0 reformatted).
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ gt-property ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ gt-property ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ gt-property ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/geotools/geotools/457543343/modules/plugin/property/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ gt-property ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.1:test (default-test) @ gt-property ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.geotools.data.property.PropertyDataStore2Test
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.297 s - in org.geotools.data.property.PropertyDataStore2Test
+[INFO] Running org.geotools.data.property.PropertyDataStore3DTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.34 s - in org.geotools.data.property.PropertyDataStore3DTest
+[INFO] Running org.geotools.data.property.PropertyDataStoreCurveTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.08 s - in org.geotools.data.property.PropertyDataStoreCurveTest
+[INFO] Running org.geotools.data.property.PropertyDataStoreTest
+[INFO] Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.263 s - in org.geotools.data.property.PropertyDataStoreTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 48, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building GeoTIFF grid coverage exchange module 21-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:regex-property (remove_gt_from_modulename) @ gt-geotiff ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:regex-property (remove_dashes_from_modulename) @ gt-geotiff ---
+[INFO] No match to regex '-' found in 'org.geotools.geotiff'. The initial value 'org.geotools.geotiff' is left as-is...
+[INFO] 
+[INFO] --- directory-maven-plugin:0.3.1:highest-basedir (directories) @ gt-geotiff ---
+[INFO] Highest basedir set to: /root/workspace/geotools/geotools/457543343
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.2.5:revision (default) @ gt-geotiff ---
+[INFO] 
+[INFO] --- fmt-maven-plugin:2.4.0:format (default) @ gt-geotiff ---
+[debug] Using AOSP style
+[INFO] Processed 9 files (0 reformatted).
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ gt-geotiff ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ gt-geotiff ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ gt-geotiff ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 59 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ gt-geotiff ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.1:test (default-test) @ gt-geotiff ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.geotools.gce.geotiff.GeoTiffDeadlockTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.097 s - in org.geotools.gce.geotiff.GeoTiffDeadlockTest
+[INFO] Running org.geotools.gce.geotiff.GeoTiffReaderTest
+[ERROR] Tests run: 21, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 5.714 s <<< FAILURE! - in org.geotools.gce.geotiff.GeoTiffReaderTest
+[ERROR] testNoData(org.geotools.gce.geotiff.GeoTiffReaderTest)  Time elapsed: 0.043 s  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expected: an instance of it.geosolutions.jaiext.range.NoDataContainer
+     but: <java.lang.Object@5f05c8d6> is a java.lang.Object
+	at org.geotools.gce.geotiff.GeoTiffReaderTest.testNoData(GeoTiffReaderTest.java:507)
+
+[INFO] Running org.geotools.gce.geotiff.GeoTiffServiceTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in org.geotools.gce.geotiff.GeoTiffServiceTest
+[INFO] Running org.geotools.gce.geotiff.GeoTiffWriterTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.395 s - in org.geotools.gce.geotiff.GeoTiffWriterTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   GeoTiffReaderTest.testNoData:507->Assert.assertThat:923->Assert.assertThat:956 
+Expected: an instance of it.geosolutions.jaiext.range.NoDataContainer
+     but: <java.lang.Object@5f05c8d6> is a java.lang.Object
+[INFO] 
+[ERROR] Tests run: 33, Failures: 1, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] GeoTools ........................................... SUCCESS [  5.004 s]
+[INFO] Build tools for Geotools 2 ......................... SUCCESS [  0.034 s]
+[INFO] Maven plugins for Geotools 2 ....................... SUCCESS [  0.030 s]
+[INFO] JAR files collector ................................ SUCCESS [  3.418 s]
+[INFO] JJTree and JavaCC compilers plugin ................. SUCCESS [  0.432 s]
+[INFO] Geotools modules ................................... SUCCESS [  0.017 s]
+[INFO] Geotools libraries ................................. SUCCESS [  0.016 s]
+[INFO] Open GIS Interfaces ................................ SUCCESS [ 12.104 s]
+[INFO] Metadata ........................................... SUCCESS [ 15.027 s]
+[INFO] Sample data module ................................. SUCCESS [  0.206 s]
+[INFO] Referencing services ............................... SUCCESS [  5.752 s]
+[INFO] Geotools plugins ................................... SUCCESS [  0.015 s]
+[INFO] EPSG Authority Service using HSQL database ......... SUCCESS [ 29.105 s]
+[INFO] Main module ........................................ SUCCESS [ 29.745 s]
+[INFO] XML Parsing Support ................................ SUCCESS [ 12.023 s]
+[INFO] Geotools extensions ................................ SUCCESS [  0.021 s]
+[INFO] XML Parsing ........................................ SUCCESS [  0.023 s]
+[INFO] XML Parsing ........................................ SUCCESS [  4.260 s]
+[INFO] Feature Based Graphs and Networks .................. SUCCESS [  2.472 s]
+[INFO] XML Code Generation Support ........................ SUCCESS [  1.362 s]
+[INFO] Grid Coverage module ............................... SUCCESS [ 33.648 s]
+[INFO] EPSG Authority Service using WKT file .............. SUCCESS [  3.609 s]
+[INFO] OGC CQL to Filter parser ........................... SUCCESS [  9.414 s]
+[INFO] Property File DataStore ............................ SUCCESS [  4.226 s]
+[INFO] GeoTIFF grid coverage exchange module .............. FAILURE [  9.935 s]
+[INFO] JDBC DataStore Support ............................. SKIPPED
+[INFO] JDBC DataStore Plugins ............................. SKIPPED
+[INFO] H2 DataStore ....................................... SKIPPED
+[INFO] Oracle DataStore ................................... SKIPPED
+[INFO] PostGIS DataStore .................................. SKIPPED
+[INFO] Shapefile module ................................... SKIPPED
+[INFO] Feature transforming feature source wrapper ........ SKIPPED
+[INFO] WorldImage datasource module ....................... SKIPPED
+[INFO] imagemosaic datasource module ...................... SKIPPED
+[INFO] ArcGrid datasource module .......................... SKIPPED
+[INFO] GML2 XML Support ................................... SKIPPED
+[INFO] GML3 XML Support ................................... SKIPPED
+[INFO] Filter XML Support ................................. SKIPPED
+[INFO] SLD XML Support .................................... SKIPPED
+[INFO] Render ............................................. SKIPPED
+[INFO] OGC Web Service Models ............................. SKIPPED
+[INFO] Xlink Model ........................................ SKIPPED
+[INFO] Open Web Services Model ............................ SKIPPED
+[INFO] Filter Encoding Specification Model ................ SKIPPED
+[INFO] Web Feature Service Model .......................... SKIPPED
+[INFO] Web Processing Service Model ....................... SKIPPED
+[INFO] Web Coverage Service Model ......................... SKIPPED
+[INFO] Catalog Services for the Web Model ................. SKIPPED
+[INFO] Web Map Tile Service model ......................... SKIPPED
+[INFO] ArcSDE plugin ...................................... SKIPPED
+[INFO] ArcSDE dummy api ................................... SKIPPED
+[INFO] ArcSDE support classes ............................. SKIPPED
+[INFO] ArcSDE DataStore plugin ............................ SKIPPED
+[INFO] Dynamic symbolizer module based on JFreeChart and Eastwood SKIPPED
+[INFO] Extensions to EPSG authority factory ............... SKIPPED
+[INFO] EPSG Authority Service using PostgreSQL database ... SKIPPED
+[INFO] Feature-Pregeneralized ............................. SKIPPED
+[INFO] grass raster datasource module ..................... SKIPPED
+[INFO] ImageI/O-Ext based grid coverage readers ........... SKIPPED
+[INFO] imagepyramid datasource module ..................... SKIPPED
+[INFO] imagemosaic-jdbc module ............................ SKIPPED
+[INFO] DB2 DataStore ...................................... SKIPPED
+[INFO] MySQL DataStore .................................... SKIPPED
+[INFO] SQL Server DataStore ............................... SKIPPED
+[INFO] SpatiaLite DataStore ............................... SKIPPED
+[INFO] Teradata DataStore ................................. SKIPPED
+[INFO] JP2K based grid coverage readers ................... SKIPPED
+[INFO] Dynamic symbolizers for SVG symbols ................ SKIPPED
+[INFO] Coverage Multidimensional Module ................... SKIPPED
+[INFO] API interfaces ..................................... SKIPPED
+[INFO] NetCDF gridcoverage module ......................... SKIPPED
+[INFO] GRIB gridcoverage module ........................... SKIPPED
+[INFO] OWS XML Support .................................... SKIPPED
+[INFO] Filter Encoding Specification XML Support .......... SKIPPED
+[INFO] GeoPackage Module .................................. SKIPPED
+[INFO] Application Schema Support ......................... SKIPPED
+[INFO] Application Schema Resolver ........................ SKIPPED
+[INFO] Complex Features Support ........................... SKIPPED
+[INFO] Application Schema DataAccess ...................... SKIPPED
+[INFO] MongoDB DataStore .................................. SKIPPED
+[INFO] Sample DataAccess .................................. SKIPPED
+[INFO] Brewer module ...................................... SKIPPED
+[INFO] Vector grids ....................................... SKIPPED
+[INFO] Validation Processor and Framework ................. SKIPPED
+[INFO] Web Map Server client .............................. SKIPPED
+[INFO] Tile Client ........................................ SKIPPED
+[INFO] WMTS XML Support ................................... SKIPPED
+[INFO] Geotools unsupported ............................... SKIPPED
+[INFO] Process ............................................ SKIPPED
+[INFO] Swing widgets ...................................... SKIPPED
+[INFO] Web Map Tile Service Client ........................ SKIPPED
+[INFO] KML XML Support .................................... SKIPPED
+[INFO] WFS XML Support .................................... SKIPPED
+[INFO] WCS XML Support .................................... SKIPPED
+[INFO] WPS XML Support .................................... SKIPPED
+[INFO] WMS XML Support .................................... SKIPPED
+[INFO] CSW XML Support .................................... SKIPPED
+[INFO] Process Feature .................................... SKIPPED
+[INFO] Process Raster ..................................... SKIPPED
+[INFO] YSLD Parser/Encoder ................................ SKIPPED
+[INFO] GeoJSON Support .................................... SKIPPED
+[INFO] Process Geometry ................................... SKIPPED
+[INFO] MBTiles Module ..................................... SKIPPED
+[INFO] WFS client module (NG) ............................. SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 03:04 min
+[INFO] Finished at: 2018-11-22T11:29:43+01:00
+[INFO] Final Memory: 74M/2987M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.22.1:test (default-test) on project gt-geotiff: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/geotools/geotools/457543343/modules/plugin/geotiff/target/surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :gt-geotiff

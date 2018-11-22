@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema 
+  xmlns="http://localhost/xob/test" 
+  elementFormDefault="qualified" 
+  xmlns:my="http://localhost/xob/test" 
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+  targetNamespace="http://localhost/xob/test"
+ >
+
+  <xsd:element name="date" type="xsd:date" />
+  <xsd:element name="time" type="xsd:time" />
+  <xsd:element name="dateTime" type="xsd:dateTime" />
+  <xsd:element name="unsignedByte" type="xsd:unsignedByte"/>
+  <xsd:element name="unsignedShort" type="xsd:unsignedShort"/>
+  <xsd:element name="unsignedInt" type="xsd:unsignedInt"/>
+  <xsd:element name="unsignedLong" type="xsd:unsignedLong"/>
+  
+  <xsd:complexType name="stuffType">
+    <xsd:sequence>
+      <xsd:element name="thing" type="xsd:string" />
+      <xsd:element ref="my:date" />
+    </xsd:sequence>
+    <xsd:attribute name="name" type="xsd:string" use="required" />
+  </xsd:complexType>
+
+</xsd:schema>

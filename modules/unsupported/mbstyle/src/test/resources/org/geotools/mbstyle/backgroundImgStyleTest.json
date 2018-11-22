@@ -1,0 +1,45 @@
+{
+    "version": 8,
+    "name": "backgrounds",
+    "metadata": {
+        "mapbox:autocomposite": true,
+        "mapbox:type": "template"
+    },
+    "center": [
+        -90.87858151552054,
+        51.45533956736787
+    ],
+    "zoom": 2.960501033250624,
+    "bearing": 0,
+    "pitch": 0,
+    "sources": {
+        "geoserver-states": {
+            "url": "http://localhost:8080/geoserver/topp/states/wms",
+            "type": "vector"
+        }
+    },
+    "sprite": "file:src/test/resources/org/geotools/mbstyle/sprite/test-data/sprite",
+    "glyphs": "mapbox://fonts/testuser/{fontstack}/{range}.pbf",
+    "layers": [
+        {
+            "id": "backgroundimg",
+            "type": "background",
+            "source": "geoserver-states",
+            "source-layer": "states",
+            "layout": {
+                "visibility": "visible"
+            },
+            "paint": {
+                "background-pattern": "owl",
+                "background-opacity": 0.75,
+                "background-color": "#0000FF"
+            }
+        }
+    ],
+    "created": "2017-02-13T15:04:34.388Z",
+    "id": "ciz48dnnj004l2rplkpqsra81",
+    "modified": "2017-02-13T19:08:58.695Z",
+    "owner": "testuser",
+    "visibility": "private",
+    "draft": false
+}

@@ -1,0 +1,82 @@
+<%@ jet package="org.geotools.maven.xmlcodegen.templates" imports="org.geotools.maven.xmlcodegen.* java.util.* javax.xml.transform.* javax.xml.transform.sax.* javax.xml.transform.dom.* javax.xml.transform.stream.* org.eclipse.xsd.* java.io.* org.geotools.xml.*" class="BindingTestClass" %>
+<%
+
+    Object[] arguments = (Object[]) argument;
+    XSDNamedComponent named = (XSDNamedComponent)arguments[0];
+    
+    XSDSchema schema = named.getSchema();
+    XSDTypeDefinition type = null;
+   
+    String ns = schema.getTargetNamespace();
+    String prefix = Schemas.getTargetPrefix( schema );
+%>
+
+import org.geotools.xsd.Binding;
+
+/**
+ * Binding test case for <%=named.getTargetNamespace()%>:<%=named.getName()%>.
+ *
+ * <p>
+ *  <pre>
+ *   <code>
+<%
+    
+    StringWriter writer = new StringWriter();
+
+    SAXTransformerFactory txFactory = 
+        (SAXTransformerFactory) SAXTransformerFactory.newInstance();
+    TransformerHandler xmls;
+    try {
+        xmls = txFactory.newTransformerHandler();
+    } catch (TransformerConfigurationException e) {
+        throw new RuntimeException(e);
+    }
+    xmls.getTransformer().setOutputProperty(OutputKeys.METHOD, "XML");
+    xmls.getTransformer().setOutputProperty(OutputKeys.OMIT_XML_DECLARATION, "true");
+    xmls.getTransformer().setOutputProperty(OutputKeys.INDENT, "true");
+
+    try {
+        xmls.getTransformer().transform(new DOMSource(named.getElement()), new StreamResult(writer));
+    } 
+    catch (Exception e) {
+        e.printStackTrace();
+        return null;
+    }
+    
+    String[] lines = writer.getBuffer().toString().split("\n");
+    for (int i = 0; i < lines.length; i++) {
+%>
+ *  <%=lines[i].replaceAll("<","&lt;").replaceAll(">","&gt;")%>
+<%
+    }
+%> 
+ *      
+ *    </code>
+ *   </pre>
+ * </p>
+ *
+ * @generated
+ */
+<%
+    String className = named.getName().substring(0,1).toUpperCase() + 
+        named.getName().substring(1) + "BindingTest";
+    String baseClassName = prefix.toUpperCase() + "TestSupport";
+%>
+public class <%=className%> extends <%=baseClassName%> {
+
+    public void testType() {
+        assertEquals(  Object.class, binding( <%=prefix.toUpperCase()%>.<%=named.getName()%> ).getType() );
+    }
+    
+    public void testExecutionMode() {
+        assertEquals( Binding.OVERRIDE, binding( <%=prefix.toUpperCase()%>.<%=named.getName()%> ).getExecutionMode() );
+    }
+    
+    public void testParse() throws Exception {
+    
+    }
+    
+    public void testEncode() throws Exception {
+    
+    }
+}

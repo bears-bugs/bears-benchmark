@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.geotools.demo</groupId>
+    <artifactId>gt2-xml-po</artifactId>
+    <packaging>jar</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <name>Purchase Order XML Support</name>
+
+    <dependencies>
+       <dependency>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>jaxb2-maven-plugin</artifactId>
+            <version>2.3</version>
+        </dependency>
+        <dependency>
+           <groupId>org.geotools.xsd</groupId>
+           <artifactId>gt-xsd-core</artifactId>
+           <version>20-SNAPSHOT</version>
+        </dependency>    
+    </dependencies>
+
+    <build>
+      <plugins>
+        <!-- jaxb code generator -->
+        <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>jaxb2-maven-plugin</artifactId>
+          <version>2.3</version>
+          <executions>
+            <execution>
+              <goals>
+                <goal>xjc</goal>
+              </goals>
+            </execution>
+          </executions>
+        <configuration>
+          <packageName>org.geotools.po</packageName>
+          <outputDirectory>${project.build.sourceDirectory}</outputDirectory>
+          <sources>
+            <source>${project.basedir}/src/main/resources/schemas/po.xsd</source>
+          </sources>
+        </configuration>
+      </plugin>
+            
+      <!--  geotools generator -->
+      <plugin>
+        <groupId>org.geotools.maven</groupId>
+          <artifactId>xmlcodegen</artifactId>
+          <version>${geotools.version}</version>
+          <configuration>
+            <schemaLocation>po.xsd</schemaLocation>
+            <schemaSourceDirectory>${project.basedir}/src/main/resources</schemaSourceDirectory>
+            <destinationPackage>org.geotools.po.bindings</destinationPackage>         
+            <generateConfiguration>true</generateConfiguration>          
+            <generateBindingInterface>true</generateBindingInterface>
+            <generateElementBindings>true</generateElementBindings>
+            <generateAttributeBindings>true</generateAttributeBindings>
+            <generateTypeBindings>true</generateTypeBindings>
+            <generateXsd>true</generateXsd>
+            <targetPrefix>po</targetPrefix>
+            <generateSchemaLocationResolver>true</generateSchemaLocationResolver>
+            <complexBindingBaseClass>org.geotools.xsd.AbstractComplexBinding</complexBindingBaseClass>
+            <simpleBindingBaseClass>org.geotools.xsd.AbstractSimpleBinding</simpleBindingBaseClass>
+            <bindingConstructorArguments>
+              <bindingConstructorArgument>
+                <name>factory</name>
+                <type>org.geotools.po.ObjectFactory</type>
+              </bindingConstructorArgument>
+            </bindingConstructorArguments>
+          </configuration>
+        </plugin>
+      </plugins>
+    </build>
+
+</project>
