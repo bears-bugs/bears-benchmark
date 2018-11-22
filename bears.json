@@ -1,0 +1,152 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 1167, 
+      "numberRunning": 1168, 
+      "numberFailing": 0, 
+      "numberErroring": 1, 
+      "failures": [
+        {
+          "failureName": "org.openmrs.module.webservices.rest.web.response.ConversionException", 
+          "isError": true, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 5
+    }, 
+    "failingModule": "/root/workspace/openmrs/openmrs-module-webservices.rest/455565885/omod-1.9", 
+    "failureDetails": [
+      {
+        "failureName": "org.openmrs.module.webservices.rest.web.response.ConversionException", 
+        "detail": "concept on class org.openmrs.Obs", 
+        "isError": true, 
+        "testMethod": "getObs_shouldCreateAnObsWhenTheQuestionConceptIsSetAsAMapContainingTheUuid", 
+        "testClass": "org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ObsController1_9Test"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 9, 
+        "numberRunning": 10, 
+        "testClass": "org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ObsController1_9Test", 
+        "numberFailing": 0, 
+        "numberErroring": 1, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/openmrs/openmrs-module-webservices.rest/builds/458312291", 
+      "date": "Nov 22, 2018 10:11:09 AM", 
+      "id": 458312291
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/openmrs/openmrs-module-webservices.rest/builds/455565885", 
+      "date": "Nov 15, 2018 5:12:01 PM", 
+      "id": 455565885
+    }
+  }, 
+  "repository": {
+    "name": "openmrs/openmrs-module-webservices.rest", 
+    "url": "https://github.com/openmrs/openmrs-module-webservices.rest", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 6951233
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/openmrs/openmrs-module-webservices.rest/commit/177e9ae980834bdb312f1e6b84a48faa697fb257", 
+      "sha": "177e9ae980834bdb312f1e6b84a48faa697fb257", 
+      "branchName": "master", 
+      "date": "Nov 22, 2018 9:59:20 AM", 
+      "repoName": "openmrs/openmrs-module-webservices.rest"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/openmrs/openmrs-module-webservices.rest/commit/43f931f784dcf6734eff4cf5a8c79545e5db44c2", 
+      "sha": "43f931f784dcf6734eff4cf5a8c79545e5db44c2", 
+      "branchName": "master", 
+      "date": "Nov 15, 2018 4:57:32 PM", 
+      "repoName": "openmrs/openmrs-module-webservices.rest"
+    }
+  }, 
+  "bugName": "openmrs-openmrs-module-webservices.rest-455565885-458312291", 
+  "version": "latest", 
+  "projectMetrics": {
+    "numberSourceFiles": 300, 
+    "numberLibrariesFailingModule": 125, 
+    "numberTestFiles": 276, 
+    "numberModules": 11
+  }, 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 13, 
+      "numberDeleted": 5
+    }
+  }, 
+  "bugId": "Bears-229", 
+  "type": "passing_passing", 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 295611128, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 413138944, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Nov 22, 2018 10:38:03 AM", 
+    "projectRootPomPath": "./workspace/openmrs/openmrs-module-webservices.rest/455565885/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          0, 
+          0, 
+          0, 
+          0, 
+          714
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 714
+      }, 
+      "testing": {
+        "stepDurations": [
+          317
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 317
+      }, 
+      "cloning": {
+        "stepDurations": [
+          7
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 7
+      }
+    }, 
+    "reproductionDateBeginning": "Nov 22, 2018 10:11:23 AM", 
+    "totalDuration": 1592
+  }
+}
