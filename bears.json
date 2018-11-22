@@ -1,0 +1,149 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 3554, 
+      "numberRunning": 3555, 
+      "numberFailing": 1, 
+      "numberErroring": 0, 
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError", 
+          "isError": false, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 10
+    }, 
+    "failingModule": "/root/workspace/geotools/geotools/457543343/modules/plugin/geotiff", 
+    "failureDetails": [
+      {
+        "failureName": "java.lang.AssertionError", 
+        "detail": "\nExpected: an instance of it.geosolutions.jaiext.range.NoDataContainer\n     but: <java.lang.Object@5f05c8d6> is a java.lang.Object", 
+        "isError": false, 
+        "testClass": "org.geotools.gce.geotiff.GeoTiffReaderTest", 
+        "testMethod": "testNoData"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 20, 
+        "numberRunning": 21, 
+        "testClass": "org.geotools.gce.geotiff.GeoTiffReaderTest", 
+        "numberFailing": 1, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/geotools/geotools/builds/458310098", 
+      "date": "Nov 22, 2018 10:18:06 AM", 
+      "id": 458310098
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/geotools/geotools/builds/457543343", 
+      "date": "Nov 20, 2018 6:15:13 PM", 
+      "id": 457543343
+    }
+  }, 
+  "repository": {
+    "name": "geotools/geotools", 
+    "url": "https://github.com/geotools/geotools", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 2752522
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/geotools/geotools/commit/45f1c40c6566934d010bb89e24b6a5e4abdd6f90", 
+      "sha": "45f1c40c6566934d010bb89e24b6a5e4abdd6f90", 
+      "branchName": "master", 
+      "date": "Nov 22, 2018 9:52:21 AM", 
+      "repoName": "geotools/geotools"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/geotools/geotools/commit/25baa02d5e4d60ddb8b3689e954f68bab376ce72", 
+      "sha": "25baa02d5e4d60ddb8b3689e954f68bab376ce72", 
+      "branchName": "master", 
+      "date": "Nov 20, 2018 5:51:17 PM", 
+      "repoName": "geotools/geotools"
+    }
+  }, 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 0, 
+      "numberDeleted": 2
+    }
+  }, 
+  "type": "passing_passing", 
+  "projectMetrics": {
+    "numberSourceFiles": 7952, 
+    "numberLibrariesFailingModule": 81, 
+    "numberTestFiles": 2261, 
+    "numberModules": 103
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 210748984, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 839909376, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Nov 22, 2018 11:55:18 AM", 
+    "projectRootPomPath": "./workspace/geotools/geotools/457543343/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          1, 
+          2, 
+          1, 
+          4, 
+          1481
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 1489
+      }, 
+      "testing": {
+        "stepDurations": [
+          189
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 189
+      }, 
+      "cloning": {
+        "stepDurations": [
+          68
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 68
+      }
+    }, 
+    "reproductionDateBeginning": "Nov 22, 2018 11:00:36 AM", 
+    "totalDuration": 3273
+  }
+}
