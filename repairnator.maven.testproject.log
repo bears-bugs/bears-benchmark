@@ -1,0 +1,4504 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.openmrs.module:webservices.rest-omod-2.0:jar:2.23.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ org.openmrs.module:webservices.rest-omod-2.0:[unknown-version], /root/workspace/openmrs/openmrs-module-webservices.rest/455565885/omod-2.0/pom.xml, line 153, column 21
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Rest Web Services
+[INFO] Rest Web Services Common OMOD
+[INFO] Rest Web Services 1.8 OMOD
+[INFO] Rest Web Services 1.9 OMOD
+[INFO] Rest Web Services 1.10 OMOD
+[INFO] Rest Web Services 1.11 OMOD
+[INFO] Rest Web Services 1.12 OMOD
+[INFO] Rest Web Services 2.0 OMOD
+[INFO] Rest Web Services 2.1 OMOD
+[INFO] Rest Web Services 2.2 OMOD
+[INFO] Rest Web Services OMOD
+[INFO] Rest Web Services Integration Tests
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Rest Web Services 2.23.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-java-formatter-plugin:0.4:format (default) @ webservices.rest ---
+[INFO] Using 'UTF-8' encoding to format source files.
+[INFO] Number of files to be formatted: 0
+[INFO] 
+[INFO] --- license-maven-plugin:3.0:format (format-license-header) @ webservices.rest ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Rest Web Services Common OMOD 2.23.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.7.201606060606:prepare-agent (prepare-agent) @ webservices.rest-omod-common ---
+[INFO] argLine set to -javaagent:/root/./workspace/openmrs/openmrs-module-webservices.rest/455565885/.m2/org/jacoco/org.jacoco.agent/0.7.7.201606060606/org.jacoco.agent-0.7.7.201606060606-runtime.jar=destfile=/root/workspace/openmrs/openmrs-module-webservices.rest/455565885/omod-common/target/jacoco.exec,includes=org/openmrs/**
+[INFO] 
+[INFO] --- maven-java-formatter-plugin:0.4:format (default) @ webservices.rest-omod-common ---
+[INFO] Using 'UTF-8' encoding to format source files.
+[INFO] Number of files to be formatted: 158
+[INFO] Successfully formatted: 0 file(s)
+[INFO] Fail to format        : 0 file(s)
+[INFO] Skipped               : 158 file(s)
+[INFO] Approximate time taken: 1s
+[INFO] 
+[INFO] --- license-maven-plugin:3.0:format (format-license-header) @ webservices.rest-omod-common ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ webservices.rest-omod-common ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] skip non existing resourceDirectory /root/workspace/openmrs/openmrs-module-webservices.rest/455565885/omod-common/src/main/webapp
+[INFO] skip non existing resourceDirectory /root/workspace/openmrs/openmrs-module-webservices.rest/455565885/omod-common/src/main/webapp
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ webservices.rest-omod-common ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ webservices.rest-omod-common ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/openmrs/openmrs-module-webservices.rest/455565885/omod-common/src/test/resources
+[INFO] skip non existing resourceDirectory /root/workspace/openmrs/openmrs-module-webservices.rest/455565885/omod-common/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ webservices.rest-omod-common ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.1:test (default-test) @ webservices.rest-omod-common ---
+[INFO] Downloading: http://mavenrepo.openmrs.org/nexus/content/repositories/public/org/apache/maven/surefire/surefire-junit4/2.22.1/surefire-junit4-2.22.1.pom
+[INFO] Downloaded: http://mavenrepo.openmrs.org/nexus/content/repositories/public/org/apache/maven/surefire/surefire-junit4/2.22.1/surefire-junit4-2.22.1.pom (4 KB at 2.3 KB/sec)
+[INFO] Downloading: http://mavenrepo.openmrs.org/nexus/content/repositories/public/org/apache/maven/surefire/surefire-providers/2.22.1/surefire-providers-2.22.1.pom
+[INFO] Downloaded: http://mavenrepo.openmrs.org/nexus/content/repositories/public/org/apache/maven/surefire/surefire-providers/2.22.1/surefire-providers-2.22.1.pom (3 KB at 4.8 KB/sec)
+[INFO] Downloading: http://mavenrepo.openmrs.org/nexus/content/repositories/public/org/apache/maven/surefire/surefire-junit4/2.22.1/surefire-junit4-2.22.1.jar
+[INFO] Downloaded: http://mavenrepo.openmrs.org/nexus/content/repositories/public/org/apache/maven/surefire/surefire-junit4/2.22.1/surefire-junit4-2.22.1.jar (83 KB at 141.4 KB/sec)
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.openmrs.module.webservices.rest.web.RestUtilComponentTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 16.123 s - in org.openmrs.module.webservices.rest.web.RestUtilComponentTest
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.BaseRestControllerTest
+ERROR - BaseRestController.handleException(115) |2018-11-22 10:23:56,003| ErrorMessage
+org.openmrs.module.webservices.rest.web.response.GenericRestException: ErrorMessage
+	at org.openmrs.module.webservices.rest.web.v1_0.controller.BaseRestControllerTest.handleException_shouldLog500AndAboveAsErrors(BaseRestControllerTest.java:120)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:74)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:82)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:240)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:180)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+ERROR - BaseRestController.handleException(115) |2018-11-22 10:23:57,702| ErrorMessage
+java.lang.Exception: ErrorMessage
+	at org.openmrs.module.webservices.rest.web.v1_0.controller.BaseRestControllerTest.handleException_shouldLogUnannotatedAsErrors(BaseRestControllerTest.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:74)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:82)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:240)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:180)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.368 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.BaseRestControllerTest
+[INFO] Running org.openmrs.module.webservices.rest.web.api.RestServiceTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.974 s - in org.openmrs.module.webservices.rest.web.api.RestServiceTest
+[INFO] Running org.openmrs.module.webservices.rest.web.api.impl.RestServiceImplTest
+[INFO] Tests run: 52, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.816 s - in org.openmrs.module.webservices.rest.web.api.impl.RestServiceImplTest
+[INFO] Running org.openmrs.module.webservices.rest.web.RestUtilTest
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 s - in org.openmrs.module.webservices.rest.web.RestUtilTest
+[INFO] Running org.openmrs.module.webservices.rest.web.resource.api.SearchQueryTest
+[INFO] Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 s - in org.openmrs.module.webservices.rest.web.resource.api.SearchQueryTest
+[INFO] Running org.openmrs.module.webservices.rest.web.resource.api.SearchConfigTest
+[INFO] Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in org.openmrs.module.webservices.rest.web.resource.api.SearchConfigTest
+[INFO] Running org.openmrs.module.webservices.rest.web.resource.impl.NeedsPagingTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.518 s - in org.openmrs.module.webservices.rest.web.resource.impl.NeedsPagingTest
+[INFO] Running org.openmrs.module.webservices.rest.web.resource.impl.AlreadyPagedTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.769 s - in org.openmrs.module.webservices.rest.web.resource.impl.AlreadyPagedTest
+[INFO] Running org.openmrs.module.webservices.rest.web.resource.impl.MetadataDelegatingCrudResourceTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in org.openmrs.module.webservices.rest.web.resource.impl.MetadataDelegatingCrudResourceTest
+[INFO] Running org.openmrs.module.webservices.rest.web.RequestContextTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.956 s - in org.openmrs.module.webservices.rest.web.RequestContextTest
+[INFO] Running org.openmrs.module.webservices.rest.web.ConversionUtilTest
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.332 s - in org.openmrs.module.webservices.rest.web.ConversionUtilTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 146, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Rest Web Services 1.8 OMOD 2.23.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.7.201606060606:prepare-agent (prepare-agent) @ webservices.rest-omod-1.8 ---
+[INFO] argLine set to -javaagent:/root/./workspace/openmrs/openmrs-module-webservices.rest/455565885/.m2/org/jacoco/org.jacoco.agent/0.7.7.201606060606/org.jacoco.agent-0.7.7.201606060606-runtime.jar=destfile=/root/workspace/openmrs/openmrs-module-webservices.rest/455565885/omod-1.8/target/jacoco.exec,includes=org/openmrs/**
+[INFO] 
+[INFO] --- maven-java-formatter-plugin:0.4:format (default) @ webservices.rest-omod-1.8 ---
+[INFO] Using 'UTF-8' encoding to format source files.
+[INFO] Number of files to be formatted: 134
+[INFO] Successfully formatted: 0 file(s)
+[INFO] Fail to format        : 0 file(s)
+[INFO] Skipped               : 134 file(s)
+[INFO] Approximate time taken: 0s
+[INFO] 
+[INFO] --- license-maven-plugin:3.0:format (format-license-header) @ webservices.rest-omod-1.8 ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ webservices.rest-omod-1.8 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/openmrs/openmrs-module-webservices.rest/455565885/omod-1.8/src/main/resources
+[INFO] skip non existing resourceDirectory /root/workspace/openmrs/openmrs-module-webservices.rest/455565885/omod-1.8/src/main/webapp
+[INFO] skip non existing resourceDirectory /root/workspace/openmrs/openmrs-module-webservices.rest/455565885/omod-1.8/src/main/webapp
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ webservices.rest-omod-1.8 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ webservices.rest-omod-1.8 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 13 resources
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ webservices.rest-omod-1.8 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.1:test (default-test) @ webservices.rest-omod-1.8 ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.openmrs.module.webservices.rest.validation.ValidateUtilTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 15.592 s - in org.openmrs.module.webservices.rest.validation.ValidateUtilTest
+[INFO] Running org.openmrs.module.webservices.rest.web.DelegatingCrudResourceTest
+[WARNING] Tests run: 2, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.38 s - in org.openmrs.module.webservices.rest.web.DelegatingCrudResourceTest
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.ModuleActionController1_8Test
+ERROR - ModuleUtil.getURLStream(590) |2018-11-22 10:24:30,724| Logging an attempt to connect to: https://dl.bintray.com/openmrs/omod/xforms-4.3.11.omod
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 19.518 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.ModuleActionController1_8Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.CohortMemberController1_8Test
+Cohort member fetched (ref): {
+  "results" : [ {
+    "display" : "12345K - Johnny Test Doe",
+    "patient" : {
+      "uuid" : "a7e04421-525f-442f-8138-05b619d16def",
+      "display" : "Johnny Test Doe",
+      "gender" : "M",
+      "age" : 11,
+      "birthdate" : "2007-05-27T00:00:00.000+0200",
+      "birthdateEstimated" : false,
+      "dead" : false,
+      "deathDate" : null,
+      "causeOfDeath" : null,
+      "preferredName" : {
+        "uuid" : "c8fb44f1-b54c-4741-a485-1d435ec8e28f",
+        "display" : "Johnny Test Doe",
+        "links" : [ {
+          "uri" : "http://localhost/ws/rest/v1/person/a7e04421-525f-442f-8138-05b619d16def/name/c8fb44f1-b54c-4741-a485-1d435ec8e28f",
+          "rel" : "self"
+        } ]
+      },
+      "preferredAddress" : {
+        "uuid" : "96144109-6125-4a52-92a0-2564716bee8e",
+        "display" : "",
+        "links" : [ {
+          "uri" : "http://localhost/ws/rest/v1/person/a7e04421-525f-442f-8138-05b619d16def/address/96144109-6125-4a52-92a0-2564716bee8e",
+          "rel" : "self"
+        } ]
+      },
+      "attributes" : [ {
+        "uuid" : "6d9a58c3-61bd-493b-9287-27c624198712",
+        "display" : "Race = NULL",
+        "links" : [ {
+          "uri" : "http://localhost/ws/rest/v1/person/a7e04421-525f-442f-8138-05b619d16def/attribute/6d9a58c3-61bd-493b-9287-27c624198712",
+          "rel" : "self"
+        } ]
+      }, {
+        "uuid" : "ebeaae73-5009-4319-9ba7-e75bfea717d7",
+        "display" : "Birthplace = NULL",
+        "links" : [ {
+          "uri" : "http://localhost/ws/rest/v1/person/a7e04421-525f-442f-8138-05b619d16def/attribute/ebeaae73-5009-4319-9ba7-e75bfea717d7",
+          "rel" : "self"
+        } ]
+      }, {
+        "uuid" : "1adbc47a-8930-44d2-80be-8d6f05a262c3",
+        "display" : "SINGLE",
+        "links" : [ {
+          "uri" : "http://localhost/ws/rest/v1/person/a7e04421-525f-442f-8138-05b619d16def/attribute/1adbc47a-8930-44d2-80be-8d6f05a262c3",
+          "rel" : "self"
+        } ]
+      } ],
+      "voided" : false,
+      "links" : [ {
+        "uri" : "http://localhost/ws/rest/v1/person/a7e04421-525f-442f-8138-05b619d16def",
+        "rel" : "self"
+      }, {
+        "uri" : "http://localhost/ws/rest/v1/person/a7e04421-525f-442f-8138-05b619d16def?v=full",
+        "rel" : "full"
+      } ],
+      "resourceVersion" : "1.8"
+    },
+    "links" : [ {
+      "uri" : "http://localhost/ws/rest/v1/cohort/05e08b3b-5690-41e1-b651-5391fd946c1a/member/a7e04421-525f-442f-8138-05b619d16def",
+      "rel" : "self"
+    }, {
+      "uri" : "http://localhost/ws/rest/v1/cohort/05e08b3b-5690-41e1-b651-5391fd946c1a/member/a7e04421-525f-442f-8138-05b619d16def?v=full",
+      "rel" : "full"
+    } ],
+    "resourceVersion" : "1.8"
+  }, {
+    "display" : "6TS-4 - Collet Test Chebaskwony",
+    "patient" : {
+      "uuid" : "5946f880-b197-400b-9caa-a3c661d23041",
+      "display" : "Collet Test Chebaskwony",
+      "gender" : "F",
+      "age" : 42,
+      "birthdate" : "1976-08-25T00:00:00.000+0200",
+      "birthdateEstimated" : true,
+      "dead" : false,
+      "deathDate" : null,
+      "causeOfDeath" : null,
+      "preferredName" : {
+        "uuid" : "a65c347e-1384-493a-a55b-d325924acd94",
+        "display" : "Collet Test Chebaskwony",
+        "links" : [ {
+          "uri" : "http://localhost/ws/rest/v1/person/5946f880-b197-400b-9caa-a3c661d23041/name/a65c347e-1384-493a-a55b-d325924acd94",
+          "rel" : "self"
+        } ]
+      },
+      "preferredAddress" : {
+        "uuid" : "921c0e23-d941-4bac-8ce4-ab0d0f7d8a91",
+        "display" : "",
+        "links" : [ {
+          "uri" : "http://localhost/ws/rest/v1/person/5946f880-b197-400b-9caa-a3c661d23041/address/921c0e23-d941-4bac-8ce4-ab0d0f7d8a91",
+          "rel" : "self"
+        } ]
+      },
+      "attributes" : [ {
+        "uuid" : "9ac48bf3-7088-422d-a5c6-5ac2b337784a",
+        "display" : "Race = NULL",
+        "links" : [ {
+          "uri" : "http://localhost/ws/rest/v1/person/5946f880-b197-400b-9caa-a3c661d23041/attribute/9ac48bf3-7088-422d-a5c6-5ac2b337784a",
+          "rel" : "self"
+        } ]
+      }, {
+        "uuid" : "33732c97-3793-417e-a1ea-8536b00c4607",
+        "display" : "Birthplace = NULL",
+        "links" : [ {
+          "uri" : "http://localhost/ws/rest/v1/person/5946f880-b197-400b-9caa-a3c661d23041/attribute/33732c97-3793-417e-a1ea-8536b00c4607",
+          "rel" : "self"
+        } ]
+      }, {
+        "uuid" : "3d5c1fdc-accf-4ee6-83e4-1de437452f29",
+        "display" : null,
+        "links" : [ {
+          "uri" : "http://localhost/ws/rest/v1/person/5946f880-b197-400b-9caa-a3c661d23041/attribute/3d5c1fdc-accf-4ee6-83e4-1de437452f29",
+          "rel" : "self"
+        } ]
+      } ],
+      "voided" : false,
+      "links" : [ {
+        "uri" : "http://localhost/ws/rest/v1/person/5946f880-b197-400b-9caa-a3c661d23041",
+        "rel" : "self"
+      }, {
+        "uri" : "http://localhost/ws/rest/v1/person/5946f880-b197-400b-9caa-a3c661d23041?v=full",
+        "rel" : "full"
+      } ],
+      "resourceVersion" : "1.8"
+    },
+    "links" : [ {
+      "uri" : "http://localhost/ws/rest/v1/cohort/05e08b3b-5690-41e1-b651-5391fd946c1a/member/5946f880-b197-400b-9caa-a3c661d23041",
+      "rel" : "self"
+    }, {
+      "uri" : "http://localhost/ws/rest/v1/cohort/05e08b3b-5690-41e1-b651-5391fd946c1a/member/5946f880-b197-400b-9caa-a3c661d23041?v=full",
+      "rel" : "full"
+    } ],
+    "resourceVersion" : "1.8"
+  }, {
+    "display" : "7TU-8 - Anet Test Oloo",
+    "patient" : {
+      "uuid" : "8adf539e-4b5a-47aa-80c0-ba1025c957fa",
+      "display" : "Anet Test Oloo",
+      "gender" : "F",
+      "age" : null,
+      "birthdate" : null,
+      "birthdateEstimated" : false,
+      "dead" : false,
+      "deathDate" : null,
+      "causeOfDeath" : null,
+      "preferredName" : {
+        "uuid" : "5f3c5a2b-7589-408b-a219-20f50e68b164",
+        "display" : "Anet Test Oloo",
+        "links" : [ {
+          "uri" : "http://localhost/ws/rest/v1/person/8adf539e-4b5a-47aa-80c0-ba1025c957fa/name/5f3c5a2b-7589-408b-a219-20f50e68b164",
+          "rel" : "self"
+        } ]
+      },
+      "preferredAddress" : {
+        "uuid" : "7418fe01-e7e0-4f0c-ad1b-4b4d845577f9",
+        "display" : "",
+        "links" : [ {
+          "uri" : "http://localhost/ws/rest/v1/person/8adf539e-4b5a-47aa-80c0-ba1025c957fa/address/7418fe01-e7e0-4f0c-ad1b-4b4d845577f9",
+          "rel" : "self"
+        } ]
+      },
+      "attributes" : [ {
+        "uuid" : "09a7a35e-4fca-43bc-b0e1-9e05b8c68f99",
+        "display" : "Race = NULL",
+        "links" : [ {
+          "uri" : "http://localhost/ws/rest/v1/person/8adf539e-4b5a-47aa-80c0-ba1025c957fa/attribute/09a7a35e-4fca-43bc-b0e1-9e05b8c68f99",
+          "rel" : "self"
+        } ]
+      }, {
+        "uuid" : "64d7264d-246b-459a-9e15-a37c2c40ac63",
+        "display" : "Birthplace = NULL",
+        "links" : [ {
+          "uri" : "http://localhost/ws/rest/v1/person/8adf539e-4b5a-47aa-80c0-ba1025c957fa/attribute/64d7264d-246b-459a-9e15-a37c2c40ac63",
+          "rel" : "self"
+        } ]
+      }, {
+        "uuid" : "63a5a4a0-dd44-46ac-b8c0-c6bfb5a5f878",
+        "display" : null,
+        "links" : [ {
+          "uri" : "http://localhost/ws/rest/v1/person/8adf539e-4b5a-47aa-80c0-ba1025c957fa/attribute/63a5a4a0-dd44-46ac-b8c0-c6bfb5a5f878",
+          "rel" : "self"
+        } ]
+      } ],
+      "voided" : false,
+      "links" : [ {
+        "uri" : "http://localhost/ws/rest/v1/person/8adf539e-4b5a-47aa-80c0-ba1025c957fa",
+        "rel" : "self"
+      }, {
+        "uri" : "http://localhost/ws/rest/v1/person/8adf539e-4b5a-47aa-80c0-ba1025c957fa?v=full",
+        "rel" : "full"
+      } ],
+      "resourceVersion" : "1.8"
+    },
+    "links" : [ {
+      "uri" : "http://localhost/ws/rest/v1/cohort/05e08b3b-5690-41e1-b651-5391fd946c1a/member/8adf539e-4b5a-47aa-80c0-ba1025c957fa",
+      "rel" : "self"
+    }, {
+      "uri" : "http://localhost/ws/rest/v1/cohort/05e08b3b-5690-41e1-b651-5391fd946c1a/member/8adf539e-4b5a-47aa-80c0-ba1025c957fa?v=full",
+      "rel" : "full"
+    } ],
+    "resourceVersion" : "1.8"
+  } ]
+}
+Cohort member fetched (default): {
+  "results" : [ {
+    "display" : "12345K - Johnny Test Doe",
+    "patient" : {
+      "uuid" : "a7e04421-525f-442f-8138-05b619d16def",
+      "display" : "Johnny Test Doe",
+      "gender" : "M",
+      "age" : 11,
+      "birthdate" : "2007-05-27T00:00:00.000+0200",
+      "birthdateEstimated" : false,
+      "dead" : false,
+      "deathDate" : null,
+      "causeOfDeath" : null,
+      "preferredName" : {
+        "uuid" : "c8fb44f1-b54c-4741-a485-1d435ec8e28f",
+        "display" : "Johnny Test Doe",
+        "links" : [ {
+          "uri" : "http://localhost/ws/rest/v1/person/a7e04421-525f-442f-8138-05b619d16def/name/c8fb44f1-b54c-4741-a485-1d435ec8e28f",
+          "rel" : "self"
+        } ]
+      },
+      "preferredAddress" : {
+        "uuid" : "96144109-6125-4a52-92a0-2564716bee8e",
+        "display" : "",
+        "links" : [ {
+          "uri" : "http://localhost/ws/rest/v1/person/a7e04421-525f-442f-8138-05b619d16def/address/96144109-6125-4a52-92a0-2564716bee8e",
+          "rel" : "self"
+        } ]
+      },
+      "attributes" : [ {
+        "uuid" : "6d9a58c3-61bd-493b-9287-27c624198712",
+        "display" : "Race = NULL",
+        "links" : [ {
+          "uri" : "http://localhost/ws/rest/v1/person/a7e04421-525f-442f-8138-05b619d16def/attribute/6d9a58c3-61bd-493b-9287-27c624198712",
+          "rel" : "self"
+        } ]
+      }, {
+        "uuid" : "ebeaae73-5009-4319-9ba7-e75bfea717d7",
+        "display" : "Birthplace = NULL",
+        "links" : [ {
+          "uri" : "http://localhost/ws/rest/v1/person/a7e04421-525f-442f-8138-05b619d16def/attribute/ebeaae73-5009-4319-9ba7-e75bfea717d7",
+          "rel" : "self"
+        } ]
+      }, {
+        "uuid" : "1adbc47a-8930-44d2-80be-8d6f05a262c3",
+        "display" : "SINGLE",
+        "links" : [ {
+          "uri" : "http://localhost/ws/rest/v1/person/a7e04421-525f-442f-8138-05b619d16def/attribute/1adbc47a-8930-44d2-80be-8d6f05a262c3",
+          "rel" : "self"
+        } ]
+      } ],
+      "voided" : false,
+      "links" : [ {
+        "uri" : "http://localhost/ws/rest/v1/person/a7e04421-525f-442f-8138-05b619d16def",
+        "rel" : "self"
+      }, {
+        "uri" : "http://localhost/ws/rest/v1/person/a7e04421-525f-442f-8138-05b619d16def?v=full",
+        "rel" : "full"
+      } ],
+      "resourceVersion" : "1.8"
+    },
+    "links" : [ {
+      "uri" : "http://localhost/ws/rest/v1/cohort/05e08b3b-5690-41e1-b651-5391fd946c1a/member/a7e04421-525f-442f-8138-05b619d16def",
+      "rel" : "self"
+    } ],
+    "resourceVersion" : "1.8"
+  }, {
+    "display" : "6TS-4 - Collet Test Chebaskwony",
+    "patient" : {
+      "uuid" : "5946f880-b197-400b-9caa-a3c661d23041",
+      "display" : "Collet Test Chebaskwony",
+      "gender" : "F",
+      "age" : 42,
+      "birthdate" : "1976-08-25T00:00:00.000+0200",
+      "birthdateEstimated" : true,
+      "dead" : false,
+      "deathDate" : null,
+      "causeOfDeath" : null,
+      "preferredName" : {
+        "uuid" : "a65c347e-1384-493a-a55b-d325924acd94",
+        "display" : "Collet Test Chebaskwony",
+        "links" : [ {
+          "uri" : "http://localhost/ws/rest/v1/person/5946f880-b197-400b-9caa-a3c661d23041/name/a65c347e-1384-493a-a55b-d325924acd94",
+          "rel" : "self"
+        } ]
+      },
+      "preferredAddress" : {
+        "uuid" : "921c0e23-d941-4bac-8ce4-ab0d0f7d8a91",
+        "display" : "",
+        "links" : [ {
+          "uri" : "http://localhost/ws/rest/v1/person/5946f880-b197-400b-9caa-a3c661d23041/address/921c0e23-d941-4bac-8ce4-ab0d0f7d8a91",
+          "rel" : "self"
+        } ]
+      },
+      "attributes" : [ {
+        "uuid" : "9ac48bf3-7088-422d-a5c6-5ac2b337784a",
+        "display" : "Race = NULL",
+        "links" : [ {
+          "uri" : "http://localhost/ws/rest/v1/person/5946f880-b197-400b-9caa-a3c661d23041/attribute/9ac48bf3-7088-422d-a5c6-5ac2b337784a",
+          "rel" : "self"
+        } ]
+      }, {
+        "uuid" : "33732c97-3793-417e-a1ea-8536b00c4607",
+        "display" : "Birthplace = NULL",
+        "links" : [ {
+          "uri" : "http://localhost/ws/rest/v1/person/5946f880-b197-400b-9caa-a3c661d23041/attribute/33732c97-3793-417e-a1ea-8536b00c4607",
+          "rel" : "self"
+        } ]
+      }, {
+        "uuid" : "3d5c1fdc-accf-4ee6-83e4-1de437452f29",
+        "display" : null,
+        "links" : [ {
+          "uri" : "http://localhost/ws/rest/v1/person/5946f880-b197-400b-9caa-a3c661d23041/attribute/3d5c1fdc-accf-4ee6-83e4-1de437452f29",
+          "rel" : "self"
+        } ]
+      } ],
+      "voided" : false,
+      "links" : [ {
+        "uri" : "http://localhost/ws/rest/v1/person/5946f880-b197-400b-9caa-a3c661d23041",
+        "rel" : "self"
+      }, {
+        "uri" : "http://localhost/ws/rest/v1/person/5946f880-b197-400b-9caa-a3c661d23041?v=full",
+        "rel" : "full"
+      } ],
+      "resourceVersion" : "1.8"
+    },
+    "links" : [ {
+      "uri" : "http://localhost/ws/rest/v1/cohort/05e08b3b-5690-41e1-b651-5391fd946c1a/member/5946f880-b197-400b-9caa-a3c661d23041",
+      "rel" : "self"
+    } ],
+    "resourceVersion" : "1.8"
+  }, {
+    "display" : "7TU-8 - Anet Test Oloo",
+    "patient" : {
+      "uuid" : "8adf539e-4b5a-47aa-80c0-ba1025c957fa",
+      "display" : "Anet Test Oloo",
+      "gender" : "F",
+      "age" : null,
+      "birthdate" : null,
+      "birthdateEstimated" : false,
+      "dead" : false,
+      "deathDate" : null,
+      "causeOfDeath" : null,
+      "preferredName" : {
+        "uuid" : "5f3c5a2b-7589-408b-a219-20f50e68b164",
+        "display" : "Anet Test Oloo",
+        "links" : [ {
+          "uri" : "http://localhost/ws/rest/v1/person/8adf539e-4b5a-47aa-80c0-ba1025c957fa/name/5f3c5a2b-7589-408b-a219-20f50e68b164",
+          "rel" : "self"
+        } ]
+      },
+      "preferredAddress" : {
+        "uuid" : "7418fe01-e7e0-4f0c-ad1b-4b4d845577f9",
+        "display" : "",
+        "links" : [ {
+          "uri" : "http://localhost/ws/rest/v1/person/8adf539e-4b5a-47aa-80c0-ba1025c957fa/address/7418fe01-e7e0-4f0c-ad1b-4b4d845577f9",
+          "rel" : "self"
+        } ]
+      },
+      "attributes" : [ {
+        "uuid" : "09a7a35e-4fca-43bc-b0e1-9e05b8c68f99",
+        "display" : "Race = NULL",
+        "links" : [ {
+          "uri" : "http://localhost/ws/rest/v1/person/8adf539e-4b5a-47aa-80c0-ba1025c957fa/attribute/09a7a35e-4fca-43bc-b0e1-9e05b8c68f99",
+          "rel" : "self"
+        } ]
+      }, {
+        "uuid" : "64d7264d-246b-459a-9e15-a37c2c40ac63",
+        "display" : "Birthplace = NULL",
+        "links" : [ {
+          "uri" : "http://localhost/ws/rest/v1/person/8adf539e-4b5a-47aa-80c0-ba1025c957fa/attribute/64d7264d-246b-459a-9e15-a37c2c40ac63",
+          "rel" : "self"
+        } ]
+      }, {
+        "uuid" : "63a5a4a0-dd44-46ac-b8c0-c6bfb5a5f878",
+        "display" : null,
+        "links" : [ {
+          "uri" : "http://localhost/ws/rest/v1/person/8adf539e-4b5a-47aa-80c0-ba1025c957fa/attribute/63a5a4a0-dd44-46ac-b8c0-c6bfb5a5f878",
+          "rel" : "self"
+        } ]
+      } ],
+      "voided" : false,
+      "links" : [ {
+        "uri" : "http://localhost/ws/rest/v1/person/8adf539e-4b5a-47aa-80c0-ba1025c957fa",
+        "rel" : "self"
+      }, {
+        "uri" : "http://localhost/ws/rest/v1/person/8adf539e-4b5a-47aa-80c0-ba1025c957fa?v=full",
+        "rel" : "full"
+      } ],
+      "resourceVersion" : "1.8"
+    },
+    "links" : [ {
+      "uri" : "http://localhost/ws/rest/v1/cohort/05e08b3b-5690-41e1-b651-5391fd946c1a/member/8adf539e-4b5a-47aa-80c0-ba1025c957fa",
+      "rel" : "self"
+    } ],
+    "resourceVersion" : "1.8"
+  } ]
+}
+Cohort member fetched (default): {
+  "display" : "12345K - Johnny Test Doe",
+  "patient" : {
+    "uuid" : "a7e04421-525f-442f-8138-05b619d16def",
+    "display" : "Johnny Test Doe",
+    "gender" : "M",
+    "age" : 11,
+    "birthdate" : "2007-05-27T00:00:00.000+0200",
+    "birthdateEstimated" : false,
+    "dead" : false,
+    "deathDate" : null,
+    "causeOfDeath" : null,
+    "preferredName" : {
+      "uuid" : "c8fb44f1-b54c-4741-a485-1d435ec8e28f",
+      "display" : "Johnny Test Doe",
+      "links" : [ {
+        "uri" : "http://localhost/ws/rest/v1/person/a7e04421-525f-442f-8138-05b619d16def/name/c8fb44f1-b54c-4741-a485-1d435ec8e28f",
+        "rel" : "self"
+      } ]
+    },
+    "preferredAddress" : {
+      "uuid" : "96144109-6125-4a52-92a0-2564716bee8e",
+      "display" : "",
+      "links" : [ {
+        "uri" : "http://localhost/ws/rest/v1/person/a7e04421-525f-442f-8138-05b619d16def/address/96144109-6125-4a52-92a0-2564716bee8e",
+        "rel" : "self"
+      } ]
+    },
+    "attributes" : [ {
+      "uuid" : "6d9a58c3-61bd-493b-9287-27c624198712",
+      "display" : "Race = NULL",
+      "links" : [ {
+        "uri" : "http://localhost/ws/rest/v1/person/a7e04421-525f-442f-8138-05b619d16def/attribute/6d9a58c3-61bd-493b-9287-27c624198712",
+        "rel" : "self"
+      } ]
+    }, {
+      "uuid" : "ebeaae73-5009-4319-9ba7-e75bfea717d7",
+      "display" : "Birthplace = NULL",
+      "links" : [ {
+        "uri" : "http://localhost/ws/rest/v1/person/a7e04421-525f-442f-8138-05b619d16def/attribute/ebeaae73-5009-4319-9ba7-e75bfea717d7",
+        "rel" : "self"
+      } ]
+    }, {
+      "uuid" : "1adbc47a-8930-44d2-80be-8d6f05a262c3",
+      "display" : "SINGLE",
+      "links" : [ {
+        "uri" : "http://localhost/ws/rest/v1/person/a7e04421-525f-442f-8138-05b619d16def/attribute/1adbc47a-8930-44d2-80be-8d6f05a262c3",
+        "rel" : "self"
+      } ]
+    } ],
+    "voided" : false,
+    "links" : [ {
+      "uri" : "http://localhost/ws/rest/v1/person/a7e04421-525f-442f-8138-05b619d16def",
+      "rel" : "self"
+    }, {
+      "uri" : "http://localhost/ws/rest/v1/person/a7e04421-525f-442f-8138-05b619d16def?v=full",
+      "rel" : "full"
+    } ],
+    "resourceVersion" : "1.8"
+  },
+  "links" : [ {
+    "uri" : "http://localhost/ws/rest/v1/cohort/05e08b3b-5690-41e1-b651-5391fd946c1a/member/a7e04421-525f-442f-8138-05b619d16def",
+    "rel" : "self"
+  }, {
+    "uri" : "http://localhost/ws/rest/v1/cohort/05e08b3b-5690-41e1-b651-5391fd946c1a/member/a7e04421-525f-442f-8138-05b619d16def?v=full",
+    "rel" : "full"
+  } ],
+  "resourceVersion" : "1.8"
+}
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.821 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.CohortMemberController1_8Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.SessionController1_8Test
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.272 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.SessionController1_8Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.ConceptClassController1_8Test
+ConceptClass fetched (default): {
+  "uuid" : "ecdee8a7-d741-4fe7-8e01-f79cacbe97bc",
+  "display" : "Misc",
+  "name" : "Misc",
+  "description" : "Terms which don't fit other categories",
+  "retired" : false,
+  "links" : [ {
+    "uri" : "http://localhost/ws/rest/v1/conceptclass/ecdee8a7-d741-4fe7-8e01-f79cacbe97bc",
+    "rel" : "self"
+  }, {
+    "uri" : "http://localhost/ws/rest/v1/conceptclass/ecdee8a7-d741-4fe7-8e01-f79cacbe97bc?v=full",
+    "rel" : "full"
+  } ],
+  "resourceVersion" : "1.8"
+}
+Found 18 conceptClasse(s): [ {
+  "uuid" : "97097dd9-b092-4b68-a2dc-e5e5be961d42",
+  "display" : "Test",
+  "links" : [ {
+    "uri" : "http://localhost/ws/rest/v1/conceptclass/97097dd9-b092-4b68-a2dc-e5e5be961d42",
+    "rel" : "self"
+  } ]
+}, {
+  "uuid" : "77177ce7-1410-40ee-bbad-ff6905ee3095",
+  "display" : "Procedure",
+  "links" : [ {
+    "uri" : "http://localhost/ws/rest/v1/conceptclass/77177ce7-1410-40ee-bbad-ff6905ee3095",
+    "rel" : "self"
+  } ]
+}, {
+  "uuid" : "3d065ed4-b0b9-4710-9a17-6d8c4fd259b7",
+  "display" : "Drug",
+  "links" : [ {
+    "uri" : "http://localhost/ws/rest/v1/conceptclass/3d065ed4-b0b9-4710-9a17-6d8c4fd259b7",
+    "rel" : "self"
+  } ]
+}, {
+  "uuid" : "938834bf-a745-4dbd-b611-f06a9a5a3060",
+  "display" : "Diagnosis",
+  "links" : [ {
+    "uri" : "http://localhost/ws/rest/v1/conceptclass/938834bf-a745-4dbd-b611-f06a9a5a3060",
+    "rel" : "self"
+  } ]
+}, {
+  "uuid" : "04a0c64e-4e96-4d09-b7a9-c16966bc1240",
+  "display" : "Finding",
+  "links" : [ {
+    "uri" : "http://localhost/ws/rest/v1/conceptclass/04a0c64e-4e96-4d09-b7a9-c16966bc1240",
+    "rel" : "self"
+  } ]
+}, {
+  "uuid" : "c4ed9081-fc7f-4474-84aa-99a969e40e7d",
+  "display" : "Anatomy",
+  "links" : [ {
+    "uri" : "http://localhost/ws/rest/v1/conceptclass/c4ed9081-fc7f-4474-84aa-99a969e40e7d",
+    "rel" : "self"
+  } ]
+}, {
+  "uuid" : "a82ef63c-e4e4-48d6-988a-fdd74d7541a7",
+  "display" : "Question",
+  "links" : [ {
+    "uri" : "http://localhost/ws/rest/v1/conceptclass/a82ef63c-e4e4-48d6-988a-fdd74d7541a7",
+    "rel" : "self"
+  } ]
+}, {
+  "uuid" : "4719138c-8553-4c81-bb92-753f41f8be16",
+  "display" : "LabSet",
+  "links" : [ {
+    "uri" : "http://localhost/ws/rest/v1/conceptclass/4719138c-8553-4c81-bb92-753f41f8be16",
+    "rel" : "self"
+  } ]
+}, {
+  "uuid" : "f9c24ce5-fe85-4128-9b07-1c4ea980a539",
+  "display" : "MedSet",
+  "links" : [ {
+    "uri" : "http://localhost/ws/rest/v1/conceptclass/f9c24ce5-fe85-4128-9b07-1c4ea980a539",
+    "rel" : "self"
+  } ]
+}, {
+  "uuid" : "0248f513-d023-40b6-a274-235a33f6e25f",
+  "display" : "ConvSet",
+  "links" : [ {
+    "uri" : "http://localhost/ws/rest/v1/conceptclass/0248f513-d023-40b6-a274-235a33f6e25f",
+    "rel" : "self"
+  } ]
+}, {
+  "uuid" : "ecdee8a7-d741-4fe7-8e01-f79cacbe97bc",
+  "display" : "Misc",
+  "links" : [ {
+    "uri" : "http://localhost/ws/rest/v1/conceptclass/ecdee8a7-d741-4fe7-8e01-f79cacbe97bc",
+    "rel" : "self"
+  } ]
+}, {
+  "uuid" : "833bf0ff-c436-47ff-b868-2c249e8b2ff6",
+  "display" : "Symptom",
+  "links" : [ {
+    "uri" : "http://localhost/ws/rest/v1/conceptclass/833bf0ff-c436-47ff-b868-2c249e8b2ff6",
+    "rel" : "self"
+  } ]
+}, {
+  "uuid" : "074f33db-4888-4e0c-be87-073635b3d70d",
+  "display" : "Symptom/Finding",
+  "links" : [ {
+    "uri" : "http://localhost/ws/rest/v1/conceptclass/074f33db-4888-4e0c-be87-073635b3d70d",
+    "rel" : "self"
+  } ]
+}, {
+  "uuid" : "d2339229-bc47-480b-bf20-548e2ed7c786",
+  "display" : "Specimen",
+  "links" : [ {
+    "uri" : "http://localhost/ws/rest/v1/conceptclass/d2339229-bc47-480b-bf20-548e2ed7c786",
+    "rel" : "self"
+  } ]
+}, {
+  "uuid" : "a5c73192-ad13-4040-97ee-f3b606717705",
+  "display" : "Misc Order",
+  "links" : [ {
+    "uri" : "http://localhost/ws/rest/v1/conceptclass/a5c73192-ad13-4040-97ee-f3b606717705",
+    "rel" : "self"
+  } ]
+}, {
+  "uuid" : "2a3738f5-26f0-4f97-ae7a-f99e42fa6d44",
+  "display" : "Program",
+  "links" : [ {
+    "uri" : "http://localhost/ws/rest/v1/conceptclass/2a3738f5-26f0-4f97-ae7a-f99e42fa6d44",
+    "rel" : "self"
+  } ]
+}, {
+  "uuid" : "dbdf1b12-dbcb-4d41-a8eb-39a551f56e6d",
+  "display" : "Workflow",
+  "links" : [ {
+    "uri" : "http://localhost/ws/rest/v1/conceptclass/dbdf1b12-dbcb-4d41-a8eb-39a551f56e6d",
+    "rel" : "self"
+  } ]
+}, {
+  "uuid" : "ac3feb09-e120-4d8c-97ee-f7544720efb8",
+  "display" : "State",
+  "links" : [ {
+    "uri" : "http://localhost/ws/rest/v1/conceptclass/ac3feb09-e120-4d8c-97ee-f7544720efb8",
+    "rel" : "self"
+  } ]
+} ]
+ConceptClassName fetched (default): {
+  "uuid" : "3d065ed4-b0b9-4710-9a17-6d8c4fd259b7",
+  "display" : "Drug",
+  "name" : "Drug",
+  "description" : "Drug",
+  "retired" : false,
+  "links" : [ {
+    "uri" : "http://localhost/ws/rest/v1/conceptclass/3d065ed4-b0b9-4710-9a17-6d8c4fd259b7",
+    "rel" : "self"
+  }, {
+    "uri" : "http://localhost/ws/rest/v1/conceptclass/3d065ed4-b0b9-4710-9a17-6d8c4fd259b7?v=full",
+    "rel" : "full"
+  } ],
+  "resourceVersion" : "1.8"
+}
+ConceptClass fetched (default): {
+  "uuid" : "ecdee8a7-d741-4fe7-8e01-f79cacbe97bc",
+  "display" : "Misc",
+  "name" : "Misc",
+  "description" : "Terms which don't fit other categories",
+  "retired" : false,
+  "links" : [ {
+    "uri" : "http://localhost/ws/rest/v1/conceptclass/ecdee8a7-d741-4fe7-8e01-f79cacbe97bc",
+    "rel" : "self"
+  }, {
+    "uri" : "http://localhost/ws/rest/v1/conceptclass/ecdee8a7-d741-4fe7-8e01-f79cacbe97bc?v=full",
+    "rel" : "full"
+  } ],
+  "resourceVersion" : "1.8"
+}
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.08 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.ConceptClassController1_8Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.PersonAttributeTypeController1_8Test
+Old PersonAttributeType Description: : "Group of persons related by common descent or heredity"
+Edited PersonAttributeType Description: : "Updated description"
+Created person attribute type: {
+  "uuid" : "285b8886-a79c-446c-bbac-f19a3967347a",
+  "display" : "Some attributeType",
+  "name" : "Some attributeType",
+  "description" : "Attribute Type for test",
+  "format" : "java.lang.String",
+  "foreignKey" : null,
+  "sortWeight" : 4.0,
+  "searchable" : false,
+  "editPrivilege" : null,
+  "retired" : false,
+  "links" : [ {
+    "uri" : "http://localhost/ws/rest/v1/personattributetype/285b8886-a79c-446c-bbac-f19a3967347a",
+    "rel" : "self"
+  }, {
+    "uri" : "http://localhost/ws/rest/v1/personattributetype/285b8886-a79c-446c-bbac-f19a3967347a?v=full",
+    "rel" : "full"
+  } ],
+  "resourceVersion" : "1.8"
+}
+Person fetched (full): {
+  "uuid" : "b3b6d540-a32e-44c7-91b3-292d97667518",
+  "display" : "Race",
+  "name" : "Race",
+  "description" : "Group of persons related by common descent or heredity",
+  "format" : "java.lang.String",
+  "foreignKey" : null,
+  "sortWeight" : 1.0,
+  "searchable" : false,
+  "editPrivilege" : null,
+  "retired" : true,
+  "concept" : null,
+  "auditInfo" : {
+    "creator" : {
+      "uuid" : "1010d442-e134-11de-babe-001e378eb67e",
+      "display" : "admin",
+      "links" : [ {
+        "uri" : "http://localhost/ws/rest/v1/user/1010d442-e134-11de-babe-001e378eb67e",
+        "rel" : "self"
+      } ]
+    },
+    "dateCreated" : "2007-05-04T09:59:23.000+0200",
+    "changedBy" : null,
+    "dateChanged" : null,
+    "retiredBy" : {
+      "uuid" : "1010d442-e134-11de-babe-001e378eb67e",
+      "display" : "admin",
+      "links" : [ {
+        "uri" : "http://localhost/ws/rest/v1/user/1010d442-e134-11de-babe-001e378eb67e",
+        "rel" : "self"
+      } ]
+    },
+    "dateRetired" : "2008-08-15T00:00:00.000+0200",
+    "retireReason" : "test"
+  },
+  "links" : [ {
+    "uri" : "http://localhost/ws/rest/v1/personattributetype/b3b6d540-a32e-44c7-91b3-292d97667518",
+    "rel" : "self"
+  } ],
+  "resourceVersion" : "1.8"
+}
+findPersonAttributeTypes: {
+  "results" : [ {
+    "uuid" : "54fc8400-1683-4d71-a1ac-98d40836ff7c",
+    "display" : "Birthplace",
+    "name" : "Birthplace",
+    "description" : "Location of persons birth",
+    "format" : "java.lang.String",
+    "foreignKey" : null,
+    "sortWeight" : 3.0,
+    "searchable" : false,
+    "editPrivilege" : null,
+    "retired" : false,
+    "concept" : null,
+    "auditInfo" : {
+      "creator" : {
+        "uuid" : "1010d442-e134-11de-babe-001e378eb67e",
+        "display" : "admin",
+        "links" : [ {
+          "uri" : "http://localhost/ws/rest/v1/user/1010d442-e134-11de-babe-001e378eb67e",
+          "rel" : "self"
+        } ]
+      },
+      "dateCreated" : "2007-05-04T09:59:23.000+0200",
+      "changedBy" : null,
+      "dateChanged" : null
+    },
+    "links" : [ {
+      "uri" : "http://localhost/ws/rest/v1/personattributetype/54fc8400-1683-4d71-a1ac-98d40836ff7c",
+      "rel" : "self"
+    } ],
+    "resourceVersion" : "1.8"
+  } ]
+}
+Found 1 personAttributeType(s): [ {
+  "uuid" : "54fc8400-1683-4d71-a1ac-98d40836ff7c",
+  "display" : "Birthplace",
+  "name" : "Birthplace",
+  "description" : "Location of persons birth",
+  "format" : "java.lang.String",
+  "foreignKey" : null,
+  "sortWeight" : 3.0,
+  "searchable" : false,
+  "editPrivilege" : null,
+  "retired" : false,
+  "concept" : null,
+  "auditInfo" : {
+    "creator" : {
+      "uuid" : "1010d442-e134-11de-babe-001e378eb67e",
+      "display" : "admin",
+      "links" : [ {
+        "uri" : "http://localhost/ws/rest/v1/user/1010d442-e134-11de-babe-001e378eb67e",
+        "rel" : "self"
+      } ]
+    },
+    "dateCreated" : "2007-05-04T09:59:23.000+0200",
+    "changedBy" : null,
+    "dateChanged" : null
+  },
+  "links" : [ {
+    "uri" : "http://localhost/ws/rest/v1/personattributetype/54fc8400-1683-4d71-a1ac-98d40836ff7c",
+    "rel" : "self"
+  } ],
+  "resourceVersion" : "1.8"
+} ]
+Person fetched (default): {
+  "uuid" : "b3b6d540-a32e-44c7-91b3-292d97667518",
+  "display" : "Race",
+  "name" : "Race",
+  "description" : "Group of persons related by common descent or heredity",
+  "format" : "java.lang.String",
+  "foreignKey" : null,
+  "sortWeight" : 1.0,
+  "searchable" : false,
+  "editPrivilege" : null,
+  "retired" : true,
+  "links" : [ {
+    "uri" : "http://localhost/ws/rest/v1/personattributetype/b3b6d540-a32e-44c7-91b3-292d97667518",
+    "rel" : "self"
+  }, {
+    "uri" : "http://localhost/ws/rest/v1/personattributetype/b3b6d540-a32e-44c7-91b3-292d97667518?v=full",
+    "rel" : "full"
+  } ],
+  "resourceVersion" : "1.8"
+}
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.044 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.PersonAttributeTypeController1_8Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.TaskActionController1_8Test
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.466 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.TaskActionController1_8Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.LocationTagController1_8Test
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.695 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.LocationTagController1_8Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.HL7MessageController1_8Test
+Enqued hl7 message: {
+  "uuid" : "834cc6da-44f9-4267-bbf9-62ee13cc7960",
+  "display" : "REl7wt78q9Pzlqe9ecJB",
+  "messageState" : 0,
+  "links" : [ {
+    "uri" : "http://localhost/ws/rest/v1/hl7/834cc6da-44f9-4267-bbf9-62ee13cc7960",
+    "rel" : "self"
+  }, {
+    "uri" : "http://localhost/ws/rest/v1/hl7/834cc6da-44f9-4267-bbf9-62ee13cc7960?v=full",
+    "rel" : "full"
+  } ],
+  "resourceVersion" : "1.8"
+}
+WARN - HibernateUserDAO.getUserByUsername(103) |2018-11-22 10:24:56,827| request for username 'REST' not found
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.393 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.HL7MessageController1_8Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.PrivilegeController1_8Test
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.709 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.PrivilegeController1_8Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.ConceptSourceController1_8Test
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.834 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.ConceptSourceController1_8Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.ModuleController1_8Test
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.717 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.ModuleController1_8Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.RoleController1_8Test
+[WARNING] Tests run: 12, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 2.018 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.RoleController1_8Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.FieldTypeController1_8Test
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.243 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.FieldTypeController1_8Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.CohortController1_8Test
+Found 2 cohort(s): [ {
+  "uuid" : "05e08b3b-5690-41e1-b651-5391fd946c1a",
+  "display" : "B13 deficit",
+  "links" : [ {
+    "uri" : "http://localhost/ws/rest/v1/cohort/05e08b3b-5690-41e1-b651-5391fd946c1a",
+    "rel" : "self"
+  } ]
+}, {
+  "uuid" : "c804ee60-ecbc-4d70-abda-1e4f6f64e5b5",
+  "display" : "B13 normal",
+  "links" : [ {
+    "uri" : "http://localhost/ws/rest/v1/cohort/c804ee60-ecbc-4d70-abda-1e4f6f64e5b5",
+    "rel" : "self"
+  } ]
+} ]
+Cohort fetched (default): {
+  "uuid" : "05e08b3b-5690-41e1-b651-5391fd946c1a",
+  "display" : "B13 deficit",
+  "name" : "B13 deficit",
+  "description" : "Has explicit deficit of B13",
+  "voided" : false,
+  "memberIds" : [ 6, 7, 8 ],
+  "links" : [ {
+    "uri" : "http://localhost/ws/rest/v1/cohort/05e08b3b-5690-41e1-b651-5391fd946c1a",
+    "rel" : "self"
+  }, {
+    "uri" : "http://localhost/ws/rest/v1/cohort/05e08b3b-5690-41e1-b651-5391fd946c1a?v=full",
+    "rel" : "full"
+  } ],
+  "resourceVersion" : "1.8"
+}
+Created cohort: {
+  "uuid" : "f7ba22f9-4abd-4911-b0cf-e2ce07cdcd91",
+  "display" : "New cohort",
+  "name" : "New cohort",
+  "description" : "New cohort description",
+  "voided" : false,
+  "memberIds" : [ 2, 6 ],
+  "links" : [ {
+    "uri" : "http://localhost/ws/rest/v1/cohort/f7ba22f9-4abd-4911-b0cf-e2ce07cdcd91",
+    "rel" : "self"
+  }, {
+    "uri" : "http://localhost/ws/rest/v1/cohort/f7ba22f9-4abd-4911-b0cf-e2ce07cdcd91?v=full",
+    "rel" : "full"
+  } ],
+  "resourceVersion" : "1.8"
+}
+Cohort fetched (default): {
+  "uuid" : "05e08b3b-5690-41e1-b651-5391fd946c1a",
+  "display" : "B13 deficit",
+  "name" : "B13 deficit",
+  "description" : "Has explicit deficit of B13",
+  "voided" : false,
+  "memberIds" : [ 6, 7, 8 ],
+  "links" : [ {
+    "uri" : "http://localhost/ws/rest/v1/cohort/05e08b3b-5690-41e1-b651-5391fd946c1a",
+    "rel" : "self"
+  }, {
+    "uri" : "http://localhost/ws/rest/v1/cohort/05e08b3b-5690-41e1-b651-5391fd946c1a?v=full",
+    "rel" : "full"
+  } ],
+  "resourceVersion" : "1.8"
+}
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.267 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.CohortController1_8Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.PersonAddressController1_8Test
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.345 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.PersonAddressController1_8Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.PatientIdentifierTypeController1_8Test
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.096 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.PatientIdentifierTypeController1_8Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.RelationshipTypeController1_8Test
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.31 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.RelationshipTypeController1_8Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.FormController1_8Test
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.579 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.FormController1_8Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.ServerLogController1_8Test
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.797 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.ServerLogController1_8Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.EncounterTypeController1_8Test
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.201 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.EncounterTypeController1_8Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.ConceptMapController1_8Test
+Ignored shouldEditConceptMap (run only on OpenMRS 1.8.*)
+Ignored shouldNotDeleteConceptMap (run only on OpenMRS 1.8.*)
+Ignored shouldCreateConceptMap (run only on OpenMRS 1.8.*)
+Ignored shouldPurgeConceptMap (run only on OpenMRS 1.8.*)
+Ignored shouldGetAll (run only on OpenMRS 1.8.*)
+Ignored shouldGetRefByUuid (run only on OpenMRS 1.8.*)
+Ignored shouldGetDefaultByUuid (run only on OpenMRS 1.8.*)
+Ignored shouldGetFullByUuid (run only on OpenMRS 1.8.*)
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.543 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.ConceptMapController1_8Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.UserController1_8Test
+WARN - HibernateUserDAO.getUserByUsername(103) |2018-11-22 10:25:21,324| request for username 'james' not found
+Found 1 user(s): {
+  "results" : [ {
+    "uuid" : "c98a1558-e131-11de-babe-001e378eb67e",
+    "display" : "butch",
+    "links" : [ {
+      "uri" : "http://localhost/ws/rest/v1/user/c98a1558-e131-11de-babe-001e378eb67e",
+      "rel" : "self"
+    } ]
+  } ]
+}
+Old User SystemId: : "3-4"
+Edited User SystemId: : "5-6"
+Users fetched: : {
+  "results" : [ {
+    "uuid" : "A4F30A1B-5EB9-11DF-A648-37A07F9C90FB",
+    "display" : "daemon",
+    "links" : [ {
+      "uri" : "http://localhost/ws/rest/v1/user/A4F30A1B-5EB9-11DF-A648-37A07F9C90FB",
+      "rel" : "self"
+    } ]
+  }, {
+    "uuid" : "1010d442-e134-11de-babe-001e378eb67e",
+    "display" : "admin",
+    "links" : [ {
+      "uri" : "http://localhost/ws/rest/v1/user/1010d442-e134-11de-babe-001e378eb67e",
+      "rel" : "self"
+    } ]
+  }, {
+    "uuid" : "c1d8f5c2-e131-11de-babe-001e378eb67e",
+    "display" : "bruno",
+    "links" : [ {
+      "uri" : "http://localhost/ws/rest/v1/user/c1d8f5c2-e131-11de-babe-001e378eb67e",
+      "rel" : "self"
+    } ]
+  }, {
+    "uuid" : "c98a1558-e131-11de-babe-001e378eb67e",
+    "display" : "butch",
+    "links" : [ {
+      "uri" : "http://localhost/ws/rest/v1/user/c98a1558-e131-11de-babe-001e378eb67e",
+      "rel" : "self"
+    } ]
+  } ]
+}
+Total users fetched: : 4
+Created User: {
+  "uuid" : "05b6bfee-de44-4ec5-b4c0-2fca356c06c8",
+  "display" : "testuser",
+  "username" : "testuser",
+  "systemId" : "5-9",
+  "userProperties" : {
+    "loginAttempts" : "0",
+    "lockoutTimestamp" : ""
+  },
+  "person" : {
+    "uuid" : "da7f524f-27ce-4bb2-86d6-6d1d05312bd5",
+    "display" : "Mr. Horatio Test Hornblower Esq.",
+    "links" : [ {
+      "uri" : "http://localhost/ws/rest/v1/person/da7f524f-27ce-4bb2-86d6-6d1d05312bd5",
+      "rel" : "self"
+    } ]
+  },
+  "privileges" : [ ],
+  "roles" : null,
+  "retired" : false,
+  "links" : [ {
+    "uri" : "http://localhost/ws/rest/v1/user/05b6bfee-de44-4ec5-b4c0-2fca356c06c8",
+    "rel" : "self"
+  }, {
+    "uri" : "http://localhost/ws/rest/v1/user/05b6bfee-de44-4ec5-b4c0-2fca356c06c8?v=full",
+    "rel" : "full"
+  } ],
+  "resourceVersion" : "1.8"
+}
+Found 1 user(s) by username: {
+  "results" : [ {
+    "uuid" : "c98a1558-e131-11de-babe-001e378eb67e",
+    "display" : "butch",
+    "links" : [ {
+      "uri" : "http://localhost/ws/rest/v1/user/c98a1558-e131-11de-babe-001e378eb67e",
+      "rel" : "self"
+    } ]
+  } ]
+}
+User retrieved (full): {
+  "uuid" : "c98a1558-e131-11de-babe-001e378eb67e",
+  "display" : "butch",
+  "username" : "butch",
+  "systemId" : "3-4",
+  "userProperties" : {
+  },
+  "person" : {
+    "uuid" : "341b4e41-790c-484f-b6ed-71dc8da222de",
+    "display" : "Hippocrates of Cos",
+    "gender" : "M",
+    "age" : null,
+    "birthdate" : null,
+    "birthdateEstimated" : false,
+    "dead" : false,
+    "deathDate" : null,
+    "causeOfDeath" : null,
+    "preferredName" : {
+      "uuid" : "0e69f78c-e3f2-4d9c-933b-d52aa8a669b8",
+      "display" : "Hippocrates of Cos",
+      "links" : [ {
+        "uri" : "http://localhost/ws/rest/v1/person/341b4e41-790c-484f-b6ed-71dc8da222de/name/0e69f78c-e3f2-4d9c-933b-d52aa8a669b8",
+        "rel" : "self"
+      } ]
+    },
+    "preferredAddress" : {
+      "uuid" : "bb7f7855-abfa-447b-baf0-7eec28f64c54",
+      "display" : null,
+      "links" : [ {
+        "uri" : "http://localhost/ws/rest/v1/person/341b4e41-790c-484f-b6ed-71dc8da222de/address/bb7f7855-abfa-447b-baf0-7eec28f64c54",
+        "rel" : "self"
+      } ]
+    },
+    "attributes" : [ {
+      "uuid" : "898f6ecd-78f1-42a5-8768-e0c219a3fa7f",
+      "display" : "Race = NULL",
+      "links" : [ {
+        "uri" : "http://localhost/ws/rest/v1/person/341b4e41-790c-484f-b6ed-71dc8da222de/attribute/898f6ecd-78f1-42a5-8768-e0c219a3fa7f",
+        "rel" : "self"
+      } ]
+    }, {
+      "uuid" : "9b5e9fc6-eeb0-4b69-a699-e2f9f655cfec",
+      "display" : "Birthplace = NULL",
+      "links" : [ {
+        "uri" : "http://localhost/ws/rest/v1/person/341b4e41-790c-484f-b6ed-71dc8da222de/attribute/9b5e9fc6-eeb0-4b69-a699-e2f9f655cfec",
+        "rel" : "self"
+      } ]
+    }, {
+      "uuid" : "463db590-b7a9-47e9-897a-c0506ba21ec9",
+      "display" : null,
+      "links" : [ {
+        "uri" : "http://localhost/ws/rest/v1/person/341b4e41-790c-484f-b6ed-71dc8da222de/attribute/463db590-b7a9-47e9-897a-c0506ba21ec9",
+        "rel" : "self"
+      } ]
+    } ],
+    "voided" : false,
+    "links" : [ {
+      "uri" : "http://localhost/ws/rest/v1/person/341b4e41-790c-484f-b6ed-71dc8da222de",
+      "rel" : "self"
+    }, {
+      "uri" : "http://localhost/ws/rest/v1/person/341b4e41-790c-484f-b6ed-71dc8da222de?v=full",
+      "rel" : "full"
+    } ],
+    "resourceVersion" : "1.8"
+  },
+  "privileges" : [ ],
+  "roles" : [ {
+    "uuid" : "3480cb6d-c291-46c8-8d3a-96dc33d199fb",
+    "display" : "Provider",
+    "name" : "Provider",
+    "description" : "General privileges held by all providers",
+    "retired" : false,
+    "privileges" : [ ],
+    "inheritedRoles" : [ ],
+    "links" : [ {
+      "uri" : "http://localhost/ws/rest/v1/role/3480cb6d-c291-46c8-8d3a-96dc33d199fb",
+      "rel" : "self"
+    }, {
+      "uri" : "http://localhost/ws/rest/v1/role/3480cb6d-c291-46c8-8d3a-96dc33d199fb?v=full",
+      "rel" : "full"
+    } ],
+    "resourceVersion" : "1.8"
+  } ],
+  "allRoles" : [ {
+    "uuid" : "3480cb6d-c291-46c8-8d3a-96dc33d199fb",
+    "display" : "Provider",
+    "name" : "Provider",
+    "description" : "General privileges held by all providers",
+    "retired" : false,
+    "privileges" : [ ],
+    "inheritedRoles" : [ ],
+    "links" : [ {
+      "uri" : "http://localhost/ws/rest/v1/role/3480cb6d-c291-46c8-8d3a-96dc33d199fb",
+      "rel" : "self"
+    }, {
+      "uri" : "http://localhost/ws/rest/v1/role/3480cb6d-c291-46c8-8d3a-96dc33d199fb?v=full",
+      "rel" : "full"
+    } ],
+    "resourceVersion" : "1.8"
+  } ],
+  "proficientLocales" : [ ],
+  "secretQuestion" : "",
+  "retired" : false,
+  "auditInfo" : {
+    "creator" : {
+      "uuid" : "1010d442-e134-11de-babe-001e378eb67e",
+      "display" : "admin",
+      "links" : [ {
+        "uri" : "http://localhost/ws/rest/v1/user/1010d442-e134-11de-babe-001e378eb67e",
+        "rel" : "self"
+      } ]
+    },
+    "dateCreated" : "2008-08-15T15:57:09.000+0200",
+    "changedBy" : {
+      "uuid" : "1010d442-e134-11de-babe-001e378eb67e",
+      "display" : "admin",
+      "links" : [ {
+        "uri" : "http://localhost/ws/rest/v1/user/1010d442-e134-11de-babe-001e378eb67e",
+        "rel" : "self"
+      } ]
+    },
+    "dateChanged" : "2008-08-18T11:51:56.000+0200"
+  },
+  "links" : [ {
+    "uri" : "http://localhost/ws/rest/v1/user/c98a1558-e131-11de-babe-001e378eb67e",
+    "rel" : "self"
+  } ],
+  "resourceVersion" : "1.8"
+}
+Created another user with a role this time.: {
+  "uuid" : "8340e2b1-a0fb-4175-beca-2039e28f401d",
+  "display" : "testuser",
+  "username" : "testuser",
+  "systemId" : "5-9",
+  "userProperties" : {
+    "loginAttempts" : "0",
+    "lockoutTimestamp" : ""
+  },
+  "person" : {
+    "uuid" : "da7f524f-27ce-4bb2-86d6-6d1d05312bd5",
+    "display" : "Mr. Horatio Test Hornblower Esq.",
+    "links" : [ {
+      "uri" : "http://localhost/ws/rest/v1/person/da7f524f-27ce-4bb2-86d6-6d1d05312bd5",
+      "rel" : "self"
+    } ]
+  },
+  "privileges" : [ ],
+  "roles" : [ {
+    "uuid" : "3480cb6d-c291-46c8-8d3a-96dc33d199fb",
+    "display" : "Provider",
+    "links" : [ {
+      "uri" : "http://localhost/ws/rest/v1/role/3480cb6d-c291-46c8-8d3a-96dc33d199fb",
+      "rel" : "self"
+    } ]
+  } ],
+  "retired" : false,
+  "links" : [ {
+    "uri" : "http://localhost/ws/rest/v1/user/8340e2b1-a0fb-4175-beca-2039e28f401d",
+    "rel" : "self"
+  }, {
+    "uri" : "http://localhost/ws/rest/v1/user/8340e2b1-a0fb-4175-beca-2039e28f401d?v=full",
+    "rel" : "full"
+  } ],
+  "resourceVersion" : "1.8"
+}
+User retrieved (default): {
+  "uuid" : "c98a1558-e131-11de-babe-001e378eb67e",
+  "display" : "butch",
+  "username" : "butch",
+  "systemId" : "3-4",
+  "userProperties" : {
+  },
+  "person" : {
+    "uuid" : "341b4e41-790c-484f-b6ed-71dc8da222de",
+    "display" : "Hippocrates of Cos",
+    "links" : [ {
+      "uri" : "http://localhost/ws/rest/v1/person/341b4e41-790c-484f-b6ed-71dc8da222de",
+      "rel" : "self"
+    } ]
+  },
+  "privileges" : [ ],
+  "roles" : [ {
+    "uuid" : "3480cb6d-c291-46c8-8d3a-96dc33d199fb",
+    "display" : "Provider",
+    "links" : [ {
+      "uri" : "http://localhost/ws/rest/v1/role/3480cb6d-c291-46c8-8d3a-96dc33d199fb",
+      "rel" : "self"
+    } ]
+  } ],
+  "retired" : false,
+  "links" : [ {
+    "uri" : "http://localhost/ws/rest/v1/user/c98a1558-e131-11de-babe-001e378eb67e",
+    "rel" : "self"
+  }, {
+    "uri" : "http://localhost/ws/rest/v1/user/c98a1558-e131-11de-babe-001e378eb67e?v=full",
+    "rel" : "full"
+  } ],
+  "resourceVersion" : "1.8"
+}
+[INFO] Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.377 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.UserController1_8Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.ChangePasswordController1_8Test
+ERROR - HibernateUserDAO.changePassword(304) |2018-11-22 10:25:25,738| Passwords don't match
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.633 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.ChangePasswordController1_8Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.TaskDefinitionController1_8Test
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.984 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.TaskDefinitionController1_8Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.RelationshipTypeResource1_8Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.481 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.RelationshipTypeResource1_8Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.ServerLogResource1_8Test
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.495 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.ServerLogResource1_8Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.ProgramResource1_8Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.183 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.ProgramResource1_8Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.FieldAnswerResource1_8Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.517 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.FieldAnswerResource1_8Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.FieldResource1_8Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.382 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.FieldResource1_8Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.ConceptClassResource1_8Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.393 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.ConceptClassResource1_8Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.PatientIdentifierTypeResource1_8Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.434 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.PatientIdentifierTypeResource1_8Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.FieldTypeResource1_8Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.387 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.FieldTypeResource1_8Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.PersonAttributeTypeResource1_8Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.405 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.PersonAttributeTypeResource1_8Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.HL7SourceResource1_8Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.402 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.HL7SourceResource1_8Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.ActiveListTypeResource1_8Test
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.401 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.ActiveListTypeResource1_8Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.HL7MessageResource1_8Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.608 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.HL7MessageResource1_8Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.PersonResource1_8Test
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.725 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.PersonResource1_8Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.DrugResource1_8Test
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.537 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.DrugResource1_8Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.EncounterTypeResource1_8Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.459 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.EncounterTypeResource1_8Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.ConceptDatatypeResource1_8Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.492 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.ConceptDatatypeResource1_8Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.FormResource1_8Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.613 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.FormResource1_8Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.PersonAddressResource1_8Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.759 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.PersonAddressResource1_8Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.TaskDefinitionResource1_8Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.719 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.TaskDefinitionResource1_8Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.ProgramWorkflowStateResource1_8Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.451 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.ProgramWorkflowStateResource1_8Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.CohortResource1_8Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.417 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.CohortResource1_8Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.UpdateUserResource1_8Test
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.172 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.UpdateUserResource1_8Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.FormFieldResource1_8Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.42 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.FormFieldResource1_8Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.CohortMemberResource1_8Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.414 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.CohortMemberResource1_8Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.ProgramWorkflowResource1_8Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.638 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.ProgramWorkflowResource1_8Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.ConceptSourceResource1_8Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.389 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.ConceptSourceResource1_8Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.OrderResource1_8Test
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.69 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.OrderResource1_8Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.PatientStateResource1_8Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.475 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.PatientStateResource1_8Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.PersonAttributeResource1_8Test
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.556 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.PersonAttributeResource1_8Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.RoleResource1_8Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.415 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.RoleResource1_8Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.PersonAttributeTypeResourceWithConcept1_8Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.469 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.PersonAttributeTypeResourceWithConcept1_8Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.SystemInformationResource1_8Test
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.172 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.SystemInformationResource1_8Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.ModuleResource1_8Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.463 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.ModuleResource1_8Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.PrivilegeResource1_8Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.5 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.PrivilegeResource1_8Test
+[INFO] 
+[INFO] Results:
+[INFO] 
+[WARNING] Tests run: 352, Failures: 0, Errors: 0, Skipped: 2
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Rest Web Services 1.9 OMOD 2.23.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.7.201606060606:prepare-agent (prepare-agent) @ webservices.rest-omod-1.9 ---
+[INFO] argLine set to -javaagent:/root/./workspace/openmrs/openmrs-module-webservices.rest/455565885/.m2/org/jacoco/org.jacoco.agent/0.7.7.201606060606/org.jacoco.agent-0.7.7.201606060606-runtime.jar=destfile=/root/workspace/openmrs/openmrs-module-webservices.rest/455565885/omod-1.9/target/jacoco.exec,includes=org/openmrs/**
+[INFO] 
+[INFO] --- maven-java-formatter-plugin:0.4:format (default) @ webservices.rest-omod-1.9 ---
+[INFO] Using 'UTF-8' encoding to format source files.
+[INFO] Number of files to be formatted: 132
+[INFO] Successfully formatted: 0 file(s)
+[INFO] Fail to format        : 0 file(s)
+[INFO] Skipped               : 132 file(s)
+[INFO] Approximate time taken: 0s
+[INFO] 
+[INFO] --- license-maven-plugin:3.0:format (format-license-header) @ webservices.rest-omod-1.9 ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ webservices.rest-omod-1.9 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/openmrs/openmrs-module-webservices.rest/455565885/omod-1.9/src/main/resources
+[INFO] skip non existing resourceDirectory /root/workspace/openmrs/openmrs-module-webservices.rest/455565885/omod-1.9/src/main/webapp
+[INFO] skip non existing resourceDirectory /root/workspace/openmrs/openmrs-module-webservices.rest/455565885/omod-1.9/src/main/webapp
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ webservices.rest-omod-1.9 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ webservices.rest-omod-1.9 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 7 resources
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ webservices.rest-omod-1.9 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.1:test (default-test) @ webservices.rest-omod-1.9 ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.openmrs.module.webservices.rest.validation.ValidateUtilTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 21.071 s - in org.openmrs.module.webservices.rest.validation.ValidateUtilTest
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.LocationAttributeTypeController1_9Test
+Found 1 LocationAttributeType(s): [ {
+  "uuid" : "9516cc50-6f9f-11e0-8414-001e378eb67e",
+  "display" : "Audit Date",
+  "links" : [ {
+    "rel" : "self",
+    "uri" : "http://localhost/ws/rest/v1/locationattributetype/9516cc50-6f9f-11e0-8414-001e378eb67e"
+  } ]
+} ]
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.691 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.LocationAttributeTypeController1_9Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ConceptSearchController1_9Test
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.433 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ConceptSearchController1_9Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.OrderController1_9Test
+order as ref: {
+  "uuid" : "921de0a3-05c4-444a-be03-e01b4c4b9142",
+  "display" : "Aspirin: 325.0 mg",
+  "links" : [ {
+    "rel" : "self",
+    "uri" : "http://localhost/ws/rest/v1/order/921de0a3-05c4-444a-be03-e01b4c4b9142"
+  } ],
+  "type" : "drugorder"
+}
+drug order as default: {
+  "uuid" : "921de0a3-05c4-444a-be03-e01b4c4b9142",
+  "display" : "Aspirin: 325.0 mg",
+  "orderType" : {
+    "uuid" : "f149b5e1-4314-4d0d-a95f-1c4f8031161d",
+    "display" : "Lab test",
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/ordertype/f149b5e1-4314-4d0d-a95f-1c4f8031161d"
+    } ]
+  },
+  "patient" : {
+    "uuid" : "5946f880-b197-400b-9caa-a3c661d23041",
+    "display" : "6TS-4 - Collet Test Chebaskwony",
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/patient/5946f880-b197-400b-9caa-a3c661d23041"
+    } ]
+  },
+  "concept" : {
+    "uuid" : "15f83cd6-64e9-4e06-a5f9-364d3b14a43d",
+    "display" : "ASPIRIN",
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/concept/15f83cd6-64e9-4e06-a5f9-364d3b14a43d"
+    } ]
+  },
+  "instructions" : "2x daily",
+  "startDate" : "2008-08-08T00:00:00.000+0200",
+  "autoExpireDate" : null,
+  "encounter" : null,
+  "orderer" : {
+    "uuid" : "1010d442-e134-11de-babe-001e378eb67e",
+    "display" : "admin",
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/user/1010d442-e134-11de-babe-001e378eb67e"
+    } ]
+  },
+  "accessionNumber" : null,
+  "discontinuedBy" : {
+    "uuid" : "1010d442-e134-11de-babe-001e378eb67e",
+    "display" : "admin",
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/user/1010d442-e134-11de-babe-001e378eb67e"
+    } ]
+  },
+  "discontinuedDate" : "2008-08-15T00:00:00.000+0200",
+  "discontinuedReason" : null,
+  "discontinuedReasonNonCoded" : null,
+  "voided" : false,
+  "dose" : 325.0,
+  "units" : "mg",
+  "frequency" : "1/day x 7 days/week",
+  "prn" : false,
+  "complex" : false,
+  "quantity" : null,
+  "drug" : {
+    "uuid" : "05ec820a-d297-44e3-be6e-698531d9dd3f",
+    "display" : "Aspirin",
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/drug/05ec820a-d297-44e3-be6e-698531d9dd3f"
+    } ]
+  },
+  "links" : [ {
+    "rel" : "self",
+    "uri" : "http://localhost/ws/rest/v1/order/921de0a3-05c4-444a-be03-e01b4c4b9142"
+  }, {
+    "rel" : "full",
+    "uri" : "http://localhost/ws/rest/v1/order/921de0a3-05c4-444a-be03-e01b4c4b9142?v=full"
+  } ],
+  "type" : "drugorder",
+  "resourceVersion" : "1.8"
+}
+[INFO] Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.548 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.OrderController1_9Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.EncounterController1_9Test
+before = : 5
+after = : 6
+created encounter with obs: {
+  "uuid" : "efa97681-03fe-4950-961d-c6c5e8d8e518",
+  "display" : "Scheduled 15/01/2011",
+  "encounterDatetime" : "2011-01-15T00:00:00.000+0100",
+  "patient" : {
+    "uuid" : "da7f524f-27ce-4bb2-86d6-6d1d05312bd5",
+    "display" : "101-6 - Mr. Horatio Test Hornblower Esq.",
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/patient/da7f524f-27ce-4bb2-86d6-6d1d05312bd5"
+    } ]
+  },
+  "location" : {
+    "uuid" : "9356400c-a5a2-4532-8f2b-2361b3446eb8",
+    "display" : "Xanadu",
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/location/9356400c-a5a2-4532-8f2b-2361b3446eb8"
+    } ]
+  },
+  "form" : null,
+  "encounterType" : {
+    "uuid" : "61ae96f4-6afe-4351-b6f8-cd4fc383cce1",
+    "display" : "Scheduled",
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/encountertype/61ae96f4-6afe-4351-b6f8-cd4fc383cce1"
+    } ]
+  },
+  "obs" : [ {
+    "uuid" : "ec2601fa-2ad4-45f4-aace-e7b9f6daa24b",
+    "display" : "CIVIL STATUS: MARRIED",
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/obs/ec2601fa-2ad4-45f4-aace-e7b9f6daa24b"
+    } ]
+  }, {
+    "uuid" : "0dbb2767-606f-424b-8227-7d05894a5b61",
+    "display" : "DATE OF FOOD ASSISTANCE: 21 June 2011 00:00:00 CEST",
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/obs/0dbb2767-606f-424b-8227-7d05894a5b61"
+    } ]
+  }, {
+    "uuid" : "8afbdb45-703c-452e-a92e-7a7b691d0759",
+    "display" : "FAVORITE FOOD, NON-CODED: fried chicken",
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/obs/8afbdb45-703c-452e-a92e-7a7b691d0759"
+    } ]
+  }, {
+    "uuid" : "fdb984f4-985b-48bb-adff-ea9ce201df36",
+    "display" : "WEIGHT (KG): 70.0",
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/obs/fdb984f4-985b-48bb-adff-ea9ce201df36"
+    } ]
+  } ],
+  "orders" : [ ],
+  "voided" : false,
+  "visit" : null,
+  "encounterProviders" : [ {
+    "uuid" : "5406bc5c-65ff-4e33-9df3-5e451bc7e15c",
+    "display" : "Super User: Unknown",
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/encounter/efa97681-03fe-4950-961d-c6c5e8d8e518/encounterprovider/5406bc5c-65ff-4e33-9df3-5e451bc7e15c"
+    } ]
+  } ],
+  "links" : [ {
+    "rel" : "self",
+    "uri" : "http://localhost/ws/rest/v1/encounter/efa97681-03fe-4950-961d-c6c5e8d8e518"
+  }, {
+    "rel" : "full",
+    "uri" : "http://localhost/ws/rest/v1/encounter/efa97681-03fe-4950-961d-c6c5e8d8e518?v=full"
+  } ],
+  "resourceVersion" : "1.9"
+}
+
+created encounter with obs and orders: {
+  "uuid" : "a1192150-2f17-4a25-ba26-5cc6f99041f6",
+  "display" : "Scheduled 15/01/2011",
+  "encounterDatetime" : "2011-01-15T00:00:00.000+0100",
+  "patient" : {
+    "uuid" : "da7f524f-27ce-4bb2-86d6-6d1d05312bd5",
+    "display" : "101-6 - Mr. Horatio Test Hornblower Esq.",
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/patient/da7f524f-27ce-4bb2-86d6-6d1d05312bd5"
+    } ]
+  },
+  "location" : {
+    "uuid" : "9356400c-a5a2-4532-8f2b-2361b3446eb8",
+    "display" : "Xanadu",
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/location/9356400c-a5a2-4532-8f2b-2361b3446eb8"
+    } ]
+  },
+  "form" : null,
+  "encounterType" : {
+    "uuid" : "61ae96f4-6afe-4351-b6f8-cd4fc383cce1",
+    "display" : "Scheduled",
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/encountertype/61ae96f4-6afe-4351-b6f8-cd4fc383cce1"
+    } ]
+  },
+  "obs" : [ {
+    "uuid" : "a464c9ba-fdf1-4ac2-8fba-b35216705952",
+    "display" : "WEIGHT (KG): 70.0",
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/obs/a464c9ba-fdf1-4ac2-8fba-b35216705952"
+    } ]
+  }, {
+    "uuid" : "8650333f-7d2c-4a21-a931-cfc492f4ed25",
+    "display" : "FAVORITE FOOD, NON-CODED: fried chicken",
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/obs/8650333f-7d2c-4a21-a931-cfc492f4ed25"
+    } ]
+  }, {
+    "uuid" : "5997b2f2-ef9e-4289-bb7b-44f07d472b4e",
+    "display" : "DATE OF FOOD ASSISTANCE: 21 June 2011 00:00:00 CEST",
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/obs/5997b2f2-ef9e-4289-bb7b-44f07d472b4e"
+    } ]
+  }, {
+    "uuid" : "6648f3b3-f82f-4c77-a732-5333e3cd9644",
+    "display" : "CIVIL STATUS: MARRIED",
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/obs/6648f3b3-f82f-4c77-a732-5333e3cd9644"
+    } ]
+  } ],
+  "orders" : [ {
+    "uuid" : "fc3527ec-c948-4eaa-bdfc-930ec7fce0a9",
+    "display" : "FOOD ASSISTANCE",
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/order/fc3527ec-c948-4eaa-bdfc-930ec7fce0a9"
+    } ],
+    "type" : "order"
+  }, {
+    "uuid" : "524679e5-658a-4d42-83e8-a61ccd96328b",
+    "display" : "Triomune-30: 1.0 tablet",
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/order/524679e5-658a-4d42-83e8-a61ccd96328b"
+    } ],
+    "type" : "drugorder"
+  } ],
+  "voided" : false,
+  "visit" : null,
+  "encounterProviders" : [ {
+    "uuid" : "e4f96919-6e05-4ea7-970c-decb7da6e48a",
+    "display" : "Super User: Unknown",
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/encounter/a1192150-2f17-4a25-ba26-5cc6f99041f6/encounterprovider/e4f96919-6e05-4ea7-970c-decb7da6e48a"
+    } ]
+  } ],
+  "links" : [ {
+    "rel" : "self",
+    "uri" : "http://localhost/ws/rest/v1/encounter/a1192150-2f17-4a25-ba26-5cc6f99041f6"
+  }, {
+    "rel" : "full",
+    "uri" : "http://localhost/ws/rest/v1/encounter/a1192150-2f17-4a25-ba26-5cc6f99041f6?v=full"
+  } ],
+  "resourceVersion" : "1.9"
+}
+full: {
+  "uuid" : "62967e68-96bb-11e0-8d6b-9b9415a91465",
+  "display" : "Emergency 01/08/2008",
+  "encounterDatetime" : "2008-08-01T00:00:00.000+0200",
+  "patient" : {
+    "uuid" : "5946f880-b197-400b-9caa-a3c661d23041",
+    "display" : "6TS-4 - Collet Test Chebaskwony",
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/patient/5946f880-b197-400b-9caa-a3c661d23041"
+    } ]
+  },
+  "location" : {
+    "uuid" : "8d6c993e-c2cc-11de-8d13-0010c6dffd0f",
+    "display" : "Unknown Location",
+    "name" : "Unknown Location",
+    "description" : "The default location used when limited information is known",
+    "address1" : "",
+    "address2" : "",
+    "cityVillage" : "",
+    "stateProvince" : "",
+    "country" : "",
+    "postalCode" : "",
+    "latitude" : null,
+    "longitude" : null,
+    "countyDistrict" : null,
+    "address3" : null,
+    "address4" : null,
+    "address5" : null,
+    "address6" : null,
+    "tags" : [ ],
+    "parentLocation" : null,
+    "childLocations" : [ ],
+    "retired" : false,
+    "attributes" : [ ],
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/location/8d6c993e-c2cc-11de-8d13-0010c6dffd0f"
+    }, {
+      "rel" : "full",
+      "uri" : "http://localhost/ws/rest/v1/location/8d6c993e-c2cc-11de-8d13-0010c6dffd0f?v=full"
+    } ],
+    "resourceVersion" : "1.9"
+  },
+  "form" : null,
+  "encounterType" : {
+    "uuid" : "07000be2-26b6-4cce-8b40-866d8435b613",
+    "display" : "Emergency",
+    "name" : "Emergency",
+    "description" : "Emergency visit",
+    "retired" : false,
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/encountertype/07000be2-26b6-4cce-8b40-866d8435b613"
+    }, {
+      "rel" : "full",
+      "uri" : "http://localhost/ws/rest/v1/encountertype/07000be2-26b6-4cce-8b40-866d8435b613?v=full"
+    } ],
+    "resourceVersion" : "1.8"
+  },
+  "obs" : [ {
+    "uuid" : "47f18998-96cc-11e0-8d6b-9b9415a91465",
+    "display" : "FOOD CONSTRUCT: Some text, 12 June 2011 00:00:00 CEST, Some text, 12 June 2011 00:00:00 CEST",
+    "concept" : {
+      "uuid" : "0f97e14e-cdc2-49ac-9255-b5126f8a5147",
+      "display" : "FOOD CONSTRUCT",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/concept/0f97e14e-cdc2-49ac-9255-b5126f8a5147"
+      } ]
+    },
+    "person" : {
+      "uuid" : "5946f880-b197-400b-9caa-a3c661d23041",
+      "display" : "6TS-4 - Collet Test Chebaskwony",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/patient/5946f880-b197-400b-9caa-a3c661d23041"
+      } ]
+    },
+    "obsDatetime" : "2008-08-01T00:00:00.000+0200",
+    "accessionNumber" : null,
+    "obsGroup" : null,
+    "valueCodedName" : null,
+    "groupMembers" : [ {
+      "uuid" : "5117f5d4-96cc-11e0-8d6b-9b9415a91465",
+      "display" : "FAVORITE FOOD, NON-CODED: Some text",
+      "concept" : {
+        "uuid" : "96408258-000b-424e-af1a-403919332938",
+        "display" : "FAVORITE FOOD, NON-CODED",
+        "links" : [ {
+          "rel" : "self",
+          "uri" : "http://localhost/ws/rest/v1/concept/96408258-000b-424e-af1a-403919332938"
+        } ]
+      },
+      "person" : {
+        "uuid" : "5946f880-b197-400b-9caa-a3c661d23041",
+        "display" : "6TS-4 - Collet Test Chebaskwony",
+        "links" : [ {
+          "rel" : "self",
+          "uri" : "http://localhost/ws/rest/v1/patient/5946f880-b197-400b-9caa-a3c661d23041"
+        } ]
+      },
+      "obsDatetime" : "2008-08-01T00:00:00.000+0200",
+      "accessionNumber" : null,
+      "obsGroup" : {
+        "uuid" : "47f18998-96cc-11e0-8d6b-9b9415a91465",
+        "display" : "FOOD CONSTRUCT: Some text, 12 June 2011 00:00:00 CEST, Some text, 12 June 2011 00:00:00 CEST",
+        "links" : [ {
+          "rel" : "self",
+          "uri" : "http://localhost/ws/rest/v1/obs/47f18998-96cc-11e0-8d6b-9b9415a91465"
+        } ]
+      },
+      "valueCodedName" : null,
+      "groupMembers" : null,
+      "comment" : null,
+      "location" : null,
+      "order" : null,
+      "encounter" : {
+        "uuid" : "62967e68-96bb-11e0-8d6b-9b9415a91465",
+        "display" : "Emergency 01/08/2008",
+        "links" : [ {
+          "rel" : "self",
+          "uri" : "http://localhost/ws/rest/v1/encounter/62967e68-96bb-11e0-8d6b-9b9415a91465"
+        } ]
+      },
+      "voided" : false,
+      "value" : "Some text",
+      "valueModifier" : null,
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/obs/5117f5d4-96cc-11e0-8d6b-9b9415a91465"
+      }, {
+        "rel" : "full",
+        "uri" : "http://localhost/ws/rest/v1/obs/5117f5d4-96cc-11e0-8d6b-9b9415a91465?v=full"
+      } ],
+      "resourceVersion" : "1.8"
+    }, {
+      "uuid" : "565f39c6-96cc-11e0-8d6b-9b9415a91465",
+      "display" : "DATE OF FOOD ASSISTANCE: 12 June 2011 00:00:00 CEST",
+      "concept" : {
+        "uuid" : "11716f9c-1434-4f8d-b9fc-9aa14c4d6126",
+        "display" : "DATE OF FOOD ASSISTANCE",
+        "links" : [ {
+          "rel" : "self",
+          "uri" : "http://localhost/ws/rest/v1/concept/11716f9c-1434-4f8d-b9fc-9aa14c4d6126"
+        } ]
+      },
+      "person" : {
+        "uuid" : "5946f880-b197-400b-9caa-a3c661d23041",
+        "display" : "6TS-4 - Collet Test Chebaskwony",
+        "links" : [ {
+          "rel" : "self",
+          "uri" : "http://localhost/ws/rest/v1/patient/5946f880-b197-400b-9caa-a3c661d23041"
+        } ]
+      },
+      "obsDatetime" : "2008-08-01T00:00:00.000+0200",
+      "accessionNumber" : null,
+      "obsGroup" : {
+        "uuid" : "47f18998-96cc-11e0-8d6b-9b9415a91465",
+        "display" : "FOOD CONSTRUCT: Some text, 12 June 2011 00:00:00 CEST, Some text, 12 June 2011 00:00:00 CEST",
+        "links" : [ {
+          "rel" : "self",
+          "uri" : "http://localhost/ws/rest/v1/obs/47f18998-96cc-11e0-8d6b-9b9415a91465"
+        } ]
+      },
+      "valueCodedName" : null,
+      "groupMembers" : null,
+      "comment" : null,
+      "location" : null,
+      "order" : null,
+      "encounter" : {
+        "uuid" : "62967e68-96bb-11e0-8d6b-9b9415a91465",
+        "display" : "Emergency 01/08/2008",
+        "links" : [ {
+          "rel" : "self",
+          "uri" : "http://localhost/ws/rest/v1/encounter/62967e68-96bb-11e0-8d6b-9b9415a91465"
+        } ]
+      },
+      "voided" : false,
+      "value" : "2011-06-12T00:00:00.000+0200",
+      "valueModifier" : null,
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/obs/565f39c6-96cc-11e0-8d6b-9b9415a91465"
+      }, {
+        "rel" : "full",
+        "uri" : "http://localhost/ws/rest/v1/obs/565f39c6-96cc-11e0-8d6b-9b9415a91465?v=full"
+      } ],
+      "resourceVersion" : "1.8"
+    }, {
+      "uuid" : "05ba548c-96cd-11e0-8d6b-9b9415a91465",
+      "display" : "FOOD CONSTRUCT: Some text, 12 June 2011 00:00:00 CEST",
+      "concept" : {
+        "uuid" : "0f97e14e-cdc2-49ac-9255-b5126f8a5147",
+        "display" : "FOOD CONSTRUCT",
+        "links" : [ {
+          "rel" : "self",
+          "uri" : "http://localhost/ws/rest/v1/concept/0f97e14e-cdc2-49ac-9255-b5126f8a5147"
+        } ]
+      },
+      "person" : {
+        "uuid" : "5946f880-b197-400b-9caa-a3c661d23041",
+        "display" : "6TS-4 - Collet Test Chebaskwony",
+        "links" : [ {
+          "rel" : "self",
+          "uri" : "http://localhost/ws/rest/v1/patient/5946f880-b197-400b-9caa-a3c661d23041"
+        } ]
+      },
+      "obsDatetime" : "2008-08-01T00:00:00.000+0200",
+      "accessionNumber" : null,
+      "obsGroup" : {
+        "uuid" : "47f18998-96cc-11e0-8d6b-9b9415a91465",
+        "display" : "FOOD CONSTRUCT: Some text, 12 June 2011 00:00:00 CEST, Some text, 12 June 2011 00:00:00 CEST",
+        "links" : [ {
+          "rel" : "self",
+          "uri" : "http://localhost/ws/rest/v1/obs/47f18998-96cc-11e0-8d6b-9b9415a91465"
+        } ]
+      },
+      "valueCodedName" : null,
+      "groupMembers" : [ {
+        "uuid" : "0d37552a-96cd-11e0-8d6b-9b9415a91465",
+        "display" : "FAVORITE FOOD, NON-CODED: Some text",
+        "concept" : {
+          "uuid" : "96408258-000b-424e-af1a-403919332938",
+          "display" : "FAVORITE FOOD, NON-CODED",
+          "links" : [ {
+            "rel" : "self",
+            "uri" : "http://localhost/ws/rest/v1/concept/96408258-000b-424e-af1a-403919332938"
+          } ]
+        },
+        "person" : {
+          "uuid" : "5946f880-b197-400b-9caa-a3c661d23041",
+          "display" : "6TS-4 - Collet Test Chebaskwony",
+          "links" : [ {
+            "rel" : "self",
+            "uri" : "http://localhost/ws/rest/v1/patient/5946f880-b197-400b-9caa-a3c661d23041"
+          } ]
+        },
+        "obsDatetime" : "2008-08-01T00:00:00.000+0200",
+        "accessionNumber" : null,
+        "obsGroup" : {
+          "uuid" : "05ba548c-96cd-11e0-8d6b-9b9415a91465",
+          "display" : "FOOD CONSTRUCT: Some text, 12 June 2011 00:00:00 CEST",
+          "links" : [ {
+            "rel" : "self",
+            "uri" : "http://localhost/ws/rest/v1/obs/05ba548c-96cd-11e0-8d6b-9b9415a91465"
+          } ]
+        },
+        "valueCodedName" : null,
+        "groupMembers" : null,
+        "comment" : null,
+        "location" : null,
+        "order" : null,
+        "encounter" : {
+          "uuid" : "62967e68-96bb-11e0-8d6b-9b9415a91465",
+          "display" : "Emergency 01/08/2008",
+          "links" : [ {
+            "rel" : "self",
+            "uri" : "http://localhost/ws/rest/v1/encounter/62967e68-96bb-11e0-8d6b-9b9415a91465"
+          } ]
+        },
+        "voided" : false,
+        "value" : "Some text",
+        "valueModifier" : null,
+        "links" : [ {
+          "rel" : "self",
+          "uri" : "http://localhost/ws/rest/v1/obs/0d37552a-96cd-11e0-8d6b-9b9415a91465"
+        }, {
+          "rel" : "full",
+          "uri" : "http://localhost/ws/rest/v1/obs/0d37552a-96cd-11e0-8d6b-9b9415a91465?v=full"
+        } ],
+        "resourceVersion" : "1.8"
+      }, {
+        "uuid" : "11de743c-96cd-11e0-8d6b-9b9415a91465",
+        "display" : "DATE OF FOOD ASSISTANCE: 12 June 2011 00:00:00 CEST",
+        "concept" : {
+          "uuid" : "11716f9c-1434-4f8d-b9fc-9aa14c4d6126",
+          "display" : "DATE OF FOOD ASSISTANCE",
+          "links" : [ {
+            "rel" : "self",
+            "uri" : "http://localhost/ws/rest/v1/concept/11716f9c-1434-4f8d-b9fc-9aa14c4d6126"
+          } ]
+        },
+        "person" : {
+          "uuid" : "5946f880-b197-400b-9caa-a3c661d23041",
+          "display" : "6TS-4 - Collet Test Chebaskwony",
+          "links" : [ {
+            "rel" : "self",
+            "uri" : "http://localhost/ws/rest/v1/patient/5946f880-b197-400b-9caa-a3c661d23041"
+          } ]
+        },
+        "obsDatetime" : "2008-08-01T00:00:00.000+0200",
+        "accessionNumber" : null,
+        "obsGroup" : {
+          "uuid" : "05ba548c-96cd-11e0-8d6b-9b9415a91465",
+          "display" : "FOOD CONSTRUCT: Some text, 12 June 2011 00:00:00 CEST",
+          "links" : [ {
+            "rel" : "self",
+            "uri" : "http://localhost/ws/rest/v1/obs/05ba548c-96cd-11e0-8d6b-9b9415a91465"
+          } ]
+        },
+        "valueCodedName" : null,
+        "groupMembers" : null,
+        "comment" : null,
+        "location" : null,
+        "order" : null,
+        "encounter" : {
+          "uuid" : "62967e68-96bb-11e0-8d6b-9b9415a91465",
+          "display" : "Emergency 01/08/2008",
+          "links" : [ {
+            "rel" : "self",
+            "uri" : "http://localhost/ws/rest/v1/encounter/62967e68-96bb-11e0-8d6b-9b9415a91465"
+          } ]
+        },
+        "voided" : false,
+        "value" : "2011-06-12T00:00:00.000+0200",
+        "valueModifier" : null,
+        "links" : [ {
+          "rel" : "self",
+          "uri" : "http://localhost/ws/rest/v1/obs/11de743c-96cd-11e0-8d6b-9b9415a91465"
+        }, {
+          "rel" : "full",
+          "uri" : "http://localhost/ws/rest/v1/obs/11de743c-96cd-11e0-8d6b-9b9415a91465?v=full"
+        } ],
+        "resourceVersion" : "1.8"
+      } ],
+      "comment" : null,
+      "location" : null,
+      "order" : null,
+      "encounter" : {
+        "uuid" : "62967e68-96bb-11e0-8d6b-9b9415a91465",
+        "display" : "Emergency 01/08/2008",
+        "links" : [ {
+          "rel" : "self",
+          "uri" : "http://localhost/ws/rest/v1/encounter/62967e68-96bb-11e0-8d6b-9b9415a91465"
+        } ]
+      },
+      "voided" : false,
+      "value" : null,
+      "valueModifier" : null,
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/obs/05ba548c-96cd-11e0-8d6b-9b9415a91465"
+      }, {
+        "rel" : "full",
+        "uri" : "http://localhost/ws/rest/v1/obs/05ba548c-96cd-11e0-8d6b-9b9415a91465?v=full"
+      } ],
+      "resourceVersion" : "1.8"
+    } ],
+    "comment" : null,
+    "location" : null,
+    "order" : null,
+    "encounter" : {
+      "uuid" : "62967e68-96bb-11e0-8d6b-9b9415a91465",
+      "display" : "Emergency 01/08/2008",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/encounter/62967e68-96bb-11e0-8d6b-9b9415a91465"
+      } ]
+    },
+    "voided" : false,
+    "value" : null,
+    "valueModifier" : null,
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/obs/47f18998-96cc-11e0-8d6b-9b9415a91465"
+    }, {
+      "rel" : "full",
+      "uri" : "http://localhost/ws/rest/v1/obs/47f18998-96cc-11e0-8d6b-9b9415a91465?v=full"
+    } ],
+    "resourceVersion" : "1.8"
+  } ],
+  "orders" : [ ],
+  "voided" : false,
+  "auditInfo" : {
+    "creator" : {
+      "uuid" : "1010d442-e134-11de-babe-001e378eb67e",
+      "display" : "admin",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/user/1010d442-e134-11de-babe-001e378eb67e"
+      } ]
+    },
+    "dateCreated" : "2008-08-18T14:09:05.000+0200",
+    "changedBy" : null,
+    "dateChanged" : null
+  },
+  "visit" : null,
+  "encounterProviders" : [ {
+    "uuid" : "29e0aae8-20ee-46b7-ade6-9e68f897b7a8",
+    "provider" : {
+      "uuid" : "c2299800-cca9-11e0-9572-0800200c9a66",
+      "display" : "Test - Super User",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/provider/c2299800-cca9-11e0-9572-0800200c9a66"
+      } ]
+    },
+    "encounterRole" : {
+      "uuid" : "a0b03050-c99b-11e0-9572-0800200c9a66",
+      "display" : "Unknown",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/encounterrole/a0b03050-c99b-11e0-9572-0800200c9a66"
+      } ]
+    },
+    "voided" : false,
+    "links" : [ {
+      "rel" : "full",
+      "uri" : "http://localhost/ws/rest/v1/encounter/62967e68-96bb-11e0-8d6b-9b9415a91465/encounterprovider/29e0aae8-20ee-46b7-ade6-9e68f897b7a8?v=full"
+    } ],
+    "resourceVersion" : "1.9"
+  } ],
+  "links" : [ {
+    "rel" : "self",
+    "uri" : "http://localhost/ws/rest/v1/encounter/62967e68-96bb-11e0-8d6b-9b9415a91465"
+  } ],
+  "resourceVersion" : "1.9"
+}
+Created a new encounter with a list of providers with different roles: {
+  "uuid" : "052f6245-2fcf-4cc2-aaf5-a3542fc8ed47",
+  "display" : "Scheduled 17/06/2015",
+  "encounterDatetime" : "2015-06-17T00:00:00.000+0200",
+  "patient" : {
+    "uuid" : "da7f524f-27ce-4bb2-86d6-6d1d05312bd5",
+    "display" : "101-6 - Mr. Horatio Test Hornblower Esq.",
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/patient/da7f524f-27ce-4bb2-86d6-6d1d05312bd5"
+    } ]
+  },
+  "location" : {
+    "uuid" : "9356400c-a5a2-4532-8f2b-2361b3446eb8",
+    "display" : "Xanadu",
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/location/9356400c-a5a2-4532-8f2b-2361b3446eb8"
+    } ]
+  },
+  "form" : null,
+  "encounterType" : {
+    "uuid" : "61ae96f4-6afe-4351-b6f8-cd4fc383cce1",
+    "display" : "Scheduled",
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/encountertype/61ae96f4-6afe-4351-b6f8-cd4fc383cce1"
+    } ]
+  },
+  "obs" : [ ],
+  "orders" : [ ],
+  "voided" : false,
+  "visit" : null,
+  "encounterProviders" : [ {
+    "uuid" : "387641e7-5462-49fc-912a-badc64ea97f2",
+    "display" : "Hippocrates of Cos: Medicine Dispenser",
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/encounter/052f6245-2fcf-4cc2-aaf5-a3542fc8ed47/encounterprovider/387641e7-5462-49fc-912a-badc64ea97f2"
+    } ]
+  }, {
+    "uuid" : "9a68fad7-a09a-46ce-a46b-8bc471b27c5a",
+    "display" : "Hippocrates of Cos: Unknown",
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/encounter/052f6245-2fcf-4cc2-aaf5-a3542fc8ed47/encounterprovider/9a68fad7-a09a-46ce-a46b-8bc471b27c5a"
+    } ]
+  } ],
+  "links" : [ {
+    "rel" : "self",
+    "uri" : "http://localhost/ws/rest/v1/encounter/052f6245-2fcf-4cc2-aaf5-a3542fc8ed47"
+  }, {
+    "rel" : "full",
+    "uri" : "http://localhost/ws/rest/v1/encounter/052f6245-2fcf-4cc2-aaf5-a3542fc8ed47?v=full"
+  } ],
+  "resourceVersion" : "1.9"
+}
+[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.206 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.EncounterController1_9Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.PersonController1_9Test
+[INFO] Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.995 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.PersonController1_9Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.FormFieldController1_9Test
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.264 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.FormFieldController1_9Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.PersonAttributeController1_9Test
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.353 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.PersonAttributeController1_9Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.GenericPropertyResourceTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.295 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.GenericPropertyResourceTest
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ConceptDatatypeController1_9Test
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.951 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ConceptDatatypeController1_9Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ProviderAttributeTypeController1_9Test
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.388 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ProviderAttributeTypeController1_9Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ConceptReferenceTermController1_9Test
+[INFO] Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.853 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ConceptReferenceTermController1_9Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.FormResourceController1_9Test
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.836 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.FormResourceController1_9Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ConceptMapTypeController1_9Test
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.813 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ConceptMapTypeController1_9Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.AllergyController1_9Test
+Allergy fetched (default): {
+  "uuid" : "40fb7f47-e80a-7890-9285-bd798be13c61",
+  "display" : "FOOD ASSISTANCE",
+  "person" : {
+    "uuid" : "da7f524f-27ce-4bb2-86d6-6d1d05312bd5",
+    "display" : "101-6 - Mr. Horatio Test Hornblower Esq.",
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/patient/da7f524f-27ce-4bb2-86d6-6d1d05312bd5"
+    } ]
+  },
+  "activeListType" : {
+    "uuid" : "1234567890",
+    "display" : "Allergy",
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/activelisttype/1234567890"
+    } ]
+  },
+  "startDate" : "2010-05-25T12:00:00.000+0200",
+  "endDate" : null,
+  "startObs" : null,
+  "stopObs" : null,
+  "comments" : "none",
+  "voided" : false,
+  "allergyType" : "POLLEN",
+  "reaction" : null,
+  "severity" : "MILD",
+  "allergen" : {
+    "uuid" : "0dde1358-7fcf-4341-a330-f119241a46e8",
+    "display" : "FOOD ASSISTANCE",
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/concept/0dde1358-7fcf-4341-a330-f119241a46e8"
+    } ]
+  },
+  "links" : [ {
+    "rel" : "self",
+    "uri" : "http://localhost/ws/rest/v1/allergy/40fb7f47-e80a-7890-9285-bd798be13c61"
+  }, {
+    "rel" : "full",
+    "uri" : "http://localhost/ws/rest/v1/allergy/40fb7f47-e80a-7890-9285-bd798be13c61?v=full"
+  } ],
+  "resourceVersion" : "1.8"
+}
+Allergy fetched (default): {
+  "uuid" : "40fb7f47-e80a-7890-9285-bd798be13c61",
+  "display" : "FOOD ASSISTANCE",
+  "person" : {
+    "uuid" : "da7f524f-27ce-4bb2-86d6-6d1d05312bd5",
+    "display" : "101-6 - Mr. Horatio Test Hornblower Esq.",
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/patient/da7f524f-27ce-4bb2-86d6-6d1d05312bd5"
+    } ]
+  },
+  "activeListType" : {
+    "uuid" : "1234567890",
+    "display" : "Allergy",
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/activelisttype/1234567890"
+    } ]
+  },
+  "startDate" : "2010-05-25T12:00:00.000+0200",
+  "endDate" : null,
+  "startObs" : null,
+  "stopObs" : null,
+  "comments" : "none",
+  "voided" : false,
+  "auditInfo" : {
+    "creator" : {
+      "uuid" : "1010d442-e134-11de-babe-001e378eb67e",
+      "display" : "admin",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/user/1010d442-e134-11de-babe-001e378eb67e"
+      } ]
+    },
+    "dateCreated" : "2010-05-25T12:00:00.000+0200",
+    "changedBy" : null,
+    "dateChanged" : null
+  },
+  "allergyType" : "POLLEN",
+  "reaction" : null,
+  "severity" : "MILD",
+  "allergen" : {
+    "uuid" : "0dde1358-7fcf-4341-a330-f119241a46e8",
+    "display" : "FOOD ASSISTANCE",
+    "name" : {
+      "display" : "FOOD ASSISTANCE",
+      "uuid" : "7c9da21c-dbcd-4f9c-862c-5a33123bac4f",
+      "name" : "FOOD ASSISTANCE",
+      "locale" : "en",
+      "localePreferred" : true,
+      "conceptNameType" : "FULLY_SPECIFIED",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/concept/0dde1358-7fcf-4341-a330-f119241a46e8/name/7c9da21c-dbcd-4f9c-862c-5a33123bac4f"
+      }, {
+        "rel" : "full",
+        "uri" : "http://localhost/ws/rest/v1/concept/0dde1358-7fcf-4341-a330-f119241a46e8/name/7c9da21c-dbcd-4f9c-862c-5a33123bac4f?v=full"
+      } ],
+      "resourceVersion" : "1.9"
+    },
+    "datatype" : {
+      "uuid" : "8d4a5cca-c2cc-11de-8d13-0010c6dffd0f",
+      "display" : "Boolean",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/conceptdatatype/8d4a5cca-c2cc-11de-8d13-0010c6dffd0f"
+      } ]
+    },
+    "conceptClass" : {
+      "uuid" : "a82ef63c-e4e4-48d6-988a-fdd74d7541a7",
+      "display" : "Question",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/conceptclass/a82ef63c-e4e4-48d6-988a-fdd74d7541a7"
+      } ]
+    },
+    "set" : false,
+    "version" : "",
+    "retired" : false,
+    "names" : [ {
+      "uuid" : "7c9da21c-dbcd-4f9c-862c-5a33123bac4f",
+      "display" : "FOOD ASSISTANCE",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/concept/0dde1358-7fcf-4341-a330-f119241a46e8/name/7c9da21c-dbcd-4f9c-862c-5a33123bac4f"
+      } ]
+    } ],
+    "descriptions" : [ {
+      "uuid" : "da9959c7-1b8a-4cc6-8503-565f0a486914",
+      "display" : "Did the patient receive food assistance?",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/concept/0dde1358-7fcf-4341-a330-f119241a46e8/description/da9959c7-1b8a-4cc6-8503-565f0a486914"
+      } ]
+    } ],
+    "mappings" : [ ],
+    "answers" : [ ],
+    "setMembers" : [ ],
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/concept/0dde1358-7fcf-4341-a330-f119241a46e8"
+    }, {
+      "rel" : "full",
+      "uri" : "http://localhost/ws/rest/v1/concept/0dde1358-7fcf-4341-a330-f119241a46e8?v=full"
+    } ],
+    "resourceVersion" : "1.9"
+  },
+  "links" : [ {
+    "rel" : "self",
+    "uri" : "http://localhost/ws/rest/v1/allergy/40fb7f47-e80a-7890-9285-bd798be13c61"
+  } ],
+  "resourceVersion" : "1.8"
+}
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.588 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.AllergyController1_9Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.VisitAttributeTypeController1_9Test
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.277 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.VisitAttributeTypeController1_9Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ConceptController1_8Test
+Concept fetched: {
+  "uuid" : "15f83cd6-64e9-4e06-a5f9-364d3b14a43d",
+  "display" : "ASPIRIN",
+  "name" : {
+    "display" : "ASPIRIN",
+    "uuid" : "0e61fcd8-10ac-431f-9e96-70ab0b5b2385",
+    "name" : "ASPIRIN",
+    "locale" : "en",
+    "localePreferred" : true,
+    "conceptNameType" : "FULLY_SPECIFIED",
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/concept/15f83cd6-64e9-4e06-a5f9-364d3b14a43d/name/0e61fcd8-10ac-431f-9e96-70ab0b5b2385"
+    }, {
+      "rel" : "full",
+      "uri" : "http://localhost/ws/rest/v1/concept/15f83cd6-64e9-4e06-a5f9-364d3b14a43d/name/0e61fcd8-10ac-431f-9e96-70ab0b5b2385?v=full"
+    } ],
+    "resourceVersion" : "1.9"
+  },
+  "datatype" : {
+    "uuid" : "8d4a4c94-c2cc-11de-8d13-0010c6dffd0f",
+    "display" : "N/A",
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/conceptdatatype/8d4a4c94-c2cc-11de-8d13-0010c6dffd0f"
+    } ]
+  },
+  "conceptClass" : {
+    "uuid" : "3d065ed4-b0b9-4710-9a17-6d8c4fd259b7",
+    "display" : "Drug",
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/conceptclass/3d065ed4-b0b9-4710-9a17-6d8c4fd259b7"
+    } ]
+  },
+  "set" : false,
+  "version" : "",
+  "retired" : false,
+  "names" : [ {
+    "uuid" : "0e61fcd8-10ac-431f-9e96-70ab0b5b2385",
+    "display" : "ASPIRIN",
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/concept/15f83cd6-64e9-4e06-a5f9-364d3b14a43d/name/0e61fcd8-10ac-431f-9e96-70ab0b5b2385"
+    } ]
+  }, {
+    "uuid" : "d2fddd31-5a0e-49e6-9ff2-522cd35ab01a",
+    "display" : "ASA",
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/concept/15f83cd6-64e9-4e06-a5f9-364d3b14a43d/name/d2fddd31-5a0e-49e6-9ff2-522cd35ab01a"
+    } ]
+  } ],
+  "descriptions" : [ {
+    "uuid" : "7ae2d5db-2aab-49b9-a256-7c258eaab067",
+    "display" : "Drug used for pain relief, fever, and antiplatelet actions.",
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/concept/15f83cd6-64e9-4e06-a5f9-364d3b14a43d/description/7ae2d5db-2aab-49b9-a256-7c258eaab067"
+    } ]
+  } ],
+  "mappings" : [ ],
+  "answers" : [ ],
+  "setMembers" : [ ],
+  "links" : [ {
+    "rel" : "self",
+    "uri" : "http://localhost/ws/rest/v1/concept/15f83cd6-64e9-4e06-a5f9-364d3b14a43d"
+  }, {
+    "rel" : "full",
+    "uri" : "http://localhost/ws/rest/v1/concept/15f83cd6-64e9-4e06-a5f9-364d3b14a43d?v=full"
+  } ],
+  "resourceVersion" : "1.9"
+}
+<?xml version="1.0" encoding="UTF-8"?>
+<object>
+   <uuid>b055abd8-a420-4a11-8b98-02ee170a7b54</uuid>
+   <display>YES</display>
+   <name>
+      <display>YES</display>
+      <uuid>ef7ac747-7980-443c-b11f-4617aa587703</uuid>
+      <name>YES</name>
+      <locale>en</locale>
+      <localePreferred>true</localePreferred>
+      <conceptNameType>FULLY_SPECIFIED</conceptNameType>
+      <links>
+         <link>
+            <rel>self</rel>
+            <uri>http://localhost/ws/rest/v1/concept/b055abd8-a420-4a11-8b98-02ee170a7b54/name/ef7ac747-7980-443c-b11f-4617aa587703</uri>
+         </link>
+         <link>
+            <rel>full</rel>
+            <uri>http://localhost/ws/rest/v1/concept/b055abd8-a420-4a11-8b98-02ee170a7b54/name/ef7ac747-7980-443c-b11f-4617aa587703?v=full</uri>
+         </link>
+      </links>
+      <resourceVersion>1.9</resourceVersion>
+   </name>
+   <datatype>
+      <uuid>8d4a4c94-c2cc-11de-8d13-0010c6dffd0f</uuid>
+      <display>N/A</display>
+      <name>N/A</name>
+      <description>Not associated with a datatype (e.g., term answers, sets)</description>
+      <hl7Abbreviation>ZZ</hl7Abbreviation>
+      <retired>false</retired>
+      <links>
+         <link>
+            <rel>self</rel>
+            <uri>http://localhost/ws/rest/v1/conceptdatatype/8d4a4c94-c2cc-11de-8d13-0010c6dffd0f</uri>
+         </link>
+         <link>
+            <rel>full</rel>
+            <uri>http://localhost/ws/rest/v1/conceptdatatype/8d4a4c94-c2cc-11de-8d13-0010c6dffd0f?v=full</uri>
+         </link>
+      </links>
+      <resourceVersion>1.8</resourceVersion>
+   </datatype>
+   <conceptClass>
+      <uuid>ecdee8a7-d741-4fe7-8e01-f79cacbe97bc</uuid>
+      <display>Misc</display>
+      <name>Misc</name>
+      <description>Terms which don't fit other categories</description>
+      <retired>false</retired>
+      <links>
+         <link>
+            <rel>self</rel>
+            <uri>http://localhost/ws/rest/v1/conceptclass/ecdee8a7-d741-4fe7-8e01-f79cacbe97bc</uri>
+         </link>
+         <link>
+            <rel>full</rel>
+            <uri>http://localhost/ws/rest/v1/conceptclass/ecdee8a7-d741-4fe7-8e01-f79cacbe97bc?v=full</uri>
+         </link>
+      </links>
+      <resourceVersion>1.8</resourceVersion>
+   </conceptClass>
+   <set>false</set>
+   <version/>
+   <retired>false</retired>
+   <names>
+      <name>
+         <display>Y</display>
+         <uuid>0631be3b-e338-4505-a876-ef3310f65896</uuid>
+         <name>Y</name>
+         <locale>en</locale>
+         <localePreferred>false</localePreferred>
+         <conceptNameType/>
+         <links>
+            <link>
+               <rel>self</rel>
+               <uri>http://localhost/ws/rest/v1/concept/b055abd8-a420-4a11-8b98-02ee170a7b54/name/0631be3b-e338-4505-a876-ef3310f65896</uri>
+            </link>
+            <link>
+               <rel>full</rel>
+               <uri>http://localhost/ws/rest/v1/concept/b055abd8-a420-4a11-8b98-02ee170a7b54/name/0631be3b-e338-4505-a876-ef3310f65896?v=full</uri>
+            </link>
+         </links>
+         <resourceVersion>1.9</resourceVersion>
+      </name>
+      <name>
+         <display>YES</display>
+         <uuid>ef7ac747-7980-443c-b11f-4617aa587703</uuid>
+         <name>YES</name>
+         <locale>en</locale>
+         <localePreferred>true</localePreferred>
+         <conceptNameType>FULLY_SPECIFIED</conceptNameType>
+         <links>
+            <link>
+               <rel>self</rel>
+               <uri>http://localhost/ws/rest/v1/concept/b055abd8-a420-4a11-8b98-02ee170a7b54/name/ef7ac747-7980-443c-b11f-4617aa587703</uri>
+            </link>
+            <link>
+               <rel>full</rel>
+               <uri>http://localhost/ws/rest/v1/concept/b055abd8-a420-4a11-8b98-02ee170a7b54/name/ef7ac747-7980-443c-b11f-4617aa587703?v=full</uri>
+            </link>
+         </links>
+         <resourceVersion>1.9</resourceVersion>
+      </name>
+   </names>
+   <descriptions>
+      <description>
+         <display>Affirmative</display>
+         <uuid>be3321b3-c1c7-4339-aaca-1b60db12e1df</uuid>
+         <description>Affirmative</description>
+         <locale>en</locale>
+         <links>
+            <link>
+               <rel>self</rel>
+               <uri>http://localhost/ws/rest/v1/concept/b055abd8-a420-4a11-8b98-02ee170a7b54/description/be3321b3-c1c7-4339-aaca-1b60db12e1df</uri>
+            </link>
+            <link>
+               <rel>full</rel>
+               <uri>http://localhost/ws/rest/v1/concept/b055abd8-a420-4a11-8b98-02ee170a7b54/description/be3321b3-c1c7-4339-aaca-1b60db12e1df?v=full</uri>
+            </link>
+         </links>
+         <resourceVersion>1.9</resourceVersion>
+      </description>
+   </descriptions>
+   <mappings/>
+   <answers/>
+   <setMembers/>
+   <auditInfo>
+      <creator>
+         <uuid>1010d442-e134-11de-babe-001e378eb67e</uuid>
+         <display>admin</display>
+         <links>
+            <link>
+               <rel>self</rel>
+               <uri>http://localhost/ws/rest/v1/user/1010d442-e134-11de-babe-001e378eb67e</uri>
+            </link>
+         </links>
+      </creator>
+      <dateCreated>2008-08-15T13:52:53.000+0200</dateCreated>
+      <changedBy/>
+      <dateChanged/>
+   </auditInfo>
+   <links>
+      <link>
+         <rel>self</rel>
+         <uri>http://localhost/ws/rest/v1/concept/b055abd8-a420-4a11-8b98-02ee170a7b54</uri>
+      </link>
+   </links>
+   <resourceVersion>1.9</resourceVersion>
+</object>
+<?xml version="1.0" encoding="UTF-8"?>
+<object>
+   <uuid>15f83cd6-64e9-4e06-a5f9-364d3b14a43d</uuid>
+   <display>ASPIRIN</display>
+   <name>
+      <display>ASPIRIN</display>
+      <uuid>0e61fcd8-10ac-431f-9e96-70ab0b5b2385</uuid>
+      <name>ASPIRIN</name>
+      <locale>en</locale>
+      <localePreferred>true</localePreferred>
+      <conceptNameType>FULLY_SPECIFIED</conceptNameType>
+      <links>
+         <link>
+            <rel>self</rel>
+            <uri>http://localhost/ws/rest/v1/concept/15f83cd6-64e9-4e06-a5f9-364d3b14a43d/name/0e61fcd8-10ac-431f-9e96-70ab0b5b2385</uri>
+         </link>
+         <link>
+            <rel>full</rel>
+            <uri>http://localhost/ws/rest/v1/concept/15f83cd6-64e9-4e06-a5f9-364d3b14a43d/name/0e61fcd8-10ac-431f-9e96-70ab0b5b2385?v=full</uri>
+         </link>
+      </links>
+      <resourceVersion>1.9</resourceVersion>
+   </name>
+   <datatype>
+      <uuid>8d4a4c94-c2cc-11de-8d13-0010c6dffd0f</uuid>
+      <display>N/A</display>
+      <links>
+         <link>
+            <rel>self</rel>
+            <uri>http://localhost/ws/rest/v1/conceptdatatype/8d4a4c94-c2cc-11de-8d13-0010c6dffd0f</uri>
+         </link>
+      </links>
+   </datatype>
+   <conceptClass>
+      <uuid>3d065ed4-b0b9-4710-9a17-6d8c4fd259b7</uuid>
+      <display>Drug</display>
+      <links>
+         <link>
+            <rel>self</rel>
+            <uri>http://localhost/ws/rest/v1/conceptclass/3d065ed4-b0b9-4710-9a17-6d8c4fd259b7</uri>
+         </link>
+      </links>
+   </conceptClass>
+   <set>false</set>
+   <version/>
+   <retired>false</retired>
+   <names>
+      <name>
+         <uuid>0e61fcd8-10ac-431f-9e96-70ab0b5b2385</uuid>
+         <display>ASPIRIN</display>
+         <links>
+            <link>
+               <rel>self</rel>
+               <uri>http://localhost/ws/rest/v1/concept/15f83cd6-64e9-4e06-a5f9-364d3b14a43d/name/0e61fcd8-10ac-431f-9e96-70ab0b5b2385</uri>
+            </link>
+         </links>
+      </name>
+      <name>
+         <uuid>d2fddd31-5a0e-49e6-9ff2-522cd35ab01a</uuid>
+         <display>ASA</display>
+         <links>
+            <link>
+               <rel>self</rel>
+               <uri>http://localhost/ws/rest/v1/concept/15f83cd6-64e9-4e06-a5f9-364d3b14a43d/name/d2fddd31-5a0e-49e6-9ff2-522cd35ab01a</uri>
+            </link>
+         </links>
+      </name>
+   </names>
+   <descriptions>
+      <description>
+         <uuid>7ae2d5db-2aab-49b9-a256-7c258eaab067</uuid>
+         <display>Drug used for pain relief, fever, and antiplatelet actions.</display>
+         <links>
+            <link>
+               <rel>self</rel>
+               <uri>http://localhost/ws/rest/v1/concept/15f83cd6-64e9-4e06-a5f9-364d3b14a43d/description/7ae2d5db-2aab-49b9-a256-7c258eaab067</uri>
+            </link>
+         </links>
+      </description>
+   </descriptions>
+   <mappings/>
+   <answers/>
+   <setMembers/>
+   <links>
+      <link>
+         <rel>self</rel>
+         <uri>http://localhost/ws/rest/v1/concept/15f83cd6-64e9-4e06-a5f9-364d3b14a43d</uri>
+      </link>
+      <link>
+         <rel>full</rel>
+         <uri>http://localhost/ws/rest/v1/concept/15f83cd6-64e9-4e06-a5f9-364d3b14a43d?v=full</uri>
+      </link>
+   </links>
+   <resourceVersion>1.9</resourceVersion>
+</object>
+[WARNING] Tests run: 42, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 9.792 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ConceptController1_8Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ProgramController1_9Test
+[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.055 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ProgramController1_9Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.VisitAttributeController1_9Test
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.061 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.VisitAttributeController1_9Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.DrugController1_9Test
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.655 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.DrugController1_9Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.PatientIdentifierController1_9Test
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.671 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.PatientIdentifierController1_9Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ConceptDescriptionController1_9Test
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.441 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ConceptDescriptionController1_9Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ProviderAttributeController1_9Test
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.19 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ProviderAttributeController1_9Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ClobDatatypeStorageControllerTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.447 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ClobDatatypeStorageControllerTest
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ConceptNameController1_9Test
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.064 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ConceptNameController1_9Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.LocationAttributeController1_9Test
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.317 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.LocationAttributeController1_9Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.RelationshipController1_9Test
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.987 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.RelationshipController1_9Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.PersonNameController1_9Test
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.563 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.PersonNameController1_9Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.VisitTypeController1_9Test
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.336 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.VisitTypeController1_9Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.PatientController1_9Test
+[INFO] Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.488 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.PatientController1_9Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ObsController1_9Test
+[ERROR] Tests run: 10, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 2.129 s <<< FAILURE! - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ObsController1_9Test
+[ERROR] getObs_shouldCreateAnObsWhenTheQuestionConceptIsSetAsAMapContainingTheUuid(org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ObsController1_9Test)  Time elapsed: 0.459 s  <<< ERROR!
+org.openmrs.module.webservices.rest.web.response.ConversionException: concept on class org.openmrs.Obs
+	at org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ObsController1_9Test.getObs_shouldCreateAnObsWhenTheQuestionConceptIsSetAsAMapContainingTheUuid(ObsController1_9Test.java:214)
+Caused by: java.lang.reflect.InvocationTargetException
+	at org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ObsController1_9Test.getObs_shouldCreateAnObsWhenTheQuestionConceptIsSetAsAMapContainingTheUuid(ObsController1_9Test.java:214)
+Caused by: java.lang.ClassCastException: java.util.LinkedHashMap cannot be cast to java.lang.String
+	at org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ObsController1_9Test.getObs_shouldCreateAnObsWhenTheQuestionConceptIsSetAsAMapContainingTheUuid(ObsController1_9Test.java:214)
+
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.SystemSettingController1_9Test
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.577 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.SystemSettingController1_9Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.EncounterRoleController1_9Test
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.553 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.EncounterRoleController1_9Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ConceptReferenceTermMapController1_9Test
+[INFO] Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.813 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ConceptReferenceTermMapController1_9Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.FieldController1_9Test
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.534 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.FieldController1_9Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ProblemController1_9Test
+Problem fetched (default): {
+  "uuid" : "50fb7f47-e80a-7890-9285-bd798be13c61",
+  "display" : "FOOD ASSISTANCE",
+  "person" : {
+    "uuid" : "da7f524f-27ce-4bb2-86d6-6d1d05312bd5",
+    "display" : "101-6 - Mr. Horatio Test Hornblower Esq.",
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/patient/da7f524f-27ce-4bb2-86d6-6d1d05312bd5"
+    } ]
+  },
+  "activeListType" : {
+    "uuid" : "0123456789",
+    "display" : "Problem",
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/activelisttype/0123456789"
+    } ]
+  },
+  "startDate" : "2010-05-25T12:00:00.000+0200",
+  "endDate" : null,
+  "startObs" : null,
+  "stopObs" : null,
+  "comments" : "random",
+  "voided" : false,
+  "auditInfo" : {
+    "creator" : {
+      "uuid" : "1010d442-e134-11de-babe-001e378eb67e",
+      "display" : "admin",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/user/1010d442-e134-11de-babe-001e378eb67e"
+      } ]
+    },
+    "dateCreated" : "2010-05-25T12:00:00.000+0200",
+    "changedBy" : null,
+    "dateChanged" : null
+  },
+  "modifier" : null,
+  "sortWeight" : 1.0,
+  "problem" : {
+    "uuid" : "0dde1358-7fcf-4341-a330-f119241a46e8",
+    "display" : "FOOD ASSISTANCE",
+    "name" : {
+      "display" : "FOOD ASSISTANCE",
+      "uuid" : "7c9da21c-dbcd-4f9c-862c-5a33123bac4f",
+      "name" : "FOOD ASSISTANCE",
+      "locale" : "en",
+      "localePreferred" : true,
+      "conceptNameType" : "FULLY_SPECIFIED",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/concept/0dde1358-7fcf-4341-a330-f119241a46e8/name/7c9da21c-dbcd-4f9c-862c-5a33123bac4f"
+      }, {
+        "rel" : "full",
+        "uri" : "http://localhost/ws/rest/v1/concept/0dde1358-7fcf-4341-a330-f119241a46e8/name/7c9da21c-dbcd-4f9c-862c-5a33123bac4f?v=full"
+      } ],
+      "resourceVersion" : "1.9"
+    },
+    "datatype" : {
+      "uuid" : "8d4a5cca-c2cc-11de-8d13-0010c6dffd0f",
+      "display" : "Boolean",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/conceptdatatype/8d4a5cca-c2cc-11de-8d13-0010c6dffd0f"
+      } ]
+    },
+    "conceptClass" : {
+      "uuid" : "a82ef63c-e4e4-48d6-988a-fdd74d7541a7",
+      "display" : "Question",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/conceptclass/a82ef63c-e4e4-48d6-988a-fdd74d7541a7"
+      } ]
+    },
+    "set" : false,
+    "version" : "",
+    "retired" : false,
+    "names" : [ {
+      "uuid" : "7c9da21c-dbcd-4f9c-862c-5a33123bac4f",
+      "display" : "FOOD ASSISTANCE",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/concept/0dde1358-7fcf-4341-a330-f119241a46e8/name/7c9da21c-dbcd-4f9c-862c-5a33123bac4f"
+      } ]
+    } ],
+    "descriptions" : [ {
+      "uuid" : "da9959c7-1b8a-4cc6-8503-565f0a486914",
+      "display" : "Did the patient receive food assistance?",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/concept/0dde1358-7fcf-4341-a330-f119241a46e8/description/da9959c7-1b8a-4cc6-8503-565f0a486914"
+      } ]
+    } ],
+    "mappings" : [ ],
+    "answers" : [ ],
+    "setMembers" : [ ],
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/concept/0dde1358-7fcf-4341-a330-f119241a46e8"
+    }, {
+      "rel" : "full",
+      "uri" : "http://localhost/ws/rest/v1/concept/0dde1358-7fcf-4341-a330-f119241a46e8?v=full"
+    } ],
+    "resourceVersion" : "1.9"
+  },
+  "links" : [ {
+    "rel" : "self",
+    "uri" : "http://localhost/ws/rest/v1/problem/50fb7f47-e80a-7890-9285-bd798be13c61"
+  } ],
+  "resourceVersion" : "1.8"
+}
+Problem fetched (default): {
+  "uuid" : "50fb7f47-e80a-7890-9285-bd798be13c61",
+  "display" : "FOOD ASSISTANCE",
+  "person" : {
+    "uuid" : "da7f524f-27ce-4bb2-86d6-6d1d05312bd5",
+    "display" : "101-6 - Mr. Horatio Test Hornblower Esq.",
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/patient/da7f524f-27ce-4bb2-86d6-6d1d05312bd5"
+    } ]
+  },
+  "activeListType" : {
+    "uuid" : "0123456789",
+    "display" : "Problem",
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/activelisttype/0123456789"
+    } ]
+  },
+  "startDate" : "2010-05-25T12:00:00.000+0200",
+  "endDate" : null,
+  "startObs" : null,
+  "stopObs" : null,
+  "comments" : "random",
+  "voided" : false,
+  "modifier" : null,
+  "sortWeight" : 1.0,
+  "problem" : {
+    "uuid" : "0dde1358-7fcf-4341-a330-f119241a46e8",
+    "display" : "FOOD ASSISTANCE",
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/concept/0dde1358-7fcf-4341-a330-f119241a46e8"
+    } ]
+  },
+  "links" : [ {
+    "rel" : "self",
+    "uri" : "http://localhost/ws/rest/v1/problem/50fb7f47-e80a-7890-9285-bd798be13c61"
+  }, {
+    "rel" : "full",
+    "uri" : "http://localhost/ws/rest/v1/problem/50fb7f47-e80a-7890-9285-bd798be13c61?v=full"
+  } ],
+  "resourceVersion" : "1.8"
+}
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.797 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ProblemController1_9Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ConceptController1_9Test
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.953 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ConceptController1_9Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ProgramEnrollmentController1_9Test
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.681 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ProgramEnrollmentController1_9Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.LocationController1_9Test
+[INFO] Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.948 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.LocationController1_9Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.VisitController1_9Test
+[INFO] Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.242 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.VisitController1_9Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ProviderController1_9Test
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.366 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ProviderController1_9Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ConceptMapController1_9Test
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.664 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ConceptMapController1_9Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.search.openmrs1_9.LocationSearchHandlerTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.905 s - in org.openmrs.module.webservices.rest.web.v1_0.search.openmrs1_9.LocationSearchHandlerTest
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.search.openmrs1_9.EncounterSearchHandler1_9Test
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.751 s - in org.openmrs.module.webservices.rest.web.v1_0.search.openmrs1_9.EncounterSearchHandler1_9Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.search.openmrs1_9.ConceptSearchHandler1_9Test
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.905 s - in org.openmrs.module.webservices.rest.web.v1_0.search.openmrs1_9.ConceptSearchHandler1_9Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.EncounterProviderResource1_9Test
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.816 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.EncounterProviderResource1_9Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.FormResourceResource1_9Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.448 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.FormResourceResource1_9Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.ProblemResource1_9Test
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.799 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.ProblemResource1_9Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.ConceptReferenceTermResource1_9Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.536 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.ConceptReferenceTermResource1_9Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.ConceptNameResource1_9Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.378 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.ConceptNameResource1_9Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.UserResource1_9Test
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.049 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.UserResource1_9Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.CreateUpdatePatientResource1_9Test
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.307 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.CreateUpdatePatientResource1_9Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.SystemSettingResource1_9Test
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.914 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.SystemSettingResource1_9Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.RelationshipResource1_9Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.398 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.RelationshipResource1_9Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.VisitAttributeTypeResource1_9Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.376 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.VisitAttributeTypeResource1_9Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.PatientIdentifierResource1_9Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.36 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.PatientIdentifierResource1_9Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.EncounterResource1_9Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.44 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.EncounterResource1_9Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.ConceptSearchResource1_9Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.389 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.ConceptSearchResource1_9Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.VisitResource1_9Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.391 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.VisitResource1_9Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.ObsResource1_9Test
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.839 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.ObsResource1_9Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.ConceptReferenceTermMapResource1_9Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.38 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.ConceptReferenceTermMapResource1_9Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.AllergyResource1_9Test
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.534 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.AllergyResource1_9Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.PatientResource1_9Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.435 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.PatientResource1_9Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.LocationResource1_9Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.427 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.LocationResource1_9Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.EncounterRoleResource1_9Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.594 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.EncounterRoleResource1_9Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.ProviderResource1_9Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.456 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.ProviderResource1_9Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.PersonNameResource1_9Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.382 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.PersonNameResource1_9Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.VisitAttributeResource1_9Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.422 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.VisitAttributeResource1_9Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.ConceptDescriptionResource1_9Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.372 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.ConceptDescriptionResource1_9Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.ProviderAttributeResource1_9Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.418 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.ProviderAttributeResource1_9Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.ConceptStopwordResource1_9Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.372 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.ConceptStopwordResource1_9Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.ConceptMapResource1_9Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.529 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.ConceptMapResource1_9Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.LocationAttributeResource1_9Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.795 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.LocationAttributeResource1_9Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.ProviderAttributeTypeResource1_9Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.531 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.ProviderAttributeTypeResource1_9Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.VisitTypeResource1_9Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.367 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.VisitTypeResource1_9Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.ConceptMapTypeResource1_9Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.374 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.ConceptMapTypeResource1_9Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.LocationAttributeTypeResource1_9Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.538 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.LocationAttributeTypeResource1_9Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.ConceptResource1_9Test
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.331 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.ConceptResource1_9Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.CreatePatientIdentifierResource1_9Test
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.319 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.CreatePatientIdentifierResource1_9Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.FormResource1_9Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.418 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.FormResource1_9Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.ConceptNumericResource1_9Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.418 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.ConceptNumericResource1_9Test
+[INFO] Running org.openmrs.module.webservices.rest.web.ClassHierarchyResourceTest
+Get all: {
+  "results" : [ {
+    "uuid" : "921de0a3-05c4-444a-be03-e01b4c4b9142",
+    "display" : "Aspirin: 325.0 mg",
+    "orderType" : {
+      "uuid" : "f149b5e1-4314-4d0d-a95f-1c4f8031161d",
+      "display" : "Lab test",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/ordertype/f149b5e1-4314-4d0d-a95f-1c4f8031161d"
+      } ]
+    },
+    "patient" : {
+      "uuid" : "5946f880-b197-400b-9caa-a3c661d23041",
+      "display" : "6TS-4 - Collet Test Chebaskwony",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/patient/5946f880-b197-400b-9caa-a3c661d23041"
+      } ]
+    },
+    "concept" : {
+      "uuid" : "15f83cd6-64e9-4e06-a5f9-364d3b14a43d",
+      "display" : "ASPIRIN",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/concept/15f83cd6-64e9-4e06-a5f9-364d3b14a43d"
+      } ]
+    },
+    "instructions" : "2x daily",
+    "startDate" : "2008-08-08T00:00:00.000+0200",
+    "autoExpireDate" : null,
+    "encounter" : null,
+    "orderer" : {
+      "uuid" : "1010d442-e134-11de-babe-001e378eb67e",
+      "display" : "admin",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/user/1010d442-e134-11de-babe-001e378eb67e"
+      } ]
+    },
+    "accessionNumber" : null,
+    "discontinuedBy" : {
+      "uuid" : "1010d442-e134-11de-babe-001e378eb67e",
+      "display" : "admin",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/user/1010d442-e134-11de-babe-001e378eb67e"
+      } ]
+    },
+    "discontinuedDate" : "2008-08-15T00:00:00.000+0200",
+    "discontinuedReason" : null,
+    "discontinuedReasonNonCoded" : null,
+    "voided" : false,
+    "dose" : 325.0,
+    "units" : "mg",
+    "frequency" : "1/day x 7 days/week",
+    "prn" : false,
+    "complex" : false,
+    "quantity" : null,
+    "drug" : {
+      "uuid" : "05ec820a-d297-44e3-be6e-698531d9dd3f",
+      "display" : "Aspirin",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/drug/05ec820a-d297-44e3-be6e-698531d9dd3f"
+      } ]
+    },
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/order/921de0a3-05c4-444a-be03-e01b4c4b9142"
+    }, {
+      "rel" : "full",
+      "uri" : "http://localhost/ws/rest/v1/order/921de0a3-05c4-444a-be03-e01b4c4b9142?v=full"
+    } ],
+    "type" : "drugorder",
+    "resourceVersion" : "1.8"
+  }, {
+    "uuid" : "dfca4077-493c-496b-8312-856ee5d1cc26",
+    "display" : "Triomune-30: 1.0 tab(s)",
+    "orderType" : {
+      "uuid" : "f149b5e1-4314-4d0d-a95f-1c4f8031161d",
+      "display" : "Lab test",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/ordertype/f149b5e1-4314-4d0d-a95f-1c4f8031161d"
+      } ]
+    },
+    "patient" : {
+      "uuid" : "da7f524f-27ce-4bb2-86d6-6d1d05312bd5",
+      "display" : "101-6 - Mr. Horatio Test Hornblower Esq.",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/patient/da7f524f-27ce-4bb2-86d6-6d1d05312bd5"
+      } ]
+    },
+    "concept" : {
+      "uuid" : "d144d24f-6913-4b63-9660-a9108c2bebef",
+      "display" : "STAVUDINE LAMIVUDINE AND NEVIRAPINE",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/concept/d144d24f-6913-4b63-9660-a9108c2bebef"
+      } ]
+    },
+    "instructions" : "3x daily",
+    "startDate" : "2008-08-01T00:00:00.000+0200",
+    "autoExpireDate" : null,
+    "encounter" : null,
+    "orderer" : {
+      "uuid" : "1010d442-e134-11de-babe-001e378eb67e",
+      "display" : "admin",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/user/1010d442-e134-11de-babe-001e378eb67e"
+      } ]
+    },
+    "accessionNumber" : null,
+    "discontinuedBy" : {
+      "uuid" : "1010d442-e134-11de-babe-001e378eb67e",
+      "display" : "admin",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/user/1010d442-e134-11de-babe-001e378eb67e"
+      } ]
+    },
+    "discontinuedDate" : "2008-08-08T00:00:00.000+0200",
+    "discontinuedReason" : null,
+    "discontinuedReasonNonCoded" : null,
+    "voided" : false,
+    "dose" : 1.0,
+    "units" : "tab(s)",
+    "frequency" : "1/day x 7 days/week",
+    "prn" : false,
+    "complex" : false,
+    "quantity" : null,
+    "drug" : {
+      "uuid" : "3cfcf118-931c-46f7-8ff6-7b876f0d4202",
+      "display" : "Triomune-30",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/drug/3cfcf118-931c-46f7-8ff6-7b876f0d4202"
+      } ]
+    },
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/order/dfca4077-493c-496b-8312-856ee5d1cc26"
+    }, {
+      "rel" : "full",
+      "uri" : "http://localhost/ws/rest/v1/order/dfca4077-493c-496b-8312-856ee5d1cc26?v=full"
+    } ],
+    "type" : "drugorder",
+    "resourceVersion" : "1.8"
+  }, {
+    "uuid" : "e3d621f0-a4d5-47d1-a4e1-5ace3f66d43a",
+    "display" : "Triomune-30: 2.0 tab(s)",
+    "orderType" : {
+      "uuid" : "f149b5e1-4314-4d0d-a95f-1c4f8031161d",
+      "display" : "Lab test",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/ordertype/f149b5e1-4314-4d0d-a95f-1c4f8031161d"
+      } ]
+    },
+    "patient" : {
+      "uuid" : "da7f524f-27ce-4bb2-86d6-6d1d05312bd5",
+      "display" : "101-6 - Mr. Horatio Test Hornblower Esq.",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/patient/da7f524f-27ce-4bb2-86d6-6d1d05312bd5"
+      } ]
+    },
+    "concept" : {
+      "uuid" : "d144d24f-6913-4b63-9660-a9108c2bebef",
+      "display" : "STAVUDINE LAMIVUDINE AND NEVIRAPINE",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/concept/d144d24f-6913-4b63-9660-a9108c2bebef"
+      } ]
+    },
+    "instructions" : "1x daily with food",
+    "startDate" : "2008-08-08T00:00:00.000+0200",
+    "autoExpireDate" : null,
+    "encounter" : null,
+    "orderer" : {
+      "uuid" : "1010d442-e134-11de-babe-001e378eb67e",
+      "display" : "admin",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/user/1010d442-e134-11de-babe-001e378eb67e"
+      } ]
+    },
+    "accessionNumber" : null,
+    "discontinuedBy" : null,
+    "discontinuedDate" : null,
+    "discontinuedReason" : null,
+    "discontinuedReasonNonCoded" : null,
+    "voided" : false,
+    "dose" : 2.0,
+    "units" : "tab(s)",
+    "frequency" : "1/day x 7 days/week",
+    "prn" : false,
+    "complex" : false,
+    "quantity" : null,
+    "drug" : {
+      "uuid" : "3cfcf118-931c-46f7-8ff6-7b876f0d4202",
+      "display" : "Triomune-30",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/drug/3cfcf118-931c-46f7-8ff6-7b876f0d4202"
+      } ]
+    },
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/order/e3d621f0-a4d5-47d1-a4e1-5ace3f66d43a"
+    }, {
+      "rel" : "full",
+      "uri" : "http://localhost/ws/rest/v1/order/e3d621f0-a4d5-47d1-a4e1-5ace3f66d43a?v=full"
+    } ],
+    "type" : "drugorder",
+    "resourceVersion" : "1.8"
+  }, {
+    "uuid" : "047b7424-6f33-4357-823c-420f316bb039",
+    "display" : "Aspirin: 325.0 mg",
+    "orderType" : {
+      "uuid" : "f149b5e1-4314-4d0d-a95f-1c4f8031161d",
+      "display" : "Lab test",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/ordertype/f149b5e1-4314-4d0d-a95f-1c4f8031161d"
+      } ]
+    },
+    "patient" : {
+      "uuid" : "da7f524f-27ce-4bb2-86d6-6d1d05312bd5",
+      "display" : "101-6 - Mr. Horatio Test Hornblower Esq.",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/patient/da7f524f-27ce-4bb2-86d6-6d1d05312bd5"
+      } ]
+    },
+    "concept" : {
+      "uuid" : "15f83cd6-64e9-4e06-a5f9-364d3b14a43d",
+      "display" : "ASPIRIN",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/concept/15f83cd6-64e9-4e06-a5f9-364d3b14a43d"
+      } ]
+    },
+    "instructions" : "10x daily",
+    "startDate" : "2007-12-03T00:00:00.000+0100",
+    "autoExpireDate" : null,
+    "encounter" : null,
+    "orderer" : {
+      "uuid" : "1010d442-e134-11de-babe-001e378eb67e",
+      "display" : "admin",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/user/1010d442-e134-11de-babe-001e378eb67e"
+      } ]
+    },
+    "accessionNumber" : null,
+    "discontinuedBy" : {
+      "uuid" : "1010d442-e134-11de-babe-001e378eb67e",
+      "display" : "admin",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/user/1010d442-e134-11de-babe-001e378eb67e"
+      } ]
+    },
+    "discontinuedDate" : "2007-12-25T00:00:00.000+0100",
+    "discontinuedReason" : null,
+    "discontinuedReasonNonCoded" : null,
+    "voided" : false,
+    "dose" : 325.0,
+    "units" : "mg",
+    "frequency" : "1/day x 7 days/week",
+    "prn" : false,
+    "complex" : false,
+    "quantity" : null,
+    "drug" : {
+      "uuid" : "05ec820a-d297-44e3-be6e-698531d9dd3f",
+      "display" : "Aspirin",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/drug/05ec820a-d297-44e3-be6e-698531d9dd3f"
+      } ]
+    },
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/order/047b7424-6f33-4357-823c-420f316bb039"
+    }, {
+      "rel" : "full",
+      "uri" : "http://localhost/ws/rest/v1/order/047b7424-6f33-4357-823c-420f316bb039?v=full"
+    } ],
+    "type" : "drugorder",
+    "resourceVersion" : "1.8"
+  }, {
+    "uuid" : "0c96f25c-4949-4f72-9931-d808fbc226db",
+    "display" : "Aspirin: 325.0 mg",
+    "orderType" : {
+      "uuid" : "f149b5e1-4314-4d0d-a95f-1c4f8031161d",
+      "display" : "Lab test",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/ordertype/f149b5e1-4314-4d0d-a95f-1c4f8031161d"
+      } ]
+    },
+    "patient" : {
+      "uuid" : "da7f524f-27ce-4bb2-86d6-6d1d05312bd5",
+      "display" : "101-6 - Mr. Horatio Test Hornblower Esq.",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/patient/da7f524f-27ce-4bb2-86d6-6d1d05312bd5"
+      } ]
+    },
+    "concept" : {
+      "uuid" : "15f83cd6-64e9-4e06-a5f9-364d3b14a43d",
+      "display" : "ASPIRIN",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/concept/15f83cd6-64e9-4e06-a5f9-364d3b14a43d"
+      } ]
+    },
+    "instructions" : "1x minutely",
+    "startDate" : "2008-08-19T00:00:00.000+0200",
+    "autoExpireDate" : null,
+    "encounter" : null,
+    "orderer" : {
+      "uuid" : "1010d442-e134-11de-babe-001e378eb67e",
+      "display" : "admin",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/user/1010d442-e134-11de-babe-001e378eb67e"
+      } ]
+    },
+    "accessionNumber" : null,
+    "discontinuedBy" : null,
+    "discontinuedDate" : null,
+    "discontinuedReason" : null,
+    "discontinuedReasonNonCoded" : null,
+    "voided" : false,
+    "dose" : 325.0,
+    "units" : "mg",
+    "frequency" : "1/day x 7 days/week",
+    "prn" : false,
+    "complex" : false,
+    "quantity" : null,
+    "drug" : {
+      "uuid" : "05ec820a-d297-44e3-be6e-698531d9dd3f",
+      "display" : "Aspirin",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/drug/05ec820a-d297-44e3-be6e-698531d9dd3f"
+      } ]
+    },
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/order/0c96f25c-4949-4f72-9931-d808fbc226db"
+    }, {
+      "rel" : "full",
+      "uri" : "http://localhost/ws/rest/v1/order/0c96f25c-4949-4f72-9931-d808fbc226db?v=full"
+    } ],
+    "type" : "drugorder",
+    "resourceVersion" : "1.8"
+  }, {
+    "uuid" : "ff97d3a0-8dbf-11e1-bc86-da3a922f3783",
+    "display" : "CD4 COUNT",
+    "orderType" : {
+      "uuid" : "84ce45a8-5e7c-48f7-a581-ca1d17d63a62",
+      "display" : "Drug order",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/ordertype/84ce45a8-5e7c-48f7-a581-ca1d17d63a62"
+      } ]
+    },
+    "patient" : {
+      "uuid" : "5946f880-b197-400b-9caa-a3c661d23041",
+      "display" : "6TS-4 - Collet Test Chebaskwony",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/patient/5946f880-b197-400b-9caa-a3c661d23041"
+      } ]
+    },
+    "concept" : {
+      "uuid" : "a09ab2c5-878e-4905-b25d-5784167d0216",
+      "display" : "CD4 COUNT",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/concept/a09ab2c5-878e-4905-b25d-5784167d0216"
+      } ]
+    },
+    "instructions" : "Do a CD4 Test",
+    "startDate" : "2008-08-08T00:00:00.000+0200",
+    "autoExpireDate" : "2008-09-08T00:00:00.000+0200",
+    "encounter" : null,
+    "orderer" : {
+      "uuid" : "1010d442-e134-11de-babe-001e378eb67e",
+      "display" : "admin",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/user/1010d442-e134-11de-babe-001e378eb67e"
+      } ]
+    },
+    "accessionNumber" : null,
+    "discontinuedBy" : null,
+    "discontinuedDate" : null,
+    "discontinuedReason" : null,
+    "discontinuedReasonNonCoded" : null,
+    "voided" : false,
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/order/ff97d3a0-8dbf-11e1-bc86-da3a922f3783"
+    }, {
+      "rel" : "full",
+      "uri" : "http://localhost/ws/rest/v1/order/ff97d3a0-8dbf-11e1-bc86-da3a922f3783?v=full"
+    } ],
+    "type" : "order",
+    "resourceVersion" : "1.8"
+  } ]
+}
+all orders for patient: {
+  "results" : [ {
+    "uuid" : "921de0a3-05c4-444a-be03-e01b4c4b9142",
+    "display" : "Aspirin: 325.0 mg",
+    "orderType" : {
+      "uuid" : "f149b5e1-4314-4d0d-a95f-1c4f8031161d",
+      "display" : "Lab test",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/ordertype/f149b5e1-4314-4d0d-a95f-1c4f8031161d"
+      } ]
+    },
+    "patient" : {
+      "uuid" : "5946f880-b197-400b-9caa-a3c661d23041",
+      "display" : "6TS-4 - Collet Test Chebaskwony",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/patient/5946f880-b197-400b-9caa-a3c661d23041"
+      } ]
+    },
+    "concept" : {
+      "uuid" : "15f83cd6-64e9-4e06-a5f9-364d3b14a43d",
+      "display" : "ASPIRIN",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/concept/15f83cd6-64e9-4e06-a5f9-364d3b14a43d"
+      } ]
+    },
+    "instructions" : "2x daily",
+    "startDate" : "2008-08-08T00:00:00.000+0200",
+    "autoExpireDate" : null,
+    "encounter" : null,
+    "orderer" : {
+      "uuid" : "1010d442-e134-11de-babe-001e378eb67e",
+      "display" : "admin",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/user/1010d442-e134-11de-babe-001e378eb67e"
+      } ]
+    },
+    "accessionNumber" : null,
+    "discontinuedBy" : {
+      "uuid" : "1010d442-e134-11de-babe-001e378eb67e",
+      "display" : "admin",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/user/1010d442-e134-11de-babe-001e378eb67e"
+      } ]
+    },
+    "discontinuedDate" : "2008-08-15T00:00:00.000+0200",
+    "discontinuedReason" : null,
+    "discontinuedReasonNonCoded" : null,
+    "voided" : false,
+    "dose" : 325.0,
+    "units" : "mg",
+    "frequency" : "1/day x 7 days/week",
+    "prn" : false,
+    "complex" : false,
+    "quantity" : null,
+    "drug" : {
+      "uuid" : "05ec820a-d297-44e3-be6e-698531d9dd3f",
+      "display" : "Aspirin",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/drug/05ec820a-d297-44e3-be6e-698531d9dd3f"
+      } ]
+    },
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/order/921de0a3-05c4-444a-be03-e01b4c4b9142"
+    }, {
+      "rel" : "full",
+      "uri" : "http://localhost/ws/rest/v1/order/921de0a3-05c4-444a-be03-e01b4c4b9142?v=full"
+    } ],
+    "type" : "drugorder",
+    "resourceVersion" : "1.8"
+  }, {
+    "uuid" : "ff97d3a0-8dbf-11e1-bc86-da3a922f3783",
+    "display" : "CD4 COUNT",
+    "orderType" : {
+      "uuid" : "84ce45a8-5e7c-48f7-a581-ca1d17d63a62",
+      "display" : "Drug order",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/ordertype/84ce45a8-5e7c-48f7-a581-ca1d17d63a62"
+      } ]
+    },
+    "patient" : {
+      "uuid" : "5946f880-b197-400b-9caa-a3c661d23041",
+      "display" : "6TS-4 - Collet Test Chebaskwony",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/patient/5946f880-b197-400b-9caa-a3c661d23041"
+      } ]
+    },
+    "concept" : {
+      "uuid" : "a09ab2c5-878e-4905-b25d-5784167d0216",
+      "display" : "CD4 COUNT",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/concept/a09ab2c5-878e-4905-b25d-5784167d0216"
+      } ]
+    },
+    "instructions" : "Do a CD4 Test",
+    "startDate" : "2008-08-08T00:00:00.000+0200",
+    "autoExpireDate" : "2008-09-08T00:00:00.000+0200",
+    "encounter" : null,
+    "orderer" : {
+      "uuid" : "1010d442-e134-11de-babe-001e378eb67e",
+      "display" : "admin",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/user/1010d442-e134-11de-babe-001e378eb67e"
+      } ]
+    },
+    "accessionNumber" : null,
+    "discontinuedBy" : null,
+    "discontinuedDate" : null,
+    "discontinuedReason" : null,
+    "discontinuedReasonNonCoded" : null,
+    "voided" : false,
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/order/ff97d3a0-8dbf-11e1-bc86-da3a922f3783"
+    }, {
+      "rel" : "full",
+      "uri" : "http://localhost/ws/rest/v1/order/ff97d3a0-8dbf-11e1-bc86-da3a922f3783?v=full"
+    } ],
+    "type" : "order",
+    "resourceVersion" : "1.8"
+  } ]
+}
+Updated subclass: {
+  "uuid" : "921de0a3-05c4-444a-be03-e01b4c4b9142",
+  "display" : "Aspirin: 500.0 mg",
+  "orderType" : {
+    "uuid" : "f149b5e1-4314-4d0d-a95f-1c4f8031161d",
+    "display" : "Lab test",
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/ordertype/f149b5e1-4314-4d0d-a95f-1c4f8031161d"
+    } ]
+  },
+  "patient" : {
+    "uuid" : "5946f880-b197-400b-9caa-a3c661d23041",
+    "display" : "6TS-4 - Collet Test Chebaskwony",
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/patient/5946f880-b197-400b-9caa-a3c661d23041"
+    } ]
+  },
+  "concept" : {
+    "uuid" : "15f83cd6-64e9-4e06-a5f9-364d3b14a43d",
+    "display" : "ASPIRIN",
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/concept/15f83cd6-64e9-4e06-a5f9-364d3b14a43d"
+    } ]
+  },
+  "instructions" : "2x daily",
+  "startDate" : "2008-08-08T00:00:00.000+0200",
+  "autoExpireDate" : null,
+  "encounter" : null,
+  "orderer" : {
+    "uuid" : "1010d442-e134-11de-babe-001e378eb67e",
+    "display" : "admin",
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/user/1010d442-e134-11de-babe-001e378eb67e"
+    } ]
+  },
+  "accessionNumber" : null,
+  "discontinuedBy" : {
+    "uuid" : "1010d442-e134-11de-babe-001e378eb67e",
+    "display" : "admin",
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/user/1010d442-e134-11de-babe-001e378eb67e"
+    } ]
+  },
+  "discontinuedDate" : "2008-08-15T00:00:00.000+0200",
+  "discontinuedReason" : null,
+  "discontinuedReasonNonCoded" : null,
+  "voided" : false,
+  "dose" : 500.0,
+  "units" : "mg",
+  "frequency" : "1/day x 7 days/week",
+  "prn" : false,
+  "complex" : false,
+  "quantity" : null,
+  "drug" : {
+    "uuid" : "05ec820a-d297-44e3-be6e-698531d9dd3f",
+    "display" : "Aspirin",
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/drug/05ec820a-d297-44e3-be6e-698531d9dd3f"
+    } ]
+  },
+  "links" : [ {
+    "rel" : "self",
+    "uri" : "http://localhost/ws/rest/v1/order/921de0a3-05c4-444a-be03-e01b4c4b9142"
+  }, {
+    "rel" : "full",
+    "uri" : "http://localhost/ws/rest/v1/order/921de0a3-05c4-444a-be03-e01b4c4b9142?v=full"
+  } ],
+  "type" : "drugorder",
+  "resourceVersion" : "1.8"
+}
+Updated subclass: {
+  "uuid" : "ff97d3a0-8dbf-11e1-bc86-da3a922f3783",
+  "display" : "CD4 COUNT",
+  "orderType" : {
+    "uuid" : "84ce45a8-5e7c-48f7-a581-ca1d17d63a62",
+    "display" : "Drug order",
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/ordertype/84ce45a8-5e7c-48f7-a581-ca1d17d63a62"
+    } ]
+  },
+  "patient" : {
+    "uuid" : "5946f880-b197-400b-9caa-a3c661d23041",
+    "display" : "6TS-4 - Collet Test Chebaskwony",
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/patient/5946f880-b197-400b-9caa-a3c661d23041"
+    } ]
+  },
+  "concept" : {
+    "uuid" : "a09ab2c5-878e-4905-b25d-5784167d0216",
+    "display" : "CD4 COUNT",
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/concept/a09ab2c5-878e-4905-b25d-5784167d0216"
+    } ]
+  },
+  "instructions" : "Do a CD4 Test STAT!",
+  "startDate" : "2008-08-08T00:00:00.000+0200",
+  "autoExpireDate" : "2008-09-08T00:00:00.000+0200",
+  "encounter" : null,
+  "orderer" : {
+    "uuid" : "1010d442-e134-11de-babe-001e378eb67e",
+    "display" : "admin",
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/user/1010d442-e134-11de-babe-001e378eb67e"
+    } ]
+  },
+  "accessionNumber" : null,
+  "discontinuedBy" : null,
+  "discontinuedDate" : null,
+  "discontinuedReason" : null,
+  "discontinuedReasonNonCoded" : null,
+  "voided" : false,
+  "links" : [ {
+    "rel" : "self",
+    "uri" : "http://localhost/ws/rest/v1/order/ff97d3a0-8dbf-11e1-bc86-da3a922f3783"
+  }, {
+    "rel" : "full",
+    "uri" : "http://localhost/ws/rest/v1/order/ff97d3a0-8dbf-11e1-bc86-da3a922f3783?v=full"
+  } ],
+  "type" : "order",
+  "resourceVersion" : "1.8"
+}
+Retrieved subclass: {
+  "uuid" : "921de0a3-05c4-444a-be03-e01b4c4b9142",
+  "display" : "Aspirin: 325.0 mg",
+  "orderType" : {
+    "uuid" : "f149b5e1-4314-4d0d-a95f-1c4f8031161d",
+    "display" : "Lab test",
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/ordertype/f149b5e1-4314-4d0d-a95f-1c4f8031161d"
+    } ]
+  },
+  "patient" : {
+    "uuid" : "5946f880-b197-400b-9caa-a3c661d23041",
+    "display" : "6TS-4 - Collet Test Chebaskwony",
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/patient/5946f880-b197-400b-9caa-a3c661d23041"
+    } ]
+  },
+  "concept" : {
+    "uuid" : "15f83cd6-64e9-4e06-a5f9-364d3b14a43d",
+    "display" : "ASPIRIN",
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/concept/15f83cd6-64e9-4e06-a5f9-364d3b14a43d"
+    } ]
+  },
+  "instructions" : "2x daily",
+  "startDate" : "2008-08-08T00:00:00.000+0200",
+  "autoExpireDate" : null,
+  "encounter" : null,
+  "orderer" : {
+    "uuid" : "1010d442-e134-11de-babe-001e378eb67e",
+    "display" : "admin",
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/user/1010d442-e134-11de-babe-001e378eb67e"
+    } ]
+  },
+  "accessionNumber" : null,
+  "discontinuedBy" : {
+    "uuid" : "1010d442-e134-11de-babe-001e378eb67e",
+    "display" : "admin",
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/user/1010d442-e134-11de-babe-001e378eb67e"
+    } ]
+  },
+  "discontinuedDate" : "2008-08-15T00:00:00.000+0200",
+  "discontinuedReason" : null,
+  "discontinuedReasonNonCoded" : null,
+  "voided" : false,
+  "dose" : 325.0,
+  "units" : "mg",
+  "frequency" : "1/day x 7 days/week",
+  "prn" : false,
+  "complex" : false,
+  "quantity" : null,
+  "drug" : {
+    "uuid" : "05ec820a-d297-44e3-be6e-698531d9dd3f",
+    "display" : "Aspirin",
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/drug/05ec820a-d297-44e3-be6e-698531d9dd3f"
+    } ]
+  },
+  "links" : [ {
+    "rel" : "self",
+    "uri" : "http://localhost/ws/rest/v1/order/921de0a3-05c4-444a-be03-e01b4c4b9142"
+  }, {
+    "rel" : "full",
+    "uri" : "http://localhost/ws/rest/v1/order/921de0a3-05c4-444a-be03-e01b4c4b9142?v=full"
+  } ],
+  "type" : "drugorder",
+  "resourceVersion" : "1.8"
+}
+Created subclass: {
+  "uuid" : "72233c01-8c8c-48cc-b44b-43532046bc5d",
+  "display" : "Aspirin: 100.0 mg",
+  "orderType" : {
+    "uuid" : "f149b5e1-4314-4d0d-a95f-1c4f8031161d",
+    "display" : "Lab test",
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/ordertype/f149b5e1-4314-4d0d-a95f-1c4f8031161d"
+    } ]
+  },
+  "patient" : {
+    "uuid" : "5946f880-b197-400b-9caa-a3c661d23041",
+    "display" : "6TS-4 - Collet Test Chebaskwony",
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/patient/5946f880-b197-400b-9caa-a3c661d23041"
+    } ]
+  },
+  "concept" : {
+    "uuid" : "15f83cd6-64e9-4e06-a5f9-364d3b14a43d",
+    "display" : "ASPIRIN",
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/concept/15f83cd6-64e9-4e06-a5f9-364d3b14a43d"
+    } ]
+  },
+  "instructions" : null,
+  "startDate" : "2011-02-03T00:00:00.000+0100",
+  "autoExpireDate" : null,
+  "encounter" : null,
+  "orderer" : null,
+  "accessionNumber" : null,
+  "discontinuedBy" : null,
+  "discontinuedDate" : null,
+  "discontinuedReason" : null,
+  "discontinuedReasonNonCoded" : null,
+  "voided" : false,
+  "dose" : 100.0,
+  "units" : "mg",
+  "frequency" : null,
+  "prn" : true,
+  "complex" : false,
+  "quantity" : null,
+  "drug" : {
+    "uuid" : "05ec820a-d297-44e3-be6e-698531d9dd3f",
+    "display" : "Aspirin",
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/drug/05ec820a-d297-44e3-be6e-698531d9dd3f"
+    } ]
+  },
+  "links" : [ {
+    "rel" : "self",
+    "uri" : "http://localhost/ws/rest/v1/order/72233c01-8c8c-48cc-b44b-43532046bc5d"
+  }, {
+    "rel" : "full",
+    "uri" : "http://localhost/ws/rest/v1/order/72233c01-8c8c-48cc-b44b-43532046bc5d?v=full"
+  } ],
+  "type" : "drugorder",
+  "resourceVersion" : "1.8"
+}
+drug orders for patient: {
+  "results" : [ {
+    "uuid" : "921de0a3-05c4-444a-be03-e01b4c4b9142",
+    "display" : "Aspirin: 325.0 mg",
+    "orderType" : {
+      "uuid" : "f149b5e1-4314-4d0d-a95f-1c4f8031161d",
+      "display" : "Lab test",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/ordertype/f149b5e1-4314-4d0d-a95f-1c4f8031161d"
+      } ]
+    },
+    "patient" : {
+      "uuid" : "5946f880-b197-400b-9caa-a3c661d23041",
+      "display" : "6TS-4 - Collet Test Chebaskwony",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/patient/5946f880-b197-400b-9caa-a3c661d23041"
+      } ]
+    },
+    "concept" : {
+      "uuid" : "15f83cd6-64e9-4e06-a5f9-364d3b14a43d",
+      "display" : "ASPIRIN",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/concept/15f83cd6-64e9-4e06-a5f9-364d3b14a43d"
+      } ]
+    },
+    "instructions" : "2x daily",
+    "startDate" : "2008-08-08T00:00:00.000+0200",
+    "autoExpireDate" : null,
+    "encounter" : null,
+    "orderer" : {
+      "uuid" : "1010d442-e134-11de-babe-001e378eb67e",
+      "display" : "admin",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/user/1010d442-e134-11de-babe-001e378eb67e"
+      } ]
+    },
+    "accessionNumber" : null,
+    "discontinuedBy" : {
+      "uuid" : "1010d442-e134-11de-babe-001e378eb67e",
+      "display" : "admin",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/user/1010d442-e134-11de-babe-001e378eb67e"
+      } ]
+    },
+    "discontinuedDate" : "2008-08-15T00:00:00.000+0200",
+    "discontinuedReason" : null,
+    "discontinuedReasonNonCoded" : null,
+    "voided" : false,
+    "dose" : 325.0,
+    "units" : "mg",
+    "frequency" : "1/day x 7 days/week",
+    "prn" : false,
+    "complex" : false,
+    "quantity" : null,
+    "drug" : {
+      "uuid" : "05ec820a-d297-44e3-be6e-698531d9dd3f",
+      "display" : "Aspirin",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/drug/05ec820a-d297-44e3-be6e-698531d9dd3f"
+      } ]
+    },
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/order/921de0a3-05c4-444a-be03-e01b4c4b9142"
+    }, {
+      "rel" : "full",
+      "uri" : "http://localhost/ws/rest/v1/order/921de0a3-05c4-444a-be03-e01b4c4b9142?v=full"
+    } ],
+    "type" : "drugorder",
+    "resourceVersion" : "1.8"
+  } ]
+}
+Get all of subclass: {
+  "results" : [ {
+    "uuid" : "921de0a3-05c4-444a-be03-e01b4c4b9142",
+    "display" : "Aspirin: 325.0 mg",
+    "orderType" : {
+      "uuid" : "f149b5e1-4314-4d0d-a95f-1c4f8031161d",
+      "display" : "Lab test",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/ordertype/f149b5e1-4314-4d0d-a95f-1c4f8031161d"
+      } ]
+    },
+    "patient" : {
+      "uuid" : "5946f880-b197-400b-9caa-a3c661d23041",
+      "display" : "6TS-4 - Collet Test Chebaskwony",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/patient/5946f880-b197-400b-9caa-a3c661d23041"
+      } ]
+    },
+    "concept" : {
+      "uuid" : "15f83cd6-64e9-4e06-a5f9-364d3b14a43d",
+      "display" : "ASPIRIN",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/concept/15f83cd6-64e9-4e06-a5f9-364d3b14a43d"
+      } ]
+    },
+    "instructions" : "2x daily",
+    "startDate" : "2008-08-08T00:00:00.000+0200",
+    "autoExpireDate" : null,
+    "encounter" : null,
+    "orderer" : {
+      "uuid" : "1010d442-e134-11de-babe-001e378eb67e",
+      "display" : "admin",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/user/1010d442-e134-11de-babe-001e378eb67e"
+      } ]
+    },
+    "accessionNumber" : null,
+    "discontinuedBy" : {
+      "uuid" : "1010d442-e134-11de-babe-001e378eb67e",
+      "display" : "admin",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/user/1010d442-e134-11de-babe-001e378eb67e"
+      } ]
+    },
+    "discontinuedDate" : "2008-08-15T00:00:00.000+0200",
+    "discontinuedReason" : null,
+    "discontinuedReasonNonCoded" : null,
+    "voided" : false,
+    "dose" : 325.0,
+    "units" : "mg",
+    "frequency" : "1/day x 7 days/week",
+    "prn" : false,
+    "complex" : false,
+    "quantity" : null,
+    "drug" : {
+      "uuid" : "05ec820a-d297-44e3-be6e-698531d9dd3f",
+      "display" : "Aspirin",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/drug/05ec820a-d297-44e3-be6e-698531d9dd3f"
+      } ]
+    },
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/order/921de0a3-05c4-444a-be03-e01b4c4b9142"
+    }, {
+      "rel" : "full",
+      "uri" : "http://localhost/ws/rest/v1/order/921de0a3-05c4-444a-be03-e01b4c4b9142?v=full"
+    } ],
+    "type" : "drugorder",
+    "resourceVersion" : "1.8"
+  }, {
+    "uuid" : "dfca4077-493c-496b-8312-856ee5d1cc26",
+    "display" : "Triomune-30: 1.0 tab(s)",
+    "orderType" : {
+      "uuid" : "f149b5e1-4314-4d0d-a95f-1c4f8031161d",
+      "display" : "Lab test",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/ordertype/f149b5e1-4314-4d0d-a95f-1c4f8031161d"
+      } ]
+    },
+    "patient" : {
+      "uuid" : "da7f524f-27ce-4bb2-86d6-6d1d05312bd5",
+      "display" : "101-6 - Mr. Horatio Test Hornblower Esq.",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/patient/da7f524f-27ce-4bb2-86d6-6d1d05312bd5"
+      } ]
+    },
+    "concept" : {
+      "uuid" : "d144d24f-6913-4b63-9660-a9108c2bebef",
+      "display" : "STAVUDINE LAMIVUDINE AND NEVIRAPINE",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/concept/d144d24f-6913-4b63-9660-a9108c2bebef"
+      } ]
+    },
+    "instructions" : "3x daily",
+    "startDate" : "2008-08-01T00:00:00.000+0200",
+    "autoExpireDate" : null,
+    "encounter" : null,
+    "orderer" : {
+      "uuid" : "1010d442-e134-11de-babe-001e378eb67e",
+      "display" : "admin",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/user/1010d442-e134-11de-babe-001e378eb67e"
+      } ]
+    },
+    "accessionNumber" : null,
+    "discontinuedBy" : {
+      "uuid" : "1010d442-e134-11de-babe-001e378eb67e",
+      "display" : "admin",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/user/1010d442-e134-11de-babe-001e378eb67e"
+      } ]
+    },
+    "discontinuedDate" : "2008-08-08T00:00:00.000+0200",
+    "discontinuedReason" : null,
+    "discontinuedReasonNonCoded" : null,
+    "voided" : false,
+    "dose" : 1.0,
+    "units" : "tab(s)",
+    "frequency" : "1/day x 7 days/week",
+    "prn" : false,
+    "complex" : false,
+    "quantity" : null,
+    "drug" : {
+      "uuid" : "3cfcf118-931c-46f7-8ff6-7b876f0d4202",
+      "display" : "Triomune-30",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/drug/3cfcf118-931c-46f7-8ff6-7b876f0d4202"
+      } ]
+    },
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/order/dfca4077-493c-496b-8312-856ee5d1cc26"
+    }, {
+      "rel" : "full",
+      "uri" : "http://localhost/ws/rest/v1/order/dfca4077-493c-496b-8312-856ee5d1cc26?v=full"
+    } ],
+    "type" : "drugorder",
+    "resourceVersion" : "1.8"
+  }, {
+    "uuid" : "e3d621f0-a4d5-47d1-a4e1-5ace3f66d43a",
+    "display" : "Triomune-30: 2.0 tab(s)",
+    "orderType" : {
+      "uuid" : "f149b5e1-4314-4d0d-a95f-1c4f8031161d",
+      "display" : "Lab test",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/ordertype/f149b5e1-4314-4d0d-a95f-1c4f8031161d"
+      } ]
+    },
+    "patient" : {
+      "uuid" : "da7f524f-27ce-4bb2-86d6-6d1d05312bd5",
+      "display" : "101-6 - Mr. Horatio Test Hornblower Esq.",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/patient/da7f524f-27ce-4bb2-86d6-6d1d05312bd5"
+      } ]
+    },
+    "concept" : {
+      "uuid" : "d144d24f-6913-4b63-9660-a9108c2bebef",
+      "display" : "STAVUDINE LAMIVUDINE AND NEVIRAPINE",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/concept/d144d24f-6913-4b63-9660-a9108c2bebef"
+      } ]
+    },
+    "instructions" : "1x daily with food",
+    "startDate" : "2008-08-08T00:00:00.000+0200",
+    "autoExpireDate" : null,
+    "encounter" : null,
+    "orderer" : {
+      "uuid" : "1010d442-e134-11de-babe-001e378eb67e",
+      "display" : "admin",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/user/1010d442-e134-11de-babe-001e378eb67e"
+      } ]
+    },
+    "accessionNumber" : null,
+    "discontinuedBy" : null,
+    "discontinuedDate" : null,
+    "discontinuedReason" : null,
+    "discontinuedReasonNonCoded" : null,
+    "voided" : false,
+    "dose" : 2.0,
+    "units" : "tab(s)",
+    "frequency" : "1/day x 7 days/week",
+    "prn" : false,
+    "complex" : false,
+    "quantity" : null,
+    "drug" : {
+      "uuid" : "3cfcf118-931c-46f7-8ff6-7b876f0d4202",
+      "display" : "Triomune-30",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/drug/3cfcf118-931c-46f7-8ff6-7b876f0d4202"
+      } ]
+    },
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/order/e3d621f0-a4d5-47d1-a4e1-5ace3f66d43a"
+    }, {
+      "rel" : "full",
+      "uri" : "http://localhost/ws/rest/v1/order/e3d621f0-a4d5-47d1-a4e1-5ace3f66d43a?v=full"
+    } ],
+    "type" : "drugorder",
+    "resourceVersion" : "1.8"
+  }, {
+    "uuid" : "047b7424-6f33-4357-823c-420f316bb039",
+    "display" : "Aspirin: 325.0 mg",
+    "orderType" : {
+      "uuid" : "f149b5e1-4314-4d0d-a95f-1c4f8031161d",
+      "display" : "Lab test",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/ordertype/f149b5e1-4314-4d0d-a95f-1c4f8031161d"
+      } ]
+    },
+    "patient" : {
+      "uuid" : "da7f524f-27ce-4bb2-86d6-6d1d05312bd5",
+      "display" : "101-6 - Mr. Horatio Test Hornblower Esq.",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/patient/da7f524f-27ce-4bb2-86d6-6d1d05312bd5"
+      } ]
+    },
+    "concept" : {
+      "uuid" : "15f83cd6-64e9-4e06-a5f9-364d3b14a43d",
+      "display" : "ASPIRIN",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/concept/15f83cd6-64e9-4e06-a5f9-364d3b14a43d"
+      } ]
+    },
+    "instructions" : "10x daily",
+    "startDate" : "2007-12-03T00:00:00.000+0100",
+    "autoExpireDate" : null,
+    "encounter" : null,
+    "orderer" : {
+      "uuid" : "1010d442-e134-11de-babe-001e378eb67e",
+      "display" : "admin",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/user/1010d442-e134-11de-babe-001e378eb67e"
+      } ]
+    },
+    "accessionNumber" : null,
+    "discontinuedBy" : {
+      "uuid" : "1010d442-e134-11de-babe-001e378eb67e",
+      "display" : "admin",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/user/1010d442-e134-11de-babe-001e378eb67e"
+      } ]
+    },
+    "discontinuedDate" : "2007-12-25T00:00:00.000+0100",
+    "discontinuedReason" : null,
+    "discontinuedReasonNonCoded" : null,
+    "voided" : false,
+    "dose" : 325.0,
+    "units" : "mg",
+    "frequency" : "1/day x 7 days/week",
+    "prn" : false,
+    "complex" : false,
+    "quantity" : null,
+    "drug" : {
+      "uuid" : "05ec820a-d297-44e3-be6e-698531d9dd3f",
+      "display" : "Aspirin",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/drug/05ec820a-d297-44e3-be6e-698531d9dd3f"
+      } ]
+    },
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/order/047b7424-6f33-4357-823c-420f316bb039"
+    }, {
+      "rel" : "full",
+      "uri" : "http://localhost/ws/rest/v1/order/047b7424-6f33-4357-823c-420f316bb039?v=full"
+    } ],
+    "type" : "drugorder",
+    "resourceVersion" : "1.8"
+  }, {
+    "uuid" : "0c96f25c-4949-4f72-9931-d808fbc226db",
+    "display" : "Aspirin: 325.0 mg",
+    "orderType" : {
+      "uuid" : "f149b5e1-4314-4d0d-a95f-1c4f8031161d",
+      "display" : "Lab test",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/ordertype/f149b5e1-4314-4d0d-a95f-1c4f8031161d"
+      } ]
+    },
+    "patient" : {
+      "uuid" : "da7f524f-27ce-4bb2-86d6-6d1d05312bd5",
+      "display" : "101-6 - Mr. Horatio Test Hornblower Esq.",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/patient/da7f524f-27ce-4bb2-86d6-6d1d05312bd5"
+      } ]
+    },
+    "concept" : {
+      "uuid" : "15f83cd6-64e9-4e06-a5f9-364d3b14a43d",
+      "display" : "ASPIRIN",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/concept/15f83cd6-64e9-4e06-a5f9-364d3b14a43d"
+      } ]
+    },
+    "instructions" : "1x minutely",
+    "startDate" : "2008-08-19T00:00:00.000+0200",
+    "autoExpireDate" : null,
+    "encounter" : null,
+    "orderer" : {
+      "uuid" : "1010d442-e134-11de-babe-001e378eb67e",
+      "display" : "admin",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/user/1010d442-e134-11de-babe-001e378eb67e"
+      } ]
+    },
+    "accessionNumber" : null,
+    "discontinuedBy" : null,
+    "discontinuedDate" : null,
+    "discontinuedReason" : null,
+    "discontinuedReasonNonCoded" : null,
+    "voided" : false,
+    "dose" : 325.0,
+    "units" : "mg",
+    "frequency" : "1/day x 7 days/week",
+    "prn" : false,
+    "complex" : false,
+    "quantity" : null,
+    "drug" : {
+      "uuid" : "05ec820a-d297-44e3-be6e-698531d9dd3f",
+      "display" : "Aspirin",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/drug/05ec820a-d297-44e3-be6e-698531d9dd3f"
+      } ]
+    },
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/order/0c96f25c-4949-4f72-9931-d808fbc226db"
+    }, {
+      "rel" : "full",
+      "uri" : "http://localhost/ws/rest/v1/order/0c96f25c-4949-4f72-9931-d808fbc226db?v=full"
+    } ],
+    "type" : "drugorder",
+    "resourceVersion" : "1.8"
+  } ]
+}
+Created superclass: {
+  "uuid" : "037e7ef5-4e0b-4474-8cc0-2694c2992a17",
+  "display" : "ASPIRIN",
+  "orderType" : {
+    "uuid" : "e23733ab-787e-4096-8ba2-577a902d2c2b",
+    "display" : "Lunch order",
+    "retired" : true,
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/ordertype/e23733ab-787e-4096-8ba2-577a902d2c2b"
+    } ]
+  },
+  "patient" : {
+    "uuid" : "5946f880-b197-400b-9caa-a3c661d23041",
+    "display" : "6TS-4 - Collet Test Chebaskwony",
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/patient/5946f880-b197-400b-9caa-a3c661d23041"
+    } ]
+  },
+  "concept" : {
+    "uuid" : "15f83cd6-64e9-4e06-a5f9-364d3b14a43d",
+    "display" : "ASPIRIN",
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/concept/15f83cd6-64e9-4e06-a5f9-364d3b14a43d"
+    } ]
+  },
+  "instructions" : null,
+  "startDate" : "2011-02-03T00:00:00.000+0100",
+  "autoExpireDate" : null,
+  "encounter" : null,
+  "orderer" : null,
+  "accessionNumber" : null,
+  "discontinuedBy" : null,
+  "discontinuedDate" : null,
+  "discontinuedReason" : null,
+  "discontinuedReasonNonCoded" : null,
+  "voided" : false,
+  "links" : [ {
+    "rel" : "self",
+    "uri" : "http://localhost/ws/rest/v1/order/037e7ef5-4e0b-4474-8cc0-2694c2992a17"
+  }, {
+    "rel" : "full",
+    "uri" : "http://localhost/ws/rest/v1/order/037e7ef5-4e0b-4474-8cc0-2694c2992a17?v=full"
+  } ],
+  "type" : "order",
+  "resourceVersion" : "1.8"
+}
+Retrieved superclass: {
+  "uuid" : "ff97d3a0-8dbf-11e1-bc86-da3a922f3783",
+  "display" : "CD4 COUNT",
+  "orderType" : {
+    "uuid" : "84ce45a8-5e7c-48f7-a581-ca1d17d63a62",
+    "display" : "Drug order",
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/ordertype/84ce45a8-5e7c-48f7-a581-ca1d17d63a62"
+    } ]
+  },
+  "patient" : {
+    "uuid" : "5946f880-b197-400b-9caa-a3c661d23041",
+    "display" : "6TS-4 - Collet Test Chebaskwony",
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/patient/5946f880-b197-400b-9caa-a3c661d23041"
+    } ]
+  },
+  "concept" : {
+    "uuid" : "a09ab2c5-878e-4905-b25d-5784167d0216",
+    "display" : "CD4 COUNT",
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/concept/a09ab2c5-878e-4905-b25d-5784167d0216"
+    } ]
+  },
+  "instructions" : "Do a CD4 Test",
+  "startDate" : "2008-08-08T00:00:00.000+0200",
+  "autoExpireDate" : "2008-09-08T00:00:00.000+0200",
+  "encounter" : null,
+  "orderer" : {
+    "uuid" : "1010d442-e134-11de-babe-001e378eb67e",
+    "display" : "admin",
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/user/1010d442-e134-11de-babe-001e378eb67e"
+    } ]
+  },
+  "accessionNumber" : null,
+  "discontinuedBy" : null,
+  "discontinuedDate" : null,
+  "discontinuedReason" : null,
+  "discontinuedReasonNonCoded" : null,
+  "voided" : false,
+  "links" : [ {
+    "rel" : "self",
+    "uri" : "http://localhost/ws/rest/v1/order/ff97d3a0-8dbf-11e1-bc86-da3a922f3783"
+  }, {
+    "rel" : "full",
+    "uri" : "http://localhost/ws/rest/v1/order/ff97d3a0-8dbf-11e1-bc86-da3a922f3783?v=full"
+  } ],
+  "type" : "order",
+  "resourceVersion" : "1.8"
+}
+[INFO] Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.575 s - in org.openmrs.module.webservices.rest.web.ClassHierarchyResourceTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Errors: 
+[ERROR]   ObsController1_9Test.getObs_shouldCreateAnObsWhenTheQuestionConceptIsSetAsAMapContainingTheUuid:214->RestControllerTestUtils.handle:98 » Conversion
+[INFO] 
+[ERROR] Tests run: 675, Failures: 0, Errors: 1, Skipped: 3
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] Rest Web Services .................................. SUCCESS [  1.165 s]
+[INFO] Rest Web Services Common OMOD ...................... SUCCESS [ 34.926 s]
+[INFO] Rest Web Services 1.8 OMOD ......................... SUCCESS [01:37 min]
+[INFO] Rest Web Services 1.9 OMOD ......................... FAILURE [02:57 min]
+[INFO] Rest Web Services 1.10 OMOD ........................ SKIPPED
+[INFO] Rest Web Services 1.11 OMOD ........................ SKIPPED
+[INFO] Rest Web Services 1.12 OMOD ........................ SKIPPED
+[INFO] Rest Web Services 2.0 OMOD ......................... SKIPPED
+[INFO] Rest Web Services 2.1 OMOD ......................... SKIPPED
+[INFO] Rest Web Services 2.2 OMOD ......................... SKIPPED
+[INFO] Rest Web Services OMOD ............................. SKIPPED
+[INFO] Rest Web Services Integration Tests ................ SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 05:12 min
+[INFO] Finished at: 2018-11-22T10:28:42+01:00
+[INFO] Final Memory: 32M/754M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.22.1:test (default-test) on project webservices.rest-omod-1.9: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/openmrs/openmrs-module-webservices.rest/455565885/omod-1.9/target/surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :webservices.rest-omod-1.9
