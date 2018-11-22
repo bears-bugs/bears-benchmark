@@ -68,20 +68,14 @@
 [INFO] Nothing to compile - all classes are up to date
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.22.1:test (default-test) @ webservices.rest-omod-common ---
-[INFO] Downloading: http://mavenrepo.openmrs.org/nexus/content/repositories/public/org/apache/maven/surefire/surefire-junit4/2.22.1/surefire-junit4-2.22.1.pom
-[INFO] Downloaded: http://mavenrepo.openmrs.org/nexus/content/repositories/public/org/apache/maven/surefire/surefire-junit4/2.22.1/surefire-junit4-2.22.1.pom (4 KB at 2.3 KB/sec)
-[INFO] Downloading: http://mavenrepo.openmrs.org/nexus/content/repositories/public/org/apache/maven/surefire/surefire-providers/2.22.1/surefire-providers-2.22.1.pom
-[INFO] Downloaded: http://mavenrepo.openmrs.org/nexus/content/repositories/public/org/apache/maven/surefire/surefire-providers/2.22.1/surefire-providers-2.22.1.pom (3 KB at 4.8 KB/sec)
-[INFO] Downloading: http://mavenrepo.openmrs.org/nexus/content/repositories/public/org/apache/maven/surefire/surefire-junit4/2.22.1/surefire-junit4-2.22.1.jar
-[INFO] Downloaded: http://mavenrepo.openmrs.org/nexus/content/repositories/public/org/apache/maven/surefire/surefire-junit4/2.22.1/surefire-junit4-2.22.1.jar (83 KB at 141.4 KB/sec)
 [INFO] 
 [INFO] -------------------------------------------------------
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
 [INFO] Running org.openmrs.module.webservices.rest.web.RestUtilComponentTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 16.123 s - in org.openmrs.module.webservices.rest.web.RestUtilComponentTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 15.691 s - in org.openmrs.module.webservices.rest.web.RestUtilComponentTest
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.BaseRestControllerTest
-ERROR - BaseRestController.handleException(115) |2018-11-22 10:23:56,003| ErrorMessage
+ERROR - BaseRestController.handleException(115) |2018-11-22 10:29:49,700| ErrorMessage
 org.openmrs.module.webservices.rest.web.response.GenericRestException: ErrorMessage
 	at org.openmrs.module.webservices.rest.web.v1_0.controller.BaseRestControllerTest.handleException_shouldLog500AndAboveAsErrors(BaseRestControllerTest.java:120)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -117,7 +111,7 @@ org.openmrs.module.webservices.rest.web.response.GenericRestException: ErrorMess
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-ERROR - BaseRestController.handleException(115) |2018-11-22 10:23:57,702| ErrorMessage
+ERROR - BaseRestController.handleException(115) |2018-11-22 10:29:51,230| ErrorMessage
 java.lang.Exception: ErrorMessage
 	at org.openmrs.module.webservices.rest.web.v1_0.controller.BaseRestControllerTest.handleException_shouldLogUnannotatedAsErrors(BaseRestControllerTest.java:109)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -153,27 +147,27 @@ java.lang.Exception: ErrorMessage
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.368 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.BaseRestControllerTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.185 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.BaseRestControllerTest
 [INFO] Running org.openmrs.module.webservices.rest.web.api.RestServiceTest
-[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.974 s - in org.openmrs.module.webservices.rest.web.api.RestServiceTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.625 s - in org.openmrs.module.webservices.rest.web.api.RestServiceTest
 [INFO] Running org.openmrs.module.webservices.rest.web.api.impl.RestServiceImplTest
-[INFO] Tests run: 52, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.816 s - in org.openmrs.module.webservices.rest.web.api.impl.RestServiceImplTest
+[INFO] Tests run: 52, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.69 s - in org.openmrs.module.webservices.rest.web.api.impl.RestServiceImplTest
 [INFO] Running org.openmrs.module.webservices.rest.web.RestUtilTest
-[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 s - in org.openmrs.module.webservices.rest.web.RestUtilTest
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.031 s - in org.openmrs.module.webservices.rest.web.RestUtilTest
 [INFO] Running org.openmrs.module.webservices.rest.web.resource.api.SearchQueryTest
-[INFO] Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 s - in org.openmrs.module.webservices.rest.web.resource.api.SearchQueryTest
+[INFO] Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 s - in org.openmrs.module.webservices.rest.web.resource.api.SearchQueryTest
 [INFO] Running org.openmrs.module.webservices.rest.web.resource.api.SearchConfigTest
-[INFO] Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in org.openmrs.module.webservices.rest.web.resource.api.SearchConfigTest
+[INFO] Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 s - in org.openmrs.module.webservices.rest.web.resource.api.SearchConfigTest
 [INFO] Running org.openmrs.module.webservices.rest.web.resource.impl.NeedsPagingTest
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.518 s - in org.openmrs.module.webservices.rest.web.resource.impl.NeedsPagingTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.535 s - in org.openmrs.module.webservices.rest.web.resource.impl.NeedsPagingTest
 [INFO] Running org.openmrs.module.webservices.rest.web.resource.impl.AlreadyPagedTest
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.769 s - in org.openmrs.module.webservices.rest.web.resource.impl.AlreadyPagedTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.448 s - in org.openmrs.module.webservices.rest.web.resource.impl.AlreadyPagedTest
 [INFO] Running org.openmrs.module.webservices.rest.web.resource.impl.MetadataDelegatingCrudResourceTest
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in org.openmrs.module.webservices.rest.web.resource.impl.MetadataDelegatingCrudResourceTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in org.openmrs.module.webservices.rest.web.resource.impl.MetadataDelegatingCrudResourceTest
 [INFO] Running org.openmrs.module.webservices.rest.web.RequestContextTest
-[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.956 s - in org.openmrs.module.webservices.rest.web.RequestContextTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.742 s - in org.openmrs.module.webservices.rest.web.RequestContextTest
 [INFO] Running org.openmrs.module.webservices.rest.web.ConversionUtilTest
-[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.332 s - in org.openmrs.module.webservices.rest.web.ConversionUtilTest
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.262 s - in org.openmrs.module.webservices.rest.web.ConversionUtilTest
 [INFO] 
 [INFO] Results:
 [INFO] 
@@ -220,12 +214,12 @@ java.lang.Exception: ErrorMessage
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
 [INFO] Running org.openmrs.module.webservices.rest.validation.ValidateUtilTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 15.592 s - in org.openmrs.module.webservices.rest.validation.ValidateUtilTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 16.131 s - in org.openmrs.module.webservices.rest.validation.ValidateUtilTest
 [INFO] Running org.openmrs.module.webservices.rest.web.DelegatingCrudResourceTest
-[WARNING] Tests run: 2, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.38 s - in org.openmrs.module.webservices.rest.web.DelegatingCrudResourceTest
+[WARNING] Tests run: 2, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.375 s - in org.openmrs.module.webservices.rest.web.DelegatingCrudResourceTest
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.ModuleActionController1_8Test
-ERROR - ModuleUtil.getURLStream(590) |2018-11-22 10:24:30,724| Logging an attempt to connect to: https://dl.bintray.com/openmrs/omod/xforms-4.3.11.omod
-[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 19.518 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.ModuleActionController1_8Test
+ERROR - ModuleUtil.getURLStream(590) |2018-11-22 10:30:23,345| Logging an attempt to connect to: https://dl.bintray.com/openmrs/omod/xforms-4.3.11.omod
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.418 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.ModuleActionController1_8Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.CohortMemberController1_8Test
 Cohort member fetched (ref): {
   "results" : [ {
@@ -701,9 +695,9 @@ Cohort member fetched (default): {
   } ],
   "resourceVersion" : "1.8"
 }
-[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.821 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.CohortMemberController1_8Test
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.533 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.CohortMemberController1_8Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.SessionController1_8Test
-[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.272 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.SessionController1_8Test
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.993 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.SessionController1_8Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.ConceptClassController1_8Test
 ConceptClass fetched (default): {
   "uuid" : "ecdee8a7-d741-4fe7-8e01-f79cacbe97bc",
@@ -877,12 +871,12 @@ ConceptClass fetched (default): {
   } ],
   "resourceVersion" : "1.8"
 }
-[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.08 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.ConceptClassController1_8Test
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.875 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.ConceptClassController1_8Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.PersonAttributeTypeController1_8Test
 Old PersonAttributeType Description: : "Group of persons related by common descent or heredity"
 Edited PersonAttributeType Description: : "Updated description"
 Created person attribute type: {
-  "uuid" : "285b8886-a79c-446c-bbac-f19a3967347a",
+  "uuid" : "f36aff91-dbca-46e3-9dee-179d75fca911",
   "display" : "Some attributeType",
   "name" : "Some attributeType",
   "description" : "Attribute Type for test",
@@ -893,10 +887,10 @@ Created person attribute type: {
   "editPrivilege" : null,
   "retired" : false,
   "links" : [ {
-    "uri" : "http://localhost/ws/rest/v1/personattributetype/285b8886-a79c-446c-bbac-f19a3967347a",
+    "uri" : "http://localhost/ws/rest/v1/personattributetype/f36aff91-dbca-46e3-9dee-179d75fca911",
     "rel" : "self"
   }, {
-    "uri" : "http://localhost/ws/rest/v1/personattributetype/285b8886-a79c-446c-bbac-f19a3967347a?v=full",
+    "uri" : "http://localhost/ws/rest/v1/personattributetype/f36aff91-dbca-46e3-9dee-179d75fca911?v=full",
     "rel" : "full"
   } ],
   "resourceVersion" : "1.8"
@@ -1026,37 +1020,37 @@ Person fetched (default): {
   } ],
   "resourceVersion" : "1.8"
 }
-[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.044 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.PersonAttributeTypeController1_8Test
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.684 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.PersonAttributeTypeController1_8Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.TaskActionController1_8Test
-[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.466 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.TaskActionController1_8Test
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.836 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.TaskActionController1_8Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.LocationTagController1_8Test
-[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.695 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.LocationTagController1_8Test
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.533 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.LocationTagController1_8Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.HL7MessageController1_8Test
 Enqued hl7 message: {
-  "uuid" : "834cc6da-44f9-4267-bbf9-62ee13cc7960",
+  "uuid" : "3c7c28e9-cd24-4f50-9a7a-f6fdeb375f65",
   "display" : "REl7wt78q9Pzlqe9ecJB",
   "messageState" : 0,
   "links" : [ {
-    "uri" : "http://localhost/ws/rest/v1/hl7/834cc6da-44f9-4267-bbf9-62ee13cc7960",
+    "uri" : "http://localhost/ws/rest/v1/hl7/3c7c28e9-cd24-4f50-9a7a-f6fdeb375f65",
     "rel" : "self"
   }, {
-    "uri" : "http://localhost/ws/rest/v1/hl7/834cc6da-44f9-4267-bbf9-62ee13cc7960?v=full",
+    "uri" : "http://localhost/ws/rest/v1/hl7/3c7c28e9-cd24-4f50-9a7a-f6fdeb375f65?v=full",
     "rel" : "full"
   } ],
   "resourceVersion" : "1.8"
 }
-WARN - HibernateUserDAO.getUserByUsername(103) |2018-11-22 10:24:56,827| request for username 'REST' not found
-[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.393 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.HL7MessageController1_8Test
+WARN - HibernateUserDAO.getUserByUsername(103) |2018-11-22 10:30:37,182| request for username 'REST' not found
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.039 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.HL7MessageController1_8Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.PrivilegeController1_8Test
-[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.709 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.PrivilegeController1_8Test
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.857 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.PrivilegeController1_8Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.ConceptSourceController1_8Test
-[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.834 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.ConceptSourceController1_8Test
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.702 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.ConceptSourceController1_8Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.ModuleController1_8Test
-[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.717 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.ModuleController1_8Test
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.77 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.ModuleController1_8Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.RoleController1_8Test
-[WARNING] Tests run: 12, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 2.018 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.RoleController1_8Test
+[WARNING] Tests run: 12, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 1.834 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.RoleController1_8Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.FieldTypeController1_8Test
-[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.243 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.FieldTypeController1_8Test
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.929 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.FieldTypeController1_8Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.CohortController1_8Test
 Found 2 cohort(s): [ {
   "uuid" : "05e08b3b-5690-41e1-b651-5391fd946c1a",
@@ -1090,17 +1084,17 @@ Cohort fetched (default): {
   "resourceVersion" : "1.8"
 }
 Created cohort: {
-  "uuid" : "f7ba22f9-4abd-4911-b0cf-e2ce07cdcd91",
+  "uuid" : "1f9ed2af-315c-4949-9494-e7b4882b980d",
   "display" : "New cohort",
   "name" : "New cohort",
   "description" : "New cohort description",
   "voided" : false,
   "memberIds" : [ 2, 6 ],
   "links" : [ {
-    "uri" : "http://localhost/ws/rest/v1/cohort/f7ba22f9-4abd-4911-b0cf-e2ce07cdcd91",
+    "uri" : "http://localhost/ws/rest/v1/cohort/1f9ed2af-315c-4949-9494-e7b4882b980d",
     "rel" : "self"
   }, {
-    "uri" : "http://localhost/ws/rest/v1/cohort/f7ba22f9-4abd-4911-b0cf-e2ce07cdcd91?v=full",
+    "uri" : "http://localhost/ws/rest/v1/cohort/1f9ed2af-315c-4949-9494-e7b4882b980d?v=full",
     "rel" : "full"
   } ],
   "resourceVersion" : "1.8"
@@ -1121,19 +1115,19 @@ Cohort fetched (default): {
   } ],
   "resourceVersion" : "1.8"
 }
-[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.267 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.CohortController1_8Test
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.353 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.CohortController1_8Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.PersonAddressController1_8Test
-[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.345 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.PersonAddressController1_8Test
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.973 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.PersonAddressController1_8Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.PatientIdentifierTypeController1_8Test
-[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.096 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.PatientIdentifierTypeController1_8Test
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.738 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.PatientIdentifierTypeController1_8Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.RelationshipTypeController1_8Test
-[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.31 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.RelationshipTypeController1_8Test
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.346 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.RelationshipTypeController1_8Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.FormController1_8Test
-[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.579 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.FormController1_8Test
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.618 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.FormController1_8Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.ServerLogController1_8Test
-[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.797 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.ServerLogController1_8Test
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.259 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.ServerLogController1_8Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.EncounterTypeController1_8Test
-[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.201 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.EncounterTypeController1_8Test
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.876 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.EncounterTypeController1_8Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.ConceptMapController1_8Test
 Ignored shouldEditConceptMap (run only on OpenMRS 1.8.*)
 Ignored shouldNotDeleteConceptMap (run only on OpenMRS 1.8.*)
@@ -1143,9 +1137,9 @@ Ignored shouldGetAll (run only on OpenMRS 1.8.*)
 Ignored shouldGetRefByUuid (run only on OpenMRS 1.8.*)
 Ignored shouldGetDefaultByUuid (run only on OpenMRS 1.8.*)
 Ignored shouldGetFullByUuid (run only on OpenMRS 1.8.*)
-[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.543 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.ConceptMapController1_8Test
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.403 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.ConceptMapController1_8Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.UserController1_8Test
-WARN - HibernateUserDAO.getUserByUsername(103) |2018-11-22 10:25:21,324| request for username 'james' not found
+WARN - HibernateUserDAO.getUserByUsername(103) |2018-11-22 10:31:03,911| request for username 'james' not found
 Found 1 user(s): {
   "results" : [ {
     "uuid" : "c98a1558-e131-11de-babe-001e378eb67e",
@@ -1191,7 +1185,7 @@ Users fetched: : {
 }
 Total users fetched: : 4
 Created User: {
-  "uuid" : "05b6bfee-de44-4ec5-b4c0-2fca356c06c8",
+  "uuid" : "079ee9b5-65ce-4c5d-b0d1-0b6a46795331",
   "display" : "testuser",
   "username" : "testuser",
   "systemId" : "5-9",
@@ -1211,10 +1205,10 @@ Created User: {
   "roles" : null,
   "retired" : false,
   "links" : [ {
-    "uri" : "http://localhost/ws/rest/v1/user/05b6bfee-de44-4ec5-b4c0-2fca356c06c8",
+    "uri" : "http://localhost/ws/rest/v1/user/079ee9b5-65ce-4c5d-b0d1-0b6a46795331",
     "rel" : "self"
   }, {
-    "uri" : "http://localhost/ws/rest/v1/user/05b6bfee-de44-4ec5-b4c0-2fca356c06c8?v=full",
+    "uri" : "http://localhost/ws/rest/v1/user/079ee9b5-65ce-4c5d-b0d1-0b6a46795331?v=full",
     "rel" : "full"
   } ],
   "resourceVersion" : "1.8"
@@ -1359,7 +1353,7 @@ User retrieved (full): {
   "resourceVersion" : "1.8"
 }
 Created another user with a role this time.: {
-  "uuid" : "8340e2b1-a0fb-4175-beca-2039e28f401d",
+  "uuid" : "1882f82d-6c6d-405b-b6af-895c9fe63873",
   "display" : "testuser",
   "username" : "testuser",
   "systemId" : "5-9",
@@ -1386,10 +1380,10 @@ Created another user with a role this time.: {
   } ],
   "retired" : false,
   "links" : [ {
-    "uri" : "http://localhost/ws/rest/v1/user/8340e2b1-a0fb-4175-beca-2039e28f401d",
+    "uri" : "http://localhost/ws/rest/v1/user/1882f82d-6c6d-405b-b6af-895c9fe63873",
     "rel" : "self"
   }, {
-    "uri" : "http://localhost/ws/rest/v1/user/8340e2b1-a0fb-4175-beca-2039e28f401d?v=full",
+    "uri" : "http://localhost/ws/rest/v1/user/1882f82d-6c6d-405b-b6af-895c9fe63873?v=full",
     "rel" : "full"
   } ],
   "resourceVersion" : "1.8"
@@ -1428,80 +1422,80 @@ User retrieved (default): {
   } ],
   "resourceVersion" : "1.8"
 }
-[INFO] Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.377 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.UserController1_8Test
+[INFO] Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.257 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.UserController1_8Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.ChangePasswordController1_8Test
-ERROR - HibernateUserDAO.changePassword(304) |2018-11-22 10:25:25,738| Passwords don't match
-[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.633 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.ChangePasswordController1_8Test
+ERROR - HibernateUserDAO.changePassword(304) |2018-11-22 10:31:08,772| Passwords don't match
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.23 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.ChangePasswordController1_8Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.TaskDefinitionController1_8Test
-[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.984 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.TaskDefinitionController1_8Test
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.784 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_8.TaskDefinitionController1_8Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.RelationshipTypeResource1_8Test
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.481 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.RelationshipTypeResource1_8Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.896 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.RelationshipTypeResource1_8Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.ServerLogResource1_8Test
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.495 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.ServerLogResource1_8Test
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.498 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.ServerLogResource1_8Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.ProgramResource1_8Test
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.183 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.ProgramResource1_8Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.541 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.ProgramResource1_8Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.FieldAnswerResource1_8Test
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.517 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.FieldAnswerResource1_8Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.395 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.FieldAnswerResource1_8Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.FieldResource1_8Test
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.382 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.FieldResource1_8Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.428 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.FieldResource1_8Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.ConceptClassResource1_8Test
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.393 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.ConceptClassResource1_8Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.553 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.ConceptClassResource1_8Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.PatientIdentifierTypeResource1_8Test
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.434 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.PatientIdentifierTypeResource1_8Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.388 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.PatientIdentifierTypeResource1_8Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.FieldTypeResource1_8Test
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.387 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.FieldTypeResource1_8Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.377 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.FieldTypeResource1_8Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.PersonAttributeTypeResource1_8Test
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.405 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.PersonAttributeTypeResource1_8Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.493 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.PersonAttributeTypeResource1_8Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.HL7SourceResource1_8Test
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.402 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.HL7SourceResource1_8Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.455 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.HL7SourceResource1_8Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.ActiveListTypeResource1_8Test
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.401 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.ActiveListTypeResource1_8Test
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.927 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.ActiveListTypeResource1_8Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.HL7MessageResource1_8Test
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.608 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.HL7MessageResource1_8Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.712 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.HL7MessageResource1_8Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.PersonResource1_8Test
-[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.725 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.PersonResource1_8Test
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.877 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.PersonResource1_8Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.DrugResource1_8Test
-[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.537 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.DrugResource1_8Test
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.76 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.DrugResource1_8Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.EncounterTypeResource1_8Test
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.459 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.EncounterTypeResource1_8Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.492 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.EncounterTypeResource1_8Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.ConceptDatatypeResource1_8Test
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.492 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.ConceptDatatypeResource1_8Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.542 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.ConceptDatatypeResource1_8Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.FormResource1_8Test
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.613 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.FormResource1_8Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.405 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.FormResource1_8Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.PersonAddressResource1_8Test
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.759 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.PersonAddressResource1_8Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.414 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.PersonAddressResource1_8Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.TaskDefinitionResource1_8Test
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.719 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.TaskDefinitionResource1_8Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.374 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.TaskDefinitionResource1_8Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.ProgramWorkflowStateResource1_8Test
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.451 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.ProgramWorkflowStateResource1_8Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.396 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.ProgramWorkflowStateResource1_8Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.CohortResource1_8Test
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.417 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.CohortResource1_8Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.397 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.CohortResource1_8Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.UpdateUserResource1_8Test
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.172 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.UpdateUserResource1_8Test
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.152 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.UpdateUserResource1_8Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.FormFieldResource1_8Test
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.42 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.FormFieldResource1_8Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.408 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.FormFieldResource1_8Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.CohortMemberResource1_8Test
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.414 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.CohortMemberResource1_8Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.629 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.CohortMemberResource1_8Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.ProgramWorkflowResource1_8Test
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.638 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.ProgramWorkflowResource1_8Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.771 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.ProgramWorkflowResource1_8Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.ConceptSourceResource1_8Test
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.389 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.ConceptSourceResource1_8Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.763 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.ConceptSourceResource1_8Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.OrderResource1_8Test
-[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.69 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.OrderResource1_8Test
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.084 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.OrderResource1_8Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.PatientStateResource1_8Test
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.475 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.PatientStateResource1_8Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.772 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.PatientStateResource1_8Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.PersonAttributeResource1_8Test
-[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.556 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.PersonAttributeResource1_8Test
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.763 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.PersonAttributeResource1_8Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.RoleResource1_8Test
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.415 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.RoleResource1_8Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.39 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.RoleResource1_8Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.PersonAttributeTypeResourceWithConcept1_8Test
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.469 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.PersonAttributeTypeResourceWithConcept1_8Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.441 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.PersonAttributeTypeResourceWithConcept1_8Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.SystemInformationResource1_8Test
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.172 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.SystemInformationResource1_8Test
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.141 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.SystemInformationResource1_8Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.ModuleResource1_8Test
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.463 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.ModuleResource1_8Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.38 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.ModuleResource1_8Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.PrivilegeResource1_8Test
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.5 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.PrivilegeResource1_8Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.39 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_8.PrivilegeResource1_8Test
 [INFO] 
 [INFO] Results:
 [INFO] 
@@ -1548,7 +1542,7 @@ ERROR - HibernateUserDAO.changePassword(304) |2018-11-22 10:25:25,738| Passwords
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
 [INFO] Running org.openmrs.module.webservices.rest.validation.ValidateUtilTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 21.071 s - in org.openmrs.module.webservices.rest.validation.ValidateUtilTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 15.796 s - in org.openmrs.module.webservices.rest.validation.ValidateUtilTest
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.LocationAttributeTypeController1_9Test
 Found 1 LocationAttributeType(s): [ {
   "uuid" : "9516cc50-6f9f-11e0-8414-001e378eb67e",
@@ -1558,9 +1552,9 @@ Found 1 LocationAttributeType(s): [ {
     "uri" : "http://localhost/ws/rest/v1/locationattributetype/9516cc50-6f9f-11e0-8414-001e378eb67e"
   } ]
 } ]
-[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.691 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.LocationAttributeTypeController1_9Test
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.67 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.LocationAttributeTypeController1_9Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ConceptSearchController1_9Test
-[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.433 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ConceptSearchController1_9Test
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.924 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ConceptSearchController1_9Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.OrderController1_9Test
 order as ref: {
   "uuid" : "921de0a3-05c4-444a-be03-e01b4c4b9142",
@@ -1647,12 +1641,12 @@ drug order as default: {
   "type" : "drugorder",
   "resourceVersion" : "1.8"
 }
-[INFO] Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.548 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.OrderController1_9Test
+[INFO] Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.817 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.OrderController1_9Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.EncounterController1_9Test
 before = : 5
 after = : 6
 created encounter with obs: {
-  "uuid" : "efa97681-03fe-4950-961d-c6c5e8d8e518",
+  "uuid" : "aa615dfb-e18b-43a0-9467-6596af502835",
   "display" : "Scheduled 15/01/2011",
   "encounterDatetime" : "2011-01-15T00:00:00.000+0100",
   "patient" : {
@@ -1681,57 +1675,57 @@ created encounter with obs: {
     } ]
   },
   "obs" : [ {
-    "uuid" : "ec2601fa-2ad4-45f4-aace-e7b9f6daa24b",
-    "display" : "CIVIL STATUS: MARRIED",
-    "links" : [ {
-      "rel" : "self",
-      "uri" : "http://localhost/ws/rest/v1/obs/ec2601fa-2ad4-45f4-aace-e7b9f6daa24b"
-    } ]
-  }, {
-    "uuid" : "0dbb2767-606f-424b-8227-7d05894a5b61",
-    "display" : "DATE OF FOOD ASSISTANCE: 21 June 2011 00:00:00 CEST",
-    "links" : [ {
-      "rel" : "self",
-      "uri" : "http://localhost/ws/rest/v1/obs/0dbb2767-606f-424b-8227-7d05894a5b61"
-    } ]
-  }, {
-    "uuid" : "8afbdb45-703c-452e-a92e-7a7b691d0759",
-    "display" : "FAVORITE FOOD, NON-CODED: fried chicken",
-    "links" : [ {
-      "rel" : "self",
-      "uri" : "http://localhost/ws/rest/v1/obs/8afbdb45-703c-452e-a92e-7a7b691d0759"
-    } ]
-  }, {
-    "uuid" : "fdb984f4-985b-48bb-adff-ea9ce201df36",
+    "uuid" : "591d2ff8-0230-4c34-baf4-bf7be3401897",
     "display" : "WEIGHT (KG): 70.0",
     "links" : [ {
       "rel" : "self",
-      "uri" : "http://localhost/ws/rest/v1/obs/fdb984f4-985b-48bb-adff-ea9ce201df36"
+      "uri" : "http://localhost/ws/rest/v1/obs/591d2ff8-0230-4c34-baf4-bf7be3401897"
+    } ]
+  }, {
+    "uuid" : "ab8a1391-8034-4874-9cde-a44eda0d45c5",
+    "display" : "DATE OF FOOD ASSISTANCE: 21 June 2011 00:00:00 CEST",
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/obs/ab8a1391-8034-4874-9cde-a44eda0d45c5"
+    } ]
+  }, {
+    "uuid" : "248d148f-cd75-476a-9a8c-9179333e96af",
+    "display" : "FAVORITE FOOD, NON-CODED: fried chicken",
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/obs/248d148f-cd75-476a-9a8c-9179333e96af"
+    } ]
+  }, {
+    "uuid" : "ea55f255-fffd-4376-9840-bbb4d65a6306",
+    "display" : "CIVIL STATUS: MARRIED",
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/obs/ea55f255-fffd-4376-9840-bbb4d65a6306"
     } ]
   } ],
   "orders" : [ ],
   "voided" : false,
   "visit" : null,
   "encounterProviders" : [ {
-    "uuid" : "5406bc5c-65ff-4e33-9df3-5e451bc7e15c",
+    "uuid" : "1e7dc950-c19a-4745-9c27-1f0fe17b9b53",
     "display" : "Super User: Unknown",
     "links" : [ {
       "rel" : "self",
-      "uri" : "http://localhost/ws/rest/v1/encounter/efa97681-03fe-4950-961d-c6c5e8d8e518/encounterprovider/5406bc5c-65ff-4e33-9df3-5e451bc7e15c"
+      "uri" : "http://localhost/ws/rest/v1/encounter/aa615dfb-e18b-43a0-9467-6596af502835/encounterprovider/1e7dc950-c19a-4745-9c27-1f0fe17b9b53"
     } ]
   } ],
   "links" : [ {
     "rel" : "self",
-    "uri" : "http://localhost/ws/rest/v1/encounter/efa97681-03fe-4950-961d-c6c5e8d8e518"
+    "uri" : "http://localhost/ws/rest/v1/encounter/aa615dfb-e18b-43a0-9467-6596af502835"
   }, {
     "rel" : "full",
-    "uri" : "http://localhost/ws/rest/v1/encounter/efa97681-03fe-4950-961d-c6c5e8d8e518?v=full"
+    "uri" : "http://localhost/ws/rest/v1/encounter/aa615dfb-e18b-43a0-9467-6596af502835?v=full"
   } ],
   "resourceVersion" : "1.9"
 }
 
 created encounter with obs and orders: {
-  "uuid" : "a1192150-2f17-4a25-ba26-5cc6f99041f6",
+  "uuid" : "bf3ad519-4eb8-4ee5-b738-67955a067f9e",
   "display" : "Scheduled 15/01/2011",
   "encounterDatetime" : "2011-01-15T00:00:00.000+0100",
   "patient" : {
@@ -1760,67 +1754,67 @@ created encounter with obs and orders: {
     } ]
   },
   "obs" : [ {
-    "uuid" : "a464c9ba-fdf1-4ac2-8fba-b35216705952",
-    "display" : "WEIGHT (KG): 70.0",
-    "links" : [ {
-      "rel" : "self",
-      "uri" : "http://localhost/ws/rest/v1/obs/a464c9ba-fdf1-4ac2-8fba-b35216705952"
-    } ]
-  }, {
-    "uuid" : "8650333f-7d2c-4a21-a931-cfc492f4ed25",
-    "display" : "FAVORITE FOOD, NON-CODED: fried chicken",
-    "links" : [ {
-      "rel" : "self",
-      "uri" : "http://localhost/ws/rest/v1/obs/8650333f-7d2c-4a21-a931-cfc492f4ed25"
-    } ]
-  }, {
-    "uuid" : "5997b2f2-ef9e-4289-bb7b-44f07d472b4e",
+    "uuid" : "f49fff65-7f70-4695-9376-96f93a396281",
     "display" : "DATE OF FOOD ASSISTANCE: 21 June 2011 00:00:00 CEST",
     "links" : [ {
       "rel" : "self",
-      "uri" : "http://localhost/ws/rest/v1/obs/5997b2f2-ef9e-4289-bb7b-44f07d472b4e"
+      "uri" : "http://localhost/ws/rest/v1/obs/f49fff65-7f70-4695-9376-96f93a396281"
     } ]
   }, {
-    "uuid" : "6648f3b3-f82f-4c77-a732-5333e3cd9644",
+    "uuid" : "20eab9ef-1c49-40c2-91c6-6a9c730ee7e1",
+    "display" : "FAVORITE FOOD, NON-CODED: fried chicken",
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/obs/20eab9ef-1c49-40c2-91c6-6a9c730ee7e1"
+    } ]
+  }, {
+    "uuid" : "9a21a9fe-8af1-4d29-ac4a-58d415ce04de",
+    "display" : "WEIGHT (KG): 70.0",
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/obs/9a21a9fe-8af1-4d29-ac4a-58d415ce04de"
+    } ]
+  }, {
+    "uuid" : "c1c78993-80f9-4983-9154-6ddad9ae6127",
     "display" : "CIVIL STATUS: MARRIED",
     "links" : [ {
       "rel" : "self",
-      "uri" : "http://localhost/ws/rest/v1/obs/6648f3b3-f82f-4c77-a732-5333e3cd9644"
+      "uri" : "http://localhost/ws/rest/v1/obs/c1c78993-80f9-4983-9154-6ddad9ae6127"
     } ]
   } ],
   "orders" : [ {
-    "uuid" : "fc3527ec-c948-4eaa-bdfc-930ec7fce0a9",
+    "uuid" : "4868a115-d3a9-454a-8f80-14755698de14",
     "display" : "FOOD ASSISTANCE",
     "links" : [ {
       "rel" : "self",
-      "uri" : "http://localhost/ws/rest/v1/order/fc3527ec-c948-4eaa-bdfc-930ec7fce0a9"
+      "uri" : "http://localhost/ws/rest/v1/order/4868a115-d3a9-454a-8f80-14755698de14"
     } ],
     "type" : "order"
   }, {
-    "uuid" : "524679e5-658a-4d42-83e8-a61ccd96328b",
+    "uuid" : "96dbba52-2578-47e2-a7e2-338d4a9ffe5e",
     "display" : "Triomune-30: 1.0 tablet",
     "links" : [ {
       "rel" : "self",
-      "uri" : "http://localhost/ws/rest/v1/order/524679e5-658a-4d42-83e8-a61ccd96328b"
+      "uri" : "http://localhost/ws/rest/v1/order/96dbba52-2578-47e2-a7e2-338d4a9ffe5e"
     } ],
     "type" : "drugorder"
   } ],
   "voided" : false,
   "visit" : null,
   "encounterProviders" : [ {
-    "uuid" : "e4f96919-6e05-4ea7-970c-decb7da6e48a",
+    "uuid" : "a1a481d2-9bb6-465d-9b3e-0e1c88be316e",
     "display" : "Super User: Unknown",
     "links" : [ {
       "rel" : "self",
-      "uri" : "http://localhost/ws/rest/v1/encounter/a1192150-2f17-4a25-ba26-5cc6f99041f6/encounterprovider/e4f96919-6e05-4ea7-970c-decb7da6e48a"
+      "uri" : "http://localhost/ws/rest/v1/encounter/bf3ad519-4eb8-4ee5-b738-67955a067f9e/encounterprovider/a1a481d2-9bb6-465d-9b3e-0e1c88be316e"
     } ]
   } ],
   "links" : [ {
     "rel" : "self",
-    "uri" : "http://localhost/ws/rest/v1/encounter/a1192150-2f17-4a25-ba26-5cc6f99041f6"
+    "uri" : "http://localhost/ws/rest/v1/encounter/bf3ad519-4eb8-4ee5-b738-67955a067f9e"
   }, {
     "rel" : "full",
-    "uri" : "http://localhost/ws/rest/v1/encounter/a1192150-2f17-4a25-ba26-5cc6f99041f6?v=full"
+    "uri" : "http://localhost/ws/rest/v1/encounter/bf3ad519-4eb8-4ee5-b738-67955a067f9e?v=full"
   } ],
   "resourceVersion" : "1.9"
 }
@@ -2244,7 +2238,7 @@ full: {
   "resourceVersion" : "1.9"
 }
 Created a new encounter with a list of providers with different roles: {
-  "uuid" : "052f6245-2fcf-4cc2-aaf5-a3542fc8ed47",
+  "uuid" : "1d3aa3dd-11ba-4184-9132-1f06a7942efa",
   "display" : "Scheduled 17/06/2015",
   "encounterDatetime" : "2015-06-17T00:00:00.000+0200",
   "patient" : {
@@ -2277,48 +2271,48 @@ Created a new encounter with a list of providers with different roles: {
   "voided" : false,
   "visit" : null,
   "encounterProviders" : [ {
-    "uuid" : "387641e7-5462-49fc-912a-badc64ea97f2",
-    "display" : "Hippocrates of Cos: Medicine Dispenser",
-    "links" : [ {
-      "rel" : "self",
-      "uri" : "http://localhost/ws/rest/v1/encounter/052f6245-2fcf-4cc2-aaf5-a3542fc8ed47/encounterprovider/387641e7-5462-49fc-912a-badc64ea97f2"
-    } ]
-  }, {
-    "uuid" : "9a68fad7-a09a-46ce-a46b-8bc471b27c5a",
+    "uuid" : "35f212b4-5f05-420b-a50b-65af80c537d2",
     "display" : "Hippocrates of Cos: Unknown",
     "links" : [ {
       "rel" : "self",
-      "uri" : "http://localhost/ws/rest/v1/encounter/052f6245-2fcf-4cc2-aaf5-a3542fc8ed47/encounterprovider/9a68fad7-a09a-46ce-a46b-8bc471b27c5a"
+      "uri" : "http://localhost/ws/rest/v1/encounter/1d3aa3dd-11ba-4184-9132-1f06a7942efa/encounterprovider/35f212b4-5f05-420b-a50b-65af80c537d2"
+    } ]
+  }, {
+    "uuid" : "2343f83a-4859-4f5c-b7a5-e5c1803325ea",
+    "display" : "Hippocrates of Cos: Medicine Dispenser",
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/encounter/1d3aa3dd-11ba-4184-9132-1f06a7942efa/encounterprovider/2343f83a-4859-4f5c-b7a5-e5c1803325ea"
     } ]
   } ],
   "links" : [ {
     "rel" : "self",
-    "uri" : "http://localhost/ws/rest/v1/encounter/052f6245-2fcf-4cc2-aaf5-a3542fc8ed47"
+    "uri" : "http://localhost/ws/rest/v1/encounter/1d3aa3dd-11ba-4184-9132-1f06a7942efa"
   }, {
     "rel" : "full",
-    "uri" : "http://localhost/ws/rest/v1/encounter/052f6245-2fcf-4cc2-aaf5-a3542fc8ed47?v=full"
+    "uri" : "http://localhost/ws/rest/v1/encounter/1d3aa3dd-11ba-4184-9132-1f06a7942efa?v=full"
   } ],
   "resourceVersion" : "1.9"
 }
-[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.206 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.EncounterController1_9Test
+[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.07 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.EncounterController1_9Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.PersonController1_9Test
-[INFO] Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.995 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.PersonController1_9Test
+[INFO] Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.589 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.PersonController1_9Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.FormFieldController1_9Test
-[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.264 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.FormFieldController1_9Test
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.898 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.FormFieldController1_9Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.PersonAttributeController1_9Test
-[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.353 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.PersonAttributeController1_9Test
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.302 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.PersonAttributeController1_9Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.GenericPropertyResourceTest
-[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.295 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.GenericPropertyResourceTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.646 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.GenericPropertyResourceTest
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ConceptDatatypeController1_9Test
-[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.951 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ConceptDatatypeController1_9Test
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.928 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ConceptDatatypeController1_9Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ProviderAttributeTypeController1_9Test
-[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.388 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ProviderAttributeTypeController1_9Test
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.841 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ProviderAttributeTypeController1_9Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ConceptReferenceTermController1_9Test
-[INFO] Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.853 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ConceptReferenceTermController1_9Test
+[INFO] Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.25 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ConceptReferenceTermController1_9Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.FormResourceController1_9Test
-[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.836 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.FormResourceController1_9Test
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.676 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.FormResourceController1_9Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ConceptMapTypeController1_9Test
-[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.813 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ConceptMapTypeController1_9Test
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.455 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ConceptMapTypeController1_9Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.AllergyController1_9Test
 Allergy fetched (default): {
   "uuid" : "40fb7f47-e80a-7890-9285-bd798be13c61",
@@ -2478,9 +2472,9 @@ Allergy fetched (default): {
   } ],
   "resourceVersion" : "1.8"
 }
-[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.588 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.AllergyController1_9Test
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.079 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.AllergyController1_9Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.VisitAttributeTypeController1_9Test
-[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.277 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.VisitAttributeTypeController1_9Test
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.228 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.VisitAttributeTypeController1_9Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ConceptController1_8Test
 Concept fetched: {
   "uuid" : "15f83cd6-64e9-4e06-a5f9-364d3b14a43d",
@@ -2798,51 +2792,43 @@ Concept fetched: {
    </links>
    <resourceVersion>1.9</resourceVersion>
 </object>
-[WARNING] Tests run: 42, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 9.792 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ConceptController1_8Test
+[WARNING] Tests run: 42, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 9.221 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ConceptController1_8Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ProgramController1_9Test
-[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.055 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ProgramController1_9Test
+[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.132 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ProgramController1_9Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.VisitAttributeController1_9Test
-[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.061 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.VisitAttributeController1_9Test
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.45 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.VisitAttributeController1_9Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.DrugController1_9Test
-[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.655 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.DrugController1_9Test
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.747 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.DrugController1_9Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.PatientIdentifierController1_9Test
-[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.671 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.PatientIdentifierController1_9Test
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.007 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.PatientIdentifierController1_9Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ConceptDescriptionController1_9Test
-[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.441 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ConceptDescriptionController1_9Test
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.483 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ConceptDescriptionController1_9Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ProviderAttributeController1_9Test
-[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.19 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ProviderAttributeController1_9Test
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.07 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ProviderAttributeController1_9Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ClobDatatypeStorageControllerTest
-[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.447 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ClobDatatypeStorageControllerTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.067 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ClobDatatypeStorageControllerTest
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ConceptNameController1_9Test
-[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.064 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ConceptNameController1_9Test
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.275 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ConceptNameController1_9Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.LocationAttributeController1_9Test
-[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.317 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.LocationAttributeController1_9Test
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.019 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.LocationAttributeController1_9Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.RelationshipController1_9Test
-[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.987 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.RelationshipController1_9Test
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.005 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.RelationshipController1_9Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.PersonNameController1_9Test
-[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.563 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.PersonNameController1_9Test
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.229 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.PersonNameController1_9Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.VisitTypeController1_9Test
-[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.336 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.VisitTypeController1_9Test
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.782 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.VisitTypeController1_9Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.PatientController1_9Test
-[INFO] Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.488 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.PatientController1_9Test
+[INFO] Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.82 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.PatientController1_9Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ObsController1_9Test
-[ERROR] Tests run: 10, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 2.129 s <<< FAILURE! - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ObsController1_9Test
-[ERROR] getObs_shouldCreateAnObsWhenTheQuestionConceptIsSetAsAMapContainingTheUuid(org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ObsController1_9Test)  Time elapsed: 0.459 s  <<< ERROR!
-org.openmrs.module.webservices.rest.web.response.ConversionException: concept on class org.openmrs.Obs
-	at org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ObsController1_9Test.getObs_shouldCreateAnObsWhenTheQuestionConceptIsSetAsAMapContainingTheUuid(ObsController1_9Test.java:214)
-Caused by: java.lang.reflect.InvocationTargetException
-	at org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ObsController1_9Test.getObs_shouldCreateAnObsWhenTheQuestionConceptIsSetAsAMapContainingTheUuid(ObsController1_9Test.java:214)
-Caused by: java.lang.ClassCastException: java.util.LinkedHashMap cannot be cast to java.lang.String
-	at org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ObsController1_9Test.getObs_shouldCreateAnObsWhenTheQuestionConceptIsSetAsAMapContainingTheUuid(ObsController1_9Test.java:214)
-
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.381 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ObsController1_9Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.SystemSettingController1_9Test
-[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.577 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.SystemSettingController1_9Test
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.506 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.SystemSettingController1_9Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.EncounterRoleController1_9Test
-[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.553 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.EncounterRoleController1_9Test
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.097 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.EncounterRoleController1_9Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ConceptReferenceTermMapController1_9Test
-[INFO] Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.813 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ConceptReferenceTermMapController1_9Test
+[INFO] Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.783 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ConceptReferenceTermMapController1_9Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.FieldController1_9Test
-[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.534 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.FieldController1_9Test
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.767 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.FieldController1_9Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ProblemController1_9Test
 Problem fetched (default): {
   "uuid" : "50fb7f47-e80a-7890-9285-bd798be13c61",
@@ -3000,97 +2986,97 @@ Problem fetched (default): {
   } ],
   "resourceVersion" : "1.8"
 }
-[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.797 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ProblemController1_9Test
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.58 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ProblemController1_9Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ConceptController1_9Test
-[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.953 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ConceptController1_9Test
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.996 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ConceptController1_9Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ProgramEnrollmentController1_9Test
-[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.681 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ProgramEnrollmentController1_9Test
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.765 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ProgramEnrollmentController1_9Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.LocationController1_9Test
-[INFO] Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.948 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.LocationController1_9Test
+[INFO] Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.561 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.LocationController1_9Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.VisitController1_9Test
-[INFO] Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.242 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.VisitController1_9Test
+[INFO] Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.933 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.VisitController1_9Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ProviderController1_9Test
-[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.366 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ProviderController1_9Test
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.283 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ProviderController1_9Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ConceptMapController1_9Test
-[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.664 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ConceptMapController1_9Test
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.186 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_9.ConceptMapController1_9Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.search.openmrs1_9.LocationSearchHandlerTest
-[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.905 s - in org.openmrs.module.webservices.rest.web.v1_0.search.openmrs1_9.LocationSearchHandlerTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.834 s - in org.openmrs.module.webservices.rest.web.v1_0.search.openmrs1_9.LocationSearchHandlerTest
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.search.openmrs1_9.EncounterSearchHandler1_9Test
-[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.751 s - in org.openmrs.module.webservices.rest.web.v1_0.search.openmrs1_9.EncounterSearchHandler1_9Test
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.352 s - in org.openmrs.module.webservices.rest.web.v1_0.search.openmrs1_9.EncounterSearchHandler1_9Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.search.openmrs1_9.ConceptSearchHandler1_9Test
-[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.905 s - in org.openmrs.module.webservices.rest.web.v1_0.search.openmrs1_9.ConceptSearchHandler1_9Test
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.774 s - in org.openmrs.module.webservices.rest.web.v1_0.search.openmrs1_9.ConceptSearchHandler1_9Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.EncounterProviderResource1_9Test
-[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.816 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.EncounterProviderResource1_9Test
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.265 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.EncounterProviderResource1_9Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.FormResourceResource1_9Test
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.448 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.FormResourceResource1_9Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.577 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.FormResourceResource1_9Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.ProblemResource1_9Test
-[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.799 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.ProblemResource1_9Test
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.829 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.ProblemResource1_9Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.ConceptReferenceTermResource1_9Test
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.536 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.ConceptReferenceTermResource1_9Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.381 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.ConceptReferenceTermResource1_9Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.ConceptNameResource1_9Test
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.378 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.ConceptNameResource1_9Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.388 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.ConceptNameResource1_9Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.UserResource1_9Test
-[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.049 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.UserResource1_9Test
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.679 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.UserResource1_9Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.CreateUpdatePatientResource1_9Test
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.307 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.CreateUpdatePatientResource1_9Test
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.45 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.CreateUpdatePatientResource1_9Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.SystemSettingResource1_9Test
-[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.914 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.SystemSettingResource1_9Test
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.88 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.SystemSettingResource1_9Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.RelationshipResource1_9Test
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.398 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.RelationshipResource1_9Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.592 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.RelationshipResource1_9Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.VisitAttributeTypeResource1_9Test
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.376 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.VisitAttributeTypeResource1_9Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.546 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.VisitAttributeTypeResource1_9Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.PatientIdentifierResource1_9Test
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.36 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.PatientIdentifierResource1_9Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.673 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.PatientIdentifierResource1_9Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.EncounterResource1_9Test
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.44 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.EncounterResource1_9Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.436 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.EncounterResource1_9Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.ConceptSearchResource1_9Test
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.389 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.ConceptSearchResource1_9Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.382 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.ConceptSearchResource1_9Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.VisitResource1_9Test
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.391 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.VisitResource1_9Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.42 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.VisitResource1_9Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.ObsResource1_9Test
-[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.839 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.ObsResource1_9Test
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.566 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.ObsResource1_9Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.ConceptReferenceTermMapResource1_9Test
 [INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.38 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.ConceptReferenceTermMapResource1_9Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.AllergyResource1_9Test
-[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.534 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.AllergyResource1_9Test
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.549 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.AllergyResource1_9Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.PatientResource1_9Test
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.435 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.PatientResource1_9Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.396 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.PatientResource1_9Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.LocationResource1_9Test
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.427 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.LocationResource1_9Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.429 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.LocationResource1_9Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.EncounterRoleResource1_9Test
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.594 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.EncounterRoleResource1_9Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.386 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.EncounterRoleResource1_9Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.ProviderResource1_9Test
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.456 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.ProviderResource1_9Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.468 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.ProviderResource1_9Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.PersonNameResource1_9Test
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.382 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.PersonNameResource1_9Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.392 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.PersonNameResource1_9Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.VisitAttributeResource1_9Test
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.422 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.VisitAttributeResource1_9Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.59 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.VisitAttributeResource1_9Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.ConceptDescriptionResource1_9Test
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.372 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.ConceptDescriptionResource1_9Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.618 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.ConceptDescriptionResource1_9Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.ProviderAttributeResource1_9Test
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.418 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.ProviderAttributeResource1_9Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.432 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.ProviderAttributeResource1_9Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.ConceptStopwordResource1_9Test
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.372 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.ConceptStopwordResource1_9Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.611 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.ConceptStopwordResource1_9Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.ConceptMapResource1_9Test
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.529 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.ConceptMapResource1_9Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.452 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.ConceptMapResource1_9Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.LocationAttributeResource1_9Test
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.795 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.LocationAttributeResource1_9Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.797 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.LocationAttributeResource1_9Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.ProviderAttributeTypeResource1_9Test
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.531 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.ProviderAttributeTypeResource1_9Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.803 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.ProviderAttributeTypeResource1_9Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.VisitTypeResource1_9Test
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.367 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.VisitTypeResource1_9Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.716 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.VisitTypeResource1_9Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.ConceptMapTypeResource1_9Test
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.374 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.ConceptMapTypeResource1_9Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.439 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.ConceptMapTypeResource1_9Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.LocationAttributeTypeResource1_9Test
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.538 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.LocationAttributeTypeResource1_9Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.42 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.LocationAttributeTypeResource1_9Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.ConceptResource1_9Test
-[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.331 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.ConceptResource1_9Test
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.624 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.ConceptResource1_9Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.CreatePatientIdentifierResource1_9Test
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.319 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.CreatePatientIdentifierResource1_9Test
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.306 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.CreatePatientIdentifierResource1_9Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.FormResource1_9Test
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.418 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.FormResource1_9Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.401 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.FormResource1_9Test
 [INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.ConceptNumericResource1_9Test
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.418 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.ConceptNumericResource1_9Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.395 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9.ConceptNumericResource1_9Test
 [INFO] Running org.openmrs.module.webservices.rest.web.ClassHierarchyResourceTest
 Get all: {
   "results" : [ {
@@ -3850,7 +3836,7 @@ Retrieved subclass: {
   "resourceVersion" : "1.8"
 }
 Created subclass: {
-  "uuid" : "72233c01-8c8c-48cc-b44b-43532046bc5d",
+  "uuid" : "e54b338e-6b31-4909-b7b9-1578fdb3c39f",
   "display" : "Aspirin: 100.0 mg",
   "orderType" : {
     "uuid" : "f149b5e1-4314-4d0d-a95f-1c4f8031161d",
@@ -3903,10 +3889,10 @@ Created subclass: {
   },
   "links" : [ {
     "rel" : "self",
-    "uri" : "http://localhost/ws/rest/v1/order/72233c01-8c8c-48cc-b44b-43532046bc5d"
+    "uri" : "http://localhost/ws/rest/v1/order/e54b338e-6b31-4909-b7b9-1578fdb3c39f"
   }, {
     "rel" : "full",
-    "uri" : "http://localhost/ws/rest/v1/order/72233c01-8c8c-48cc-b44b-43532046bc5d?v=full"
+    "uri" : "http://localhost/ws/rest/v1/order/e54b338e-6b31-4909-b7b9-1578fdb3c39f?v=full"
   } ],
   "type" : "drugorder",
   "resourceVersion" : "1.8"
@@ -4354,7 +4340,7 @@ Get all of subclass: {
   } ]
 }
 Created superclass: {
-  "uuid" : "037e7ef5-4e0b-4474-8cc0-2694c2992a17",
+  "uuid" : "fabaa075-aab8-4b58-8496-96460f8bbade",
   "display" : "ASPIRIN",
   "orderType" : {
     "uuid" : "e23733ab-787e-4096-8ba2-577a902d2c2b",
@@ -4394,10 +4380,10 @@ Created superclass: {
   "voided" : false,
   "links" : [ {
     "rel" : "self",
-    "uri" : "http://localhost/ws/rest/v1/order/037e7ef5-4e0b-4474-8cc0-2694c2992a17"
+    "uri" : "http://localhost/ws/rest/v1/order/fabaa075-aab8-4b58-8496-96460f8bbade"
   }, {
     "rel" : "full",
-    "uri" : "http://localhost/ws/rest/v1/order/037e7ef5-4e0b-4474-8cc0-2694c2992a17?v=full"
+    "uri" : "http://localhost/ws/rest/v1/order/fabaa075-aab8-4b58-8496-96460f8bbade?v=full"
   } ],
   "type" : "order",
   "resourceVersion" : "1.8"
@@ -4457,48 +4443,822 @@ Retrieved superclass: {
   "type" : "order",
   "resourceVersion" : "1.8"
 }
-[INFO] Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.575 s - in org.openmrs.module.webservices.rest.web.ClassHierarchyResourceTest
+[INFO] Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.312 s - in org.openmrs.module.webservices.rest.web.ClassHierarchyResourceTest
 [INFO] 
 [INFO] Results:
 [INFO] 
-[ERROR] Errors: 
-[ERROR]   ObsController1_9Test.getObs_shouldCreateAnObsWhenTheQuestionConceptIsSetAsAMapContainingTheUuid:214->RestControllerTestUtils.handle:98 » Conversion
+[WARNING] Tests run: 675, Failures: 0, Errors: 0, Skipped: 3
 [INFO] 
-[ERROR] Tests run: 675, Failures: 0, Errors: 1, Skipped: 3
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Rest Web Services 1.10 OMOD 2.23.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
 [INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.7.201606060606:prepare-agent (prepare-agent) @ webservices.rest-omod-1.10 ---
+[INFO] argLine set to -javaagent:/root/./workspace/openmrs/openmrs-module-webservices.rest/455565885/.m2/org/jacoco/org.jacoco.agent/0.7.7.201606060606/org.jacoco.agent-0.7.7.201606060606-runtime.jar=destfile=/root/workspace/openmrs/openmrs-module-webservices.rest/455565885/omod-1.10/target/jacoco.exec,includes=org/openmrs/**
+[INFO] 
+[INFO] --- maven-java-formatter-plugin:0.4:format (default) @ webservices.rest-omod-1.10 ---
+[INFO] Using 'UTF-8' encoding to format source files.
+[INFO] Number of files to be formatted: 33
+[INFO] Successfully formatted: 0 file(s)
+[INFO] Fail to format        : 0 file(s)
+[INFO] Skipped               : 33 file(s)
+[INFO] Approximate time taken: 0s
+[INFO] 
+[INFO] --- license-maven-plugin:3.0:format (format-license-header) @ webservices.rest-omod-1.10 ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ webservices.rest-omod-1.10 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/openmrs/openmrs-module-webservices.rest/455565885/omod-1.10/src/main/resources
+[INFO] skip non existing resourceDirectory /root/workspace/openmrs/openmrs-module-webservices.rest/455565885/omod-1.10/src/main/webapp
+[INFO] skip non existing resourceDirectory /root/workspace/openmrs/openmrs-module-webservices.rest/455565885/omod-1.10/src/main/webapp
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ webservices.rest-omod-1.10 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ webservices.rest-omod-1.10 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ webservices.rest-omod-1.10 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.1:test (default-test) @ webservices.rest-omod-1.10 ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.openmrs.module.webservices.validation.ValidateUtilTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 15.506 s - in org.openmrs.module.webservices.validation.ValidateUtilTest
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_10.DrugController1_10Test
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.933 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_10.DrugController1_10Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_10.OrderTypeController1_10Test
+[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.132 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_10.OrderTypeController1_10Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_10.OrderFrequencyController1_10Test
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.721 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_10.OrderFrequencyController1_10Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_10.ProgramEnrollmentController1_10Test
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.522 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_10.ProgramEnrollmentController1_10Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_10.OrderController1_10Test
+[INFO] Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.017 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_10.OrderController1_10Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_10.CareSettingController1_10Test
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.394 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_10.CareSettingController1_10Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_10.OrderableController1_10Test
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.869 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_10.OrderableController1_10Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_10.DrugOrderSubclassHandler1_10Test
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_10.DrugOrderSubclassHandler1_10Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_10.OrderEntryConfigResource1_10Test
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.69 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_10.OrderEntryConfigResource1_10Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_10.OrderFrequencyResource1_10Test
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.522 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_10.OrderFrequencyResource1_10Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_10.ProgramResource1_10Test
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.101 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_10.ProgramResource1_10Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_10.OrderTypeResource1_10Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.449 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_10.OrderTypeResource1_10Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_10.OrderableResource1_10Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.727 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_10.OrderableResource1_10Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_10.CareSettingResource1_10Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.45 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_10.CareSettingResource1_10Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_10.OrderResource1_10Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.505 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_10.OrderResource1_10Test
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 109, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Rest Web Services 1.11 OMOD 2.23.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.7.201606060606:prepare-agent (prepare-agent) @ webservices.rest-omod-1.11 ---
+[INFO] argLine set to -javaagent:/root/./workspace/openmrs/openmrs-module-webservices.rest/455565885/.m2/org/jacoco/org.jacoco.agent/0.7.7.201606060606/org.jacoco.agent-0.7.7.201606060606-runtime.jar=destfile=/root/workspace/openmrs/openmrs-module-webservices.rest/455565885/omod-1.11/target/jacoco.exec,includes=org/openmrs/**
+[INFO] 
+[INFO] --- maven-java-formatter-plugin:0.4:format (default) @ webservices.rest-omod-1.11 ---
+[INFO] Using 'UTF-8' encoding to format source files.
+[INFO] Number of files to be formatted: 16
+[INFO] Successfully formatted: 0 file(s)
+[INFO] Fail to format        : 0 file(s)
+[INFO] Skipped               : 16 file(s)
+[INFO] Approximate time taken: 0s
+[INFO] 
+[INFO] --- license-maven-plugin:3.0:format (format-license-header) @ webservices.rest-omod-1.11 ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ webservices.rest-omod-1.11 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/openmrs/openmrs-module-webservices.rest/455565885/omod-1.11/src/main/resources
+[INFO] skip non existing resourceDirectory /root/workspace/openmrs/openmrs-module-webservices.rest/455565885/omod-1.11/src/main/webapp
+[INFO] skip non existing resourceDirectory /root/workspace/openmrs/openmrs-module-webservices.rest/455565885/omod-1.11/src/main/webapp
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ webservices.rest-omod-1.11 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ webservices.rest-omod-1.11 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/openmrs/openmrs-module-webservices.rest/455565885/omod-1.11/src/test/resources
+[INFO] skip non existing resourceDirectory /root/workspace/openmrs/openmrs-module-webservices.rest/455565885/omod-1.11/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ webservices.rest-omod-1.11 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.1:test (default-test) @ webservices.rest-omod-1.11 ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_11.EncounterRoleController1_11Test
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 22.425 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_11.EncounterRoleController1_11Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_11.DrugIngredientController1_11Test
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.577 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_11.DrugIngredientController1_11Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_11.ObsResource1_11Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.365 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_11.ObsResource1_11Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_11.PersonResource1_11Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.185 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_11.PersonResource1_11Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_11.DrugIngredientResource1_11Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.09 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_11.DrugIngredientResource1_11Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_11.ConceptResource1_11Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.135 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_11.ConceptResource1_11Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_11.EncounterRoleResource1_11Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.054 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_11.EncounterRoleResource1_11Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_11.DrugResource1_11Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.054 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_11.DrugResource1_11Test
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 29, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Rest Web Services 1.12 OMOD 2.23.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.7.201606060606:prepare-agent (prepare-agent) @ webservices.rest-omod-1.12 ---
+[INFO] argLine set to -javaagent:/root/./workspace/openmrs/openmrs-module-webservices.rest/455565885/.m2/org/jacoco/org.jacoco.agent/0.7.7.201606060606/org.jacoco.agent-0.7.7.201606060606-runtime.jar=destfile=/root/workspace/openmrs/openmrs-module-webservices.rest/455565885/omod-1.12/target/jacoco.exec,includes=org/openmrs/**
+[INFO] 
+[INFO] --- maven-java-formatter-plugin:0.4:format (default) @ webservices.rest-omod-1.12 ---
+[INFO] Using 'UTF-8' encoding to format source files.
+[INFO] Number of files to be formatted: 8
+[INFO] Successfully formatted: 0 file(s)
+[INFO] Fail to format        : 0 file(s)
+[INFO] Skipped               : 8 file(s)
+[INFO] Approximate time taken: 0s
+[INFO] 
+[INFO] --- license-maven-plugin:3.0:format (format-license-header) @ webservices.rest-omod-1.12 ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ webservices.rest-omod-1.12 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/openmrs/openmrs-module-webservices.rest/455565885/omod-1.12/src/main/resources
+[INFO] skip non existing resourceDirectory /root/workspace/openmrs/openmrs-module-webservices.rest/455565885/omod-1.12/src/main/webapp
+[INFO] skip non existing resourceDirectory /root/workspace/openmrs/openmrs-module-webservices.rest/455565885/omod-1.12/src/main/webapp
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ webservices.rest-omod-1.12 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ webservices.rest-omod-1.12 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ webservices.rest-omod-1.12 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.1:test (default-test) @ webservices.rest-omod-1.12 ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_12.OrderSetController1_12Test
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 23.759 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_12.OrderSetController1_12Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_12.OrderSetMemberController1_12Test
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.537 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs1_12.OrderSetMemberController1_12Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_12.OrderSetMemberResource1_12Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.129 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_12.OrderSetMemberResource1_12Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_12.OrderSetResource1_12Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.122 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_12.OrderSetResource1_12Test
+[INFO] Running org.openmrs.module.webservices.rest.web.ConversionUtil1_12Test
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 s - in org.openmrs.module.webservices.rest.web.ConversionUtil1_12Test
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 26, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Rest Web Services 2.0 OMOD 2.23.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.7.201606060606:prepare-agent (prepare-agent) @ webservices.rest-omod-2.0 ---
+[INFO] argLine set to -javaagent:/root/./workspace/openmrs/openmrs-module-webservices.rest/455565885/.m2/org/jacoco/org.jacoco.agent/0.7.7.201606060606/org.jacoco.agent-0.7.7.201606060606-runtime.jar=destfile=/root/workspace/openmrs/openmrs-module-webservices.rest/455565885/omod-2.0/target/jacoco.exec,includes=org/openmrs/**
+[INFO] 
+[INFO] --- maven-java-formatter-plugin:0.4:format (default) @ webservices.rest-omod-2.0 ---
+[INFO] Using 'UTF-8' encoding to format source files.
+[INFO] Number of files to be formatted: 43
+[INFO] Successfully formatted: 0 file(s)
+[INFO] Fail to format        : 0 file(s)
+[INFO] Skipped               : 43 file(s)
+[INFO] Approximate time taken: 0s
+[INFO] 
+[INFO] --- license-maven-plugin:3.0:format (format-license-header) @ webservices.rest-omod-2.0 ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ webservices.rest-omod-2.0 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/openmrs/openmrs-module-webservices.rest/455565885/omod-2.0/src/main/resources
+[INFO] skip non existing resourceDirectory /root/workspace/openmrs/openmrs-module-webservices.rest/455565885/omod-2.0/src/main/webapp
+[INFO] skip non existing resourceDirectory /root/workspace/openmrs/openmrs-module-webservices.rest/455565885/omod-2.0/src/main/webapp
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ webservices.rest-omod-2.0 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ webservices.rest-omod-2.0 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ webservices.rest-omod-2.0 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.1:test (default-test) @ webservices.rest-omod-2.0 ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs2_0.ConceptSourceController2_0Test
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 22.902 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs2_0.ConceptSourceController2_0Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs2_0.ConceptController2_0Test
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.84 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs2_0.ConceptController2_0Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs2_0.ConceptAttributeController2_0Test
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.435 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs2_0.ConceptAttributeController2_0Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs2_0.SystemSettingController2_0Test
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.174 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs2_0.SystemSettingController2_0Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs2_0.ConceptDatatypeController2_0Test
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.31 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs2_0.ConceptDatatypeController2_0Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs2_0.PatientAllergyController2_0Test
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.239 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs2_0.PatientAllergyController2_0Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs2_0.EncounterController2_0Test
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.486 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs2_0.EncounterController2_0Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs2_0.UserController2_0Test
+Found 1 user(s): {
+  "results" : [ {
+    "uuid" : "c98a1558-e131-11de-babe-001e378eb67e",
+    "display" : "butch",
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/user/c98a1558-e131-11de-babe-001e378eb67e"
+    } ]
+  } ]
+}
+Old User SystemId: : "3-4"
+Edited User SystemId: : "5-6"
+Users fetched: : {
+  "results" : [ {
+    "uuid" : "A4F30A1B-5EB9-11DF-A648-37A07F9C90FB",
+    "display" : "daemon",
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/user/A4F30A1B-5EB9-11DF-A648-37A07F9C90FB"
+    } ]
+  }, {
+    "uuid" : "1010d442-e134-11de-babe-001e378eb67e",
+    "display" : "admin",
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/user/1010d442-e134-11de-babe-001e378eb67e"
+    } ]
+  }, {
+    "uuid" : "c1d8f5c2-e131-11de-babe-001e378eb67e",
+    "display" : "bruno",
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/user/c1d8f5c2-e131-11de-babe-001e378eb67e"
+    } ]
+  }, {
+    "uuid" : "c98a1558-e131-11de-babe-001e378eb67e",
+    "display" : "butch",
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/user/c98a1558-e131-11de-babe-001e378eb67e"
+    } ]
+  } ]
+}
+Total users fetched: : 4
+Created User: {
+  "uuid" : "ad254d85-7bde-45e8-a55d-0094400deb74",
+  "display" : "testuser",
+  "username" : "testuser",
+  "systemId" : "503-3",
+  "userProperties" : {
+    "loginAttempts" : "0",
+    "lockoutTimestamp" : ""
+  },
+  "person" : {
+    "uuid" : "da7f524f-27ce-4bb2-86d6-6d1d05312bd5",
+    "display" : "101-6 - Mr. Horatio Test Hornblower",
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/patient/da7f524f-27ce-4bb2-86d6-6d1d05312bd5"
+    } ]
+  },
+  "privileges" : [ ],
+  "roles" : null,
+  "retired" : false,
+  "links" : [ {
+    "rel" : "self",
+    "uri" : "http://localhost/ws/rest/v1/user/ad254d85-7bde-45e8-a55d-0094400deb74"
+  }, {
+    "rel" : "full",
+    "uri" : "http://localhost/ws/rest/v1/user/ad254d85-7bde-45e8-a55d-0094400deb74?v=full"
+  } ],
+  "resourceVersion" : "1.8"
+}
+Found 1 user(s) by username: {
+  "results" : [ {
+    "uuid" : "c98a1558-e131-11de-babe-001e378eb67e",
+    "display" : "butch",
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/user/c98a1558-e131-11de-babe-001e378eb67e"
+    } ]
+  } ]
+}
+WARN - HibernateConceptDAO.getConceptByName(1712) |2018-11-22 10:36:11,193| No concept found for 'NULL'
+User retrieved (full): {
+  "uuid" : "c98a1558-e131-11de-babe-001e378eb67e",
+  "display" : "butch",
+  "username" : "butch",
+  "systemId" : "3-4",
+  "userProperties" : { },
+  "person" : {
+    "uuid" : "341b4e41-790c-484f-b6ed-71dc8da222de",
+    "display" : "Hippocrates of Cos",
+    "gender" : "M",
+    "age" : null,
+    "birthdate" : null,
+    "birthdateEstimated" : false,
+    "dead" : false,
+    "deathDate" : null,
+    "causeOfDeath" : null,
+    "preferredName" : {
+      "uuid" : "0e69f78c-e3f2-4d9c-933b-d52aa8a669b8",
+      "display" : "Hippocrates of Cos",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/person/341b4e41-790c-484f-b6ed-71dc8da222de/name/0e69f78c-e3f2-4d9c-933b-d52aa8a669b8"
+      } ]
+    },
+    "preferredAddress" : {
+      "uuid" : "bb7f7855-abfa-447b-baf0-7eec28f64c54",
+      "display" : null,
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/person/341b4e41-790c-484f-b6ed-71dc8da222de/address/bb7f7855-abfa-447b-baf0-7eec28f64c54"
+      } ]
+    },
+    "attributes" : [ {
+      "uuid" : "898f6ecd-78f1-42a5-8768-e0c219a3fa7f",
+      "display" : "Race = NULL",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/person/341b4e41-790c-484f-b6ed-71dc8da222de/attribute/898f6ecd-78f1-42a5-8768-e0c219a3fa7f"
+      } ]
+    }, {
+      "uuid" : "9b5e9fc6-eeb0-4b69-a699-e2f9f655cfec",
+      "display" : "Birthplace = NULL",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/person/341b4e41-790c-484f-b6ed-71dc8da222de/attribute/9b5e9fc6-eeb0-4b69-a699-e2f9f655cfec"
+      } ]
+    }, {
+      "uuid" : "463db590-b7a9-47e9-897a-c0506ba21ec9",
+      "display" : null,
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/person/341b4e41-790c-484f-b6ed-71dc8da222de/attribute/463db590-b7a9-47e9-897a-c0506ba21ec9"
+      } ]
+    } ],
+    "voided" : false,
+    "deathdateEstimated" : null,
+    "birthtime" : null,
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/person/341b4e41-790c-484f-b6ed-71dc8da222de"
+    }, {
+      "rel" : "full",
+      "uri" : "http://localhost/ws/rest/v1/person/341b4e41-790c-484f-b6ed-71dc8da222de?v=full"
+    } ],
+    "resourceVersion" : "1.11"
+  },
+  "privileges" : [ ],
+  "roles" : [ {
+    "uuid" : "3480cb6d-c291-46c8-8d3a-96dc33d199fb",
+    "display" : "Provider",
+    "name" : "Provider",
+    "description" : "General privileges held by all providers",
+    "retired" : false,
+    "privileges" : [ ],
+    "inheritedRoles" : [ ],
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/role/3480cb6d-c291-46c8-8d3a-96dc33d199fb"
+    }, {
+      "rel" : "full",
+      "uri" : "http://localhost/ws/rest/v1/role/3480cb6d-c291-46c8-8d3a-96dc33d199fb?v=full"
+    } ],
+    "resourceVersion" : "1.8"
+  } ],
+  "allRoles" : [ {
+    "uuid" : "3480cb6d-c291-46c8-8d3a-96dc33d199fb",
+    "display" : "Provider",
+    "name" : "Provider",
+    "description" : "General privileges held by all providers",
+    "retired" : false,
+    "privileges" : [ ],
+    "inheritedRoles" : [ ],
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/role/3480cb6d-c291-46c8-8d3a-96dc33d199fb"
+    }, {
+      "rel" : "full",
+      "uri" : "http://localhost/ws/rest/v1/role/3480cb6d-c291-46c8-8d3a-96dc33d199fb?v=full"
+    } ],
+    "resourceVersion" : "1.8"
+  } ],
+  "proficientLocales" : [ ],
+  "retired" : false,
+  "auditInfo" : {
+    "creator" : {
+      "uuid" : "1010d442-e134-11de-babe-001e378eb67e",
+      "display" : "admin",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/user/1010d442-e134-11de-babe-001e378eb67e"
+      } ]
+    },
+    "dateCreated" : "2008-08-15T15:57:09.000+0200",
+    "changedBy" : {
+      "uuid" : "1010d442-e134-11de-babe-001e378eb67e",
+      "display" : "admin",
+      "links" : [ {
+        "rel" : "self",
+        "uri" : "http://localhost/ws/rest/v1/user/1010d442-e134-11de-babe-001e378eb67e"
+      } ]
+    },
+    "dateChanged" : "2008-08-18T11:51:56.000+0200"
+  },
+  "links" : [ {
+    "rel" : "self",
+    "uri" : "http://localhost/ws/rest/v1/user/c98a1558-e131-11de-babe-001e378eb67e"
+  } ],
+  "resourceVersion" : "1.8"
+}
+Created another user with a role this time.: {
+  "uuid" : "88a83cdd-2795-44d8-bbad-ae50b622dcda",
+  "display" : "testuser",
+  "username" : "testuser",
+  "systemId" : "503-3",
+  "userProperties" : {
+    "loginAttempts" : "0",
+    "lockoutTimestamp" : ""
+  },
+  "person" : {
+    "uuid" : "da7f524f-27ce-4bb2-86d6-6d1d05312bd5",
+    "display" : "101-6 - Mr. Horatio Test Hornblower",
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/patient/da7f524f-27ce-4bb2-86d6-6d1d05312bd5"
+    } ]
+  },
+  "privileges" : [ ],
+  "roles" : [ {
+    "uuid" : "3480cb6d-c291-46c8-8d3a-96dc33d199fb",
+    "display" : "Provider",
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/role/3480cb6d-c291-46c8-8d3a-96dc33d199fb"
+    } ]
+  } ],
+  "retired" : false,
+  "links" : [ {
+    "rel" : "self",
+    "uri" : "http://localhost/ws/rest/v1/user/88a83cdd-2795-44d8-bbad-ae50b622dcda"
+  }, {
+    "rel" : "full",
+    "uri" : "http://localhost/ws/rest/v1/user/88a83cdd-2795-44d8-bbad-ae50b622dcda?v=full"
+  } ],
+  "resourceVersion" : "1.8"
+}
+User retrieved (default): {
+  "uuid" : "c98a1558-e131-11de-babe-001e378eb67e",
+  "display" : "butch",
+  "username" : "butch",
+  "systemId" : "3-4",
+  "userProperties" : { },
+  "person" : {
+    "uuid" : "341b4e41-790c-484f-b6ed-71dc8da222de",
+    "display" : "Hippocrates of Cos",
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/person/341b4e41-790c-484f-b6ed-71dc8da222de"
+    } ]
+  },
+  "privileges" : [ ],
+  "roles" : [ {
+    "uuid" : "3480cb6d-c291-46c8-8d3a-96dc33d199fb",
+    "display" : "Provider",
+    "links" : [ {
+      "rel" : "self",
+      "uri" : "http://localhost/ws/rest/v1/role/3480cb6d-c291-46c8-8d3a-96dc33d199fb"
+    } ]
+  } ],
+  "retired" : false,
+  "links" : [ {
+    "rel" : "self",
+    "uri" : "http://localhost/ws/rest/v1/user/c98a1558-e131-11de-babe-001e378eb67e"
+  }, {
+    "rel" : "full",
+    "uri" : "http://localhost/ws/rest/v1/user/c98a1558-e131-11de-babe-001e378eb67e?v=full"
+  } ],
+  "resourceVersion" : "1.8"
+}
+WARN - HibernateConceptDAO.getConceptByName(1712) |2018-11-22 10:36:11,506| No concept found for 'NULL'
+[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.823 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs2_0.UserController2_0Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs2_0.OrderController2_0Test
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.522 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs2_0.OrderController2_0Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs2_0.DrugResource2_0Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.08 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs2_0.DrugResource2_0Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs2_0.ProviderController2_0Test
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.329 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs2_0.ProviderController2_0Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs2_0.UserResource2_0Test
+WARN - HibernateConceptDAO.getConceptByName(1712) |2018-11-22 10:36:12,767| No concept found for 'NULL'
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.33 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs2_0.UserResource2_0Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs2_0.ConceptAttributeTypeResource2_0Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.089 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs2_0.ConceptAttributeTypeResource2_0Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs2_0.ConceptAttributeResource2_0Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.096 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs2_0.ConceptAttributeResource2_0Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs2_0.LocationResource2_0Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.059 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs2_0.LocationResource2_0Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs2_0.PatientAllergyResource2_0Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.13 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs2_0.PatientAllergyResource2_0Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs2_0.ConceptResource2_0Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.08 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs2_0.ConceptResource2_0Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs2_0.PersonAddressResource2_0Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.07 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs2_0.PersonAddressResource2_0Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs2_0.PatientIdentifierTypeResource2_0Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.074 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs2_0.PatientIdentifierTypeResource2_0Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs2_0.ConceptMapControllerTest2_0Test
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.3 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs2_0.ConceptMapControllerTest2_0Test
+[INFO] Running org.openmrs.module.webservices.rest.doc.SwaggerSpecificationCreatorTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 40.276 s - in org.openmrs.module.webservices.rest.doc.SwaggerSpecificationCreatorTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 140, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Rest Web Services 2.1 OMOD 2.23.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.7.201606060606:prepare-agent (prepare-agent) @ webservices.rest-omod-2.1 ---
+[INFO] argLine set to -javaagent:/root/./workspace/openmrs/openmrs-module-webservices.rest/455565885/.m2/org/jacoco/org.jacoco.agent/0.7.7.201606060606/org.jacoco.agent-0.7.7.201606060606-runtime.jar=destfile=/root/workspace/openmrs/openmrs-module-webservices.rest/455565885/omod-2.1/target/jacoco.exec,includes=org/openmrs/**
+[INFO] 
+[INFO] --- maven-java-formatter-plugin:0.4:format (default) @ webservices.rest-omod-2.1 ---
+[INFO] Using 'UTF-8' encoding to format source files.
+[INFO] Number of files to be formatted: 15
+[INFO] Successfully formatted: 0 file(s)
+[INFO] Fail to format        : 0 file(s)
+[INFO] Skipped               : 15 file(s)
+[INFO] Approximate time taken: 0s
+[INFO] 
+[INFO] --- license-maven-plugin:3.0:format (format-license-header) @ webservices.rest-omod-2.1 ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ webservices.rest-omod-2.1 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/openmrs/openmrs-module-webservices.rest/455565885/omod-2.1/src/main/resources
+[INFO] skip non existing resourceDirectory /root/workspace/openmrs/openmrs-module-webservices.rest/455565885/omod-2.1/src/main/webapp
+[INFO] skip non existing resourceDirectory /root/workspace/openmrs/openmrs-module-webservices.rest/455565885/omod-2.1/src/main/webapp
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ webservices.rest-omod-2.1 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ webservices.rest-omod-2.1 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/openmrs/openmrs-module-webservices.rest/455565885/omod-2.1/src/test/resources
+[INFO] skip non existing resourceDirectory /root/workspace/openmrs/openmrs-module-webservices.rest/455565885/omod-2.1/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ webservices.rest-omod-2.1 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.1:test (default-test) @ webservices.rest-omod-2.1 ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs2_1.ConceptSourceController2_1Test
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 25.497 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs2_1.ConceptSourceController2_1Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs2_1.PersonNameController2_1Test
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.821 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs2_1.PersonNameController2_1Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs2_1.CohortResource2_1Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.291 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs2_1.CohortResource2_1Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs2_1.CohortMembershipResource2_1WebTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.618 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs2_1.CohortMembershipResource2_1WebTest
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs2_1.ObsResource2_1Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.27 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs2_1.ObsResource2_1Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs2_1.ConceptSourceResource2_1Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.087 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs2_1.ConceptSourceResource2_1Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs2_1.CohortMembershipResource2_1Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.119 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs2_1.CohortMembershipResource2_1Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs2_1.CohortResource2_1WebTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.272 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs2_1.CohortResource2_1WebTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 37, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Rest Web Services 2.2 OMOD 2.23.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.7.201606060606:prepare-agent (prepare-agent) @ webservices.rest-omod-2.2 ---
+[INFO] argLine set to -javaagent:/root/./workspace/openmrs/openmrs-module-webservices.rest/455565885/.m2/org/jacoco/org.jacoco.agent/0.7.7.201606060606/org.jacoco.agent-0.7.7.201606060606-runtime.jar=destfile=/root/workspace/openmrs/openmrs-module-webservices.rest/455565885/omod-2.2/target/jacoco.exec,includes=org/openmrs/**
+[INFO] 
+[INFO] --- maven-java-formatter-plugin:0.4:format (default) @ webservices.rest-omod-2.2 ---
+[INFO] Using 'UTF-8' encoding to format source files.
+[INFO] Number of files to be formatted: 27
+[INFO] Successfully formatted: 0 file(s)
+[INFO] Fail to format        : 0 file(s)
+[INFO] Skipped               : 27 file(s)
+[INFO] Approximate time taken: 0s
+[INFO] 
+[INFO] --- license-maven-plugin:3.0:format (format-license-header) @ webservices.rest-omod-2.2 ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ webservices.rest-omod-2.2 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/openmrs/openmrs-module-webservices.rest/455565885/omod-2.2/src/main/resources
+[INFO] skip non existing resourceDirectory /root/workspace/openmrs/openmrs-module-webservices.rest/455565885/omod-2.2/src/main/webapp
+[INFO] skip non existing resourceDirectory /root/workspace/openmrs/openmrs-module-webservices.rest/455565885/omod-2.2/src/main/webapp
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ webservices.rest-omod-2.2 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ webservices.rest-omod-2.2 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ webservices.rest-omod-2.2 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.1:test (default-test) @ webservices.rest-omod-2.2 ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs2_2.ConditionController2_2Test
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 25.805 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs2_2.ConditionController2_2Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs2_2.DiagnosisController2_2Test
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.917 s - in org.openmrs.module.webservices.rest.web.v1_0.controller.openmrs2_2.DiagnosisController2_2Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.search.openmrs2_2.OrderSearchHandler2_2Test
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.506 s - in org.openmrs.module.webservices.rest.web.v1_0.search.openmrs2_2.OrderSearchHandler2_2Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs2_2.DiagnosisResource2_2Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.164 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs2_2.DiagnosisResource2_2Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs2_2.FulfillerDetailsResource2_2Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.072 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs2_2.FulfillerDetailsResource2_2Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs2_2.ProgramEnrollmentResource2_2Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.302 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs2_2.ProgramEnrollmentResource2_2Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs2_2.PersonResource2_2Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.091 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs2_2.PersonResource2_2Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs2_2.EncounterResource2_2Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.182 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs2_2.EncounterResource2_2Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs2_2.ProgramAttributeTypeResource2_2Test
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.233 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs2_2.ProgramAttributeTypeResource2_2Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs2_2.FulfillerDetailsController2_2Test
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.113 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs2_2.FulfillerDetailsController2_2Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs2_2.ConditionResource2_2Test
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.154 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs2_2.ConditionResource2_2Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs2_2.OrderResource2_2Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.12 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs2_2.OrderResource2_2Test
+[INFO] Running org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs2_2.PatientProgramAttributeResource2_2Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.173 s - in org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs2_2.PatientProgramAttributeResource2_2Test
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 70, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Rest Web Services OMOD 2.23.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.1:create (default) @ webservices.rest-omod ---
+[INFO] Checking for local modifications: skipped.
+[INFO] Updating project files from SCM: skipped.
+[INFO] ShortRevision tag detected. The value is '6'.
+[INFO] Executing: /bin/sh -c cd /root/workspace/openmrs/openmrs-module-webservices.rest/455565885/omod && git rev-parse --verify --short=6 HEAD
+[INFO] Working directory: /root/workspace/openmrs/openmrs-module-webservices.rest/455565885/omod
+[INFO] Storing buildNumber: 177e9a at timestamp: 1542879475332
+[INFO] ShortRevision tag detected. The value is '6'.
+[INFO] Executing: /bin/sh -c cd /root/workspace/openmrs/openmrs-module-webservices.rest/455565885/omod && git rev-parse --verify --short=6 HEAD
+[INFO] Working directory: /root/workspace/openmrs/openmrs-module-webservices.rest/455565885/omod
+[INFO] Storing buildScmBranch: UNKNOWN
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.7.201606060606:prepare-agent (prepare-agent) @ webservices.rest-omod ---
+[INFO] argLine set to -javaagent:/root/./workspace/openmrs/openmrs-module-webservices.rest/455565885/.m2/org/jacoco/org.jacoco.agent/0.7.7.201606060606/org.jacoco.agent-0.7.7.201606060606-runtime.jar=destfile=/root/workspace/openmrs/openmrs-module-webservices.rest/455565885/omod/target/jacoco.exec,includes=org/openmrs/**
+[INFO] 
+[INFO] --- maven-java-formatter-plugin:0.4:format (default) @ webservices.rest-omod ---
+[INFO] Using 'UTF-8' encoding to format source files.
+[INFO] Number of files to be formatted: 8
+[INFO] Successfully formatted: 0 file(s)
+[INFO] Fail to format        : 0 file(s)
+[INFO] Skipped               : 8 file(s)
+[INFO] Approximate time taken: 0s
+[INFO] 
+[INFO] --- license-maven-plugin:3.0:format (format-license-header) @ webservices.rest-omod ---
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:unpack-dependencies (Expand resources) @ webservices.rest-omod ---
+[INFO] classes already exists in destination.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ webservices.rest-omod ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 7 resources to web/module
+[INFO] Copying 10 resources to web/module
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ webservices.rest-omod ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ webservices.rest-omod ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/openmrs/openmrs-module-webservices.rest/455565885/omod/src/test/resources
+[INFO] skip non existing resourceDirectory /root/workspace/openmrs/openmrs-module-webservices.rest/455565885/omod/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ webservices.rest-omod ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.1:test (default-test) @ webservices.rest-omod ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.openmrs.module.webservices.rest.util.ReflectionUtilTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.183 s - in org.openmrs.module.webservices.rest.util.ReflectionUtilTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Rest Web Services Integration Tests 2.23.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-java-formatter-plugin:0.4:format (default) @ webservices.rest-integration-tests ---
+[INFO] Using 'UTF-8' encoding to format source files.
+[INFO] Number of files to be formatted: 2
+[INFO] Successfully formatted: 0 file(s)
+[INFO] Fail to format        : 0 file(s)
+[INFO] Skipped               : 2 file(s)
+[INFO] Approximate time taken: 0s
+[INFO] 
+[INFO] --- license-maven-plugin:3.0:format (format-license-header) @ webservices.rest-integration-tests ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ webservices.rest-integration-tests ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/openmrs/openmrs-module-webservices.rest/455565885/integration-tests/src/main/resources
+[INFO] skip non existing resourceDirectory /root/workspace/openmrs/openmrs-module-webservices.rest/455565885/integration-tests/src/main/webapp
+[INFO] skip non existing resourceDirectory /root/workspace/openmrs/openmrs-module-webservices.rest/455565885/integration-tests/src/main/webapp
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.2:compile (default-compile) @ webservices.rest-integration-tests ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ webservices.rest-integration-tests ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/openmrs/openmrs-module-webservices.rest/455565885/integration-tests/src/test/resources
+[INFO] skip non existing resourceDirectory /root/workspace/openmrs/openmrs-module-webservices.rest/455565885/integration-tests/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.2:testCompile (default-testCompile) @ webservices.rest-integration-tests ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.1:test (default-test) @ webservices.rest-integration-tests ---
 [INFO] ------------------------------------------------------------------------
 [INFO] Reactor Summary:
 [INFO] 
-[INFO] Rest Web Services .................................. SUCCESS [  1.165 s]
-[INFO] Rest Web Services Common OMOD ...................... SUCCESS [ 34.926 s]
-[INFO] Rest Web Services 1.8 OMOD ......................... SUCCESS [01:37 min]
-[INFO] Rest Web Services 1.9 OMOD ......................... FAILURE [02:57 min]
-[INFO] Rest Web Services 1.10 OMOD ........................ SKIPPED
-[INFO] Rest Web Services 1.11 OMOD ........................ SKIPPED
-[INFO] Rest Web Services 1.12 OMOD ........................ SKIPPED
-[INFO] Rest Web Services 2.0 OMOD ......................... SKIPPED
-[INFO] Rest Web Services 2.1 OMOD ......................... SKIPPED
-[INFO] Rest Web Services 2.2 OMOD ......................... SKIPPED
-[INFO] Rest Web Services OMOD ............................. SKIPPED
-[INFO] Rest Web Services Integration Tests ................ SKIPPED
+[INFO] Rest Web Services .................................. SUCCESS [  1.076 s]
+[INFO] Rest Web Services Common OMOD ...................... SUCCESS [ 31.041 s]
+[INFO] Rest Web Services 1.8 OMOD ......................... SUCCESS [01:29 min]
+[INFO] Rest Web Services 1.9 OMOD ......................... SUCCESS [02:32 min]
+[INFO] Rest Web Services 1.10 OMOD ........................ SUCCESS [ 48.516 s]
+[INFO] Rest Web Services 1.11 OMOD ........................ SUCCESS [ 25.904 s]
+[INFO] Rest Web Services 1.12 OMOD ........................ SUCCESS [ 26.379 s]
+[INFO] Rest Web Services 2.0 OMOD ......................... SUCCESS [01:11 min]
+[INFO] Rest Web Services 2.1 OMOD ......................... SUCCESS [ 29.570 s]
+[INFO] Rest Web Services 2.2 OMOD ......................... SUCCESS [ 30.532 s]
+[INFO] Rest Web Services OMOD ............................. SUCCESS [  3.467 s]
+[INFO] Rest Web Services Integration Tests ................ SUCCESS [  0.417 s]
 [INFO] ------------------------------------------------------------------------
-[INFO] BUILD FAILURE
+[INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 05:12 min
-[INFO] Finished at: 2018-11-22T10:28:42+01:00
-[INFO] Final Memory: 32M/754M
+[INFO] Total time: 08:31 min
+[INFO] Finished at: 2018-11-22T10:37:58+01:00
+[INFO] Final Memory: 48M/772M
 [INFO] ------------------------------------------------------------------------
-[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.22.1:test (default-test) on project webservices.rest-omod-1.9: There are test failures.
-[ERROR] 
-[ERROR] Please refer to /root/workspace/openmrs/openmrs-module-webservices.rest/455565885/omod-1.9/target/surefire-reports for the individual test results.
-[ERROR] Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
-[ERROR] -> [Help 1]
-[ERROR] 
-[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
-[ERROR] Re-run Maven using the -X switch to enable full debug logging.
-[ERROR] 
-[ERROR] For more information about the errors and possible solutions, please read the following articles:
-[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
-[ERROR] 
-[ERROR] After correcting the problems, you can resume the build with the command
-[ERROR]   mvn <goals> -rf :webservices.rest-omod-1.9
