@@ -1,0 +1,174 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 2856, 
+      "numberRunning": 2859, 
+      "numberFailing": 3, 
+      "numberErroring": 0, 
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure", 
+          "isError": false, 
+          "occurrences": 3
+        }
+      ], 
+      "numberSkipping": 3
+    }, 
+    "failingModule": "/root/workspace/spring-projects/spring-data-commons/458393275", 
+    "failureDetails": [
+      {
+        "failureName": "org.junit.ComparisonFailure", 
+        "detail": "expected:<[fals]e> but was:<[tru]e>", 
+        "isError": false, 
+        "testMethod": "shouldUseReflectionIfFrameworkTypesNotVisible[BeanWrapper]", 
+        "testClass": "org.springframework.data.mapping.model.PersistentPropertyAccessorTests"
+      }, 
+      {
+        "failureName": "org.junit.ComparisonFailure", 
+        "detail": "expected:<[tru]e> but was:<[fals]e>", 
+        "isError": false, 
+        "testMethod": "shouldUseReflectionIfFrameworkTypesNotVisible", 
+        "testClass": "org.springframework.data.convert.ClassGeneratingEntityInstantiatorUnitTests"
+      }, 
+      {
+        "failureName": "org.junit.ComparisonFailure", 
+        "detail": "expected:<[fals]e> but was:<[tru]e>", 
+        "isError": false, 
+        "testMethod": "shouldUseReflectionIfFrameworkTypesNotVisible[ClassGeneratingPropertyAccessorFactory]", 
+        "testClass": "org.springframework.data.mapping.model.PersistentPropertyAccessorTests"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 16, 
+        "numberRunning": 18, 
+        "testClass": "org.springframework.data.mapping.model.PersistentPropertyAccessorTests", 
+        "numberFailing": 2, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }, 
+      {
+        "numberPassing": 20, 
+        "numberRunning": 21, 
+        "testClass": "org.springframework.data.convert.ClassGeneratingEntityInstantiatorUnitTests", 
+        "numberFailing": 1, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/spring-projects/spring-data-commons/builds/458823066", 
+      "date": "Nov 23, 2018 3:26:34 PM", 
+      "id": 458823066
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/spring-projects/spring-data-commons/builds/458393275", 
+      "date": "Nov 22, 2018 1:53:31 PM", 
+      "id": 458393275
+    }
+  }, 
+  "repository": {
+    "name": "spring-projects/spring-data-commons", 
+    "url": "https://github.com/spring-projects/spring-data-commons", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 1072614
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/spring-projects/spring-data-commons/commit/596b0d81777324ea90cca2f1c83de5ad97364676", 
+      "sha": "596b0d81777324ea90cca2f1c83de5ad97364676", 
+      "branchName": "master", 
+      "date": "Nov 23, 2018 3:19:54 PM", 
+      "repoName": "spring-projects/spring-data-commons"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/spring-projects/spring-data-commons/commit/9791bb9354f88815a6aa73aca97381b37ba70857", 
+      "sha": "9791bb9354f88815a6aa73aca97381b37ba70857", 
+      "branchName": "master", 
+      "date": "Nov 19, 2018 7:46:03 PM", 
+      "repoName": "spring-projects/spring-data-commons"
+    }
+  }, 
+  "bugName": "spring-projects-spring-data-commons-458393275-458823066", 
+  "version": "latest", 
+  "projectMetrics": {
+    "numberSourceFiles": 451, 
+    "numberLibrariesFailingModule": 94, 
+    "numberTestFiles": 294, 
+    "numberModules": 1
+  }, 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 2, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 4, 
+      "numberDeleted": 6
+    }
+  }, 
+  "bugId": "Bears-244", 
+  "type": "passing_passing", 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 309988144, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 373293056, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Nov 23, 2018 3:35:08 PM", 
+    "projectRootPomPath": "./workspace/spring-projects/spring-data-commons/458393275/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          0, 
+          4, 
+          0, 
+          0, 
+          210
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 214
+      }, 
+      "testing": {
+        "stepDurations": [
+          89
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 89
+      }, 
+      "cloning": {
+        "stepDurations": [
+          7
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 7
+      }
+    }, 
+    "reproductionDateBeginning": "Nov 23, 2018 3:26:49 PM", 
+    "totalDuration": 493
+  }
+}
