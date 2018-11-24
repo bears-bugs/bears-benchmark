@@ -1,0 +1,146 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 10, 
+      "numberRunning": 11, 
+      "numberFailing": 0, 
+      "numberErroring": 1, 
+      "failures": [
+        {
+          "failureName": "java.lang.IllegalStateException", 
+          "isError": true, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 0
+    }, 
+    "failingModule": "/root/workspace/Activiti/activiti-cloud-app-service/459060444/activiti-cloud-app-service", 
+    "failureDetails": [
+      {
+        "failureName": "java.lang.IllegalStateException", 
+        "detail": "Failed to load ApplicationContext", 
+        "isError": true, 
+        "testMethod": "contextLoads", 
+        "testClass": "org.activiti.cloud.app.ApplicationTest"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 0, 
+        "numberRunning": 1, 
+        "testClass": "org.activiti.cloud.app.ApplicationTest", 
+        "numberFailing": 0, 
+        "numberErroring": 1, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/Activiti/activiti-cloud-app-service/builds/459062447", 
+      "date": "Nov 24, 2018 9:38:25 AM", 
+      "id": 459062447
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/Activiti/activiti-cloud-app-service/builds/459060444", 
+      "date": "Nov 24, 2018 9:25:30 AM", 
+      "id": 459060444
+    }
+  }, 
+  "repository": {
+    "name": "Activiti/activiti-cloud-app-service", 
+    "url": "https://github.com/Activiti/activiti-cloud-app-service", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 118592481
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/Activiti/activiti-cloud-app-service/commit/d66c4337ff021d552cec2c045ea025bb9b27f631", 
+      "sha": "d66c4337ff021d552cec2c045ea025bb9b27f631", 
+      "branchName": "develop", 
+      "date": "Nov 24, 2018 9:35:27 AM", 
+      "repoName": "Activiti/activiti-cloud-app-service"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/Activiti/activiti-cloud-app-service/commit/09c98b115e0b663b5008d0a237b6b940c6819064", 
+      "sha": "09c98b115e0b663b5008d0a237b6b940c6819064", 
+      "branchName": "develop", 
+      "date": "Nov 24, 2018 9:22:05 AM", 
+      "repoName": "Activiti/activiti-cloud-app-service"
+    }
+  }, 
+  "bugName": "Activiti-activiti-cloud-app-service-459060444-459062447", 
+  "version": "latest", 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 11, 
+      "numberDeleted": 6
+    }
+  }, 
+  "type": "failing_passing", 
+  "bugId": "Bears-193", 
+  "projectMetrics": {
+    "numberSourceFiles": 16, 
+    "numberLibrariesFailingModule": 138, 
+    "numberTestFiles": 6, 
+    "numberModules": 2
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 398155904, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 483917824, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Nov 24, 2018 9:42:36 AM", 
+    "projectRootPomPath": "./workspace/Activiti/activiti-cloud-app-service/459060444/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          0, 
+          125
+        ], 
+        "stepNames": [
+          "CheckoutBuggyBuildCandidate", 
+          "BuildProjectBuggyBuildCandidate"
+        ], 
+        "nbSteps": 2, 
+        "totalDuration": 125
+      }, 
+      "testing": {
+        "stepDurations": [
+          18
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidate"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 18
+      }, 
+      "cloning": {
+        "stepDurations": [
+          2
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 2
+      }
+    }, 
+    "reproductionDateBeginning": "Nov 24, 2018 9:38:45 AM", 
+    "totalDuration": 226
+  }
+}
