@@ -6,6 +6,7 @@ import org.activiti.cloud.app.services.ApplicationsService;
 import org.activiti.cloud.app.services.DeploymentsService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
@@ -38,17 +39,11 @@ public class ApplicationServiceAutoConfiguration {
     @Import({ApplicationsController.class, DeploymentsController.class})
     public static class DefaultApplicationsServiceConfiguration implements SchedulingConfigurer {
 
-        @Bean
-        @ConditionalOnMissingBean(type = "ApplicationsService")
-        ApplicationsService applicationsService() {
-            return new ApplicationsService();
-        }
+        @Autowired
+        private ApplicationsService applicationsService;
 
-        @Bean
-        @ConditionalOnMissingBean(type = "DeploymentsService")
-        DeploymentsService deploymentsService() {
-            return new DeploymentsService();
-        }
+        @Autowired
+        private DeploymentsService deploymentService;
 
         @Bean
         @ConditionalOnMissingBean(type = "RestTemplate")
@@ -74,7 +69,7 @@ public class ApplicationServiceAutoConfiguration {
                     new Runnable() {
                         @Override public void run() {
                             LOGGER.debug(">>> Refreshing Apps now: " + System.currentTimeMillis());
-                            applicationsService().refresh();
+                            applicationsService.refresh();
                         }
                     },
                     new Trigger() {
