@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright 2018 Alfresco, Inc. and/or its affiliates.
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~       http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.activiti.cloud.build</groupId>
+    <artifactId>activiti-cloud-parent</artifactId>
+    <version>7.0.36</version>
+  </parent>
+  <groupId>org.activiti.cloud.app</groupId>
+  <artifactId>activiti-cloud-app-service-parent</artifactId>
+  <version>7.0.0-SNAPSHOT</version>
+  <name>Activiti Cloud :: Application Service Parent</name>
+  <packaging>pom</packaging>
+  <url>http://activiti.org</url>
+
+  <modules>
+    <module>activiti-cloud-app-dependencies</module>
+    <module>activiti-cloud-app-service</module>
+  </modules>
+
+  <repositories>
+    <repository>
+      <id>alfresco</id>
+      <name>Activiti Releases</name>
+      <url>https://artifacts.alfresco.com/nexus/content/repositories/activiti-releases/</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+    </repository>
+  </repositories>
+
+  <scm>
+    <url>https://github.com/Activiti/activiti-cloud-connectors</url>
+    <connection>scm:git:https://github.com/Activiti/activiti-cloud-connectors.git</connection>
+    <developerConnection>scm:git:https://github.com/Activiti/activiti-cloud-connectors.git</developerConnection>
+    <tag>HEAD</tag>
+  </scm>
+  <ciManagement>
+    <system>Travis</system>
+    <url>https://travis-ci.com/Activiti/activiti-cloud-connectors</url>
+  </ciManagement>
+
+  <properties>
+    <activiti-cloud-app-service.version>${project.version}</activiti-cloud-app-service.version>
+    <activiti-cloud-build.version>7.0.36</activiti-cloud-build.version>
+    <activiti-cloud-service-common.version>7.0.47</activiti-cloud-service-common.version>
+  </properties>
+
+  <dependencyManagement>
+    <!-- This duplicates activiti-cloud-app-dependencies module but we can't import that module here as this is its parent
+         and we want to keep a standard Maven structure -->
+    <dependencies>
+      <dependency>
+        <groupId>org.activiti.cloud.build</groupId>
+        <artifactId>activiti-cloud-dependencies-parent</artifactId>
+        <version>${activiti-cloud-build.version}</version>
+        <scope>import</scope>
+        <type>pom</type>
+      </dependency>
+      <dependency>
+        <groupId>org.activiti.cloud.common</groupId>
+        <artifactId>activiti-cloud-service-common-dependencies</artifactId>
+        <version>${activiti-cloud-service-common.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.activiti.cloud.app</groupId>
+        <artifactId>activiti-cloud-app-service</artifactId>
+        <version>${activiti-cloud-app-service.version}</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-deploy-plugin</artifactId>
+        <version>2.8.2</version></plugin>
+    </plugins>
+    </build>
+  </project>
