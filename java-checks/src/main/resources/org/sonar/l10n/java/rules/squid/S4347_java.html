@@ -1,0 +1,34 @@
+<p>The <code>java.security.SecureRandom</code> class provides a strong random number generator (RNG) appropriate for cryptography. However, seeding it
+with a constant or another predictable value will weaken it significantly. In general, it is much safer to rely on the seed provided by the
+<code>SecureRandom</code> implementation.</p>
+<p>This rule raises an issue when <code>SecureRandom.setSeed()</code> or <code>SecureRandom(byte[])</code> are called with a seed that is either
+of:</p>
+<ul>
+  <li> a constant </li>
+  <li> <code>System.currentTimeMillis()</code> </li>
+</ul>
+<h2>Noncompliant Code Example</h2>
+<pre>
+SecureRandom sr = new SecureRandom();
+sr.setSeed(123456L); // Noncompliant
+int v = sr.next(32);
+
+sr = new SecureRandom("abcdefghijklmnop".getBytes("us-ascii")); // Noncompliant
+v = sr.next(32);
+</pre>
+<h2>Compliant Solution</h2>
+<pre>
+SecureRandom sr = new SecureRandom();
+int v = sr.next(32);
+</pre>
+<h2>See</h2>
+<ul>
+  <li> <a href="http://cwe.mitre.org/data/definitions/330.html">MITRE, CWE-330</a> - Use of Insufficiently Random Values </li>
+  <li> <a href="http://cwe.mitre.org/data/definitions/332.html">MITRE, CWE-332</a> - Insufficient Entropy in PRNG </li>
+  <li> <a href="http://cwe.mitre.org/data/definitions/336.html">MITRE, CWE-336</a> - Same Seed in Pseudo-Random Number Generator (PRNG) </li>
+  <li> <a href="http://cwe.mitre.org/data/definitions/337.html">MITRE, CWE-337</a> - Predictable Seed in Pseudo-Random Number Generator (PRNG) </li>
+  <li> OWASP Top 10 2017 Category A6 - Security Misconfiguration </li>
+  <li> <a href="https://wiki.sei.cmu.edu/confluence/display/java/MSC63-J.+Ensure+that+SecureRandom+is+properly+seeded">CERT, MSC63J.</a> - Ensure that
+  SecureRandom is properly seeded </li>
+</ul>
+

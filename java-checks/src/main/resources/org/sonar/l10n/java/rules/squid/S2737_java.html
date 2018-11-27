@@ -1,0 +1,52 @@
+<p>A <code>catch</code> clause that only rethrows the caught exception has the same effect as omitting the <code>catch</code> altogether and letting
+it bubble up automatically, but with more code and the additional detriment of leaving maintainers scratching their heads. </p>
+<p>Such clauses should either be eliminated or populated with the appropriate logic.</p>
+<h2>Noncompliant Code Example</h2>
+<pre>
+public String readFile(File f) {
+  StringBuilder sb = new StringBuilder();
+  try {
+    FileReader fileReader = new FileReader(fileName);
+    BufferedReader bufferedReader = new BufferedReader(fileReader);
+
+    while((line = bufferedReader.readLine()) != null) {
+      //...
+  }
+  catch (IOException e) {  // Noncompliant
+    throw e;
+  }
+  return sb.toString();
+}
+</pre>
+<h2>Compliant Solution</h2>
+<pre>
+public String readFile(File f) {
+  StringBuilder sb = new StringBuilder();
+  try {
+    FileReader fileReader = new FileReader(fileName);
+    BufferedReader bufferedReader = new BufferedReader(fileReader);
+
+    while((line = bufferedReader.readLine()) != null) {
+      //...
+  }
+  catch (IOException e) {
+    logger.LogError(e);
+    throw e;
+  }
+  return sb.toString();
+}
+</pre>
+<p>or</p>
+<pre>
+public String readFile(File f) throws IOException {
+  StringBuilder sb = new StringBuilder();
+  FileReader fileReader = new FileReader(fileName);
+  BufferedReader bufferedReader = new BufferedReader(fileReader);
+
+  while((line = bufferedReader.readLine()) != null) {
+    //...
+
+  return sb.toString();
+}
+</pre>
+

@@ -1,0 +1,38 @@
+<p>A test case without assertions ensures only that no exceptions are thrown. Beyond basic runnability, it ensures nothing about the behavior of the
+code under test.</p>
+<p>This rule raises an exception when no assertions from any of the following frameworks are found in a test:</p>
+<ul>
+  <li> Junit </li>
+  <li> Fest 1.x </li>
+  <li> Fest 2.x </li>
+  <li> Rest-assured 2.0 </li>
+  <li> AssertJ </li>
+  <li> Hamcrest </li>
+  <li> Spring's <code>org.springframework.test.web.servlet.ResultActions.andExpect()</code> </li>
+  <li> Eclipse Vert.x </li>
+  <li> Truth Framework </li>
+  <li> Mockito </li>
+  <li> EasyMock </li>
+  <li> JMock </li>
+  <li> WireMock </li>
+  <li> RxJava 1.x </li>
+  <li> RxJava 2.x </li>
+</ul>
+<h2>Noncompliant Code Example</h2>
+<pre>
+@Test
+public void testDoSomething() {  // Noncompliant
+  MyClass myClass = new MyClass();
+  myClass.doSomething();
+}
+</pre>
+<h2>Compliant Solution</h2>
+<pre>
+@Test
+public void testDoSomething() {
+  MyClass myClass = new MyClass();
+  assertNull(myClass.doSomething());  // JUnit assertion
+  assertThat(myClass.doSomething()).isNull();  // Fest assertion
+}
+</pre>
+
