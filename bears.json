@@ -1,0 +1,149 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 2553, 
+      "numberRunning": 2554, 
+      "numberFailing": 0, 
+      "numberErroring": 1, 
+      "failures": [
+        {
+          "failureName": "org.sonar.java.AnalysisException", 
+          "isError": true, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 0
+    }, 
+    "failingModule": "/root/workspace/SonarSource/sonar-java/459794884/java-checks", 
+    "failureDetails": [
+      {
+        "failureName": "org.sonar.java.AnalysisException", 
+        "detail": "SonarQube is unable to analyze file : '/root/workspace/SonarSource/sonar-java/459794884/java-checks/src/test/files/checks/RegexPatternsNeedlesslyCheck.java'", 
+        "isError": true, 
+        "testClass": "org.sonar.java.checks.RegexPatternsNeedlesslyCheckTest", 
+        "testMethod": "test"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 0, 
+        "numberRunning": 1, 
+        "testClass": "org.sonar.java.checks.RegexPatternsNeedlesslyCheckTest", 
+        "numberFailing": 0, 
+        "numberErroring": 1, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/SonarSource/sonar-java/builds/460162522", 
+      "date": "Nov 27, 2018 10:46:30 AM", 
+      "id": 460162522
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/SonarSource/sonar-java/builds/459794884", 
+      "date": "Nov 26, 2018 4:23:39 PM", 
+      "id": 459794884
+    }
+  }, 
+  "repository": {
+    "name": "SonarSource/sonar-java", 
+    "url": "https://github.com/SonarSource/sonar-java", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 5674787
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/SonarSource/sonar-java/commit/73b318ce68359fc6fdacd6b023ae5b14f625ba2e", 
+      "sha": "73b318ce68359fc6fdacd6b023ae5b14f625ba2e", 
+      "branchName": "SONARJAVA-2966", 
+      "date": "Nov 27, 2018 10:41:35 AM", 
+      "repoName": "SonarSource/sonar-java"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/SonarSource/sonar-java/commit/4d7bc3f5dcd5558185fc7bf04e837f0e2cdd6eaa", 
+      "sha": "4d7bc3f5dcd5558185fc7bf04e837f0e2cdd6eaa", 
+      "branchName": "SONARJAVA-2966", 
+      "date": "Nov 26, 2018 4:18:51 PM", 
+      "repoName": "SonarSource/sonar-java"
+    }
+  }, 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 1, 
+      "numberDeleted": 1
+    }
+  }, 
+  "type": "passing_passing", 
+  "projectMetrics": {
+    "numberSourceFiles": 1014, 
+    "numberLibrariesFailingModule": 64, 
+    "numberTestFiles": 894, 
+    "numberModules": 19
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 237417096, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 678952960, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Nov 27, 2018 10:56:16 AM", 
+    "projectRootPomPath": "./workspace/SonarSource/sonar-java/459794884/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          0, 
+          1, 
+          0, 
+          1, 
+          115
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 117
+      }, 
+      "testing": {
+        "stepDurations": [
+          148
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 148
+      }, 
+      "cloning": {
+        "stepDurations": [
+          47
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 47
+      }
+    }, 
+    "reproductionDateBeginning": "Nov 27, 2018 10:46:46 AM", 
+    "totalDuration": 561
+  }
+}
