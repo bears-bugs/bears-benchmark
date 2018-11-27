@@ -1,0 +1,358 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Detecting the operating system and CPU architecture
+[INFO] ------------------------------------------------------------------------
+[INFO] os.detected.name: linux
+[INFO] os.detected.arch: x86_64
+[INFO] os.detected.release: debian
+[INFO] os.detected.release.version: 8
+[INFO] os.detected.release.like.debian: true
+[INFO] os.detected.classifier: linux-x86_64
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] vertx-web-parent
+[INFO] vertx-web-common
+[INFO] vertx-web
+[INFO] vertx-web-client
+[INFO] vertx-template-engines
+[INFO] vertx-web-templ-jade
+[INFO] vertx-web-templ-mvel
+[INFO] vertx-web-templ-handlebars
+[INFO] vertx-web-templ-thymeleaf
+[INFO] vertx-web-templ-freemarker
+[INFO] vertx-web-templ-pebble
+[INFO] vertx-web-templ-rocker
+[INFO] vertx-web-api-contract
+[INFO] vertx-web-api-service
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building vertx-web-parent 3.6.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ vertx-web-parent ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-processor-plugin:3.2.0:process (generate-sources) @ vertx-web-parent ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-source (add-source) @ vertx-web-parent ---
+[INFO] Source directory: /root/workspace/vert-x3/vertx-web/459797171/src/main/generated added.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building vertx-web-common 3.6.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ vertx-web-common ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-processor-plugin:3.2.0:process (generate-sources) @ vertx-web-common ---
+[WARNING] diagnostic: warning: The following options were not recognized by any processor: '[maven.artifactId, maven.version, codegen.output.data_object_converters, maven.groupId]'
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-source (add-source) @ vertx-web-common ---
+[INFO] Source directory: /root/workspace/vert-x3/vertx-web/459797171/vertx-web-common/src/main/generated added.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ vertx-web-common ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/vert-x3/vertx-web/459797171/vertx-web-common/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ vertx-web-common ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- bnd-maven-plugin:3.2.0:bnd-process (default-bnd-process) @ vertx-web-common ---
+[WARNING] /root/workspace/vert-x3/vertx-web/459797171/vertx-web-common/pom.xml [0:0]: Unused Import-Package instructions: [groovy.lang.*, org.codehaus.groovy.*, kotlin.*, io.vertx.groovy.*, io.vertx.lang.rxjava.*, io.vertx.lang.groovy.*, io.vertx.rxjava.core.*, rx.*, io.reactivex.*, io.vertx.reactivex.*, io.vertx.lang.reactivex.*] 
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ vertx-web-common ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/vert-x3/vertx-web/459797171/vertx-web-common/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ vertx-web-common ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ vertx-web-common ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building vertx-web 3.6.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ vertx-web ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-processor-plugin:3.2.0:process (generate-sources) @ vertx-web ---
+[WARNING] diagnostic: /root/workspace/vert-x3/vertx-web/459797171/vertx-web/src/main/java/io/vertx/ext/web/handler/JWTAuthHandler.java:32: warning: Interface io.vertx.ext.web.handler.JWTAuthHandler does not redeclare the @Fluent return type  of method addAuthority(java.lang.String) declared by io.vertx.ext.web.handler.AuthHandler
+public interface JWTAuthHandler extends AuthHandler {
+       ^
+[WARNING] diagnostic: /root/workspace/vert-x3/vertx-web/459797171/vertx-web/src/main/java/io/vertx/ext/web/handler/JWTAuthHandler.java:32: warning: Interface io.vertx.ext.web.handler.JWTAuthHandler does not redeclare the @Fluent return type  of method addAuthorities(java.util.Set<java.lang.String>) declared by io.vertx.ext.web.handler.AuthHandler
+public interface JWTAuthHandler extends AuthHandler {
+       ^
+[WARNING] diagnostic: /root/workspace/vert-x3/vertx-web/459797171/vertx-web/src/main/java/io/vertx/ext/web/sstore/LocalSessionStore.java:33: warning: Interface io.vertx.ext.web.sstore.LocalSessionStore does not redeclare the @Fluent return type  of method init(io.vertx.core.Vertx,io.vertx.core.json.JsonObject) declared by io.vertx.ext.web.sstore.SessionStore
+public interface LocalSessionStore extends SessionStore {
+       ^
+[WARNING] diagnostic: /root/workspace/vert-x3/vertx-web/459797171/vertx-web/src/main/java/io/vertx/ext/web/handler/DigestAuthHandler.java:29: warning: Interface io.vertx.ext.web.handler.DigestAuthHandler does not redeclare the @Fluent return type  of method addAuthority(java.lang.String) declared by io.vertx.ext.web.handler.AuthHandler
+public interface DigestAuthHandler extends AuthHandler {
+       ^
+[WARNING] diagnostic: /root/workspace/vert-x3/vertx-web/459797171/vertx-web/src/main/java/io/vertx/ext/web/handler/DigestAuthHandler.java:29: warning: Interface io.vertx.ext.web.handler.DigestAuthHandler does not redeclare the @Fluent return type  of method addAuthorities(java.util.Set<java.lang.String>) declared by io.vertx.ext.web.handler.AuthHandler
+public interface DigestAuthHandler extends AuthHandler {
+       ^
+[WARNING] diagnostic: /root/workspace/vert-x3/vertx-web/459797171/vertx-web/src/main/java/io/vertx/ext/web/handler/sockjs/SockJSSocket.java:59: warning: Interface io.vertx.ext.web.handler.sockjs.SockJSSocket does not redeclare the @Fluent return type  of method fetch(long) declared by io.vertx.core.streams.ReadStream
+public interface SockJSSocket extends ReadStream<Buffer>, WriteStream<Buffer> {
+       ^
+[WARNING] diagnostic: /root/workspace/vert-x3/vertx-web/459797171/vertx-web/src/main/java/io/vertx/ext/web/sstore/ClusteredSessionStore.java:31: warning: Interface io.vertx.ext.web.sstore.ClusteredSessionStore does not redeclare the @Fluent return type  of method init(io.vertx.core.Vertx,io.vertx.core.json.JsonObject) declared by io.vertx.ext.web.sstore.SessionStore
+public interface ClusteredSessionStore extends SessionStore {
+       ^
+[WARNING] diagnostic: /root/workspace/vert-x3/vertx-web/459797171/vertx-web/src/main/java/io/vertx/ext/web/handler/ChainAuthHandler.java:28: warning: Interface io.vertx.ext.web.handler.ChainAuthHandler does not redeclare the @Fluent return type  of method addAuthority(java.lang.String) declared by io.vertx.ext.web.handler.AuthHandler
+public interface ChainAuthHandler extends AuthHandler {
+       ^
+[WARNING] diagnostic: /root/workspace/vert-x3/vertx-web/459797171/vertx-web/src/main/java/io/vertx/ext/web/handler/ChainAuthHandler.java:28: warning: Interface io.vertx.ext.web.handler.ChainAuthHandler does not redeclare the @Fluent return type  of method addAuthorities(java.util.Set<java.lang.String>) declared by io.vertx.ext.web.handler.AuthHandler
+public interface ChainAuthHandler extends AuthHandler {
+       ^
+[WARNING] diagnostic: /root/workspace/vert-x3/vertx-web/459797171/vertx-web/src/main/java/io/vertx/ext/web/handler/OAuth2AuthHandler.java:32: warning: Interface io.vertx.ext.web.handler.OAuth2AuthHandler does not redeclare the @Fluent return type  of method addAuthority(java.lang.String) declared by io.vertx.ext.web.handler.AuthHandler
+public interface OAuth2AuthHandler extends AuthHandler {
+       ^
+[WARNING] diagnostic: /root/workspace/vert-x3/vertx-web/459797171/vertx-web/src/main/java/io/vertx/ext/web/handler/OAuth2AuthHandler.java:32: warning: Interface io.vertx.ext.web.handler.OAuth2AuthHandler does not redeclare the @Fluent return type  of method addAuthorities(java.util.Set<java.lang.String>) declared by io.vertx.ext.web.handler.AuthHandler
+public interface OAuth2AuthHandler extends AuthHandler {
+       ^
+[WARNING] diagnostic: /root/workspace/vert-x3/vertx-web/459797171/vertx-web/src/main/java/io/vertx/ext/web/handler/sockjs/BridgeEvent.java:33: warning: Interface io.vertx.ext.web.handler.sockjs.BridgeEvent does not redeclare the @Fluent return type  of method setHandler(io.vertx.core.Handler<io.vertx.core.AsyncResult<T>>) declared by io.vertx.core.Future
+public interface BridgeEvent extends BaseBridgeEvent {
+       ^
+[WARNING] diagnostic: /root/workspace/vert-x3/vertx-web/459797171/vertx-web/src/main/java/io/vertx/ext/web/handler/BasicAuthHandler.java:29: warning: Interface io.vertx.ext.web.handler.BasicAuthHandler does not redeclare the @Fluent return type  of method addAuthority(java.lang.String) declared by io.vertx.ext.web.handler.AuthHandler
+public interface BasicAuthHandler extends AuthHandler {
+       ^
+[WARNING] diagnostic: /root/workspace/vert-x3/vertx-web/459797171/vertx-web/src/main/java/io/vertx/ext/web/handler/BasicAuthHandler.java:29: warning: Interface io.vertx.ext.web.handler.BasicAuthHandler does not redeclare the @Fluent return type  of method addAuthorities(java.util.Set<java.lang.String>) declared by io.vertx.ext.web.handler.AuthHandler
+public interface BasicAuthHandler extends AuthHandler {
+       ^
+[WARNING] diagnostic: /root/workspace/vert-x3/vertx-web/459797171/vertx-web/src/main/java/io/vertx/ext/web/handler/RedirectAuthHandler.java:29: warning: Interface io.vertx.ext.web.handler.RedirectAuthHandler does not redeclare the @Fluent return type  of method addAuthority(java.lang.String) declared by io.vertx.ext.web.handler.AuthHandler
+public interface RedirectAuthHandler extends AuthHandler {
+       ^
+[WARNING] diagnostic: /root/workspace/vert-x3/vertx-web/459797171/vertx-web/src/main/java/io/vertx/ext/web/handler/RedirectAuthHandler.java:29: warning: Interface io.vertx.ext.web.handler.RedirectAuthHandler does not redeclare the @Fluent return type  of method addAuthorities(java.util.Set<java.lang.String>) declared by io.vertx.ext.web.handler.AuthHandler
+public interface RedirectAuthHandler extends AuthHandler {
+       ^
+[WARNING] diagnostic: warning: The following options were not recognized by any processor: '[maven.artifactId, maven.version, codegen.output.data_object_converters, maven.groupId]'
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-source (add-source) @ vertx-web ---
+[INFO] Source directory: /root/workspace/vert-x3/vertx-web/459797171/vertx-web/src/main/generated added.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ vertx-web ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ vertx-web ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- bnd-maven-plugin:3.2.0:bnd-process (default-bnd-process) @ vertx-web ---
+[WARNING] /root/workspace/vert-x3/vertx-web/459797171/vertx-web/pom.xml [0:0]: Unused Import-Package instructions: [groovy.lang.*, org.codehaus.groovy.*, kotlin.*, io.vertx.groovy.*, io.vertx.ext.bridge.*, io.vertx.lang.rxjava.*, io.vertx.lang.groovy.*, io.vertx.rxjava.core.*, io.vertx.rxjava.ext.auth.*, rx.*, io.reactivex.*, io.vertx.lang.reactivex.*, io.vertx.reactivex.*] 
+[WARNING] /root/workspace/vert-x3/vertx-web/459797171/vertx-web/pom.xml [0:0]: Export io.vertx.ext.web.templ,  has 1,  private references [io.vertx.ext.web.impl], 
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ vertx-web ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 28 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ vertx-web ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ vertx-web ---
+[INFO] Surefire report directory: /root/workspace/vert-x3/vertx-web/459797171/vertx-web/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.18.1/surefire-junit4-2.18.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.18.1/surefire-junit4-2.18.1.pom (3 KB at 6.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.18.1/surefire-providers-2.18.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.18.1/surefire-providers-2.18.1.pom (3 KB at 71.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.18.1/surefire-junit4-2.18.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.18.1/surefire-junit4-2.18.1.jar (67 KB at 885.2 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running io.vertx.ext.web.UtilsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in io.vertx.ext.web.UtilsTest
+Running io.vertx.ext.web.ConcurrentLRUCacheTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in io.vertx.ext.web.ConcurrentLRUCacheTest
+Running io.vertx.ext.web.sstore.ClusteredSessionHandlerTest
+Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 28.091 sec - in io.vertx.ext.web.sstore.ClusteredSessionHandlerTest
+Running io.vertx.ext.web.sstore.LocalSessionHandlerTest
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.807 sec - in io.vertx.ext.web.sstore.LocalSessionHandlerTest
+Running io.vertx.ext.web.templ.handlebars.impl.TemplateHandlerImplTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.298 sec - in io.vertx.ext.web.templ.handlebars.impl.TemplateHandlerImplTest
+Running io.vertx.ext.web.templ.TemplateTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.405 sec - in io.vertx.ext.web.templ.TemplateTest
+Running io.vertx.ext.web.RoutingContextNullCurrentRouteTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.091 sec - in io.vertx.ext.web.RoutingContextNullCurrentRouteTest
+Running io.vertx.ext.web.LRUCacheTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in io.vertx.ext.web.LRUCacheTest
+Running io.vertx.ext.web.SubRouterTest
+Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.004 sec - in io.vertx.ext.web.SubRouterTest
+Running io.vertx.ext.web.RouterTest
+Tests run: 175, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.068 sec - in io.vertx.ext.web.RouterTest
+Running io.vertx.ext.web.impl.RoutingContextImplTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.179 sec - in io.vertx.ext.web.impl.RoutingContextImplTest
+Running io.vertx.ext.web.impl.ParsableHeaderValueTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in io.vertx.ext.web.impl.ParsableHeaderValueTest
+Running io.vertx.ext.web.impl.HeaderParserTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in io.vertx.ext.web.impl.HeaderParserTest
+Running io.vertx.ext.web.handler.LoggerHandlerTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.116 sec - in io.vertx.ext.web.handler.LoggerHandlerTest
+Running io.vertx.ext.web.handler.StaticDirectoryListHandlerTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.21 sec - in io.vertx.ext.web.handler.StaticDirectoryListHandlerTest
+Running io.vertx.ext.web.handler.BodyHandlerTest
+Tests run: 39, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.113 sec - in io.vertx.ext.web.handler.BodyHandlerTest
+Running io.vertx.ext.web.handler.BasicAuthHandlerTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.443 sec - in io.vertx.ext.web.handler.BasicAuthHandlerTest
+Running io.vertx.ext.web.handler.sockjs.SockJSProtocolTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.959 sec - in io.vertx.ext.web.handler.sockjs.SockJSProtocolTest
+Running io.vertx.ext.web.handler.sockjs.SockJSHandlerTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.735 sec - in io.vertx.ext.web.handler.sockjs.SockJSHandlerTest
+Running io.vertx.ext.web.handler.sockjs.SockJSAsyncHandlerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.037 sec - in io.vertx.ext.web.handler.sockjs.SockJSAsyncHandlerTest
+Running io.vertx.ext.web.handler.sockjs.SockJSSessionTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 25.678 sec - in io.vertx.ext.web.handler.sockjs.SockJSSessionTest
+Running io.vertx.ext.web.handler.CSRFHandlerTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.235 sec - in io.vertx.ext.web.handler.CSRFHandlerTest
+Running io.vertx.ext.web.handler.RerouteTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.274 sec - in io.vertx.ext.web.handler.RerouteTest
+Running io.vertx.ext.web.handler.OAuth2AuthHandlerTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.383 sec - in io.vertx.ext.web.handler.OAuth2AuthHandlerTest
+Running io.vertx.ext.web.handler.ResponseTimeTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.308 sec - in io.vertx.ext.web.handler.ResponseTimeTest
+Running io.vertx.ext.web.handler.EventbusBridgeTest
+Tests run: 73, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.823 sec - in io.vertx.ext.web.handler.EventbusBridgeTest
+Running io.vertx.ext.web.handler.ErrorHandlerTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.306 sec - in io.vertx.ext.web.handler.ErrorHandlerTest
+Running io.vertx.ext.web.handler.BlockingHandlerTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.121 sec - in io.vertx.ext.web.handler.BlockingHandlerTest
+Running io.vertx.ext.web.handler.FaviconHandlerTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.093 sec - in io.vertx.ext.web.handler.FaviconHandlerTest
+Running io.vertx.ext.web.handler.TimeoutHandlerTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.087 sec - in io.vertx.ext.web.handler.TimeoutHandlerTest
+Running io.vertx.ext.web.handler.ChainAuthHandlerTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.134 sec - in io.vertx.ext.web.handler.ChainAuthHandlerTest
+Running io.vertx.ext.web.handler.DigestAuthHandlerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.042 sec - in io.vertx.ext.web.handler.DigestAuthHandlerTest
+Running io.vertx.ext.web.handler.VirtualHostHandlerHttp2Test
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.299 sec - in io.vertx.ext.web.handler.VirtualHostHandlerHttp2Test
+Running io.vertx.ext.web.handler.CORSHandlerTest
+Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.562 sec - in io.vertx.ext.web.handler.CORSHandlerTest
+Running io.vertx.ext.web.handler.JWTAuthHandlerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.146 sec - in io.vertx.ext.web.handler.JWTAuthHandlerTest
+Running io.vertx.ext.web.handler.AuthWithSessionsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.06 sec - in io.vertx.ext.web.handler.AuthWithSessionsTest
+Running io.vertx.ext.web.handler.RedirectAuthHandlerTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.378 sec - in io.vertx.ext.web.handler.RedirectAuthHandlerTest
+Running io.vertx.ext.web.handler.StaticHandlerTest
+Tests run: 60, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.425 sec - in io.vertx.ext.web.handler.StaticHandlerTest
+Running io.vertx.ext.web.handler.VirtualHostHandlerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.053 sec - in io.vertx.ext.web.handler.VirtualHostHandlerTest
+Running io.vertx.ext.web.handler.ResponseContentTypeHandlerTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.15 sec - in io.vertx.ext.web.handler.ResponseContentTypeHandlerTest
+Running io.vertx.ext.web.handler.CustomAuthHandlerTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.106 sec - in io.vertx.ext.web.handler.CustomAuthHandlerTest
+Running io.vertx.ext.web.handler.CookieHandlerTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.097 sec - in io.vertx.ext.web.handler.CookieHandlerTest
+
+Results :
+
+Tests run: 571, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building vertx-web-client 3.6.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ vertx-web-client ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-processor-plugin:3.2.0:process (generate-sources) @ vertx-web-client ---
+[WARNING] diagnostic: warning: The following options were not recognized by any processor: '[maven.artifactId, maven.version, codegen.output.data_object_converters, maven.groupId]'
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.0.0:add-source (add-source) @ vertx-web-client ---
+[INFO] Source directory: /root/workspace/vert-x3/vertx-web/459797171/vertx-web-client/src/main/generated added.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ vertx-web-client ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/vert-x3/vertx-web/459797171/vertx-web-client/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ vertx-web-client ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 28 source files to /root/workspace/vert-x3/vertx-web/459797171/vertx-web-client/target/classes
+[INFO] /root/workspace/vert-x3/vertx-web/459797171/vertx-web-client/src/main/java/io/vertx/ext/web/client/impl/HttpContext.java: Some input files use unchecked or unsafe operations.
+[INFO] /root/workspace/vert-x3/vertx-web/459797171/vertx-web-client/src/main/java/io/vertx/ext/web/client/impl/HttpContext.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- bnd-maven-plugin:3.2.0:bnd-process (default-bnd-process) @ vertx-web-client ---
+[WARNING] /root/workspace/vert-x3/vertx-web/459797171/vertx-web-client/pom.xml [0:0]: Unused Import-Package instructions: [groovy.lang.*, org.codehaus.groovy.*, kotlin.*, io.vertx.groovy.*, io.vertx.lang.rxjava.*, io.vertx.lang.groovy.*, io.vertx.rxjava.core.*, rx.*, io.reactivex.*, io.vertx.reactivex.*, io.vertx.lang.reactivex.*] 
+[WARNING] /root/workspace/vert-x3/vertx-web/459797171/vertx-web-client/pom.xml [0:0]: Export io.vertx.ext.web.client.impl.predicate,  has 1,  private references [io.vertx.ext.web.client.impl], 
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ vertx-web-client ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/vert-x3/vertx-web/459797171/vertx-web-client/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ vertx-web-client ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ vertx-web-client ---
+[INFO] Surefire report directory: /root/workspace/vert-x3/vertx-web/459797171/vertx-web-client/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running io.vertx.ext.web.client.InterceptorTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.543 sec - in io.vertx.ext.web.client.InterceptorTest
+Running io.vertx.ext.web.client.MultipartFormUploadTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.176 sec - in io.vertx.ext.web.client.MultipartFormUploadTest
+Running io.vertx.ext.web.client.WebClientTest
+host2.com:4043
+Tests run: 87, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 136.852 sec <<< FAILURE! - in io.vertx.ext.web.client.WebClientTest
+testInvalidRedirection(io.vertx.ext.web.client.WebClientTest)  Time elapsed: 120.053 sec  <<< ERROR!
+java.lang.IllegalStateException: Timed out in waiting for test complete
+	at io.vertx.test.core.AsyncTestBase.await(AsyncTestBase.java:131)
+	at io.vertx.test.core.AsyncTestBase.await(AsyncTestBase.java:119)
+	at io.vertx.ext.web.client.WebClientTest.testInvalidRedirection(WebClientTest.java:1062)
+
+Running io.vertx.ext.web.client.HandlerExceptionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.04 sec - in io.vertx.ext.web.client.HandlerExceptionTest
+Running io.vertx.ext.web.client.WebClientOptionsTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec - in io.vertx.ext.web.client.WebClientOptionsTest
+Running io.vertx.ext.web.client.SessionAwareWebClientTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.72 sec - in io.vertx.ext.web.client.SessionAwareWebClientTest
+
+Results :
+
+Tests in error: 
+  WebClientTest.testInvalidRedirection:1062->AsyncTestBase.await:119->AsyncTestBase.await:131 » IllegalState
+
+Tests run: 117, Failures: 0, Errors: 1, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] vertx-web-parent ................................... SUCCESS [  1.212 s]
+[INFO] vertx-web-common ................................... SUCCESS [  3.600 s]
+[INFO] vertx-web .......................................... SUCCESS [02:08 min]
+[INFO] vertx-web-client ................................... FAILURE [02:25 min]
+[INFO] vertx-template-engines ............................. SKIPPED
+[INFO] vertx-web-templ-jade ............................... SKIPPED
+[INFO] vertx-web-templ-mvel ............................... SKIPPED
+[INFO] vertx-web-templ-handlebars ......................... SKIPPED
+[INFO] vertx-web-templ-thymeleaf .......................... SKIPPED
+[INFO] vertx-web-templ-freemarker ......................... SKIPPED
+[INFO] vertx-web-templ-pebble ............................. SKIPPED
+[INFO] vertx-web-templ-rocker ............................. SKIPPED
+[INFO] vertx-web-api-contract ............................. SKIPPED
+[INFO] vertx-web-api-service .............................. SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 04:39 min
+[INFO] Finished at: 2018-11-27T09:51:25+01:00
+[INFO] Final Memory: 42M/909M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.18.1:test (default-test) on project vertx-web-client: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/vert-x3/vertx-web/459797171/vertx-web-client/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :vertx-web-client
