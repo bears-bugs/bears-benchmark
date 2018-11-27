@@ -1,0 +1,152 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 687, 
+      "numberRunning": 688, 
+      "numberFailing": 0, 
+      "numberErroring": 1, 
+      "failures": [
+        {
+          "failureName": "java.lang.IllegalStateException", 
+          "isError": true, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 0
+    }, 
+    "failingModule": "/root/workspace/vert-x3/vertx-web/459797171/vertx-web-client", 
+    "failureDetails": [
+      {
+        "failureName": "java.lang.IllegalStateException", 
+        "detail": "Timed out in waiting for test complete", 
+        "isError": true, 
+        "testMethod": "testInvalidRedirection", 
+        "testClass": "io.vertx.ext.web.client.WebClientTest"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 86, 
+        "numberRunning": 87, 
+        "testClass": "io.vertx.ext.web.client.WebClientTest", 
+        "numberFailing": 0, 
+        "numberErroring": 1, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/vert-x3/vertx-web/builds/460136219", 
+      "date": "Nov 27, 2018 9:44:06 AM", 
+      "id": 460136219
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/vert-x3/vertx-web/builds/459797171", 
+      "date": "Nov 26, 2018 4:34:21 PM", 
+      "id": 459797171
+    }
+  }, 
+  "repository": {
+    "name": "vert-x3/vertx-web", 
+    "url": "https://github.com/vert-x3/vertx-web", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 26628954
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/vert-x3/vertx-web/commit/356bbb65dcf9515d970921ff75865a298f3c87c6", 
+      "sha": "356bbb65dcf9515d970921ff75865a298f3c87c6", 
+      "branchName": "master", 
+      "date": "Nov 27, 2018 9:31:39 AM", 
+      "repoName": "vert-x3/vertx-web"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/vert-x3/vertx-web/commit/9d0f7dc62a5655d6f610b727850b4239f7f4e211", 
+      "sha": "9d0f7dc62a5655d6f610b727850b4239f7f4e211", 
+      "branchName": "master", 
+      "date": "Nov 26, 2018 4:23:42 PM", 
+      "repoName": "vert-x3/vertx-web"
+    }
+  }, 
+  "bugName": "vert-x3-vertx-web-459797171-460136219", 
+  "version": "latest", 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 3, 
+      "numberDeleted": 3
+    }
+  }, 
+  "type": "passing_passing", 
+  "bugId": "Bears-248", 
+  "projectMetrics": {
+    "numberSourceFiles": 255, 
+    "numberLibrariesFailingModule": 25, 
+    "numberTestFiles": 104, 
+    "numberModules": 13
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 397947304, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 495452160, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Nov 27, 2018 9:55:54 AM", 
+    "projectRootPomPath": "./workspace/vert-x3/vertx-web/459797171/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          0, 
+          21, 
+          19, 
+          0, 
+          89
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 129
+      }, 
+      "testing": {
+        "stepDurations": [
+          284
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 284
+      }, 
+      "cloning": {
+        "stepDurations": [
+          7
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 7
+      }
+    }, 
+    "reproductionDateBeginning": "Nov 27, 2018 9:44:23 AM", 
+    "totalDuration": 684
+  }
+}
