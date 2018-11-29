@@ -1,0 +1,71 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building modelmapper-vavr-module 1.0.2
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ modelmapper-vavr-module ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ modelmapper-vavr-module ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/julianps/modelmapper-module-vavr/441307573/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ modelmapper-vavr-module ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ modelmapper-vavr-module ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/julianps/modelmapper-module-vavr/441307573/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ modelmapper-vavr-module ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.21.0:test (default-test) @ modelmapper-vavr-module ---
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng-utils/2.21.0/surefire-testng-utils-2.21.0.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng-utils/2.21.0/surefire-testng-utils-2.21.0.jar (27 KB at 44.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.21.0/surefire-grouper-2.21.0.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.21.0/surefire-grouper-2.21.0.jar (40 KB at 888.5 KB/sec)
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.github.julianps.modelmapper.ValueConverterTest
+[ERROR] Tests run: 9, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.612 s <<< FAILURE! - in com.github.julianps.modelmapper.ValueConverterTest
+[ERROR] testNormalListNull(com.github.julianps.modelmapper.ValueConverterTest)  Time elapsed: 0.017 s  <<< ERROR!
+org.modelmapper.MappingException: 
+ModelMapper mapping errors:
+
+1) Converter com.github.julianps.modelmapper.ValueConverter@7494e528 failed to convert io.vavr.collection.List to io.vavr.collection.List.
+
+1 error
+	at com.github.julianps.modelmapper.ValueConverterTest.testNormalListNull(ValueConverterTest.java:57)
+Caused by: java.lang.NullPointerException
+	at com.github.julianps.modelmapper.ValueConverterTest.testNormalListNull(ValueConverterTest.java:57)
+
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Errors: 
+[ERROR]   ValueConverterTest.testNormalListNull:57 » Mapping ModelMapper mapping errors:...
+[INFO] 
+[ERROR] Tests run: 9, Failures: 0, Errors: 1, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 5.994 s
+[INFO] Finished at: 2018-11-29T12:59:49+01:00
+[INFO] Final Memory: 20M/615M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.21.0:test (default-test) on project modelmapper-vavr-module: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/julianps/modelmapper-module-vavr/441307573/target/surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
