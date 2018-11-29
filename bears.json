@@ -1,0 +1,151 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 259, 
+      "numberRunning": 260, 
+      "numberFailing": 0, 
+      "numberErroring": 1, 
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException", 
+          "isError": true, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 0
+    }, 
+    "failingModule": "/root/workspace/apache/incubator-tamaya/457807119/code/spi-support", 
+    "failureDetails": [
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "org.apache.tamaya.spisupport.EnumConverterTest", 
+        "testMethod": "testConvert_Nulls", 
+        "isError": true
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 4, 
+        "numberRunning": 5, 
+        "testClass": "org.apache.tamaya.spisupport.EnumConverterTest", 
+        "numberFailing": 0, 
+        "numberErroring": 1, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/apache/incubator-tamaya/builds/461484371", 
+      "date": "Nov 29, 2018 10:15:58 PM", 
+      "id": 461484371
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/apache/incubator-tamaya/builds/457807119", 
+      "date": "Nov 21, 2018 7:52:03 AM", 
+      "id": 457807119
+    }
+  }, 
+  "repository": {
+    "name": "apache/incubator-tamaya", 
+    "url": "https://github.com/apache/incubator-tamaya", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 26951044
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/apache/incubator-tamaya/commit/69090c547ffd1f7ccd1e22a44cb56ff7ffea678d", 
+      "sha": "69090c547ffd1f7ccd1e22a44cb56ff7ffea678d", 
+      "branchName": "master", 
+      "date": "Nov 29, 2018 10:08:55 PM", 
+      "repoName": "apache/incubator-tamaya"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/apache/incubator-tamaya/commit/e7e02c4b37f0aef84bf158778faa64b00e410b51", 
+      "sha": "e7e02c4b37f0aef84bf158778faa64b00e410b51", 
+      "branchName": "master", 
+      "date": "Nov 21, 2018 7:49:03 AM", 
+      "repoName": "apache/incubator-tamaya"
+    }
+  }, 
+  "bugName": "apache-incubator-tamaya-457807119-461484371", 
+  "version": "latest", 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 13, 
+      "numberDeleted": 7
+    }
+  }, 
+  "type": "passing_passing", 
+  "bugId": "Bears-196", 
+  "projectMetrics": {
+    "numberSourceFiles": 104, 
+    "numberLibrariesFailingModule": 8, 
+    "numberTestFiles": 104, 
+    "numberModules": 9
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 322442408, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 414187520, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Nov 29, 2018 10:20:05 PM", 
+    "projectRootPomPath": "./workspace/apache/incubator-tamaya/457807119/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          0, 
+          1, 
+          0, 
+          0, 
+          108
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 109
+      }, 
+      "testing": {
+        "stepDurations": [
+          19
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 19
+      }, 
+      "cloning": {
+        "stepDurations": [
+          6
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 6
+      }
+    }, 
+    "reproductionDateBeginning": "Nov 29, 2018 10:16:12 PM", 
+    "totalDuration": 228
+  }
+}
