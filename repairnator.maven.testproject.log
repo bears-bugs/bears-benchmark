@@ -1,0 +1,172 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Jackson dataformats: Binary
+[INFO] Jackson dataformat: CBOR
+[INFO] Jackson dataformat: Smile
+[INFO] Jackson dataformat: Avro
+[INFO] Jackson dataformat: protobuf
+[INFO] Jackson dataformat: Ion
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Jackson dataformats: Binary 2.9.8-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-java) @ jackson-dataformats-binary ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.7:add-source (add-generated-sources) @ jackson-dataformats-binary ---
+[INFO] Source directory: /root/workspace/FasterXML/jackson-dataformats-binary/461131167/target/generated-sources added.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Jackson dataformat: CBOR 2.9.8-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-java) @ jackson-dataformat-cbor ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.7:add-source (add-generated-sources) @ jackson-dataformat-cbor ---
+[INFO] Source directory: /root/workspace/FasterXML/jackson-dataformats-binary/461131167/cbor/target/generated-sources added.
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (process-packageVersion) @ jackson-dataformat-cbor ---
+[INFO] Replacement run on 1 file.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ jackson-dataformat-cbor ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ jackson-dataformat-cbor ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 7 source files to /root/workspace/FasterXML/jackson-dataformats-binary/461131167/cbor/target/classes
+[WARNING] bootstrap class path not set in conjunction with -source 1.7
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ jackson-dataformat-cbor ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ jackson-dataformat-cbor ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ jackson-dataformat-cbor ---
+[INFO] Surefire report directory: /root/workspace/FasterXML/jackson-dataformats-binary/461131167/cbor/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.pom (3 KB at 3.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.17/surefire-providers-2.17.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.17/surefire-providers-2.17.pom (3 KB at 58.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.jar (63 KB at 826.5 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.fasterxml.jackson.dataformat.cbor.mapper.BiggerDataTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.09 sec - in com.fasterxml.jackson.dataformat.cbor.mapper.BiggerDataTest
+Running com.fasterxml.jackson.dataformat.cbor.mapper.MapperSimpleReadTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in com.fasterxml.jackson.dataformat.cbor.mapper.MapperSimpleReadTest
+Running com.fasterxml.jackson.dataformat.cbor.mapper.NumberBeanTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec - in com.fasterxml.jackson.dataformat.cbor.mapper.NumberBeanTest
+Running com.fasterxml.jackson.dataformat.cbor.mapper.BinaryReadTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.196 sec - in com.fasterxml.jackson.dataformat.cbor.mapper.BinaryReadTest
+Running com.fasterxml.jackson.dataformat.cbor.mapper.TreeNodesTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec - in com.fasterxml.jackson.dataformat.cbor.mapper.TreeNodesTest
+Running com.fasterxml.jackson.dataformat.cbor.mapper.NumberArrayBeanTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 sec - in com.fasterxml.jackson.dataformat.cbor.mapper.NumberArrayBeanTest
+Running com.fasterxml.jackson.dataformat.cbor.ParserInputStreamTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.242 sec - in com.fasterxml.jackson.dataformat.cbor.ParserInputStreamTest
+Running com.fasterxml.jackson.dataformat.cbor.NumberCoercing32Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 sec - in com.fasterxml.jackson.dataformat.cbor.NumberCoercing32Test
+Running com.fasterxml.jackson.dataformat.cbor.GeneratorBinaryTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.188 sec - in com.fasterxml.jackson.dataformat.cbor.GeneratorBinaryTest
+Running com.fasterxml.jackson.dataformat.cbor.filter.StreamingDecoratorsTest
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec <<< FAILURE! - in com.fasterxml.jackson.dataformat.cbor.filter.StreamingDecoratorsTest
+testOutputDecorators(com.fasterxml.jackson.dataformat.cbor.filter.StreamingDecoratorsTest)  Time elapsed: 0.011 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: Expected token VALUE_NUMBER_INT, current token VALUE_STRING
+	at junit.framework.Assert.fail(Assert.java:57)
+	at junit.framework.TestCase.fail(TestCase.java:227)
+	at com.fasterxml.jackson.dataformat.cbor.CBORTestBase.assertToken(CBORTestBase.java:94)
+	at com.fasterxml.jackson.dataformat.cbor.filter.StreamingDecoratorsTest.testOutputDecorators(StreamingDecoratorsTest.java:38)
+
+testInputDecorators(com.fasterxml.jackson.dataformat.cbor.filter.StreamingDecoratorsTest)  Time elapsed: 0.001 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: Expected token VALUE_NUMBER_INT, current token null
+	at junit.framework.Assert.fail(Assert.java:57)
+	at junit.framework.TestCase.fail(TestCase.java:227)
+	at com.fasterxml.jackson.dataformat.cbor.CBORTestBase.assertToken(CBORTestBase.java:94)
+	at com.fasterxml.jackson.dataformat.cbor.filter.StreamingDecoratorsTest.testInputDecorators(StreamingDecoratorsTest.java:18)
+
+Running com.fasterxml.jackson.dataformat.cbor.ArrayGenerationTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.074 sec - in com.fasterxml.jackson.dataformat.cbor.ArrayGenerationTest
+Running com.fasterxml.jackson.dataformat.cbor.GeneratorSimpleTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 sec - in com.fasterxml.jackson.dataformat.cbor.GeneratorSimpleTest
+Running com.fasterxml.jackson.dataformat.cbor.GeneratorDeepNestingTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec - in com.fasterxml.jackson.dataformat.cbor.GeneratorDeepNestingTest
+Running com.fasterxml.jackson.dataformat.cbor.parse.ParserDupHandlingTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec - in com.fasterxml.jackson.dataformat.cbor.parse.ParserDupHandlingTest
+Running com.fasterxml.jackson.dataformat.cbor.parse.ParserNextXxxTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.344 sec - in com.fasterxml.jackson.dataformat.cbor.parse.ParserNextXxxTest
+Running com.fasterxml.jackson.dataformat.cbor.parse.BasicParserTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.053 sec - in com.fasterxml.jackson.dataformat.cbor.parse.BasicParserTest
+Running com.fasterxml.jackson.dataformat.cbor.parse.UndefinedValueTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in com.fasterxml.jackson.dataformat.cbor.parse.UndefinedValueTest
+Running com.fasterxml.jackson.dataformat.cbor.parse.ParserInteropTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in com.fasterxml.jackson.dataformat.cbor.parse.ParserInteropTest
+Running com.fasterxml.jackson.dataformat.cbor.parse.UnicodeHandlingTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 sec - in com.fasterxml.jackson.dataformat.cbor.parse.UnicodeHandlingTest
+Running com.fasterxml.jackson.dataformat.cbor.parse.BigNumbersTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in com.fasterxml.jackson.dataformat.cbor.parse.BigNumbersTest
+Running com.fasterxml.jackson.dataformat.cbor.parse.ParserNumbersTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec - in com.fasterxml.jackson.dataformat.cbor.parse.ParserNumbersTest
+Running com.fasterxml.jackson.dataformat.cbor.GeneratorDupHandlingTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec - in com.fasterxml.jackson.dataformat.cbor.GeneratorDupHandlingTest
+Running com.fasterxml.jackson.dataformat.cbor.SharedRawGeneratorBufferTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 sec - in com.fasterxml.jackson.dataformat.cbor.SharedRawGeneratorBufferTest
+Running com.fasterxml.jackson.dataformat.cbor.GeneratorLongStringTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.306 sec - in com.fasterxml.jackson.dataformat.cbor.GeneratorLongStringTest
+Running com.fasterxml.jackson.dataformat.cbor.GeneratorInvalidCallsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.fasterxml.jackson.dataformat.cbor.GeneratorInvalidCallsTest
+Running com.fasterxml.jackson.dataformat.cbor.CBORFactoryPropertiesTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.159 sec - in com.fasterxml.jackson.dataformat.cbor.CBORFactoryPropertiesTest
+Running com.fasterxml.jackson.dataformat.cbor.GeneratorInteropTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.fasterxml.jackson.dataformat.cbor.GeneratorInteropTest
+Running com.fasterxml.jackson.dataformat.cbor.MapAndArrayTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.054 sec - in com.fasterxml.jackson.dataformat.cbor.MapAndArrayTest
+Running com.fasterxml.jackson.dataformat.cbor.ParserWithJsonOrgSampleTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.fasterxml.jackson.dataformat.cbor.ParserWithJsonOrgSampleTest
+
+Results :
+
+Failed tests: 
+  StreamingDecoratorsTest.testOutputDecorators:38->CBORTestBase.assertToken:94 Expected token VALUE_NUMBER_INT, current token VALUE_STRING
+  StreamingDecoratorsTest.testInputDecorators:18->CBORTestBase.assertToken:94 Expected token VALUE_NUMBER_INT, current token null
+
+Tests run: 101, Failures: 2, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] Jackson dataformats: Binary ........................ SUCCESS [  0.525 s]
+[INFO] Jackson dataformat: CBOR ........................... FAILURE [  8.153 s]
+[INFO] Jackson dataformat: Smile .......................... SKIPPED
+[INFO] Jackson dataformat: Avro ........................... SKIPPED
+[INFO] Jackson dataformat: protobuf ....................... SKIPPED
+[INFO] Jackson dataformat: Ion ............................ SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 10.987 s
+[INFO] Finished at: 2018-11-29T07:56:23+01:00
+[INFO] Final Memory: 32M/611M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.17:test (default-test) on project jackson-dataformat-cbor: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/FasterXML/jackson-dataformats-binary/461131167/cbor/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :jackson-dataformat-cbor
