@@ -50,123 +50,823 @@
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.17:test (default-test) @ jackson-dataformat-cbor ---
 [INFO] Surefire report directory: /root/workspace/FasterXML/jackson-dataformats-binary/461131167/cbor/target/surefire-reports
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.pom (3 KB at 3.7 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.17/surefire-providers-2.17.pom
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.17/surefire-providers-2.17.pom (3 KB at 58.1 KB/sec)
-[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.jar
-[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.17/surefire-junit4-2.17.jar (63 KB at 826.5 KB/sec)
 
 -------------------------------------------------------
  T E S T S
 -------------------------------------------------------
 Running com.fasterxml.jackson.dataformat.cbor.mapper.BiggerDataTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.09 sec - in com.fasterxml.jackson.dataformat.cbor.mapper.BiggerDataTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.398 sec - in com.fasterxml.jackson.dataformat.cbor.mapper.BiggerDataTest
 Running com.fasterxml.jackson.dataformat.cbor.mapper.MapperSimpleReadTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in com.fasterxml.jackson.dataformat.cbor.mapper.MapperSimpleReadTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec - in com.fasterxml.jackson.dataformat.cbor.mapper.MapperSimpleReadTest
 Running com.fasterxml.jackson.dataformat.cbor.mapper.NumberBeanTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec - in com.fasterxml.jackson.dataformat.cbor.mapper.NumberBeanTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec - in com.fasterxml.jackson.dataformat.cbor.mapper.NumberBeanTest
 Running com.fasterxml.jackson.dataformat.cbor.mapper.BinaryReadTest
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.196 sec - in com.fasterxml.jackson.dataformat.cbor.mapper.BinaryReadTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.237 sec - in com.fasterxml.jackson.dataformat.cbor.mapper.BinaryReadTest
 Running com.fasterxml.jackson.dataformat.cbor.mapper.TreeNodesTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec - in com.fasterxml.jackson.dataformat.cbor.mapper.TreeNodesTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec - in com.fasterxml.jackson.dataformat.cbor.mapper.TreeNodesTest
 Running com.fasterxml.jackson.dataformat.cbor.mapper.NumberArrayBeanTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 sec - in com.fasterxml.jackson.dataformat.cbor.mapper.NumberArrayBeanTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec - in com.fasterxml.jackson.dataformat.cbor.mapper.NumberArrayBeanTest
 Running com.fasterxml.jackson.dataformat.cbor.ParserInputStreamTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.242 sec - in com.fasterxml.jackson.dataformat.cbor.ParserInputStreamTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.186 sec - in com.fasterxml.jackson.dataformat.cbor.ParserInputStreamTest
 Running com.fasterxml.jackson.dataformat.cbor.NumberCoercing32Test
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 sec - in com.fasterxml.jackson.dataformat.cbor.NumberCoercing32Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec - in com.fasterxml.jackson.dataformat.cbor.NumberCoercing32Test
 Running com.fasterxml.jackson.dataformat.cbor.GeneratorBinaryTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.188 sec - in com.fasterxml.jackson.dataformat.cbor.GeneratorBinaryTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.187 sec - in com.fasterxml.jackson.dataformat.cbor.GeneratorBinaryTest
 Running com.fasterxml.jackson.dataformat.cbor.filter.StreamingDecoratorsTest
-Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec <<< FAILURE! - in com.fasterxml.jackson.dataformat.cbor.filter.StreamingDecoratorsTest
-testOutputDecorators(com.fasterxml.jackson.dataformat.cbor.filter.StreamingDecoratorsTest)  Time elapsed: 0.011 sec  <<< FAILURE!
-junit.framework.AssertionFailedError: Expected token VALUE_NUMBER_INT, current token VALUE_STRING
-	at junit.framework.Assert.fail(Assert.java:57)
-	at junit.framework.TestCase.fail(TestCase.java:227)
-	at com.fasterxml.jackson.dataformat.cbor.CBORTestBase.assertToken(CBORTestBase.java:94)
-	at com.fasterxml.jackson.dataformat.cbor.filter.StreamingDecoratorsTest.testOutputDecorators(StreamingDecoratorsTest.java:38)
-
-testInputDecorators(com.fasterxml.jackson.dataformat.cbor.filter.StreamingDecoratorsTest)  Time elapsed: 0.001 sec  <<< FAILURE!
-junit.framework.AssertionFailedError: Expected token VALUE_NUMBER_INT, current token null
-	at junit.framework.Assert.fail(Assert.java:57)
-	at junit.framework.TestCase.fail(TestCase.java:227)
-	at com.fasterxml.jackson.dataformat.cbor.CBORTestBase.assertToken(CBORTestBase.java:94)
-	at com.fasterxml.jackson.dataformat.cbor.filter.StreamingDecoratorsTest.testInputDecorators(StreamingDecoratorsTest.java:18)
-
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in com.fasterxml.jackson.dataformat.cbor.filter.StreamingDecoratorsTest
 Running com.fasterxml.jackson.dataformat.cbor.ArrayGenerationTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.074 sec - in com.fasterxml.jackson.dataformat.cbor.ArrayGenerationTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.087 sec - in com.fasterxml.jackson.dataformat.cbor.ArrayGenerationTest
 Running com.fasterxml.jackson.dataformat.cbor.GeneratorSimpleTest
-Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 sec - in com.fasterxml.jackson.dataformat.cbor.GeneratorSimpleTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 sec - in com.fasterxml.jackson.dataformat.cbor.GeneratorSimpleTest
 Running com.fasterxml.jackson.dataformat.cbor.GeneratorDeepNestingTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec - in com.fasterxml.jackson.dataformat.cbor.GeneratorDeepNestingTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in com.fasterxml.jackson.dataformat.cbor.GeneratorDeepNestingTest
 Running com.fasterxml.jackson.dataformat.cbor.parse.ParserDupHandlingTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec - in com.fasterxml.jackson.dataformat.cbor.parse.ParserDupHandlingTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in com.fasterxml.jackson.dataformat.cbor.parse.ParserDupHandlingTest
 Running com.fasterxml.jackson.dataformat.cbor.parse.ParserNextXxxTest
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.344 sec - in com.fasterxml.jackson.dataformat.cbor.parse.ParserNextXxxTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.309 sec - in com.fasterxml.jackson.dataformat.cbor.parse.ParserNextXxxTest
 Running com.fasterxml.jackson.dataformat.cbor.parse.BasicParserTest
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.053 sec - in com.fasterxml.jackson.dataformat.cbor.parse.BasicParserTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.054 sec - in com.fasterxml.jackson.dataformat.cbor.parse.BasicParserTest
 Running com.fasterxml.jackson.dataformat.cbor.parse.UndefinedValueTest
 Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in com.fasterxml.jackson.dataformat.cbor.parse.UndefinedValueTest
 Running com.fasterxml.jackson.dataformat.cbor.parse.ParserInteropTest
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in com.fasterxml.jackson.dataformat.cbor.parse.ParserInteropTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in com.fasterxml.jackson.dataformat.cbor.parse.ParserInteropTest
 Running com.fasterxml.jackson.dataformat.cbor.parse.UnicodeHandlingTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 sec - in com.fasterxml.jackson.dataformat.cbor.parse.UnicodeHandlingTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.035 sec - in com.fasterxml.jackson.dataformat.cbor.parse.UnicodeHandlingTest
 Running com.fasterxml.jackson.dataformat.cbor.parse.BigNumbersTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in com.fasterxml.jackson.dataformat.cbor.parse.BigNumbersTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec - in com.fasterxml.jackson.dataformat.cbor.parse.BigNumbersTest
 Running com.fasterxml.jackson.dataformat.cbor.parse.ParserNumbersTest
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec - in com.fasterxml.jackson.dataformat.cbor.parse.ParserNumbersTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec - in com.fasterxml.jackson.dataformat.cbor.parse.ParserNumbersTest
 Running com.fasterxml.jackson.dataformat.cbor.GeneratorDupHandlingTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec - in com.fasterxml.jackson.dataformat.cbor.GeneratorDupHandlingTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in com.fasterxml.jackson.dataformat.cbor.GeneratorDupHandlingTest
 Running com.fasterxml.jackson.dataformat.cbor.SharedRawGeneratorBufferTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 sec - in com.fasterxml.jackson.dataformat.cbor.SharedRawGeneratorBufferTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec - in com.fasterxml.jackson.dataformat.cbor.SharedRawGeneratorBufferTest
 Running com.fasterxml.jackson.dataformat.cbor.GeneratorLongStringTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.306 sec - in com.fasterxml.jackson.dataformat.cbor.GeneratorLongStringTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.255 sec - in com.fasterxml.jackson.dataformat.cbor.GeneratorLongStringTest
 Running com.fasterxml.jackson.dataformat.cbor.GeneratorInvalidCallsTest
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.fasterxml.jackson.dataformat.cbor.GeneratorInvalidCallsTest
 Running com.fasterxml.jackson.dataformat.cbor.CBORFactoryPropertiesTest
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.159 sec - in com.fasterxml.jackson.dataformat.cbor.CBORFactoryPropertiesTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.161 sec - in com.fasterxml.jackson.dataformat.cbor.CBORFactoryPropertiesTest
 Running com.fasterxml.jackson.dataformat.cbor.GeneratorInteropTest
 Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.fasterxml.jackson.dataformat.cbor.GeneratorInteropTest
 Running com.fasterxml.jackson.dataformat.cbor.MapAndArrayTest
-Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.054 sec - in com.fasterxml.jackson.dataformat.cbor.MapAndArrayTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.049 sec - in com.fasterxml.jackson.dataformat.cbor.MapAndArrayTest
 Running com.fasterxml.jackson.dataformat.cbor.ParserWithJsonOrgSampleTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.fasterxml.jackson.dataformat.cbor.ParserWithJsonOrgSampleTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in com.fasterxml.jackson.dataformat.cbor.ParserWithJsonOrgSampleTest
 
 Results :
 
-Failed tests: 
-  StreamingDecoratorsTest.testOutputDecorators:38->CBORTestBase.assertToken:94 Expected token VALUE_NUMBER_INT, current token VALUE_STRING
-  StreamingDecoratorsTest.testInputDecorators:18->CBORTestBase.assertToken:94 Expected token VALUE_NUMBER_INT, current token null
+Tests run: 101, Failures: 0, Errors: 0, Skipped: 0
 
-Tests run: 101, Failures: 2, Errors: 0, Skipped: 0
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Jackson dataformat: Smile 2.9.8-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-java) @ jackson-dataformat-smile ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.7:add-source (add-generated-sources) @ jackson-dataformat-smile ---
+[INFO] Source directory: /root/workspace/FasterXML/jackson-dataformats-binary/461131167/smile/target/generated-sources added.
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (process-packageVersion) @ jackson-dataformat-smile ---
+[INFO] Replacement run on 1 file.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ jackson-dataformat-smile ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ jackson-dataformat-smile ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 13 source files to /root/workspace/FasterXML/jackson-dataformats-binary/461131167/smile/target/classes
+[WARNING] bootstrap class path not set in conjunction with -source 1.7
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ jackson-dataformat-smile ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ jackson-dataformat-smile ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ jackson-dataformat-smile ---
+[INFO] Surefire report directory: /root/workspace/FasterXML/jackson-dataformats-binary/461131167/smile/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.fasterxml.jackson.dataformat.smile.gen.TestGeneratorLongSharedRefs
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.133 sec - in com.fasterxml.jackson.dataformat.smile.gen.TestGeneratorLongSharedRefs
+Running com.fasterxml.jackson.dataformat.smile.gen.GeneratorBinaryTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec - in com.fasterxml.jackson.dataformat.smile.gen.GeneratorBinaryTest
+Running com.fasterxml.jackson.dataformat.smile.gen.ArrayGenerationTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.048 sec - in com.fasterxml.jackson.dataformat.smile.gen.ArrayGenerationTest
+Running com.fasterxml.jackson.dataformat.smile.gen.TestGenerator
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.316 sec - in com.fasterxml.jackson.dataformat.smile.gen.TestGenerator
+Running com.fasterxml.jackson.dataformat.smile.gen.GeneratorDupHandlingTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in com.fasterxml.jackson.dataformat.smile.gen.GeneratorDupHandlingTest
+Running com.fasterxml.jackson.dataformat.smile.gen.GeneratorInvalidCallsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.fasterxml.jackson.dataformat.smile.gen.GeneratorInvalidCallsTest
+Running com.fasterxml.jackson.dataformat.smile.gen.TestGeneratorNumbers
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in com.fasterxml.jackson.dataformat.smile.gen.TestGeneratorNumbers
+Running com.fasterxml.jackson.dataformat.smile.gen.TestGeneratorSymbols
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in com.fasterxml.jackson.dataformat.smile.gen.TestGeneratorSymbols
+Running com.fasterxml.jackson.dataformat.smile.gen.TestGeneratorWithRawUtf8
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.184 sec - in com.fasterxml.jackson.dataformat.smile.gen.TestGeneratorWithRawUtf8
+Running com.fasterxml.jackson.dataformat.smile.gen.TestGeneratorLongStrings
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.384 sec - in com.fasterxml.jackson.dataformat.smile.gen.TestGeneratorLongStrings
+Running com.fasterxml.jackson.dataformat.smile.gen.TestGeneratorWithSerializedString
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.fasterxml.jackson.dataformat.smile.gen.TestGeneratorWithSerializedString
+Running com.fasterxml.jackson.dataformat.smile.gen.TestGeneratorBufferRecycle
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in com.fasterxml.jackson.dataformat.smile.gen.TestGeneratorBufferRecycle
+Running com.fasterxml.jackson.dataformat.smile.VersionsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in com.fasterxml.jackson.dataformat.smile.VersionsTest
+Running com.fasterxml.jackson.dataformat.smile.mapper.MapperFeaturesTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.088 sec - in com.fasterxml.jackson.dataformat.smile.mapper.MapperFeaturesTest
+Running com.fasterxml.jackson.dataformat.smile.mapper.NumberBeanTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 sec - in com.fasterxml.jackson.dataformat.smile.mapper.NumberBeanTest
+Running com.fasterxml.jackson.dataformat.smile.mapper.ObjectIdTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.046 sec - in com.fasterxml.jackson.dataformat.smile.mapper.ObjectIdTest
+Running com.fasterxml.jackson.dataformat.smile.mapper.SmileMapperTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.29 sec - in com.fasterxml.jackson.dataformat.smile.mapper.SmileMapperTest
+Running com.fasterxml.jackson.dataformat.smile.mapper.TreeNodesTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in com.fasterxml.jackson.dataformat.smile.mapper.TreeNodesTest
+Running com.fasterxml.jackson.dataformat.smile.mapper.BiggerDataParseTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.757 sec - in com.fasterxml.jackson.dataformat.smile.mapper.BiggerDataParseTest
+Running com.fasterxml.jackson.dataformat.smile.SmileUtilTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in com.fasterxml.jackson.dataformat.smile.SmileUtilTest
+Running com.fasterxml.jackson.dataformat.smile.filter.StreamingDecoratorsTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in com.fasterxml.jackson.dataformat.smile.filter.StreamingDecoratorsTest
+Running com.fasterxml.jackson.dataformat.smile.SmileFactoryPropertiesTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.155 sec - in com.fasterxml.jackson.dataformat.smile.SmileFactoryPropertiesTest
+Running com.fasterxml.jackson.dataformat.smile.async.SimpleBinaryParseTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.655 sec - in com.fasterxml.jackson.dataformat.smile.async.SimpleBinaryParseTest
+Running com.fasterxml.jackson.dataformat.smile.async.SimpleStringArrayTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec - in com.fasterxml.jackson.dataformat.smile.async.SimpleStringArrayTest
+Running com.fasterxml.jackson.dataformat.smile.async.AsyncSharedStringsTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.214 sec - in com.fasterxml.jackson.dataformat.smile.async.AsyncSharedStringsTest
+Running com.fasterxml.jackson.dataformat.smile.async.SimpleScalarArrayTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec - in com.fasterxml.jackson.dataformat.smile.async.SimpleScalarArrayTest
+Running com.fasterxml.jackson.dataformat.smile.async.ConfigTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in com.fasterxml.jackson.dataformat.smile.async.ConfigTest
+Running com.fasterxml.jackson.dataformat.smile.async.SimpleObjectTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec - in com.fasterxml.jackson.dataformat.smile.async.SimpleObjectTest
+Running com.fasterxml.jackson.dataformat.smile.async.AsyncParserNamesTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec - in com.fasterxml.jackson.dataformat.smile.async.AsyncParserNamesTest
+Running com.fasterxml.jackson.dataformat.smile.async.UnicodeHandlingTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.046 sec - in com.fasterxml.jackson.dataformat.smile.async.UnicodeHandlingTest
+Running com.fasterxml.jackson.dataformat.smile.async.SimpleFailsTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in com.fasterxml.jackson.dataformat.smile.async.SimpleFailsTest
+Running com.fasterxml.jackson.dataformat.smile.async.RootValuesTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.fasterxml.jackson.dataformat.smile.async.RootValuesTest
+Running com.fasterxml.jackson.dataformat.smile.async.StringObjectTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in com.fasterxml.jackson.dataformat.smile.async.StringObjectTest
+Running com.fasterxml.jackson.dataformat.smile.async.SimpleNestedTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in com.fasterxml.jackson.dataformat.smile.async.SimpleNestedTest
+Running com.fasterxml.jackson.dataformat.smile.parse.ParserDupHandlingTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in com.fasterxml.jackson.dataformat.smile.parse.ParserDupHandlingTest
+Running com.fasterxml.jackson.dataformat.smile.parse.SmileDetectionTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in com.fasterxml.jackson.dataformat.smile.parse.SmileDetectionTest
+Running com.fasterxml.jackson.dataformat.smile.parse.ParserNextXxxTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.371 sec - in com.fasterxml.jackson.dataformat.smile.parse.ParserNextXxxTest
+Running com.fasterxml.jackson.dataformat.smile.parse.NumberParsingTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec - in com.fasterxml.jackson.dataformat.smile.parse.NumberParsingTest
+Running com.fasterxml.jackson.dataformat.smile.parse.BasicParserTest
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.032 sec - in com.fasterxml.jackson.dataformat.smile.parse.BasicParserTest
+Running com.fasterxml.jackson.dataformat.smile.parse.ParserBinaryHandlingTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.133 sec - in com.fasterxml.jackson.dataformat.smile.parse.ParserBinaryHandlingTest
+Running com.fasterxml.jackson.dataformat.smile.parse.ParserSymbolHandlingTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.142 sec - in com.fasterxml.jackson.dataformat.smile.parse.ParserSymbolHandlingTest
+Running com.fasterxml.jackson.dataformat.smile.parse.FormatDetectionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec - in com.fasterxml.jackson.dataformat.smile.parse.FormatDetectionTest
+Running com.fasterxml.jackson.dataformat.smile.parse.UnicodeHandlingTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 sec - in com.fasterxml.jackson.dataformat.smile.parse.UnicodeHandlingTest
+Running com.fasterxml.jackson.dataformat.smile.parse.ParserLocationTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 sec - in com.fasterxml.jackson.dataformat.smile.parse.ParserLocationTest
+Running com.fasterxml.jackson.dataformat.smile.parse.TestParserNames
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in com.fasterxml.jackson.dataformat.smile.parse.TestParserNames
+Running com.fasterxml.jackson.dataformat.smile.parse.DocBoundaryTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in com.fasterxml.jackson.dataformat.smile.parse.DocBoundaryTest
+Running com.fasterxml.jackson.dataformat.smile.SymbolHandlingTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.fasterxml.jackson.dataformat.smile.SymbolHandlingTest
+
+Results :
+
+Tests run: 183, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Jackson dataformat: Avro 2.9.8-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-java) @ jackson-dataformat-avro ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.7:add-source (add-generated-sources) @ jackson-dataformat-avro ---
+[INFO] Source directory: /root/workspace/FasterXML/jackson-dataformats-binary/461131167/avro/target/generated-sources added.
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (process-packageVersion) @ jackson-dataformat-avro ---
+[INFO] Replacement run on 1 file.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ jackson-dataformat-avro ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ jackson-dataformat-avro ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 62 source files to /root/workspace/FasterXML/jackson-dataformats-binary/461131167/avro/target/classes
+[WARNING] bootstrap class path not set in conjunction with -source 1.7
+[WARNING] /root/workspace/FasterXML/jackson-dataformats-binary/461131167/avro/src/main/java/com/fasterxml/jackson/dataformat/avro/deser/AvroUntypedDeserializer.java:[34,40] UntypedObjectDeserializer() in com.fasterxml.jackson.databind.deser.std.UntypedObjectDeserializer has been deprecated
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ jackson-dataformat-avro ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ jackson-dataformat-avro ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ jackson-dataformat-avro ---
+[INFO] Surefire report directory: /root/workspace/FasterXML/jackson-dataformats-binary/461131167/avro/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.fasterxml.jackson.dataformat.avro.ScalarTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.73 sec - in com.fasterxml.jackson.dataformat.avro.ScalarTest
+Running com.fasterxml.jackson.dataformat.avro.interop.arrays.CollectionSubtypeTest
+Tests run: 88, Failures: 0, Errors: 0, Skipped: 8, Time elapsed: 0.431 sec - in com.fasterxml.jackson.dataformat.avro.interop.arrays.CollectionSubtypeTest
+Running com.fasterxml.jackson.dataformat.avro.interop.arrays.ListWithPrimitiveWrapperArrayTest
+Tests run: 64, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.19 sec - in com.fasterxml.jackson.dataformat.avro.interop.arrays.ListWithPrimitiveWrapperArrayTest
+Running com.fasterxml.jackson.dataformat.avro.interop.arrays.ListWithPrimitiveWrapperTest
+Tests run: 64, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.101 sec - in com.fasterxml.jackson.dataformat.avro.interop.arrays.ListWithPrimitiveWrapperTest
+Running com.fasterxml.jackson.dataformat.avro.interop.arrays.ListWithPrimitiveArrayTest
+Tests run: 56, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.104 sec - in com.fasterxml.jackson.dataformat.avro.interop.arrays.ListWithPrimitiveArrayTest
+Running com.fasterxml.jackson.dataformat.avro.interop.arrays.ListWithComplexTest
+Tests run: 48, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.185 sec - in com.fasterxml.jackson.dataformat.avro.interop.arrays.ListWithComplexTest
+Running com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroMetaTest
+Tests run: 40, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.056 sec - in com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroMetaTest
+Running com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroDefaultTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec - in com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroDefaultTest
+Running com.fasterxml.jackson.dataformat.avro.interop.annotations.StringableTest
+Tests run: 160, Failures: 0, Errors: 0, Skipped: 12, Time elapsed: 0.37 sec - in com.fasterxml.jackson.dataformat.avro.interop.annotations.StringableTest
+Running com.fasterxml.jackson.dataformat.avro.interop.annotations.UnionTest
+Tests run: 40, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.163 sec - in com.fasterxml.jackson.dataformat.avro.interop.annotations.UnionTest
+Running com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroNameTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec - in com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroNameTest
+Running com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroEncodeTest
+Tests run: 64, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.166 sec - in com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroEncodeTest
+Running com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroSchemaTest
+Tests run: 48, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.046 sec - in com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroSchemaTest
+Running com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest
+07:57:31.248 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"enum","name":"NewSize","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","symbols":["SMALL","LARGE"],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Size"]} with writer {"type":"enum","name":"Size","namespace":"com.fasterxml.jackson.dataformat.avro.AvroTestBase$","symbols":["SMALL","LARGE"]}
+07:57:31.265 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"enum","name":"NewerSize","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","symbols":["SMALL","LARGE"],"aliases":["NewestSize"]} with writer {"type":"enum","name":"NewestSize","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","symbols":["SMALL","LARGE"],"aliases":["NewerSize"]}
+07:57:31.266 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"enum","name":"NewestSize","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","symbols":["SMALL","LARGE"],"aliases":["NewerSize"]} with writer {"type":"enum","name":"NewerSize","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","symbols":["SMALL","LARGE"],"aliases":["NewestSize"]}
+07:57:31.271 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"record","name":"NewEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"name","type":"string"},{"name":"age","type":"int"},{"name":"emails","type":{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}},{"name":"boss","type":"NewEmployee"}],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Employee"]} with writer {"type":"record","name":"Employee","namespace":"com.fasterxml.jackson.dataformat.avro.AvroTestBase$","fields":[{"name":"name","type":"string"},{"name":"age","type":"int"},{"name":"emails","type":{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}},{"name":"boss","type":"Employee"}]}
+07:57:31.273 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "string" with writer "string"
+07:57:31.273 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "int" with writer "int"
+07:57:31.274 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"array","items":"string","java-class":"[Ljava.lang.String;"} with writer {"type":"array","items":"string","java-class":"[Ljava.lang.String;"}
+07:57:31.275 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "string" with writer "string"
+07:57:31.275 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"record","name":"NewEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"name","type":"string"},{"name":"age","type":"int"},{"name":"emails","type":{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}},{"name":"boss","type":"NewEmployee"}],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Employee"]} with writer {"type":"record","name":"Employee","namespace":"com.fasterxml.jackson.dataformat.avro.AvroTestBase$","fields":[{"name":"name","type":"string"},{"name":"age","type":"int"},{"name":"emails","type":{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}},{"name":"boss","type":"Employee"}]}
+07:57:31.277 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"record","name":"AliasedNameEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"name","type":"string"},{"name":"age","type":"int"},{"name":"emails","type":{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}},{"name":"boss","type":["null","AliasedNameEmployee"],"default":null}],"aliases":["NewEmployee"]} with writer {"type":"record","name":"NewEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"name","type":"string"},{"name":"age","type":"int"},{"name":"emails","type":{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}},{"name":"boss","type":"NewEmployee"}],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Employee"]}
+07:57:31.277 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "string" with writer "string"
+07:57:31.278 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "int" with writer "int"
+07:57:31.278 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"array","items":"string","java-class":"[Ljava.lang.String;"} with writer {"type":"array","items":"string","java-class":"[Ljava.lang.String;"}
+07:57:31.279 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "string" with writer "string"
+07:57:31.279 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader ["null",{"type":"record","name":"AliasedNameEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"name","type":"string"},{"name":"age","type":"int"},{"name":"emails","type":{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}},{"name":"boss","type":["null","AliasedNameEmployee"],"default":null}],"aliases":["NewEmployee"]}] with writer {"type":"record","name":"NewEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"name","type":"string"},{"name":"age","type":"int"},{"name":"emails","type":{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}},{"name":"boss","type":"NewEmployee"}],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Employee"]}
+07:57:31.279 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "null" with writer {"type":"record","name":"NewEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"name","type":"string"},{"name":"age","type":"int"},{"name":"emails","type":{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}},{"name":"boss","type":"NewEmployee"}],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Employee"]}
+07:57:31.280 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"record","name":"AliasedNameEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"name","type":"string"},{"name":"age","type":"int"},{"name":"emails","type":{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}},{"name":"boss","type":["null","AliasedNameEmployee"],"default":null}],"aliases":["NewEmployee"]} with writer {"type":"record","name":"NewEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"name","type":"string"},{"name":"age","type":"int"},{"name":"emails","type":{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}},{"name":"boss","type":"NewEmployee"}],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Employee"]}
+07:57:31.282 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"record","name":"Employee","namespace":"com.fasterxml.jackson.dataformat.avro.AvroTestBase$","fields":[{"name":"name","type":"string"},{"name":"age","type":"int"},{"name":"emails","type":{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}},{"name":"boss","type":"Employee"}]} with writer {"type":"record","name":"NewEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"name","type":"string"},{"name":"age","type":"int"},{"name":"emails","type":{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}},{"name":"boss","type":"NewEmployee"}],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Employee"]}
+07:57:31.292 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"record","name":"NewEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"name","type":"string"},{"name":"age","type":"int"},{"name":"emails","type":{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}},{"name":"boss","type":"NewEmployee"}],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Employee"]} with writer {"type":"record","name":"AliasedNameEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"name","type":"string"},{"name":"age","type":"int"},{"name":"emails","type":{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}},{"name":"boss","type":["null","AliasedNameEmployee"],"default":null}],"aliases":["NewEmployee"]}
+07:57:31.294 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"enum","name":"Size","namespace":"com.fasterxml.jackson.dataformat.avro.AvroTestBase$","symbols":["SMALL","LARGE"]} with writer {"type":"enum","name":"NewSize","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","symbols":["SMALL","LARGE"],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Size"]}
+07:57:31.297 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"enum","name":"NewSize","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","symbols":["SMALL","LARGE"],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Size"]} with writer {"type":"enum","name":"Size","namespace":"com.fasterxml.jackson.dataformat.avro.AvroTestBase$","symbols":["SMALL","LARGE"]}
+07:57:31.299 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"enum","name":"NewerSize","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","symbols":["SMALL","LARGE"],"aliases":["NewestSize"]} with writer {"type":"enum","name":"NewestSize","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","symbols":["SMALL","LARGE"],"aliases":["NewerSize"]}
+07:57:31.300 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"enum","name":"NewestSize","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","symbols":["SMALL","LARGE"],"aliases":["NewerSize"]} with writer {"type":"enum","name":"NewerSize","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","symbols":["SMALL","LARGE"],"aliases":["NewestSize"]}
+07:57:31.304 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"record","name":"NewEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","NewEmployee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Employee"]} with writer {"type":"record","name":"Employee","namespace":"com.fasterxml.jackson.dataformat.avro.AvroTestBase$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","Employee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}]}
+07:57:31.305 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"int","java-class":"java.lang.Integer"} with writer {"type":"int","java-class":"java.lang.Integer"}
+07:57:31.305 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader ["null",{"type":"record","name":"NewEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","NewEmployee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Employee"]}] with writer ["null",{"type":"record","name":"Employee","namespace":"com.fasterxml.jackson.dataformat.avro.AvroTestBase$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","Employee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}]}]
+07:57:31.306 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader ["null",{"type":"record","name":"NewEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","NewEmployee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Employee"]}] with writer "null"
+07:57:31.306 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "null" with writer "null"
+07:57:31.306 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader ["null",{"type":"record","name":"NewEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","NewEmployee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Employee"]}] with writer {"type":"record","name":"Employee","namespace":"com.fasterxml.jackson.dataformat.avro.AvroTestBase$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","Employee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}]}
+07:57:31.307 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "null" with writer {"type":"record","name":"Employee","namespace":"com.fasterxml.jackson.dataformat.avro.AvroTestBase$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","Employee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}]}
+07:57:31.307 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"record","name":"NewEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","NewEmployee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Employee"]} with writer {"type":"record","name":"Employee","namespace":"com.fasterxml.jackson.dataformat.avro.AvroTestBase$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","Employee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}]}
+07:57:31.308 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader ["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}] with writer ["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]
+07:57:31.308 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader ["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}] with writer "null"
+07:57:31.308 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "null" with writer "null"
+07:57:31.309 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader ["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}] with writer {"type":"array","items":"string","java-class":"[Ljava.lang.String;"}
+07:57:31.309 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "null" with writer {"type":"array","items":"string","java-class":"[Ljava.lang.String;"}
+07:57:31.309 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"array","items":"string","java-class":"[Ljava.lang.String;"} with writer {"type":"array","items":"string","java-class":"[Ljava.lang.String;"}
+07:57:31.309 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "string" with writer "string"
+07:57:31.310 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader ["null","string"] with writer ["null","string"]
+07:57:31.310 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader ["null","string"] with writer "null"
+07:57:31.310 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "null" with writer "null"
+07:57:31.310 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader ["null","string"] with writer "string"
+07:57:31.311 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "null" with writer "string"
+07:57:31.311 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "string" with writer "string"
+07:57:31.323 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"record","name":"AliasedNameEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","AliasedNameEmployee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}],"aliases":["NewEmployee"]} with writer {"type":"record","name":"NewEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","NewEmployee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Employee"]}
+07:57:31.324 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"int","java-class":"java.lang.Integer"} with writer {"type":"int","java-class":"java.lang.Integer"}
+07:57:31.324 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader ["null",{"type":"record","name":"AliasedNameEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","AliasedNameEmployee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}],"aliases":["NewEmployee"]}] with writer ["null",{"type":"record","name":"NewEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","NewEmployee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Employee"]}]
+07:57:31.325 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader ["null",{"type":"record","name":"AliasedNameEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","AliasedNameEmployee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}],"aliases":["NewEmployee"]}] with writer "null"
+07:57:31.325 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "null" with writer "null"
+07:57:31.325 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader ["null",{"type":"record","name":"AliasedNameEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","AliasedNameEmployee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}],"aliases":["NewEmployee"]}] with writer {"type":"record","name":"NewEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","NewEmployee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Employee"]}
+07:57:31.326 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "null" with writer {"type":"record","name":"NewEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","NewEmployee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Employee"]}
+07:57:31.327 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"record","name":"AliasedNameEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","AliasedNameEmployee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}],"aliases":["NewEmployee"]} with writer {"type":"record","name":"NewEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","NewEmployee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Employee"]}
+07:57:31.331 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader ["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}] with writer ["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]
+07:57:31.331 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader ["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}] with writer "null"
+07:57:31.332 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "null" with writer "null"
+07:57:31.332 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader ["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}] with writer {"type":"array","items":"string","java-class":"[Ljava.lang.String;"}
+07:57:31.333 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "null" with writer {"type":"array","items":"string","java-class":"[Ljava.lang.String;"}
+07:57:31.333 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"array","items":"string","java-class":"[Ljava.lang.String;"} with writer {"type":"array","items":"string","java-class":"[Ljava.lang.String;"}
+07:57:31.333 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "string" with writer "string"
+07:57:31.333 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader ["null","string"] with writer ["null","string"]
+07:57:31.334 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader ["null","string"] with writer "null"
+07:57:31.334 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "null" with writer "null"
+07:57:31.334 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader ["null","string"] with writer "string"
+07:57:31.335 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "null" with writer "string"
+07:57:31.335 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "string" with writer "string"
+07:57:31.336 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"record","name":"Employee","namespace":"com.fasterxml.jackson.dataformat.avro.AvroTestBase$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","Employee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}]} with writer {"type":"record","name":"NewEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","NewEmployee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Employee"]}
+07:57:31.339 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"record","name":"NewEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","NewEmployee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Employee"]} with writer {"type":"record","name":"AliasedNameEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","AliasedNameEmployee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}],"aliases":["NewEmployee"]}
+07:57:31.341 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"enum","name":"Size","namespace":"com.fasterxml.jackson.dataformat.avro.AvroTestBase$","symbols":["SMALL","LARGE"]} with writer {"type":"enum","name":"NewSize","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","symbols":["SMALL","LARGE"],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Size"]}
+07:57:31.349 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"enum","name":"NewSize","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","symbols":["SMALL","LARGE"],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Size"]} with writer {"type":"enum","name":"Size","namespace":"com.fasterxml.jackson.dataformat.avro.AvroTestBase$","symbols":["SMALL","LARGE"]}
+07:57:31.351 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"enum","name":"NewerSize","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","symbols":["SMALL","LARGE"],"aliases":["NewestSize"]} with writer {"type":"enum","name":"NewestSize","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","symbols":["SMALL","LARGE"],"aliases":["NewerSize"]}
+07:57:31.351 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"enum","name":"NewestSize","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","symbols":["SMALL","LARGE"],"aliases":["NewerSize"]} with writer {"type":"enum","name":"NewerSize","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","symbols":["SMALL","LARGE"],"aliases":["NewestSize"]}
+07:57:31.352 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"record","name":"NewEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"name","type":"string"},{"name":"age","type":"int"},{"name":"emails","type":{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}},{"name":"boss","type":"NewEmployee"}],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Employee"]} with writer {"type":"record","name":"Employee","namespace":"com.fasterxml.jackson.dataformat.avro.AvroTestBase$","fields":[{"name":"name","type":"string"},{"name":"age","type":"int"},{"name":"emails","type":{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}},{"name":"boss","type":"Employee"}]}
+07:57:31.353 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "string" with writer "string"
+07:57:31.353 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "int" with writer "int"
+07:57:31.353 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"array","items":"string","java-class":"[Ljava.lang.String;"} with writer {"type":"array","items":"string","java-class":"[Ljava.lang.String;"}
+07:57:31.354 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "string" with writer "string"
+07:57:31.354 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"record","name":"NewEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"name","type":"string"},{"name":"age","type":"int"},{"name":"emails","type":{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}},{"name":"boss","type":"NewEmployee"}],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Employee"]} with writer {"type":"record","name":"Employee","namespace":"com.fasterxml.jackson.dataformat.avro.AvroTestBase$","fields":[{"name":"name","type":"string"},{"name":"age","type":"int"},{"name":"emails","type":{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}},{"name":"boss","type":"Employee"}]}
+07:57:31.355 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"record","name":"AliasedNameEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"name","type":"string"},{"name":"age","type":"int"},{"name":"emails","type":{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}},{"name":"boss","type":["null","AliasedNameEmployee"],"default":null}],"aliases":["NewEmployee"]} with writer {"type":"record","name":"NewEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"name","type":"string"},{"name":"age","type":"int"},{"name":"emails","type":{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}},{"name":"boss","type":"NewEmployee"}],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Employee"]}
+07:57:31.355 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "string" with writer "string"
+07:57:31.356 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "int" with writer "int"
+07:57:31.356 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"array","items":"string","java-class":"[Ljava.lang.String;"} with writer {"type":"array","items":"string","java-class":"[Ljava.lang.String;"}
+07:57:31.356 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "string" with writer "string"
+07:57:31.357 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader ["null",{"type":"record","name":"AliasedNameEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"name","type":"string"},{"name":"age","type":"int"},{"name":"emails","type":{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}},{"name":"boss","type":["null","AliasedNameEmployee"],"default":null}],"aliases":["NewEmployee"]}] with writer {"type":"record","name":"NewEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"name","type":"string"},{"name":"age","type":"int"},{"name":"emails","type":{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}},{"name":"boss","type":"NewEmployee"}],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Employee"]}
+07:57:31.357 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "null" with writer {"type":"record","name":"NewEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"name","type":"string"},{"name":"age","type":"int"},{"name":"emails","type":{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}},{"name":"boss","type":"NewEmployee"}],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Employee"]}
+07:57:31.358 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"record","name":"AliasedNameEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"name","type":"string"},{"name":"age","type":"int"},{"name":"emails","type":{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}},{"name":"boss","type":["null","AliasedNameEmployee"],"default":null}],"aliases":["NewEmployee"]} with writer {"type":"record","name":"NewEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"name","type":"string"},{"name":"age","type":"int"},{"name":"emails","type":{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}},{"name":"boss","type":"NewEmployee"}],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Employee"]}
+07:57:31.359 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"record","name":"Employee","namespace":"com.fasterxml.jackson.dataformat.avro.AvroTestBase$","fields":[{"name":"name","type":"string"},{"name":"age","type":"int"},{"name":"emails","type":{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}},{"name":"boss","type":"Employee"}]} with writer {"type":"record","name":"NewEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"name","type":"string"},{"name":"age","type":"int"},{"name":"emails","type":{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}},{"name":"boss","type":"NewEmployee"}],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Employee"]}
+07:57:31.360 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"record","name":"NewEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"name","type":"string"},{"name":"age","type":"int"},{"name":"emails","type":{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}},{"name":"boss","type":"NewEmployee"}],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Employee"]} with writer {"type":"record","name":"AliasedNameEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"name","type":"string"},{"name":"age","type":"int"},{"name":"emails","type":{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}},{"name":"boss","type":["null","AliasedNameEmployee"],"default":null}],"aliases":["NewEmployee"]}
+07:57:31.362 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"enum","name":"Size","namespace":"com.fasterxml.jackson.dataformat.avro.AvroTestBase$","symbols":["SMALL","LARGE"]} with writer {"type":"enum","name":"NewSize","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","symbols":["SMALL","LARGE"],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Size"]}
+07:57:31.363 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"enum","name":"NewSize","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","symbols":["SMALL","LARGE"],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Size"]} with writer {"type":"enum","name":"Size","namespace":"com.fasterxml.jackson.dataformat.avro.AvroTestBase$","symbols":["SMALL","LARGE"]}
+07:57:31.365 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"enum","name":"NewerSize","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","symbols":["SMALL","LARGE"],"aliases":["NewestSize"]} with writer {"type":"enum","name":"NewestSize","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","symbols":["SMALL","LARGE"],"aliases":["NewerSize"]}
+07:57:31.365 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"enum","name":"NewestSize","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","symbols":["SMALL","LARGE"],"aliases":["NewerSize"]} with writer {"type":"enum","name":"NewerSize","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","symbols":["SMALL","LARGE"],"aliases":["NewestSize"]}
+07:57:31.367 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"record","name":"NewEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","NewEmployee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Employee"]} with writer {"type":"record","name":"Employee","namespace":"com.fasterxml.jackson.dataformat.avro.AvroTestBase$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","Employee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}]}
+07:57:31.368 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"int","java-class":"java.lang.Integer"} with writer {"type":"int","java-class":"java.lang.Integer"}
+07:57:31.368 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader ["null",{"type":"record","name":"NewEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","NewEmployee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Employee"]}] with writer ["null",{"type":"record","name":"Employee","namespace":"com.fasterxml.jackson.dataformat.avro.AvroTestBase$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","Employee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}]}]
+07:57:31.369 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader ["null",{"type":"record","name":"NewEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","NewEmployee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Employee"]}] with writer "null"
+07:57:31.369 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "null" with writer "null"
+07:57:31.369 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader ["null",{"type":"record","name":"NewEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","NewEmployee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Employee"]}] with writer {"type":"record","name":"Employee","namespace":"com.fasterxml.jackson.dataformat.avro.AvroTestBase$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","Employee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}]}
+07:57:31.370 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "null" with writer {"type":"record","name":"Employee","namespace":"com.fasterxml.jackson.dataformat.avro.AvroTestBase$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","Employee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}]}
+07:57:31.371 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"record","name":"NewEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","NewEmployee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Employee"]} with writer {"type":"record","name":"Employee","namespace":"com.fasterxml.jackson.dataformat.avro.AvroTestBase$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","Employee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}]}
+07:57:31.371 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader ["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}] with writer ["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]
+07:57:31.371 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader ["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}] with writer "null"
+07:57:31.372 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "null" with writer "null"
+07:57:31.372 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader ["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}] with writer {"type":"array","items":"string","java-class":"[Ljava.lang.String;"}
+07:57:31.372 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "null" with writer {"type":"array","items":"string","java-class":"[Ljava.lang.String;"}
+07:57:31.372 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"array","items":"string","java-class":"[Ljava.lang.String;"} with writer {"type":"array","items":"string","java-class":"[Ljava.lang.String;"}
+07:57:31.373 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "string" with writer "string"
+07:57:31.373 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader ["null","string"] with writer ["null","string"]
+07:57:31.373 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader ["null","string"] with writer "null"
+07:57:31.373 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "null" with writer "null"
+07:57:31.374 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader ["null","string"] with writer "string"
+07:57:31.374 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "null" with writer "string"
+07:57:31.374 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "string" with writer "string"
+07:57:31.375 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"record","name":"AliasedNameEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","AliasedNameEmployee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}],"aliases":["NewEmployee"]} with writer {"type":"record","name":"NewEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","NewEmployee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Employee"]}
+07:57:31.375 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"int","java-class":"java.lang.Integer"} with writer {"type":"int","java-class":"java.lang.Integer"}
+07:57:31.376 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader ["null",{"type":"record","name":"AliasedNameEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","AliasedNameEmployee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}],"aliases":["NewEmployee"]}] with writer ["null",{"type":"record","name":"NewEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","NewEmployee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Employee"]}]
+07:57:31.376 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader ["null",{"type":"record","name":"AliasedNameEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","AliasedNameEmployee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}],"aliases":["NewEmployee"]}] with writer "null"
+07:57:31.377 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "null" with writer "null"
+07:57:31.377 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader ["null",{"type":"record","name":"AliasedNameEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","AliasedNameEmployee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}],"aliases":["NewEmployee"]}] with writer {"type":"record","name":"NewEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","NewEmployee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Employee"]}
+07:57:31.377 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "null" with writer {"type":"record","name":"NewEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","NewEmployee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Employee"]}
+07:57:31.378 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"record","name":"AliasedNameEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","AliasedNameEmployee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}],"aliases":["NewEmployee"]} with writer {"type":"record","name":"NewEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","NewEmployee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Employee"]}
+07:57:31.378 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader ["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}] with writer ["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]
+07:57:31.378 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader ["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}] with writer "null"
+07:57:31.379 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "null" with writer "null"
+07:57:31.379 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader ["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}] with writer {"type":"array","items":"string","java-class":"[Ljava.lang.String;"}
+07:57:31.379 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "null" with writer {"type":"array","items":"string","java-class":"[Ljava.lang.String;"}
+07:57:31.379 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"array","items":"string","java-class":"[Ljava.lang.String;"} with writer {"type":"array","items":"string","java-class":"[Ljava.lang.String;"}
+07:57:31.379 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "string" with writer "string"
+07:57:31.380 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader ["null","string"] with writer ["null","string"]
+07:57:31.380 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader ["null","string"] with writer "null"
+07:57:31.380 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "null" with writer "null"
+07:57:31.380 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader ["null","string"] with writer "string"
+07:57:31.381 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "null" with writer "string"
+07:57:31.381 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "string" with writer "string"
+07:57:31.382 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"record","name":"Employee","namespace":"com.fasterxml.jackson.dataformat.avro.AvroTestBase$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","Employee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}]} with writer {"type":"record","name":"NewEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","NewEmployee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Employee"]}
+07:57:31.383 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"record","name":"NewEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","NewEmployee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Employee"]} with writer {"type":"record","name":"AliasedNameEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","AliasedNameEmployee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}],"aliases":["NewEmployee"]}
+07:57:31.385 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"enum","name":"Size","namespace":"com.fasterxml.jackson.dataformat.avro.AvroTestBase$","symbols":["SMALL","LARGE"]} with writer {"type":"enum","name":"NewSize","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","symbols":["SMALL","LARGE"],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Size"]}
+07:57:31.385 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"enum","name":"NewSize","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","symbols":["SMALL","LARGE"],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Size"]} with writer {"type":"enum","name":"Size","namespace":"com.fasterxml.jackson.dataformat.avro.AvroTestBase$","symbols":["SMALL","LARGE"]}
+07:57:31.386 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"enum","name":"NewerSize","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","symbols":["SMALL","LARGE"],"aliases":["NewestSize"]} with writer {"type":"enum","name":"NewestSize","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","symbols":["SMALL","LARGE"],"aliases":["NewerSize"]}
+07:57:31.386 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"enum","name":"NewestSize","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","symbols":["SMALL","LARGE"],"aliases":["NewerSize"]} with writer {"type":"enum","name":"NewerSize","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","symbols":["SMALL","LARGE"],"aliases":["NewestSize"]}
+07:57:31.387 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"record","name":"NewEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"name","type":"string"},{"name":"age","type":"int"},{"name":"emails","type":{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}},{"name":"boss","type":"NewEmployee"}],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Employee"]} with writer {"type":"record","name":"Employee","namespace":"com.fasterxml.jackson.dataformat.avro.AvroTestBase$","fields":[{"name":"name","type":"string"},{"name":"age","type":"int"},{"name":"emails","type":{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}},{"name":"boss","type":"Employee"}]}
+07:57:31.387 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "string" with writer "string"
+07:57:31.387 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "int" with writer "int"
+07:57:31.388 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"array","items":"string","java-class":"[Ljava.lang.String;"} with writer {"type":"array","items":"string","java-class":"[Ljava.lang.String;"}
+07:57:31.388 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "string" with writer "string"
+07:57:31.388 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"record","name":"NewEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"name","type":"string"},{"name":"age","type":"int"},{"name":"emails","type":{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}},{"name":"boss","type":"NewEmployee"}],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Employee"]} with writer {"type":"record","name":"Employee","namespace":"com.fasterxml.jackson.dataformat.avro.AvroTestBase$","fields":[{"name":"name","type":"string"},{"name":"age","type":"int"},{"name":"emails","type":{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}},{"name":"boss","type":"Employee"}]}
+07:57:31.389 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"record","name":"AliasedNameEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"name","type":"string"},{"name":"age","type":"int"},{"name":"emails","type":{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}},{"name":"boss","type":["null","AliasedNameEmployee"],"default":null}],"aliases":["NewEmployee"]} with writer {"type":"record","name":"NewEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"name","type":"string"},{"name":"age","type":"int"},{"name":"emails","type":{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}},{"name":"boss","type":"NewEmployee"}],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Employee"]}
+07:57:31.389 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "string" with writer "string"
+07:57:31.389 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "int" with writer "int"
+07:57:31.389 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"array","items":"string","java-class":"[Ljava.lang.String;"} with writer {"type":"array","items":"string","java-class":"[Ljava.lang.String;"}
+07:57:31.390 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "string" with writer "string"
+07:57:31.390 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader ["null",{"type":"record","name":"AliasedNameEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"name","type":"string"},{"name":"age","type":"int"},{"name":"emails","type":{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}},{"name":"boss","type":["null","AliasedNameEmployee"],"default":null}],"aliases":["NewEmployee"]}] with writer {"type":"record","name":"NewEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"name","type":"string"},{"name":"age","type":"int"},{"name":"emails","type":{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}},{"name":"boss","type":"NewEmployee"}],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Employee"]}
+07:57:31.390 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "null" with writer {"type":"record","name":"NewEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"name","type":"string"},{"name":"age","type":"int"},{"name":"emails","type":{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}},{"name":"boss","type":"NewEmployee"}],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Employee"]}
+07:57:31.391 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"record","name":"AliasedNameEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"name","type":"string"},{"name":"age","type":"int"},{"name":"emails","type":{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}},{"name":"boss","type":["null","AliasedNameEmployee"],"default":null}],"aliases":["NewEmployee"]} with writer {"type":"record","name":"NewEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"name","type":"string"},{"name":"age","type":"int"},{"name":"emails","type":{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}},{"name":"boss","type":"NewEmployee"}],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Employee"]}
+07:57:31.391 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"record","name":"Employee","namespace":"com.fasterxml.jackson.dataformat.avro.AvroTestBase$","fields":[{"name":"name","type":"string"},{"name":"age","type":"int"},{"name":"emails","type":{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}},{"name":"boss","type":"Employee"}]} with writer {"type":"record","name":"NewEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"name","type":"string"},{"name":"age","type":"int"},{"name":"emails","type":{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}},{"name":"boss","type":"NewEmployee"}],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Employee"]}
+07:57:31.392 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"record","name":"NewEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"name","type":"string"},{"name":"age","type":"int"},{"name":"emails","type":{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}},{"name":"boss","type":"NewEmployee"}],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Employee"]} with writer {"type":"record","name":"AliasedNameEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"name","type":"string"},{"name":"age","type":"int"},{"name":"emails","type":{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}},{"name":"boss","type":["null","AliasedNameEmployee"],"default":null}],"aliases":["NewEmployee"]}
+07:57:31.393 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"enum","name":"Size","namespace":"com.fasterxml.jackson.dataformat.avro.AvroTestBase$","symbols":["SMALL","LARGE"]} with writer {"type":"enum","name":"NewSize","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","symbols":["SMALL","LARGE"],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Size"]}
+07:57:31.394 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"enum","name":"NewSize","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","symbols":["SMALL","LARGE"],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Size"]} with writer {"type":"enum","name":"Size","namespace":"com.fasterxml.jackson.dataformat.avro.AvroTestBase$","symbols":["SMALL","LARGE"]}
+07:57:31.395 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"enum","name":"NewerSize","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","symbols":["SMALL","LARGE"],"aliases":["NewestSize"]} with writer {"type":"enum","name":"NewestSize","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","symbols":["SMALL","LARGE"],"aliases":["NewerSize"]}
+07:57:31.395 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"enum","name":"NewestSize","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","symbols":["SMALL","LARGE"],"aliases":["NewerSize"]} with writer {"type":"enum","name":"NewerSize","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","symbols":["SMALL","LARGE"],"aliases":["NewestSize"]}
+07:57:31.396 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"record","name":"NewEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","NewEmployee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Employee"]} with writer {"type":"record","name":"Employee","namespace":"com.fasterxml.jackson.dataformat.avro.AvroTestBase$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","Employee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}]}
+07:57:31.397 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"int","java-class":"java.lang.Integer"} with writer {"type":"int","java-class":"java.lang.Integer"}
+07:57:31.397 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader ["null",{"type":"record","name":"NewEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","NewEmployee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Employee"]}] with writer ["null",{"type":"record","name":"Employee","namespace":"com.fasterxml.jackson.dataformat.avro.AvroTestBase$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","Employee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}]}]
+07:57:31.397 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader ["null",{"type":"record","name":"NewEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","NewEmployee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Employee"]}] with writer "null"
+07:57:31.398 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "null" with writer "null"
+07:57:31.398 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader ["null",{"type":"record","name":"NewEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","NewEmployee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Employee"]}] with writer {"type":"record","name":"Employee","namespace":"com.fasterxml.jackson.dataformat.avro.AvroTestBase$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","Employee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}]}
+07:57:31.398 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "null" with writer {"type":"record","name":"Employee","namespace":"com.fasterxml.jackson.dataformat.avro.AvroTestBase$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","Employee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}]}
+07:57:31.399 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"record","name":"NewEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","NewEmployee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Employee"]} with writer {"type":"record","name":"Employee","namespace":"com.fasterxml.jackson.dataformat.avro.AvroTestBase$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","Employee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}]}
+07:57:31.399 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader ["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}] with writer ["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]
+07:57:31.399 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader ["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}] with writer "null"
+07:57:31.399 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "null" with writer "null"
+07:57:31.400 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader ["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}] with writer {"type":"array","items":"string","java-class":"[Ljava.lang.String;"}
+07:57:31.401 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "null" with writer {"type":"array","items":"string","java-class":"[Ljava.lang.String;"}
+07:57:31.401 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"array","items":"string","java-class":"[Ljava.lang.String;"} with writer {"type":"array","items":"string","java-class":"[Ljava.lang.String;"}
+07:57:31.401 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "string" with writer "string"
+07:57:31.401 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader ["null","string"] with writer ["null","string"]
+07:57:31.402 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader ["null","string"] with writer "null"
+07:57:31.402 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "null" with writer "null"
+07:57:31.402 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader ["null","string"] with writer "string"
+07:57:31.402 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "null" with writer "string"
+07:57:31.402 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "string" with writer "string"
+07:57:31.403 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"record","name":"AliasedNameEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","AliasedNameEmployee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}],"aliases":["NewEmployee"]} with writer {"type":"record","name":"NewEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","NewEmployee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Employee"]}
+07:57:31.404 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"int","java-class":"java.lang.Integer"} with writer {"type":"int","java-class":"java.lang.Integer"}
+07:57:31.404 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader ["null",{"type":"record","name":"AliasedNameEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","AliasedNameEmployee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}],"aliases":["NewEmployee"]}] with writer ["null",{"type":"record","name":"NewEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","NewEmployee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Employee"]}]
+07:57:31.405 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader ["null",{"type":"record","name":"AliasedNameEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","AliasedNameEmployee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}],"aliases":["NewEmployee"]}] with writer "null"
+07:57:31.405 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "null" with writer "null"
+07:57:31.406 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader ["null",{"type":"record","name":"AliasedNameEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","AliasedNameEmployee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}],"aliases":["NewEmployee"]}] with writer {"type":"record","name":"NewEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","NewEmployee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Employee"]}
+07:57:31.406 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "null" with writer {"type":"record","name":"NewEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","NewEmployee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Employee"]}
+07:57:31.406 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"record","name":"AliasedNameEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","AliasedNameEmployee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}],"aliases":["NewEmployee"]} with writer {"type":"record","name":"NewEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","NewEmployee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Employee"]}
+07:57:31.407 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader ["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}] with writer ["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]
+07:57:31.407 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader ["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}] with writer "null"
+07:57:31.407 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "null" with writer "null"
+07:57:31.408 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader ["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}] with writer {"type":"array","items":"string","java-class":"[Ljava.lang.String;"}
+07:57:31.408 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "null" with writer {"type":"array","items":"string","java-class":"[Ljava.lang.String;"}
+07:57:31.408 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"array","items":"string","java-class":"[Ljava.lang.String;"} with writer {"type":"array","items":"string","java-class":"[Ljava.lang.String;"}
+07:57:31.408 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "string" with writer "string"
+07:57:31.408 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader ["null","string"] with writer ["null","string"]
+07:57:31.409 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader ["null","string"] with writer "null"
+07:57:31.409 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "null" with writer "null"
+07:57:31.409 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader ["null","string"] with writer "string"
+07:57:31.409 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "null" with writer "string"
+07:57:31.409 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "string" with writer "string"
+07:57:31.410 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"record","name":"Employee","namespace":"com.fasterxml.jackson.dataformat.avro.AvroTestBase$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","Employee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}]} with writer {"type":"record","name":"NewEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","NewEmployee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Employee"]}
+07:57:31.416 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"record","name":"NewEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","NewEmployee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Employee"]} with writer {"type":"record","name":"AliasedNameEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","AliasedNameEmployee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}],"aliases":["NewEmployee"]}
+07:57:31.418 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"enum","name":"Size","namespace":"com.fasterxml.jackson.dataformat.avro.AvroTestBase$","symbols":["SMALL","LARGE"]} with writer {"type":"enum","name":"NewSize","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","symbols":["SMALL","LARGE"],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Size"]}
+07:57:31.419 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"enum","name":"NewSize","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","symbols":["SMALL","LARGE"],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Size"]} with writer {"type":"enum","name":"Size","namespace":"com.fasterxml.jackson.dataformat.avro.AvroTestBase$","symbols":["SMALL","LARGE"]}
+07:57:31.420 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"enum","name":"NewerSize","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","symbols":["SMALL","LARGE"],"aliases":["NewestSize"]} with writer {"type":"enum","name":"NewestSize","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","symbols":["SMALL","LARGE"],"aliases":["NewerSize"]}
+07:57:31.421 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"enum","name":"NewestSize","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","symbols":["SMALL","LARGE"],"aliases":["NewerSize"]} with writer {"type":"enum","name":"NewerSize","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","symbols":["SMALL","LARGE"],"aliases":["NewestSize"]}
+07:57:31.422 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"record","name":"NewEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","NewEmployee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Employee"]} with writer {"type":"record","name":"Employee","namespace":"com.fasterxml.jackson.dataformat.avro.AvroTestBase$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","Employee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}]}
+07:57:31.423 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"int","java-class":"java.lang.Integer"} with writer {"type":"int","java-class":"java.lang.Integer"}
+07:57:31.423 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader ["null",{"type":"record","name":"NewEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","NewEmployee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Employee"]}] with writer ["null",{"type":"record","name":"Employee","namespace":"com.fasterxml.jackson.dataformat.avro.AvroTestBase$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","Employee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}]}]
+07:57:31.424 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader ["null",{"type":"record","name":"NewEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","NewEmployee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Employee"]}] with writer "null"
+07:57:31.424 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "null" with writer "null"
+07:57:31.424 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader ["null",{"type":"record","name":"NewEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","NewEmployee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Employee"]}] with writer {"type":"record","name":"Employee","namespace":"com.fasterxml.jackson.dataformat.avro.AvroTestBase$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","Employee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}]}
+07:57:31.425 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "null" with writer {"type":"record","name":"Employee","namespace":"com.fasterxml.jackson.dataformat.avro.AvroTestBase$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","Employee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}]}
+07:57:31.425 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"record","name":"NewEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","NewEmployee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Employee"]} with writer {"type":"record","name":"Employee","namespace":"com.fasterxml.jackson.dataformat.avro.AvroTestBase$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","Employee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}]}
+07:57:31.425 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader ["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}] with writer ["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]
+07:57:31.426 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader ["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}] with writer "null"
+07:57:31.426 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "null" with writer "null"
+07:57:31.426 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader ["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}] with writer {"type":"array","items":"string","java-class":"[Ljava.lang.String;"}
+07:57:31.426 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "null" with writer {"type":"array","items":"string","java-class":"[Ljava.lang.String;"}
+07:57:31.427 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"array","items":"string","java-class":"[Ljava.lang.String;"} with writer {"type":"array","items":"string","java-class":"[Ljava.lang.String;"}
+07:57:31.427 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "string" with writer "string"
+07:57:31.427 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader ["null","string"] with writer ["null","string"]
+07:57:31.427 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader ["null","string"] with writer "null"
+07:57:31.427 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "null" with writer "null"
+07:57:31.428 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader ["null","string"] with writer "string"
+07:57:31.428 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "null" with writer "string"
+07:57:31.428 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "string" with writer "string"
+07:57:31.429 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"record","name":"AliasedNameEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","AliasedNameEmployee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}],"aliases":["NewEmployee"]} with writer {"type":"record","name":"NewEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","NewEmployee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Employee"]}
+07:57:31.430 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"int","java-class":"java.lang.Integer"} with writer {"type":"int","java-class":"java.lang.Integer"}
+07:57:31.430 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader ["null",{"type":"record","name":"AliasedNameEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","AliasedNameEmployee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}],"aliases":["NewEmployee"]}] with writer ["null",{"type":"record","name":"NewEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","NewEmployee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Employee"]}]
+07:57:31.431 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader ["null",{"type":"record","name":"AliasedNameEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","AliasedNameEmployee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}],"aliases":["NewEmployee"]}] with writer "null"
+07:57:31.431 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "null" with writer "null"
+07:57:31.431 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader ["null",{"type":"record","name":"AliasedNameEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","AliasedNameEmployee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}],"aliases":["NewEmployee"]}] with writer {"type":"record","name":"NewEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","NewEmployee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Employee"]}
+07:57:31.431 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "null" with writer {"type":"record","name":"NewEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","NewEmployee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Employee"]}
+07:57:31.432 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"record","name":"AliasedNameEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","AliasedNameEmployee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}],"aliases":["NewEmployee"]} with writer {"type":"record","name":"NewEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","NewEmployee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Employee"]}
+07:57:31.432 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader ["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}] with writer ["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]
+07:57:31.432 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader ["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}] with writer "null"
+07:57:31.433 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "null" with writer "null"
+07:57:31.433 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader ["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}] with writer {"type":"array","items":"string","java-class":"[Ljava.lang.String;"}
+07:57:31.433 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "null" with writer {"type":"array","items":"string","java-class":"[Ljava.lang.String;"}
+07:57:31.433 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"array","items":"string","java-class":"[Ljava.lang.String;"} with writer {"type":"array","items":"string","java-class":"[Ljava.lang.String;"}
+07:57:31.434 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "string" with writer "string"
+07:57:31.434 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader ["null","string"] with writer ["null","string"]
+07:57:31.434 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader ["null","string"] with writer "null"
+07:57:31.434 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "null" with writer "null"
+07:57:31.434 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader ["null","string"] with writer "string"
+07:57:31.435 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "null" with writer "string"
+07:57:31.435 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "string" with writer "string"
+07:57:31.436 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"record","name":"Employee","namespace":"com.fasterxml.jackson.dataformat.avro.AvroTestBase$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","Employee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}]} with writer {"type":"record","name":"NewEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","NewEmployee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Employee"]}
+07:57:31.438 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"record","name":"NewEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","NewEmployee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Employee"]} with writer {"type":"record","name":"AliasedNameEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"age","type":{"type":"int","java-class":"java.lang.Integer"}},{"name":"boss","type":["null","AliasedNameEmployee"]},{"name":"emails","type":["null",{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}]},{"name":"name","type":["null","string"]}],"aliases":["NewEmployee"]}
+07:57:31.439 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"enum","name":"Size","namespace":"com.fasterxml.jackson.dataformat.avro.AvroTestBase$","symbols":["SMALL","LARGE"]} with writer {"type":"enum","name":"NewSize","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","symbols":["SMALL","LARGE"],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Size"]}
+07:57:31.440 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"enum","name":"NewSize","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","symbols":["SMALL","LARGE"],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Size"]} with writer {"type":"enum","name":"Size","namespace":"com.fasterxml.jackson.dataformat.avro.AvroTestBase$","symbols":["SMALL","LARGE"]}
+07:57:31.441 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"enum","name":"NewerSize","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","symbols":["SMALL","LARGE"],"aliases":["NewestSize"]} with writer {"type":"enum","name":"NewestSize","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","symbols":["SMALL","LARGE"],"aliases":["NewerSize"]}
+07:57:31.441 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"enum","name":"NewestSize","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","symbols":["SMALL","LARGE"],"aliases":["NewerSize"]} with writer {"type":"enum","name":"NewerSize","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","symbols":["SMALL","LARGE"],"aliases":["NewestSize"]}
+07:57:31.442 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"record","name":"NewEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"name","type":"string"},{"name":"age","type":"int"},{"name":"emails","type":{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}},{"name":"boss","type":"NewEmployee"}],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Employee"]} with writer {"type":"record","name":"Employee","namespace":"com.fasterxml.jackson.dataformat.avro.AvroTestBase$","fields":[{"name":"name","type":"string"},{"name":"age","type":"int"},{"name":"emails","type":{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}},{"name":"boss","type":"Employee"}]}
+07:57:31.442 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "string" with writer "string"
+07:57:31.443 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "int" with writer "int"
+07:57:31.443 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"array","items":"string","java-class":"[Ljava.lang.String;"} with writer {"type":"array","items":"string","java-class":"[Ljava.lang.String;"}
+07:57:31.443 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "string" with writer "string"
+07:57:31.443 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"record","name":"NewEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"name","type":"string"},{"name":"age","type":"int"},{"name":"emails","type":{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}},{"name":"boss","type":"NewEmployee"}],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Employee"]} with writer {"type":"record","name":"Employee","namespace":"com.fasterxml.jackson.dataformat.avro.AvroTestBase$","fields":[{"name":"name","type":"string"},{"name":"age","type":"int"},{"name":"emails","type":{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}},{"name":"boss","type":"Employee"}]}
+07:57:31.444 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"record","name":"AliasedNameEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"name","type":"string"},{"name":"age","type":"int"},{"name":"emails","type":{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}},{"name":"boss","type":["null","AliasedNameEmployee"],"default":null}],"aliases":["NewEmployee"]} with writer {"type":"record","name":"NewEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"name","type":"string"},{"name":"age","type":"int"},{"name":"emails","type":{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}},{"name":"boss","type":"NewEmployee"}],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Employee"]}
+07:57:31.444 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "string" with writer "string"
+07:57:31.445 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "int" with writer "int"
+07:57:31.447 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"array","items":"string","java-class":"[Ljava.lang.String;"} with writer {"type":"array","items":"string","java-class":"[Ljava.lang.String;"}
+07:57:31.447 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "string" with writer "string"
+07:57:31.447 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader ["null",{"type":"record","name":"AliasedNameEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"name","type":"string"},{"name":"age","type":"int"},{"name":"emails","type":{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}},{"name":"boss","type":["null","AliasedNameEmployee"],"default":null}],"aliases":["NewEmployee"]}] with writer {"type":"record","name":"NewEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"name","type":"string"},{"name":"age","type":"int"},{"name":"emails","type":{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}},{"name":"boss","type":"NewEmployee"}],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Employee"]}
+07:57:31.448 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "null" with writer {"type":"record","name":"NewEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"name","type":"string"},{"name":"age","type":"int"},{"name":"emails","type":{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}},{"name":"boss","type":"NewEmployee"}],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Employee"]}
+07:57:31.448 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"record","name":"AliasedNameEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"name","type":"string"},{"name":"age","type":"int"},{"name":"emails","type":{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}},{"name":"boss","type":["null","AliasedNameEmployee"],"default":null}],"aliases":["NewEmployee"]} with writer {"type":"record","name":"NewEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"name","type":"string"},{"name":"age","type":"int"},{"name":"emails","type":{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}},{"name":"boss","type":"NewEmployee"}],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Employee"]}
+07:57:31.449 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"record","name":"Employee","namespace":"com.fasterxml.jackson.dataformat.avro.AvroTestBase$","fields":[{"name":"name","type":"string"},{"name":"age","type":"int"},{"name":"emails","type":{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}},{"name":"boss","type":"Employee"}]} with writer {"type":"record","name":"NewEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"name","type":"string"},{"name":"age","type":"int"},{"name":"emails","type":{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}},{"name":"boss","type":"NewEmployee"}],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Employee"]}
+07:57:31.450 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"record","name":"NewEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"name","type":"string"},{"name":"age","type":"int"},{"name":"emails","type":{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}},{"name":"boss","type":"NewEmployee"}],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Employee"]} with writer {"type":"record","name":"AliasedNameEmployee","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","fields":[{"name":"name","type":"string"},{"name":"age","type":"int"},{"name":"emails","type":{"type":"array","items":"string","java-class":"[Ljava.lang.String;"}},{"name":"boss","type":["null","AliasedNameEmployee"],"default":null}],"aliases":["NewEmployee"]}
+07:57:31.451 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"enum","name":"Size","namespace":"com.fasterxml.jackson.dataformat.avro.AvroTestBase$","symbols":["SMALL","LARGE"]} with writer {"type":"enum","name":"NewSize","namespace":"com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest$","symbols":["SMALL","LARGE"],"aliases":["com.fasterxml.jackson.dataformat.avro.AvroTestBase$.Size"]}
+Tests run: 56, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.348 sec - in com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroAliasTest
+Running com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroIgnoreTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 sec - in com.fasterxml.jackson.dataformat.avro.interop.annotations.AvroIgnoreTest
+Running com.fasterxml.jackson.dataformat.avro.interop.maps.MapWithPrimitiveWrapperTest
+Tests run: 64, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.052 sec - in com.fasterxml.jackson.dataformat.avro.interop.maps.MapWithPrimitiveWrapperTest
+Running com.fasterxml.jackson.dataformat.avro.interop.maps.MapWithPrimitiveWrapperArrayTest
+Tests run: 64, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.064 sec - in com.fasterxml.jackson.dataformat.avro.interop.maps.MapWithPrimitiveWrapperArrayTest
+Running com.fasterxml.jackson.dataformat.avro.interop.maps.MapWithComplexTest
+Tests run: 48, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.06 sec - in com.fasterxml.jackson.dataformat.avro.interop.maps.MapWithComplexTest
+Running com.fasterxml.jackson.dataformat.avro.interop.maps.MapSubtypeTest
+Tests run: 40, Failures: 0, Errors: 0, Skipped: 30, Time elapsed: 0.048 sec - in com.fasterxml.jackson.dataformat.avro.interop.maps.MapSubtypeTest
+Running com.fasterxml.jackson.dataformat.avro.interop.maps.MapWithPrimitiveArrayTest
+Tests run: 56, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.047 sec - in com.fasterxml.jackson.dataformat.avro.interop.maps.MapWithPrimitiveArrayTest
+Running com.fasterxml.jackson.dataformat.avro.interop.records.RecordWithComplexTest
+Tests run: 56, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.102 sec - in com.fasterxml.jackson.dataformat.avro.interop.records.RecordWithComplexTest
+Running com.fasterxml.jackson.dataformat.avro.interop.records.RecordWithPrimitiveWrapperArrayTest
+Tests run: 64, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.083 sec - in com.fasterxml.jackson.dataformat.avro.interop.records.RecordWithPrimitiveWrapperArrayTest
+Running com.fasterxml.jackson.dataformat.avro.interop.records.RecordWithPrimitiveArrayTest
+Tests run: 56, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.06 sec - in com.fasterxml.jackson.dataformat.avro.interop.records.RecordWithPrimitiveArrayTest
+Running com.fasterxml.jackson.dataformat.avro.interop.records.RecordWithPrimitiveWrapperTest
+Tests run: 64, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.061 sec - in com.fasterxml.jackson.dataformat.avro.interop.records.RecordWithPrimitiveWrapperTest
+Running com.fasterxml.jackson.dataformat.avro.interop.records.RecordWithPrimitiveTest
+Tests run: 56, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.052 sec - in com.fasterxml.jackson.dataformat.avro.interop.records.RecordWithPrimitiveTest
+Running com.fasterxml.jackson.dataformat.avro.POJOSimpleReadTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec - in com.fasterxml.jackson.dataformat.avro.POJOSimpleReadTest
+Running com.fasterxml.jackson.dataformat.avro.MapperConfigTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in com.fasterxml.jackson.dataformat.avro.MapperConfigTest
+Running com.fasterxml.jackson.dataformat.avro.schema.TestSimpleGeneration
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 sec - in com.fasterxml.jackson.dataformat.avro.schema.TestSimpleGeneration
+Running com.fasterxml.jackson.dataformat.avro.OptionalEnumTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in com.fasterxml.jackson.dataformat.avro.OptionalEnumTest
+Running com.fasterxml.jackson.dataformat.avro.AmbiguousUnionWriteTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in com.fasterxml.jackson.dataformat.avro.AmbiguousUnionWriteTest
+Running com.fasterxml.jackson.dataformat.avro.NestedMapTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.077 sec - in com.fasterxml.jackson.dataformat.avro.NestedMapTest
+Running com.fasterxml.jackson.dataformat.avro.RootSequenceTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec - in com.fasterxml.jackson.dataformat.avro.RootSequenceTest
+Running com.fasterxml.jackson.dataformat.avro.SerializeGeneratedTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec - in com.fasterxml.jackson.dataformat.avro.SerializeGeneratedTest
+Running com.fasterxml.jackson.dataformat.avro.NumberTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in com.fasterxml.jackson.dataformat.avro.NumberTest
+Running com.fasterxml.jackson.dataformat.avro.MapWithUnionTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in com.fasterxml.jackson.dataformat.avro.MapWithUnionTest
+Running com.fasterxml.jackson.dataformat.avro.BinaryDataTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec - in com.fasterxml.jackson.dataformat.avro.BinaryDataTest
+Running com.fasterxml.jackson.dataformat.avro.SimpleGenerationTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec - in com.fasterxml.jackson.dataformat.avro.SimpleGenerationTest
+Running com.fasterxml.jackson.dataformat.avro.ArrayTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec - in com.fasterxml.jackson.dataformat.avro.ArrayTest
+Running com.fasterxml.jackson.dataformat.avro.RoundtripTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 sec - in com.fasterxml.jackson.dataformat.avro.RoundtripTest
+Running com.fasterxml.jackson.dataformat.avro.EnumTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in com.fasterxml.jackson.dataformat.avro.EnumTest
+Running com.fasterxml.jackson.dataformat.avro.ConcurrencyTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.05 sec - in com.fasterxml.jackson.dataformat.avro.ConcurrencyTest
+Running com.fasterxml.jackson.dataformat.avro.FixedFieldTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec - in com.fasterxml.jackson.dataformat.avro.FixedFieldTest
+Running com.fasterxml.jackson.dataformat.avro.BigDecimalTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec - in com.fasterxml.jackson.dataformat.avro.BigDecimalTest
+Running com.fasterxml.jackson.dataformat.avro.schemaev.SimpleEvolutionTest
+07:57:32.506 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"record","name":"EvolvingPoint","fields":[{"name":"x","type":"int"},{"name":"y","type":"int"}]} with writer {"type":"record","name":"EvolvingPoint","fields":[{"name":"x","type":"int"},{"name":"binary","type":"bytes"},{"name":"y","type":"int"}]}
+07:57:32.506 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "int" with writer "int"
+07:57:32.507 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "int" with writer "int"
+07:57:32.515 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"record","name":"EvolvingPoint","fields":[{"name":"x","type":"int"},{"name":"y","type":"int"}]} with writer {"type":"record","name":"EvolvingPoint","fields":[{"name":"x","type":"int"},{"name":"a","type":{"type":"array","items":"int"}},{"name":"y","type":"int"}]}
+07:57:32.515 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "int" with writer "int"
+07:57:32.515 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "int" with writer "int"
+07:57:32.518 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"record","name":"EvolvingPoint","fields":[{"name":"x","type":"int"},{"name":"y","type":"int"}]} with writer {"type":"record","name":"EvolvingPoint","fields":[{"name":"z","type":"int","default":99},{"name":"y","type":"int"},{"name":"x","type":"int"}]}
+07:57:32.544 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "int" with writer "int"
+07:57:32.544 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "int" with writer "int"
+07:57:32.548 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"record","name":"EvolvingPoint","fields":[{"name":"z","type":"int","default":99},{"name":"y","type":"int"},{"name":"x","type":"int"}]} with writer {"type":"record","name":"EvolvingPoint","fields":[{"name":"x","type":"int"},{"name":"y","type":"int"}]}
+07:57:32.549 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "int" with writer "int"
+07:57:32.549 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "int" with writer "int"
+07:57:32.557 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"record","name":"EvolvingPoint","fields":[{"name":"x","type":"int"},{"name":"y","type":"int"}]} with writer {"type":"record","name":"EvolvingPoint","fields":[{"name":"x","type":"int"}]}
+07:57:32.557 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "int" with writer "int"
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.056 sec - in com.fasterxml.jackson.dataformat.avro.schemaev.SimpleEvolutionTest
+Running com.fasterxml.jackson.dataformat.avro.schemaev.ComplexDefaultsTest
+07:57:32.560 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"record","name":"RootType","fields":[{"name":"x","type":"int"},{"name":"data","type":{"type":"array","items":["string"]},"default":["Fo","obar"]},{"name":"y","type":"int"}]} with writer {"type":"record","name":"RootType","fields":[{"name":"x","type":"int"},{"name":"y","type":"int"}]}
+07:57:32.568 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "int" with writer "int"
+07:57:32.568 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "int" with writer "int"
+07:57:32.585 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"record","name":"RootType","fields":[{"name":"x","type":"int"},{"name":"data","type":{"type":"record","name":"Payload","fields":[{"name":"key","type":"string"},{"name":"value","type":"string"}]},"default":{"key":"misc","value":"foobar"}},{"name":"y","type":"int"}]} with writer {"type":"record","name":"RootType","fields":[{"name":"x","type":"int"},{"name":"y","type":"int"}]}
+07:57:32.589 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "int" with writer "int"
+07:57:32.589 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "int" with writer "int"
+07:57:32.594 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"record","name":"RootType","fields":[{"name":"x","type":"int"},{"name":"data","type":{"type":"map","values":["string"]},"default":{"a":"f","b":"oobar"}},{"name":"y","type":"int"}]} with writer {"type":"record","name":"RootType","fields":[{"name":"x","type":"int"},{"name":"y","type":"int"}]}
+07:57:32.594 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "int" with writer "int"
+07:57:32.595 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "int" with writer "int"
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.04 sec - in com.fasterxml.jackson.dataformat.avro.schemaev.ComplexDefaultsTest
+Running com.fasterxml.jackson.dataformat.avro.schemaev.EnumEvolutionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in com.fasterxml.jackson.dataformat.avro.schemaev.EnumEvolutionTest
+Running com.fasterxml.jackson.dataformat.avro.schemaev.ArrayEvolutionTest
+07:57:32.614 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"array","items":{"type":"record","name":"EvolvingPoint","fields":[{"name":"x","type":"int"},{"name":"y","type":"int"}]}} with writer {"type":"array","items":{"type":"record","name":"EvolvingPoint","fields":[{"name":"z","type":"int","default":99},{"name":"y","type":"int"},{"name":"x","type":"int"}]}}
+07:57:32.614 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"record","name":"EvolvingPoint","fields":[{"name":"x","type":"int"},{"name":"y","type":"int"}]} with writer {"type":"record","name":"EvolvingPoint","fields":[{"name":"z","type":"int","default":99},{"name":"y","type":"int"},{"name":"x","type":"int"}]}
+07:57:32.615 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "int" with writer "int"
+07:57:32.615 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "int" with writer "int"
+07:57:32.620 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"array","items":{"type":"record","name":"EvolvingPoint","fields":[{"name":"z","type":"int","default":99},{"name":"y","type":"int"},{"name":"x","type":"int"}]}} with writer {"type":"array","items":{"type":"record","name":"EvolvingPoint","fields":[{"name":"x","type":"int"},{"name":"y","type":"int"}]}}
+07:57:32.621 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"record","name":"EvolvingPoint","fields":[{"name":"z","type":"int","default":99},{"name":"y","type":"int"},{"name":"x","type":"int"}]} with writer {"type":"record","name":"EvolvingPoint","fields":[{"name":"x","type":"int"},{"name":"y","type":"int"}]}
+07:57:32.621 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "int" with writer "int"
+07:57:32.621 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "int" with writer "int"
+07:57:32.625 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"array","items":{"type":"record","name":"EvolvingPoint","fields":[{"name":"x","type":"int"},{"name":"y","type":"int"}]}} with writer {"type":"array","items":{"type":"record","name":"EvolvingPoint","fields":[{"name":"x","type":"int"}]}}
+07:57:32.625 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader {"type":"record","name":"EvolvingPoint","fields":[{"name":"x","type":"int"},{"name":"y","type":"int"}]} with writer {"type":"record","name":"EvolvingPoint","fields":[{"name":"x","type":"int"}]}
+07:57:32.625 [main] DEBUG org.apache.avro.SchemaCompatibility - Checking compatibility of reader "int" with writer "int"
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec - in com.fasterxml.jackson.dataformat.avro.schemaev.ArrayEvolutionTest
+Running com.fasterxml.jackson.dataformat.avro.MapTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in com.fasterxml.jackson.dataformat.avro.MapTest
+Running com.fasterxml.jackson.dataformat.avro.Issue19Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 sec - in com.fasterxml.jackson.dataformat.avro.Issue19Test
+Running com.fasterxml.jackson.dataformat.avro.POJOComplexReadTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in com.fasterxml.jackson.dataformat.avro.POJOComplexReadTest
+Running com.fasterxml.jackson.dataformat.avro.FileFormatTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 sec - in com.fasterxml.jackson.dataformat.avro.FileFormatTest
+
+Results :
+
+Tests run: 1388, Failures: 0, Errors: 0, Skipped: 50
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Jackson dataformat: protobuf 2.9.8-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-java) @ jackson-dataformat-protobuf ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.7:add-source (add-generated-sources) @ jackson-dataformat-protobuf ---
+[INFO] Source directory: /root/workspace/FasterXML/jackson-dataformats-binary/461131167/protobuf/target/generated-sources added.
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (process-packageVersion) @ jackson-dataformat-protobuf ---
+[INFO] Replacement run on 1 file.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ jackson-dataformat-protobuf ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ jackson-dataformat-protobuf ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 35 source files to /root/workspace/FasterXML/jackson-dataformats-binary/461131167/protobuf/target/classes
+[WARNING] bootstrap class path not set in conjunction with -source 1.7
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ jackson-dataformat-protobuf ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ jackson-dataformat-protobuf ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ jackson-dataformat-protobuf ---
+[INFO] Surefire report directory: /root/workspace/FasterXML/jackson-dataformats-binary/461131167/protobuf/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.fasterxml.jackson.dataformat.protobuf.ReadSimpleTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.87 sec - in com.fasterxml.jackson.dataformat.protobuf.ReadSimpleTest
+Running com.fasterxml.jackson.dataformat.protobuf.schema.SchemaGenTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.173 sec - in com.fasterxml.jackson.dataformat.protobuf.schema.SchemaGenTest
+Running com.fasterxml.jackson.dataformat.protobuf.schema.SchemaParsingTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in com.fasterxml.jackson.dataformat.protobuf.schema.SchemaParsingTest
+Running com.fasterxml.jackson.dataformat.protobuf.schema.SchemaWithUUIDTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec - in com.fasterxml.jackson.dataformat.protobuf.schema.SchemaWithUUIDTest
+Running com.fasterxml.jackson.dataformat.protobuf.schema.DescriptorLoaderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.138 sec - in com.fasterxml.jackson.dataformat.protobuf.schema.DescriptorLoaderTest
+Running com.fasterxml.jackson.dataformat.protobuf.WriteBigArrayTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.351 sec - in com.fasterxml.jackson.dataformat.protobuf.WriteBigArrayTest
+Running com.fasterxml.jackson.dataformat.protobuf.ReadPackedRepeatedTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in com.fasterxml.jackson.dataformat.protobuf.ReadPackedRepeatedTest
+Running com.fasterxml.jackson.dataformat.protobuf.WriteLongString94Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in com.fasterxml.jackson.dataformat.protobuf.WriteLongString94Test
+Running com.fasterxml.jackson.dataformat.protobuf.SerDeserLongTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 sec - in com.fasterxml.jackson.dataformat.protobuf.SerDeserLongTest
+Running com.fasterxml.jackson.dataformat.protobuf.WriteStringsTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec - in com.fasterxml.jackson.dataformat.protobuf.WriteStringsTest
+Running com.fasterxml.jackson.dataformat.protobuf.NextXxxParsingTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in com.fasterxml.jackson.dataformat.protobuf.NextXxxParsingTest
+Running com.fasterxml.jackson.dataformat.protobuf.WriteArrayTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in com.fasterxml.jackson.dataformat.protobuf.WriteArrayTest
+Running com.fasterxml.jackson.dataformat.protobuf.WritePrimitiveArrayTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 sec - in com.fasterxml.jackson.dataformat.protobuf.WritePrimitiveArrayTest
+Running com.fasterxml.jackson.dataformat.protobuf.ReadNestedUnknownFieldsTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec - in com.fasterxml.jackson.dataformat.protobuf.ReadNestedUnknownFieldsTest
+Running com.fasterxml.jackson.dataformat.protobuf.WriteSimpleTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 sec - in com.fasterxml.jackson.dataformat.protobuf.WriteSimpleTest
+Running com.fasterxml.jackson.dataformat.protobuf.WriteAsMapTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec - in com.fasterxml.jackson.dataformat.protobuf.WriteAsMapTest
+Running com.fasterxml.jackson.dataformat.protobuf.ReadUnkownFieldsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in com.fasterxml.jackson.dataformat.protobuf.ReadUnkownFieldsTest
+Running com.fasterxml.jackson.dataformat.protobuf.WriteErrorsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in com.fasterxml.jackson.dataformat.protobuf.WriteErrorsTest
+Running com.fasterxml.jackson.dataformat.protobuf.WriteBinaryTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in com.fasterxml.jackson.dataformat.protobuf.WriteBinaryTest
+Running com.fasterxml.jackson.dataformat.protobuf.ReadComplexPojoTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 sec - in com.fasterxml.jackson.dataformat.protobuf.ReadComplexPojoTest
+Running com.fasterxml.jackson.dataformat.protobuf.RoundtripNestedMessageTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in com.fasterxml.jackson.dataformat.protobuf.RoundtripNestedMessageTest
+Running com.fasterxml.jackson.dataformat.protobuf.NestedWrite67Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in com.fasterxml.jackson.dataformat.protobuf.NestedWrite67Test
+Running com.fasterxml.jackson.dataformat.protobuf.FactoryPropertiesTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.21 sec - in com.fasterxml.jackson.dataformat.protobuf.FactoryPropertiesTest
+Running com.fasterxml.jackson.dataformat.protobuf.WriteComplexPojoTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in com.fasterxml.jackson.dataformat.protobuf.WriteComplexPojoTest
+Running com.fasterxml.jackson.dataformat.protobuf.EnumHandlingTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in com.fasterxml.jackson.dataformat.protobuf.EnumHandlingTest
+
+Results :
+
+Tests run: 84, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Jackson dataformat: Ion 2.9.8-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-java) @ jackson-dataformat-ion ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.7:add-source (add-generated-sources) @ jackson-dataformat-ion ---
+[INFO] Source directory: /root/workspace/FasterXML/jackson-dataformats-binary/461131167/ion/target/generated-sources added.
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (process-packageVersion) @ jackson-dataformat-ion ---
+[INFO] Replacement run on 1 file.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ jackson-dataformat-ion ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/FasterXML/jackson-dataformats-binary/461131167/ion/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ jackson-dataformat-ion ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 23 source files to /root/workspace/FasterXML/jackson-dataformats-binary/461131167/ion/target/classes
+[WARNING] bootstrap class path not set in conjunction with -source 1.7
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ jackson-dataformat-ion ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/FasterXML/jackson-dataformats-binary/461131167/ion/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ jackson-dataformat-ion ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ jackson-dataformat-ion ---
+[INFO] Surefire report directory: /root/workspace/FasterXML/jackson-dataformats-binary/461131167/ion/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.fasterxml.jackson.dataformat.ion.PolymorphicRoundtripTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.001 sec - in com.fasterxml.jackson.dataformat.ion.PolymorphicRoundtripTest
+Running com.fasterxml.jackson.dataformat.ion.DataBindReadTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 sec - in com.fasterxml.jackson.dataformat.ion.DataBindReadTest
+Running com.fasterxml.jackson.dataformat.ion.IonTimestampRoundTripTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec - in com.fasterxml.jackson.dataformat.ion.IonTimestampRoundTripTest
+Running com.fasterxml.jackson.dataformat.ion.DataBindRoundtripTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.213 sec - in com.fasterxml.jackson.dataformat.ion.DataBindRoundtripTest
+Running com.fasterxml.jackson.dataformat.ion.SimpleWriteTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec - in com.fasterxml.jackson.dataformat.ion.SimpleWriteTest
+Running com.fasterxml.jackson.dataformat.ion.IonGeneratorTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 sec - in com.fasterxml.jackson.dataformat.ion.IonGeneratorTest
+Running com.fasterxml.jackson.dataformat.ion.SimpleReadTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in com.fasterxml.jackson.dataformat.ion.SimpleReadTest
+Running com.fasterxml.jackson.dataformat.ion.IonParserTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in com.fasterxml.jackson.dataformat.ion.IonParserTest
+Running com.fasterxml.jackson.dataformat.ion.ionvalue.IonValueMapperTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.077 sec - in com.fasterxml.jackson.dataformat.ion.ionvalue.IonValueMapperTest
+Running com.fasterxml.jackson.dataformat.ion.DataBindWriteTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec - in com.fasterxml.jackson.dataformat.ion.DataBindWriteTest
+
+Results :
+
+Tests run: 48, Failures: 0, Errors: 0, Skipped: 0
 
 [INFO] ------------------------------------------------------------------------
 [INFO] Reactor Summary:
 [INFO] 
-[INFO] Jackson dataformats: Binary ........................ SUCCESS [  0.525 s]
-[INFO] Jackson dataformat: CBOR ........................... FAILURE [  8.153 s]
-[INFO] Jackson dataformat: Smile .......................... SKIPPED
-[INFO] Jackson dataformat: Avro ........................... SKIPPED
-[INFO] Jackson dataformat: protobuf ....................... SKIPPED
-[INFO] Jackson dataformat: Ion ............................ SKIPPED
+[INFO] Jackson dataformats: Binary ........................ SUCCESS [  0.505 s]
+[INFO] Jackson dataformat: CBOR ........................... SUCCESS [  7.758 s]
+[INFO] Jackson dataformat: Smile .......................... SUCCESS [  6.838 s]
+[INFO] Jackson dataformat: Avro ........................... SUCCESS [  6.171 s]
+[INFO] Jackson dataformat: protobuf ....................... SUCCESS [  3.074 s]
+[INFO] Jackson dataformat: Ion ............................ SUCCESS [  2.033 s]
 [INFO] ------------------------------------------------------------------------
-[INFO] BUILD FAILURE
+[INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 10.987 s
-[INFO] Finished at: 2018-11-29T07:56:23+01:00
-[INFO] Final Memory: 32M/611M
+[INFO] Total time: 29.066 s
+[INFO] Finished at: 2018-11-29T07:57:37+01:00
+[INFO] Final Memory: 31M/613M
 [INFO] ------------------------------------------------------------------------
-[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.17:test (default-test) on project jackson-dataformat-cbor: There are test failures.
-[ERROR] 
-[ERROR] Please refer to /root/workspace/FasterXML/jackson-dataformats-binary/461131167/cbor/target/surefire-reports for the individual test results.
-[ERROR] -> [Help 1]
-[ERROR] 
-[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
-[ERROR] Re-run Maven using the -X switch to enable full debug logging.
-[ERROR] 
-[ERROR] For more information about the errors and possible solutions, please read the following articles:
-[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
-[ERROR] 
-[ERROR] After correcting the problems, you can resume the build with the command
-[ERROR]   mvn <goals> -rf :jackson-dataformat-cbor
