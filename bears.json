@@ -1,0 +1,152 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 8, 
+      "numberRunning": 9, 
+      "numberFailing": 0, 
+      "numberErroring": 1, 
+      "failures": [
+        {
+          "failureName": "org.modelmapper.MappingException", 
+          "isError": true, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 0
+    }, 
+    "failingModule": "/root/workspace/julianps/modelmapper-module-vavr/441307573", 
+    "failureDetails": [
+      {
+        "failureName": "org.modelmapper.MappingException", 
+        "detail": "ModelMapper mapping errors:\n\n1) Converter com.github.julianps.modelmapper.ValueConverter@7494e528 failed to convert io.vavr.collection.List to io.vavr.collection.List.\n\n1 error", 
+        "isError": true, 
+        "testMethod": "testNormalListNull", 
+        "testClass": "com.github.julianps.modelmapper.ValueConverterTest"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 8, 
+        "numberRunning": 9, 
+        "testClass": "com.github.julianps.modelmapper.ValueConverterTest", 
+        "numberFailing": 0, 
+        "numberErroring": 1, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/julianps/modelmapper-module-vavr/builds/461240331", 
+      "date": "Nov 29, 2018 12:58:55 PM", 
+      "id": 461240331
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/julianps/modelmapper-module-vavr/builds/441307573", 
+      "date": "Oct 14, 2018 5:33:02 PM", 
+      "id": 441307573
+    }
+  }, 
+  "repository": {
+    "name": "julianps/modelmapper-module-vavr", 
+    "url": "https://github.com/julianps/modelmapper-module-vavr", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 128919618
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/julianps/modelmapper-module-vavr/commit/b358ccbacff0f311b46f6bdd0f7d4aca1b27a13f", 
+      "sha": "b358ccbacff0f311b46f6bdd0f7d4aca1b27a13f", 
+      "branchName": "master", 
+      "date": "Nov 29, 2018 12:57:16 PM", 
+      "repoName": "julianps/modelmapper-module-vavr"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/julianps/modelmapper-module-vavr/commit/d1c32e6ca747b48f19fae89b4fdf695532494912", 
+      "sha": "d1c32e6ca747b48f19fae89b4fdf695532494912", 
+      "branchName": "master", 
+      "date": "Oct 14, 2018 5:31:17 PM", 
+      "repoName": "julianps/modelmapper-module-vavr"
+    }
+  }, 
+  "bugName": "julianps-modelmapper-module-vavr-441307573-461240331", 
+  "version": "latest", 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 24, 
+      "numberDeleted": 22
+    }
+  }, 
+  "type": "passing_passing", 
+  "bugId": "Bears-223", 
+  "projectMetrics": {
+    "numberSourceFiles": 2, 
+    "numberLibrariesFailingModule": 10, 
+    "numberTestFiles": 2, 
+    "numberModules": 1
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 283439416, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 386924544, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Nov 29, 2018 1:00:22 PM", 
+    "projectRootPomPath": "./workspace/julianps/modelmapper-module-vavr/441307573/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          0, 
+          1, 
+          0, 
+          0, 
+          23
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 24
+      }, 
+      "testing": {
+        "stepDurations": [
+          10
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 10
+      }, 
+      "cloning": {
+        "stepDurations": [
+          1
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 1
+      }
+    }, 
+    "reproductionDateBeginning": "Nov 29, 2018 12:59:14 PM", 
+    "totalDuration": 65
+  }
+}
