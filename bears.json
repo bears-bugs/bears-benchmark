@@ -1,0 +1,159 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 99, 
+      "numberRunning": 101, 
+      "numberFailing": 2, 
+      "numberErroring": 0, 
+      "failures": [
+        {
+          "failureName": "junit.framework.AssertionFailedError", 
+          "isError": false, 
+          "occurrences": 2
+        }
+      ], 
+      "numberSkipping": 0
+    }, 
+    "failingModule": "/root/workspace/FasterXML/jackson-dataformats-binary/461131167/cbor", 
+    "failureDetails": [
+      {
+        "failureName": "junit.framework.AssertionFailedError", 
+        "detail": "Expected token VALUE_NUMBER_INT, current token VALUE_STRING", 
+        "isError": false, 
+        "testMethod": "testOutputDecorators", 
+        "testClass": "com.fasterxml.jackson.dataformat.cbor.filter.StreamingDecoratorsTest"
+      }, 
+      {
+        "failureName": "junit.framework.AssertionFailedError", 
+        "detail": "Expected token VALUE_NUMBER_INT, current token null", 
+        "isError": false, 
+        "testMethod": "testInputDecorators", 
+        "testClass": "com.fasterxml.jackson.dataformat.cbor.filter.StreamingDecoratorsTest"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 0, 
+        "numberRunning": 2, 
+        "testClass": "com.fasterxml.jackson.dataformat.cbor.filter.StreamingDecoratorsTest", 
+        "numberFailing": 2, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/FasterXML/jackson-dataformats-binary/builds/461139756", 
+      "date": "Nov 29, 2018 7:54:45 AM", 
+      "id": 461139756
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/FasterXML/jackson-dataformats-binary/builds/461131167", 
+      "date": "Nov 29, 2018 7:14:23 AM", 
+      "id": 461131167
+    }
+  }, 
+  "repository": {
+    "name": "FasterXML/jackson-dataformats-binary", 
+    "url": "https://github.com/FasterXML/jackson-dataformats-binary", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 57942251
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/FasterXML/jackson-dataformats-binary/commit/155ec35e351a4b6d8a0aa428082866a292a30a22", 
+      "sha": "155ec35e351a4b6d8a0aa428082866a292a30a22", 
+      "branchName": "2.9", 
+      "date": "Nov 29, 2018 7:52:27 AM", 
+      "repoName": "FasterXML/jackson-dataformats-binary"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/FasterXML/jackson-dataformats-binary/commit/7fc8d59a999343ad900b91135cd2e6adf1dcfea2", 
+      "sha": "7fc8d59a999343ad900b91135cd2e6adf1dcfea2", 
+      "branchName": "2.9", 
+      "date": "Nov 29, 2018 7:12:03 AM", 
+      "repoName": "FasterXML/jackson-dataformats-binary"
+    }
+  }, 
+  "bugName": "FasterXML-jackson-dataformats-binary-461131167-461139756", 
+  "version": "latest", 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 2, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 25, 
+      "numberDeleted": 12
+    }
+  }, 
+  "type": "passing_passing", 
+  "bugId": "Bears-211", 
+  "projectMetrics": {
+    "numberSourceFiles": 135, 
+    "numberLibrariesFailingModule": 5, 
+    "numberTestFiles": 200, 
+    "numberModules": 5
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 351267440, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 414187520, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Nov 29, 2018 7:57:43 AM", 
+    "projectRootPomPath": "./workspace/FasterXML/jackson-dataformats-binary/461131167/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          0, 
+          1, 
+          0, 
+          0, 
+          51
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 52
+      }, 
+      "testing": {
+        "stepDurations": [
+          14
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 14
+      }, 
+      "cloning": {
+        "stepDurations": [
+          6
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 6
+      }
+    }, 
+    "reproductionDateBeginning": "Nov 29, 2018 7:55:09 AM", 
+    "totalDuration": 147
+  }
+}
