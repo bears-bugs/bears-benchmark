@@ -1,0 +1,152 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 1242, 
+      "numberRunning": 1243, 
+      "numberFailing": 1, 
+      "numberErroring": 0, 
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError", 
+          "isError": false, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 1
+    }, 
+    "failingModule": "/root/workspace/spring-projects/spring-data-commons/263410130", 
+    "failureDetails": [
+      {
+        "failureName": "java.lang.AssertionError", 
+        "detail": "\nExpected: is <org.springframework.data.util.ClassTypeInformationUnitTests$SomeConcrete>\n     but: was <org.springframework.data.util.ClassTypeInformationUnitTests$SomeConcrete<java.lang.Object>>", 
+        "isError": false, 
+        "testMethod": "usesTargetTypeForWildcardedBaseOnSpecialization", 
+        "testClass": "org.springframework.data.util.ClassTypeInformationUnitTests"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 29, 
+        "numberRunning": 30, 
+        "testClass": "org.springframework.data.util.ClassTypeInformationUnitTests", 
+        "numberFailing": 1, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/spring-projects/spring-data-commons/builds/263513297", 
+      "date": "Aug 11, 2017 4:25:35 PM", 
+      "id": 263513297
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/spring-projects/spring-data-commons/builds/263410130", 
+      "date": "Aug 11, 2017 11:00:15 AM", 
+      "id": 263410130
+    }
+  }, 
+  "repository": {
+    "name": "spring-projects/spring-data-commons", 
+    "url": "https://github.com/spring-projects/spring-data-commons", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 1072614
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/spring-projects/spring-data-commons/commit/1725cbaec18cb1a5c859f4d808a27840c4ffb1f6", 
+      "sha": "1725cbaec18cb1a5c859f4d808a27840c4ffb1f6", 
+      "branchName": "1.12.x", 
+      "date": "Aug 11, 2017 3:54:45 PM", 
+      "repoName": "spring-projects/spring-data-commons"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/spring-projects/spring-data-commons/commit/ddbedb7cd7e88e4e25432933e78e1d4bacb0d987", 
+      "sha": "ddbedb7cd7e88e4e25432933e78e1d4bacb0d987", 
+      "branchName": "1.12.x", 
+      "date": "Aug 3, 2017 11:38:02 AM", 
+      "repoName": "spring-projects/spring-data-commons"
+    }
+  }, 
+  "bugName": "spring-projects-spring-data-commons-263410130-263513297", 
+  "version": "latest", 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 0, 
+      "numberDeleted": 9
+    }
+  }, 
+  "type": "passing_passing", 
+  "bugId": "Bears-89", 
+  "projectMetrics": {
+    "numberSourceFiles": 356, 
+    "numberLibrariesFailingModule": 69, 
+    "numberTestFiles": 225, 
+    "numberModules": 1
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 372613752, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 494927872, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Dec 10, 2018 2:09:35 PM", 
+    "projectRootPomPath": "./workspace/spring-projects/spring-data-commons/263410130/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          0, 
+          2, 
+          0, 
+          0, 
+          154
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 156
+      }, 
+      "testing": {
+        "stepDurations": [
+          52
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 52
+      }, 
+      "cloning": {
+        "stepDurations": [
+          7
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 7
+      }
+    }, 
+    "reproductionDateBeginning": "Dec 10, 2018 2:03:54 PM", 
+    "totalDuration": 335
+  }
+}
