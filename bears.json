@@ -1,0 +1,171 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 1093, 
+      "numberRunning": 1095, 
+      "numberFailing": 2, 
+      "numberErroring": 0, 
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError", 
+          "isError": false, 
+          "occurrences": 1
+        }, 
+        {
+          "failureName": "org.junit.ComparisonFailure", 
+          "isError": false, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 2
+    }, 
+    "failingModule": "/root/workspace/INRIA/spoon/238234811", 
+    "failureDetails": [
+      {
+        "failureName": "java.lang.AssertionError", 
+        "testClass": "spoon.test.prettyprinter.LinesTest", 
+        "testMethod": "testPrettyPrinterWithLines", 
+        "isError": false
+      }, 
+      {
+        "failureName": "org.junit.ComparisonFailure", 
+        "detail": "expected:<[]catch (spoon.test.tr...> but was:<[ ]catch (spoon.test.tr...>", 
+        "isError": false, 
+        "testMethod": "testMultiTryCatchWithCustomExceptions", 
+        "testClass": "spoon.test.trycatch.TryCatchTest"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 1, 
+        "numberRunning": 2, 
+        "testClass": "spoon.test.prettyprinter.LinesTest", 
+        "numberFailing": 1, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }, 
+      {
+        "numberPassing": 8, 
+        "numberRunning": 9, 
+        "testClass": "spoon.test.trycatch.TryCatchTest", 
+        "numberFailing": 1, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/INRIA/spoon/builds/238235509", 
+      "date": "Jun 1, 2017 9:35:46 AM", 
+      "id": 238235509
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/INRIA/spoon/builds/238234811", 
+      "date": "Jun 1, 2017 9:33:55 AM", 
+      "id": 238234811
+    }
+  }, 
+  "repository": {
+    "name": "INRIA/spoon", 
+    "url": "https://github.com/INRIA/spoon", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 14176513
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/INRIA/spoon/commit/d3a9c911046c1ca36fd193d5f333ed8f8e3e76d7", 
+      "sha": "d3a9c911046c1ca36fd193d5f333ed8f8e3e76d7", 
+      "branchName": "master", 
+      "date": "Jun 1, 2017 9:27:28 AM", 
+      "repoName": "INRIA/spoon"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/INRIA/spoon/commit/419d8133ce970465eb018f074d251a7a26562de9", 
+      "sha": "419d8133ce970465eb018f074d251a7a26562de9", 
+      "branchName": "master", 
+      "date": "Jun 1, 2017 9:25:20 AM", 
+      "repoName": "INRIA/spoon"
+    }
+  }, 
+  "bugName": "INRIA-spoon-238234811-238235509", 
+  "version": "latest", 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 4, 
+      "numberDeleted": 2
+    }
+  }, 
+  "type": "passing_passing", 
+  "bugId": "Bears-60", 
+  "projectMetrics": {
+    "numberSourceFiles": 486, 
+    "numberLibrariesFailingModule": 10, 
+    "numberTestFiles": 516, 
+    "numberModules": 1
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 361580648, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 450887680, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Dec 10, 2018 3:49:52 AM", 
+    "projectRootPomPath": "./workspace/INRIA/spoon/238234811/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          0, 
+          0, 
+          0, 
+          1, 
+          69
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 70
+      }, 
+      "testing": {
+        "stepDurations": [
+          265
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 265
+      }, 
+      "cloning": {
+        "stepDurations": [
+          10
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 10
+      }
+    }, 
+    "reproductionDateBeginning": "Dec 10, 2018 3:38:29 AM", 
+    "totalDuration": 676
+  }
+}
