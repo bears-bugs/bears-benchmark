@@ -1,0 +1,152 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 250, 
+      "numberRunning": 251, 
+      "numberFailing": 0, 
+      "numberErroring": 1, 
+      "failures": [
+        {
+          "failureName": "java.lang.StringIndexOutOfBoundsException", 
+          "isError": true, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 5
+    }, 
+    "failingModule": "/root/workspace/traccar/traccar/243640798", 
+    "failureDetails": [
+      {
+        "failureName": "java.lang.StringIndexOutOfBoundsException", 
+        "detail": "String index out of range: -16", 
+        "isError": true, 
+        "testMethod": "testDecode", 
+        "testClass": "org.traccar.protocol.H02ProtocolDecoderTest"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 1, 
+        "numberRunning": 2, 
+        "testClass": "org.traccar.protocol.H02ProtocolDecoderTest", 
+        "numberFailing": 0, 
+        "numberErroring": 1, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/traccar/traccar/builds/243870734", 
+      "date": "Jun 17, 2017 2:06:04 AM", 
+      "id": 243870734
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/traccar/traccar/builds/243640798", 
+      "date": "Jun 16, 2017 2:07:08 PM", 
+      "id": 243640798
+    }
+  }, 
+  "repository": {
+    "name": "traccar/traccar", 
+    "url": "https://github.com/traccar/traccar", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 4038949
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/traccar/traccar/commit/3f5122cbaf1710ae8d6c1c7ca9cf6a647f9a3f94", 
+      "sha": "3f5122cbaf1710ae8d6c1c7ca9cf6a647f9a3f94", 
+      "branchName": "master", 
+      "date": "Jun 17, 2017 2:02:15 AM", 
+      "repoName": "traccar/traccar"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/traccar/traccar/commit/9f4e34dd799187b32226652fdea9868c4ef5ddb4", 
+      "sha": "9f4e34dd799187b32226652fdea9868c4ef5ddb4", 
+      "branchName": "master", 
+      "date": "Jun 16, 2017 2:03:21 PM", 
+      "repoName": "traccar/traccar"
+    }
+  }, 
+  "bugName": "traccar-traccar-243640798-243870734", 
+  "version": "latest", 
+  "projectMetrics": {
+    "numberSourceFiles": 541, 
+    "numberLibrariesFailingModule": 96, 
+    "numberTestFiles": 222, 
+    "numberModules": 1
+  }, 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 13, 
+      "numberDeleted": 8
+    }
+  }, 
+  "bugId": "Bears-119", 
+  "type": "passing_passing", 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 348606408, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 499122176, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Dec 10, 2018 2:07:13 AM", 
+    "projectRootPomPath": "./workspace/traccar/traccar/243640798/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          0, 
+          0, 
+          0, 
+          0, 
+          103
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 103
+      }, 
+      "testing": {
+        "stepDurations": [
+          11
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 11
+      }, 
+      "cloning": {
+        "stepDurations": [
+          12
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 12
+      }
+    }, 
+    "reproductionDateBeginning": "Dec 10, 2018 2:03:54 AM", 
+    "totalDuration": 192
+  }
+}
