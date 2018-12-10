@@ -1,0 +1,180 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 1162, 
+      "numberRunning": 1167, 
+      "numberFailing": 5, 
+      "numberErroring": 0, 
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure", 
+          "isError": false, 
+          "occurrences": 5
+        }
+      ], 
+      "numberSkipping": 2
+    }, 
+    "failingModule": "/root/workspace/INRIA/spoon/272467827", 
+    "failureDetails": [
+      {
+        "failureName": "org.junit.ComparisonFailure", 
+        "detail": "expected:<....logger.Logger.exit([\"enter\"])> but was:<....logger.Logger.exit([this._methodName_])>", 
+        "isError": false, 
+        "testMethod": "testExtensionDecoupledSubstitutionVisitor", 
+        "testClass": "spoon.test.template.TemplateTest"
+      }, 
+      {
+        "failureName": "org.junit.ComparisonFailure", 
+        "detail": "expected:<[value] = 7> but was:<[\"value\"] = 7>", 
+        "isError": false, 
+        "testMethod": "testFieldAccessNameSubstitutionInInnerClass", 
+        "testClass": "spoon.test.template.TemplateTest"
+      }, 
+      {
+        "failureName": "org.junit.ComparisonFailure", 
+        "detail": "expected:<...System.out.println(([(x)] + (m_x)))> but was:<...System.out.println(([\"x\"] + (m_x)))>", 
+        "isError": false, 
+        "testMethod": "testAnotherFieldAccessNameSubstitution", 
+        "testClass": "spoon.test.template.TemplateTest"
+      }, 
+      {
+        "failureName": "org.junit.ComparisonFailure", 
+        "detail": "expected:<[value] = 7> but was:<[\"value\"] = 7>", 
+        "isError": false, 
+        "testMethod": "testFieldAccessNameSubstitution", 
+        "testClass": "spoon.test.template.TemplateTest"
+      }, 
+      {
+        "failureName": "org.junit.ComparisonFailure", 
+        "detail": "expected:<[newVarName] = o> but was:<[\"newVarName\"] = o>", 
+        "isError": false, 
+        "testMethod": "testTemplateInheritance", 
+        "testClass": "spoon.test.template.TemplateTest"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 18, 
+        "numberRunning": 23, 
+        "testClass": "spoon.test.template.TemplateTest", 
+        "numberFailing": 5, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/INRIA/spoon/builds/272468614", 
+      "date": "Sep 6, 2017 2:59:34 PM", 
+      "id": 272468614
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/INRIA/spoon/builds/272467827", 
+      "date": "Sep 6, 2017 2:57:28 PM", 
+      "id": 272467827
+    }
+  }, 
+  "repository": {
+    "name": "INRIA/spoon", 
+    "url": "https://github.com/INRIA/spoon", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 14176513
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/INRIA/spoon/commit/25286d92e4c3f3c59865b904779d630f6d927ec9", 
+      "sha": "25286d92e4c3f3c59865b904779d630f6d927ec9", 
+      "branchName": "master", 
+      "date": "Sep 6, 2017 2:49:41 PM", 
+      "repoName": "INRIA/spoon"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/INRIA/spoon/commit/3ccd1790a203b2ebe63cd0af796da9dac6760a14", 
+      "sha": "3ccd1790a203b2ebe63cd0af796da9dac6760a14", 
+      "branchName": "master", 
+      "date": "Sep 6, 2017 2:47:46 PM", 
+      "repoName": "INRIA/spoon"
+    }
+  }, 
+  "bugName": "INRIA-spoon-272467827-272468614", 
+  "version": "latest", 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 3, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 22, 
+      "numberDeleted": 56
+    }
+  }, 
+  "type": "passing_passing", 
+  "bugId": "Bears-82", 
+  "projectMetrics": {
+    "numberSourceFiles": 511, 
+    "numberLibrariesFailingModule": 10, 
+    "numberTestFiles": 591, 
+    "numberModules": 1
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 350354016, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 470286336, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Dec 10, 2018 3:08:20 PM", 
+    "projectRootPomPath": "./workspace/INRIA/spoon/272467827/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          1, 
+          0, 
+          0, 
+          0, 
+          80
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 81
+      }, 
+      "testing": {
+        "stepDurations": [
+          301
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 301
+      }, 
+      "cloning": {
+        "stepDurations": [
+          11
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 11
+      }
+    }, 
+    "reproductionDateBeginning": "Dec 10, 2018 2:53:04 PM", 
+    "totalDuration": 908
+  }
+}
