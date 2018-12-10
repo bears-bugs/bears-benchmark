@@ -1,0 +1,194 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 2310, 
+      "numberRunning": 2316, 
+      "numberFailing": 2, 
+      "numberErroring": 4, 
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException", 
+          "isError": true, 
+          "occurrences": 3
+        }, 
+        {
+          "failureName": "java.lang.AssertionError", 
+          "isError": false, 
+          "occurrences": 2
+        }, 
+        {
+          "failureName": "java.lang.Exception", 
+          "isError": true, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 2
+    }, 
+    "failingModule": "/root/workspace/spring-projects/spring-data-commons/289903133", 
+    "failureDetails": [
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "org.springframework.data.mapping.model.ClassGeneratingPropertyAccessorFactoryTests", 
+        "testMethod": "shouldUseClassPropertyAccessorFactory[Class in default package]", 
+        "isError": true
+      }, 
+      {
+        "failureName": "java.lang.AssertionError", 
+        "detail": "\nExpecting:\n  <java.lang.NullPointerException>\nto be an instance of:\n  <java.lang.UnsupportedOperationException>\nbut was:\n  <\"java.lang.NullPointerException\n at org.springframework.data.mapping.model.ClassGeneratingPropertyAccessorFactory.isTypeInjectable(ClassGeneratingPropertyAccessorFactory.java:136)\n at org.springframework.data.mapping.model.ClassGeneratingPropertyAccessorFactory.isSupported(ClassGeneratingPropertyAccessorFactory.java:122)\n at org.springframework.data.mapping.context.AbstractMappingContext.addPersistentEntity(AbstractMappingContext.java:397)\n at org.springframework.data.mapping.context.AbstractMappingContext.getPersistentEntity(AbstractMappingContext.java:227)\n at org.springframework.data.mapping.context.AbstractMappingContext.getPersistentEntity(AbstractMappingContext.java:172)\n at org.springframework.data.mapping.context.AbstractMappingContext.getPersistentEntity(AbstractMappingContext.java:85)\n at org.springframework.data.mapping.context.MappingContext.getRequiredPersistentEntity(MappingContext.java:70)\n at org.springframework.data.mapping.model.ClassGeneratingPropertyAccessorFactoryTests.getPersistentPropertyAccessor(ClassGeneratingPropertyAccessorFactoryTests.java:167)\n at org.springframework.data.mapping.model.ClassGeneratingPropertyAccessorFactoryTests.lambda$null$3(ClassGeneratingPropertyAccessorFactoryTests.java:153)\n at org.assertj.core.api.ThrowableAssert.catchThrowable(ThrowableAssert.java:60)\n at org.assertj.core.api.ThrowableTypeAssert.isThrownBy(ThrowableTypeAssert.java:54)\n at org.springframework.data.mapping.model.ClassGeneratingPropertyAccessorFactoryTests.lambda$setPropertyShouldFailOnUnhandledProperty$4(ClassGeneratingPropertyAccessorFactoryTests.java:153)\n at org.assertj.core.api.AbstractAssert.satisfies(AbstractAssert.java:639)\n at org.springframework.data.mapping.model.ClassGeneratingPropertyAccessorFactoryTests.setPropertyShouldFailOnUnhandledProperty(ClassGeneratingPropertyAccessorFactoryTests.java:152)\n at sun.reflect.GeneratedMethodAccessor113.invoke(Unknown Source)\n at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n at java.lang.reflect.Method.invoke(Method.java:498)\n at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)\n at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)\n at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)\n at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)\n at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)\n at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n at org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n at org.junit.runners.Suite.runChild(Suite.java:128)\n at org.junit.runners.Suite.runChild(Suite.java:27)\n at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n at org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)\n at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)\n at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)\n at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)\n at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)\n at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)\n at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)\n\">", 
+        "isError": false, 
+        "testMethod": "setPropertyShouldFailOnUnhandledProperty[Class in default package]", 
+        "testClass": "org.springframework.data.mapping.model.ClassGeneratingPropertyAccessorFactoryTests"
+      }, 
+      {
+        "failureName": "java.lang.Exception", 
+        "detail": "Unexpected exception, expected<java.lang.IllegalArgumentException> but was<java.lang.NullPointerException>", 
+        "isError": true, 
+        "testMethod": "shouldFailOnNullBean[Class in default package]", 
+        "testClass": "org.springframework.data.mapping.model.ClassGeneratingPropertyAccessorFactoryTests"
+      }, 
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "org.springframework.data.mapping.model.ClassGeneratingPropertyAccessorFactoryTests", 
+        "testMethod": "accessorShouldDeclareConstructor[Class in default package]", 
+        "isError": true
+      }, 
+      {
+        "failureName": "java.lang.NullPointerException", 
+        "testClass": "org.springframework.data.mapping.model.ClassGeneratingPropertyAccessorFactoryTests", 
+        "testMethod": "shouldSupportGeneratedPropertyAccessors[Class in default package]", 
+        "isError": true
+      }, 
+      {
+        "failureName": "java.lang.AssertionError", 
+        "detail": "\nExpecting:\n  <java.lang.NullPointerException>\nto be an instance of:\n  <java.lang.UnsupportedOperationException>\nbut was:\n  <\"java.lang.NullPointerException\n at org.springframework.data.mapping.model.ClassGeneratingPropertyAccessorFactory.isTypeInjectable(ClassGeneratingPropertyAccessorFactory.java:136)\n at org.springframework.data.mapping.model.ClassGeneratingPropertyAccessorFactory.isSupported(ClassGeneratingPropertyAccessorFactory.java:122)\n at org.springframework.data.mapping.context.AbstractMappingContext.addPersistentEntity(AbstractMappingContext.java:397)\n at org.springframework.data.mapping.context.AbstractMappingContext.getPersistentEntity(AbstractMappingContext.java:227)\n at org.springframework.data.mapping.context.AbstractMappingContext.getPersistentEntity(AbstractMappingContext.java:172)\n at org.springframework.data.mapping.context.AbstractMappingContext.getPersistentEntity(AbstractMappingContext.java:85)\n at org.springframework.data.mapping.context.MappingContext.getRequiredPersistentEntity(MappingContext.java:70)\n at org.springframework.data.mapping.model.ClassGeneratingPropertyAccessorFactoryTests.getPersistentPropertyAccessor(ClassGeneratingPropertyAccessorFactoryTests.java:167)\n at org.springframework.data.mapping.model.ClassGeneratingPropertyAccessorFactoryTests.lambda$null$1(ClassGeneratingPropertyAccessorFactoryTests.java:145)\n at org.assertj.core.api.ThrowableAssert.catchThrowable(ThrowableAssert.java:60)\n at org.assertj.core.api.ThrowableTypeAssert.isThrownBy(ThrowableTypeAssert.java:54)\n at org.springframework.data.mapping.model.ClassGeneratingPropertyAccessorFactoryTests.lambda$getPropertyShouldFailOnUnhandledProperty$2(ClassGeneratingPropertyAccessorFactoryTests.java:145)\n at org.assertj.core.api.AbstractAssert.satisfies(AbstractAssert.java:639)\n at org.springframework.data.mapping.model.ClassGeneratingPropertyAccessorFactoryTests.getPropertyShouldFailOnUnhandledProperty(ClassGeneratingPropertyAccessorFactoryTests.java:144)\n at sun.reflect.GeneratedMethodAccessor111.invoke(Unknown Source)\n at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n at java.lang.reflect.Method.invoke(Method.java:498)\n at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)\n at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)\n at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)\n at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)\n at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)\n at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n at org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n at org.junit.runners.Suite.runChild(Suite.java:128)\n at org.junit.runners.Suite.runChild(Suite.java:27)\n at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n at org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)\n at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)\n at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)\n at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)\n at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)\n at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)\n at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)\n\">", 
+        "isError": false, 
+        "testMethod": "getPropertyShouldFailOnUnhandledProperty[Class in default package]", 
+        "testClass": "org.springframework.data.mapping.model.ClassGeneratingPropertyAccessorFactoryTests"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 504, 
+        "numberRunning": 510, 
+        "testClass": "org.springframework.data.mapping.model.ClassGeneratingPropertyAccessorFactoryTests", 
+        "numberFailing": 2, 
+        "numberErroring": 4, 
+        "numberSkipping": 1
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/spring-projects/spring-data-commons/builds/292475109", 
+      "date": "Oct 25, 2017 9:16:22 AM", 
+      "id": 292475109
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/spring-projects/spring-data-commons/builds/289903133", 
+      "date": "Oct 19, 2017 12:24:52 PM", 
+      "id": 289903133
+    }
+  }, 
+  "repository": {
+    "name": "spring-projects/spring-data-commons", 
+    "url": "https://github.com/spring-projects/spring-data-commons", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 1072614
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/spring-projects/spring-data-commons/commit/edd8c5b8a337cec89e1c16a1e0d4f06825fffa73", 
+      "sha": "edd8c5b8a337cec89e1c16a1e0d4f06825fffa73", 
+      "branchName": "2.0.x", 
+      "date": "Oct 25, 2017 9:10:15 AM", 
+      "repoName": "spring-projects/spring-data-commons"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/spring-projects/spring-data-commons/commit/26da224081795d6f75144af755c12fd93fdba1bf", 
+      "sha": "26da224081795d6f75144af755c12fd93fdba1bf", 
+      "branchName": "2.0.x", 
+      "date": "Oct 19, 2017 12:15:13 PM", 
+      "repoName": "spring-projects/spring-data-commons"
+    }
+  }, 
+  "bugName": "spring-projects-spring-data-commons-289903133-292475109", 
+  "version": "latest", 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 4, 
+      "numberDeleted": 1
+    }
+  }, 
+  "type": "passing_passing", 
+  "bugId": "Bears-95", 
+  "projectMetrics": {
+    "numberSourceFiles": 421, 
+    "numberLibrariesFailingModule": 94, 
+    "numberTestFiles": 263, 
+    "numberModules": 1
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 255496896, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 465043456, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Dec 11, 2018 1:02:40 AM", 
+    "projectRootPomPath": "./workspace/spring-projects/spring-data-commons/289903133/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          0, 
+          3, 
+          0, 
+          0, 
+          209
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 212
+      }, 
+      "testing": {
+        "stepDurations": [
+          90
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 90
+      }, 
+      "cloning": {
+        "stepDurations": [
+          9
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 9
+      }
+    }, 
+    "reproductionDateBeginning": "Dec 11, 2018 12:54:18 AM", 
+    "totalDuration": 494
+  }
+}
