@@ -1,0 +1,152 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 1140, 
+      "numberRunning": 1141, 
+      "numberFailing": 1, 
+      "numberErroring": 0, 
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError", 
+          "isError": false, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 2
+    }, 
+    "failingModule": "/root/workspace/INRIA/spoon/249529059", 
+    "failureDetails": [
+      {
+        "failureName": "java.lang.AssertionError", 
+        "detail": "It must fail, because body of forEach should be called and thrown CCE", 
+        "isError": false, 
+        "testMethod": "testClassCastExceptionOnForEach", 
+        "testClass": "spoon.test.filters.FilterTest"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 39, 
+        "numberRunning": 40, 
+        "testClass": "spoon.test.filters.FilterTest", 
+        "numberFailing": 1, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/INRIA/spoon/builds/249603843", 
+      "date": "Jul 3, 2017 2:11:12 PM", 
+      "id": 249603843
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/INRIA/spoon/builds/249529059", 
+      "date": "Jul 3, 2017 9:57:32 AM", 
+      "id": 249529059
+    }
+  }, 
+  "repository": {
+    "name": "INRIA/spoon", 
+    "url": "https://github.com/INRIA/spoon", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 14176513
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/INRIA/spoon/commit/3041002595d0497cca31f9c5fd65a706abec9117", 
+      "sha": "3041002595d0497cca31f9c5fd65a706abec9117", 
+      "branchName": "master", 
+      "date": "Jul 3, 2017 2:01:45 PM", 
+      "repoName": "INRIA/spoon"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/INRIA/spoon/commit/41d7cd3360af9799d9c5cef98fd6bb3db3965bf1", 
+      "sha": "41d7cd3360af9799d9c5cef98fd6bb3db3965bf1", 
+      "branchName": "master", 
+      "date": "Jul 3, 2017 9:48:26 AM", 
+      "repoName": "INRIA/spoon"
+    }
+  }, 
+  "bugName": "INRIA-spoon-249529059-249603843", 
+  "version": "latest", 
+  "projectMetrics": {
+    "numberSourceFiles": 509, 
+    "numberLibrariesFailingModule": 10, 
+    "numberTestFiles": 567, 
+    "numberModules": 1
+  }, 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 9, 
+      "numberDeleted": 3
+    }
+  }, 
+  "bugId": "Bears-73", 
+  "type": "passing_passing", 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 371006760, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 493879296, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Dec 10, 2018 3:39:57 PM", 
+    "projectRootPomPath": "./workspace/INRIA/spoon/249529059/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          1, 
+          0, 
+          0, 
+          0, 
+          69
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 70
+      }, 
+      "testing": {
+        "stepDurations": [
+          282
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 282
+      }, 
+      "cloning": {
+        "stepDurations": [
+          11
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 11
+      }
+    }, 
+    "reproductionDateBeginning": "Dec 10, 2018 3:28:02 PM", 
+    "totalDuration": 708
+  }
+}
