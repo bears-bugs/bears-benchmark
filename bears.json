@@ -1,0 +1,171 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 2221, 
+      "numberRunning": 2224, 
+      "numberFailing": 0, 
+      "numberErroring": 3, 
+      "failures": [
+        {
+          "failureName": "java.lang.IllegalStateException", 
+          "isError": true, 
+          "occurrences": 1
+        }, 
+        {
+          "failureName": "java.lang.ClassCastException", 
+          "isError": true, 
+          "occurrences": 2
+        }
+      ], 
+      "numberSkipping": 1
+    }, 
+    "failingModule": "/root/workspace/spring-projects/spring-data-commons/279152312", 
+    "failureDetails": [
+      {
+        "failureName": "java.lang.ClassCastException", 
+        "detail": "java.time.LocalDateTime cannot be cast to java.util.Optional", 
+        "isError": true, 
+        "testMethod": "exposesRevisionDate", 
+        "testClass": "org.springframework.data.history.AnnotationRevisionMetadataUnitTests"
+      }, 
+      {
+        "failureName": "java.lang.IllegalStateException", 
+        "detail": "Expected lazy evaluation to yield a non-null value but got null!", 
+        "isError": true, 
+        "testMethod": "exposesNoInformationOnEmptyProbe", 
+        "testClass": "org.springframework.data.history.AnnotationRevisionMetadataUnitTests"
+      }, 
+      {
+        "failureName": "java.lang.ClassCastException", 
+        "detail": "java.lang.Long cannot be cast to java.util.Optional", 
+        "isError": true, 
+        "testMethod": "exposesRevisionNumber", 
+        "testClass": "org.springframework.data.history.AnnotationRevisionMetadataUnitTests"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 0, 
+        "numberRunning": 3, 
+        "testClass": "org.springframework.data.history.AnnotationRevisionMetadataUnitTests", 
+        "numberFailing": 0, 
+        "numberErroring": 3, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/spring-projects/spring-data-commons/builds/279418526", 
+      "date": "Sep 25, 2017 10:06:44 AM", 
+      "id": 279418526
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/spring-projects/spring-data-commons/builds/279152312", 
+      "date": "Sep 24, 2017 11:24:31 AM", 
+      "id": 279152312
+    }
+  }, 
+  "repository": {
+    "name": "spring-projects/spring-data-commons", 
+    "url": "https://github.com/spring-projects/spring-data-commons", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 1072614
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/spring-projects/spring-data-commons/commit/65e21344ac1e411e3aa71466e62f30230b3b46cc", 
+      "sha": "65e21344ac1e411e3aa71466e62f30230b3b46cc", 
+      "branchName": "master", 
+      "date": "Sep 25, 2017 9:56:31 AM", 
+      "repoName": "spring-projects/spring-data-commons"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/spring-projects/spring-data-commons/commit/041c18bef9f8ec832e63e3aaa4adc81acfb88727", 
+      "sha": "041c18bef9f8ec832e63e3aaa4adc81acfb88727", 
+      "branchName": "master", 
+      "date": "Sep 22, 2017 12:11:04 PM", 
+      "repoName": "spring-projects/spring-data-commons"
+    }
+  }, 
+  "bugName": "spring-projects-spring-data-commons-279152312-279418526", 
+  "version": "latest", 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 2, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 7, 
+      "numberDeleted": 7
+    }
+  }, 
+  "type": "passing_passing", 
+  "bugId": "Bears-92", 
+  "projectMetrics": {
+    "numberSourceFiles": 421, 
+    "numberLibrariesFailingModule": 94, 
+    "numberTestFiles": 259, 
+    "numberModules": 1
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 257874368, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 422576128, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Dec 10, 2018 1:51:17 PM", 
+    "projectRootPomPath": "./workspace/spring-projects/spring-data-commons/279152312/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          0, 
+          1, 
+          0, 
+          0, 
+          201
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 202
+      }, 
+      "testing": {
+        "stepDurations": [
+          89
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 89
+      }, 
+      "cloning": {
+        "stepDurations": [
+          7
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 7
+      }
+    }, 
+    "reproductionDateBeginning": "Dec 10, 2018 1:43:07 PM", 
+    "totalDuration": 482
+  }
+}
