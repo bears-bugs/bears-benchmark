@@ -1,0 +1,152 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 2027, 
+      "numberRunning": 2028, 
+      "numberFailing": 0, 
+      "numberErroring": 1, 
+      "failures": [
+        {
+          "failureName": "org.springframework.core.convert.ConversionFailedException", 
+          "isError": true, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 2
+    }, 
+    "failingModule": "/root/workspace/spring-projects/spring-data-commons/240714544", 
+    "failureDetails": [
+      {
+        "failureName": "org.springframework.core.convert.ConversionFailedException", 
+        "detail": "Failed to convert from type [org.springframework.data.repository.util.NullableWrapper] to type [io.vavr.control.Option<?>] for value 'org.springframework.data.repository.util.NullableWrapper@433ae0b0'; nested exception is java.lang.IllegalArgumentException: wrong number of arguments", 
+        "isError": true, 
+        "testMethod": "convertsValueToVavrOption", 
+        "testClass": "org.springframework.data.repository.util.QueryExecutionConvertersUnitTests"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 28, 
+        "numberRunning": 29, 
+        "testClass": "org.springframework.data.repository.util.QueryExecutionConvertersUnitTests", 
+        "numberFailing": 0, 
+        "numberErroring": 1, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/spring-projects/spring-data-commons/builds/241322094", 
+      "date": "Jun 9, 2017 9:30:15 PM", 
+      "id": 241322094
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/spring-projects/spring-data-commons/builds/240714544", 
+      "date": "Jun 8, 2017 11:46:59 AM", 
+      "id": 240714544
+    }
+  }, 
+  "repository": {
+    "name": "spring-projects/spring-data-commons", 
+    "url": "https://github.com/spring-projects/spring-data-commons", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 1072614
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/spring-projects/spring-data-commons/commit/e1761f6c8c1f1189144427785b590823134d1cf4", 
+      "sha": "e1761f6c8c1f1189144427785b590823134d1cf4", 
+      "branchName": "1.13.x", 
+      "date": "Jun 9, 2017 9:24:08 PM", 
+      "repoName": "spring-projects/spring-data-commons"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/spring-projects/spring-data-commons/commit/0398bdd22f56aebc8fc05aa498873fc0b2407435", 
+      "sha": "0398bdd22f56aebc8fc05aa498873fc0b2407435", 
+      "branchName": "1.13.x", 
+      "date": "Jun 8, 2017 11:26:19 AM", 
+      "repoName": "spring-projects/spring-data-commons"
+    }
+  }, 
+  "bugName": "spring-projects-spring-data-commons-240714544-241322094", 
+  "version": "latest", 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 1, 
+      "numberDeleted": 1
+    }
+  }, 
+  "type": "passing_passing", 
+  "bugId": "Bears-87", 
+  "projectMetrics": {
+    "numberSourceFiles": 379, 
+    "numberLibrariesFailingModule": 73, 
+    "numberTestFiles": 233, 
+    "numberModules": 1
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 314685336, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 427819008, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Dec 10, 2018 2:34:19 AM", 
+    "projectRootPomPath": "./workspace/spring-projects/spring-data-commons/240714544/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          0, 
+          1, 
+          0, 
+          0, 
+          154
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 155
+      }, 
+      "testing": {
+        "stepDurations": [
+          53
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 53
+      }, 
+      "cloning": {
+        "stepDurations": [
+          7
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 7
+      }
+    }, 
+    "reproductionDateBeginning": "Dec 10, 2018 2:28:30 AM", 
+    "totalDuration": 342
+  }
+}
