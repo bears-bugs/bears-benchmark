@@ -1,0 +1,152 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 1754, 
+      "numberRunning": 1755, 
+      "numberFailing": 1, 
+      "numberErroring": 0, 
+      "failures": [
+        {
+          "failureName": "junit.framework.AssertionFailedError", 
+          "isError": false, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 0
+    }, 
+    "failingModule": "/root/workspace/FasterXML/jackson-databind/318458719", 
+    "failureDetails": [
+      {
+        "failureName": "junit.framework.AssertionFailedError", 
+        "detail": "Expected an exception with one of substrings ([Illegal type]): got one (of type com.fasterxml.jackson.databind.JsonMappingException) with message \"Can not construct instance of org.springframework.jacksontest.BogusPointcutAdvisor, problem: Wrong!\n at [Source: {\"v\":[\"org.springframework.jacksontest.BogusPointcutAdvisor\",\"/tmp/foobar.txt\"]}; line: 1, column: 62] (through reference chain: com.fasterxml.jackson.databind.interop.IllegalTypesCheckTest$PolyWrapper[\"v\"])\"", 
+        "isError": false, 
+        "testMethod": "testJDKTypes1855", 
+        "testClass": "com.fasterxml.jackson.databind.interop.IllegalTypesCheckTest"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 2, 
+        "numberRunning": 3, 
+        "testClass": "com.fasterxml.jackson.databind.interop.IllegalTypesCheckTest", 
+        "numberFailing": 1, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/FasterXML/jackson-databind/builds/318715551", 
+      "date": "Dec 19, 2017 5:36:21 PM", 
+      "id": 318715551
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/FasterXML/jackson-databind/builds/318458719", 
+      "date": "Dec 19, 2017 6:48:31 AM", 
+      "id": 318458719
+    }
+  }, 
+  "repository": {
+    "name": "FasterXML/jackson-databind", 
+    "url": "https://github.com/FasterXML/jackson-databind", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 3038937
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/FasterXML/jackson-databind/commit/459107dccc9b3ea991af3e6ad0953e54b01ef7c1", 
+      "sha": "459107dccc9b3ea991af3e6ad0953e54b01ef7c1", 
+      "branchName": "2.8", 
+      "date": "Dec 19, 2017 5:31:49 PM", 
+      "repoName": "FasterXML/jackson-databind"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/FasterXML/jackson-databind/commit/bade4792d12bcf7242ada53c197a924332840864", 
+      "sha": "bade4792d12bcf7242ada53c197a924332840864", 
+      "branchName": "2.8", 
+      "date": "Dec 19, 2017 6:44:34 AM", 
+      "repoName": "FasterXML/jackson-databind"
+    }
+  }, 
+  "bugName": "FasterXML-jackson-databind-318458719-318715551", 
+  "version": "latest", 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 2, 
+      "numberDeleted": 3
+    }
+  }, 
+  "type": "passing_passing", 
+  "bugId": "Bears-26", 
+  "projectMetrics": {
+    "numberSourceFiles": 399, 
+    "numberLibrariesFailingModule": 17, 
+    "numberTestFiles": 411, 
+    "numberModules": 1
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 248725608, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 585105408, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Dec 11, 2018 12:31:23 AM", 
+    "projectRootPomPath": "./workspace/FasterXML/jackson-databind/318458719/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          0, 
+          0, 
+          0, 
+          0, 
+          55
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 55
+      }, 
+      "testing": {
+        "stepDurations": [
+          42
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 42
+      }, 
+      "cloning": {
+        "stepDurations": [
+          30
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 30
+      }
+    }, 
+    "reproductionDateBeginning": "Dec 11, 2018 12:27:45 AM", 
+    "totalDuration": 210
+  }
+}
