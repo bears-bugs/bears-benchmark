@@ -1,0 +1,165 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 269, 
+      "numberRunning": 272, 
+      "numberFailing": 3, 
+      "numberErroring": 0, 
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError", 
+          "isError": false, 
+          "occurrences": 3
+        }
+      ], 
+      "numberSkipping": 6
+    }, 
+    "failingModule": "/root/workspace/traccar/traccar/265439859", 
+    "failureDetails": [
+      {
+        "failureName": "java.lang.AssertionError", 
+        "detail": "expected:<Fri Jan 01 01:24:00 CET 2016> but was:<Fri Jan 01 01:23:00 CET 2016>", 
+        "isError": false, 
+        "testMethod": "testDetectTripAndStopByGap", 
+        "testClass": "org.traccar.reports.ReportUtilsTest"
+      }, 
+      {
+        "failureName": "java.lang.AssertionError", 
+        "detail": "expected:<Fri Jan 01 01:09:00 CET 2016> but was:<Fri Jan 01 01:07:00 CET 2016>", 
+        "isError": false, 
+        "testMethod": "testDetectTripsWithFluctuation", 
+        "testClass": "org.traccar.reports.ReportUtilsTest"
+      }, 
+      {
+        "failureName": "java.lang.AssertionError", 
+        "testClass": "org.traccar.reports.ReportUtilsTest", 
+        "testMethod": "testDetectTripsSimpleWithIgnition", 
+        "isError": false
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 7, 
+        "numberRunning": 10, 
+        "testClass": "org.traccar.reports.ReportUtilsTest", 
+        "numberFailing": 3, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/traccar/traccar/builds/265542197", 
+      "date": "Aug 17, 2017 1:51:35 PM", 
+      "id": 265542197
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/traccar/traccar/builds/265439859", 
+      "date": "Aug 17, 2017 7:15:17 AM", 
+      "id": 265439859
+    }
+  }, 
+  "repository": {
+    "name": "traccar/traccar", 
+    "url": "https://github.com/traccar/traccar", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 4038949
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/traccar/traccar/commit/a1f7908769d296aed7766151340426e612883c6f", 
+      "sha": "a1f7908769d296aed7766151340426e612883c6f", 
+      "branchName": "master", 
+      "date": "Aug 17, 2017 1:50:14 PM", 
+      "repoName": "traccar/traccar"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/traccar/traccar/commit/9e9f97ac34d882594e3d23e959775ce765447787", 
+      "sha": "9e9f97ac34d882594e3d23e959775ce765447787", 
+      "branchName": "master", 
+      "date": "Aug 17, 2017 7:12:44 AM", 
+      "repoName": "traccar/traccar"
+    }
+  }, 
+  "bugName": "traccar-traccar-265439859-265542197", 
+  "version": "latest", 
+  "projectMetrics": {
+    "numberSourceFiles": 549, 
+    "numberLibrariesFailingModule": 96, 
+    "numberTestFiles": 232, 
+    "numberModules": 1
+  }, 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 9, 
+      "numberDeleted": 11
+    }
+  }, 
+  "bugId": "Bears-123", 
+  "type": "passing_passing", 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 247040328, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 441450496, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Dec 10, 2018 1:10:14 PM", 
+    "projectRootPomPath": "./workspace/traccar/traccar/265439859/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          1, 
+          0, 
+          0, 
+          0, 
+          108
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 109
+      }, 
+      "testing": {
+        "stepDurations": [
+          16
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 16
+      }, 
+      "cloning": {
+        "stepDurations": [
+          13
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 13
+      }
+    }, 
+    "reproductionDateBeginning": "Dec 10, 2018 1:06:42 PM", 
+    "totalDuration": 207
+  }
+}
