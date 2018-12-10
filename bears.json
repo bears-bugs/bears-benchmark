@@ -1,0 +1,152 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 275, 
+      "numberRunning": 276, 
+      "numberFailing": 0, 
+      "numberErroring": 1, 
+      "failures": [
+        {
+          "failureName": "java.lang.NumberFormatException", 
+          "isError": true, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 7
+    }, 
+    "failingModule": "/root/workspace/traccar/traccar/292295467", 
+    "failureDetails": [
+      {
+        "failureName": "java.lang.NumberFormatException", 
+        "detail": "Value out of range. Value:\"FB2E\" Radix:16", 
+        "isError": true, 
+        "testMethod": "testDecode", 
+        "testClass": "org.traccar.protocol.MeitrackProtocolDecoderTest"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 0, 
+        "numberRunning": 1, 
+        "testClass": "org.traccar.protocol.MeitrackProtocolDecoderTest", 
+        "numberFailing": 0, 
+        "numberErroring": 1, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/traccar/traccar/builds/292405214", 
+      "date": "Oct 25, 2017 4:36:29 AM", 
+      "id": 292405214
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/traccar/traccar/builds/292295467", 
+      "date": "Oct 24, 2017 10:54:48 PM", 
+      "id": 292295467
+    }
+  }, 
+  "repository": {
+    "name": "traccar/traccar", 
+    "url": "https://github.com/traccar/traccar", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 4038949
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/traccar/traccar/commit/c72e261e92166c0f775ad2378637ee778e65564b", 
+      "sha": "c72e261e92166c0f775ad2378637ee778e65564b", 
+      "branchName": "master", 
+      "date": "Oct 24, 2017 7:34:33 PM", 
+      "repoName": "traccar/traccar"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/traccar/traccar/commit/bf42fd74dc38459ffafcf4a329634504efc90d40", 
+      "sha": "bf42fd74dc38459ffafcf4a329634504efc90d40", 
+      "branchName": "master", 
+      "date": "Oct 24, 2017 10:52:37 PM", 
+      "repoName": "traccar/traccar"
+    }
+  }, 
+  "bugName": "traccar-traccar-292295467-292405214", 
+  "version": "latest", 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 4, 
+      "numberDeleted": 4
+    }
+  }, 
+  "type": "passing_passing", 
+  "bugId": "Bears-131", 
+  "projectMetrics": {
+    "numberSourceFiles": 552, 
+    "numberLibrariesFailingModule": 96, 
+    "numberTestFiles": 236, 
+    "numberModules": 1
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 326542360, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 481820672, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Dec 11, 2018 12:22:36 AM", 
+    "projectRootPomPath": "./workspace/traccar/traccar/292295467/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          1, 
+          0, 
+          0, 
+          0, 
+          102
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 103
+      }, 
+      "testing": {
+        "stepDurations": [
+          13
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 13
+      }, 
+      "cloning": {
+        "stepDurations": [
+          13
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 13
+      }
+    }, 
+    "reproductionDateBeginning": "Dec 11, 2018 12:19:16 AM", 
+    "totalDuration": 196
+  }
+}
