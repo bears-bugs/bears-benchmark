@@ -1,0 +1,152 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 273, 
+      "numberRunning": 274, 
+      "numberFailing": 0, 
+      "numberErroring": 1, 
+      "failures": [
+        {
+          "failureName": "java.lang.NumberFormatException", 
+          "isError": true, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 7
+    }, 
+    "failingModule": "/root/workspace/traccar/traccar/267371558", 
+    "failureDetails": [
+      {
+        "failureName": "java.lang.NumberFormatException", 
+        "detail": "Value out of range. Value:\"FFAD\" Radix:16", 
+        "isError": true, 
+        "testMethod": "testDecode", 
+        "testClass": "org.traccar.protocol.Gl200TextProtocolDecoderTest"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 0, 
+        "numberRunning": 1, 
+        "testClass": "org.traccar.protocol.Gl200TextProtocolDecoderTest", 
+        "numberFailing": 0, 
+        "numberErroring": 1, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/traccar/traccar/builds/268530427", 
+      "date": "Aug 25, 2017 11:44:11 PM", 
+      "id": 268530427
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/traccar/traccar/builds/267371558", 
+      "date": "Aug 23, 2017 12:10:59 AM", 
+      "id": 267371558
+    }
+  }, 
+  "repository": {
+    "name": "traccar/traccar", 
+    "url": "https://github.com/traccar/traccar", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 4038949
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/traccar/traccar/commit/819bca366f89f237f19e52b7a916895ed1761fb9", 
+      "sha": "819bca366f89f237f19e52b7a916895ed1761fb9", 
+      "branchName": "master", 
+      "date": "Aug 25, 2017 11:41:37 PM", 
+      "repoName": "traccar/traccar"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/traccar/traccar/commit/d5ad3af86c6faa5d45b8724219bf06cdd58e3eed", 
+      "sha": "d5ad3af86c6faa5d45b8724219bf06cdd58e3eed", 
+      "branchName": "master", 
+      "date": "Aug 22, 2017 3:07:21 PM", 
+      "repoName": "traccar/traccar"
+    }
+  }, 
+  "bugName": "traccar-traccar-267371558-268530427", 
+  "version": "latest", 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 1, 
+      "numberDeleted": 1
+    }
+  }, 
+  "type": "passing_passing", 
+  "bugId": "Bears-125", 
+  "projectMetrics": {
+    "numberSourceFiles": 552, 
+    "numberLibrariesFailingModule": 96, 
+    "numberTestFiles": 234, 
+    "numberModules": 1
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 312004656, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 487063552, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Dec 10, 2018 1:02:06 PM", 
+    "projectRootPomPath": "./workspace/traccar/traccar/267371558/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          1, 
+          0, 
+          0, 
+          0, 
+          109
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 110
+      }, 
+      "testing": {
+        "stepDurations": [
+          15
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 15
+      }, 
+      "cloning": {
+        "stepDurations": [
+          12
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 12
+      }
+    }, 
+    "reproductionDateBeginning": "Dec 10, 2018 12:58:28 PM", 
+    "totalDuration": 211
+  }
+}
