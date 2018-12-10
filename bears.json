@@ -1,0 +1,171 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 1723, 
+      "numberRunning": 1725, 
+      "numberFailing": 2, 
+      "numberErroring": 0, 
+      "failures": [
+        {
+          "failureName": "junit.framework.ComparisonFailure", 
+          "isError": false, 
+          "occurrences": 1
+        }, 
+        {
+          "failureName": "junit.framework.AssertionFailedError", 
+          "isError": false, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 0
+    }, 
+    "failingModule": "/root/workspace/FasterXML/jackson-databind/241063530", 
+    "failureDetails": [
+      {
+        "failureName": "junit.framework.AssertionFailedError", 
+        "testClass": "com.fasterxml.jackson.databind.type.RecursiveTypeTest", 
+        "testMethod": "testSuperClassWithReferencedJavaType", 
+        "isError": false
+      }, 
+      {
+        "failureName": "junit.framework.ComparisonFailure", 
+        "detail": "expected:<{\"[base\":1,\"]sub\":2}> but was:<{\"[]sub\":2}>", 
+        "isError": false, 
+        "testMethod": "testBasePropertiesIncludedWhenSerializingSubWhenSubTypeLoadedAfterBaseType", 
+        "testClass": "com.fasterxml.jackson.databind.type.TestTypeFactoryWithRecursiveTypes"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 0, 
+        "numberRunning": 1, 
+        "testClass": "com.fasterxml.jackson.databind.type.TestTypeFactoryWithRecursiveTypes", 
+        "numberFailing": 1, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }, 
+      {
+        "numberPassing": 3, 
+        "numberRunning": 4, 
+        "testClass": "com.fasterxml.jackson.databind.type.RecursiveTypeTest", 
+        "numberFailing": 1, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/FasterXML/jackson-databind/builds/241065840", 
+      "date": "Jun 9, 2017 7:43:50 AM", 
+      "id": 241065840
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/FasterXML/jackson-databind/builds/241063530", 
+      "date": "Jun 9, 2017 7:25:15 AM", 
+      "id": 241063530
+    }
+  }, 
+  "repository": {
+    "name": "FasterXML/jackson-databind", 
+    "url": "https://github.com/FasterXML/jackson-databind", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 3038937
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/FasterXML/jackson-databind/commit/3d743477e1531cd3c4c041941f047eee5b040924", 
+      "sha": "3d743477e1531cd3c4c041941f047eee5b040924", 
+      "branchName": "2.8", 
+      "date": "Jun 9, 2017 7:36:00 AM", 
+      "repoName": "FasterXML/jackson-databind"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/FasterXML/jackson-databind/commit/93f7e14d096181a251aae3355464d24bcd7677a5", 
+      "sha": "93f7e14d096181a251aae3355464d24bcd7677a5", 
+      "branchName": "2.8", 
+      "date": "Jun 9, 2017 7:20:50 AM", 
+      "repoName": "FasterXML/jackson-databind"
+    }
+  }, 
+  "bugName": "FasterXML-jackson-databind-241063530-241065840", 
+  "version": "latest", 
+  "projectMetrics": {
+    "numberSourceFiles": 397, 
+    "numberLibrariesFailingModule": 17, 
+    "numberTestFiles": 397, 
+    "numberModules": 1
+  }, 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 0, 
+      "numberDeleted": 8
+    }
+  }, 
+  "bugId": "Bears-22", 
+  "type": "passing_passing", 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 449016096, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 576716800, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Dec 10, 2018 2:26:05 AM", 
+    "projectRootPomPath": "./workspace/FasterXML/jackson-databind/241063530/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          0, 
+          0, 
+          0, 
+          0, 
+          51
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 51
+      }, 
+      "testing": {
+        "stepDurations": [
+          37
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 37
+      }, 
+      "cloning": {
+        "stepDurations": [
+          29
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 29
+      }
+    }, 
+    "reproductionDateBeginning": "Dec 10, 2018 2:22:36 AM", 
+    "totalDuration": 202
+  }
+}
