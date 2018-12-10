@@ -1,0 +1,152 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 1167, 
+      "numberRunning": 1168, 
+      "numberFailing": 0, 
+      "numberErroring": 1, 
+      "failures": [
+        {
+          "failureName": "spoon.template.TemplateException", 
+          "isError": true, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 2
+    }, 
+    "failingModule": "/root/workspace/INRIA/spoon/277315604", 
+    "failureDetails": [
+      {
+        "failureName": "spoon.template.TemplateException", 
+        "detail": "proxy template parameter must be typed as String spoon.reflect.reference.CtTypeReference", 
+        "isError": true, 
+        "testMethod": "substituteTypeAccessReference", 
+        "testClass": "spoon.test.template.TemplateTest"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 23, 
+        "numberRunning": 24, 
+        "testClass": "spoon.test.template.TemplateTest", 
+        "numberFailing": 0, 
+        "numberErroring": 1, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/INRIA/spoon/builds/277340707", 
+      "date": "Sep 19, 2017 4:49:14 PM", 
+      "id": 277340707
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/INRIA/spoon/builds/277315604", 
+      "date": "Sep 19, 2017 3:53:56 PM", 
+      "id": 277315604
+    }
+  }, 
+  "repository": {
+    "name": "INRIA/spoon", 
+    "url": "https://github.com/INRIA/spoon", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 14176513
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/INRIA/spoon/commit/770e4845b911a176cb092e574a93a46fb4327328", 
+      "sha": "770e4845b911a176cb092e574a93a46fb4327328", 
+      "branchName": "master", 
+      "date": "Sep 19, 2017 4:37:31 PM", 
+      "repoName": "INRIA/spoon"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/INRIA/spoon/commit/494ba6f46237e818ca2a751da8673e3a707b1df1", 
+      "sha": "494ba6f46237e818ca2a751da8673e3a707b1df1", 
+      "branchName": "master", 
+      "date": "Sep 19, 2017 3:43:28 PM", 
+      "repoName": "INRIA/spoon"
+    }
+  }, 
+  "bugName": "INRIA-spoon-277315604-277340707", 
+  "version": "latest", 
+  "projectMetrics": {
+    "numberSourceFiles": 514, 
+    "numberLibrariesFailingModule": 10, 
+    "numberTestFiles": 592, 
+    "numberModules": 1
+  }, 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 43, 
+      "numberDeleted": 3
+    }
+  }, 
+  "bugId": "Bears-83", 
+  "type": "passing_passing", 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 248879168, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 484442112, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Dec 10, 2018 2:53:25 PM", 
+    "projectRootPomPath": "./workspace/INRIA/spoon/277315604/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          1, 
+          0, 
+          0, 
+          0, 
+          80
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 81
+      }, 
+      "testing": {
+        "stepDurations": [
+          298
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 298
+      }, 
+      "cloning": {
+        "stepDurations": [
+          12
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 12
+      }
+    }, 
+    "reproductionDateBeginning": "Dec 10, 2018 2:40:37 PM", 
+    "totalDuration": 761
+  }
+}
