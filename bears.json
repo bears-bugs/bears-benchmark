@@ -1,0 +1,181 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 1125, 
+      "numberRunning": 1129, 
+      "numberFailing": 4, 
+      "numberErroring": 0, 
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError", 
+          "isError": false, 
+          "occurrences": 4
+        }
+      ], 
+      "numberSkipping": 2
+    }, 
+    "failingModule": "/root/workspace/INRIA/spoon/245682273", 
+    "failureDetails": [
+      {
+        "failureName": "java.lang.AssertionError", 
+        "detail": "The file should not contain a static import ", 
+        "isError": false, 
+        "testMethod": "testStaticMethodWithDifferentClassSameNameCollision", 
+        "testClass": "spoon.test.imports.ImportTest"
+      }, 
+      {
+        "failureName": "java.lang.AssertionError", 
+        "detail": "The inner class should contain call using import", 
+        "isError": false, 
+        "testMethod": "testNoFQNWhenUsedInInnerClassAndShadowedByLocalVariable", 
+        "testClass": "spoon.test.variable.AccessFullyQualifiedFieldTest"
+      }, 
+      {
+        "failureName": "java.lang.AssertionError", 
+        "detail": "The call to the last EnumTestSuite should be in FQN", 
+        "isError": false, 
+        "testMethod": "testStaticMethodWithDifferentClassSameNameJava7NoCollision", 
+        "testClass": "spoon.test.imports.ImportTest"
+      }, 
+      {
+        "failureName": "java.lang.AssertionError", 
+        "detail": "The file should not contain a static import ", 
+        "isError": false, 
+        "testMethod": "testStaticMethodWithDifferentClassSameNameJava3NoCollision", 
+        "testClass": "spoon.test.imports.ImportTest"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 8, 
+        "numberRunning": 9, 
+        "testClass": "spoon.test.variable.AccessFullyQualifiedFieldTest", 
+        "numberFailing": 1, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }, 
+      {
+        "numberPassing": 34, 
+        "numberRunning": 37, 
+        "testClass": "spoon.test.imports.ImportTest", 
+        "numberFailing": 3, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/INRIA/spoon/builds/245809519", 
+      "date": "Jun 22, 2017 4:32:20 PM", 
+      "id": 245809519
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/INRIA/spoon/builds/245682273", 
+      "date": "Jun 22, 2017 10:17:07 AM", 
+      "id": 245682273
+    }
+  }, 
+  "repository": {
+    "name": "INRIA/spoon", 
+    "url": "https://github.com/INRIA/spoon", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 14176513
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/INRIA/spoon/commit/7badbe6c1b3db13cb8d92866a359ddad079f4ac6", 
+      "sha": "7badbe6c1b3db13cb8d92866a359ddad079f4ac6", 
+      "branchName": "master", 
+      "date": "Jun 22, 2017 4:22:24 PM", 
+      "repoName": "INRIA/spoon"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/INRIA/spoon/commit/521f2307d4a639dcf7541f65a961609ce39d743f", 
+      "sha": "521f2307d4a639dcf7541f65a961609ce39d743f", 
+      "branchName": "master", 
+      "date": "Jun 22, 2017 10:08:24 AM", 
+      "repoName": "INRIA/spoon"
+    }
+  }, 
+  "bugName": "INRIA-spoon-245682273-245809519", 
+  "version": "latest", 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 2, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 21, 
+      "numberDeleted": 39
+    }
+  }, 
+  "type": "passing_passing", 
+  "bugId": "Bears-68", 
+  "projectMetrics": {
+    "numberSourceFiles": 492, 
+    "numberLibrariesFailingModule": 10, 
+    "numberTestFiles": 560, 
+    "numberModules": 1
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 297912200, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 403177472, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Dec 10, 2018 3:12:20 AM", 
+    "projectRootPomPath": "./workspace/INRIA/spoon/245682273/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          1, 
+          1, 
+          0, 
+          0, 
+          75
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 77
+      }, 
+      "testing": {
+        "stepDurations": [
+          271
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 271
+      }, 
+      "cloning": {
+        "stepDurations": [
+          11
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 11
+      }
+    }, 
+    "reproductionDateBeginning": "Dec 10, 2018 3:00:35 AM", 
+    "totalDuration": 698
+  }
+}
