@@ -1,0 +1,152 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 275, 
+      "numberRunning": 276, 
+      "numberFailing": 1, 
+      "numberErroring": 0, 
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError", 
+          "isError": false, 
+          "occurrences": 1
+        }
+      ], 
+      "numberSkipping": 7
+    }, 
+    "failingModule": "/root/workspace/traccar/traccar/275432141", 
+    "failureDetails": [
+      {
+        "failureName": "java.lang.AssertionError", 
+        "detail": "position is null", 
+        "isError": false, 
+        "testMethod": "testDecode", 
+        "testClass": "org.traccar.protocol.MeitrackProtocolDecoderTest"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 0, 
+        "numberRunning": 1, 
+        "testClass": "org.traccar.protocol.MeitrackProtocolDecoderTest", 
+        "numberFailing": 1, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/traccar/traccar/builds/275689407", 
+      "date": "Sep 15, 2017 1:48:30 AM", 
+      "id": 275689407
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/traccar/traccar/builds/275432141", 
+      "date": "Sep 14, 2017 1:44:45 PM", 
+      "id": 275432141
+    }
+  }, 
+  "repository": {
+    "name": "traccar/traccar", 
+    "url": "https://github.com/traccar/traccar", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 4038949
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/traccar/traccar/commit/c82fd979ad17ecfb7dd8f3e366c067b66f4cdabc", 
+      "sha": "c82fd979ad17ecfb7dd8f3e366c067b66f4cdabc", 
+      "branchName": "master", 
+      "date": "Sep 14, 2017 4:46:40 PM", 
+      "repoName": "traccar/traccar"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/traccar/traccar/commit/1e7d036f1f076f380dca358432bb4ab2b7be255f", 
+      "sha": "1e7d036f1f076f380dca358432bb4ab2b7be255f", 
+      "branchName": "master", 
+      "date": "Sep 14, 2017 1:43:14 PM", 
+      "repoName": "traccar/traccar"
+    }
+  }, 
+  "bugName": "traccar-traccar-275432141-275689407", 
+  "version": "latest", 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 1, 
+      "numberDeleted": 1
+    }
+  }, 
+  "type": "passing_passing", 
+  "bugId": "Bears-130", 
+  "projectMetrics": {
+    "numberSourceFiles": 553, 
+    "numberLibrariesFailingModule": 96, 
+    "numberTestFiles": 236, 
+    "numberModules": 1
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 308068064, 
+      "hostName": "spirals-bears", 
+      "totalMemory": 474480640, 
+      "numberCPU": 16
+    }, 
+    "reproductionDateEnd": "Dec 10, 2018 12:47:04 PM", 
+    "projectRootPomPath": "./workspace/traccar/traccar/275432141/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          0, 
+          0, 
+          0, 
+          0, 
+          104
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 104
+      }, 
+      "testing": {
+        "stepDurations": [
+          15
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 15
+      }, 
+      "cloning": {
+        "stepDurations": [
+          13
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 13
+      }
+    }, 
+    "reproductionDateBeginning": "Dec 10, 2018 12:43:37 PM", 
+    "totalDuration": 200
+  }
+}
