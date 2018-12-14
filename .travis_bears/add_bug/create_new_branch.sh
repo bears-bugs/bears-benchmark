@@ -4,6 +4,8 @@ set -e
 
 # the branch pr-add-bug is checked out
 
+CASE=$(cat bears.json | sed 's/.*"type": "\(.*\)".*/\1/;t;d')
+
 BUGGY_COMMIT_ID=$(git log --format=format:%H --grep="$BUGGY_COMMIT_MESSAGE_PATTERN")
 TEST_COMMIT_ID=$(git log --format=format:%H --grep="$TEST_COMMIT_MESSAGE_PATTERN")
 PATCHED_COMMIT_ID=$(git log --format=format:%H --grep="$PATCHED_COMMIT_MESSAGE_PATTERN")
@@ -15,7 +17,9 @@ git checkout --orphan "$NEW_BRANCH_NAME"
 git reset .
 git clean -fd
 git cherry-pick "$BUGGY_COMMIT_ID"
-git cherry-pick "$TEST_COMMIT_ID"
+if [ "$CASE" == "passing_passing" ]; then
+    git cherry-pick "$TEST_COMMIT_ID"
+fi
 git cherry-pick "$PATCHED_COMMIT_ID"
 git cherry-pick "$END_COMMIT_ID"
 git push github "$NEW_BRANCH_NAME":"$NEW_BRANCH_NAME"
