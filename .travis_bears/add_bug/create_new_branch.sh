@@ -15,7 +15,7 @@ END_COMMIT_ID=$(git log --format=format:%H --grep="$END_COMMIT_MESSAGE_PATTERN")
 
 git checkout --orphan "$NEW_BRANCH_NAME"
 git reset .
-git clean -fd
+git clean -xdf
 git cherry-pick "$BUGGY_COMMIT_ID"
 if [ "$CASE" == "passing_passing" ]; then
     git cherry-pick "$TEST_COMMIT_ID"
