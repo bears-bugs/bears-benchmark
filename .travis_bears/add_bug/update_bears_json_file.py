@@ -33,8 +33,11 @@ if versions is not None:
     with open('bears.json', 'r') as f:
         data = json.load(f)
 
-    # add into bears.json the property { "bugId": "Bears_X" }
-    data['bugId'] = "Bears_" + str(NUMBER_OF_BRANCHES + 1)
+    # add into bears.json the property { "bugId": "Bears-X" }
+    data['bugId'] = "Bears-" + str(NUMBER_OF_BRANCHES + 1)
+
+    # add into bears.json the property { "bugName": "<project slug>-<buggy build id>-<patched build id>" }
+    data['bugName'] = data['repository']['name'].replace("/","-") + "-" + str(data['builds']['buggyBuild']['id']) + "-" + str(data['builds']['fixerBuild']['id'])
 
     # add into bears.json the property { "version": "latest" }
     data['version'] = "latest"
