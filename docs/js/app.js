@@ -286,7 +286,7 @@ angular.module('bears-bugs', ['ngRoute', 'ui.bootstrap', 'anguFixedHeaderTable']
 
             $scope.classifications["Travis-related info"]["Build pair types"] = buildPairTypes;
 
-			exceptionLabel = "Exceptions (" + nbExceptions + ")";
+			exceptionLabel = "Exceptions (" + nbExceptions + " different types)";
 			$scope.classifications["Runtime information"][exceptionLabel] = exceptions;
 
 			$scope.classifications["Bears"]["Bears version"] = bearsVersions;
