@@ -30,6 +30,20 @@ The files and data on a bug are organized in commits in the branch of the bug as
 
 In the folder [scripts](scripts/) you can find scripts to check out and compile bugs.
 
+You can check out all bugs at once with
+
+```bash
+python scripts/checkout_all.py --workspace <path to folder to store Bears bugs>
+```
+
+or you can check out a single bug by given a bug ID (see [bug IDs](https://bears-bugs.github.io/bears-benchmark)) as argument with
+
+```bash
+python scripts/checkout_bug.py --bugId <bug ID> --workspace <path to folder to store Bears bugs>
+```
+
+To compile checked out buggy program versions you can use the scripts `compile_all.py` and `compile_bug.py` in the same way as the scripts `checkout_all.py` and `checkout_bug.py`.
+
 ## How to contribute
 
 Any contribution is very welcome! The types of contribution are, but not limited to:
