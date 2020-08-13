@@ -28,7 +28,7 @@ The files and data on a bug are organized in commits in the branch of the bug as
 
 ## How to use
 
-In the folder [scripts](scripts/) you can find scripts to check out and compile bugs.
+In the folder [scripts](scripts/) you can find scripts to check out bugs, to compile them, and to run tests on them.
 
 You can check out all bugs at once with
 
@@ -42,7 +42,7 @@ or you can check out a single bug by given a bug ID (see [bug IDs](https://bears
 python scripts/checkout_bug.py --bugId <bug ID> --workspace <path to folder to store Bears bugs>
 ```
 
-To compile checked out buggy program versions you can use the scripts `compile_all.py` and `compile_bug.py` in the same way as the scripts `checkout_all.py` and `checkout_bug.py`.
+In the same way as you can check out one or all bugs you can compile the checked out buggy program versions and run tests on them using the scripts `compile_all.py`, `compile_bug.py`, `run_tests_all.py`, `run_tests_bug.py`.
 
 ## How to contribute
 
