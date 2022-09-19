@@ -16,10 +16,10 @@ WORKSPACE = args.workspace
 
 BUG_FOLDER_PATH = os.path.join(WORKSPACE, BUG_ID)
 if os.path.isdir(BUG_FOLDER_PATH):
-    print "The bug %s has already been checked out." % BUG_ID
+    print("The bug %s has already been checked out." % BUG_ID)
     sys.exit()
 
-print "Checking out the bug %s..." % BUG_ID
+print("Checking out the bug %s..." % BUG_ID)
 
 bugs = None
 if os.path.exists(os.path.join(BEARS_PATH, BEARS_BUGS)):
@@ -37,10 +37,10 @@ if bugs is not None:
             break
 
 if BUG_BRANCH_NAME is None:
-    print "There is no bug with the ID %s" % BUG_ID
+    print("There is no bug with the ID %s" % BUG_ID)
     sys.exit()
     
-print "Checking out the branch %s..." % BUG_BRANCH_NAME
+print("Checking out the branch %s..." % BUG_BRANCH_NAME)
 
 # create a folder for the bug in the workspace
 cmd = "mkdir %s" % BUG_FOLDER_PATH
@@ -72,4 +72,4 @@ subprocess.call(cmd, shell=True)
 cmd = "cd %s; git reset .; git checkout -- .; git clean -f; git checkout master;" % BEARS_PATH
 subprocess.call(cmd, shell=True)
 
-print "The bug %s was checked out." % BUG_ID
+print("The bug %s was checked out." % BUG_ID)
