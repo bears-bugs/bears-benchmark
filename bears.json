@@ -1,0 +1,178 @@
+{
+  "tests": {
+    "overallMetrics": {
+      "numberPassing": 1708, 
+      "numberRunning": 1712, 
+      "numberFailing": 4, 
+      "numberErroring": 0, 
+      "failures": [
+        {
+          "failureName": "junit.framework.AssertionFailedError", 
+          "isError": false, 
+          "occurrences": 2
+        }, 
+        {
+          "failureName": "junit.framework.ComparisonFailure", 
+          "isError": false, 
+          "occurrences": 2
+        }
+      ], 
+      "numberSkipping": 0
+    }, 
+    "failingModule": "/root/workspace/FasterXML/jackson-databind/215111320", 
+    "failureDetails": [
+      {
+        "failureName": "junit.framework.AssertionFailedError", 
+        "detail": "expected:<30> but was:<0>", 
+        "isError": false, 
+        "testMethod": "testWithUnwrappedAndCreatorSingleParameterInMiddle", 
+        "testClass": "com.fasterxml.jackson.databind.deser.builder.BuilderWithUnwrappedTest"
+      }, 
+      {
+        "failureName": "junit.framework.ComparisonFailure", 
+        "detail": "expected:<John> but was:<null>", 
+        "isError": false, 
+        "testMethod": "testWithUnwrappedAndCreatorMultipleParametersAtBeginning", 
+        "testClass": "com.fasterxml.jackson.databind.deser.builder.BuilderWithUnwrappedTest"
+      }, 
+      {
+        "failureName": "junit.framework.AssertionFailedError", 
+        "detail": "expected:<30> but was:<0>", 
+        "isError": false, 
+        "testMethod": "testWithUnwrappedAndCreatorMultipleParametersInMiddle", 
+        "testClass": "com.fasterxml.jackson.databind.deser.builder.BuilderWithUnwrappedTest"
+      }, 
+      {
+        "failureName": "junit.framework.ComparisonFailure", 
+        "detail": "expected:<John> but was:<null>", 
+        "isError": false, 
+        "testMethod": "testWithUnwrappedAndCreatorSingleParameterAtBeginning", 
+        "testClass": "com.fasterxml.jackson.databind.deser.builder.BuilderWithUnwrappedTest"
+      }
+    ], 
+    "failingClasses": [
+      {
+        "numberPassing": 2, 
+        "numberRunning": 6, 
+        "testClass": "com.fasterxml.jackson.databind.deser.builder.BuilderWithUnwrappedTest", 
+        "numberFailing": 4, 
+        "numberErroring": 0, 
+        "numberSkipping": 0
+      }
+    ]
+  }, 
+  "builds": {
+    "fixerBuild": {
+      "url": "http://travis-ci.org/FasterXML/jackson-databind/builds/215799347", 
+      "date": "Mar 28, 2017 7:09:55 AM", 
+      "id": 215799347
+    }, 
+    "buggyBuild": {
+      "url": "http://travis-ci.org/FasterXML/jackson-databind/builds/215111320", 
+      "date": "Mar 26, 2017 1:37:59 AM", 
+      "id": 215111320
+    }
+  }, 
+  "repository": {
+    "name": "FasterXML/jackson-databind", 
+    "url": "https://github.com/FasterXML/jackson-databind", 
+    "isFork": false, 
+    "pullRequestId": 0, 
+    "isPullRequest": false, 
+    "original": {
+      "url": "", 
+      "name": "", 
+      "githubId": 0
+    }, 
+    "githubId": 3038937
+  }, 
+  "commits": {
+    "fixerBuild": {
+      "url": "http://github.com/FasterXML/jackson-databind/commit/e08dafef4faa7d71330160dafcbe77536d90e809", 
+      "sha": "e08dafef4faa7d71330160dafcbe77536d90e809", 
+      "branchName": "2.8", 
+      "date": "Mar 28, 2017 7:05:43 AM", 
+      "repoName": "FasterXML/jackson-databind"
+    }, 
+    "buggyBuild": {
+      "url": "http://github.com/FasterXML/jackson-databind/commit/934f485d4c62854dd2ef48ed7ebb238f3abec0b7", 
+      "sha": "934f485d4c62854dd2ef48ed7ebb238f3abec0b7", 
+      "branchName": "2.8", 
+      "date": "Mar 26, 2017 1:33:25 AM", 
+      "repoName": "FasterXML/jackson-databind"
+    }
+  }, 
+  "bugName": "FasterXML-jackson-databind-215111320-215799347", 
+  "version": "latest", 
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0, 
+      "numberChanged": 1, 
+      "numberDeleted": 0
+    }, 
+    "lines": {
+      "numberAdded": 47, 
+      "numberDeleted": 22
+    }
+  }, 
+  "type": "passing_passing", 
+  "bugId": "Bears-12", 
+  "projectMetrics": {
+    "numberSourceFiles": 397, 
+    "numberLibrariesFailingModule": 17, 
+    "numberTestFiles": 389, 
+    "numberModules": 1
+  }, 
+  "reproductionBuggyBuild": {
+    "machineInfo": {
+      "freeMemory": 91458944, 
+      "hostName": "local", 
+      "totalMemory": 319815680, 
+      "numberCPU": 4
+    }, 
+    "reproductionDateEnd": "Oct 10, 2018 6:05:55 AM", 
+    "projectRootPomPath": "./workspace/FasterXML/jackson-databind/215111320/pom.xml", 
+    "processDurations": {
+      "building": {
+        "stepDurations": [
+          0, 
+          0, 
+          0, 
+          0, 
+          46
+        ], 
+        "stepNames": [
+          "CheckoutPatchedBuildCandidate", 
+          "ComputeSourceDir", 
+          "ComputeTestDir", 
+          "CheckoutBuggyBuildCandidateSourceCode", 
+          "BuildProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 5, 
+        "totalDuration": 46
+      }, 
+      "testing": {
+        "stepDurations": [
+          24
+        ], 
+        "stepNames": [
+          "TestProjectBuggyBuildCandidateSourceCode"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 24
+      }, 
+      "cloning": {
+        "stepDurations": [
+          48
+        ], 
+        "stepNames": [
+          "CloneRepository"
+        ], 
+        "nbSteps": 1, 
+        "totalDuration": 48
+      }
+    }, 
+    "reproductionDateBeginning": "Oct 10, 2018 6:02:54 AM", 
+    "totalDuration": 176
+  }
+}
