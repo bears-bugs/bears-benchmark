@@ -8,11 +8,16 @@ from config import *
 
 parser = argparse.ArgumentParser(description='Script to check out one bug from Bears')
 parser.add_argument('--bugId', help='The ID of the bug to be checked out', required=True, metavar='')
-parser.add_argument('--workspace', help='The path to a folder to store the checked out bug', required=True, metavar='')
+parser.add_argument('--workspace', help='The path to a folder to store the checked out bug', required=False, metavar='')
 args = parser.parse_args()
 
 BUG_ID = args.bugId
 WORKSPACE = args.workspace
+
+if WORKSPACE == None: WORKSPACE = "./workspace"
+cmd = "mkdir -p %s" % WORKSPACE
+
+subprocess.call(cmd, shell=True)
 
 BUG_FOLDER_PATH = os.path.join(WORKSPACE, BUG_ID)
 if os.path.isdir(BUG_FOLDER_PATH):
@@ -30,9 +35,10 @@ if os.path.exists(os.path.join(BEARS_PATH, BEARS_BUGS)):
             print("got %s on json.load()" % e)
             sys.exit()
 
+BUG_BRANCH_NAME = None
 if bugs is not None:
     for bug in bugs:
-        if bug['bugId'] == BUG_ID:
+        if bug['bugId'].lower() == BUG_ID.lower():
             BUG_BRANCH_NAME = bug['bugBranch']
             break
 
