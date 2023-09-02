@@ -62,6 +62,12 @@ python scripts/run_tests_bug.py --bugId Bears-1 # this should fail because the c
 
 In the same way as you can check out one or all bugs you can compile the checked out buggy program versions and run tests on them using the scripts `compile_all.py`, `compile_bug.py`, `run_tests_all.py`, `run_tests_bug.py`.
 
+## Data
+
+The original benchmark contained 251 bugs (see file `scripts/data/bug_id_and_branch_2019.json`). However, many bugs have rotten with dependencies having disappeared (in particular snaphots) and version problems.
+
+The benchmark as of Sep 2023 contains 116 bugs (`jq length scripts/data/bug_id_and_branch.json`).
+
 ## Contact
 
 Feel free to create issues in this repository with questions.
