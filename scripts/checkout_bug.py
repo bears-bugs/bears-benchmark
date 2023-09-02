@@ -66,7 +66,7 @@ cmd = "cd %s; git checkout %s;" % (BEARS_PATH, BUGGY_COMMIT)
 subprocess.call(cmd, shell=True)
 
 # copy all files to the bug folder
-cmd = "cd %s; cp -r . %s;" % (BEARS_PATH, BUG_FOLDER_PATH)
+cmd = "find . -mindepth 1 -maxdepth 1 -not -name workspace -print0 | xargs -0 -I{} cp -r {} %s;" % ( BUG_FOLDER_PATH)
 subprocess.call(cmd, shell=True)
 
 # check out master
