@@ -1,6 +1,6 @@
 # The Bears-Benchmark
 
-The Bears-Benchmark, or just Bears, is a benchmark of bugs for automatic program repair studies in Java.
+The Bears-Benchmark, or just Bears, is a benchmark of bugs for automatic program repair studies in Java 8.
 The bugs are collected from open-source projects hosted on GitHub through a process that scans pairs of builds from Travis Continuous Integration and reproduces bugs (by test failure) and their patches (passing test suite).
 
 If you use Bears, please cite our paper:
@@ -73,6 +73,10 @@ In the same way as you can check out one or all bugs you can compile the checked
 The original benchmark contained 251 bugs (see file `scripts/data/bug_id_and_branch_2019.json`). However, many bugs have rotten with dependencies having disappeared (in particular snaphots) and version problems.
 
 The benchmark as of Sep 2023 contains 118 bugs (`jq length scripts/data/bug_id_and_branch.json`).
+
+## Java 11
+
+The following 17 bugs can also be reproduced with Java 11: Bears-150, Bears-179, Bears-194, Bears-206, Bears-207, Bears-211, Bears-212, Bears-220, Bears-225, Bears-231, Bears-232, Bears-236, Bears-238, Bears-240, Bears-242, Bears-246, Bears-250
 
 ## Contact
 
