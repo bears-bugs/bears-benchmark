@@ -6,11 +6,12 @@ import argparse
 
 parser = argparse.ArgumentParser(description='Script to run tests related to one bug checked out from Bears')
 parser.add_argument('--bugId', help='The ID of the bug', required=True, metavar='')
-parser.add_argument('--workspace', help='The path to the folder where the bug is checked out', required=True, metavar='')
+parser.add_argument('--workspace', help='The path to the folder where the bug is checked out', required=False, metavar='')
 args = parser.parse_args()
 
 BUG_ID = args.bugId
 WORKSPACE = args.workspace
+if WORKSPACE == None: WORKSPACE = "./workspace"
 
 BUG_FOLDER_PATH = os.path.join(WORKSPACE, BUG_ID)
 if not os.path.isdir(BUG_FOLDER_PATH):

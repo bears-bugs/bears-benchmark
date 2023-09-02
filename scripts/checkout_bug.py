@@ -56,16 +56,11 @@ subprocess.call(cmd, shell=True)
 cmd = "cd %s; git reset .; git checkout -- .; git clean -f; git checkout %s;" % (BEARS_PATH, BUG_BRANCH_NAME)
 subprocess.call(cmd, shell=True)
 
-# copy bears.json to the bug folder
-cmd = "cd %s; cp bears.json %s" % (BEARS_PATH, BUG_FOLDER_PATH)
-subprocess.call(cmd, shell=True)
-
 # check out buggy commit from the branch containing the bug
 cmd = "cd %s; git log --format=format:%%H --grep='Changes in the tests';" % BEARS_PATH
-BUGGY_COMMIT = subprocess.check_output(cmd, shell=True)
-if len(BUGGY_COMMIT) == 0:
-    cmd = "cd %s; git log --format=format:%%H --grep='Bug commit';" % BEARS_PATH
-    BUGGY_COMMIT = subprocess.check_output(cmd, shell=True)
+BUGGY_COMMIT = subprocess.check_output(cmd, shell=True).decode("utf-8")
+cmd = "cd %s; git branch;" % BEARS_PATH
+print("BUGGY_COMMIT",BUGGY_COMMIT)
 
 cmd = "cd %s; git checkout %s;" % (BEARS_PATH, BUGGY_COMMIT)
 subprocess.call(cmd, shell=True)

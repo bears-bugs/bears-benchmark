@@ -22,36 +22,46 @@ The name of each branch follows the pattern `<GitHub project slug>-<buggy Travis
 The files and data on a bug are organized in commits in the branch of the bug as follows:
 
 - Commit #1 contains the version of the program with the bug
-- Commit #2 contains the changes in the tests
+- Commit #2 contains the changes in the tests (the one to execute to get a failure)
 - Commit #3 contains the version of the program with the human-written patch
 - Commit #4 contains the metadata file `bears.json`, which is a gathering of information collected during the bug reproduction process. It contains information about the bug (e.g. test failure names), the patch (e.g. patch size), and the bug reproduction process (e.g. duration).
+
+## Prerequisites
+
+Ensure you use Java 8.
+
+```
+$export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/ 
+$ mvn -version
+Apache Maven 3.6.3
+Maven home: /usr/share/maven
+Java version: 1.8.0_382, vendor: Private Build, runtime: /usr/lib/jvm/java-8-openjdk-amd64/jre
+Default locale: en_US, platform encoding: UTF-8
+OS name: "linux", version: "5.15.0-79-generic", arch: "amd64", family: "unix"
+```
+
 
 ## How to use
 
 In the folder [scripts](scripts/) you can find scripts to check out bugs, to compile them, and to run tests on them.
 
-You can check out all bugs at once with
+
+You can check out a single bug by given a bug ID (see [bug IDs](https://bears-bugs.github.io/bears-benchmark)) as argument with
 
 ```bash
-python scripts/checkout_all.py --workspace <path to folder to store Bears bugs>
+python scripts/checkout_bug.py --bugId <bug ID>
 ```
 
-or you can check out a single bug by given a bug ID (see [bug IDs](https://bears-bugs.github.io/bears-benchmark)) as argument with
+For example,
 
 ```bash
-python scripts/checkout_bug.py --bugId <bug ID> --workspace <path to folder to store Bears bugs>
+python scripts/checkout_bug.py --bugId Bears-1
+python scripts/run_tests_bug.py --bugId Bears-1 # this should fail because the checkout_bug.py has checked out the third, buggy commit
 ```
+
 
 In the same way as you can check out one or all bugs you can compile the checked out buggy program versions and run tests on them using the scripts `compile_all.py`, `compile_bug.py`, `run_tests_all.py`, `run_tests_bug.py`.
 
-## How to contribute
-
-Any contribution is very welcome! The types of contribution are, but not limited to:
-
-- The proposal of bugs to be added in Bears (specific instructions comming soon)
-- To flag possibly incorrect branches added in the Bears
-- To participate in the manual validation of bugs/branches, i.e. review open pull requests
-
 ## Contact
 
-Feel free to create issues in this repository with questions or to drop an email to fer.madeiral@gmail.com
+Feel free to create issues in this repository with questions.
