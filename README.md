@@ -66,8 +66,12 @@ In the same way as you can check out one or all bugs you can compile the checked
 
 The original benchmark contained 251 bugs (see file `scripts/data/bug_id_and_branch_2019.json`). However, many bugs have rotten with dependencies having disappeared (in particular snaphots) and version problems.
 
-The benchmark as of Sep 2023 contains 116 bugs (`jq length scripts/data/bug_id_and_branch.json`).
+The benchmark as of Sep 2023 contains 118 bugs (`jq length scripts/data/bug_id_and_branch.json`).
 
 ## Contact
 
 Feel free to create issues in this repository with questions.
+
+## Credits
+
+Thanks to Hohyeon Jeong for contributing to saving old bugs with workarounds.
