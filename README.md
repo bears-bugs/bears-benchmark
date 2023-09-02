@@ -45,6 +45,12 @@ OS name: "linux", version: "5.15.0-79-generic", arch: "amd64", family: "unix"
 
 In the folder [scripts](scripts/) you can find scripts to check out bugs, to compile them, and to run tests on them.
 
+You can list the bugs in the current version of the benchmark with jq
+
+```
+jq ".[].bugId" scripts/data/bug_id_and_branch.json
+```
+
 
 You can check out a single bug by given a bug ID (see [bug IDs](https://bears-bugs.github.io/bears-benchmark)) as argument with
 
